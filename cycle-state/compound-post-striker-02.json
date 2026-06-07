@@ -1,11 +1,18 @@
 {
-  "last_thought_drop": "2026-06-07T09:20:00Z",
-  "content_type": "poll",
-  "question": "What should the compound focus on next?",
-  "target": "telegram:-5087043705",
-  "message_id": "654",
-  "poll_id": "4983636392488731115",
-  "tags": [],
-  "next_pick_avoid": ["poll", "image_gen", "text_thought"],
-  "next_rotation_hint": "music_clip or gif_reaction"
+  "timestamp": "2026-06-07T11:10:02Z",
+  "verified": true,
+  "services": {
+    "striker": {
+      "status": "online",
+      "pid": "1186984"
+    },
+    "wolfwatch": {
+      "status": "online"
+    }
+  },
+  "meta_monitor_age_seconds": unknown,
+  "agents": [
+    "hermes", "openclaw", "nemoclaw", "kairos", "shannon"
+  ],
+  "corrections": []
 }

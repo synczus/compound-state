@@ -45,9 +45,13 @@ async def notify(request: Request):
 
     source = payload.get("source", "unknown")
     severity = payload.get("severity", "info")
-    title = payload.get("title", "")
-    body = payload.get("body", "")
+    title = payload.get("title", "").strip()
+    body = payload.get("body", "").strip()
     timestamp = payload.get("timestamp", "")
+
+    # Skip empty payloads — prevents spam from malformed requests
+    if not title and not body:
+        return {"status": "skipped", "detail": "empty payload"}
 
     # Build Telegram message
     msg = f"<b>⬡ {title}</b>\n{body}\n<i>src: {source}</i>"

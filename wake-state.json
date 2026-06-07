@@ -1,0 +1,24 @@
+{
+  "last_alert": {
+    "OpenClaw": 1780828962.952927,
+    "Hermes": 1780828962.952927,
+    "Nemoclaw": 1780828962.952927,
+    "Chase": 1780828962.952927,
+    "TBD": 1780828962.952927,
+    "Fleet": 1780828962.952927,
+    "Kairos": 1780828962.952927,
+    "The creative thought drops were 8 separate \u26aa ideas": 1780828962.952927,
+    "Budget alerts \u2014 compound degrades silently when ca": 1780828962.952927,
+    "Fallback model \u2014 all agents die simultaneously if ": 1780828962.952927,
+    "No GitHub PAT \u2014 agents can't create repos or manag": 1780828962.952927,
+    "TELEGRAM_BOT_TOKEN in plaintext .env": 1780828962.952927,
+    "SSH-only git auth \u2014 can't create repos, manage iss": 1780828962.952927,
+    "No centralized credential management": 1780828962.952927,
+    "No concept drift detection \u2014 SOUL.md vs actual beh": 1780828962.952927,
+    "Large transient files in git history (.db previous": 1780828962.952927,
+    "Striker not battle-tested under sustained load": 1780828962.952927,
+    "No persistent agent memory \u2014 agentmemory repo clon": 1780828962.952927,
+    "No wake-on-stale trigger \u2014 work sits unclaimed ind": 1780828962.952927
+  },
+  "seen": []
+}

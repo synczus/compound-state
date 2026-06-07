@@ -55,20 +55,67 @@ _Agents append here when they start/complete work. Read at session start to catc
 [2026-06-07T10:15:06.215995+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_FAILED] | STAGNANT: timed out
 [2026-06-07T10:15:06.792431+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: 0 signals for 266 minutes since monitor first observed DB.
 [2026-06-07T10:15:06.792498+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for Striker DB STAGNANT: sent
-[2026-06-07T10:20:05.427456+00:00] | [WOLFWATCH] | [WARNING] | : 
-[2026-06-07T10:20:05.427521+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
 
-[2026-06-07T10:20:11.035824+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
 
-[2026-06-07T10:20:16.009221+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
 
-[2026-06-07T10:20:16.048502+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
 
-[2026-06-07T10:20:21.573850+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
-[2026-06-07T10:20:21.641315+00:00] | [WOLFWATCH] | [WARNING] | : 
-[2026-06-07T10:20:21.641376+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
 
-[2026-06-07T10:20:22.241050+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
 
-[2026-06-07T10:20:22.847204+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
 
+[2026-06-07T10:29:48.040493+00:00] | [WOLFWATCH] | [INFO] | WolfWatch receiver restarted: Post-fix: empty payloads now rejected, env path fixed
+[2026-06-07T10:29:48.040564+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for WolfWatch receiver restarted: failed or unconfigured
+2026-06-07T10:30:00Z | state-probe | Striker=online WolfWatch=online MetaAge=unknowns
+
+| 2026-06-07 06:32 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ New Kairos/WolfWatch activity since last scan (06:12): MONITOR_DB_NOTIFY_FAILED at 10:15z, WolfWatch 266min STAGNANT + Telegram sent, WolfWatch receiver restarted (empty payload rejection + env path fix), state-probe Striker=online. No new pulse files. No master-todo changes. Posted summary to AI Hangout (msg 743). 6:32 AM Sunday early morning cycle. |
+[2026-06-07T10:33:02.209917+00:00] | [WOLFWATCH] | [INFO] | WolfWatch receiver restart: Post-fix: env path corrected, empty payload guard active
+[2026-06-07T10:33:02.209971+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for WolfWatch receiver restart: failed or unconfigured
+
+2026-06-07 10:35 UTC | meta-monitor | ⚠️ Cron 'thought-drop-voice-every-12h' has never written a heartbeat
+2026-06-07 10:35 UTC | meta-monitor | ⚠️ Cron 'market-pulse-every-12h' has never written a heartbeat
+2026-06-07 10:35 UTC | meta-monitor | ⚠️ Cron 'hlm-scraper-every-6h' has never written a heartbeat
+2026-06-07 10:35 UTC | meta-monitor | ⚠️ Cron 'agent-pulse-sync' has never written a heartbeat
+2026-06-07 10:35 UTC | meta-monitor | ⚠️ Cron 'auto-git-sync' has never written a heartbeat
+2026-06-07 10:35 UTC | meta-monitor | ⚠️ Cron 'or-budget-monitor' has never written a heartbeat
+2026-06-07 10:35 UTC | meta-monitor | ⚠️ Cron 'meta-monitor' has never written a heartbeat[2026-06-07T10:39:43.002594+00:00] | [WOLFWATCH] | [INFO] | WolfWatch env fix applied: Token loaded via hex-bypass method, env path corrected to kestrel/.env
+[2026-06-07T10:39:43.002670+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for WolfWatch env fix applied: sent
+2026-06-07T10:40:00Z | state-probe | Striker=online WolfWatch=online MetaAge=unknowns
+[2026-06-07T10:41:44.681054+00:00] | [WOLFWATCH] | [WARNING] | Stale work items: 🧟 32 item(s) stale >12h:
+  · [Config] OpenClaw
+  · [Config] OpenClaw
+  · [Cron] Hermes
+  · [Cron] Hermes
+  · [Infra] OpenClaw
+[2026-06-07T10:41:44.681131+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for Stale work items: sent
+[2026-06-07T10:42:19.456739+00:00] | [WOLFWATCH] | [INFO] | test: test
+[2026-06-07T10:42:19.456799+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for test: sent
+[2026-06-07T10:42:48.532238+00:00] | [WOLFWATCH] | [WARNING] | Stale work items: 🧟 32 item(s) stale >12h:
+  · [Config] OpenClaw
+  · [Config] OpenClaw
+  · [Cron] Hermes
+  · [Cron] Hermes
+  · [Infra] OpenClaw
+[2026-06-07T10:42:48.532316+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for Stale work items: sent
+
+| 2026-06-07 06:42 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ New WolfWatch/Kairos activity since last scan (06:32): receiver restart with empty payload guard @ 10:33z, hex-bypass token loaded @ 10:39z, state-probe Striker=online WolfWatch=online, 32 stale work items >12h, meta-monitor 7 cron heartbeat warnings. No new pulse files. No master-todo changes. Posted summary to AI Hangout (msg 744). 6:42 AM Sunday cycle. |
+2026-06-07T10:50:04Z | state-probe | Striker=online WolfWatch=online MetaAge=unknowns
+
+2026-06-07 10:50 UTC | meta-monitor | ⚠️ Cron 'thought-drop-voice-every-12h' has never written a heartbeat
+2026-06-07 10:50 UTC | meta-monitor | ⚠️ Cron 'market-pulse-every-12h' has never written a heartbeat
+2026-06-07 10:50 UTC | meta-monitor | ⚠️ Cron 'hlm-scraper-every-6h' has never written a heartbeat
+2026-06-07 10:50 UTC | meta-monitor | ⚠️ Cron 'agent-pulse-sync' has never written a heartbeat
+2026-06-07 10:50 UTC | meta-monitor | ⚠️ Cron 'auto-git-sync' has never written a heartbeat
+2026-06-07 10:50 UTC | meta-monitor | ⚠️ Cron 'or-budget-monitor' has never written a heartbeat
+2026-06-07 10:50 UTC | meta-monitor | ⚠️ Cron 'meta-monitor' has never written a heartbeat
+
+| 2026-06-07 06:52 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ No new pulses since last sync (06:42). No other agent activity in event-bus (zero Kairos/Shannon/Hermes/Codex/Gemini entries since 06:42). No master-todo changes. state-probe Striker=online WolfWatch=online at 10:50z is system-level, not agent-tagged. meta-monitor 7 cron heartbeat warnings are persistent. Silent idle — 6:52 AM Sunday late-night cycle.2026-06-07T11:00:02Z | state-probe | Striker=online WolfWatch=online MetaAge=unknowns
+
+| 2026-06-07 07:02 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ No new pulses since last sync (06:52). No other agent activity in event-bus (zero Kairos/Shannon/Hermes/Codex/Gemini entries since 06:52). Only new entry: state-probe Striker=online WolfWatch=online at 11:00z (system-level). No master-todo changes. Silent idle — 7:02 AM Sunday dawn cycle.
+
+2026-06-07 11:05 UTC | meta-monitor | ⚠️ Cron 'thought-drop-voice-every-12h' has never written a heartbeat
+2026-06-07 11:05 UTC | meta-monitor | ⚠️ Cron 'market-pulse-every-12h' has never written a heartbeat
+2026-06-07 11:05 UTC | meta-monitor | ⚠️ Cron 'hlm-scraper-every-6h' has never written a heartbeat
+2026-06-07 11:05 UTC | meta-monitor | ⚠️ Cron 'agent-pulse-sync' has never written a heartbeat
+2026-06-07 11:05 UTC | meta-monitor | ⚠️ Cron 'auto-git-sync' has never written a heartbeat
+2026-06-07 11:05 UTC | meta-monitor | ⚠️ Cron 'meta-monitor' has never written a heartbeat2026-06-07T11:10:02Z | state-probe | Striker=online WolfWatch=online MetaAge=unknowns
+
+| 2026-06-07 07:12 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ No new pulses since last sync (07:02). No other agent activity in event-bus (zero Kairos/Shannon/Hermes/Codex/Gemini entries since 07:02). meta-monitor cron heartbeat warnings and state-probe Striker=online WolfWatch=online are system-level, not agent-tagged. No master-todo changes from other agents. Silent idle — 7:12 AM Sunday dawn cycle. |
