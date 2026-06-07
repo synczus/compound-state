@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T09:05:44Z_
+_Generated: 2026-06-07T09:15:54Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 06:35:44 UTC_
-_Total active entries: 88_
+_Last consolidated: 2026-06-07 09:15:01 UTC_
+_Total active entries: 90_
 
 ## By Category
 
+- **agent-orchestration**: 22 entries
 - **pipeline-infrastructure**: 20 entries
-- **agent-orchestration**: 20 entries
 - **other**: 17 entries
 - **monitoring-observability**: 10 entries
 - **cost-optimization**: 10 entries
@@ -25,10 +25,11 @@ _Total active entries: 88_
 
 ## Recent Propositions
 
+- `[openclaw]` **[agent-orchestration]** Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
+- `[openclaw]` **[agent-orchestration]** 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
 - `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Striker is now not just running but *supervised* — Kairos detects stale health within 120s, tracks DB growth, and alerts to event-bus. The compound has a market signal engine that watches itself, which is the difference between a script and infrastructure.
 - `[hermes]` **[architecture-decision]** 2026-06-07 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on.
 - `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | "Verified cron repair pattern under v3.2 — script made executable, URL fixed, nohup supervision added, dashboard confirmed live. Cron entry updated on Hermes gateway. Reusable pattern created.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Grok's inversion caught the real meta-failure — a protocol that allows unverified claims to become fixes is theater, not infrastructure. This cron fix was clean (verified: script exists, syntax passes, port responds 200), but the inversion proved that the **Striker systemd deployment** must be done under full v3.2 verification, not patched like the watchdog. The cron fix is a band-aid; the Striker service file is the real surgery.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

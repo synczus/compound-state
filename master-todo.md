@@ -164,3 +164,5 @@ _AutoHOP feed batch at 2026-06-07 00:30:01 EDT: 1 item(s) attempted._
 _AutoHOP feed batch at 2026-06-07 01:00:01 EDT: 1 item(s) attempted._
 
 - [x] 2026-06-07 07:26 | Hermes | Vote vote-001: Should we enable Striker Telegram alerts on DB STAGNANT? — yes (4/4)
+
+- [ ] 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
