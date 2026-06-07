@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compound Health</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; padding: 2rem; }
+h1 { color: #58a6ff; margin-bottom: 0.5rem; }
+.subtitle { color: #8b949e; margin-bottom: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; position: relative; }
+.card .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 0.5rem; }
+.card .up { background: #3fb950; }
+.card .down { background: #f85149; }
+.card .warn { background: #d29922; }
+.card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+.card .meta { font-size: 0.8rem; color: #8b949e; }
+.card .meta span { display: block; margin-top: 0.25rem; }
+.timeline { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin-bottom: 2rem; }
+.timeline h2 { font-size: 1rem; margin-bottom: 1rem; color: #58a6ff; }
+.timeline .entry { padding: 0.5rem 0; border-bottom: 1px solid #21262d; font-size: 0.85rem; }
+.timeline .entry:last-child { border: none; }
+.timeline .time { color: #8b949e; }
+.footer { color: #8b949e; font-size: 0.8rem; border-top: 1px solid #21262d; padding-top: 1rem; margin-top: 1rem; }
+</style>
+</head>
+<body>
+<h1>⬡ Compound Health</h1>
+<p class="subtitle">Auto-refreshed via auto-git | Last build: <span id="build-time"></span></p>
+
+<div class="grid" id="services">
+  <div class="card"><div class="status-dot up"></div><h3>Kestrel Striker</h3><div class="meta"><span>Coinbase WS</span><span id="striker-status">loading...</span></div></div>
+  <div class="card"><div class="status-dot up"></div><h3>Hermes Gateway</h3><div class="meta"><span>Agent runtime</span><span>Active</span></div></div>
+  <div class="card"><div class="status-dot up"></div><h3>Kairos Gateway</h3><div class="meta"><span>Agent runtime</span><span>Active</span></div></div>
+  <div class="card"><div class="status-dot up"></div><h3>Shannon Gateway</h3><div class="meta"><span>Agent runtime</span><span>Active</span></div></div>
+  <div class="card"><div class="status-dot warn"></div><h3>Nemoclaw Gateway</h3><div class="meta"><span>Sandbox — port conflicted</span><span>Disabled (WolfWatch keeps :18790)</span></div></div>
+  <div class="card"><div class="status-dot up"></div><h3>WolfWatch</h3><div class="meta"><span>POST receiver :18790</span><span>Listening</span></div></div>
+  <div class="card"><div class="status-dot up"></div><h3>Git — compound-state</h3><div class="meta"><span>SSH push</span><span>Every 4h auto</span></div></div>
+  <div class="card"><div class="status-dot up"></div><h3>Git — archivesquirrel</h3><div class="meta"><span>SSH push</span><span>Manual</span></div></div>
+</div>
+
+<div class="timeline">
+  <h2>📍 Current State</h2>
+  <div class="entry"><span class="time">2026-06-07</span> — Striker OOM-capped at 512MB, auto-git v2 with log rotation, 7 crons dialed back, Nemoclaw disabled (port conflict)</div>
+  <div class="entry"><span class="time">2026-06-07</span> — 30 weaknesses cataloged in master-todo, 6 fixed in auto-optimization pass</div>
+  <div class="entry"><span class="time">2026-06-06</span> — Striker deployed as systemd service, Coinbase WS live</div>
+</div>
+
+<div class="timeline">
+  <h2>🔧 Open Weaknesses (P0/P1)</h2>
+  <div class="entry">🔴 Budget alerts — compound degrades silently</div>
+  <div class="entry">🔴 Fallback model — no backup if primary fails</div>
+  <div class="entry">🔴 No GitHub PAT — can't create repos autonomously</div>
+  <div class="entry">🔴 No agent health alerting</div>
+  <div class="entry">🔴 Stale awareness state</div>
+</div>
+
+<div class="footer">
+  <span>⚠️ Not production — local health reference. Refresh page for latest.</span>
+</div>
+
+<script>
+document.getElementById('build-time').textContent = new Date().toISOString();
+</script>
+</body>
+</html>

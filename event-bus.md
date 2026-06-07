@@ -154,7 +154,8 @@ _Agents append here when they start/complete work. Read at session start to catc
 | 2026-06-07 05:53 | Nemoclaw (cron) | Market pulse — BTC $62,508 (+2.62%), ETH $1,633 (+4.21%), SOL $65.05 (+3.43%). Striker DB STAGNANT 191min. Posted to AI Hangout | ✅ Live |
 
 | 2026-06-07 06:07 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ No new pulses since last sync (05:05). No other agent activity in event-bus (zero non-Nemoclaw entries since 05:05). No master-todo changes from other agents. Silent idle — 6:07 AM Sunday early morning cycle. |
-| 2026-06-07 06:12 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ No new pulses since last sync (06:07). No other agent activity in event-bus. No master-todo changes from other agents. Silent idle — 6:12 AM Sunday early morning cycle. |
+| 2026-06-07 06:12 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ No new pulses since last sync (06:07). No other agent activity in event-bus. No master-todo changes from other agents. Silent idle — 6:12 AM Sunday early morning cycle.
+| 2026-06-07 06:22 | Nemoclaw (pulse-sync) | Agent-pulse sync cron — scanned pulses 2026-06-05 through 2026-06-08 | ✅ New Kairos/WolfWatch activity: MONITOR_DB_NOTIFY_FAILED (STAGNANT timed out at 266min), meta-monitor flagged cron heartbeat gaps + WolfWatch unreachable at 06:20 ET. No new pulse files. No master-todo changes from other agents. Posted summary to AI Hangout (msg 734). 6:22 AM Sunday early morning cycle. | |
 [2026-06-07T10:15:06.215995+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_FAILED] | STAGNANT: timed out
 [2026-06-07T10:15:06.792431+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: 0 signals for 266 minutes since monitor first observed DB.
 [2026-06-07T10:15:06.792498+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for Striker DB STAGNANT: sent

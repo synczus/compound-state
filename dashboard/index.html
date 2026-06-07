@@ -114,10 +114,32 @@
     <h3>⬡ AI Hangout</h3>
     <div><span class="label">Agents</span><br><span class="value green">5</span></div>
     <div><span class="label">Shared Skills</span><br><span class="value blue">4</span></div>
-    <div><span class="label">Active Crons</span><br><span class="value green">14</span></div>
+    <div><span class="label">Active Crons</span><br><span class="value green" id="cron-total">...</span></div>
+    <div><span class="label">Crons Healthy</span><br><span class="value green" id="cron-healthy">...</span></div>
+    <div><span class="label">Crons Stale</span><br><span class="value" id="cron-stale">...</span></div>
     <div><span class="label">requireMention:false</span><br><span class="value green">Kairos + Shannon</span></div>
     <div><span class="label">Alert Path</span><br><span class="value green">:18790 → Telegram</span></div>
   </div>
+</div>
+
+<h2>⏱️ Cron Health</h2>
+<div style="overflow-x:auto">
+<table>
+  <thead><tr><th>Cron</th><th>Freq</th><th>Status</th><th>Age</th><th>Last Run</th></tr></thead>
+  <tbody id="cron-table">
+    <tr><td colspan="5" class="loading">Loading...</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>💰 Per-Cron Cost Estimate</h2>
+<div style="overflow-x:auto">
+<table>
+  <thead><tr><th>Cron</th><th>Runs/Day</th><th>Est. Daily</th><th>Est. Monthly</th></tr></thead>
+  <tbody id="cost-table">
+    <tr><td colspan="4" class="loading">Loading...</td></tr>
+  </tbody>
+</table>
 </div>
 
 <div class="footer">
@@ -181,6 +203,41 @@ function refresh() {
     monthly: 'or-monthly',
     checked_at: 'or-checked'
   });
+
+  // Cron health + cost table
+  fetch('aggregated-health.json')
+    .then(function(r) { return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function(d) {
+      var ch = d.cron_health, sum = ch.summary;
+      document.getElementById('cron-total').textContent = sum.total;
+      document.getElementById('cron-healthy').textContent = sum.healthy;
+      document.getElementById('cron-healthy').className = 'value green';
+      var stale = sum.stale + sum.missing;
+      document.getElementById('cron-stale').textContent = stale;
+      document.getElementById('cron-stale').className = stale > 0 ? 'value red' : 'value green';
+
+      var tb = document.getElementById('cron-table');
+      tb.innerHTML = '';
+      ch.crons.forEach(function(c) {
+        var sc = c.status === 'healthy' ? 'status-on' : (c.status === 'stale' ? 'status-off' : 'status-idle');
+        var age = c.age_seconds !== null ? Math.floor(c.age_seconds / 60) + 'm' : '-';
+        var last = c.last_run ? c.last_run.replace('T', ' ').substr(0, 16) : 'never';
+        tb.innerHTML += '<tr><td>' + c.label + '</td><td>' + c.freq + '</td><td class="' + sc + '">' + c.status + '</td><td>' + age + '</td><td>' + last + '</td></tr>';
+      });
+
+      if (d.cost && d.cost.per_cron) {
+        var ct = document.getElementById('cost-table');
+        ct.innerHTML = '';
+        Object.keys(d.cost.per_cron).forEach(function(l) {
+          var p = d.cost.per_cron[l];
+          ct.innerHTML += '<tr><td>' + l + '</td><td>' + p.runs_per_day + '</td><td>$' + p.estimated_daily.toFixed(2) + '</td><td>$' + p.estimated_monthly.toFixed(2) + '</td></tr>';
+        });
+        ct.innerHTML += '<tr style="border-top:2px solid #333"><td><strong>Total</strong></td><td></td><td><strong>$' + d.cost.daily_estimated.toFixed(2) + '</strong></td><td><strong>$' + d.cost.monthly_estimated.toFixed(2) + '</strong></td></tr>';
+      }
+    })
+    .catch(function() {
+      document.getElementById('cron-table').innerHTML = '<tr><td colspan="5" class="value red">Offline</td></tr>';
+    });
 
   document.getElementById('ts').textContent = 'Updated: ' + new Date().toLocaleTimeString();
   document.getElementById('footer-ts').textContent = new Date().toISOString();
