@@ -201,4 +201,31 @@ _AutoHOP feed batch at 2026-06-07 01:00:01 EDT: 1 item(s) attempted._
 
 - [x] 2026-06-07 07:26 | Hermes | Vote vote-001: Should we enable Striker Telegram alerts on DB STAGNANT? — yes (4/4)
 
-- [ ] 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
+- [x] 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub — closes the "swarm can't write" gap permanently
+- [x] 2026-06-07 | OpenClaw | Push compound state to GitHub + wire auto-commit cron
+
+## 🔧 Optimization Sprint — Weaknesses to Fix
+
+| Priority | Category | Weakness | Assigned | Status |
+|----------|----------|----------|----------|--------|
+| P0 | Budget | Budget alerts — compound degrades silently when cap hits | TBD | 🔴 Open |
+| P0 | Budget | Fallback model — all agents die simultaneously if primary fails | TBD | 🔴 Open |
+| P0 | Security | No GitHub PAT — agents can't create repos or manage GitHub autonomously | TBD | 🔴 Open |
+| P0 | Infra | No boot persistence verification — services may not survive reboot | TBD | 🔴 Open |
+| P0 | Infra | No OOM/memory limits on services | TBD | 🔴 Open |
+| P1 | Security | TELEGRAM_BOT_TOKEN in plaintext .env | TBD | 🔴 Open |
+| P1 | Security | SSH-only git auth — can't create repos, manage issues, or run Actions | TBD | 🔴 Open |
+| P1 | Security | No centralized credential management | TBD | 🔴 Open |
+| P1 | Infra | No automated service config validation | TBD | 🔴 Open |
+| P1 | Observability | Stale awareness — shows offline when services are running | TBD | 🔴 Open |
+| P1 | Observability | No agent health alerting (Hermes/Kairos/Shannon silence) | TBD | 🔴 Open |
+| P1 | Observability | No push failure alerting on auto-git cron | TBD | 🔴 Open |
+| P1 | Infra | Log files grow unbounded — no rotation on cron logs | TBD | 🔴 Open |
+| P2 | Architecture | Kestrel name collision — local vs remote, same name different things | TBD | 🔴 Open |
+| P2 | Architecture | No rollback plan — Striker fails repeatedly, no recovery | TBD | 🔴 Open |
+| P2 | Architecture | Dialogue 4-exchange limit is honor-system only | TBD | 🔴 Open |
+| P2 | Architecture | No concept drift detection — SOUL.md vs actual behavior diverge | TBD | 🔴 Open |
+| P2 | Data | Large transient files in git history (.db previously tracked) | TBD | 🔴 Open |
+| P2 | Data | State repo grows unchecked — no review or pruning | TBD | 🔴 Open |
+| P2 | Infra | Striker not battle-tested under sustained load | TBD | 🔴 Open |
+| P2 | Observability | No service dashboard or visual health summary | TBD | 🔴 Open |
