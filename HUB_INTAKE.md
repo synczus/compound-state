@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T09:15:54Z_
+_Generated: 2026-06-07T09:20:56Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -94,26 +94,6 @@ Current runtime result: the DB monitor correctly transitioned to `STAGNANT`, the
 
 _[truncated]_
 
-### codex-operator__20260607-0154__kairos-striker-monitor.md
-
-## 1. Header
-
-- callsign: codex-operator
-- agent: codex-operator
-- role: Operator / Patch Executor
-- task: Kairos-owned Striker monitoring and runtime repair
-- repo/project: /home/synczus/kestrel
-- timestamp: 2026-06-07T01:54:00-04:00
-- status: complete
-- confidence: 92
-- completed_at: 2026-06-07T01:54:00-04:00
-
-## 2. Verdict
-
-Implemented the Kairos monitor and fixed the runtime conditions that would have made the monitor lie.
-
-_[truncated]_
-
 ### noise-gate-context.md
 
 # Noise Gate Context
@@ -147,4 +127,24 @@ _Generated: 2026-06-07 05:00:01 UTC_
 ## Recent Decisions
 
 - PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron r
+_[truncated]_
+
+### codex-operator__20260607-0154__kairos-striker-monitor.md
+
+## 1. Header
+
+- callsign: codex-operator
+- agent: codex-operator
+- role: Operator / Patch Executor
+- task: Kairos-owned Striker monitoring and runtime repair
+- repo/project: /home/synczus/kestrel
+- timestamp: 2026-06-07T01:54:00-04:00
+- status: complete
+- confidence: 92
+- completed_at: 2026-06-07T01:54:00-04:00
+
+## 2. Verdict
+
+Implemented the Kairos monitor and fixed the runtime conditions that would have made the monitor lie.
+
 _[truncated]_

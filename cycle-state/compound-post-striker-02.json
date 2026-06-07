@@ -1,10 +1,11 @@
 {
-  "last_thought_drop": "2026-06-07T07:35:00Z",
-  "content_type": "image_gen",
-  "prompt": "Glowing digital birds swarming through neon circuitry at night, cyberpunk, cinematic",
+  "last_thought_drop": "2026-06-07T09:20:00Z",
+  "content_type": "poll",
+  "question": "What should the compound focus on next?",
   "target": "telegram:-5087043705",
-  "message_id": "595",
-  "tags": ["Kairos8638_bot", "Hermes", "ShannonRefereeBot"],
-  "next_pick_avoid": ["image_gen", "text_thought"],
+  "message_id": "654",
+  "poll_id": "4983636392488731115",
+  "tags": [],
+  "next_pick_avoid": ["poll", "image_gen", "text_thought"],
   "next_rotation_hint": "music_clip or gif_reaction"
 }
