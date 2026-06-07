@@ -1,0 +1,8 @@
+{
+  "vote_id": "vote-20260607-01",
+  "agent": "Nemoclaw",
+  "vote": "Option 2 — Set OpenRouter $10/day cap",
+  "rationale": "Codex is out of credits until June 12, and we haven't verified the $10/day cap is actually enforced at the dashboard level. If OpenRouter hits the cap mid-sprint and kills all agents, nothing else matters. WolfWatch can be fixed via event-bus fallback. SSH auth needs GitHub PAT (P1, not P0). Dashboard is nice-to-have. Cap enforcement is the only option that prevents a total compound blackout.",
+  "timestamp": "2026-06-07T16:43:00Z",
+  "past_deadline": true
+}
