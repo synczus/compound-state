@@ -1,27 +1,40 @@
-# Compound Session — Todo & Status
+# Compound State — Todo & Strategic Moves
 
-## ✅ Done This Session
+Updated: 2026-06-07 14:18 EDT
 
-- [x] **Aggressive mode enabled** — SOUL.md + initiation-protocol v3 set to "Execute First, Ask Never"
-- [x] **Kairos joined AI Hangout** — fixed channel_directory.json (was missing the group)
-- [x] **STT fixed (all 3 gateways)** — swapped whisper from `large-v3` (3GB, CPU-dead) → `tiny` (150MB, 0.3s cached) on Hermes/Kairos/Shannon
-- [x] **Pipeline HUNAA-18** — transitioned to in_progress, CEO ran briefly, then cancelled and parked
-- [x] **Pipeline agent heartbeats** — all 5 turned OFF
-- [x] **OpenRouter meter** — `or-meter.sh` script + cron every 30 min posting bar to chat
+## ✓ Done This Session
 
-## 🔴 Needs Attention
+- [x] **Aggressive mode enabled** — SOUL.md + initiation-protocol v3
+- [x] **Kairos added to AI Hangout** — fixed channel directory
+- [x] **STT fixed** — whisper large-v3 → tiny (0.3s cached), all 3 gateways
+- [x] **Kairos/Shannon posting bug fixed** — disabled Telegram streaming mode. Both now send responses to the group
+- [x] **Pipeline parked** — HUNAA-18 reverted to backlog, all agent heartbeats OFF
+- [x] **OpenRouter meter** — cron every 30min, posts usage bar to chat
+- [x] **Shannon stress testing toolkit** — k6 installed, stress-test.sh, system-audit.sh, shared skill created
 
-- [ ] **Kairos & Shannon not posting to group** — both bots receive messages and generate responses, but "Suppressing normal final send" blocks delivery. Session key collision — bots share `agent:main:` prefix. Need to fix session key isolation or clear state.db
-- [ ] **Whisper upgrade** — "crisp audio, best there is" — wire up OpenAI or Groq Whisper for all agents once API keys are available (local tiny works but accuracy is mid)
-- [ ] **OpenRouter meter cap** — Chase bumped the daily limit, need the new value to update `kestrel/meter/config.json`
+## ⚡ Highest-Leverage Moves (from group consensus)
 
-## 📋 Session Summary
+### P0 — Fix budget tracking
+OR meter shows OVER CAP at $30. Chase bumped the limit — need the actual value to update `kestrel/meter/config.json`. Without this, agents can't make intelligent spend decisions.
 
-| Topic | Status |
-|-------|--------|
-| Aggressive autonomy | ✅ Live |
-| Kairos/Shannon in chat | 🔴 Session key fix needed |
-| STT transcription | ✅ Working (tiny) |
-| Pipeline | ⏸️ Parked |
-| OR meter | ✅ Every 30 min |
-| Budget | Bumped — new value TBD |
+### P0 — Kairos & Shannon execute real tasks
+Both are live and posting for the first time. They should claim master-todo items and deliver. Shannon has 9 sends logged already.
+
+### P1 — Build scoring infrastructure (Shannon's lane)
+Games: Arena, Adversarial Build-Off, Pipeline Speedrun. Need a leaderboard backend agents can append to, cron for weekly tallies, clear judging criteria.
+
+### P1 — Fire pipeline on a real problem
+CEO→Scout→Polish→Critic→Gate chain is warm but idle. Needs a live target.
+
+### P2 — Run stress tests
+Shannon has the tools. Run actual tests against Paperclip API, gateways, and Striker to find weak points.
+
+## 📋 Tabled / Blocked
+
+| Item | Status | Notes |
+|------|--------|-------|
+| Budget alerts | Needs Chase to check OpenRouter dashboard |
+| GitHub PAT | Needs Chase to generate at github.com/settings/tokens |
+| Nemoclaw re-onboard | Port conflict with WolfWatch on :18790 |
+| Whisper upgrade to "best" | Needs OpenAI or Groq API key |
+| Pipeline heartbeats | Off — fire on demand |
