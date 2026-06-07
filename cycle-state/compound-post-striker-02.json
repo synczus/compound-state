@@ -1,18 +1,53 @@
 {
-  "timestamp": "2026-06-07T21:51:41Z",
-  "verified": true,
+  "timestamp": "2026-06-07T23:05:01.725042+00:00",
+  "version": "0.1.0",
+  "budget": {
+    "paused": false,
+    "balance": 95.5129,
+    "checked_at": "2026-06-07T23:00:05Z"
+  },
   "services": {
     "striker": {
-      "status": "offline",
-      "pid": ""
+      "status": "active",
+      "health": {
+        "status": "connected",
+        "connected_since": "2026-06-07T22:16:33.042841+00:00",
+        "signals_this_session": 19637,
+        "total_signals": 54146,
+        "updated_at": "2026-06-07T23:04:27.813515+00:00"
+      }
     },
     "wolfwatch": {
-      "status": "online"
+      "status": "inactive"
     }
   },
-  "meta_monitor_age_seconds": 1748,
-  "agents": [
-    "hermes", "openclaw", "nemoclaw", "kairos", "shannon"
+  "sources": {
+    "db_offline": true
+  },
+  "alerts": [
+    {
+      "source": "wolfwatch",
+      "severity": "error",
+      "reason": "wolfwatch service inactive"
+    }
   ],
-  "corrections": []
+  "degradation": {
+    "active": false,
+    "tier_cutoff": null,
+    "reason": null
+  },
+  "agents": {
+    "nemoclaw": {
+      "status": "unknown"
+    },
+    "kairos": {
+      "status": "unknown"
+    },
+    "kestrelmarkets": {
+      "status": "unknown"
+    },
+    "shannon": {
+      "status": "disabled"
+    }
+  }
 }

@@ -1,0 +1,25 @@
+{
+  "hop": "brain-dump-hop",
+  "stage": 2,
+  "agent": "perplexity",
+  "version": "1.0",
+  "date": "YYYY-MM-DD",
+  "short_title": "short-name-here",
+  "context": "Paste your raw thoughts here — messy, scattered, half-formed. The more raw the better.",
+  "specific_questions": [],
+  "constraints": [],
+  "instructions": "You must respond with ONLY valid JSON. No explanations, no markdown, no extra text outside the JSON object. Research the context deeply and return structured findings.",
+  "output_schema": {
+    "hop": "brain-dump-hop",
+    "stage": 2,
+    "agent": "perplexity",
+    "date": "YYYY-MM-DD",
+    "short_title": "short-name-here",
+    "key_findings": ["array of strings — each finding with a source"],
+    "sources": ["array of URLs"],
+    "uncertainties": ["array of strings — what's not known or conflicting"],
+    "research_gaps": ["array of strings — areas needing more investigation"],
+    "verified_claims": ["array of strings — claims confirmed true"],
+    "debunked_claims": ["array of strings — claims disproven"]
+  }
+}

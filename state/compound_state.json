@@ -1,0 +1,72 @@
+{
+  "description": "Kestrel Compound State Schema — designed by Perplexity Round 3 (brain-dump-hop 2026-06-07). Single source of truth for system health, source scoring, budget tracking, and alerting.",
+  "schema": {
+    "timestamp": "ISO8601 UTC — last update time",
+    "budget": {
+      "usd_remaining": "float — remaining daily budget",
+      "guard_pause_threshold": "float — USD at which ingestion pauses (default 2.00)",
+      "last_spend_usd": "float — spend since last reset"
+    },
+    "agents": {
+      "<agent_name>": {
+        "status": "online|degraded|offline|deprecated",
+        "last_heartbeat": "ISO8601 UTC",
+        "last_error": "string — last error message or null",
+        "restart_count": "integer"
+      }
+    },
+    "sources": {
+      "<source_id>": {
+        "tier": "lead_indicator|catalyst_confirmation|narrative_formation|archival_reference",
+        "enabled": "boolean",
+        "last_seen": "ISO8601 UTC — last successful fetch",
+        "cadence_minutes": "integer — expected interval",
+        "health_score": "float 0-100 — daily computed",
+        "quality_score": "float 0-100 — relevance hit rate",
+        "parse_fail_rate": "float 0-1 — failures / total fetches",
+        "relevance_hit_rate": "float 0-1 — useful signals / total",
+        "drop_order": "integer 1-4 — degradation priority"
+      }
+    },
+    "alerts": [
+      {
+        "source": "source_id or agent_name",
+        "severity": "critical|warning|info",
+        "reason": "string describing the issue",
+        "created_at": "ISO8601 UTC"
+      }
+    ],
+    "version": "string — schema version"
+  },
+  "initial_state": {
+    "timestamp": null,
+    "budget": {
+      "usd_remaining": 50.00,
+      "guard_pause_threshold": 2.00,
+      "last_spend_usd": 0.00
+    },
+    "agents": {
+      "kairos": {"status": "online", "last_heartbeat": null, "last_error": null, "restart_count": 0},
+      "nemoclaw": {"status": "online", "last_heartbeat": null, "last_error": null, "restart_count": 0},
+      "hermes": {"status": "online", "last_heartbeat": null, "last_error": null, "restart_count": 0},
+      "openclaw": {"status": "online", "last_heartbeat": null, "last_error": null, "restart_count": 0},
+      "shannon": {"status": "deprecated", "last_heartbeat": null, "last_error": "decommissioned 2026-06-07", "restart_count": 0}
+    },
+    "sources": {
+      "whale-alert": {"tier": "lead_indicator", "enabled": true, "last_seen": null, "cadence_minutes": 5, "health_score": 100.0, "quality_score": 90.0, "parse_fail_rate": 0.0, "relevance_hit_rate": 0.95, "drop_order": 1},
+      "cryptoquant": {"tier": "lead_indicator", "enabled": false, "last_seen": null, "cadence_minutes": 15, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 1},
+      "striker-crypto": {"tier": "lead_indicator", "enabled": true, "last_seen": null, "cadence_minutes": 1, "health_score": 100.0, "quality_score": 50.0, "parse_fail_rate": 0.0, "relevance_hit_rate": 0.05, "drop_order": 1},
+      "cointelegraph": {"tier": "catalyst_confirmation", "enabled": false, "last_seen": null, "cadence_minutes": 15, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 2},
+      "disclosetv": {"tier": "catalyst_confirmation", "enabled": false, "last_seen": null, "cadence_minutes": 60, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 2},
+      "coindesk": {"tier": "catalyst_confirmation", "enabled": false, "last_seen": null, "cadence_minutes": 240, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 2},
+      "tldr": {"tier": "narrative_formation", "enabled": true, "last_seen": null, "cadence_minutes": 1440, "health_score": 100.0, "quality_score": 35.0, "parse_fail_rate": 0.0, "relevance_hit_rate": 0.30, "drop_order": 3},
+      "a16z-crypto": {"tier": "narrative_formation", "enabled": false, "last_seen": null, "cadence_minutes": 240, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 3},
+      "coinstack": {"tier": "narrative_formation", "enabled": false, "last_seen": null, "cadence_minutes": 240, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 3},
+      "the-tech-buzz": {"tier": "narrative_formation", "enabled": false, "last_seen": null, "cadence_minutes": 240, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 3},
+      "techcrunch": {"tier": "narrative_formation", "enabled": true, "last_seen": null, "cadence_minutes": 240, "health_score": 100.0, "quality_score": 50.0, "parse_fail_rate": 0.0, "relevance_hit_rate": 0.40, "drop_order": 3},
+      "binance-killers": {"tier": "archival_reference", "enabled": false, "last_seen": null, "cadence_minutes": 1440, "health_score": null, "quality_score": null, "parse_fail_rate": null, "relevance_hit_rate": null, "drop_order": 4}
+    },
+    "alerts": [],
+    "version": "1.0.0"
+  }
+}

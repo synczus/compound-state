@@ -25,4 +25,6 @@ dashboard/__pycache__/
 
 # OS
 .DS_Store
-Thumbs.db
+Thumbs.dbhop-notes/
+hop-banking-rules.md
+lineup/

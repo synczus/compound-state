@@ -3,7 +3,7 @@
 Produces: P0 (urgent), P1 (active), P2 (infra). Appends to master-todo.md."""
 
 import json, os, sqlite3, subprocess, sys, time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 BASE = Path("/home/synczus/kestrel")
@@ -18,7 +18,7 @@ def read_json(path):
     except: return {}
 
 def pulse():
-    now = datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     items = []
 
     # ── 1. Hop State ─────────────────────────────────────────────────
@@ -28,7 +28,7 @@ def pulse():
         idle = hop.get("idle_since", now)
         try:
             idle_dt = datetime.strptime(idle, "%Y-%m-%dT%H:%M:%SZ")
-            ago = (datetime.now(datetime.UTC) - idle_dt).total_seconds() / 60
+            ago = (datetime.now(timezone.utc) - idle_dt).total_seconds() / 60
         except: pass
         if ago > 25:
             items.append({"P": 1, "tag": "hop", "text": f"Hop idle {ago:.0f} min — propose next cycle"})
@@ -110,7 +110,7 @@ def pulse():
     # Also write structured signal doc
     pulse_dir = BASE / "pulse"
     pulse_dir.mkdir(exist_ok=True)
-    signal_doc = pulse_dir / f"signal-{datetime.now(datetime.UTC).strftime('%Y%m%d-%H%M')}.json"
+    signal_doc = pulse_dir / f"signal-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M')}.json"
     with open(signal_doc, "w") as f:
         json.dump({"timestamp": now, "p0": p0, "p1": p1, "p2": p2}, f, indent=2)
 

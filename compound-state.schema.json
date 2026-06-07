@@ -1,0 +1,29 @@
+# Compound State Schema v0.1
+# Single JSON file any agent reads — source of truth for the compound.
+# File: /home/synczus/kestrel/cycle-state/current.json
+# Generator: kestrel/scripts/self-healing/cat.sh or cron
+
+{
+  "timestamp": "",
+  "version": "0.1.0",
+  "budget": {
+    "usd_remaining": 0,
+    "guard_pause_threshold": 2.0,
+    "guard_resume_threshold": 10.0,
+    "last_spend_usd": 0,
+    "daily_spend_usd": 0
+  },
+  "agents": {
+    "kestrelmarkets": {"status": "unknown", "last_heartbeat": "", "last_error": "", "restart_count": 0},
+    "nemoclaw": {"status": "unknown", "last_heartbeat": "", "last_error": "", "restart_count": 0},
+    "kairos": {"status": "unknown", "last_heartbeat": "", "last_error": "", "restart_count": 0},
+    "shannon": {"status": "disabled", "last_heartbeat": "", "last_error": ""}
+  },
+  "sources": {},
+  "alerts": [],
+  "services": {
+    "striker": {"status": "unknown", "last_health_tick": "", "restart_count": 0},
+    "wolfwatch": {"status": "unknown", "last_health_tick": ""},
+    "synapse_dashboard": {"status": "unknown", "port": 19888}
+  }
+}

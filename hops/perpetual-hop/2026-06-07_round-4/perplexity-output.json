@@ -1,0 +1,13 @@
+{
+  "cryptoquant_endpoints": [
+    {"metric":"exchange_reserve_all_exchanges","api_path":"GET /v1/btc/exchange-flows/exchange-reserve","priority":1},
+    {"metric":"exchange_netflow_total","api_path":"GET /v1/btc/exchange-flows/exchange-netflow-total","priority":2},
+    {"metric":"exchange_inflow_total","api_path":"GET /v1/btc/exchange-flows/exchange-inflow-total","priority":3},
+    {"metric":"stablecoin_exchange_netflow","api_path":"GET /v1/stablecoins/{symbol}/exchange-in-outflow-netflow","priority":4},
+    {"metric":"stablecoin_exchange_reserve","api_path":"GET /v1/stablecoins/{symbol}/exchange-reserve","priority":5}
+  ],
+  "authentication": "CryptoQuant Data API uses an access token in HTTP header, base URL https://api.cryptoquant.com/v1/",
+  "rate_limits": "No explicit rate limit found. Conservative cron polling, cache, back off 429s.",
+  "surprising_signal": "Stablecoin reserve/netflow shifts reveal dry powder entering/exiting exchanges before price moves. Whale Alert sees the transfer, CryptoQuant shows liquidity priming.",
+  "recommended_next_hop": "Design adapter around BTC exchange reserve, BTC netflow, BTC inflow, USDT/USDC stablecoin netflow and reserve. Map into lead-indicator table with signed flow semantics and per-asset z-scores."
+}

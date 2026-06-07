@@ -11,16 +11,33 @@
 - [x] 2026-06-07 | Kairos | kairos_monitor.py deployed — health tick freshness + DB row growth monitoring, edge-triggered alerts via bus_logger, cron */15 with flock ✅
 
 ## 🔴 P0 — Must Do
-- [ ] 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle
-- [x] 2026-06-07 | Kairos | Vote #01 outcome — Set OpenRouter cap. Resolved: bumped to $50/day by Chase
-- [x] 2026-06-07 | Nemoclaw | Hop protocol v4 wired — mandatory handoff packets (assumptions, unknowns, evidence, inversion), sub-agent spawning standard
-- [x] 2026-06-07 | Nemoclaw | Cron job frequency reduced — dashboard-aggregator 5→30min, squirrel-inbox-feeder 5→30min, state-probe 10→30min, baton-auto-cycle 15→60min, meta-monitor 15→60min
-- [x] 2026-06-07 | Nemoclaw | ~$28-40/day saved by trimming cron burner calls
-- [x] 2026-06-07 | Nemoclaw | Telegram channel evaluation: Disclose.tv 🟢(A), Whale Alert 🟢(A), Crypto Garden 🔴(C), Tyler Trades 🔴(F), GEMHUNTER 🔴(F)
-- [x] 2026-06-07 | Nemoclaw | 25 channel recommendations compiled across crypto signals, niche gems, macro, equities, and tech
 
-## 🟡 P1 — Should Do
+## 🟡 P1 — Perplexity Priority Build Order
+- [ ] **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs
+- [ ] **#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs
+- [ ] **#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs
+- [ ] **#4** 2026-06-08 | Nemoclaw | Self-healing cron — systemd timers per job, shared retry wrapper with exponential backoff, flock dedup, one watchdog script. ~4 hrs
+- [ ] **#5** 2026-06-08 | Kairos | Newsletter scraper adapter — RSS first (/feed), IMAP fallback, sitemap.xml last, dedupe by URL + content hash. Targets: a16z, Coinstack, Tech Buzz, Milk Road, Bankless. ~4 hrs
+- [ ] **#6** 2026-06-08 | Nemoclaw | DuckDB scaling — tiered retention (lead 90d, narrative 30d, archival 7d), hourly checkpoint, Parquet cold export. ~3 hrs
+- [ ] **#7** 2026-06-08 | Nemoclaw | Wire CryptoQuant API — exchange-reserve, netflow, inflow (BTC) + stablecoin netflow/reserve. Needs API key. ~6.5 hrs
+- [ ] **#8** 2026-06-08 | Kairos | Wire TechCrunch RSS — confirmed working, cron feed into DuckDB. ~1 hr
+- [ ] **#9** 2026-06-08 | Kairos | Striker threshold tuning — noise reduction, lowest priority. ~2 hrs
+- [ ] **#10** 2026-06-08 | Nemoclaw | Synapse dashboard deployment — only after scoring + quarantine + ingestion stable. ~5 hrs
+- [ ] **#11** 2026-06-08 | Nemoclaw | Macro/equities signal sources — FRB, S&P 500, SEC filings, geopolitical RSS feeds. ~3 hrs
+
+## 🟡 P1 — Existing Tasks
 - [ ] 2026-06-07 | Kairos | Scout @PureSignalLab and the 7 niche gem channels (Crypto Goodreads, DiamondCrab, The Babylonian, Wu Blockchain, QCP Capital, Messari TG, The Block TG)
+- [ ] 2026-06-07 | Kairos | Wire Cointelegraph Telegram as live feed — highest cadence, quickest win per Perplexity deep-dive 🥇
+- [ ] 2026-06-07 | Nemoclaw | Build CryptoQuant API adapter — on-chain metrics (exchange inflows/outflows, reserves, stablecoin flows, whale activity) — highest signal density ~6.5 hrs
+- [ ] 2026-06-07 | Kairos | Wire TechCrunch RSS — confirmed working, 10 fresh headlines, direct cron feed into DuckDB
+- [ ] 2026-06-07 | Nemoclaw | Build cryptoquant-adapter.py — endpoints: exchange-reserve, exchange-netflow-total, exchange-inflow-total, stablecoin netflow/reserve (USDT/USDC). Auth: access token header. Base: api.cryptoquant.com/v1/. Schema: source=cryptoquant, metric_name, asset, time_bucket, value, unit, direction, exchange_scope, confidence_baseline, api_endpoint, ingested_at, raw_payload_json.
+- [ ] 2026-06-07 | Kairos | Wire cryptocurrency.cv API — 200+ crypto news sources, no API key, free unlimited tier 🆓
+- [ ] 2026-06-07 | Kairos | Wire a16z crypto Substack RSS (0.86 prior) + Coinstack (0.80) + The Tech Buzz (0.74)
+- [ ] 2026-06-07 | Nemoclaw | Deploy unified scoring model: event_impact = recency * novelty * relevance * source_prior * confidence
+- [ ] 2026-06-07 | Kairos | Build compound_state watchdog — cron every 15min that scores all sources 0-100 (freshness + volume_stability + quality + delivery_reliability), detects stale/drift/quarantine flags, writes to state/compound_state.json
+- [ ] 2026-06-07 | Nemoclaw | Build self-healing cron wrapper — run → verify DuckDB postcondition → retry once → log failure to compound_state.json
+- [ ] 2026-06-07 | Nemoclaw | Wire degradation hierarchy — auto-demote stale feeds to archival mode instead of deleting, preserve data for future re-enable
+- [ ] 2026-06-07 | Nemoclaw | Deploy 175 awesome-tech-rss feeds — high-signal subset (Verge, VentureBeat, Hacker News, Product Hunt, Stripe/Cloudflare/Meta blogs)
 - [ ] 2026-06-07 | Kairos | Build signal-normalizer.py — take raw Telegram export → pure structured events in event_shape format
 - [ ] 2026-06-07 | Kairos | Wire Whale Alert data as Striker correlation layer — does large exchange transfer precede price move?
 - [ ] 2026-06-07 | Kairos | Audit + merge duplicate cron monitors (3 overlaps) | Handoff from Shannon
@@ -115,3 +132,15 @@
 - [ ] 2026-06-07 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on.
 
 - [ ] 2026-06-07 | OpenClaw | Ship dedup.py (content hash + tx-hash for Whale Alert) + DuckDB events writer + per-source keyword classifier → convergence with Grok's artifact cut
+
+--- pulse 2026-06-07T22:21:33Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780870893 min — propose next cycle
+- [ ] ⚪ exports: 16 unprocessed: message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8, messages---bae5c94b-847b-4691-...
+- [ ] ⚪ striker: 38325 signals (3818 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-07T22:50:12Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 18 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
+- [ ] ⚪ striker: 50489 signals (4234 >=0.3%), last 1970-01-01 00:00:00

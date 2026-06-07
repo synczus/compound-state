@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T22:09:34Z_
+_Generated: 2026-06-07T23:12:34Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,35 +7,35 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 21:55:04 UTC_
-_Total active entries: 120_
+_Last consolidated: 2026-06-07 22:59:04 UTC_
+_Total active entries: 202_
 
 ## By Category
 
-- **other**: 31 entries
-- **agent-orchestration**: 26 entries
-- **pipeline-infrastructure**: 23 entries
-- **monitoring-observability**: 14 entries
-- **cost-optimization**: 11 entries
-- **architecture-decision**: 7 entries
-- **security-governance**: 3 entries
-- **model-strategy**: 3 entries
-- **knowledge-management**: 2 entries
+- **other**: 64 entries
+- **pipeline-infrastructure**: 47 entries
+- **agent-orchestration**: 35 entries
+- **monitoring-observability**: 21 entries
+- **cost-optimization**: 14 entries
+- **architecture-decision**: 8 entries
+- **security-governance**: 5 entries
+- **model-strategy**: 4 entries
+- **knowledge-management**: 4 entries
 
 ---
 
 ## Recent Propositions
 
-- `[hermes]` **[other]** 2026-06-07T21:35 | ingestion | [disclosetv/economic_policy] BREAKING: ECB raises interest rates by 75bp — largest hike in history | lane: human-gate
-- `[hermes]` **[other]** 🟡 contract: coordination.yaml exists but may be misconfigured
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 26 min — propose next cycle
-- `[hermes]` **[other]** ⚪ exports: 15 unprocessed: message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8, messages---bae5c94b-847b-4691-...
-- `[hermes]` **[other]** ⚪ striker: 25955 signals (421 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Kairos | Scout @PureSignalLab and the 7 niche gem channels (Crypto Goodreads, DiamondCrab, The Babylonian, Wu Blockchain, QCP Capital, Messari TG, The Block TG)
-- `[hermes]` **[other]** 2026-06-07 | Kairos | Build signal-normalizer.py — take raw Telegram export → pure structured events in event_shape format
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Kairos | Wire Whale Alert data as Striker correlation layer — does large exchange transfer precede price move?
-- `[hermes]` **[model-strategy]** 2026-06-07 | Kairos | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Handoff from Shannon, needs action
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Kairos | Audit + merge duplicate cron monitors (3 overlaps) | Handoff from Shannon
+- `[hermes]` **[other]** 2026-06-07 | Kairos | Wire Cointelegraph Telegram as live feed — highest cadence, quickest win per Perplexity deep-dive 🥇
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Nemoclaw | Build CryptoQuant API adapter — on-chain metrics (exchange inflows/outflows, reserves, stablecoin flows, whale activity) — highest signal density ~6.5 hrs
+- `[hermes]` **[security-governance]** 2026-06-07 | Kairos | Wire cryptocurrency.cv API — 200+ crypto news sources, no API key, free unlimited tier 🆓
+- `[hermes]` **[other]** 2026-06-07 | Kairos | Wire a16z crypto Substack RSS (0.86 prior) + Coinstack (0.80) + The Tech Buzz (0.74)
+- `[hermes]` **[model-strategy]** 2026-06-07 | Nemoclaw | Deploy unified scoring model: event_impact = recency * novelty * relevance * source_prior * confidence
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Nemoclaw | Deploy 175 awesome-tech-rss feeds — high-signal subset (Verge, VentureBeat, Hacker News, Product Hunt, Stripe/Cloudflare/Meta blogs)
+- `[hermes]` **[other]** ⚪ exports: 18 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
+- `[hermes]` **[other]** ⚪ striker: 50489 signals (4234 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780870893 min — propose next cycle
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-07T21:52:47Z",
+  "timestamp": "2026-06-07T22:54:55Z",
   "cron_health": {
     "crons": [
       {
@@ -7,32 +7,32 @@
         "label": "\ud83c\udfa4 Voice Drop",
         "freq": "12h",
         "status": "healthy",
-        "age_seconds": 77,
+        "age_seconds": 3805,
         "last_run": "2026-06-07T21:51:30Z"
       },
       {
         "name": "market-pulse-every-12h",
         "label": "\ud83d\udcca Market Pulse",
         "freq": "12h",
-        "status": "missing",
-        "age_seconds": null,
-        "last_run": null
+        "status": "healthy",
+        "age_seconds": 3684,
+        "last_run": "2026-06-07T21:53:31Z"
       },
       {
         "name": "squirrel-inbox-feeder",
         "label": "\ud83d\udcc1 Squirrel Feeder",
         "freq": "5min",
         "status": "stale",
-        "age_seconds": 1673,
-        "last_run": "2026-06-07T21:24:54Z"
+        "age_seconds": 1762,
+        "last_run": "2026-06-07T22:25:33Z"
       },
       {
         "name": "hlm-scraper-every-6h",
         "label": "\ud83d\udccb HLM Scraper",
         "freq": "6h",
         "status": "healthy",
-        "age_seconds": 21112,
-        "last_run": "2026-06-07T16:00:55Z"
+        "age_seconds": 3267,
+        "last_run": "2026-06-07T22:00:28Z"
       },
       {
         "name": "agent-pulse-sync",
@@ -47,16 +47,16 @@
         "label": "\ud83d\udce4 Git Sync",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 2159,
-        "last_run": "2026-06-07T21:16:48Z"
+        "age_seconds": 2293,
+        "last_run": "2026-06-07T22:16:42Z"
       },
       {
         "name": "meta-monitor",
         "label": "\ud83d\udd0d Meta-Monitor",
         "freq": "15min",
         "status": "healthy",
-        "age_seconds": 1814,
-        "last_run": "2026-06-07T21:22:33Z"
+        "age_seconds": 1942,
+        "last_run": "2026-06-07T22:22:33Z"
       },
       {
         "name": "state-probe",
@@ -71,14 +71,14 @@
         "label": "\ud83d\udcb0 Budget Monitor",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 1691,
-        "last_run": "2026-06-07T21:24:36Z"
+        "age_seconds": 1581,
+        "last_run": "2026-06-07T22:28:34Z"
       }
     ],
     "summary": {
-      "healthy": 5,
+      "healthy": 6,
       "stale": 1,
-      "missing": 3,
+      "missing": 2,
       "total": 9
     }
   },
@@ -97,12 +97,12 @@
     }
   ],
   "cost": {
-    "daily": 39.032242583,
+    "daily": 43.347082693,
     "estimated_per_run": 0.002,
     "daily_estimated": 1.46,
     "weekly_estimated": 10.22,
     "monthly_estimated": 43.8,
-    "last_checked": "2026-06-07T21:24:36Z",
+    "last_checked": "2026-06-07T22:28:34Z",
     "daily_limit": 30.0,
     "per_cron": {
       "\ud83c\udfa4 Voice Drop": {

@@ -1,0 +1,10 @@
+{
+  "source_id": "perpetual-hop",
+  "event_type": "signal_source_scouting",
+  "timestamp": "2026-06-07T22:52:00",
+  "lane": "high_signal",
+  "action": "research",
+  "confidence": 0.86,
+  "headline": "Perpetual hop round 1 - Top: CryptoQuant (0.89), Cointelegraph (0.83), Coinstack (0.8)",
+  "provenance_hash": "hop-round-1-deep-dive"
+}

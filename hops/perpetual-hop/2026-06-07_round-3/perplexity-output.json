@@ -1,0 +1,28 @@
+{
+  "perplexity_output": {
+    "next_source": {
+      "name": "CryptoQuant",
+      "effort_hours": 6.5,
+      "implementation_path": "Use CryptoQuant API/alerts: authenticate, pull high-value metrics first (exchange inflows/outflows, reserves, stablecoin flows, whale activity), normalize into DuckDB, score against price/news context. Start with 3-5 BTC/ETH metrics.",
+      "why": "Highest signal density. Built for actionable on-chain alerts. Best next layer after Cointelegraph."
+    },
+    "unified_scoring_model": "Two-stage score: (1) source-quality prior, (2) event impact score. Event impact = recency_weight x novelty x asset_relevance x source_prior x confidence, with historical source penalty.",
+    "source_priors": {
+      "striker": 0.72,
+      "whale-alert": 0.90,
+      "cryptoquant": 0.88,
+      "cointelegraph": 0.66,
+      "disclosetv": 0.62,
+      "tldr": 0.58,
+      "binance-killers": 0.20
+    },
+    "signal_roles": {
+      "lead_indicators": ["whale-alert", "cryptoquant"],
+      "catalyst_confirmation": ["cointelegraph", "disclosetv"],
+      "narrative_formation": ["tldr", "a16z-crypto"],
+      "archival_reference": ["binance-killers"]
+    },
+    "surprising_insight": "The biggest edge is not adding more sources — it's separating lead indicators from narrative confirmation. CryptoQuant changes your view before the headline exists. It upgrades the model's priors rather than just adding another feed."
+  },
+  "intert": "Rotating the signal_roles into coordination.yaml as source-tier classifications"
+}

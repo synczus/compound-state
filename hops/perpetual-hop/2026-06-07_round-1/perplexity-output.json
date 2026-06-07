@@ -1,0 +1,50 @@
+{
+  "top_recommendations": [
+    {
+      "name": "CryptoQuant",
+      "type": "Telegram",
+      "reason": "Consistent on-chain and exchange-flow style signals; useful for market-moving crypto context and machine-readable ingestion.",
+      "confidence_score": 0.89,
+      "why_wow": "Turns raw blockchain behavior into tradable regime clues before headlines catch up."
+    },
+    {
+      "name": "Cointelegraph",
+      "type": "Telegram",
+      "reason": "High-cadence crypto news feed with broad market coverage and fast distribution, suitable as a first-pass news firehose.",
+      "confidence_score": 0.83,
+      "why_wow": "Often surfaces catalyst headlines early enough to matter for short-horizon positioning."
+    },
+    {
+      "name": "Coinstack",
+      "type": "Substack",
+      "reason": "Curated crypto-market roundup that connects regulation, funding, listings, and macro into one readable signal layer.",
+      "confidence_score": 0.8,
+      "why_wow": "Good at stitching together the narrative behind price moves, not just the move itself."
+    },
+    {
+      "name": "a16z crypto",
+      "type": "Substack",
+      "reason": "Strong signal for investable emerging crypto/tech narratives, especially product-market-fit and structural shifts.",
+      "confidence_score": 0.86,
+      "why_wow": "Frequently identifies where real adoption is compounding before consensus forms."
+    },
+    {
+      "name": "The Tech Buzz",
+      "type": "Substack",
+      "reason": "Broad AI/tech investing curation with emphasis on future-facing themes and investment relevance.",
+      "confidence_score": 0.74,
+      "why_wow": "Useful for spotting overlooked tech narratives that may become capital-allocation themes."
+    }
+  ],
+  "market_sources": ["CryptoQuant", "Cointelegraph", "Coinstack", "LondonCryptoClub", "InvestAnswers"],
+  "tech_sources": ["a16z crypto", "The Tech Buzz", "IQT Updates", "Deep Tech Agency / deep-tech feeds", "RSS.app curated AI/tech feeds"],
+  "niche_gems": ["IQT Updates", "Beinsure", "Coinstack-style market roundup feeds", "RSS.app nuclear/deep-tech feeds", "CryptoQuant"],
+  "quick_wins": [
+    "Add CryptoQuant Telegram to your on-chain layer.",
+    "Add Cointelegraph Telegram as a fast news firehose.",
+    "Add a16z crypto Substack for structural tech narratives.",
+    "Add Coinstack for regulation/listing/funding linkage.",
+    "Use RSS.app to normalize newsletters into machine-readable ingestion."
+  ],
+  "recommended_next_hop": "Scan for 10 more Telegram channels and 10 RSS/Substack feeds, then rank by cadence, signal density, and false-positive rate."
+}

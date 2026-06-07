@@ -1,0 +1,21 @@
+{
+  "hop": "brain-dump-hop",
+  "stage": 5,
+  "agent": "claude-code",
+  "version": "1.0",
+  "date": "YYYY-MM-DD",
+  "short_title": "short-name-here",
+  "implementation_tasks": [
+    {
+      "id": "impl-1",
+      "title": "First implementation task",
+      "description": "What to build and why",
+      "files_to_create": ["path/to/new/file"],
+      "files_to_modify": ["path/to/existing/file"],
+      "acceptance_criteria": ["How we know it's done"],
+      "risk_level": "low"
+    }
+  ],
+  "execution_order": ["impl-1"],
+  "instructions": "Execute the tasks in order. Report each result as valid JSON. Do not make assumptions about unstated requirements — flag them as open questions."
+}

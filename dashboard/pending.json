@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-06-07T23:14:03.772249+00:00",
+  "queue": [
+    {
+      "signal_id": "4434",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "whale_transfer",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461720"
+    },
+    {
+      "signal_id": "4433",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461682"
+    },
+    {
+      "signal_id": "4432",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461662"
+    },
+    {
+      "signal_id": "4431",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461631"
+    },
+    {
+      "signal_id": "4430",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461616"
+    },
+    {
+      "signal_id": "4429",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461591"
+    },
+    {
+      "signal_id": "4428",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461574"
+    },
+    {
+      "signal_id": "4427",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461555"
+    },
+    {
+      "signal_id": "4426",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "price_event",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461539"
+    },
+    {
+      "signal_id": "4425",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461498"
+    },
+    {
+      "signal_id": "4424",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461467"
+    },
+    {
+      "signal_id": "4423",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "geopolitical_event",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461442"
+    },
+    {
+      "signal_id": "4422",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461409"
+    },
+    {
+      "signal_id": "4421",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "whale_transfer",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461388"
+    },
+    {
+      "signal_id": "4420",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "price_event",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461357"
+    },
+    {
+      "signal_id": "4419",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461340"
+    },
+    {
+      "signal_id": "4418",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461324"
+    },
+    {
+      "signal_id": "4417",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461301"
+    },
+    {
+      "signal_id": "4416",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461274"
+    },
+    {
+      "signal_id": "4415",
+      "source_id": "unknown-telegram-export",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "edge_score": 0.149,
+      "tier": "catalyst_confirmation",
+      "event_ts": "2026-06-07 23:12:27.461251"
+    }
+  ],
+  "count": 20
+}

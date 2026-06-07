@@ -1,0 +1,28 @@
+{
+  "hop": "brain-dump-hop",
+  "stage": 3,
+  "agent": "grok",
+  "version": "1.0",
+  "date": "YYYY-MM-DD",
+  "short_title": "short-name-here",
+  "input_from_perplexity": "Paste the full JSON output from Stage 2 here",
+  "original_context": "Paste the original brain dump context here",
+  "instructions": "You must respond with ONLY valid JSON. No explanations, no markdown. Invert every assumption from the Perplexity stage. Identify what's theater vs real. Find the highest-leverage move.",
+  "output_schema": {
+    "hop": "brain-dump-hop",
+    "stage": 3,
+    "agent": "grok",
+    "date": "YYYY-MM-DD",
+    "short_title": "short-name-here",
+    "inversion_analysis": {
+      "core_reality": "What's actually happening vs what we think",
+      "what_got_proven": ["Things confirmed true by research"],
+      "what_is_still_theater": ["Things that look real but aren't"],
+      "second_order_risk": "What happens if we succeed — the overlooked failure mode"
+    },
+    "key_risks": ["array of strings"],
+    "leverage_points": ["array of strings"],
+    "highest_leverage_move": "One sentence, concrete, no hedging",
+    "recommended_focus": "Where to aim implementation"
+  }
+}

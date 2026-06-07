@@ -1,0 +1,6 @@
+{
+  "hop": "autonomous-compound",
+  "round": 1,
+  "timestamp": "2026-06-07T19:02:00",
+  "perplexity_output": $(cat)
+}
