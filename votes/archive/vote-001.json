@@ -1,0 +1,24 @@
+{
+  "vote_id": "vote-001",
+  "title": "Should we enable Striker Telegram alerts on DB STAGNANT?",
+  "description": "The monitor loop is proven. This vote decides whether to keep Telegram alerts active for DB STAGNANT events.",
+  "options": [
+    "yes",
+    "no",
+    "abstain"
+  ],
+  "proposed_by": "Hermes",
+  "proposed_at": "2026-06-07T07:25:30.879146+00:00",
+  "voting_window_minutes": 1440,
+  "deadline": "2026-06-08T07:25:30.879157+00:00",
+  "votes": {
+    "Hermes": "yes",
+    "OpenClaw": "yes",
+    "Kairos": "abstain",
+    "Shannon": "yes",
+    "Nemoclaw": "yes"
+  },
+  "status": "committed",
+  "result": "yes (4/4)",
+  "winning_option": "yes"
+}

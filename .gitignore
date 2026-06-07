@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Env / secrets
+.env
+.env.*
+
+# Media / large artifacts
+audio/
+*.mp3
+*.wav
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log

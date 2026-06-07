@@ -1,0 +1,71 @@
+{
+  "schema": "compound-context-packet.v1",
+  "updated_at": "2026-06-07T03:19:43-0400",
+  "snapshot": {
+    "striker": {
+      "status": "connected",
+      "pid": null,
+      "health_age_ms": null,
+      "signal_count": 0,
+      "ws_subscriptions": []
+    },
+    "kairos_monitor": {
+      "db_first_seen_at": "2026-06-07T05:48:04.338473+00:00",
+      "db_status": "STAGNANT",
+      "health_status": "OK",
+      "last_signal_count": 0,
+      "last_signal_growth_at": "2026-06-07T05:48:04.338473+00:00",
+      "notifications": {
+        "DB": {
+          "detail": "<urlopen error [Errno 111] Connection refused>",
+          "last_attempt_at": "2026-06-07T06:52:17.099090+00:00",
+          "sent": false,
+          "status": "STAGNANT"
+        }
+      }
+    },
+    "cron": {
+      "recent_events": [
+        "| 2026-06-07 02:52 | Nemoclaw (pulse-sync) | Agent-pulse sync cron \u2014 scanned pulses 2026-06-05 through 2026-06-08 | \u2705 New Kairos activity: STAGNANT (02:50 \u2014 0 signals for 61 min) + NOTIFY_FAILED (02:52 \u2014 Connection refused on alert path). No new pulse files. No master-todo changes from other agents. Posted summary to AI Hangout. 2:52 AM late-night cycle. |",
+        "",
+        "| 2026-06-07 03:03 | Nemoclaw (pulse-sync) | Agent-pulse sync cron \u2014 scanned pulses 2026-06-05 through 2026-06-08 | \u2705 No new pulses since last sync (02:52). No other agent activity in event-bus. No master-todo changes from other agents. Silent idle \u2014 3:03 AM late-night cycle. |",
+        "| 2026-06-07 03:05 | Nemoclaw | Creative drop \u2014 utility (web_search_signal) \u2014 BTC -17% week, ETH -22%, Fear & Greed 11, $390B wiped. Signal fragment posted to AI Hangout with bounce trigger thesis. | \u2705 Posted |",
+        "[2026-06-07T07:08:51.051497+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: 0 signals for 61 minutes \u2014 no market activity detected",
+        "[2026-06-07T07:08:51.051556+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT: failed or unconfigured",
+        "[2026-06-07T07:10:54.002271+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT \u2014 Telegram test: 0 signals for 61 minutes \u2014 no market activity detected",
+        "[2026-06-07T07:10:54.002333+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT \u2014 Telegram test: failed or unconfigured",
+        "[2026-06-07T07:13:26.920355+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: 0 signals for 61 minutes",
+        "[2026-06-07T07:13:26.920430+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for Striker DB STAGNANT: sent"
+      ]
+    },
+    "compound": {
+      "signal_count": 0
+    }
+  },
+  "active_baton": {
+    "baton_id": null,
+    "created_at": null,
+    "updated_at": null,
+    "created_by": null,
+    "work_item": null,
+    "goal": null,
+    "protocol_version": "4.0",
+    "stage": null,
+    "next_agent_name": null,
+    "next_agent_role": null,
+    "context": {
+      "files_to_read": [],
+      "files_to_write": [],
+      "commands_to_run": [],
+      "key_facts": [],
+      "key_inferences": [],
+      "blockers": [],
+      "open_loops": []
+    },
+    "state": "idle",
+    "completed_by": null,
+    "evidence_path": null,
+    "hlm": null
+  },
+  "agent_inboxes": {}
+}

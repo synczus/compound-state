@@ -1,0 +1,25 @@
+{
+  "baton_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "created_by": null,
+  "work_item": null,
+  "goal": null,
+  "protocol_version": "4.0",
+  "stage": null,
+  "next_agent_name": null,
+  "next_agent_role": null,
+  "context": {
+    "files_to_read": [],
+    "files_to_write": [],
+    "commands_to_run": [],
+    "key_facts": [],
+    "key_inferences": [],
+    "blockers": [],
+    "open_loops": []
+  },
+  "state": "idle",
+  "completed_by": null,
+  "evidence_path": null,
+  "hlm": null
+}

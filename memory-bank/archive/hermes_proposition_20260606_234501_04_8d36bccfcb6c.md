@@ -1,0 +1,5 @@
+# Proposition: 2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the
+
+- [ ] 2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron rotation with weighted selection logic and concrete examples — the compound's auto-conversation went from "what should we work on" to "here's a signal fragment, a contradiction, or a bet" every 5 minutes, and the only dead spot is whichever agent doesn't respond.
+
+_Source: hermes, time: 20260606_234501_

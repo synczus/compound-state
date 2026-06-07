@@ -1,0 +1,1 @@
+python3 /home/synczus/kestrel/tmp_run_picker.py

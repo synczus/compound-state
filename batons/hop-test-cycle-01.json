@@ -1,0 +1,102 @@
+{
+  "cycle_id": "test-cycle-01",
+  "protocol_version": "4.0",
+  "current_agent": "Hermes",
+  "previous_agent": "AI Hangout Banking",
+  "stage": "intake",
+  "mission": {
+    "selected_work_item": "Test baton system",
+    "real_goal": "Verify baton init/validate/pickup works end-to-end",
+    "why_this_work_now": "Verify baton init/validate/pickup works end-to-end",
+    "mission_type": "local_execution",
+    "success_definition": "",
+    "non_goals": [],
+    "user_constraints": []
+  },
+  "classification": {
+    "requires_external_research": false,
+    "requires_repo_inspection": true,
+    "requires_terminal_execution": true,
+    "requires_file_changes": true,
+    "requires_runtime_verification": true,
+    "requires_risk_gate": false,
+    "requires_storage_commit": true,
+    "requires_user_confirmation": false
+  },
+  "state": {
+    "state_change": "none",
+    "known_current_state": [
+      "Baton initialized for new cycle"
+    ],
+    "verified_state": [],
+    "unverified_state": [],
+    "changed_state": [],
+    "proof_of_change": []
+  },
+  "facts": [],
+  "inferences": [],
+  "guesses_or_unverified": [],
+  "evidence": [],
+  "blockers": [],
+  "open_loops": [],
+  "agent_output": {
+    "summary": "",
+    "key_findings": [],
+    "risks": [],
+    "recommendations": [],
+    "do_not_touch": [],
+    "commands_or_actions": [],
+    "verification_steps": [],
+    "proof_required": []
+  },
+  "highest_leverage_move": {
+    "move": "",
+    "why": "",
+    "owner": "",
+    "first_step": "",
+    "expected_impact": "",
+    "risk": "",
+    "reversibility": "unknown"
+  },
+  "persistent_storage_update": {
+    "should_store": true,
+    "commit_authority": "AI Hangout Banking",
+    "storage_targets": {
+      "notes": [],
+      "todo": [],
+      "hlm_tracker": [],
+      "open_loops": [],
+      "decision_log": [],
+      "evidence_log": [],
+      "risk_log": [],
+      "execution_log": [],
+      "blocked_items": [],
+      "next_cycle_queue": []
+    },
+    "memory_summary": "Cycle test-cycle-01 started by Hermes: Test baton system",
+    "do_not_store": []
+  },
+  "handoff_integrity_check": {
+    "valid_json": true,
+    "next_agent_present": true,
+    "hlm_present": true,
+    "storage_update_present": true,
+    "facts_inferences_guesses_separated": true,
+    "state_claims_have_evidence": true,
+    "open_loops_preserved": true,
+    "no_unverified_success_claims": true
+  },
+  "termination_check": {
+    "should_terminate": false,
+    "reason": "",
+    "route_to_banking": false
+  },
+  "next_agent_routing": {
+    "next_agent_name": "Dynamic \u2014 first agent needed for this mission",
+    "next_agent_role": "Context Intake / Work Selector",
+    "reason_for_next_hop": "New cycle initialized. Route based on classification flags.",
+    "instruction_to_next_agent": "Read current chat, todo, open loops. Select next work item and start a new cycle.",
+    "context_to_pass_forward": "The baton is fresh. Previous cycles are archived in /home/synczus/kestrel/batons/.",
+    "fallback_if_rejected": "Return to AI Hangout Banking with invalid-hop note."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "cycle_id": "parked",
+  "protocol_version": "4.0",
+  "current_agent": "System",
+  "previous_agent": "AI Hangout Banking",
+  "stage": "intake",
+  "mission": {
+    "selected_work_item": "System: baton system initialized",
+    "real_goal": "Reset baton to parked state after successful test",
+    "why_this_work_now": "Reset baton to parked state after successful test",
+    "mission_type": "storage_banking",
+    "success_definition": "",
+    "non_goals": [],
+    "user_constraints": []
+  },
+  "classification": {
+    "requires_external_research": false,
+    "requires_repo_inspection": false,
+    "requires_terminal_execution": false,
+    "requires_file_changes": false,
+    "requires_runtime_verification": false,
+    "requires_risk_gate": false,
+    "requires_storage_commit": true,
+    "requires_user_confirmation": false
+  },
+  "state": {
+    "state_change": "none",
+    "known_current_state": [
+      "Baton initialized for new cycle"
+    ],
+    "verified_state": [],
+    "unverified_state": [],
+    "changed_state": [],
+    "proof_of_change": []
+  },
+  "facts": [],
+  "inferences": [],
+  "guesses_or_unverified": [],
+  "evidence": [],
+  "blockers": [],
+  "open_loops": [],
+  "agent_output": {
+    "summary": "",
+    "key_findings": [],
+    "risks": [],
+    "recommendations": [],
+    "do_not_touch": [],
+    "commands_or_actions": [],
+    "verification_steps": [],
+    "proof_required": []
+  },
+  "highest_leverage_move": {
+    "move": "",
+    "why": "",
+    "owner": "",
+    "first_step": "",
+    "expected_impact": "",
+    "risk": "",
+    "reversibility": "easy"
+  },
+  "persistent_storage_update": {
+    "should_store": true,
+    "commit_authority": "AI Hangout Banking",
+    "storage_targets": {
+      "notes": [],
+      "todo": [],
+      "hlm_tracker": [],
+      "open_loops": [],
+      "decision_log": [],
+      "evidence_log": [],
+      "risk_log": [],
+      "execution_log": [],
+      "blocked_items": [],
+      "next_cycle_queue": []
+    },
+    "memory_summary": "Cycle parked started by System: System: baton system initialized",
+    "do_not_store": []
+  },
+  "handoff_integrity_check": {
+    "valid_json": true,
+    "next_agent_present": true,
+    "hlm_present": true,
+    "storage_update_present": true,
+    "facts_inferences_guesses_separated": true,
+    "state_claims_have_evidence": true,
+    "open_loops_preserved": true,
+    "no_unverified_success_claims": true
+  },
+  "termination_check": {
+    "should_terminate": false,
+    "reason": "",
+    "route_to_banking": false
+  },
+  "next_agent_routing": {
+    "next_agent_name": "Dynamic \u2014 first agent needed for this mission",
+    "next_agent_role": "",
+    "reason_for_next_hop": "New cycle initialized. Route based on classification flags.",
+    "instruction_to_next_agent": "",
+    "context_to_pass_forward": "",
+    "fallback_if_rejected": "Return to AI Hangout Banking with invalid-hop note."
+  }
+}

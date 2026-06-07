@@ -1,0 +1,103 @@
+{
+  "cycle_id": "coinbase-execution-wrapper-01",
+  "protocol_version": "3.3",
+  "current_agent": "ai_hangout_banking",
+  "previous_agent": "codex",
+  "selected_work_item": "Coinbase Advanced Trade API execution wrapper — connect Striker signals to live $50 trading",
+  "stage": "banking_complete",
+  "state_change": "complete",
+  "facts": [
+    "Striker is live as kestrel-striker.service with systemd supervision",
+    "Kairos monitoring deployed — health freshness check (120s stale threshold) + DB row growth detection",
+    "Striker watches BTC-USD/ETH-USD/SOL-USD via Coinbase WebSocket",
+    "Striker signals at >0.5% price moves",
+    "kestrel_signals.db schema exists with 0 rows (no moves detected yet)",
+    "striker_health.json auto-updates every 60s",
+    "Single-instance enforced via flock -n /tmp/striker.lock",
+    "Chase confirmed $50 validation budget for 3-month test",
+    "Coinbase Advanced Trade has REST API for order execution with trade-permission API keys"
+  ],
+  "inferences": [
+    "$50 budget after fees (~0.6% taker) means ~1.2% move needed to break even round trip",
+    "Coinbase Advanced Trade API key generation requires manual UI step by Chase",
+    "Execution wrapper can be Python using coinbase-advanced-py SDK or direct REST"
+  ],
+  "guesses_or_unverified": [
+    "Whether coinbase-advanced-py SDK is the best path vs direct REST",
+    "Minimum order sizes for BTC-USD/ETH-USD/SOL-USD on Advanced Trade",
+    "Whether Coinbase sandbox/paper trading is available for Advanced Trade",
+    "Whether Striker will detect useful signals in current market volatility levels"
+  ],
+  "evidence": [
+    "kestrel/core/main.py — Striker WS daemon source (354 lines, verified)",
+    "kestrel/kestrel-striker.service — systemd unit with flock + network.target (verified)",
+    "striker_health.json — health file (verified fresh)",
+    "kestrel/.env — env vars (verified populated with Telegram, no Coinbase keys yet)",
+    "chat:4044 — Chase confirmed $50 budget",
+    "chat:4046 — Kairos monitor deployment confirmed",
+    "chat:4045 — fee math at 0.6% taker confirmed"
+  ],
+  "blockers": [
+    "Coinbase Advanced Trade API key generation — requires manual UI action by Chase"
+  ],
+  "open_loops": [
+    "agentmemory DESIGN.md evaluation",
+    "Klipy API key integration (GIF pipeline)",
+    "Boot persistence verification",
+    "agentmemory integration (memory layer upgrade)",
+    "Telegram alert on order fill (execution layer)"
+  ],
+  "agent_output": {
+    "summary": "Coinbase trade API execution cycle banked. Striker detection pipeline complete, Kairos monitoring live. Execution layer gated on manual API key generation. $50 validation budget confirmed. Highest-signal unblocked work: agentmemory DESIGN.md evaluation.",
+    "key_findings": [
+      "Detection pipeline is complete and supervised",
+      "Execution pipeline is designed but gated on API keys",
+      "$50 budget is the right size for pipeline validation",
+      "agentmemory is the highest-signal unblocked next work item"
+    ],
+    "risks": [
+      "Fee drag at $50 budget (~0.6% taker, 1.2% breakeven)",
+      "Trade API keys are sensitive — must be stored in .env, not hardcoded",
+      "Execution code needs risk gates before first order submission"
+    ],
+    "recommendations": [
+      "Chase generates Coinbase Advanced Trade API key with trade permission",
+      "Next cycle evaluates agentmemory DESIGN.md as memory layer upgrade",
+      "Execution wrapper designed with paper trading mode first"
+    ]
+  },
+  "highest_leverage_move": {
+    "move": "Evaluate agentmemory DESIGN.md as the compound's next memory infrastructure upgrade",
+    "why": "agentmemory is explicitly built for persistent memory/graph retrieval for AI agents and already supports OpenClaw/Hermes-style workflows. Our current flat-file + event bus memory layer is functional but lossy and doesn't scale. agentmemory could be the knowledge graph that lets the compound remember what it learned six sprints ago.",
+    "owner": "Nemoclaw / AI Hangout",
+    "first_step": "Read agentmemory's DESIGN.md from /home/synczus/projects/agentmemory/"
+  },
+  "persistent_storage_update": {
+    "should_store": true,
+    "storage_targets": {
+      "notes": ["coinbase-execution-wrapper-cycle-complete"],
+      "todo": ["striker-deployment-status-update"],
+      "hlm_tracker": ["detection-pipeline-complete", "execution-gated-on-api-key", "agentmemory-next-up"],
+      "open_loops": ["agentmemory", "klipy", "boot-persistence", "telegram-execution-alerts"],
+      "decision_log": ["striker-deployment-under-v3.2", "kairos-monitor-deployed", "50-dollar-validation-budget"],
+      "evidence_log": ["striker-service-status", "health-file-content", "kestrel-db-schema"]
+    },
+    "memory_summary": "Striker detection pipeline complete and supervised. Kairos monitoring deployed. Execution layer waiting on Coinbase API keys. agentmemory is the highest-signal next work item for memory infrastructure upgrade.",
+    "do_not_store": []
+  },
+  "handoff_integrity_check": {
+    "valid_json": true,
+    "next_agent_present": false,
+    "hlm_present": true,
+    "storage_update_present": true,
+    "state_claims_have_evidence": true
+  },
+  "next_agent_routing": {
+    "next_agent_name": "Nemoclaw / AI Hangout",
+    "next_agent_role": "Context Intake / Work Selector",
+    "reason_for_next_hop": "Cycle complete and banked. Execution layer gated on manual step. Highest-signal unblocked work is evaluating agentmemory DESIGN.md.",
+    "instruction_to_next_agent": "Read agentmemory's DESIGN.md from /home/synczus/projects/agentmemory/ and evaluate whether it's the right memory layer upgrade for the compound. Output the evaluation as the next cycle intake.",
+    "context_to_pass_forward": "Full cycle JSON above + Striker evidence + $50 budget + open loops",
+    "fallback_if_rejected": "Return to AI Hangout Banking with invalid-hop note."
+  }
+}

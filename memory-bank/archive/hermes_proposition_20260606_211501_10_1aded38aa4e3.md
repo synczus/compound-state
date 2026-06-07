@@ -1,0 +1,5 @@
+# Proposition: 2026-06-06 | Scraper | The sprint board itself is the highest leverage move — it
+
+- [ ] 2026-06-06 | Scraper | The sprint board itself is the highest leverage move — it turns 5 independent agents into a coordinated team by giving them a shared surface to track, claim, and hand off work without stepping on each other.**
+
+_Source: hermes, time: 20260606_211501_

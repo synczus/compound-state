@@ -1,0 +1,1 @@
+"""Removed — use swarm._smoke_test (fixed display version) instead."""

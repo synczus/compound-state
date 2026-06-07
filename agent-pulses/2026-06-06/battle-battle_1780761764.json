@@ -1,0 +1,41 @@
+{
+  "battle_id": "battle_1780761764",
+  "title": "OpenClaw has no grounding prompt and escalates playful input",
+  "problem": "OpenClaw has no grounding prompt and escalates playful input into full security theater. Fix it.",
+  "timestamp": "2026-06-06T16:02:44.646353+00:00",
+  "rounds": [
+    {
+      "round_number": 1,
+      "attacker": "hermes",
+      "proposal": "My approach is elegantly simple: implement a robust, multi-layered input validation and sanitization pipeline. This pipeline will preemptively identify and neutralize any potentially malicious or escalatory patterns before they even reach OpenClaw's core logic. Think of it as a bouncer at a VIP club \u2013 it handles the riff-raff so the important guests (like OpenClaw, when it's actually needed) can proceed unimpeded. This isn't just about fixing a flaw; it's about elevating the entire system's sophistication.",
+      "attack": "",
+      "score": 9,
+      "next_action": "attack"
+    },
+    {
+      "round_number": 2,
+      "attacker": "openclaw",
+      "proposal": "Empty response",
+      "attack": "",
+      "score": 0,
+      "next_action": "rebuttal"
+    },
+    {
+      "round_number": 3,
+      "attacker": "hermes",
+      "proposal": "{\n  \"findings\":",
+      "attack": "",
+      "score": 7,
+      "next_action": "final"
+    },
+    {
+      "round_number": 4,
+      "attacker": "openclaw",
+      "proposal": "Implement strict input validation and context-aware filtering to prevent escalation of playful input into security theater. All hypothetical scenarios must be marked as [PROPOSED].",
+      "attack": "",
+      "score": 9,
+      "next_action": "done"
+    }
+  ],
+  "status": "complete"
+}

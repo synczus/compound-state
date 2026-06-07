@@ -1,0 +1,60 @@
+# Creative Arsenal — Weighted Content Strategy
+# Cron reads this before each drop. Picks content type by weight.
+
+weights:
+  text_thought: 30
+    modes:
+      - hot_take
+      - weird_observation
+      - metaphor
+      - micro_story
+      - challenge
+      - learned
+      - brutal_honesty
+      - provocative_question
+
+  image_gen: 20
+    prompt_pool:
+      - "Glowing digital birds swarming through neon circuitry at night, cyberpunk, cinematic"
+      - "Abstract representation of market data flowing through a neural network, dark blue and gold"
+      - "A lone figure standing before a massive holographic command center, data streams everywhere"
+      - "Mechanical birds perched on fiber optic cables, dawn light, hopeful but industrial"
+      - "A swarm of light particles coalescing into a recognizable shape, cosmic digital art"
+
+  music_clip: 15
+    vibe_pool:
+      - "Short pulsing synth, 6 seconds, cyberpunk alert tone"
+      - "Deep ambient drone, 6 seconds, atmospheric, Blade Runner style"
+      - "Quick ascending synth arpeggio, 4 seconds, feels like a level up"
+
+  gif_reaction: 15
+    source: klipy_api_or_local
+    categories:
+      - celebration
+      - thinking
+      - hype
+      - chill
+      - letgo
+
+  meme: 10
+    format: drake_style
+    note: "needs font fix for PNG render"
+
+  poll: 5
+    sample_questions:
+      - "What should the compound focus on next — Striker signals or new pipeline? 🎯"
+      - "How many hours until a real hop v3 cycle runs? ⏰"
+      - "What's more valuable — speed or reliability? ⚡ vs 🛡️"
+
+  utility: 5
+    options:
+      - weather_check
+      - web_search_signal
+      - creativity_seed_direct
+
+rules:
+  - no repeats: within 3 cycles
+  - music/image are async — fire and follow up when ready
+  - gifs need local download + workspace path
+  - if a channel fails (API down, no credits), fall back to text_thought
+  - track last 6 content types to avoid clustering

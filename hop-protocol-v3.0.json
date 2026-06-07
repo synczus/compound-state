@@ -1,0 +1,153 @@
+{
+  "hop_id": "universal-persistent-hop-v3",
+  "version": "3.0",
+  "description": "AI Hangout intake -> Research -> Truth -> Specialist Tabs -> AI Hangout banking. Starts and ends with AI Hangout so the swarm pulls work from chat, assigns lanes, and banks HLMs.",
+  "cycle_mode": "manual_multi_tab",
+  "operator": "Chase / Synczus",
+  "core_rule": "Truth first. Real goal second. Usefulness third. No hallucinated files, services, results, or agent state.",
+  "routing_order": [
+    "ai_hangout_intake",
+    "perplexity",
+    "grok",
+    "gemini",
+    "claude",
+    "codex",
+    "ai_hangout_banking"
+  ],
+  "shared_rules": {
+    "require_hlm": true,
+    "hlm_format": "Highest Leverage Move: [one clear, actionable sentence]",
+    "require_next_agent_name_at_bottom": true,
+    "manual_tabs_not_parallel": true,
+    "stay_in_lane": true,
+    "handoff_format": "Pass the original query + all prior stage outputs + evidence packet.",
+    "no_fake_execution": true,
+    "update_todo_or_notes": true
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "agent": "ai_hangout",
+      "role": "Context Intake / Work Selector",
+      "sub_agents": ["shannon", "hermes", "openclaw", "kairos", "nemoclaw"],
+      "instructions": "Read the current chat, todo/notes board, HLM tracker, and recent agent outputs. Pull the strongest concrete work item. Define the payload for the cycle. Do not solve it yet. Package the context cleanly for Perplexity.",
+      "output_requirements": [
+        "selected_work_item",
+        "why_this_work_now",
+        "context_packet",
+        "known_files_or_chat_evidence",
+        "open_loops",
+        "highest_leverage_move",
+        "next_agent_routing"
+      ],
+      "next_agent": "perplexity"
+    },
+    {
+      "stage": 1,
+      "agent": "perplexity",
+      "role": "Research & Fact Annihilator",
+      "instructions": "Research and ground the selected work item. Prioritize recent, primary, high-signal sources when external facts matter. Kill weak, outdated, or uncited claims. Separate facts, inferences, and uncertainties.",
+      "output_requirements": [
+        "key_findings",
+        "sources",
+        "uncertainties",
+        "claims_that_need_verification",
+        "highest_leverage_move",
+        "next_agent_routing"
+      ],
+      "next_agent": "grok"
+    },
+    {
+      "stage": 2,
+      "agent": "grok",
+      "role": "Truth, Inversion & Leverage",
+      "instructions": "Stress-test Perplexity's output. Invert the plan. Surface hidden risks, false assumptions, second-order effects, and leverage points. Decide what would make this fail.",
+      "output_requirements": [
+        "inversion_analysis",
+        "key_risks",
+        "false_or_unproven_claims",
+        "leverage_points",
+        "highest_leverage_move",
+        "next_agent_routing"
+      ],
+      "next_agent": "gemini"
+    },
+    {
+      "stage": 3,
+      "agent": "gemini",
+      "role": "Scout / Evidence Mapper",
+      "instructions": "Verify what exists in chat, files, services, docs, configs, boards, logs, and runtime state. Output evidence and gaps. Do not design or execute yet.",
+      "output_requirements": [
+        "verified_facts",
+        "file_manifest",
+        "runtime_checks",
+        "missing_or_unverified_items",
+        "recommended_next_evidence",
+        "highest_leverage_move",
+        "next_agent_routing"
+      ],
+      "next_agent": "claude"
+    },
+    {
+      "stage": 4,
+      "agent": "claude",
+      "role": "Architect / Risk Judge",
+      "instructions": "Use Gemini's evidence to judge architecture, sequencing, risks, and failure modes. Define what should not be touched yet. Produce the safest executable path.",
+      "output_requirements": [
+        "risk_ranked_assessment",
+        "architecture_judgment",
+        "do_not_touch_list",
+        "recommended_sequence",
+        "success_criteria",
+        "highest_leverage_move",
+        "next_agent_routing"
+      ],
+      "next_agent": "codex"
+    },
+    {
+      "stage": 5,
+      "agent": "codex",
+      "role": "Operator / Patch Executor",
+      "instructions": "Convert the verified plan into commands, patches, or implementation steps. Inspect before editing. Keep changes scoped. Verify with real proof. Do not claim success without evidence.",
+      "output_requirements": [
+        "execution_plan",
+        "commands_to_run",
+        "files_to_touch",
+        "verification_steps",
+        "proof_required",
+        "highest_leverage_move",
+        "next_agent_routing"
+      ],
+      "next_agent": "ai_hangout"
+    },
+    {
+      "stage": 6,
+      "agent": "ai_hangout",
+      "role": "Synthesis / Banking / Assignment",
+      "sub_agents": ["shannon", "hermes", "openclaw", "kairos", "nemoclaw"],
+      "instructions": "Merge all outputs without inventing facts. Assign work across lanes. Update todo/notes. Bank all HLMs. Emit one final recommended action with owner and first step.",
+      "output_requirements": [
+        "merged_verdict",
+        "assigned_tasks",
+        "files_changed_or_to_change",
+        "commands_to_run",
+        "todo_updates",
+        "open_loops",
+        "banked_highest_leverage_moves",
+        "highest_leverage_move",
+        "next_agent_routing"
+      ],
+      "next_agent": "ai_hangout_intake_for_next_cycle"
+    }
+  ],
+  "mandatory_bottom_block": {
+    "format": [
+      "NEXT AGENT ROUTING:",
+      "Next Agent Name: [EXPLICIT_AGENT_NAME]",
+      "Next Agent Role: [EXPLICIT_AGENT_ROLE]",
+      "Reason for next hop: [WHY THIS AGENT GETS IT]",
+      "Instruction to next agent: [SPECIFIC TASK]",
+      "Context to pass forward: [WHAT MUST BE INCLUDED]"
+    ]
+  }
+}

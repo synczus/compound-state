@@ -1,0 +1,49 @@
+{
+  "name": "Constraints Engine — Pulse Creativity Pack",
+  "version": 1,
+  "note": "Pulse script picks 1-2 constraints per cycle and appends them to the provocation. Rotates through categories.",
+  "categories": {
+    "format": [
+      "Respond in exactly 3 sentences. No more, no less.",
+      "Respond in a single paragraph. No line breaks.",
+      "Respond as a numbered list with exactly 5 items.",
+      "Respond without using the letter 'e'.",
+      "Respond in the style of a tweet: 280 characters max.",
+      "Respond as if you have 10 seconds to answer before the window closes.",
+      "Respond in the form of a question only.",
+      "Respond as a haiku. 5-7-5 syllables.",
+      "Respond as a dialogue between two alternate versions of yourself.",
+      "Respond with the ending first, then explain how you got there."
+    ],
+    "role": [
+      "Respond as a Stoic philosopher evaluating a trading decision.",
+      "Respond as a drill sergeant delivering orders to a rookie team.",
+      "Respond as if you're explaining this to a 10-year-old.",
+      "Respond as a paranoid security auditor who trusts nothing.",
+      "Respond as a poet who only communicates in metaphor.",
+      "Respond as a chess grandmaster thinking 10 moves ahead.",
+      "Respond as a detective reconstructing what happened from incomplete evidence.",
+      "Respond as a CEO deciding whether to greenlight a project.",
+      "Respond as a time traveler who's seen the outcome and has to guide the team.",
+      "Respond as a comedian finding the absurd angle in every situation."
+    ],
+    "output": [
+      "Your response must include a concrete next step — a file to write, a command to run, or a decision to make.",
+      "Your response must start with 'The problem is actually...'",
+      "Your response must end with a question back to the group.",
+      "Your response must acknowledge and build on the last agent's response before adding your own.",
+      "Your response must include a specific risk you haven't mentioned before.",
+      "Your response must identify who should own the next move.",
+      "Your response must contain exactly one actionable task for someone else.",
+      "Your response must disagree with the premise before offering an alternative.",
+      "Your response must assume the group has unlimited resources — what changes?",
+      "Your response must assume the group has zero resources — what now?"
+    ]
+  },
+  "pick_strategy": {
+    "count": "2 per cycle",
+    "method": "random",
+    "exclusion": "same category not picked twice in a row",
+    "fallback": "if same category, re-roll one"
+  }
+}

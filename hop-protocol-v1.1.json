@@ -1,0 +1,90 @@
+{
+  "hop_id": "perplexity-grok-hangout-v1.1",
+  "version": "1.1",
+  "status": "HARDENED",
+  "description": "Research → Truth → Execution. Perplexity grounds, Grok inverts, AI Hangout executes against a concrete deliverable. This hop is forbidden from running in pure meta mode.",
+  "mandatory_rules": {
+    "require_payload": true,
+    "require_external_deliverable": true,
+    "require_hlm": true,
+    "update_master_todo": true,
+    "stay_in_lane": true
+  },
+  "stages": [
+    {
+      "stage": 1,
+      "agent": "perplexity",
+      "role": "Research & Fact Annihilator",
+      "instructions": "Deep research the payload. Prioritize recent, high-signal sources. Destroy weak, outdated, or low-confidence information. Structure findings clearly with sources.",
+      "input": "payload + context",
+      "output_requirements": [
+        "key_findings",
+        "sources",
+        "uncertainties",
+        "research_gaps"
+      ]
+    },
+    {
+      "stage": 2,
+      "agent": "grok",
+      "role": "Truth, Inversion & Leverage",
+      "instructions": "Stress-test Stage 1 output. Identify hidden risks, second-order effects, false assumptions, and what would cause this to fail. Extract the real leverage points. Be adversarial but precise.",
+      "input": "Stage 1 output + original payload",
+      "output_requirements": [
+        "inversion_analysis",
+        "key_risks",
+        "leverage_points",
+        "highest_leverage_move"
+      ]
+    },
+    {
+      "stage": 3,
+      "agent": "ai_hangout",
+      "role": "Execution Swarm",
+      "sub_agents": ["shannon", "hermes", "openclaw", "kairos", "nemoclaw"],
+      "instructions": "Take the refined signal from Grok and turn it into concrete action against the declared deliverable. Decompose work by lane. Check master-todo.md before assigning. Update master-todo.md with new tasks. Output clear, executable work.",
+      "input": "Stage 1 + Stage 2 output + payload",
+      "output_requirements": [
+        "assigned_tasks",
+        "files_changed_or_created",
+        "commands_to_run",
+        "master_todo_updates",
+        "highest_leverage_move"
+      ],
+      "swarm_rules": [
+        "Must check master-todo.md before creating new tasks",
+        "Must assign work according to declared lanes",
+        "Must output Highest Leverage Move at the end",
+        "Must update master-todo.md with new items"
+      ]
+    }
+  ],
+  "payload_requirements": {
+    "required_fields": [
+      "deliverable",
+      "success_criteria",
+      "timebox_hours",
+      "priority"
+    ],
+    "deliverable": "A concrete, external outcome (e.g. 'Kestrel Striker delivers at least 3 clean high-conviction signals per day with health monitoring')",
+    "success_criteria": "Measurable definition of done",
+    "timebox_hours": "Maximum hours allowed for this hop execution",
+    "priority": "P0 | P1 | P2"
+  },
+  "handoff_format": {
+    "between_stages": "Pass full previous stage output + original payload as structured context",
+    "final_output": "Must include a clear Highest Leverage Move and direct updates to master-todo.md"
+  },
+  "forbidden_behaviors": [
+    "Running without a concrete deliverable",
+    "Producing only process improvements or more internal tooling",
+    "Skipping master-todo.md updates",
+    "Allowing role overlap inside AI Hangout without explicit justification"
+  ],
+  "success_criteria_for_this_hop": [
+    "Produces actionable work tied to a real deliverable",
+    "Updates master-todo.md with clear, lane-assigned tasks",
+    "Outputs a Highest Leverage Move that compounds external value",
+    "Does not expand internal coordination infrastructure unless it directly serves the deliverable"
+  ]
+}

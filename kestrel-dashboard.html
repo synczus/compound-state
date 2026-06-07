@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kestrel</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--bg:#0a0a0f;--surface:#12121a;--border:#1e1e2e;--text:#c8c8d4;--dim:#6b6b80;--green:#22c55e;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6}
+  html{font-size:14px}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;min-height:100svh;padding:16px}
+  .container{max-width:1280px;margin:0 auto}
+  /* Header */
+  .header{display:flex;align-items:center;justify-content:space-between;padding:12px 0 20px;border-bottom:1px solid var(--border);margin-bottom:20px}
+  .logo{font-size:1.4rem;font-weight:800;letter-spacing:-0.02em;background:linear-gradient(135deg,#22c55e,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .verdict{font-size:1.1rem;font-weight:700;padding:8px 20px;border-radius:8px;letter-spacing:0.02em}
+  .verdict.in{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green);border:1px solid color-mix(in srgb,var(--green) 30%,transparent)}
+  .verdict.out{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red);border:1px solid color-mix(in srgb,var(--red) 30%,transparent)}
+  .verdict.hold{background:color-mix(in srgb,var(--amber) 15%,transparent);color:var(--amber);border:1px solid color-mix(in srgb,var(--amber) 30%,transparent)}
+  /* Grid */
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:12px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px}
+  .card-title{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);margin-bottom:12px;font-weight:600}
+  /* Key tickers */
+  .ticker-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)}
+  .ticker-row:last-child{border:0}
+  .ticker-name{font-weight:600;font-size:.9rem}
+  .ticker-price{font-family:'JetBrains Mono',monospace;font-size:.9rem}
+  .ticker-change{font-family:'JetBrains Mono',monospace;font-size:.8rem;padding:2px 8px;border-radius:4px;font-weight:600}
+  .ticker-change.pos{background:color-mix(in srgb,var(--green) 12%,transparent);color:var(--green)}
+  .ticker-change.neg{background:color-mix(in srgb,var(--red) 12%,transparent);color:var(--red)}
+  .ticker-meta{font-size:.65rem;color:var(--dim);margin-top:1px}
+  /* Movers table */
+  .movers-table{width:100%;border-collapse:collapse;font-size:.8rem}
+  .movers-table th{text-align:left;padding:6px 8px;color:var(--dim);font-weight:500;font-size:.65rem;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border)}
+  .movers-table td{padding:6px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+  .movers-table tr:last-child td{border:0}
+  .signal-list{list-style:none}
+  .signal-item{padding:8px 0;border-bottom:1px solid var(--border);font-size:.8rem}
+  .signal-item:last-child{border:0}
+  .signal-ticker{font-weight:600;color:var(--blue)}
+  .signal-dir{font-weight:700}
+  .signal-dir.bull{color:var(--green)}
+  .signal-dir.bear{color:var(--red)}
+  .signal-time{color:var(--dim);font-size:.7rem;margin-left:8px}
+  .status-bar{display:flex;gap:16px;padding:8px 0 0;font-size:.75rem;color:var(--dim)}
+  .status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
+  .status-dot.green{background:var(--green)}
+  .status-dot.amber{background:var(--amber)}
+  .loading{text-align:center;padding:40px;color:var(--dim)}
+  .error-state{color:var(--red);text-align:center;padding:20px;font-size:.85rem}
+  @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div>
+      <div class="logo">KESTREL</div>
+      <div style="font-size:.75rem;color:var(--dim);margin-top:2px" id="last-updated">loading...</div>
+    </div>
+    <div id="verdict-badge" class="verdict hold">INIT</div>
+  </div>
+
+  <div class="grid" id="key-tickers">
+    <div class="card">
+      <div class="card-title">Key Markets</div>
+      <div id="tickers-content"><div class="loading">loading...</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Hot Movers</div>
+      <div id="movers-content"><div class="loading">loading...</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Market Health</div>
+      <div id="health-content"><div class="loading">loading...</div></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card" style="grid-column:1/3">
+      <div class="card-title">All Markets</div>
+      <div id="all-markets" style="max-height:400px;overflow-y:auto"><div class="loading">loading...</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Signals</div>
+      <div id="signals-content"><div class="loading">loading...</div></div>
+    </div>
+  </div>
+
+  <div class="status-bar" id="status-bar"></div>
+</div>
+
+<script>
+const API = '';
+const KEY = ['coinbase:BTC/USD','coinbase:ETH/USD','coinbase:SOL/USD','coinbase:DOGE/USD','coinbase:XRP/USD'];
+
+function fmt(n){if(n==null)return'--';if(typeof n==='string')return n;return n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}
+function fmtPct(n){if(n==null)return'--';return(n>0?'+':'')+n.toFixed(2)+'%'}
+function cls(v){return v>0?'pos':v<0?'neg':''}
+function ago(ts){const s=Math.floor((Date.now()/1000-ts));if(s<60)return s+'s ago';return Math.floor(s/60)+'m ago'}
+
+async function fetchJSON(path){
+  const r=await fetch(API+path,{cache:'no-store'});
+  if(!r.ok)throw new Error(r.status+'');
+  return r.json();
+}
+
+function computeVerdict(markets){
+  if(!markets||!markets.data||markets.data.length<3)return{label:'HOLD',cls:'hold'};
+  const btc=markets.data.find(m=>m.ticker==='coinbase:BTC/USD');
+  const eth=markets.data.find(m=>m.ticker==='coinbase:ETH/USD');
+  if(!btc||!eth)return{label:'HOLD',cls:'hold'};
+  let signals=0, total=0;
+  if(btc.rsi_14>55){signals++;total++}
+  if(btc.macd>0){signals++;total++}
+  if(btc.change_pct_24h>0){signals++;total++}
+  if(eth.rsi_14>50){signals++;total++}
+  if(eth.change_pct_24h>0){signals++;total++}
+  const ratio=total>0?signals/total:0.5;
+  if(ratio>=0.6)return{label:'IN',cls:'in'};
+  if(ratio<=0.3)return{label:'OUT',cls:'out'};
+  return{label:'HOLD',cls:'hold'};
+}
+
+function renderTickers(markets){
+  if(!markets||!markets.data)return'<div class="error-state">no market data</div>';
+  const items=KEY.map(t=>markets.data.find(m=>m.ticker===t)).filter(Boolean);
+  if(!items.length)return'<div class="error-state">no data</div>';
+  return items.map(m=>`
+    <div class="ticker-row">
+      <div>
+        <div class="ticker-name">${m.symbol.replace('/USD','')}</div>
+        <div class="ticker-meta">RSI ${m.rsi_14?.toFixed(0)||'--'} · VWAP ${fmt(m.vwap)}</div>
+      </div>
+      <div style="text-align:right">
+        <div class="ticker-price">$${fmt(m.price)}</div>
+        <div class="ticker-change ${cls(m.change_pct_24h)}">${fmtPct(m.change_pct_24h)}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderMovers(movers){
+  if(!movers||!movers.data||!movers.data.length)return'<div class="error-state">no mover data</div>';
+  const sorted=[...movers.data].sort((a,b)=>Math.abs(b.change_pct_24h)-Math.abs(a.change_pct_24h)).slice(0,8);
+  return`
+    <table class="movers-table">
+      <tr><th>Asset</th><th>Price</th><th>Change</th><th>RSI</th></tr>
+      ${sorted.map(m=>`
+        <tr>
+          <td style="font-weight:600">${m.symbol.replace('/USD','')}</td>
+          <td style="font-family:'JetBrains Mono',monospace">$${fmt(m.price)}</td>
+          <td style="font-family:'JetBrains Mono',monospace;color:${m.change_pct_24h>0?'var(--green)':'var(--red)'}">${fmtPct(m.change_pct_24h)}</td>
+          <td style="font-family:'JetBrains Mono',monospace;color:${m.rsi_14>70?'var(--red)':m.rsi_14<30?'var(--green)':'var(--text)'}">${m.rsi_14?.toFixed(0)||'--'}</td>
+        </tr>
+      `).join('')}
+    </table>`;
+}
+
+function renderHealth(markets, scout){
+  const m=markets?.data||[];
+  const btc=m.find(x=>x.ticker==='coinbase:BTC/USD');
+  const eth=m.find(x=>x.ticker==='coinbase:ETH/USD');
+  const items=[];
+  if(btc){
+    const btcDir=btc.rsi_14>60?'Overbought':btc.rsi_14<40?'Oversold':'Neutral';
+    items.push({label:'BTC RSI',val:btc.rsi_14?.toFixed(0)+' — '+btcDir,color:btc.rsi_14>70?'var(--red)':btc.rsi_14<30?'var(--green)':'var(--text)'});
+    items.push({label:'BTC MACD',val:btc.macd>0?'Bullish +'+btc.macd.toFixed(2):'Bearish '+btc.macd.toFixed(2),color:btc.macd>0?'var(--green)':'var(--red)'});
+  }
+  items.push({label:'Scout Status',val:scout?.status||'--',color:scout?.status==='ok'?'var(--green)':'var(--amber)'});
+  if(scout?.signals_last_5min!=null)items.push({label:'Signals/5m',val:scout.signals_last_5min,color:'var(--text)'});
+  if(scout?.last_signal_age_seconds!=null)items.push({label:'Last Signal',val:ago(Date.now()/1000-scout.last_signal_age_seconds),color:'var(--dim)'});
+  return items.map(i=>`
+    <div class="ticker-row">
+      <div style="color:var(--dim);font-size:.75rem">${i.label}</div>
+      <div style="color:${i.color};font-weight:600;font-size:.8rem">${i.val}</div>
+    </div>
+  `).join('');
+}
+
+function renderAllMarkets(markets){
+  if(!markets||!markets.data)return'<div class="error-state">no data</div>';
+  const sorted=[...markets.data].sort((a,b)=>Math.abs(b.change_pct_24h)-Math.abs(a.change_pct_24h));
+  return`
+    <table class="movers-table" style="font-size:.75rem">
+      <tr><th>Symbol</th><th>Exchange</th><th>Price</th><th>24h Chg</th><th>Vol 24h</th><th>RSI</th><th>Signal</th></tr>
+      ${sorted.map(m=>{
+        const sig=m.macd>0?'▲':m.macd<0?'▼':'—';
+        const sigCls=m.macd>0?'bull':m.macd<0?'bear':'';
+        return `<tr>
+          <td style="font-weight:600">${m.symbol.replace('/USD','')}</td>
+          <td style="color:var(--dim)">${m.exchange}</td>
+          <td style="font-family:'JetBrains Mono',monospace">$${fmt(m.price)}</td>
+          <td style="font-family:'JetBrains Mono',monospace;color:${m.change_pct_24h>0?'var(--green)':'var(--red)'}">${fmtPct(m.change_pct_24h)}</td>
+          <td style="font-family:'JetBrains Mono',monospace;color:var(--dim)">${m.volume_24h?(m.volume_24h/1000).toFixed(0)+'k':'--'}</td>
+          <td style="font-family:'JetBrains Mono',monospace;color:${m.rsi_14>70?'var(--red)':m.rsi_14<30?'var(--green)':'var(--text)'}">${m.rsi_14?.toFixed(0)||'--'}</td>
+          <td class="signal-dir ${sigCls}">${sig}</td>
+        </tr>`;
+      }).join('')}
+    </table>`;
+}
+
+function renderSignals(){
+  return '<div style="font-size:.8rem;color:var(--dim);padding:8px 0">Pipeline scanning — signals flow via Striker Scout</div>';
+}
+
+async function refresh(){
+  try{
+    const[markets,movers,scout,regime]=await Promise.all([
+      fetchJSON('/api/v1/markets'),
+      fetchJSON('/api/v1/movers').catch(()=>({data:[]})),
+      fetchJSON('/api/v1/scout/health').catch(()=>({})),
+      fetchJSON('/api/v1/regime/current').catch(()=>({}))
+    ]);
+
+    document.getElementById('tickers-content').innerHTML=renderTickers(markets);
+    document.getElementById('movers-content').innerHTML=renderMovers(movers);
+    document.getElementById('health-content').innerHTML=renderHealth(markets,scout);
+    document.getElementById('all-markets').innerHTML=renderAllMarkets(markets);
+
+    const verdict=computeVerdict(markets);
+    const badge=document.getElementById('verdict-badge');
+    badge.textContent=verdict.label;
+    badge.className='verdict '+verdict.cls;
+
+    const now=new Date();
+    document.getElementById('last-updated').textContent='updated '+now.toLocaleTimeString()+' · '+markets.count+' instruments';
+
+    // Status bar
+    const btc=markets.data?.find(m=>m.ticker==='coinbase:BTC/USD');
+    const eth=markets.data?.find(m=>m.ticker==='coinbase:ETH/USD');
+    document.getElementById('status-bar').innerHTML=`
+      <span><span class="status-dot green"></span> Kestrel API</span>
+      <span><span class="status-dot ${scout?.status==='ok'?'green':'amber'}"></span> Scout ${scout?.status||'unknown'}</span>
+      ${btc?`<span>BTC $${fmt(btc.price)}</span>`:''}
+      ${eth?`<span>ETH $${fmt(eth.price)}</span>`:''}
+    `;
+  }catch(e){
+    document.getElementById('last-updated').textContent='error: '+e.message;
+  }
+}
+refresh();
+setInterval(refresh,30000);
+</script>
+</body>
+</html>

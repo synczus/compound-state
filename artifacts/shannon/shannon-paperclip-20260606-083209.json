@@ -1,0 +1,281 @@
+{
+  "started_at": "2026-06-06T08:32:09.738923+00:00",
+  "config": {
+    "concurrency_levels": [
+      1,
+      2
+    ],
+    "max_chain_runs": 3,
+    "paperclip_concurrency": 12,
+    "paperclip_rounds": 3
+  },
+  "model_map": {
+    "codex": "google/gemini-2.5-flash-lite",
+    "hermes": "google/gemini-2.5-flash-lite",
+    "grounding": "perplexity/sonar-pro",
+    "architect": "google/gemini-2.5-flash-lite",
+    "polish": "deepseek/deepseek-chat-v3-0324",
+    "critic": "deepseek/deepseek-v4-flash",
+    "gate": "anthropic/claude-sonnet-4.6",
+    "squirrel": "google/gemini-2.5-flash-lite"
+  },
+  "baseline": {
+    "timestamp": "2026-06-06T08:31:10.524363+00:00",
+    "memory_used_gb": 18.0,
+    "memory_total_gb": 31.0,
+    "memory_pct": 58.0,
+    "disk_used_gb": 282,
+    "disk_total_gb": 462,
+    "disk_pct": 65,
+    "striker_running": true,
+    "load_1m": 4.01,
+    "load_5m": 3.73,
+    "load_15m": 3.53
+  },
+  "autohop_chain": [
+    {
+      "requested_concurrency": 1,
+      "actual_concurrency": 1,
+      "batch_wall_ms": 0,
+      "avg_latency_ms": 0,
+      "max_latency_ms": 0,
+      "successes": 1,
+      "failures": 0,
+      "statuses": [
+        "NOISE_GATE_REJECTED"
+      ],
+      "details": [
+        {
+          "index": 0,
+          "elapsed_ms": 0,
+          "hops": 0,
+          "final_status": "NOISE_GATE_REJECTED",
+          "final_agent": "noise_gate",
+          "success": true,
+          "errors": []
+        }
+      ],
+      "before": {
+        "timestamp": "2026-06-06T08:31:10.540856+00:00",
+        "memory_used_gb": 18.0,
+        "memory_total_gb": 31.0,
+        "memory_pct": 58.0,
+        "disk_used_gb": 282,
+        "disk_total_gb": 462,
+        "disk_pct": 65,
+        "striker_running": true,
+        "load_1m": 4.01,
+        "load_5m": 3.73,
+        "load_15m": 3.53
+      },
+      "after": {
+        "timestamp": "2026-06-06T08:31:10.558879+00:00",
+        "memory_used_gb": 18.0,
+        "memory_total_gb": 31.0,
+        "memory_pct": 58.0,
+        "disk_used_gb": 282,
+        "disk_total_gb": 462,
+        "disk_pct": 65,
+        "striker_running": true,
+        "load_1m": 4.01,
+        "load_5m": 3.73,
+        "load_15m": 3.53
+      }
+    },
+    {
+      "requested_concurrency": 2,
+      "actual_concurrency": 2,
+      "batch_wall_ms": 54600,
+      "avg_latency_ms": 27300,
+      "max_latency_ms": 54600,
+      "successes": 2,
+      "failures": 0,
+      "statuses": [
+        "NOISE_GATE_REJECTED",
+        "TERMINATE_SHIP"
+      ],
+      "details": [
+        {
+          "index": 1,
+          "elapsed_ms": 0,
+          "hops": 0,
+          "final_status": "NOISE_GATE_REJECTED",
+          "final_agent": "noise_gate",
+          "success": true,
+          "errors": []
+        },
+        {
+          "index": 2,
+          "elapsed_ms": 54600,
+          "hops": 7,
+          "final_status": "TERMINATE_SHIP",
+          "final_agent": "gate",
+          "success": true,
+          "errors": []
+        }
+      ],
+      "before": {
+        "timestamp": "2026-06-06T08:31:12.576795+00:00",
+        "memory_used_gb": 18.0,
+        "memory_total_gb": 31.0,
+        "memory_pct": 58.0,
+        "disk_used_gb": 282,
+        "disk_total_gb": 462,
+        "disk_pct": 65,
+        "striker_running": true,
+        "load_1m": 4.25,
+        "load_5m": 3.79,
+        "load_15m": 3.55
+      },
+      "after": {
+        "timestamp": "2026-06-06T08:32:07.193702+00:00",
+        "memory_used_gb": 18.1,
+        "memory_total_gb": 31.0,
+        "memory_pct": 58.3,
+        "disk_used_gb": 282,
+        "disk_total_gb": 462,
+        "disk_pct": 65,
+        "striker_running": true,
+        "load_1m": 4.41,
+        "load_5m": 3.89,
+        "load_15m": 3.6
+      }
+    }
+  ],
+  "paperclip_api": {
+    "concurrency": 12,
+    "rounds": 3,
+    "requests": 36,
+    "successes": 36,
+    "failures": 0,
+    "avg_latency_ms": 47,
+    "max_latency_ms": 133,
+    "wall_ms": 171,
+    "errors": [],
+    "before": {
+      "timestamp": "2026-06-06T08:32:09.212224+00:00",
+      "memory_used_gb": 18.1,
+      "memory_total_gb": 31.0,
+      "memory_pct": 58.6,
+      "disk_used_gb": 282,
+      "disk_total_gb": 462,
+      "disk_pct": 65,
+      "striker_running": true,
+      "load_1m": 4.41,
+      "load_5m": 3.89,
+      "load_15m": 3.6
+    },
+    "after": {
+      "timestamp": "2026-06-06T08:32:09.399698+00:00",
+      "memory_used_gb": 18.1,
+      "memory_total_gb": 31.0,
+      "memory_pct": 58.6,
+      "disk_used_gb": 282,
+      "disk_total_gb": 462,
+      "disk_pct": 65,
+      "striker_running": true,
+      "load_1m": 4.41,
+      "load_5m": 3.89,
+      "load_15m": 3.6
+    }
+  },
+  "kestrel_signal_queue": {
+    "probe_results": [
+      {
+        "path": "http://127.0.0.1:8000/",
+        "status": 429,
+        "elapsed_ms": 0,
+        "ok": false,
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      {
+        "path": "http://127.0.0.1:8000/health",
+        "status": 429,
+        "elapsed_ms": 0,
+        "ok": false,
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      {
+        "path": "http://127.0.0.1:8000/api/v1/health",
+        "status": 429,
+        "elapsed_ms": 0,
+        "ok": false,
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      {
+        "path": "http://127.0.0.1:8000/api/signals",
+        "status": 429,
+        "elapsed_ms": 0,
+        "ok": false,
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      {
+        "path": "http://127.0.0.1:8000/api/signals",
+        "status": 429,
+        "elapsed_ms": 0,
+        "ok": false,
+        "error": "HTTP Error 429: Too Many Requests"
+      }
+    ],
+    "queue_endpoint_live": false
+  },
+  "watchdogs": {
+    "service-watchdog": {
+      "exit_code": 0,
+      "elapsed_ms": 67,
+      "fired": true,
+      "output": "\ud83d\udee1\ufe0f  SERVICE ALERT \u2014 04:32\n\ud83d\udd34 Kestrel API (:8000) not responding"
+    },
+    "pipeline-watchdog": {
+      "exit_code": 1,
+      "elapsed_ms": 108,
+      "fired": false,
+      "output": ""
+    },
+    "system-hygiene": {
+      "exit_code": 1,
+      "elapsed_ms": 105,
+      "fired": false,
+      "output": ""
+    },
+    "striker-watchdog": {
+      "exit_code": 1,
+      "elapsed_ms": 23,
+      "fired": false,
+      "output": ""
+    }
+  },
+  "final_health": {
+    "timestamp": "2026-06-06T08:32:09.723145+00:00",
+    "memory_used_gb": 18.1,
+    "memory_total_gb": 31.0,
+    "memory_pct": 58.6,
+    "disk_used_gb": 282,
+    "disk_total_gb": 462,
+    "disk_pct": 65,
+    "striker_running": true,
+    "load_1m": 4.41,
+    "load_5m": 3.89,
+    "load_15m": 3.6
+  },
+  "analysis": {
+    "breaking_points": [
+      "Kestrel signal queue injection endpoint is not live: /api/signals returned non-2xx",
+      "Watchdogs fired: service-watchdog"
+    ],
+    "bottlenecks": [],
+    "optimizations": [
+      "Add a cheap AutoHOP mode: skip Perplexity grounding unless task is research/current-facts/high-stakes.",
+      "Separate Paperclip API pressure tests from agent heartbeat wakes; heartbeat concurrency burns OpenRouter budget fast.",
+      "Expose a real Kestrel queue/intake test endpoint or update stress docs to target the live /api/v1 surface.",
+      "Keep Gate default-ship, but log every Gate route-back with model, reason, and prior hop chain for audit.",
+      "Install real cron/systemd coverage for service-watchdog and pipeline-watchdog; local crontab currently only shows striker_watchdog."
+    ],
+    "estimated_cost_usd": 0.036,
+    "total_chain_runs": 3
+  },
+  "artifact_paths": {
+    "json_report": "/home/synczus/kestrel/artifacts/shannon/shannon-paperclip-20260606-083209.json",
+    "pulse": "/home/synczus/huntsystems/agent-pulses/2026-06-06/codex-operator__20260606-083209__shannon-paperclip-redline.md"
+  }
+}

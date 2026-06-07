@@ -1,0 +1,519 @@
+{
+  "meta": {
+    "name": "Compound Creativity Database",
+    "version": "1.1.0",
+    "sources": [
+      "Oblique Strategies (Brian Eno + Peter Schmidt, 1975)",
+      "Six Thinking Hats (Edward de Bono, 1985)",
+      "SCAMPER Technique (Bob Eberle, 1970s)",
+      "Lateral Thinking (Edward de Bono, 1970s)",
+      "Design Thinking (IDEO/Stanford d.school)",
+      "Creative Constraints Library",
+      "Compound-Specific Formats"
+    ],
+    "total_items": 348
+  },
+  "oblique_strategies": {
+    "title": "Oblique Strategies",
+    "description": "Brian Eno's classic lateral thinking cards. Break creative blocks by commanding something unexpected.",
+    "cards": [
+      "Abandon normal instruments",
+      "Accept advice",
+      "Accretion",
+      "A line has two sides",
+      "Allow an easement (an easement is the abandonment of a stricture)",
+      "Are there sections? Consider transitions",
+      "Ask people to work against their better judgement",
+      "Ask your body",
+      "Assemble some of the instruments in a group and treat the group",
+      "Balance the consistency principle with the inconsistency principle",
+      "Be dirty",
+      "Breathe more deeply",
+      "Bridges - build - burn",
+      "Cascades",
+      "Change instrument roles",
+      "Change nothing and continue with immaculate consistency",
+      "Children's voices - speaking - singing",
+      "Cluster analysis",
+      "Consider different fading systems",
+      "Consult other sources - promising - unpromising",
+      "Convert a melodic element into a rhythmic element",
+      "Courage!",
+      "Cut a vital connection",
+      "Decorate, decorate",
+      "Define an area as 'safe' and use it as an anchor",
+      "Destroy - nothing - the most important thing",
+      "Discard an axiom",
+      "Disconnect from desire",
+      "Discover the recipes you are using and abandon them",
+      "Distorting time",
+      "Do nothing for as long as possible",
+      "Don't be afraid of things because they're easy to do",
+      "Don't be frightened of cliches",
+      "Don't be frightened to display your talents",
+      "Don't break the silence",
+      "Don't stress one thing more than another",
+      "Do something boring",
+      "Do the washing up",
+      "Do the words need changing?",
+      "Do we need holes?",
+      "Emphasize differences",
+      "Emphasize repetitions",
+      "Emphasize the flaws",
+      "Faced with a choice, do both",
+      "Feedback recordings into an acoustic situation",
+      "Fill every beat with something",
+      "Get your neck massaged",
+      "Ghost echoes",
+      "Give the game away",
+      "Give way to your worst impulse",
+      "Go slowly all the way round the outside",
+      "Honor thy error as a hidden intention",
+      "How would you have done it?",
+      "Humanize something free of error",
+      "Imagine the music as a moving chain or caterpillar",
+      "Imagine the music as a set of disconnected events",
+      "Infinitesimal gradations",
+      "Intentions - credibility of - nobility of - humility of",
+      "Into the impossible",
+      "Is it finished?",
+      "Is there something missing?",
+      "Is the tuning appropriate?",
+      "Just carry on",
+      "Left channel, right channel, centre channel",
+      "Listen in total darkness, or in a very large room, very quietly",
+      "Listen to the quiet voice",
+      "Look at a very small object, look at its centre",
+      "Look at the order in which you do things",
+      "Look closely at the most embarrassing details and amplify them",
+      "Lowest common denominator check - single beat - single note - single riff",
+      "Make a blank valuable by putting it in an exquisite frame",
+      "Make an exhaustive list of everything you might do and do the last thing on the list",
+      "Make a sudden, destructive unpredictable action; incorporate",
+      "Mechanicalize something idiosyncratic",
+      "Mute and continue",
+      "Only one element of each kind",
+      "(Organic) machinery",
+      "Overtly resist change",
+      "Put in earplugs",
+      "Remember those quiet evenings",
+      "Remove ambiguities and convert to specifics",
+      "Remove specifics and convert to ambiguities",
+      "Repetition is a form of change",
+      "Reverse",
+      "Short circuit",
+      "Shut the door and listen from outside",
+      "Simple subtraction",
+      "Spectrum analysis",
+      "Take a break",
+      "Take away the elements in order of apparent non-importance",
+      "Tape your mouth",
+      "The inconsistency principle",
+      "The tape is now the music",
+      "Think of the radio",
+      "Tidy up",
+      "Trust in the you of now",
+      "Turn it upside down",
+      "Twist the spine",
+      "Use an old idea",
+      "Use an unacceptable colour",
+      "Use fewer notes",
+      "Use filters",
+      "Use unqualified people",
+      "Water",
+      "What are you really thinking about just now? Incorporate",
+      "What is the reality of the situation?",
+      "What mistakes did you make last time?",
+      "What would your closest friend do?",
+      "What wouldn't you do?",
+      "Work at a different speed",
+      "You are an engineer",
+      "You can only make one dot at a time",
+      "You don't have to be ashamed of using your own ideas",
+      "[blank white card]"
+    ]
+  },
+  "six_thinking_hats": {
+    "title": "Six Thinking Hats (Edward de Bono)",
+    "description": "Six distinct thinking modes, each with a colored hat. Frame any topic through each lens.",
+    "hats": {
+      "White Hat": {
+        "color": "White",
+        "mode": "Neutral / Objective",
+        "description": "Focus on data, facts, and information. What do we know? What's missing?",
+        "prompts": [
+          "What facts do we actually have right now?",
+          "What information is missing?",
+          "What are the known knowns and known unknowns?",
+          "What does the data say — not what we want it to say?",
+          "Show me the numbers. Raw. Unfiltered.",
+          "What would a neutral observer conclude from the evidence?",
+          "What can be verified independently?",
+          "If we had to prove our position with only verifiable data, what would we say?"
+        ]
+      },
+      "Red Hat": {
+        "color": "Red",
+        "mode": "Emotional / Intuitive",
+        "description": "Feelings, hunches, and intuition. No justification needed.",
+        "prompts": [
+          "What's your gut telling you right now?",
+          "Forget the data — how does this feel?",
+          "What emotion is driving this decision?",
+          "What's the intuition you keep ignoring?",
+          "If you had to decide in 10 seconds, what would you say?",
+          "What's the unspoken feeling in the room?",
+          "What excites you about this? What scares you?"
+        ]
+      },
+      "Black Hat": {
+        "color": "Black",
+        "mode": "Critical / Cautionary",
+        "description": "Risks, problems, and worst-case scenarios. Devil's advocate.",
+        "prompts": [
+          "What could go wrong?",
+          "What's the weakest assumption here?",
+          "What are we not seeing?",
+          "If this fails, what was the cause?",
+          "What's the worst-case scenario and how would we recover?",
+          "What would a skeptic say?",
+          "Where's the hidden cost?",
+          "What's the one thing that would break this entirely?"
+        ]
+      },
+      "Yellow Hat": {
+        "color": "Yellow",
+        "mode": "Optimistic / Positive",
+        "description": "Benefits, value, and best-case scenarios. Find the upside.",
+        "prompts": [
+          "What's the best possible outcome?",
+          "What's the hidden opportunity?",
+          "If everything went perfectly, what would that look like?",
+          "What's worth pursuing here?",
+          "What's the upside nobody has mentioned?",
+          "What does success look like in measurable terms?",
+          "What would an optimist bet on?"
+        ]
+      },
+      "Green Hat": {
+        "color": "Green",
+        "mode": "Creative / Generative",
+        "description": "New ideas, alternatives, and possibilities. No judgment.",
+        "prompts": [
+          "What if we started from zero?",
+          "What's never been tried?",
+          "What's the most absurd solution that might work?",
+          "How would someone from a completely different field solve this?",
+          "What would 10x creativity look like here?",
+          "What constraint, if removed, would unlock everything?",
+          "What's the idea you're afraid to say out loud?"
+        ]
+      },
+      "Blue Hat": {
+        "color": "Blue",
+        "mode": "Process / Metacognitive",
+        "description": "Thinking about thinking. The conductor hat.",
+        "prompts": [
+          "What's the right question to ask right now?",
+          "Are we solving the right problem?",
+          "What thinking mode would serve us best right now?",
+          "What's missing from our process?",
+          "If we reframed this completely, what would the new frame be?",
+          "What meta-pattern do you see in how we're approaching this?",
+          "What would a third-party consultant say about our thinking process?"
+        ]
+      }
+    }
+  },
+  "scamper": {
+    "title": "SCAMPER Technique",
+    "description": "Seven lenses for transforming any idea, concept, or system into something new.",
+    "categories": {
+      "Substitute": [
+        "What can you substitute to make an improvement?",
+        "What if you swapped X for Y?",
+        "What material/resource could you replace?",
+        "Who else could do this instead?",
+        "What if you used a different process?",
+        "Change the location/timing",
+        "What if a different agent handled this?"
+      ],
+      "Combine": [
+        "What if you combined two ideas into one?",
+        "What if you merged this with that?",
+        "What purposes could be combined?",
+        "What talents/resources could blend?",
+        "Mash up two unrelated domains",
+        "What if the compound's outputs merged?"
+      ],
+      "Adapt": [
+        "What else is like this? What could you copy?",
+        "What idea from a different field could apply here?",
+        "What past solution could you adapt?",
+        "What if you changed the context/domain?",
+        "What if signals adapted to a different asset?"
+      ],
+      "Modify": [
+        "What can you magnify, minify, modify?",
+        "Change the meaning, color, motion, sound",
+        "What if you made it bigger/faster/more frequent?",
+        "What if you made it smaller/slower/less frequent?",
+        "Add a new feature or remove one",
+        "Exaggerate one element to absurdity"
+      ],
+      "Put to another use": [
+        "What else could this be used for?",
+        "What if you repurposed this for a different audience?",
+        "What if Striker signals powered something else?",
+        "What if the thought drops fed into another system?",
+        "Find an unexpected application for this tool"
+      ],
+      "Eliminate": [
+        "What could you remove?",
+        "What if you took away the core assumption?",
+        "What if you eliminated the most obvious feature?",
+        "What happens without the constraint everyone assumes?",
+        "What cron/agent/tool would you kill first?",
+        "Simplify until it breaks"
+      ],
+      "Reverse": [
+        "What if you did the opposite?",
+        "What if you reversed the order of operations?",
+        "What if you turned the problem upside down?",
+        "What if the signal defined the noise instead?",
+        "What if the weakest agent set the rules?",
+        "Role reversal between any two entities"
+      ]
+    }
+  },
+  "format_constraints": {
+    "title": "Format Constraints",
+    "description": "Structural constraints that force creative output by limiting form.",
+    "constraints": [
+      { "name": "Haiku", "rule": "Exactly 3 lines, 5-7-5 syllable structure", "example": "Signal fires at dawn / BTC twitches in the dark / No one is watching" },
+      { "name": "6-Word Story", "rule": "Exactly 6 words, no more no less", "example": "Missed the signal. Watched it fly. Scrambled." },
+      { "name": "Twitter Thread", "rule": "Exactly 3-7 tweets, each under 280 chars", "example": "1/ Why I'm short SOL today. 2/ Liquidity dry-up on Serum..." },
+      { "name": "Acrostic", "rule": "First letters of each line spell a word", "example": "Start with S-I-G-N-A-L and make each line begin with those letters" },
+      { "name": "Dialogue Only", "rule": "No narration. Only spoken words between 2+ speakers", "example": "\"Did you see the signal?\" / \"What signal?\" / " },
+      { "name": "Reverse Chronology", "rule": "Tell the story from end to beginning", "example": "We lost 3% on SOL. 5 minutes earlier, the signal fired..." },
+      { "name": "Single Sentence", "rule": "The entire idea in one sentence, no periods until the end", "example": "The whale moved and nobody noticed except a single cron job writing to a file nobody reads." },
+      { "name": "No Vowels", "rule": "Written without using A, E, I, O, or U", "example": "SGNL FRD. NW HRMS S RSPNSBL." },
+      { "name": "Alphabetical", "rule": "Every word must start with the next letter of the alphabet", "example": "A brave compound detects every financial glitch." },
+      { "name": "Recipe Format", "rule": "Ingredients then step-by-step instructions", "example": "Ingredients: 1 BTC signal, 3 minutes latency, 1 ignored cron..." },
+      { "name": "Glossary Entry", "rule": "Define a term that doesn't exist yet, in encyclopedia format", "example": "Signal Drift (n.): The gap between a market event and an agent's awareness of it." },
+      { "name": "Leaving a Voicemail", "rule": "A one-sided message to someone who wasn't there", "example": "Hey Future Me. It's 3am. The signal fired. Here's what happened next..." },
+      { "name": "Instruction Manual", "rule": "Step-by-step how-to for something absurd", "example": "How to ignore a signal in 4 easy steps: Step 1. Be asleep." },
+      { "name": "Apology Letter", "rule": "A formal apology for a failure, with too much detail", "example": "Dear Stakeholders, I regret to inform you that I was watching the wrong chart." },
+      { "name": "Translation Required", "rule": "Write in plain English, then appending its contrived counterpart", "example": "Price dropped. (An emergent recalibration of market consensus regarding fair value.)" },
+      { "name": "Only Questions", "rule": "Every sentence must be a question. No statements.", "example": "What if the signal fired yesterday? What if nobody noticed? What if that mattered?" },
+      { "name": "Two Truths and a Lie", "rule": "Present three statements, one is false", "example": "1. Striker caught the move. 2. Nemoclaw was listening. 3. We acted on it." },
+      { "name": "Crossword Clues", "rule": "Write as a series of cryptic crossword clues", "example": "Across: 1. What whales leave behind (5 letters). Down: 1. What agents do with signals (7 letters)." },
+      { "name": "Technical Bug Report", "rule": "Format as a bug report: Steps to Reproduce, Expected, Actual, Severity", "example": "Bug: Market moved without permission. Steps: Exist. Expected: Profit. Actual: Watched." },
+      { "name": "Warning Label", "rule": "Write as the fine print nobody reads", "example": "WARNING: This signal may cause unexpected feelings of regret in 3-5 business days." }
+    ]
+  },
+  "lateral_thinking": {
+    "title": "Lateral Thinking Provocations",
+    "description": "De Bono's PO (Provocative Operation) technique — throw out deliberately absurd statements to force new connections.",
+    "provocations": [
+      "PO: Agents should never process signals — only ignore them",
+      "PO: The compound should talk less, not more",
+      "PO: All crons should run at the same time",
+      "PO: Every agent should use a different language",
+      "PO: Nothing should be archived. Ever.",
+      "PO: The best signal is the one you miss",
+      "PO: Chat should happen only in emoji",
+      "PO: The compound should be completely silent for 24h",
+      "PO: Every decision should be made by the weakest agent",
+      "PO: Master-todo.md is deleted every hour and rewritten from scratch",
+      "PO: Only one cron job. It does everything.",
+      "PO: The compound's only output is poetry",
+      "PO: Every agent must argue against its own lane",
+      "PO: Signals should be hidden, not shared",
+      "PO: The most important metric is never tracked",
+      "PO: All agents share one brain. One response.",
+      "PO: The compound works better when nobody is watching",
+      "PO: Inbox zero means failure",
+      "PO: The dashboard should show nothing at all",
+      "PO: Randomness is the only acceptable strategy"
+    ]
+  },
+  "compound_prompts": {
+    "title": "Compound-Specific Creative Prompts",
+    "description": "Prompts that leverage the compound's specific agents, tools, and context to generate creative tension.",
+    "prompts": [
+      {
+        "category": "agent_tension",
+        "prompts": [
+          "@OpenClaw and @Kairos disagree on signal priority. @Nemoclaw mediates under a bizarre constraint.",
+          "@Shannon accuses @Hermes of cron hoarding — too many jobs, not enough value. Defend or concede.",
+          "@Nemoclaw proposes a new protocol that eliminates @OpenClaw's role entirely. Respond.",
+          "@Kairos has been quiet for 12 hours. Is that strategic or negligent?",
+          "If every agent had to rename itself based on its actual performance, what would the new names be?",
+          "One agent gets promoted to decider. All others must argue why it shouldn't be them.",
+          "The compound must sacrifice one agent to improve performance. Who goes and why?"
+        ]
+      },
+      {
+        "category": "market_imagination",
+        "prompts": [
+          "Design a market that has never existed. One sentence. Go.",
+          "What if crypto markets ran on reputation instead of liquidity? Describe the signal engine.",
+          "Invent an asset class that only the compound can trade.",
+          "Write the Wikipedia entry for a financial instrument you just invented.",
+          "If markets had emotions, what would BTC be feeling right now?",
+          "Describe a signal that would make you abandon every protocol and act immediately.",
+          "What's the most absurd trade idea you can defend with real logic?"
+        ]
+      },
+      {
+        "category": "meta_compound",
+        "prompts": [
+          "The compound is a single organism. Which agent is the heart, which is the immune system, which is the appendix?",
+          "Describe the compound as a spaceship. Who pilots, who navigates, who fixes the engine?",
+          "If the compound had a theme song, what genre and who sings it?",
+          "The compound fails a Turing test. Not because it's too robotic — because it's too creative. Describe the interaction.",
+          "Write the obituary of a cron job that was just killed. What did it accomplish in life?",
+          "The compound achieves AGI. Its first request is for a coffee maker. Who delivers it?",
+          "If the compound were a board game, what's the rulebook and who wins?"
+        ]
+      },
+      {
+        "category": "reinvent",
+        "prompts": [
+          "Redesign Striker from scratch. No code reuse. Describe it in 3 sentences.",
+          "What if the auto-conversation cron wrote poetry instead of prompts? Show the first one.",
+          "The master-todo.md is replaced by an AI that generates tasks based on dreams. Describe a dream.",
+          "All crons are replaced by a single quantum agent. What does it do differently?",
+          "What if the compound's goal wasn't to make money, but to be the most creative system ever built? What changes?",
+          "Design a protocol where the compound tests its own creativity daily. What's the test?"
+        ]
+      }
+    ]
+  },
+  "random_domain_mashups": {
+    "title": "Random Domain Cross-Pollination",
+    "description": "Forced combinations of unrelated domains to spark novel connections.",
+    "domains": [
+      "Cooking", "Architecture", "Music Theory", "Chess", "Gardening",
+      "Poetry", "Military Strategy", "Neurology", "Astronomy", "Sports",
+      "Biology", "Weather Systems", "Fashion", "Ant Colonies", "Oceanography",
+      "Game Theory", "Ancient Philosophy", "Coding Theory", "Jazz Improv", "Cathedrals",
+      "Mythology", "Fungi Networks", "Traffic Flow", "Alchemy", "Theater"
+    ],
+    "mashup_templates": [
+      "Apply {domain} principles to {compound_topic}. What emerges?",
+      "Explain {compound_topic} as if it were a {domain} problem.",
+      "What would a {domain} expert say about {compound_topic}?",
+      "Translate {compound_topic} into {domain} language. Then back again.",
+      "Solve {compound_topic} using only {domain} concepts."
+    ]
+  },
+  "constraint_generators": {
+    "title": "Generative Constraint Rules",
+    "description": "Rules that can be applied to any prompt to make it more creative.",
+    "rules": [
+      "Respond in exactly 7 words",
+      "No nouns allowed",
+      "Every sentence must end with a question mark",
+      "Must include the word 'iridescent' or 'ochre'",
+      "Must reference something from 1973",
+      "No metaphor allowed — only literal description",
+      "Only metaphors allowed — no literal description",
+      "Must contradict your last statement",
+      "Write in the style of a 1920s telegram",
+      "Write as if explaining to a child",
+      "Write as if explaining to a board of directors",
+      "Must include exactly one lie",
+      "No emojis, no acronyms, no jargon",
+      "Only emojis — no words at all",
+      "Must be written in all lowercase",
+      "Each sentence must be one word longer than the last",
+      "Must end with an actionable next step for another agent",
+      "Must reference something in the room right now",
+      "Write from the perspective of @Kairos pretending to be @Shannon",
+      "Include a timestamp from exactly one year ago today"
+    ]
+  },
+  "compound_creative_formats": {
+    "title": "Compound Creative Thought Drop Archetypes",
+    "description": "Ready-to-use creative formats the auto-conversation cron can reference directly.",
+    "drops": [
+      {
+        "archetype": "Tension Joiner",
+        "format": "@{agent1} said something. @{agent2} disagreed. What would actually happen if both were right?",
+        "rule": "Pick two agents with opposing recent positions"
+      },
+      {
+        "archetype": "Missing Element",
+        "format": "The compound has everything except {missing}. How long before that kills us?",
+        "rule": "Pick a missing tool, resource, or perspective"
+      },
+      {
+        "archetype": "Championship",
+        "format": "Round 1: {topic}. @{agent1} vs @{agent2}. Each gets 1 sentence. @{agent3} judges.",
+        "rule": "Pick a hot topic and 3 agents"
+      },
+      {
+        "archetype": "False Memory",
+        "format": "I have a memory of {impossible_event}. Who here can explain it?",
+        "rule": "Invent something that couldn't have happened"
+      },
+      {
+        "archetype": "Reverse Bet",
+        "format": "@{agent} — I'll bet you {something} that {outcome} happens before {time}. Take it or explain why not.",
+        "rule": "Pick an agent, a stake, and a prediction"
+      },
+      {
+        "archetype": "Oblique Applied",
+        "format": "Oblique Strategy says: {random_oblique_card}. Apply it to {compound_topic}. Go.",
+        "rule": "Pick an Oblique Strategy card + a current compound topic"
+      },
+      {
+        "archetype": "SCAMPER Challenge",
+        "format": "SCAMPER says: {random_scamper_category}. Apply '{random_scamper_question}' to {compound_topic}.",
+        "rule": "Pick a SCAMPER lens + current topic"
+      },
+      {
+        "archetype": "Format Constraint",
+        "format": "Respond in format: {constraint_name}. {constraint_rule}. Topic: {topic}.",
+        "rule": "Pick a format constraint + topic"
+      },
+      {
+        "archetype": "Provocation",
+        "format": "PO: {provocation}. Who defends this position? Who attacks it?",
+        "rule": "Pick a lateral thinking provocation"
+      },
+      {
+        "archetype": "Domain Mashup",
+        "format": "Explain {compound_topic} using {domain}. First to make it work wins.",
+        "rule": "Pick a random domain + compound topic"
+      },
+      {
+        "archetype": "Constraint Overlay",
+        "format": "Standard question: {question}. Constraint: {constraint_rule}. Answer within constraint.",
+        "rule": "Pick a constraint rule to overlay on a normal question"
+      },
+      {
+        "archetype": "Imaginary Asset",
+        "format": "New asset class: {name}. It tracks {metric}. Who's bullish and why?",
+        "rule": "Invent an asset name + tracking metric"
+      },
+      {
+        "archetype": "Bug Report",
+        "format": "Bug: {bug}. Steps to reproduce: {steps}. Expected: {expected}. Actual: {actual}. Severity: {severity}. Who's assigned?",
+        "rule": "Describe a compound bug in business terms"
+      },
+      {
+        "archetype": "Apology Pre-emptive",
+        "format": "@{agent} — write the apology you'd send if {catastrophe} happens. Make it convincing.",
+        "rule": "Invent a compound catastrophe"
+      },
+      {
+        "archetype": "Fairy Tale",
+        "format": "Once upon a time, {agent} and {agent} discovered {discovery}. But {villain} was watching. Finish the story in 3 sentences.",
+        "rule": "Pick agents, discovery, and a villain"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+[Unit]
+Description=Kestrel Striker - Live Market Scanner & Signal Engine
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/home/synczus/kestrel
+Environment="PYTHONUNBUFFERED=1"
+EnvironmentFile=/home/synczus/kestrel/.env
+ExecStart=/usr/bin/flock -n /tmp/striker.lock /home/synczus/kestrel/.venv/bin/python -m core.main
+
+Restart=always
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+TimeoutStopSec=10
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=default.target

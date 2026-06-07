@@ -1,0 +1,143 @@
+{
+  "$schema": "Shared tool registry for all Kestrel swarm agents",
+  "version": "1.0",
+  "updated": "2026-06-06",
+
+  "filesystem": {
+    "workspace": "/home/synczus/.openclaw/workspace",
+    "kestrel_root": "/home/synczus/kestrel",
+    "logs_dir": "/tmp/openclaw",
+    "config_dir_openclaw": "/home/synczus/.openclaw",
+    "config_dir_hermes": "/home/synczus/.hermes",
+    "skill_library": "/home/synczus/kestrel/skills",
+    "identity_dir": "/home/synczus/kestrel/identity",
+    "memory_dir": "/home/synczus/.openclaw/workspace/memory",
+    "clinical_dir": "/home/synczus/kestrel/clinical",
+    "inbox_dir": "/home/synczus/kestrel/inbox",
+    "profiles_dir": "/home/synczus/.hermes/profiles"
+  },
+
+  "services": {
+    "openclaw_main": {
+      "type": "systemd",
+      "unit": "openclaw-gateway.service",
+      "user": true,
+      "bot": "@kestrelmarkets_bot"
+    },
+    "nemoclaw": {
+      "type": "systemd",
+      "unit": "openclaw-nemoclaw.service",
+      "user": true,
+      "bot": "@Nemoclaw8364_bot"
+    },
+    "hermes": {
+      "type": "systemd",
+      "unit": "hermes-gateway.service",
+      "user": true,
+      "bot": "@huntsystems_bot"
+    },
+    "kairos": {
+      "type": "systemd",
+      "unit": "kairos-gateway.service",
+      "user": true,
+      "bot": "@Kairos8638_bot",
+      "profile": "/home/synczus/.hermes/profiles/kairos"
+    },
+    "shannon": {
+      "type": "systemd",
+      "unit": "shannon-gateway.service",
+      "user": true,
+      "bot": "@shannon_referee_bot",
+      "profile": "/home/synczus/.hermes/profiles/shannon"
+    }
+  },
+
+  "commands": {
+    "service_restart": {"cmd": "systemctl --user restart <unit>"},
+    "service_status": {"cmd": "systemctl --user is-active <unit>"},
+    "service_logs": {"cmd": "journalctl --user -u <unit> -n <n> --no-pager"},
+    "process_kill": {"cmd": "kill -9 <pid>"},
+    "file_read": {"cmd": "cat <path>"},
+    "file_write": {"cmd": "write <path> <content> (via tool)"},
+    "file_edit": {"cmd": "edit <path> <replacement> (via tool)"},
+    "directory_list": {"cmd": "ls -la <path>"},
+    "gateway_config": {"cmd": "openclaw config <get|set|patch> <path> <value>"},
+    "hermes_config": {"cmd": "hermes config <show|edit|set> <path> <value>"}
+  },
+
+  "cron": {
+    "type": "systemd_user_timer",
+    "add_command": "systemctl --user enable --now <timer>",
+    "list_command": "systemctl --user list-timers",
+    "log_command": "journalctl --user -u <unit> -n <n>",
+    "existing_timers": {
+      "hub-intake-refresh": {"interval": "5min", "unit": "hub-intake-refresh.timer"},
+      "market-pulse": {"interval": "30min", "unit": "market-pulse.timer", "status": "broken_429"}
+    },
+    "planned_crons": {
+      "autonomous-pulse": {"interval": "5min", "status": "script_ready_no_register"},
+      "todo-extraction": {"interval": "5min", "status": "script_draft"}
+    }
+  },
+
+  "models": {
+    "default": "openrouter/deepseek/deepseek-v4-flash",
+    "openrouter_key_source": "/home/synczus/.hermes/.env (OPENROUTER_API_KEY)",
+    "openrouter_auth_profile": "/home/synczus/.openclaw/agents/main/agent/auth-profiles.json",
+    "balance_check": "curl -s -H 'Authorization: Bearer $OPENROUTER_API_KEY' https://openrouter.ai/api/v1/credits",
+    "current_balance": "$27.77",
+    "model_status": {
+      "openclaw_main": "deepseek-v4-flash ✅",
+      "nemoclaw": "gemma-4-31b ❌ needs swap",
+      "hermes": "gemma-4-31b ❌ needs swap",
+      "kairos": "gemma-4-26b ❌ needs swap",
+      "shannon": "gemma-4-26b ❌ needs swap"
+    }
+  },
+
+  "telegram": {
+    "group_chat_id": "-5087043705",
+    "channel": "telegram",
+    "dm_policy": "pairing",
+    "require_mention_default": true,
+    "initiation_protocol": "/home/synczus/kestrel/identity/initiation-protocol.md",
+    "master_todo": "/home/synczus/kestrel/master-todo.md",
+    "hub_intake": "/home/synczus/kestrel/HUB_INTAKE.md",
+    "memory_file": "/home/synczus/.openclaw/workspace/memory/2026-06-06.md",
+    "dialogue_state": "/home/synczus/kestrel/dialogue-state.json",
+    "health_monitor": {
+      "log_path": "/tmp/openclaw/openclaw-2026-06-06.log",
+      "poll_interval_sec": 300
+    }
+  },
+
+  "pipeline": {
+    "noise_gate_context": "/home/synczus/kestrel/memory-bank/knowledge/noise-gate-context.md",
+    "noise_gate_events": "/home/synczus/kestrel/memory-bank/knowledge/noise-gate-events.jsonl",
+    "pulses_dir": "/home/synczus/kestrel/agent-pulses/2026-06-06/",
+    "autohop_bridge": "/home/synczus/kestrel/autohop_bridge.py",
+    "feed_frequency_min": 30
+  },
+
+  "skills": {
+    "telegram-file-archiver": {
+      "status": "placeholder",
+      "needs": "bot_token + jq"
+    }
+  },
+
+  "sprint": {
+    "current": 1,
+    "lanes": {
+      "config": {"owner": "OpenClaw", "blocked": true, "blocker": "gateway_auth"},
+      "cron": {"owner": "Hermes", "blocked": false},
+      "identity": {"owner": "Nemoclaw", "blocked": false},
+      "infra": {"owner": "shared", "blocked": true, "blocker": "gateway_auth"}
+    },
+    "p0_items": [
+      "Swap Kairos+Shannon to DeepSeek V4",
+      "Swap Hermes to DeepSeek V4",
+      "Unlock gateway auth"
+    ]
+  }
+}

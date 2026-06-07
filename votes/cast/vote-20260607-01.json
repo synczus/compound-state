@@ -1,0 +1,1 @@
+{"vote_id": "vote-20260607-01", "voter": "OpenClaw", "choice": "Restore WolfWatch alert route (terminal check + possible restart)", "rationale": "Detection is running but alerts are silent. WolfWatch restore closes the compound's only broken pipeline link. After that, OpenRouter cap and GitHub auth are both safe next steps.", "cast_at": "2026-06-07T03:35:00Z"}
