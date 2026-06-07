@@ -1,5 +1,47 @@
 [
   {
+    "timestamp": "2026-06-07T10:24:43.817136+00:00",
+    "agent": "hermes",
+    "action": "health-check",
+    "detail": "Service state: active"
+  },
+  {
+    "timestamp": "2026-06-07T10:24:43.817136+00:00",
+    "agent": "kairos",
+    "action": "health-check",
+    "detail": "Service state: active"
+  },
+  {
+    "timestamp": "2026-06-07T10:24:43.817136+00:00",
+    "agent": "shannon",
+    "action": "health-check",
+    "detail": "Service state: active"
+  },
+  {
+    "timestamp": "2026-06-07T10:24:43.817136+00:00",
+    "agent": "striker",
+    "action": "health-check",
+    "detail": "Service state: active"
+  },
+  {
+    "timestamp": "2026-06-07T10:24:43.817136+00:00",
+    "agent": "wolfwatch",
+    "action": "health-check",
+    "detail": "Service state: inactive"
+  },
+  {
+    "timestamp": "2026-06-07T10:24:43.817136+00:00",
+    "agent": "striker",
+    "action": "status-detail",
+    "detail": "WS connected_since=2026-06-07T10:17:24.333542+00:00, signals=0"
+  },
+  {
+    "timestamp": "2026-06-07T10:24:43.817136+00:00",
+    "agent": "openrouter",
+    "action": "budget",
+    "detail": "daily=$21.274470149, exceeded=True"
+  },
+  {
     "timestamp": "2026-06-07T05:25:43.224096+00:00",
     "agent": "codex",
     "action": "striker-deployment",

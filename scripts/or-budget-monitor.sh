@@ -50,4 +50,7 @@ else
   rm -f "$FLAG_FILE"
 fi
 
+# Write heartbeat
+bash /home/synczus/kestrel/scripts/heartbeat.sh or-budget-monitor ok
+
 echo "OK"

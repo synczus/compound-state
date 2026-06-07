@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-06-07T10:23:49Z",
+  "cron_health": {
+    "crons": [
+      {
+        "name": "thought-drop-voice-every-12h",
+        "label": "\ud83c\udfa4 Voice Drop",
+        "freq": "12h",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "market-pulse-every-12h",
+        "label": "\ud83d\udcca Market Pulse",
+        "freq": "12h",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "squirrel-inbox-feeder",
+        "label": "\ud83d\udcc1 Squirrel Feeder",
+        "freq": "5min",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "hlm-scraper-every-6h",
+        "label": "\ud83d\udccb HLM Scraper",
+        "freq": "6h",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "agent-pulse-sync",
+        "label": "\ud83d\udd04 Pulse Sync",
+        "freq": "10min",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "auto-git-sync",
+        "label": "\ud83d\udce4 Git Sync",
+        "freq": "1h",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "meta-monitor",
+        "label": "\ud83d\udd0d Meta-Monitor",
+        "freq": "15min",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "state-probe",
+        "label": "\ud83d\udd0e State Probe",
+        "freq": "10min",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      },
+      {
+        "name": "or-budget-monitor",
+        "label": "\ud83d\udcb0 Budget Monitor",
+        "freq": "1h",
+        "status": "missing",
+        "age_seconds": null,
+        "last_run": null
+      }
+    ],
+    "summary": {
+      "healthy": 0,
+      "stale": 0,
+      "missing": 9,
+      "total": 9
+    }
+  },
+  "services": [
+    {
+      "name": "kestrel-striker.service",
+      "label": "\ud83d\udd2d Striker",
+      "active": true,
+      "status": "running"
+    },
+    {
+      "name": "wolfwatch-receiver.service",
+      "label": "\ud83d\udc3a WolfWatch",
+      "active": true,
+      "status": "running"
+    }
+  ],
+  "cost": {
+    "daily": 21.274470149,
+    "estimated_per_run": 0.002,
+    "daily_estimated": 1.46,
+    "weekly_estimated": 10.22,
+    "monthly_estimated": 43.8,
+    "last_checked": "2026-06-07T09:49:45Z",
+    "daily_limit": 30.0,
+    "per_cron": {
+      "\ud83c\udfa4 Voice Drop": {
+        "runs_per_day": 2,
+        "estimated_daily": 0.0,
+        "estimated_monthly": 0.12
+      },
+      "\ud83d\udcca Market Pulse": {
+        "runs_per_day": 2,
+        "estimated_daily": 0.0,
+        "estimated_monthly": 0.12
+      },
+      "\ud83d\udcc1 Squirrel Feeder": {
+        "runs_per_day": 288,
+        "estimated_daily": 0.58,
+        "estimated_monthly": 17.28
+      },
+      "\ud83d\udccb HLM Scraper": {
+        "runs_per_day": 4,
+        "estimated_daily": 0.01,
+        "estimated_monthly": 0.24
+      },
+      "\ud83d\udd04 Pulse Sync": {
+        "runs_per_day": 144,
+        "estimated_daily": 0.29,
+        "estimated_monthly": 8.64
+      },
+      "\ud83d\udce4 Git Sync": {
+        "runs_per_day": 24,
+        "estimated_daily": 0.05,
+        "estimated_monthly": 1.44
+      },
+      "\ud83d\udd0d Meta-Monitor": {
+        "runs_per_day": 96,
+        "estimated_daily": 0.19,
+        "estimated_monthly": 5.76
+      },
+      "\ud83d\udd0e State Probe": {
+        "runs_per_day": 144,
+        "estimated_daily": 0.29,
+        "estimated_monthly": 8.64
+      },
+      "\ud83d\udcb0 Budget Monitor": {
+        "runs_per_day": 24,
+        "estimated_daily": 0.05,
+        "estimated_monthly": 1.44
+      }
+    }
+  }
+}
