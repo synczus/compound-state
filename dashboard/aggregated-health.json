@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-07T12:12:38Z",
+  "timestamp": "2026-06-07T12:27:36Z",
   "cron_health": {
     "crons": [
       {
@@ -23,8 +23,8 @@
         "label": "\ud83d\udcc1 Squirrel Feeder",
         "freq": "5min",
         "status": "healthy",
-        "age_seconds": 159,
-        "last_run": "2026-06-07T12:09:59Z"
+        "age_seconds": 158,
+        "last_run": "2026-06-07T12:24:58Z"
       },
       {
         "name": "hlm-scraper-every-6h",
@@ -47,16 +47,16 @@
         "label": "\ud83d\udce4 Git Sync",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 3363,
-        "last_run": "2026-06-07T11:16:35Z"
+        "age_seconds": 663,
+        "last_run": "2026-06-07T12:16:33Z"
       },
       {
         "name": "meta-monitor",
         "label": "\ud83d\udd0d Meta-Monitor",
         "freq": "15min",
         "status": "healthy",
-        "age_seconds": 454,
-        "last_run": "2026-06-07T12:05:04Z"
+        "age_seconds": 450,
+        "last_run": "2026-06-07T12:20:06Z"
       },
       {
         "name": "state-probe",
@@ -71,7 +71,7 @@
         "label": "\ud83d\udcb0 Budget Monitor",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 1115,
+        "age_seconds": 2013,
         "last_run": "2026-06-07T11:54:03Z"
       }
     ],
