@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Synapse — Compound Dashboard</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Particle background */
+#particles {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.particle {
+  position: absolute;
+  width: 2px; height: 2px;
+  background: rgba(0, 255, 204, 0.3);
+  border-radius: 50%;
+  animation: float linear infinite;
+}
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+/* Header */
+header {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 255, 204, 0.1);
+}
+.logo { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.02em; }
+.logo .accent { color: #00ffcc; }
+.logo .dim { color: #666; }
+.uptime { font-size: 0.75rem; color: #555; font-family: 'JetBrains Mono', monospace; }
+.status-bar { display: flex; gap: 1.5rem; align-items: center; }
+.status-item { font-size: 0.75rem; display: flex; align-items: center; gap: 0.4rem; }
+.dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+.dot.green { background: #76ff03; box-shadow: 0 0 8px #76ff0366; }
+.dot.red { background: #ff1744; box-shadow: 0 0 8px #ff174466; }
+.dot.yellow { background: #ffd54f; box-shadow: 0 0 8px #ffd54f66; }
+
+/* Container */
+.container { position: relative; z-index: 1; padding: 1.5rem 2rem 2rem; }
+
+/* Grids */
+.row { display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+
+/* Cards */
+.card {
+  background: linear-gradient(135deg, #111118 0%, #0d0d15 100%);
+  border: 1px solid #1a1a2e;
+  border-radius: 12px;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  min-width: 220px;
+  transition: border-color 0.3s;
+}
+.card:hover { border-color: #00ffcc33; }
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ffcc, transparent);
+  opacity: 0.3;
+}
+.card-title {
+  font-size: 0.65rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.card-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+.card-value.green { color: #76ff03; }
+.card-value.red { color: #ff1744; }
+.card-value.yellow { color: #ffd54f; }
+.card-value.blue { color: #8c8cff; }
+.card-value.cyan { color: #00e5ff; }
+.card-value.orange { color: #ff9100; }
+.card-label { font-size: 0.7rem; color: #555; margin-top: 0.25rem; }
+
+/* Agent Cards - holographic style */
+.agent-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  gap: 1rem; 
+  margin: 1.5rem 0;
+}
+.agent-card {
+  background: linear-gradient(135deg, #111118 0%, #0d0d15 100%);
+  border: 1px solid #1a1a2e;
+  border-radius: 12px;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.agent-card:hover {
+  border-color: #00ffcc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 255, 204, 0.1);
+}
+.agent-card .glow {
+  position: absolute;
+  top: -50%; left: -50%; right: -50%; bottom: -50%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 255, 204, 0.03), transparent 60%);
+  pointer-events: none;
+}
+.agent-name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.agent-name .indicator { font-size: 0.5rem; }
+.agent-role {
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+.agent-stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #111118;
+}
+.agent-stat:last-child { border: none; }
+.agent-stat .label { color: #555; }
+.agent-stat .value { color: #aaa; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; }
+
+/* Section headers */
+.section-title {
+  font-size: 0.8rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 2rem 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, #1a1a2e, transparent);
+}
+
+/* Hop chain display */
+.hop-chain {
+  background: linear-gradient(135deg, #111118 0%, #0d0d15 100%);
+  border: 1px solid #1a1a2e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+.hop-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #111118;
+}
+.hop-step:last-child { border: none; }
+.hop-step .step-number {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #555;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.hop-step.active .step-number {
+  background: #00ffcc22;
+  color: #00ffcc;
+  box-shadow: 0 0 16px rgba(0, 255, 204, 0.2);
+}
+.hop-step.done .step-number {
+  background: #76ff0322;
+  color: #76ff03;
+}
+.hop-step .content { flex: 1; }
+.hop-step .agent { font-weight: 600; font-size: 0.85rem; color: #8c8cff; }
+.hop-step .message { font-size: 0.75rem; color: #888; margin-top: 0.2rem; }
+.hop-step .status-tag {
+  font-size: 0.6rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.tag-waiting { background: #ffd54f22; color: #ffd54f; }
+.tag-done { background: #76ff0322; color: #76ff03; }
+.tag-active { background: #00ffcc22; color: #00ffcc; }
+
+/* Budget bar */
+.budget-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: #1a1a2e;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+.budget-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s ease;
+  background: linear-gradient(90deg, #76ff03, #00ffcc);
+}
+.budget-fill.high { background: linear-gradient(90deg, #ffd54f, #ff9100); }
+.budget-fill.critical { background: linear-gradient(90deg, #ff9100, #ff1744); }
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.pulse { animation: pulse 2s ease infinite; }
+
+/* Log lines */
+.log-viewer {
+  background: #050508;
+  border: 1px solid #1a1a2e;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  line-height: 1.6;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+.log-viewer .line { color: #555; }
+.log-viewer .line .time { color: #333; }
+.log-viewer .line .highlight { color: #00ffcc; }
+
+.footer {
+  text-align: center;
+  color: #333;
+  font-size: 0.65rem;
+  padding: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+</style>
+</head>
+<body>
+<div id="particles"></div>
+
+<header>
+  <div class="logo">
+    <span class="accent">◆</span>
+    <span class="accent">Syn</span><span class="dim">apse</span>
+  </div>
+  <div class="status-bar">
+    <div class="status-item"><span class="dot green" id="dot-kairos"></span> Kairos</div>
+    <div class="status-item"><span class="dot green" id="dot-striker"></span> Striker</div>
+    <div class="status-item"><span class="dot" id="dot-budget"></span> Budget</div>
+    <div class="status-item" id="clock" style="font-family: 'JetBrains Mono', monospace; color: #555;">--:--:--</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Stats row -->
+  <div class="row">
+    <div class="card">
+      <div class="card-title">Active Agents</div>
+      <div class="card-value cyan" id="active-agents">--</div>
+      <div class="card-label">of <span id="total-agents">--</span> deployed</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Hop State</div>
+      <div class="card-value" id="hop-state" style="font-size:1rem;">—</div>
+      <div class="card-label" id="hop-agent"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">System Load</div>
+      <div class="card-value blue" id="sys-load">--</div>
+      <div class="card-label" id="sys-mem">--</div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenRouter Budget</div>
+      <div class="card-value" id="budget-spend">$--</div>
+      <div class="budget-bar"><div class="budget-fill" id="budget-fill" style="width:0%"></div></div>
+      <div class="card-label" id="budget-label">of $-- cap</div>
+    </div>
+  </div>
+
+  <!-- Agents -->
+  <div class="section-title">Agents</div>
+  <div class="agent-grid" id="agent-grid">
+    <div class="agent-card">
+      <div class="glow"></div>
+      <div class="agent-name"><span class="indicator pulse" style="color:#00ffcc;">◆</span> Kairos</div>
+      <div class="agent-role">Strategist · Timing · Ops</div>
+      <div class="agent-stat"><span class="label">Status</span><span class="value" id="kairos-status">checking...</span></div>
+      <div class="agent-stat"><span class="label">Memory</span><span class="value" id="kairos-mem">—</span></div>
+      <div class="agent-stat"><span class="label">Last Activity</span><span class="value" id="kairos-last">—</span></div>
+    </div>
+    <div class="agent-card">
+      <div class="glow"></div>
+      <div class="agent-name"><span class="indicator pulse" style="color:#8c8cff;">◆</span> OpenClaw</div>
+      <div class="agent-role">Architect · Builder · Scout</div>
+      <div class="agent-stat"><span class="label">Status</span><span class="value" id="openclaw-status">always-on</span></div>
+      <div class="agent-stat"><span class="label">Model</span><span class="value">deepseek-v4-flash</span></div>
+      <div class="agent-stat"><span class="label">Mode</span><span class="value" id="openclaw-mode">autonomous</span></div>
+    </div>
+    <div class="agent-card">
+      <div class="glow"></div>
+      <div class="agent-name"><span class="indicator" style="color:#76ff03;">◆</span> Striker</div>
+      <div class="agent-role">Signal Detection</div>
+      <div class="agent-stat"><span class="label">Status</span><span class="value" id="striker-status">checking...</span></div>
+      <div class="agent-stat"><span class="label">Memory</span><span class="value" id="striker-mem">—</span></div>
+      <div class="agent-stat"><span class="label">Last Signal</span><span class="value" id="striker-signal">—</span></div>
+    </div>
+  </div>
+
+  <!-- Hop Chain -->
+  <div class="section-title">Hop Chain</div>
+  <div class="hop-chain" id="hop-chain">
+    <div class="hop-step" id="hop-step-0">
+      <div class="step-number">1</div>
+      <div class="content">
+        <div class="agent">Kairos</div>
+        <div class="message" id="hop-kairos-msg">Waiting for scout...</div>
+      </div>
+      <div><span class="status-tag tag-waiting" id="hop-kairos-tag">waiting</span></div>
+    </div>
+    <div class="hop-step" id="hop-step-1">
+      <div class="step-number">2</div>
+      <div class="content">
+        <div class="agent">OpenClaw</div>
+        <div class="message" id="hop-openclaw-msg">Waiting for Kairos...</div>
+      </div>
+      <div><span class="status-tag tag-waiting" id="hop-openclaw-tag">waiting</span></div>
+    </div>
+  </div>
+
+  <!-- Activity Log -->
+  <div class="section-title">Activity</div>
+  <div class="log-viewer" id="log-viewer">
+    <div class="line">Synapse dashboard v1.0 initialized</div>
+    <div class="line" id="log-line">Waiting for data...</div>
+  </div>
+
+</div>
+
+<div class="footer">Synapse v1.0 · compound-state repo · synczus/kestrel</div>
+
+<script>
+// Particles
+function createParticles() {
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 30; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.animationDuration = (15 + Math.random() * 30) + 's';
+    p.style.animationDelay = Math.random() * 20 + 's';
+    p.style.width = p.style.height = (1 + Math.random() * 2) + 'px';
+    container.appendChild(p);
+  }
+}
+createParticles();
+
+// Clock
+function updateClock() {
+  const now = new Date();
+  const et = new Date(now.toLocaleString('en-US', {timeZone:'America/New_York'}));
+  document.getElementById('clock').textContent = 
+    et.toLocaleTimeString('en-US', {hour12: false}) + ' ET';
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// Data fetch
+async function fetchData() {
+  try {
+    const [health, services, system, hop, budget] = await Promise.all([
+      fetch('/api/health').then(r => r.json()).catch(() => ({})),
+      fetch('/api/services').then(r => r.json()).catch(() => ({})),
+      fetch('/api/system').then(r => r.json()).catch(() => ({})),
+      fetch('/api/hop').then(r => r.json()).catch(() => ({})),
+      fetch('/api/budget').then(r => r.json()).catch(() => ({}))
+    ]);
+
+    // Services
+    const kairosActive = services['kairos-gateway'] === 'active';
+    const strikerActive = services['kestrel-striker'] === 'active';
+    document.getElementById('dot-kairos').className = 'dot ' + (kairosActive ? 'green' : 'red');
+    document.getElementById('dot-striker').className = 'dot ' + (strikerActive ? 'green' : 'red');
+    document.getElementById('kairos-status').textContent = kairosActive ? 'Active ✅' : 'Down ❌';
+    document.getElementById('striker-status').textContent = strikerActive ? 'Active ✅' : 'Down ❌';
+
+    const active = [kairosActive, true, strikerActive].filter(Boolean).length;
+    document.getElementById('active-agents').textContent = active;
+    document.getElementById('total-agents').textContent = '3';
+
+    // System
+    if (system.cpu) {
+      document.getElementById('sys-load').textContent = system.cpu.join(' / ');
+    }
+    if (system.memory) {
+      document.getElementById('sys-mem').textContent = 'Memory: ' + system.memory;
+    }
+
+    // Budget
+    if (budget.daily) {
+      const daily = budget.daily;
+      const cap = budget.daily_cap || 50;
+      const pct = Math.min((daily / cap) * 100, 100);
+      document.getElementById('budget-spend').textContent = '$' + daily.toFixed(2);
+      document.getElementById('budget-label').textContent = 'of $' + cap + ' cap';
+      const fill = document.getElementById('budget-fill');
+      fill.style.width = pct + '%';
+      fill.className = 'budget-fill' + (pct > 80 ? ' critical' : pct > 60 ? ' high' : '');
+      document.getElementById('dot-budget').className = 'dot ' + (pct > 90 ? 'red' : pct > 60 ? 'yellow' : 'green');
+    }
+
+    // Hop state
+    if (hop.active) {
+      document.getElementById('hop-state').textContent = hop.complete ? 'Complete ✅' : 'Active 🔄';
+      document.getElementById('hop-state').className = 'card-value ' + (hop.complete ? 'green' : 'cyan');
+      document.getElementById('hop-agent').textContent = 'Query: ' + (hop.query || '').substring(0, 60) + '...';
+
+      const kairosStep = document.getElementById('hop-step-0');
+      const openclawStep = document.getElementById('hop-step-1');
+      kairosStep.className = 'hop-step' + (hop.kairos_done ? ' done' : hop.current_step === 0 ? ' active' : '');
+      openclawStep.className = 'hop-step' + (hop.openclaw_done ? ' done' : hop.current_step === 1 ? ' active' : '');
+
+      document.getElementById('hop-kairos-tag').textContent = hop.kairos_done ? 'done' : (hop.current_step === 0 ? 'active' : 'waiting');
+      document.getElementById('hop-kairos-tag').className = 'status-tag ' + (hop.kairos_done ? 'tag-done' : hop.current_step === 0 ? 'tag-active' : 'tag-waiting');
+      document.getElementById('hop-openclaw-tag').textContent = hop.openclaw_done ? 'done' : (hop.current_step === 1 ? 'active' : 'waiting');
+      document.getElementById('hop-openclaw-tag').className = 'status-tag ' + (hop.openclaw_done ? 'tag-done' : hop.current_step === 1 ? 'tag-active' : 'tag-waiting');
+
+      if (hop.kairos_message) document.getElementById('hop-kairos-msg').textContent = hop.kairos_message;
+      if (hop.openclaw_message) document.getElementById('hop-openclaw-msg').textContent = hop.openclaw_message;
+    } else {
+      document.getElementById('hop-state').textContent = '—';
+      document.getElementById('hop-state').className = 'card-value';
+      document.getElementById('hop-agent').textContent = 'No active hop';
+    }
+
+    // Log activity
+    const now = new Date().toLocaleTimeString('en-US', {hour12: false});
+    document.getElementById('log-line').textContent = now + ' · synced';
+
+  } catch (e) {
+    console.error('Fetch error:', e);
+  }
+}
+
+fetchData();
+setInterval(fetchData, 5000);
+</script>
+</body>
+</html>
