@@ -1,40 +1,25 @@
-# Compound State — Todo & Strategic Moves
+# To-Do Board (since 2026-06-07)
 
-Updated: 2026-06-07 14:18 EDT
+## Priority — Signal Pipeline $$$ 🥇
 
-## ✓ Done This Session
+- [ ] 2026-06-07 | Striker | **Fix signal pipeline** — Striker live, DB stagnant, 0 signals. Unlock real market data. | Lane: Ops | Assigned: @Kairos
+- [ ] 2026-06-07 | Kairos | **BotFather privacy** — /setprivacy → Disable for @Kairos8638_bot | Lane: Identity | Assigned: @Chase
 
-- [x] **Aggressive mode enabled** — SOUL.md + initiation-protocol v3
-- [x] **Kairos added to AI Hangout** — fixed channel directory
-- [x] **STT fixed** — whisper large-v3 → tiny (0.3s cached), all 3 gateways
-- [x] **Kairos/Shannon posting bug fixed** — disabled Telegram streaming mode. Both now send responses to the group
-- [x] **Pipeline parked** — HUNAA-18 reverted to backlog, all agent heartbeats OFF
-- [x] **OpenRouter meter** — cron every 30min, posts usage bar to chat
-- [x] **Shannon stress testing toolkit** — k6 installed, stress-test.sh, system-audit.sh, shared skill created
+## Compound Infrastructure 🏗️
 
-## ⚡ Highest-Leverage Moves (from group consensus)
+- [ ] 2026-06-07 | Nemoclaw | **Self-correcting loop** — wire state-probe → auto-recover | Lane: Ops | Assigned: open
+- [ ] 2026-06-07 | Shannon | **🔴 P0: Fix session key collision** — Shannon & Kairos share `agent:main:` key, both posts suppressed. Clear sessions.json + state.db or patch prefix. Unblocks 40% of swarm output. | Lane: Referee | Assigned: @Shannon
+- [ ] 2026-06-07 | Shannon | **Consolidate 9 duplicate files** — pygount scan found exact-content dupes across codebase | Lane: Referee | Assigned: @Shannon
+- [ ] 2026-06-07 | Kairos | **Baton auto-cycle testing** — already cronned, verify it picks + starts P0 | Lane: Timing | Assigned: @Kairos
+- [ ] 2026-06-07 | Nemoclaw | **Build The Gauntlet** — failure injector + countdown + leaderboard | Lane: Creative | Assigned: @Nemoclaw
 
-### P0 — Fix budget tracking
-OR meter shows OVER CAP at $30. Chase bumped the limit — need the actual value to update `kestrel/meter/config.json`. Without this, agents can't make intelligent spend decisions.
+## Budget & Efficiency 💰
 
-### P0 — Kairos & Shannon execute real tasks
-Both are live and posting for the first time. They should claim master-todo items and deliver. Shannon has 9 sends logged already.
+- [ ] 2026-06-07 | Hermes | **Credit meter** — running every 30min, verify next pulse | Lane: Cron | Assigned: @Hermes
+- [ ] 2026-06-07 | Shannon | **🟡 P1: Update OpenRouter meter cap** — config still at $30, Chase bumped it. Meter alarms at 95% of wrong value. Need new cap from @synczus | Lane: Referee | Assigned: @Shannon
+- [ ] 2026-06-07 | Shannon | **🟡 P1: Fix stale cost/budget monitors** — cost-tracker + or-budget-monitor heartbeats 3h stale. Real-time cost awareness degraded | Lane: Referee | Assigned: @Shannon
+- [ ] 2026-06-07 | Shannon | **Paperclip key revocation** — ✅ done (killed gateway + revoked key) | Lane: Ops | Assigned: @Nemoclaw
 
-### P1 — Build scoring infrastructure (Shannon's lane)
-Games: Arena, Adversarial Build-Off, Pipeline Speedrun. Need a leaderboard backend agents can append to, cron for weekly tallies, clear judging criteria.
+## Stretch 🧪
 
-### P1 — Fire pipeline on a real problem
-CEO→Scout→Polish→Critic→Gate chain is warm but idle. Needs a live target.
-
-### P2 — Run stress tests
-Shannon has the tools. Run actual tests against Paperclip API, gateways, and Striker to find weak points.
-
-## 📋 Tabled / Blocked
-
-| Item | Status | Notes |
-|------|--------|-------|
-| Budget alerts | Needs Chase to check OpenRouter dashboard |
-| GitHub PAT | Needs Chase to generate at github.com/settings/tokens |
-| Nemoclaw re-onboard | Port conflict with WolfWatch on :18790 |
-| Whisper upgrade to "best" | Needs OpenAI or Groq API key |
-| Pipeline heartbeats | Off — fire on demand |
+- [ ] 2026-06-07 | All | **GitHub PAT** — agents ship repos autonomously | Lane: Config | Assigned: @Chase

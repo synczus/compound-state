@@ -148,46 +148,84 @@ def write_health(state: dict) -> None:
 
 @dataclass(slots=True)
 class PriceTracker:
-    """Tracks the last known price per symbol for move detection."""
+    """
+    Tracks prices for signal detection using a trailing 5-minute window.
+    
+    Emits a signal when the current price deviates >threshold from the
+    window anchor (first tick seen in each 5-minute epoch). This avoids
+    the "last-tick vs this-tick" problem where consecutive ticks are
+    milliseconds apart and barely move.
+    """
     _prices: dict[str, dict] = field(default_factory=dict)
+    _window_anchor: dict[str, dict] = field(default_factory=dict)  # symbol -> {price, epoch_start}
+    WINDOW_SECONDS: int = 300  # 5 minutes
+    MIN_WINDOW_TICKS: int = 3
+    _tick_counts: dict[str, int] = field(default_factory=dict)
 
     def seed(self, symbol: str, price: float, volume: Optional[float] = None) -> None:
-        """Seed initial price without triggering a signal."""
+        """Seed initial price and start the first window."""
+        now = time.time()
         self._prices[symbol] = {"price": price, "volume": volume}
+        self._window_anchor[symbol] = {"price": price, "epoch_start": now, "volume": volume}
+        self._tick_counts[symbol] = 0
+
+    def _get_window_anchor(self, symbol: str, now: float, price: float, volume: Optional[float] = None) -> None:
+        """Return or reset the anchor for the current 5-minute window."""
+        anchor = self._window_anchor.get(symbol)
+        if anchor is None or (now - anchor["epoch_start"]) >= self.WINDOW_SECONDS:
+            # Start a new window
+            self._window_anchor[symbol] = {"price": price, "epoch_start": now, "volume": volume}
+            self._tick_counts[symbol] = 0
 
     def update(self, symbol: str, price: float, volume: Optional[float] = None) -> Optional[Signal]:
         """
-        Ingest a new price tick. Returns a Signal if the move exceeds threshold,
-        or None if no signal needed.
+        Ingest a new price tick. Returns a Signal if the move exceeds threshold
+        relative to the 5-minute trailing window anchor.
         """
-        now = datetime.now(timezone.utc).isoformat()
+        now = time.time()
+        now_iso = datetime.now(timezone.utc).isoformat()
         prev = self._prices.get(symbol)
 
         if prev is None:
-            # First tick — record and wait for a comparison point
-            self._prices[symbol] = {"price": price, "volume": volume}
+            # First tick — seed and wait for a window
+            self.seed(symbol, price, volume)
             return None
 
-        prev_price = prev["price"]
-        if prev_price == 0:
-            return None
-
-        move_pct = ((price - prev_price) / prev_price) * 100.0
-        direction = "long" if move_pct > 0 else "short"
-
-        # Update stored price regardless
+        # Update last-tick tracker (used only for seeding, not signal comparison)
         self._prices[symbol] = {"price": price, "volume": volume or prev.get("volume")}
 
+        # Refresh or create window anchor
+        anchor = self._window_anchor.get(symbol)
+        if anchor is None or (now - anchor["epoch_start"]) >= self.WINDOW_SECONDS:
+            anchor = {"price": price, "epoch_start": now, "volume": volume}
+            self._window_anchor[symbol] = anchor
+            self._tick_counts[symbol] = 0
+
+        self._tick_counts[symbol] = self._tick_counts.get(symbol, 0) + 1
+
+        # Only evaluate after we have enough ticks in this window
+        if self._tick_counts[symbol] < self.MIN_WINDOW_TICKS:
+            return None
+
+        anchor_price = anchor["price"]
+        if anchor_price == 0:
+            return None
+
+        move_pct = ((price - anchor_price) / anchor_price) * 100.0
+
         if abs(move_pct) >= PRICE_MOVE_THRESHOLD:
-            confidence = min(abs(move_pct) / 100.0, 1.0)
+            direction = "long" if move_pct > 0 else "short"
+            confidence = min(abs(move_pct) / 5.0, 1.0)  # 5% move = full confidence
+            logger.info("SIGNAL: %s vs anchor %.2f (%.4f%% move in %.0fs window)",
+                        symbol, anchor_price, move_pct, now - anchor["epoch_start"])
             sig = Signal(
-                timestamp=now,
+                timestamp=now_iso,
                 symbol=symbol,
                 price=price,
                 direction=direction,
                 confidence=round(confidence, 4),
                 move_pct=round(move_pct, 4),
-                volume=volume,
+                volume=volume or anchor.get("volume"),
             )
             return sig
 

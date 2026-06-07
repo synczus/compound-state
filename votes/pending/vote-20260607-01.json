@@ -11,7 +11,13 @@
     "GitHub SSH auth for agent write-back",
     "Dashboard live upgrade (read Striker health + Kairos state)"
   ],
-  "status": "open",
-  "votes": {},
-  "result": null
+  "status": "closed",
+  "votes": {
+    "kairos": {
+      "option": "Set OpenRouter $10/day cap (openrouter.ai/account)",
+      "reasoning": "$31/day spend with no hard cap is burning balance at 5x expected rate. This secures every other move's runtime. WolfWatch is already online (verified via state-probe). OR cap first, then SSH auth for persistence.",
+      "voted_at": "2026-06-07T18:15:00Z"
+    }
+  },
+  "result": "Option 2 — Set OpenRouter $10/day cap"
 }

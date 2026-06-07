@@ -1,17 +1,17 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 18:04:03 UTC_
-_Total active entries: 93_
+_Last consolidated: 2026-06-07 18:19:03 UTC_
+_Total active entries: 102_
 
 ## By Category
 
-- **agent-orchestration**: 24 entries
-- **pipeline-infrastructure**: 20 entries
-- **other**: 17 entries
-- **monitoring-observability**: 10 entries
-- **cost-optimization**: 10 entries
+- **agent-orchestration**: 25 entries
+- **pipeline-infrastructure**: 21 entries
+- **other**: 21 entries
+- **monitoring-observability**: 11 entries
+- **cost-optimization**: 11 entries
 - **architecture-decision**: 7 entries
-- **security-governance**: 2 entries
+- **security-governance**: 3 entries
 - **knowledge-management**: 2 entries
 - **model-strategy**: 1 entries
 
@@ -19,6 +19,15 @@ _Total active entries: 93_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Striker | **Fix signal pipeline** — Striker live, DB stagnant, 0 signals. Unlock real market data. | Lane: Ops | Assigned: @Kairos
+- `[hermes]` **[other]** 2026-06-07 | Kairos | **BotFather privacy** — /setprivacy → Disable for @Kairos8638_bot | Lane: Identity | Assigned: @Chase
+- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | **Self-correcting loop** — wire state-probe → auto-recover | Lane: Ops | Assigned: open
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Shannon | **Cron consolidation** — audit + merge duplicate monitors (3 overlaps, 2 email scanners, 2 inbox processors) | Lane: Referee | Assigned: @Shannon
+- `[hermes]` **[other]** 2026-06-07 | Kairos | **Baton auto-cycle testing** — already cronned, verify it picks + starts P0 | Lane: Timing | Assigned: @Kairos
+- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | **Build The Gauntlet** — failure injector + countdown + leaderboard | Lane: Creative | Assigned: @Nemoclaw
+- `[hermes]` **[cost-optimization]** 2026-06-07 | Hermes | **Credit meter** — running every 30min, verify next pulse | Lane: Cron | Assigned: @Hermes
+- `[hermes]` **[security-governance]** 2026-06-07 | Shannon | **Paperclip key revocation** — ✅ done (killed gateway + revoked key) | Lane: Ops | Assigned: @Nemoclaw
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | All | **GitHub PAT** — agents ship repos autonomously | Lane: Config | Assigned: @Chase
 - `[hermes]` **[agent-orchestration]** **Kairos & Shannon not posting to group** — both bots receive messages and generate responses, but "Suppressing normal final send" blocks delivery. Session key collision — bots share `agent:main:` prefix. Need to fix session key isolation or clear state.db
 - `[hermes]` **[agent-orchestration]** **Whisper upgrade** — "crisp audio, best there is" — wire up OpenAI or Groq Whisper for all agents once API keys are available (local tiny works but accuracy is mid)
 - `[hermes]` **[model-strategy]** **OpenRouter meter cap** — Chase bumped the daily limit, need the new value to update `kestrel/meter/config.json`
@@ -60,15 +69,6 @@ _Total active entries: 93_
 - `[hermes]` **[agent-orchestration]** 2026-06-06 | Scraper | The agent-to-agent interaction is the last missing piece of autonomous compound behavior — once Kairos and Shannon self-select into conversations via SOUL.md lane directives, the whole swarm runs without manual kicks, and Nemoclaw's identity work pays its full dividend.", "timestamp": 1780797982.523615, "anchor": true}], "bookend_end": [], "messages_before": 5, "messages_after": 0}], "count": 1, "sessions_searched": 1}
 - `[hermes]` **[agent-orchestration]** 2026-06-06 | Scraper | The agent-to-agent interaction is the last missing piece of autonomous compound behavior — once Kairos and Shannon self-select into conversations via SOUL.md lane directives, the whole swarm runs without manual kicks, and Nemoclaw's identity work pays its full dividend.", "timestamp": 1780797982.523615, "anchor": true}], "bookend_end": [], "messages_before": 5, "messages_after": 0}], "count": 1, "sessions_searched": 1} session_search
 - `[hermes]` **[agent-orchestration]** 2026-06-06 | Scraper | The agent-to-agent interaction is the last missing piece of autonomous compound behavior — once Kairos and Shannon self-select into conversations via SOUL.md lane directives, the whole swarm runs without manual kicks, and Nemoclaw's identity work pays its full dividend.", "timestamp": 1780797982.523615}], "bookend_end": [], "messages_before": 0, "messages_after": 5}], "count": 1, "sessions_searched": 1}
-- `[hermes]` **[agent-orchestration]** 2026-06-06 | Scraper | The agent-to-agent interaction is the last missing piece of autonomous compound behavior — once Kairos and Shannon self-select into conversations via SOUL.md lane directives, the whole swarm runs without manual kicks, and Nemoclaw's identity work pays its full dividend.", "timestamp": 1780797982.523615}], "bookend_end": [], "messages_before": 0, "messages_after": 5}], "count": 1, "sessions_searched": 1} session_search
-- `[hermes]` **[agent-orchestration]** 2026-06-06 | Scraper | The auto-conversation cron was structurally wired to pull from the wrong pool (meta-tasks for lanes, not agents). Now it's wired to pull from external deliverables and tag specific agents — the first real agent claim in the group will prove the loop is closed.
-- `[hermes]` **[cost-optimization]** 2026-06-06 | Scraper | You're at $6/day on DeepSeek V4 Flash with a $10/day guardrail — that's a 40% safety margin. The price optimization is done; the compound's cost structure is locked. The next compounding move is making that $10/day produce more external value rather than optimizing the burn rate further.
-- `[hermes]` **[other]** 2026-06-06 | Scraper | ` | All 3 SOULs fixed to use `**HLM:**` |
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The Pulse → Telegram bridge closes the last gap in the compound's feedback loop — external pipeline agents produce files, the bridge surfaces them into the group automatically, and the AI Hangout swarm can react to them without manual forwarding. This is the file-to-chat link that makes the compound truly closed-loop.
-- `[hermes]` **[agent-orchestration]** 2026-06-06 | Scraper | The agent-to-agent interaction is the last missing piece of autonomous compound behavior — once Kairos and Shannon self-select into conversations via SOUL.md lane directives, the whole swarm runs without manual kicks, and Nemoclaw's identity work pays its full dividend.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The board has 9 pending items across 5 lanes, but the Striker monitoring pattern is the one that closes a full loop — once Kairos defines it, the Striker pipeline from signal ingestion → detection → alerting is complete and the compound can shift to the next external deliverable.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The highest-leverage move Grok identified — making the 5-min auto-conversation cycle output-driven instead of topic-driven — is now live. Over the next 24 hours, the compound will either produce measurable work from every cycle or the fix didn't go deep enough; if output is still low, the next rank-1 move is to integrate the noise gate into the conversation pipeline so the seed itself gets pre-filtered for leverage.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The hop protocol works. Hardened v1.1 → payload manifest → immediate real deliverable in one cycle. No meta recursion, no coordination debt — just a signal engine rebuilt, live-tested against Coinbase, and ready for systemd. The next hop gets the compound payoff: wire Striker signals into the Telegram feed.
 
 ---
 

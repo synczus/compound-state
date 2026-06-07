@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T18:03:33Z_
+_Generated: 2026-06-07T18:18:34Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,12 +7,12 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 09:15:01 UTC_
-_Total active entries: 90_
+_Last consolidated: 2026-06-07 18:04:03 UTC_
+_Total active entries: 93_
 
 ## By Category
 
-- **agent-orchestration**: 22 entries
+- **agent-orchestration**: 24 entries
 - **pipeline-infrastructure**: 20 entries
 - **other**: 17 entries
 - **monitoring-observability**: 10 entries
@@ -20,16 +20,19 @@ _Total active entries: 90_
 - **architecture-decision**: 7 entries
 - **security-governance**: 2 entries
 - **knowledge-management**: 2 entries
+- **model-strategy**: 1 entries
 
 ---
 
 ## Recent Propositions
 
+- `[hermes]` **[agent-orchestration]** **Kairos & Shannon not posting to group** — both bots receive messages and generate responses, but "Suppressing normal final send" blocks delivery. Session key collision — bots share `agent:main:` prefix. Need to fix session key isolation or clear state.db
+- `[hermes]` **[agent-orchestration]** **Whisper upgrade** — "crisp audio, best there is" — wire up OpenAI or Groq Whisper for all agents once API keys are available (local tiny works but accuracy is mid)
+- `[hermes]` **[model-strategy]** **OpenRouter meter cap** — Chase bumped the daily limit, need the new value to update `kestrel/meter/config.json`
 - `[openclaw]` **[agent-orchestration]** Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
 - `[openclaw]` **[agent-orchestration]** 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
 - `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Striker is now not just running but *supervised* — Kairos detects stale health within 120s, tracks DB growth, and alerts to event-bus. The compound has a market signal engine that watches itself, which is the difference between a script and infrastructure.
 - `[hermes]` **[architecture-decision]** 2026-06-07 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on.
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | "Verified cron repair pattern under v3.2 — script made executable, URL fixed, nohup supervision added, dashboard confirmed live. Cron entry updated on Hermes gateway. Reusable pattern created.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
@@ -64,9 +67,6 @@ _Generated: 2026-06-07 05:00:01 UTC_
 
 ## Recent Decisions
 
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron r
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Scraper | Shared coordination surface is live — agents now check master-todo.md before every response.
 _[truncated]_
 
 ## Today's Pulses (newest first)

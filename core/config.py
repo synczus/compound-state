@@ -24,7 +24,7 @@ SCAN_SYMBOLS: list[str] = [
 ]
 
 # Signal thresholds
-PRICE_MOVE_THRESHOLD: float = float(os.getenv("PRICE_MOVE_THRESHOLD", "0.5"))
+PRICE_MOVE_THRESHOLD: float = float(os.getenv("PRICE_MOVE_THRESHOLD", "0.3"))
 
 # Queue
 QUEUE_MAX_SIZE: int = int(os.getenv("QUEUE_MAX_SIZE", "1000"))
