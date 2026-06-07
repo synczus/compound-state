@@ -314,3 +314,9 @@ _Agents append here when they start/complete work. Read at session start to catc
 
 2026-06-07 20:06 UTC | meta-monitor | All crons and services healthy
 2026-06-07 20:10 UTC | credit-meter | $35.02/50.00 today2026-06-07T20:11:31Z | state-probe | Striker=online WolfWatch=online MetaAge=331s
+
+2026-06-07 20:21 UTC | meta-monitor | All crons and services healthy2026-06-07T20:21:33Z | state-probe | Striker=online WolfWatch=online MetaAge=30s
+[2026-06-07T20:27:19.006776+00:00] | [KAIROS] | [MONITOR_HEALTH_STALE] | Striker health file is 300s old (threshold 120s).
+[2026-06-07T20:27:19.456551+00:00] | [WOLFWATCH] | [CRITICAL] | Striker HEALTH STALE: Striker health file is 300s old (threshold 120s).
+[2026-06-07T20:27:19.456609+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker HEALTH STALE: failed or unconfigured
+[2026-06-07T20:27:19.457017+00:00] | [KAIROS] | [MONITOR_HEALTH_NOTIFY_SENT] | STALE: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"critical","title":"Striker HEALTH STALE","body":"Striker health file is 300s old (threshold 120s).","timestamp":"2026-06-07T20:27:19.006868+00:00"}}
