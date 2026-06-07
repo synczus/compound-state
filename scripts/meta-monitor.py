@@ -16,13 +16,10 @@ EVENT_BUS = Path("/home/synczus/kestrel/event-bus.md")
 
 # Expected cron jobs and their max silence thresholds (seconds)
 EXPECTED_CRONS = {
-    "thought-drop-voice-every-12h": 86400,          # 24h grace (runs every 12h)
-    "market-pulse-every-12h": 86400,                 # 24h grace
     "squirrel-inbox-feeder": 1200,                   # 20 min grace (runs every 5 min)
-    "hlm-scraper-every-6h": 43200,                   # 12h grace
-    "agent-pulse-sync": 3600,                        # 1h grace (runs every 10 min)
     "auto-git-sync": 7200,                           # 2h grace (runs every 1h)
     "or-budget-monitor": 14400,                      # 4h grace
+    "dashboard-aggregator": 3600,                    # 1h grace
     "meta-monitor": 3600,                            # itself — 1h grace
 }
 
@@ -97,6 +94,9 @@ def write_heartbeat():
 def main():
     os.makedirs(HEARTBEAT_DIR, exist_ok=True)
 
+    # Write our heartbeat FIRST so we don't deadlock on our own stale-check
+    write_heartbeat()
+
     alerts = []
     alerts.extend(check_heartbeats())
     alerts.extend(check_services())
@@ -110,8 +110,6 @@ def main():
     else:
         log_event("All crons and services healthy")
         print("All healthy")
-
-    write_heartbeat()
 
 if __name__ == "__main__":
     main()

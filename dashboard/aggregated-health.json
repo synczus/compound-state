@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-07T11:12:36Z",
+  "timestamp": "2026-06-07T12:12:38Z",
   "cron_health": {
     "crons": [
       {
@@ -23,8 +23,8 @@
         "label": "\ud83d\udcc1 Squirrel Feeder",
         "freq": "5min",
         "status": "healthy",
-        "age_seconds": 162,
-        "last_run": "2026-06-07T11:09:54Z"
+        "age_seconds": 159,
+        "last_run": "2026-06-07T12:09:59Z"
       },
       {
         "name": "hlm-scraper-every-6h",
@@ -46,17 +46,17 @@
         "name": "auto-git-sync",
         "label": "\ud83d\udce4 Git Sync",
         "freq": "1h",
-        "status": "missing",
-        "age_seconds": null,
-        "last_run": null
+        "status": "healthy",
+        "age_seconds": 3363,
+        "last_run": "2026-06-07T11:16:35Z"
       },
       {
         "name": "meta-monitor",
         "label": "\ud83d\udd0d Meta-Monitor",
         "freq": "15min",
-        "status": "missing",
-        "age_seconds": null,
-        "last_run": null
+        "status": "healthy",
+        "age_seconds": 454,
+        "last_run": "2026-06-07T12:05:04Z"
       },
       {
         "name": "state-probe",
@@ -71,14 +71,14 @@
         "label": "\ud83d\udcb0 Budget Monitor",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 1287,
-        "last_run": "2026-06-07T10:51:09Z"
+        "age_seconds": 1115,
+        "last_run": "2026-06-07T11:54:03Z"
       }
     ],
     "summary": {
-      "healthy": 2,
+      "healthy": 4,
       "stale": 0,
-      "missing": 7,
+      "missing": 5,
       "total": 9
     }
   },
@@ -97,12 +97,12 @@
     }
   ],
   "cost": {
-    "daily": 24.687347683,
+    "daily": 25.007655406,
     "estimated_per_run": 0.002,
     "daily_estimated": 1.46,
     "weekly_estimated": 10.22,
     "monthly_estimated": 43.8,
-    "last_checked": "2026-06-07T10:51:09Z",
+    "last_checked": "2026-06-07T11:54:03Z",
     "daily_limit": 30.0,
     "per_cron": {
       "\ud83c\udfa4 Voice Drop": {
