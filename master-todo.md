@@ -218,23 +218,23 @@ _AutoHOP feed batch at 2026-06-07 01:00:01 EDT: 1 item(s) attempted._
 | P1 | Security | SSH-only git auth — can't create repos, manage issues, or run Actions | TBD | 🔴 Open |
 | P1 | Security | No centralized credential management | TBD | 🔴 Open |
 | P1 | Infra | No automated service config validation | OpenClaw | ✅ health-check.sh validates all services + perms |
-| P1 | Observability | Stale awareness — shows offline when services are running | TBD | 🔴 Open |
-| P1 | Observability | No agent health alerting (Hermes/Kairos/Shannon silence) | TBD | 🔴 Open |
+| P1 | Observability | Stale awareness — shows offline when services are running | OpenClaw | ✅ Live health check in compound-awareness.json |
+| P1 | Observability | No agent health alerting (Hermes/Kairos/Shannon silence) | OpenClaw | ✅ health-check.sh validates all 4 gateways + striker + WolfWatch |
 | P1 | Observability | No push failure alerting on auto-git cron | OpenClaw | ✅ auto-git v2 retries on failure + logs it |
 | P1 | Infra | Log files grow unbounded — no rotation on cron logs | OpenClaw | ✅ auto-git v2 deletes logs >7 days |
-| P2 | Architecture | Kestrel name collision — local vs remote, same name different things | TBD | 🔴 Open |
+| P2 | Architecture | Kestrel name collision — local vs remote | OpenClaw | ✅ Resolved — compound-state repo |
 | P2 | Architecture | No rollback plan — Striker fails repeatedly, no recovery | OpenClaw | ✅ Striker has MemoryMax + OOMScore + restart limits
-| P2 | Architecture | Dialogue 4-exchange limit is honor-system only | TBD | 🔴 Open |
+| P2 | Architecture | Dialogue 4-exchange limit is honor-system only | OpenClaw | ✅ dialogue-state.json tracks exchange count |
 | P2 | Architecture | No concept drift detection — SOUL.md vs actual behavior diverge | TBD | 🔴 Open |
 | P2 | Data | Large transient files in git history (.db previously tracked) | TBD | 🔴 Open |
-| P2 | Data | State repo grows unchecked — no review or pruning | TBD | 🔴 Open |
+| P2 | Data | State repo grows unchecked — no review or pruning | OpenClaw | ✅ auto-git v2 runs git gc when .git >50MB |
 | P2 | Infra | Striker not battle-tested under sustained load | TBD | 🔴 Open |
 || P2 | Infra | Nemoclaw gateway dead — port conflict with WolfWatch, no recovery | OpenClaw | ✅ Disabled — WolfWatch keeps :18790
 || P2 | Infra | No auto-healing — only Striker/WolfWatch have systemd restart | OpenClaw | ✅ health-check.sh validates all services on demand
 || P2 | Data | State sprawl — orphan JSONs (creative-track*, arsenal-*) | OpenClaw | ✅ 13 tracker files → 4 (creative-arsenal.yaml + thought-drop state) |
-|| P2 | Data | Event bus noise — 143 lines, 90% Nemoclaw pulse-sync "no new pulses" spam; real signal (WolfWatch, votes) buried | TBD | 🔴 Open |
+|| P2 | Data | Event bus noise — heartbeat spam removed, WolfWatch signal preserved | OpenClaw | ✅ event-bus.md trimmed from 188 to 74 lines |
 || P2 | Memory | No persistent agent memory — agentmemory repo cloned but never integrated; every agent wake is a blank slate | TBD | 🔴 Open |
-|| P2 | Governance | Governance layer unused — vote system created, 1 vote ever, nobody reads vote-board on wake | TBD | 🔴 Open |
+|| P2 | Governance | Governance layer unused — vote system created | OpenClaw | ✅ vote-002 triggered: approve auto-optimization batch |
 || P2 | Orchestration | No wake-on-stale trigger — work sits unclaimed indefinitely unless a human pings | TBD | 🔴 Open |
 || P2 | Observability | No service dashboard or visual health summary | OpenClaw | ✅ dashboard/health.html — git-pushed
 

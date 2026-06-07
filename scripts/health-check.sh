@@ -75,3 +75,13 @@ else
     echo "❌ $FAILURES failure(s) found"
 fi
 exit $FAILURES
+# ── Concept Drift Check ──
+# Compare actual recent behavior vs SOUL.md stated principles
+SOUL="/home/synczus/.openclaw/workspace/SOUL.md"
+if [ -f "$SOUL" ]; then
+    CORE_VALUES=$(grep -c "Be genuinely\|Have opinions\|Be resourceful\|Earn trust\|Remember you're a guest\|Private things stay" "$SOUL" 2>/dev/null || echo 0)
+    if [ "$CORE_VALUES" -lt 3 ]; then
+        echo "⚠️  Concept drift suspected — SOUL.md core principles may be stale ($CORE_VALUES found)"
+        FAILURES=$((FAILURES+1))
+    fi
+fi

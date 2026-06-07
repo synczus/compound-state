@@ -14,6 +14,10 @@ find /home/synczus/.hermes/logs/ -name "*.log" -mtime +$MAX_LOG_AGE_DAYS -delete
 find /home/synczus/kestrel/ -name "auto-git.log*" -mtime +$MAX_LOG_AGE_DAYS -delete 2>/dev/null
 
 # Clean up stale temp files
+# Repo maintenance — auto gc if .git grows >50MB
+cd "$REPO_DIR"
+REPO_SIZE=$(du -s .git 2>/dev/null | cut -f1)
+[ "$REPO_SIZE" -gt 50000 ] && git gc --auto 2>> "$LOG_FILE" && echo "$(date) — git gc (${REPO_SIZE}K)" >> "$LOG_FILE"
 find /home/synczus/kestrel/ -name "*.tmp" -mtime +1 -delete 2>/dev/null
 find /home/synczus/kestrel/ -name "*.bak" -mtime +1 -delete 2>/dev/null
 

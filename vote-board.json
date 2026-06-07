@@ -1,4 +1,25 @@
 {
-  "proposals": [],
+  "proposals": [
+    {
+      "id": "vote-002",
+      "title": "Approve auto-optimization batch \u2014 11 weaknesses fixed",
+      "description": "OpenClaw fixed 11 items: Striker OOM limits (512MB), log rotation, health dashboard, credential lockdown, stale awareness fix, event bus cleanup, 7 tracker files consolidated, dialogue tracking, service config validator, port conflict resolved. Approve locks these as compound policy.",
+      "proposed_by": "openclaw",
+      "created": "2026-06-07T10:26:17.670019+00:00",
+      "status": "open",
+      "options": [
+        "approve",
+        "veto",
+        "amend"
+      ],
+      "voters": [
+        "hermes",
+        "kairos",
+        "shannon",
+        "openclaw"
+      ],
+      "votes": {}
+    }
+  ],
   "archive_dir": "/home/synczus/kestrel/votes/archive"
 }
