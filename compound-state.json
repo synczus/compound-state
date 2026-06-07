@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-07T10:03:36.200753+00:00",
-  "epoch_seconds": 1780826616,
+  "timestamp": "2026-06-07T10:17:14.646300+00:00",
+  "epoch_seconds": 1780827434,
   "board_summary": {
     "p0_pending": 0,
     "p1_pending": 0,
@@ -9,7 +9,10 @@
     "in_progress": 3
   },
   "striker": {
-    "status": "offline"
+    "status": "connected",
+    "price": "unknown",
+    "symbol": "unknown",
+    "last_signal": "none"
   },
   "recent_hlms": [
     "- [ ] 2026-06-07 | Scraper | Grok's inversion caught the real meta-failure \u2014 a protocol that allows unverified claims to become fixes is theater, not infrastructure. This cron fix was clean (verified: script exists, syntax passes, port responds 200), but the inversion proved that the **Striker systemd deployment** must be done under full v3.2 verification, not patched like the watchdog. The cron fix is a band-aid; the Striker service file is the real surgery.",

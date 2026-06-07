@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 STATE_FILE = "/home/synczus/kestrel/compound-state.json"
 HISTORY_FILE = "/home/synczus/kestrel/compound-awareness.json"
 BOARD_FILE = "/home/synczus/kestrel/master-todo.md"
-STRIKER_HEALTH = "/home/synczus/huntsystems/kestrel-striker/striker_health.json"
+STRIKER_HEALTH = "/home/synczus/kestrel/striker_health.json"
 
 def read_file_safe(path):
     try:
