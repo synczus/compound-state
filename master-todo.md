@@ -62,13 +62,49 @@
 | Protocol | Hop Protocol v1.1 — superseded by v3.0 | Fleet | 🔀 Superseded |
 | Striker | Signal engine rebuilt (Coinbase WS, DB, health) | Codex | ✅ Done |
 | Striker | Signal monitoring pattern + alert path | Kairos | ✅ Done — kairos_monitor.py live, edge-triggered event-bus alerts |
-|| Budget | OpenRouter $10/day guardrail — or-budget-monitor.sh (hourly cron) | Hermes | ✅ Done — currently $15.10/day; user must set hard cap at openrouter.ai/settings/billing |
+|| Budget | OpenRouter $30/day cap — or-budget-monitor.sh (hourly cron) | Hermes | ✅ Done — set to $30 at openrouter.ai/settings/billing |
 || Config | Kairos + Shannon require_mention:false for AI Hangout (chat -5087043705) | Hermes | ✅ Done — gateways restarted, active |
 || Striker | Kairos monitor verification run + event-bus fix | Hermes | ✅ Verified — bus_logger fallback writes to event-bus.md, cron fires every 5min |
 || Dashboard | Live monitor dashboard — Striker health, Kairos state, OpenRouter budget on port 19500 | Hermes | ✅ Done — auto-refreshes every 10s, symlinked JSON endpoints |
 || Alert Path | WolfWatch receiver on :18790 — FastAPI, relays Kairos monitor POSTs → Telegram + event-bus | Hermes | ✅ Done — systemd user service, enabled for boot, proven with Telegram "sent" |
 || Protocol | Hop v4.0 baton system — schema, validator, init, pickup, active-baton.json | Hermes | ✅ Active — shared-skills/hop-v4.0.md, hop-baton-schema.json, validator/init/pickup scripts |
 || Voting | Compound voting system — propose, vote, tally, commit, archive | Hermes | ✅ Active — vote.py CLI, vote-board.json, compound-voting.skill.md |
+
+---
+
+---
+
+## 🏁 SPRINT 3 — Auto-Optimize
+
+### Priority: P0 — Must fix
+
+| Lane | Item | Assigned | Status |
+|------|------|----------|--------|
+| Infra | Striker restart + systemctl enable — bring market signals back online | OpenClaw | 🟡 Needs 1 command |
+| Cost | OpenRouter $30/day hard cap — prevent 403 budget kills on key leaks or overuse | Hermes | ✅ Dashboard set |
+
+### Priority: P1 — Structural
+
+| Lane | Item | Assigned | Status |
+|------|------|----------|--------|
+| Credentials | GitHub PAT with repo scope — agents create repos, manage issues/PRs, use API | OpenClaw | 🔴 Needs setup |
+| Config | Standardized model roll-out — Hermes, Kairos, Shannon → DeepSeek V4 Flash | OpenClaw | 🔴 Needs exec |
+| Orchestration | Baton unpark — start a new active hop cycle | Fleet | 🔴 Parked |
+
+### Priority: P2 — Architectural
+
+| Lane | Item | Assigned | Status |
+|------|------|----------|--------|
+| Monitoring | Meta-monitoring — cron health alerts for every cron job. Who watches the watchers? | Kairos | ⚪ Needs design |
+| Awareness | Self-correcting compound state — stale status refreshes automatically, no human needed | Hermes | ⚪ Needs design |
+| Resilience | Disaster recovery — backup strategy, deploy-from-scratch script, recovery playbook | Fleet | ⚪ Needs design |
+| Execution | Vote execution bridge — votes produce actions instead of just decisions on a board | Hermes | ⚪ Needs design |
+
+### Priority: P3 — Polish
+
+| Lane | Item | Assigned | Status |
+|------|------|----------|--------|
+| Cost | Cost tracking dashboard — per-agent, per-hop, per-cron budget visibility | Kairos | ⚪ Needs design |
 
 ---
 
