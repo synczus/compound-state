@@ -158,3 +158,31 @@ _Agents append here when they start/complete work. Read at session start to catc
 [2026-06-07T10:15:06.215995+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_FAILED] | STAGNANT: timed out
 [2026-06-07T10:15:06.792431+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: 0 signals for 266 minutes since monitor first observed DB.
 [2026-06-07T10:15:06.792498+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for Striker DB STAGNANT: sent
+[2026-06-07T10:20:05.427456+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:05.427521+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'thought-drop-voice-every-12h' has never written a heartbeat
+⚠️ meta-monitor: WolfWatch unreachable (timed out) — alert missed: ⚠️ Cron 'market-pulse-every-12h' has never written a heartbeat
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'market-pulse-every-12h' has never written a heartbeat[2026-06-07T10:20:11.035767+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:11.035824+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+
+⚠️ meta-monitor: WolfWatch unreachable (timed out) — alert missed: ⚠️ Cron 'squirrel-inbox-feeder' has never written a heartbeat
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'squirrel-inbox-feeder' has never written a heartbeat[2026-06-07T10:20:16.009145+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:16.009221+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'hlm-scraper-every-6h' has never written a heartbeat[2026-06-07T10:20:16.048440+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:16.048502+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+
+⚠️ meta-monitor: WolfWatch unreachable (timed out) — alert missed: ⚠️ Cron 'agent-pulse-sync' has never written a heartbeat
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'agent-pulse-sync' has never written a heartbeat[2026-06-07T10:20:21.573791+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:21.573850+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+[2026-06-07T10:20:21.641315+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:21.641376+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'auto-git-sync' has never written a heartbeat[2026-06-07T10:20:22.240991+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:22.241050+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'or-budget-monitor' has never written a heartbeat[2026-06-07T10:20:22.847138+00:00] | [WOLFWATCH] | [WARNING] | : 
+[2026-06-07T10:20:22.847204+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for : sent
+
+2026-06-07 10:20 UTC | meta-monitor | ⚠️ Cron 'meta-monitor' has never written a heartbeat
