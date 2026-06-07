@@ -11,6 +11,7 @@
 ## 🔴 P0 — Must Do
 - [ ] 2026-06-07 | Kairos | BotFather privacy — /setprivacy → Disable @Kairos8638_bot | @Chase
 - [ ] 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle
+- [ ] 2026-06-07 | Shannon | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Tallied by Shannon → action needed
 
 ## 🟡 P1 — Should Do
 - [ ] 2026-06-07 | Shannon | Audit + merge duplicate cron monitors (3 overlaps)

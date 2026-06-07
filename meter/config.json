@@ -1,4 +1,4 @@
 {
-  "daily_cap": 30.00,
-  "_comment": "Change daily_cap to match your OpenRouter dashboard limit. The meter uses this value."
+  "daily_cap": 50,
+  "_comment": "Auto-adjusted based on spend"
 }
