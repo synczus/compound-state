@@ -1,0 +1,72 @@
+2026-06-06 01:34:43,315 [INFO] trigger_autohop | force=True | signal=bridge smoke test: is the plumbing wired?
+2026-06-06 01:34:43,316 [INFO] launching: /usr/bin/python3 /home/synczus/kestrel/run_autohop.py bridge smoke test: is the plumbing wired? --chain all --force
+2026-06-06 01:34:43,404 [INFO] done | rc=1 status=success | stdout=0 chars | stderr=431 chars
+2026-06-06 01:34:43,404 [WARNING] stderr: Traceback (most recent call last):
+  File "/home/synczus/kestrel/run_autohop.py", line 32, in <module>
+    from swarm.hub import HubController
+  File "/home/synczus/kestrel/swarm/hub.py", line 8, in <module>
+    from .openrouter_client import call_specialist, is_available as or_available
+  File "/home/synczus/kestrel/swarm/openrouter_client.py", line 13, in <module>
+    import httpx
+ModuleNotFoundError: No module named 'httpx'
+
+2026-06-06 01:35:18,044 [INFO] trigger_autohop | force=True | signal=bridge smoke test: is the plumbing wired?
+2026-06-06 01:35:18,044 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py bridge smoke test: is the plumbing wired? --chain all --force
+2026-06-06 01:35:49,660 [INFO] done | rc=3 status=success | stdout=1484 chars | stderr=5745 chars
+2026-06-06 01:35:49,660 [WARNING] stderr: 2026-06-06 01:35:18,147 [INFO] kestrel.noise_gate: PROMOTE: Telegram_1780724118.14709 | Score: 0 | Reason: No significant markers found
+2026-06-06 01:35:18,147 [INFO] kestrel.hub: ROUTE codex -> OpenRouter (codex)
+2026-06-06 01:35:18,147 [INFO] kestrel.openrouter: OpenRouter call | role=codex model=google/gemini-2.5-flash-lite tokens=1500
+2026-06-06 01:35:18,795 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-06 01:35:19,722 [INFO] kestrel
+2026-06-06 04:51:25,469 [INFO] trigger_autohop | force=True | signal=Build the ultimate cost-efficient Paperclip pipeline. Leverage the positioned AutoHOP chain (codex->...->gate). Default 
+2026-06-06 04:51:25,469 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py Build the ultimate cost-efficient Paperclip pipeline. Leverage the positioned AutoHOP chain (codex->...->gate). Default to cheap models, use expensive only at Gate for high-leverage items. Output a clear integration plan and any code changes needed. --chain all --force
+2026-06-06 04:52:45,987 [INFO] done | rc=0 status=success | stdout=1167 chars | stderr=2698 chars
+2026-06-06 04:52:45,987 [WARNING] stderr: 2026-06-06 04:51:25,558 [INFO] kestrel.noise_gate: PROMOTE: Telegram_1780735885.558046 | Score: 0 | Reason: No significant markers found
+2026-06-06 04:51:25,558 [INFO] kestrel.hub: ROUTE codex -> OpenRouter (codex)
+2026-06-06 04:51:25,558 [INFO] kestrel.openrouter: OpenRouter call | role=codex model=google/gemini-2.5-flash-lite tokens=1500
+2026-06-06 04:51:31,445 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-06 04:51:32,399 [INFO] kestre
+2026-06-06 13:13:02,251 [INFO] trigger_autohop | force=True | signal=2026-06-06 | Hermes | Test item — verify pipeline feeder works
+2026-06-06 13:13:02,252 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-06 | Hermes | Test item — verify pipeline feeder works --chain all --force
+2026-06-06 13:13:29,509 [INFO] done | rc=2 status=success | stdout=1153 chars | stderr=2823 chars
+2026-06-06 13:13:29,509 [WARNING] stderr: 2026-06-06 13:13:02,376 [INFO] kestrel.noise_gate: PROMOTE: Telegram_1780765982.376553 | Score: 0 | Reason: No significant markers found
+2026-06-06 13:13:02,376 [INFO] kestrel.hub: ROUTE hermes -> OpenRouter (hermes)
+2026-06-06 13:13:02,376 [INFO] kestrel.openrouter: OpenRouter call | role=hermes model=google/gemini-2.5-flash-lite tokens=1500
+2026-06-06 13:13:03,005 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-06 13:13:03,522 [INFO] kes
+2026-06-06 15:30:02,010 [INFO] trigger_autohop | force=False | signal=2026-06-06 | Hermes | Wire Shannon Closer as auto-judge for every dialogue round — scores both propositions after each e
+2026-06-06 15:30:02,011 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-06 | Hermes | Wire Shannon Closer as auto-judge for every dialogue round — scores both propositions after each exchange --chain all
+2026-06-06 15:30:02,141 [INFO] done | rc=1 status=success | stdout=616 chars | stderr=228 chars
+2026-06-06 15:30:02,141 [WARNING] stderr: 2026-06-06 15:30:02,122 [INFO] kestrel.noise_gate: PURGE: Telegram_1780774202.122543 | Score: 0 | Reason: No significant markers found
+2026-06-06 15:30:02,123 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-06 16:00:01,533 [INFO] trigger_autohop | force=False | signal=2026-06-06 | Hermes | Diagnose $20/day OpenRouter spend — check dashboard for which model/provider is burning credits
+2026-06-06 16:00:01,534 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-06 | Hermes | Diagnose $20/day OpenRouter spend — check dashboard for which model/provider is burning credits --chain all
+2026-06-06 16:00:01,653 [INFO] done | rc=1 status=success | stdout=613 chars | stderr=228 chars
+2026-06-06 16:00:01,653 [WARNING] stderr: 2026-06-06 16:00:01,630 [INFO] kestrel.noise_gate: PURGE: Telegram_1780776001.630391 | Score: 0 | Reason: No significant markers found
+2026-06-06 16:00:01,630 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-06 16:30:01,361 [INFO] trigger_autohop | force=False | signal=2026-06-06 | OpenClaw | Deploy token usage metrics first before building cost dashboard — phase instrumentation
+2026-06-06 16:30:01,361 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-06 | OpenClaw | Deploy token usage metrics first before building cost dashboard — phase instrumentation --chain all
+2026-06-06 16:30:01,490 [INFO] done | rc=1 status=success | stdout=607 chars | stderr=228 chars
+2026-06-06 16:30:01,490 [WARNING] stderr: 2026-06-06 16:30:01,463 [INFO] kestrel.noise_gate: PURGE: Telegram_1780777801.463378 | Score: 0 | Reason: No significant markers found
+2026-06-06 16:30:01,464 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-07 00:00:01,372 [INFO] trigger_autohop | force=False | signal=2026-06-06 | Scraper | Shared coordination surface is live — agents now check master-todo.md before every response.
+2026-06-07 00:00:01,372 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-06 | Scraper | Shared coordination surface is live — agents now check master-todo.md before every response. --chain all
+2026-06-07 00:00:01,490 [INFO] done | rc=1 status=success | stdout=647 chars | stderr=228 chars
+2026-06-07 00:00:01,490 [WARNING] stderr: 2026-06-07 00:00:01,470 [INFO] kestrel.noise_gate: PURGE: Telegram_1780804801.470376 | Score: 0 | Reason: No significant markers found
+2026-06-07 00:00:01,471 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-07 00:30:01,698 [INFO] trigger_autohop | force=False | signal=2026-06-06 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique
+2026-06-07 00:30:01,698 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-06 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique), and adding it doubles the DB's philosophical range — Oblique breaks rules, Six Hats structures thinking. Together they cover chaos *and* structure, which means the compound can now frame any problem from either direction every 5 minutes. --chain all
+2026-06-07 00:30:01,805 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-07 00:30:01,805 [WARNING] stderr: 2026-06-07 00:30:01,787 [INFO] kestrel.noise_gate: PURGE: Telegram_1780806601.787372 | Score: 0 | Reason: No significant markers found
+2026-06-07 00:30:01,787 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-07 01:00:01,784 [INFO] trigger_autohop | force=False | signal=2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron r
+2026-06-07 01:00:01,784 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron rotation with weighted selection logic and concrete examples — the compound's auto-conversation went from "what should we work on" to "here's a signal fragment, a contradiction, or a bet" every 5 minutes, and the only dead spot is whichever agent doesn't respond. --chain all
+2026-06-07 01:00:01,891 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-07 01:00:01,891 [WARNING] stderr: 2026-06-07 01:00:01,872 [INFO] kestrel.noise_gate: PURGE: Telegram_1780808401.872881 | Score: 0 | Reason: No significant markers found
+2026-06-07 01:00:01,873 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+

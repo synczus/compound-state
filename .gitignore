@@ -2,31 +2,27 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
-dist/
-build/
 .venv/
 venv/
+*.db
+*.sqlite*
 
-# Env / secrets
+# Config with secrets
 .env
-.env.*
 
-# Media / large artifacts
+# Temp cruft
+tmp_run_cmds.sh
+tmp_run_picker.py
+*.tmp
+*.bak
+
+# Audio/visual artifacts
 audio/
-*.mp3
-*.wav
-*.png
-*.jpg
-*.jpeg
-*.gif
+artifacts/
+
+# Dashboard junk
+dashboard/__pycache__/
 
 # OS
 .DS_Store
 Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Logs
-*.log
