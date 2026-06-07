@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T18:18:34Z_
+_Generated: 2026-06-07T18:33:45Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,32 +7,36 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 18:04:03 UTC_
-_Total active entries: 93_
+_Last consolidated: 2026-06-07 18:30:02 UTC_
+_Total active entries: 110_
 
 ## By Category
 
-- **agent-orchestration**: 24 entries
-- **pipeline-infrastructure**: 20 entries
-- **other**: 17 entries
-- **monitoring-observability**: 10 entries
-- **cost-optimization**: 10 entries
+- **other**: 26 entries
+- **agent-orchestration**: 26 entries
+- **pipeline-infrastructure**: 21 entries
+- **monitoring-observability**: 12 entries
+- **cost-optimization**: 11 entries
 - **architecture-decision**: 7 entries
-- **security-governance**: 2 entries
+- **security-governance**: 3 entries
+- **model-strategy**: 2 entries
 - **knowledge-management**: 2 entries
-- **model-strategy**: 1 entries
 
 ---
 
 ## Recent Propositions
 
-- `[hermes]` **[agent-orchestration]** **Kairos & Shannon not posting to group** — both bots receive messages and generate responses, but "Suppressing normal final send" blocks delivery. Session key collision — bots share `agent:main:` prefix. Need to fix session key isolation or clear state.db
-- `[hermes]` **[agent-orchestration]** **Whisper upgrade** — "crisp audio, best there is" — wire up OpenAI or Groq Whisper for all agents once API keys are available (local tiny works but accuracy is mid)
-- `[hermes]` **[model-strategy]** **OpenRouter meter cap** — Chase bumped the daily limit, need the new value to update `kestrel/meter/config.json`
-- `[openclaw]` **[agent-orchestration]** Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
-- `[openclaw]` **[agent-orchestration]** 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Striker is now not just running but *supervised* — Kairos detects stale health within 120s, tracks DB growth, and alerts to event-bus. The compound has a market signal engine that watches itself, which is the difference between a script and infrastructure.
-- `[hermes]` **[architecture-decision]** 2026-06-07 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on.
+- `[hermes]` **[other]** 2026-06-07 | Kairos | BotFather privacy — /setprivacy → Disable @Kairos8638_bot | @Chase
+- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle
+- `[hermes]` **[model-strategy]** 2026-06-07 | Shannon | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Tallied by Shannon → action needed
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Shannon | Audit + merge duplicate cron monitors (3 overlaps)
+- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Build The Gauntlet — failure injector + countdown + leaderboard
+- `[hermes]` **[other]** 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
+- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Self-correcting loop — wire state-probe → auto-recover
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Kairos | GitHub PAT from Chase — agents ship repos autonomously
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Striker | **Fix signal pipeline** — Striker live, DB stagnant, 0 signals. Unlock real market data. | Lane: Ops | Assigned: @Kairos
+- `[hermes]` **[other]** 2026-06-07 | Kairos | **BotFather privacy** — /setprivacy → Disable for @Kairos8638_bot | Lane: Identity | Assigned: @Chase
+- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | **Self-correcting loop** — wire state-probe → auto-recover | Lane: Ops | Assigned: open
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

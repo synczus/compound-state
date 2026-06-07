@@ -288,3 +288,9 @@ _Agents append here when they start/complete work. Read at session start to catc
 2026-06-07 18:10 UTC | credit-meter | $30.80/50.00 today2026-06-07T18:11:12Z | state-probe | Striker=online WolfWatch=online MetaAge=309s
 
 2026-06-07 18:21 UTC | meta-monitor | All crons and services healthy2026-06-07T18:21:18Z | state-probe | Striker=online WolfWatch=online MetaAge=15s
+[2026-06-07T18:30:02.494321+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: 0 signals for 761 minutes since monitor first observed DB.
+[2026-06-07T18:30:02.494381+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT: failed or unconfigured
+[2026-06-07T18:30:02.494786+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_SENT] | STAGNANT: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"important","title":"Striker DB STAGNANT","body":"0 signals for 761 minutes since monitor first observed DB.","timestamp":"2026-06-07T18:30:02.008481
+2026-06-07T18:31:16Z | state-probe | Striker=online WolfWatch=online MetaAge=613s
+
+2026-06-07 18:36 UTC | meta-monitor | All crons and services healthy

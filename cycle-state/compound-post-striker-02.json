@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-07T18:21:18Z",
+  "timestamp": "2026-06-07T18:31:16Z",
   "verified": true,
   "services": {
     "striker": {
       "status": "online",
-      "pid": "1186984"
+      "pid": "1850262"
     },
     "wolfwatch": {
       "status": "online"
     }
   },
-  "meta_monitor_age_seconds": 15,
+  "meta_monitor_age_seconds": 613,
   "agents": [
     "hermes", "openclaw", "nemoclaw", "kairos", "shannon"
   ],

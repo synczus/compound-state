@@ -158,8 +158,8 @@ class PriceTracker:
     """
     _prices: dict[str, dict] = field(default_factory=dict)
     _window_anchor: dict[str, dict] = field(default_factory=dict)  # symbol -> {price, epoch_start}
-    WINDOW_SECONDS: int = 300  # 5 minutes
-    MIN_WINDOW_TICKS: int = 3
+    WINDOW_SECONDS: int = 60  # 1 minute window
+    MIN_WINDOW_TICKS: int = 5
     _tick_counts: dict[str, int] = field(default_factory=dict)
 
     def seed(self, symbol: str, price: float, volume: Optional[float] = None) -> None:
