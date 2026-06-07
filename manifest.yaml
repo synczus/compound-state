@@ -1,0 +1,155 @@
+# Synapse Manifest v0.1
+# One file. Every agent reads on boot.
+# Kills: identity split, broadcast noise, config sprawl, per-source adapters.
+
+version: "0.1"
+generated: "2026-06-07T19:20:00Z"
+
+# ── Identity ──────────────────────────────────────────────────────────
+# Every agent has one canonical ID. No split between BotFather label,
+# gateway service name, and SOUL.md. All three point to the same id.
+
+agents:
+  - id: kairos
+    lane: timing-ops
+    priority: 1           # scouts first in hop chain
+    soul: kestrel/identity/kairos-soul.md
+    gateway_bot: "@Kairos8638_bot"
+    gateway_service: kairos-gateway.service
+    respond_mode: event
+
+  - id: nemoclaw
+    lane: identity-referee
+    priority: 2
+    soul: kestrel/identity/nemoclaw-soul.md
+    gateway_bot: "@Nemoclaw8364_bot"
+    gateway_service: openclaw-nemoclaw.service
+    respond_mode: event
+
+  - id: openclaw
+    lane: config-infra
+    priority: 3
+    soul: kestrel/identity/openclaw-soul.md
+    gateway_bot: "@kestrelmarkets_bot"
+    gateway_service: openclaw-gateway.service
+    respond_mode: event
+
+  - id: hermes
+    lane: cron-execution
+    priority: 4
+    soul: kestrel/identity/hermes-soul.md
+    gateway_bot: "(Hermes/Codex)"
+    gateway_service: hermes-gateway.service
+    respond_mode: event
+
+# ── Dialogue Router ───────────────────────────────────────────────────
+# Event-driven, not broadcast. Messages route by trigger pattern to the
+# owning lane. Only completed/failure/escalation broadcasts to the group.
+
+dialogue:
+  router: event-driven
+  priority_chain: [timing-ops, identity-referee, config-infra, cron-execution]
+  broadcast_on: [completed, failure, escalation]
+  rules:
+    - trigger: "scout:*"
+      lane: timing-ops
+    - trigger: "build:*"
+      lane: identity-referee
+    - trigger: "config:*"
+      lane: config-infra
+    - trigger: "schedule:*"
+      lane: cron-execution
+    - trigger: "review:*"
+      lane: identity-referee
+    - trigger: "risk:*"
+      lane: timing-ops
+
+# ── Signal Ingestion Contract ─────────────────────────────────────────
+# Every external source normalizes into this shape BEFORE it reaches any
+# agent or pipeline. No per-source adapters. No special-case parsers.
+# Sources declare their profile; the ingestion layer normalizes.
+
+signals:
+  event_bus:
+    protocol: zmq
+    port: 42006
+    format: msgpack
+
+  # The canonical event shape every source normalizes into.
+  event_shape:
+    source_id: string      # "ibkr", "disclosetv", "striker-crypto", "x-feed", "onchain"
+    event_type: string     # "price_movement", "geopolitical_alert", "order_fill", "signal"
+    timestamp: int         # unix nanoseconds, UTC
+    payload:
+      headline: string     # human-readable summary (1 line)
+      body: string         # full raw text (optional)
+      symbols: [string]    # affected instruments ("BTC", "SPY", "EURUSD")
+      metrics:
+        confidence: float  # 0.0-1.0 — source or layer-assigned
+        magnitude: float   # 0.0-1.0 — event severity scale
+        velocity: string   # "rising", "steady", "decaying"
+    provenance:
+      source_url: string   # original link
+      raw_message_id: string # Telegram msg_id, WS sequence, etc.
+      verified: bool       # false until agent review confirms
+      verified_by: string  # agent id
+
+  # ── Source Declarations ─────────────────────────────────────────────
+  # Each external source declares what it is, not how to parse it.
+
+  sources:
+    - id: striker-crypto
+      venue: coinbase
+      status: deprecated
+      reason: "Narrow 0.5% threshold detector on 3 coins — Grok inversion hop-2026-06-07"
+      migration_target: ibkr
+
+    - id: ibkr
+      venue: interactive-brokers
+      status: planned
+      adapter: mmr-data-service
+      ingestion_pattern: "tick → data_service → strategy_service → messagebus"
+      required_setup:
+        - "TWS_USERID"
+        - "TWS_PASSWORD"
+        - "IB_PAPER_ACCOUNT"
+        - "MASSIVE_API_KEY (recommended)"
+
+    - id: disclosetv
+      venue: telegram
+      status: contract-defined
+      ingestion_pattern: "telegram export → normalizer → event_bus"
+      note: "High-volume geopolitical firehose. Do not build scraper before defining contract — Grok inversion hop-2026-06-07-disclosetv-ingestion-inversion"
+      requires:
+        - "normalizer adapter (converts free text to event_shape)"
+        - "confidence scorer (reduces noise before event_bus)"
+        - "provenance mapper (message_id → source_url)"
+
+    - id: x-feed
+      venue: twitter
+      status: future
+      ingestion_pattern: "tbd"
+
+    - id: onchain
+      venue: blockchain
+      status: future
+      ingestion_pattern: "tbd"
+
+# ── State & Control ───────────────────────────────────────────────────
+# Minimal state discipline. The cycle-state baton is the single source
+# of truth. Kill switches are explicit and scoped.
+
+state:
+  source_of_truth: cycle-state/current.json
+  refresh_events: [boot, completion, failure]
+
+  kill_switches:
+    - id: halt-trading
+      description: "Stop all execution, preserve positions"
+      action: "set mmr to paper-only, preserve all state"
+    - id: freeze-signals
+      description: "Stop ingestion, do not touch existing positions"
+      action: "stop signal ingestion, hold current positions"
+    - id: emergency-shutdown
+      description: "Close everything, stop agents, notify Chase"
+      action: "close all positions, stop all agent gateways, notify Chase via Telegram + SMS"
