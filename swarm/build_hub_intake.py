@@ -70,6 +70,12 @@ def build(today: str | None = None) -> str:
 
     noise = _read_safe(NOISE_CTX_PATH, MAX_NOISE_CHARS)
     if noise:
+        # Strip PURGE entries with "No significant markers found" — dead bytes
+        noise = "\n".join(
+            ln for ln in noise.split("\n")
+            if not ln.strip().startswith("- PURGE")
+            or "reason=No significant markers found" not in ln
+        )
         lines += ["## Noise Gate Context (last 24h)", "", noise, ""]
 
     pulses = _latest_pulses(today)

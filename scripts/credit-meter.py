@@ -11,6 +11,7 @@ from pathlib import Path
 
 HERMES_ENV = Path("/home/synczus/.hermes/.env")
 EVENT_BUS = Path("/home/synczus/kestrel/event-bus.md")
+CAP_FILE = Path("/home/synczus/kestrel/config/credit-cap.json")
 
 def get_openrouter_usage():
     """Fetch OpenRouter key stats."""
@@ -27,7 +28,7 @@ def get_openrouter_usage():
     
     try:
         result = subprocess.run(
-            ["curl", "-sf", "--max-time", "5", "https://openrouter.ai/api/v1/auth/key",
+            ["curl", "-sf", "--max-time", "10", "https://openrouter.ai/api/v1/auth/key",
              "-H", f"Authorization: Bearer {api_key}"],
             capture_output=True, text=True, timeout=10
         )
@@ -36,6 +37,19 @@ def get_openrouter_usage():
         return d, None
     except Exception as e:
         return None, str(e)
+
+def read_daily_cap():
+    """Read daily cap from config file, or default to 30.0."""
+    if CAP_FILE.exists():
+        try:
+            data = json.loads(CAP_FILE.read_text())
+            cap = float(data.get("daily_limit", 30.0))
+            if cap > 0:
+                return cap
+        except (json.JSONDecodeError, ValueError, TypeError):
+            pass
+    return 30.0
+
 
 def generate_meter(used_money, daily_cap=30.0):
     """Create a visual meter string."""
@@ -70,7 +84,7 @@ def main():
     used_weekly = data.get("usage_weekly", 0)
     used_total = data.get("usage", 0)
     
-    daily_cap = 30.0
+    daily_cap = read_daily_cap()
     meter = generate_meter(used_daily, daily_cap)
     
     # Full message

@@ -79,6 +79,18 @@ Default to votes. If you're about to ask "what should we do?" — call a vote in
 - Chase's explicit instructions
 - Routine lane work
 
-## 9. Hop Baton
+## 9. Context Efficiency — Baton First
 
-Every agent loads `kestrel/cycle-state/current.json` on startup. Verified facts, HLMs, blockers, evidence, open loops. This is how you know what happened across sessions.
+The baton (`cycle-state/current.json`) is your **single source of session context**. It now contains: market prices, budget status, service health, recent HLMs, last action, board state, open loops.
+
+**Read order:**
+1. **Baton only** on every startup — fast, current, 1 file
+2. **Master-todo** — only if baton shows pending P0 in your lane
+3. SOUL.md — once per restart, not per message
+4. **Skip everything else** — swarm-briefing, HUB_INTAKE, and tool-registry content is already in the baton
+
+This saves ~50K tokens of re-read overhead per session. That's faster responses and more budget for real work.
+
+## 10. Hop Baton
+
+`kestrel/cycle-state/current.json` — verified facts, HLMs, blockers, evidence, open loops. This is how agents share context across separate gateways. Update it when you complete a cycle.

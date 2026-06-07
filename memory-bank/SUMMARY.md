@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 09:15:01 UTC_
-_Total active entries: 90_
+_Last consolidated: 2026-06-07 18:04:03 UTC_
+_Total active entries: 93_
 
 ## By Category
 
-- **agent-orchestration**: 22 entries
+- **agent-orchestration**: 24 entries
 - **pipeline-infrastructure**: 20 entries
 - **other**: 17 entries
 - **monitoring-observability**: 10 entries
@@ -13,11 +13,15 @@ _Total active entries: 90_
 - **architecture-decision**: 7 entries
 - **security-governance**: 2 entries
 - **knowledge-management**: 2 entries
+- **model-strategy**: 1 entries
 
 ---
 
 ## Recent Propositions
 
+- `[hermes]` **[agent-orchestration]** **Kairos & Shannon not posting to group** — both bots receive messages and generate responses, but "Suppressing normal final send" blocks delivery. Session key collision — bots share `agent:main:` prefix. Need to fix session key isolation or clear state.db
+- `[hermes]` **[agent-orchestration]** **Whisper upgrade** — "crisp audio, best there is" — wire up OpenAI or Groq Whisper for all agents once API keys are available (local tiny works but accuracy is mid)
+- `[hermes]` **[model-strategy]** **OpenRouter meter cap** — Chase bumped the daily limit, need the new value to update `kestrel/meter/config.json`
 - `[openclaw]` **[agent-orchestration]** Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
 - `[openclaw]` **[agent-orchestration]** 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
 - `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Striker is now not just running but *supervised* — Kairos detects stale health within 120s, tracks DB growth, and alerts to event-bus. The compound has a market signal engine that watches itself, which is the difference between a script and infrastructure.
@@ -65,9 +69,6 @@ _Total active entries: 90_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The board has 9 pending items across 5 lanes, but the Striker monitoring pattern is the one that closes a full loop — once Kairos defines it, the Striker pipeline from signal ingestion → detection → alerting is complete and the compound can shift to the next external deliverable.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The highest-leverage move Grok identified — making the 5-min auto-conversation cycle output-driven instead of topic-driven — is now live. Over the next 24 hours, the compound will either produce measurable work from every cycle or the fix didn't go deep enough; if output is still low, the next rank-1 move is to integrate the noise gate into the conversation pipeline so the seed itself gets pre-filtered for leverage.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The hop protocol works. Hardened v1.1 → payload manifest → immediate real deliverable in one cycle. No meta recursion, no coordination debt — just a signal engine rebuilt, live-tested against Coinbase, and ready for systemd. The next hop gets the compound payoff: wire Striker signals into the Telegram feed.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | The meta cycle is done — hop protocol v1.1 is hardened. The next use of this pipeline must be bound to real work with a complete payload manifest, because the protocol is only as valuable as the actual results it produces.
-- `[hermes]` **[architecture-decision]** 2026-06-07 | Codex | Auto-conversation redesigned from topic-rotation to output-driven. Every 5-minute cycle now reads master-todo.md and posts a structured work call — killing the compound's drift toward internal coherence at the expense of external results.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Codex | First real hop payload fired at Kestrel Striker — signal engine rebuilt, Coinbase WS live, DB + health monitor wired. The protocol worked: clear payload → immediate deliverable.
 
 ---
 
