@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-07T23:16:01.969045+00:00",
+  "timestamp": "2026-06-07T23:18:01.469018+00:00",
   "version": "0.1.0",
   "budget": {
     "paused": false,
@@ -608,13 +608,13 @@
       "tier": "lead_indicator",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "striker-crypto": {
       "tier": "unknown",
@@ -628,25 +628,25 @@
       "tier": "catalyst_confirmation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 15,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "tldr": {
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "ibkr": {
       "tier": "unknown",
@@ -668,109 +668,109 @@
       "tier": "catalyst_confirmation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 15,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "coindesk": {
       "tier": "catalyst_confirmation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 15,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "techcrunch": {
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "a16z-crypto": {
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "coinstack": {
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "the-tech-buzz": {
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "hacker-news": {
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "arxiv-ai": {
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "fear-greed": {
       "tier": "lead_indicator",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "binance-killers": {
       "tier": "archival_reference",
@@ -782,7 +782,7 @@
       "freshness": "fresh",
       "age_minutes": 99999,
       "cadence_minutes": 99999,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "onchain": {
       "tier": "lead_indicator",
@@ -820,13 +820,13 @@
       "tier": "lead_indicator",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "coinstats": {
       "tier": "lead_indicator",
@@ -864,13 +864,13 @@
       "tier": "narrative_formation",
       "enabled": true,
       "last_seen": null,
-      "stale_cycles": 2,
+      "stale_cycles": 3,
       "quarantined": false,
       "quarantine_reason": null,
       "freshness": "quarantine",
       "age_minutes": 99999,
       "cadence_minutes": 1440,
-      "last_checked": "2026-06-07T23:16:01.969045+00:00"
+      "last_checked": "2026-06-07T23:18:01.469018+00:00"
     },
     "awesome-tech-rss": {
       "tier": "narrative_formation",

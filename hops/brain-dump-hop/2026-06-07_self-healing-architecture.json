@@ -1,0 +1,42 @@
+{
+  "stage": "research",
+  "hop_title": "self-healing-cron-architecture",
+  "date": "2026-06-07",
+  "context_preserved": true,
+  "key_findings": [
+    "18 kestrel crons currently running: 3 self-healing (freshness-watchdog 60s, post-ingest-scorer 60s, compound-state 5min), rest are RSS/huntsystems legacy",
+    "Freshness watchdog checks 222 tracked sources every 60s against expected cadence, auto-quarantines at 10 consecutive stale cycles",
+    "Flocks not needed because each cron writes to its own DuckDB partition or state file, not shared resources",
+    "Systemd WatchdogSec dead-letter: cron jobs don't easy restart via systemd; a separate watchdog cron that checks stale timestamps and re-spawns is more reliable",
+    "State file (cycle-state/current.json) is 15KB with full agent/source/budget/alerts state — any agent can read it in one shot, saved ~50K tokens per session",
+    "Self-healing paired crons (watchdog + recovery) catch more failure modes than monolithic orchestrator because each has a single responsibility",
+    "222 sources tracked means ~200 are auto-detected Telegram @handles that need content-based merge/dedup with known channels",
+    "0 source_agreement rows means cross-source bucketing hasn't triggered — needs ~15min of multiple sources hitting same asset to populate",
+    "All 4434 events have uniform edge_score (0.149) because source detection fails for 3667/4434 — no baseline differentiation without proper source_id"
+  ],
+  "sources": [
+    "kestrel/scripts/self-healing/freshness-watchdog.py",
+    "kestrel/scripts/self-healing/compound-state.py",
+    "kestrel/scripts/self-healing/health-scorer.py",
+    "kestrel/scripts/ingestion/post-ingest-scorer.py",
+    "kestrel/scripts/ingestion/archive-ingest.py",
+    "kestrel/manifests/coordination.yaml",
+    "kestrel/cycle-state/current.json",
+    "kestrel/dashboard/pending.json",
+    "kestrel/scripts/ingestion/ranked-queue.sql"
+  ],
+  "uncertainties": [
+    "Whether content-based source detection from Telegram message bodies will correctly resolve 3667 unknown-telegram-export events",
+    "Whether cross-source agreement (source_agreement table) actually fires — needs binned events from 2+ sources hitting same asset in 15-min window",
+    "Whether budget guard ($2 pause) is wired to actually stop crons vs just flagging alerts",
+    "Whether 222 tracked sources includes actual duplicate entries from auto-detected @handle variants"
+  ],
+  "research_gaps": [
+    "Content-based source detection: @handle extraction from message bodies works (catches @GemHunterrs, @disclosetv) but 3667/4434 still unknown — need HTML title tag parser and channel-level classification",
+    "Systemd timer replacement: cron jobs lack systemd-style restart limits and WatchdogSec — recovery relies on next cron cycle catching failure",
+    "Exponential backoff: no retry delay for failed jobs — they just run again on next schedule",
+    "Flocks not tested: no lock enforcement between duplicate cron instances (RSS pollers could double-fire)",
+    "Orchestrator vs standalone: no master state machine to prevent cascading failures when DuckDB goes offline"
+  ],
+  "recommended_next_hop": "Design the content-based source detection layer: parse HTML title tags from Telegram export files, extract @handle references from message bodies with dedup, merge auto-detected handles into known sources in coordination.yaml, then retroactively update the 3667 unknown events in DuckDB so scoring differentiates by baseline."
+}

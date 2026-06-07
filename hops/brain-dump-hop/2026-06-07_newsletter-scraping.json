@@ -1,0 +1,39 @@
+{
+  "stage": "research",
+  "hop_title": "newsletter-scraping-architecture",
+  "date": "2026-06-07",
+  "context_preserved": true,
+  "key_findings": [
+    "Substack public RSS feed pattern is /feed (not /feed.xml). e.g. https://a16zcrypto.substack.com/feed — confirmed working. Every Substack newsletter has this by default for public posts",
+    "Paid-only content is NOT in the public RSS feed — only free/preview posts. To get paid content, need subscriber-specific RSS or email forwarding",
+    "a16z crypto RSS confirmed: https://a16zcrypto.substack.com/feed — can scrape with existing RSS adapter (same as Cointelegraph)",
+    "Milk Road, Bankless, Coinstack RSS feeds NOT confirmed from search — need to verify by fetching their Substack pages and checking /feed endpoint",
+    "Email-based newsletter ingestion without IMAP: Gmail filter + forwarding to email-to-webhook service (EmailConnect, Zapier, or custom SMTP). Gmail auto-forwards to alias that POSTs JSON to webhook",
+    "RSS feed detection for sites without explicit link: (1) check HTML <head> for autodiscovery <link> tags, (2) try common paths (/feed, /rss, /rss.xml, /atom.xml), (3) check sitemap.xml, (4) crawl visible links for feed/rss/atom patterns",
+    "Dedup across email AND RSS: use content hash (SHA256 of title + body snippet) — same newsletter arriving via both paths gets deduped by hash, keep whichever arrives first"
+  ],
+  "sources": [
+    "https://a16zcrypto.substack.com/feed",
+    "https://substack.com/@a16z/note/c-152427082",
+    "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
+    "https://emailconnect.eu/gmail-to-webhook/",
+    "https://www.adviserry.com/blog/automated-knowledge-base-from-newsletters",
+    "https://www.nutshellnewsletter.com/blog/how-to-find-rss-feed-for-any-website",
+    "https://github.com/jbranchaud/til/blob/master/internet/grab-the-rss-feed-for-a-substack-blog.md"
+  ],
+  "uncertainties": [
+    "Milk Road and Bankless Substack RSS endpoints not confirmed — need to fetch each /feed and validate",
+    "Whether Coinstack is actually on Substack or a separate platform — domain unknown",
+    "Whether Gmail forwarding + webhook service adds latency vs direct RSS polling (email is push-based, RSS is pull-based)",
+    "Whether email-to-webhook services have rate limits or per-message costs"
+  ],
+  "research_gaps": [
+    "Need to verify Milk Road Substack RSS (try milkroad.substack.com/feed and check HTML autodiscovery)",
+    "Need to verify Bankless Substack RSS (bankless.substack.com/feed? or separate domain)",
+    "Need to verify Coinstack platform (is it Substack? Ghost? Custom?)",
+    "Need to choose email-to-webhook service (EmailConnect, Zapier, Mailgun?) and test Gmail forwarding setup",
+    "Need to verify dedup strategy works across email+RSS dual-delivery channels",
+    "Need to estimate storage: 5 newsletters × ~1 MB/week × 4 weeks ≈ 20 MB/month in DuckDB"
+  ],
+  "recommended_next_hop": "Fetch and validate each newsletter's RSS endpoint directly: curl each /feed URL, check HTTP status and content type. Then for email-only newsletters, set up one Gmail filter + forwarding test with a single newsletter to prove the pipeline."
+}

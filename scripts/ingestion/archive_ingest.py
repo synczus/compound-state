@@ -80,7 +80,7 @@ CHANNEL_SOURCE_MAP = {
     "the block": "the-block",
     "crypto garden": "crypto-garden",
     "whale alert": "whale-alert",
-    "disclose.tv": "disclosetv",
+    "disclose": "disclosetv",
     "gemhunter": "gemhunter",
     "ai hangout": "ai-hangout",
     "tyler trades": "tyler-trades",
