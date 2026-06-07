@@ -34,9 +34,11 @@ for ENTRY in "${SYNC_DIRS[@]}"; do
   git add -A
   git commit -m "auto: $TIMESTAMP" --no-gpg-sign --quiet 2>/dev/null || true
   
-  if git push "$REMOTE" 2>&1; then
-    echo "PUSH $DIR: $CHANGES changes pushed at $TIMESTAMP"
+  # Try push; if no upstream, set it and retry
+  CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  if git push --set-upstream "$REMOTE" "$CURRENT_BRANCH" 2>&1; then
+    echo "PUSH $DIR ($CURRENT_BRANCH): $CHANGES changes pushed at $TIMESTAMP"
   else
-    echo "SKIP $DIR: push failed (no matching remote or conflicting history)"
+    echo "SKIP $DIR ($CURRENT_BRANCH): push failed (repo doesn't exist or conflicting history)"
   fi
 done
