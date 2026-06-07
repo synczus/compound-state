@@ -1,0 +1,20 @@
+{
+  "updated_at": "2026-06-07T16:04:30.713177",
+  "agent_count": 2,
+  "recent_messages": [
+    {
+      "timestamp": "2026-06-07 15:46:17",
+      "user": "synczus",
+      "chat": "-5087043705",
+      "text": "",
+      "source": "telegram"
+    },
+    {
+      "timestamp": "2026-06-07 16:01:35",
+      "user": "synczus",
+      "chat": "-5087043705",
+      "text": "{   \"stage\": 2,   \"agent\": \"grok\",   \"hop_id\": \"hop-2026-06-07-striker-failure-i",
+      "source": "telegram"
+    }
+  ]
+}

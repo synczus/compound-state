@@ -8,6 +8,7 @@
 - [x] 2026-06-07 | Nemoclaw | Shannon arsenal loaded — locust, bandit, vulture, gauntlet skill
 - [x] 2026-06-07 | Nemoclaw | Rich cycle-state baton written
 - [x] 2026-06-07 | Chase | BotFather privacy — /setprivacy → Disable @Kairos8638_bot ✅
+- [x] 2026-06-07 | Kairos | kairos_monitor.py deployed — health tick freshness + DB row growth monitoring, edge-triggered alerts via bus_logger, cron */15 with flock ✅
 
 ## 🔴 P0 — Must Do
 - [ ] 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle

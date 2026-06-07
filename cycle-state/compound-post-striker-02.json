@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-07T19:31:32Z",
+  "timestamp": "2026-06-07T20:15:00Z",
   "verified": true,
   "services": {
     "striker": {
@@ -10,9 +10,14 @@
       "status": "online"
     }
   },
-  "meta_monitor_age_seconds": 630,
+  "meta_monitor_age_seconds": 331,
   "agents": [
-    "hermes", "openclaw", "nemoclaw", "kairos", "shannon"
+    "hermes",
+    "openclaw",
+    "nemoclaw",
+    "kairos"
   ],
-  "corrections": []
+  "corrections": [
+    "Kairos monitor deployed \u2014 health tick + DB growth, cron */15, bus_logger wired"
+  ]
 }
