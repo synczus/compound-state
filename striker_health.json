@@ -1,1 +1,7 @@
-{"status": "connected"}
+{
+  "status": "connected",
+  "connected_since": "2026-06-07T22:16:33.042841+00:00",
+  "signals_this_session": 0,
+  "total_signals": 34509,
+  "updated_at": "2026-06-07T22:16:33.044451+00:00"
+}

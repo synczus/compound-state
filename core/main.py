@@ -312,12 +312,15 @@ class StrikerClient:
         """Periodically refresh the health file with current state."""
         while self._running:
             await asyncio.sleep(60)
-            write_health({
-                "status": "connected" if self._connected_since else "disconnected",
-                "connected_since": self._connected_since,
-                "signals_this_session": self._signals_this_session,
-                "total_signals": signal_count(),
-            })
+            try:
+                write_health({
+                    "status": "connected" if self._connected_since else "disconnected",
+                    "connected_since": self._connected_since,
+                    "signals_this_session": self._signals_this_session,
+                    "total_signals": signal_count(),
+                })
+            except Exception as e:
+                logger.warning("health_tick failed (will retry): %s", e)
 
     async def connect(self) -> None:
         """Main connect-reconnect loop."""

@@ -1,0 +1,147 @@
+# Coordination Layer Manifest v0.1
+# One contract. One router. Every source normalizes before it reaches any agent.
+# File: /home/synczus/kestrel/manifests/coordination.yaml
+
+version: "0.1.0"
+generated: "2026-06-07T21:50:00Z"
+canonical_source: kestrel/manifest.yaml
+
+# ── Agent Governance ────────────────────────────────────────────────
+# Every agent spawns subagents when there's work — full autonomy.
+# No agent needs permission to delegate. Fresh context = cheaper tokens.
+governance:
+  subagent_policy:
+    default: spawn
+    description: "Every agent (Kairos, Nemoclaw, OpenClaw, Hermes) spawns subagents freely."
+    rules:
+      - "Subagents get one goal + context. No multi-hop delegation."
+      - "Subagents CANNOT spawn further subagents (max_depth=1)."
+      - "If a subagent writes files, verify the side effect before reporting done."
+    rationale: "Spawn when: 3+ tool calls needed, heavy research, parallel workstreams. Don't spawn for single-tool calls."
+
+# ── Signal Ingestion Contract ─────────────────────────────────────────
+# Every external source normalizes to this shape BEFORE it reaches any
+# agent, pipeline, or todo writer. No per-source adapters at the routing layer.
+
+signal_ingestion:
+  version: "0.1.0"
+  contract:
+    event:
+      required:
+        - source_id: string
+        - event_type: string
+        - timestamp: int
+        - payload:
+            headline: string
+            body: string
+            symbols: [string]
+            metrics:
+              confidence: float
+              magnitude: float
+              velocity: string
+        - provenance:
+            source_url: string
+            raw_message_id: string
+            verified: bool
+            verified_by: string
+
+  source_baselines:
+    whale-alert:
+      baseline: 0.90
+      delta_range: [-0.10, 0.05]
+      rationale: "On-chain data verified by Whale Alert"
+      adapter: kestrel/scripts/trading/whale_alert_adapter.py
+
+    striker-crypto:
+      baseline: 0.50
+      delta_range: [-0.20, 0.35]
+      rationale: "Price divergence detection"
+      status: deprecated
+      migration_target: ibkr
+
+    disclosetv:
+      baseline: 0.20
+      delta_range: [0.00, 0.55]
+      rationale: "Geopolitical firehose"
+      status: planned
+
+    tldr:
+      baseline: 0.35
+      delta_range: [-0.10, 0.25]
+      rationale: "Curated tech/crypto newsletter"
+      adapter: kestrel/scripts/ingestion/tldr-scraper.py
+
+    ibkr:
+      baseline: 0.85
+      delta_range: [-0.10, 0.10]
+      rationale: "IBKR tick data"
+      status: planned
+
+    x-feed:
+      baseline: 0.15
+      delta_range: [0.00, 0.60]
+      rationale: "Social firehose"
+      status: planned
+
+    cointelegraph:
+      baseline: 0.25
+      delta_range: [-0.05, 0.40]
+      rationale: "Crypto news RSS feed"
+      adapter: kestrel/scripts/ingestion/rss-feed-adapter.py
+      cron: "0 */4 * * *"
+
+    coindesk:
+      baseline: 0.25
+      delta_range: [-0.05, 0.40]
+      rationale: "Crypto news RSS feed"
+      adapter: kestrel/scripts/ingestion/rss-feed-adapter.py
+      cron: "0 */4 * * *"
+
+    techcrunch:
+      baseline: 0.20
+      delta_range: [-0.05, 0.45]
+      rationale: "Tech industry news RSS feed"
+      adapter: kestrel/scripts/ingestion/rss-feed-adapter.py
+      cron: "0 */4 * * *"
+
+    onchain:
+      baseline: 0.85
+      delta_range: [-0.10, 0.10]
+      rationale: "Direct blockchain data"
+      status: planned
+
+  routing:
+    default_lane: "general"
+    lanes:
+      - id: urgent
+        description: "Critical event — bypass lane"
+        confidence_min: 0.95
+        event_types: ["stablecoin_mint", "large_withdrawal", "geopolitical_crisis"]
+        action: notify_group + auto_append_todo
+
+      - id: high_signal
+        description: "Tradeable events — auto-append"
+        confidence_min: 0.75
+        action: auto_append_todo
+
+      - id: medium_signal
+        description: "Interesting context — append with review flag"
+        confidence_min: 0.40
+        confidence_max: 0.75
+        action: append_with_review_flag
+
+      - id: low_signal
+        description: "Noise floor — archive"
+        confidence_max: 0.40
+        action: archive_only
+
+    confidence_calculation: "source_baseline + magnitude*0.20 + (0.10 if velocity==rising else 0)"
+    confidence_clamp: [0.0, 1.0]
+
+  adapter_interface:
+    description: "Every source adapter implements normalize(raw) -> dict matching the contract event schema."
+    rules:
+      - "Minimal logic — classification + extraction only"
+      - "No business rules, no routing decisions, no todo writes"
+      - "~40 lines max. If >80 lines, extract shared utility."
+      - "confidence from section_baseline, not from content analysis"

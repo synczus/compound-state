@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T21:07:36Z_
+_Generated: 2026-06-07T22:09:34Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,15 +7,15 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 18:50:03 UTC_
-_Total active entries: 112_
+_Last consolidated: 2026-06-07 21:55:04 UTC_
+_Total active entries: 120_
 
 ## By Category
 
-- **other**: 26 entries
+- **other**: 31 entries
 - **agent-orchestration**: 26 entries
-- **pipeline-infrastructure**: 21 entries
-- **monitoring-observability**: 13 entries
+- **pipeline-infrastructure**: 23 entries
+- **monitoring-observability**: 14 entries
 - **cost-optimization**: 11 entries
 - **architecture-decision**: 7 entries
 - **security-governance**: 3 entries
@@ -26,16 +26,16 @@ _Total active entries: 112_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** 2026-06-07T21:35 | ingestion | [disclosetv/economic_policy] BREAKING: ECB raises interest rates by 75bp — largest hike in history | lane: human-gate
+- `[hermes]` **[other]** 🟡 contract: coordination.yaml exists but may be misconfigured
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 26 min — propose next cycle
+- `[hermes]` **[other]** ⚪ exports: 15 unprocessed: message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8, messages---bae5c94b-847b-4691-...
+- `[hermes]` **[other]** ⚪ striker: 25955 signals (421 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Kairos | Scout @PureSignalLab and the 7 niche gem channels (Crypto Goodreads, DiamondCrab, The Babylonian, Wu Blockchain, QCP Capital, Messari TG, The Block TG)
+- `[hermes]` **[other]** 2026-06-07 | Kairos | Build signal-normalizer.py — take raw Telegram export → pure structured events in event_shape format
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Kairos | Wire Whale Alert data as Striker correlation layer — does large exchange transfer precede price move?
 - `[hermes]` **[model-strategy]** 2026-06-07 | Kairos | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Handoff from Shannon, needs action
 - `[hermes]` **[monitoring-observability]** 2026-06-07 | Kairos | Audit + merge duplicate cron monitors (3 overlaps) | Handoff from Shannon
-- `[hermes]` **[other]** 2026-06-07 | Kairos | BotFather privacy — /setprivacy → Disable @Kairos8638_bot | @Chase
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle
-- `[hermes]` **[model-strategy]** 2026-06-07 | Shannon | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Tallied by Shannon → action needed
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Shannon | Audit + merge duplicate cron monitors (3 overlaps)
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Build The Gauntlet — failure injector + countdown + leaderboard
-- `[hermes]` **[other]** 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Self-correcting loop — wire state-probe → auto-recover
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Kairos | GitHub PAT from Chase — agents ship repos autonomously
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

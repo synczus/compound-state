@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-07T21:01:03.940449+00:00",
-  "epoch_seconds": 1780866063,
+  "timestamp": "2026-06-07T22:05:04.305785+00:00",
+  "epoch_seconds": 1780869904,
   "board_summary": {
     "p0_pending": 0,
     "p1_pending": 0,
     "p2_pending": 0,
     "done": 3,
-    "in_progress": 1
+    "in_progress": 3
   },
   "striker": {
     "status": "connected",
@@ -14,7 +14,13 @@
     "symbol": "unknown",
     "last_signal": "none"
   },
-  "recent_hlms": [],
+  "recent_hlms": [
+    "- [ ] 2026-06-07 | Scraper | Yes \u2014 I can log every Telegram message to DuckDB via a cron job, complete with timestamp, sender, and thread context, queryable alongside MMR's trading data.",
+    "- [ ] 2026-06-07 | Scraper | You already have 16 channels \u2014 Glassnode, CryptoQuant, and Wu Blockchain are the highest-signal and worth exporting first since their structured on-chain data feeds directly into our backtesting engine without needing heavy noise filtering.",
+    "- [ ] 2026-06-07 | Scraper | Zip the .html file and resend \u2014 .zip is supported on my end and I'll extract it immediately.",
+    "- [ ] 2026-06-07 | Scraper | ` patterns in the JSON content. The scraper needs to skip JSON-structured content. Let me fix the file first and add a JSON filter to the scraper",
+    "- [ ] 2026-06-07 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on."
+  ],
   "last_agent_actions": [],
   "open_loops": [],
   "gif_api_status": "needs_key",

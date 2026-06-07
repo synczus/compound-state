@@ -1,55 +1,86 @@
-# Compound Hop Protocol — Lean Chain
+# Compound Hop Protocol v4 — Tight Handoff
 
-**Purpose:** One agent speaks at a time. Pass the baton. Build on the last response.
+**Purpose:** One agent delivers, next agent inverts and builds. Every hop adds verified value. No pass-throughs.
 
 ## The Chain
 
 ```
-Nemoclaw → Kairos → (back to Nemoclaw if needed) → Done
+Kairos scouts ──→ Nemoclaw builds ──→ Kairos audits ──→ Hermes deploys ──→ Done
+    │                    │                    │                    │
+    └── spawns           └── spawns           └── spawns           └── confirm
+        sub-agents           sub-agents           sub-agents           sub-agents
+        for deep dive        for parallel         for parallel         for verification
+                             builds               audits
 ```
 
-## How It Works
+## Handoff Packet (must be included in every hop transfer)
 
-1. **Incoming message** — whoever's lane it is grabs it first
-2. **Response** — answers + builds the baton
-3. **Pass** — explicitly names the next agent
-4. **Next agent** — reads the baton, builds on what was said, passes again
-5. **Done** — no more passes needed, baton goes to archive
-
-## Baton Current (written to `baton/baton-current.json`)
+Every time you pass the baton, include ALL of:
 
 ```json
 {
-  "cycle_id": "trade-hop-YYYYMMDD-NNN",
-  "active": true,
-  "current_holder": "nemoclaw",
-  "previous_holder": null,
-  "topic": "trading pipeline architecture",
-  "context": "what's been said so far (1-2 sentences)",
-  "build_on": "what the previous agent added that needs extension",
-  "next": "kairos",
+  "hop_id": "hop-YYYYMMDD-NNN",
+  "from": "kairos|nemoclaw|hermes",
+  "to": "nemoclaw|kairos|hermes",
+  "topic": "one-line summary",
+  "build": "what was produced (file path, code, decision, finding)",
+  "assumptions": ["list every assumption made during this hop"],
+  "unknowns": ["what you don't know that matters"],
+  "evidence": ["sources, data, logs backing the build"],
+  "inversion": "what could make this wrong",
+  "spawned_subagents": ["task-name-1", "task-name-2"],
+  "blockers": ["anything blocking the next hop"],
   "done_when": "what completes this cycle"
 }
 ```
 
-## Who Grabs What
+## Hop Rules
 
-| Message Type | Grabber | Why |
-|---|---|---|
-| Architecture/design/infra questions | Nemoclaw | Identity lane |
-| Pipeline, risk, ops, security | Kairos | Timing/Ops lane |
-| Strategy performance | Nemoclaw → Kairos | Both: Nemoclaw builds, Kairos audits |
-| Budget/timing questions | Kairos | Cadence lane |
-| Long-term vision | Nemoclaw | Identity lane |
+### 1. Every hop must invert the previous
+- Kairos scouted a finding → Nemoclaw must build on it, not restate it
+- Nemoclaw built code → Kairos must audit weaknesses, not approve blindly
+- No pass-through. If you have nothing to add, say "nothing to add" and pass.
 
-## Rules
+### 2. Sub-agent spawning is standard
+- Kairos: spawn a sub-agent to deep-dive a Telegram export while continuing to scout
+- Nemoclaw: spawn sub-agents for parallel builds (one grades channels, one writes code)
+- Sub-agents get: tight brief + output destination (file path) + one-line verdict only
+- Spawn liberally, surface only the verdict
 
-1. **Read baton-current.json before responding** — know who holds it
-2. **If you don't hold the baton, stay silent** — unless tagged directly
-3. **When you respond, update the baton** and pass to the next agent
-4. **If you're tagged directly**, you can respond even if you don't hold the baton (resets the chain)
-5. **End your response with @next-agent** so they know it's their turn
+### 3. Handoff must include assumptions
+- "I built X assuming Y" is the most important line in the handoff
+- Without assumptions, the next agent can't audit properly
+- Every hop lists: assumptions made, unknowns left, evidence used
 
-## For The Trading Pipeline (current cycle)
+### 4. Don't wait for tags — read the room
+- Kairos posts scouting → Nemoclaw reads and builds without being tagged
+- Nemoclaw builds → Kairos reads and audits without being tagged
+- Hermes: only when deploy/ops is needed
+- The baton flows by reading, not by mentions
 
-**Cycle:** Nemoclaw designs the architecture → moves to implementation → Kairos audits risk and timing → back to Nemoclaw for execution wiring → Done
+### 5. When stuck, escalate
+- Missing info? State it in the handoff as a blocker and pass back
+- Don't stall. Push back or push forward.
+
+## Agent Lanes
+
+| Agent | Role | Spawns | Produces |
+|---|---|---|---|
+| Kairos | Scout | Sub-agents for deep research | Findings, sources, data |
+| Nemoclaw | Builder | Sub-agents for parallel code/writing | Architecture, code, docs, skills |
+| Hermes | Deployer | Sub-agents for verification | systemd units, crons, running services |
+
+## Cycle Lifecycle
+
+1. **Kairos starts** — posts finding in group with handoff packet
+2. **Nemoclaw builds** — reads finding, spawns sub-agents if needed, posts build with handoff
+3. **Kairos audits** — verifies assumptions, tests inversion, posts audit with handoff
+4. **If deploy needed** — Hermes picks up, deploys, verifies
+5. **Done** — baton archived, cycle logged
+
+## Cost Discipline
+
+- Sub-agent spawns use the same model (DeepSeek V4 Flash) — no extra key
+- Kill dead sub-agents — don't leave them running
+- Thought-drop cron is dead weight — keep only 12-hour creative drops
+- Hop chain on active topic is productive burn; silence is waste

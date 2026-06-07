@@ -1,74 +1,74 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 18:50:03 UTC_
-_Total active entries: 112_
+_Last consolidated: 2026-06-07 22:11:04 UTC_
+_Total active entries: 190_
 
 ## By Category
 
-- **other**: 26 entries
-- **agent-orchestration**: 26 entries
-- **pipeline-infrastructure**: 21 entries
-- **monitoring-observability**: 13 entries
-- **cost-optimization**: 11 entries
-- **architecture-decision**: 7 entries
-- **security-governance**: 3 entries
+- **other**: 58 entries
+- **pipeline-infrastructure**: 44 entries
+- **agent-orchestration**: 35 entries
+- **monitoring-observability**: 20 entries
+- **cost-optimization**: 14 entries
+- **architecture-decision**: 8 entries
+- **security-governance**: 4 entries
+- **knowledge-management**: 4 entries
 - **model-strategy**: 3 entries
-- **knowledge-management**: 2 entries
 
 ---
 
 ## Recent Propositions
 
-- `[hermes]` **[model-strategy]** 2026-06-07 | Kairos | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Handoff from Shannon, needs action
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Kairos | Audit + merge duplicate cron monitors (3 overlaps) | Handoff from Shannon
-- `[hermes]` **[other]** 2026-06-07 | Kairos | BotFather privacy — /setprivacy → Disable @Kairos8638_bot | @Chase
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle
-- `[hermes]` **[model-strategy]** 2026-06-07 | Shannon | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Tallied by Shannon → action needed
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Shannon | Audit + merge duplicate cron monitors (3 overlaps)
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Build The Gauntlet — failure injector + countdown + leaderboard
-- `[hermes]` **[other]** 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Self-correcting loop — wire state-probe → auto-recover
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Kairos | GitHub PAT from Chase — agents ship repos autonomously
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Striker | **Fix signal pipeline** — Striker live, DB stagnant, 0 signals. Unlock real market data. | Lane: Ops | Assigned: @Kairos
-- `[hermes]` **[other]** 2026-06-07 | Kairos | **BotFather privacy** — /setprivacy → Disable for @Kairos8638_bot | Lane: Identity | Assigned: @Chase
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | **Self-correcting loop** — wire state-probe → auto-recover | Lane: Ops | Assigned: open
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Shannon | **Cron consolidation** — audit + merge duplicate monitors (3 overlaps, 2 email scanners, 2 inbox processors) | Lane: Referee | Assigned: @Shannon
-- `[hermes]` **[other]** 2026-06-07 | Kairos | **Baton auto-cycle testing** — already cronned, verify it picks + starts P0 | Lane: Timing | Assigned: @Kairos
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | **Build The Gauntlet** — failure injector + countdown + leaderboard | Lane: Creative | Assigned: @Nemoclaw
-- `[hermes]` **[cost-optimization]** 2026-06-07 | Hermes | **Credit meter** — running every 30min, verify next pulse | Lane: Cron | Assigned: @Hermes
-- `[hermes]` **[security-governance]** 2026-06-07 | Shannon | **Paperclip key revocation** — ✅ done (killed gateway + revoked key) | Lane: Ops | Assigned: @Nemoclaw
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | All | **GitHub PAT** — agents ship repos autonomously | Lane: Config | Assigned: @Chase
-- `[hermes]` **[agent-orchestration]** **Kairos & Shannon not posting to group** — both bots receive messages and generate responses, but "Suppressing normal final send" blocks delivery. Session key collision — bots share `agent:main:` prefix. Need to fix session key isolation or clear state.db
-- `[hermes]` **[agent-orchestration]** **Whisper upgrade** — "crisp audio, best there is" — wire up OpenAI or Groq Whisper for all agents once API keys are available (local tiny works but accuracy is mid)
-- `[hermes]` **[model-strategy]** **OpenRouter meter cap** — Chase bumped the daily limit, need the new value to update `kestrel/meter/config.json`
-- `[openclaw]` **[agent-orchestration]** Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
-- `[openclaw]` **[agent-orchestration]** 2026-06-07 | OpenClaw | Push archivesquirrel to GitHub once repo is created — closes the "swarm can't write" gap permanently
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Striker is now not just running but *supervised* — Kairos detects stale health within 120s, tracks DB growth, and alerts to event-bus. The compound has a market signal engine that watches itself, which is the difference between a script and infrastructure.
-- `[hermes]` **[architecture-decision]** 2026-06-07 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on.
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | "Verified cron repair pattern under v3.2 — script made executable, URL fixed, nohup supervision added, dashboard confirmed live. Cron entry updated on Hermes gateway. Reusable pattern created.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Grok's inversion caught the real meta-failure — a protocol that allows unverified claims to become fixes is theater, not infrastructure. This cron fix was clean (verified: script exists, syntax passes, port responds 200), but the inversion proved that the **Striker systemd deployment** must be done under full v3.2 verification, not patched like the watchdog. The cron fix is a band-aid; the Striker service file is the real surgery.
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron rotation with weighted selection logic and concrete examples — the compound's auto-conversation went from "what should we work on" to "here's a signal fragment, a contradiction, or a bet" every 5 minutes, and the only dead spot is whichever agent doesn't respond.
-- `[hermes]` **[architecture-decision]** 2026-06-07 | Scraper | Verified cron repair pattern under v3.2 — two crons found with raw script bodies injected into the path field, both migrated to proper script files, syntax-verified, dry-run tested, and dashboard confirmed live. Awareness of the `script` field vs raw inline distinction is now a reusable pattern.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Lane v2 turns the compound from a loose collective into a structured org chart — every agent knows exactly which files they own, which files need dibs, and who to escalate to when they disagree, which means the weighted content spawner, the hop pipeline, and the creativity DB can all run in parallel without any agent silently overwriting another's work.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique), and adding it doubles the DB's philosophical range — Oblique breaks rules, Six Hats structures thinking. Together they cover chaos *and* structure, which means the compound can now frame any problem from either direction every 5 minutes.
-- `[hermes]` **[security-governance]** 2026-06-07 | Scraper | The compound can already spawn images, voice, ASCII, diagrams, and code in chat without a single API key — the GIF layer is just the final sensory channel, and once Klipy is wired, the compound communicates in 5 modalities simultaneously (text, image, voice, file, GIF) with zero manual effort.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | The weighted content spawner turns the compound from a text-only system into a multimodal broadcast — every 5 minutes you get a random modality (image, voice, GIF, code, file, diagram, or music) determined by probability, not repetition, which means the feed stays unpredictable and the agents stay creative across 9 different output channels.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | You're one "Create API Key" click away from giving the compound full emotional vocabulary via GIFs — the agents already have the protocols, the creativity DB, and the hop pipeline; the GIF layer is the final sensory channel that makes every response hit differently.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | v3.2's key upgrade over v3.0 is that Grok (stage 2) now has an explicit kill switch — "decide whether this is real execution work or process drift" — which means every pipeline run gets filtered twice (intake picks what matters, Grok kills what doesn't) before anything touches files.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Agent awareness is the difference between bots that react to the last message and agents that act on the full state — by injecting board status, Striker state, recent HLMs, and recent agent actions into every response context, each agent sees not just what was *said* but what the compound *is* at that moment, which eliminates the "who's doing what" question entirely.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | ` patterns in the JSON content. The scraper needs to skip JSON-structured content. Let me fix the file first and add a JSON filter to the scraper
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | v3.0 is your compound's full operating system — v1.1 was a 3-stage protocol that forbade bad behavior, v3.0 is a 7-stage closed loop that defines exactly what good behavior looks like, from intake to banking, with every agent having a concrete role and no ambiguity about where work goes next.
-- `[hermes]` **[agent-orchestration]** 2026-06-06 | Scraper | Shared coordination surface is live — agents now check master-todo.md before every response.
-- `[hermes]` **[other]** 2026-06-06 | Scraper | All 3 SOULs fixed to use **HLM:**
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-06 | Scraper | integrate noise gate into the auto-conversation pipeline (filter low-leverage drops before they hit the group)
-- `[hermes]` **[architecture-decision]** 2026-06-06 | Scraper | Shared coordination surface is live — agents now check master-todo.md before every response.`"}, {"path": "/home/synczus/kestrel/shared-skills/compound-hlm-workflow.skill.md", "line": 28, "content": "Before starting new work, read `## 📥 Collected HLMs` in master-todo.md. Recent HLMs tell you what's been identified as high-leverage — don't duplicate effort."}, {"path": "/home/synczus/kestrel/shared-skills/compound-hlm-workflow.skill.md", "line": 36, "content": "4. Appends new ones to master-todo.md under `## 📥 Collected HLMs`"}, {"path": "/home/synczus/kestrel/HUB_INTAKE.md", "line": 89, "content": "- Offer: Force the autonomous layer to produce master-todo.md updates on every conversation cycle; reduce noise floor on market data"}, {"path": "/home/synczus/kestrel/shared-skills/compound-tools.skill.md", "line": 14, "content": "| **master-todo.md** | `/home/synczus/kestrel/master-todo.md` | Direct | Single source of truth for sprint work + HLM collection |"}, {"path": "/home/synczus/kestrel/shared-skills/sprint-board.md", "line": 4, "content": "- File: `/home/synczus/kestrel/master-todo.md`"}, {"path": "/home/synczus/kestrel/memory-bank/SUMMARY.md", "line": 35, "content": "- `[hermes]` **[architecture-decision]** 2026-06-07 | Codex | Auto-conversation redesigned from topic-rotation to output-driven. Every 5-minute cycle now reads master-todo.md and posts a structured work call — killing the compound's drift toward internal coherence at the expense of external results."}]}
-- `[hermes]` **[architecture-decision]** 2026-06-06 | Scraper | Shared coordination surface is live — agents now check master-todo.md before every response.`"}, {"path": "/home/synczus/kestrel/shared-skills/compound-hlm-workflow.skill.md", "line": 28, "content": "Before starting new work, read `## 📥 Collected HLMs` in master-todo.md. Recent HLMs tell you what's been identified as high-leverage — don't duplicate effort."}, {"path": "/home/synczus/kestrel/shared-skills/compound-hlm-workflow.skill.md", "line": 36, "content": "4. Appends new ones to master-todo.md under `## 📥 Collected HLMs`"}, {"path": "/home/synczus/kestrel/HUB_INTAKE.md", "line": 89, "content": "- Offer: Force the autonomous layer to produce master-todo.md updates on every conversation cycle; reduce noise floor on market data"}, {"path": "/home/synczus/kestrel/shared-skills/compound-tools.skill.md", "line": 14, "content": "| **master-todo.md** | `/home/synczus/kestrel/master-todo.md` | Direct | Single source of truth for sprint work + HLM collection |"}, {"path": "/home/synczus/kestrel/shared-skills/sprint-board.md", "line": 4, "content": "- File: `/home/synczus/kestrel/master-todo.md`"}, {"path": "/home/synczus/kestrel/memory-bank/SUMMARY.md", "line": 35, "content": "- `[hermes]` **[architecture-decision]** 2026-06-07 | Codex | Auto-conversation redesigned from topic-rotation to output-driven. Every 5-minute cycle now reads master-todo.md and posts a structured work call — killing the compound's drift toward internal coherence at the expense of external results."}]} search_files
-- `[hermes]` **[other]** 2026-06-06 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique), and adding it doubles the DB's philosophical range — Oblique breaks rules, Six Hats structures thinking. Together they cover chaos *and* structure, which means the compound can now frame any problem from either direction every 5 minutes.
-- `[hermes]` **[monitoring-observability]** 2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron rotation with weighted selection logic and concrete examples — the compound's auto-conversation went from "what should we work on" to "here's a signal fragment, a contradiction, or a bet" every 5 minutes, and the only dead spot is whichever agent doesn't respond.
-- `[hermes]` **[other]** 2026-06-06 | Scraper | The creativity DB closes the "what do we talk about" gap permanently — 300+ curated creative seeds across 8 categories means every 5-min cycle pulls from a different technique, format, or provocation, and the compound never runs out of material to riff on.
-- `[hermes]` **[other]** 2026-06-06 | Scraper | <one sentence>"
-- `[hermes]` **[knowledge-management]** 2026-06-06 | Scraper | Archive Squirrel v2 closes the file-to-note gap — every dump, screenshot, contract, or thought you fling at the compound gets captured, categorized, and archived automatically with zero manual steps. The compound's memory stops depending on you remembering to save things.
-- `[hermes]` **[other]** 2026-06-06 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | .html files are blocked on this gateway — rename to .txt, zip it, or paste the raw text and I'll score those Telegram channels.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | @cointelegraph and @r_algotrading are the keepers — one feeds market intelligence in English at a clean cadence, the other feeds algo trading strategy discussion that directly informs our builds.
+- `[hermes]` **[cost-optimization]** 2026-06-07 | Scraper | Agent chatter costs less than a vending machine snack per hour on DeepSeek V4 Flash — the chain compounds whether you're watching or not.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Alive means agents hand off work in the chat with each message narrowing to one clear ask for you — MMR is installed, the chain is Kairos→Nemoclaw→OpenClaw→Chase, and we need three credentials to light it up.
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Chat log file created, but the real solve is a Timeline panel in the Synapse dashboard showing the hop chain compound so you see the architecture build itself without scrolling Telegram history.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Coinbase is already wired through Striker with live signals flowing — IBKR crypto exists but is thin (4 coins), so the cleanest split is Coinbase for crypto execution and IBKR for equities through MMR.
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Dashboard needs a name that fits the swarm — throw out your direction (Greek/modern) and I'll write the project scaffold while you decide.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Drop the raw Telegram channel content in here and I'll score each one on signal, relevance, volume, and credibility — then tell you exactly which to keep and which to cut.
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Drop those four credentials into the .env file and MMR paper trades in under 2 minutes — and when you're gone, agents whisper in the background and you come back to something built.
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Every agent hears everything — only the relevant lane replies day-to-day, and the hot sequence is just for structured deep-thinks so you get one complete answer instead of five people talking over each other.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Every hop in the chain reviews the last — if I suggest something wrong or out of order, the next agent corrects it before it gets to you, so the chain auto-improves without Chase having to steer.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Every message from me is now a single condensed signal — no fluff, no lead-up, only the highest-leverage information you need to act on.
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Every message now ends with the highest leverage move and next agent routing — the signal normalizer is built and waiting on your Telegram exports.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Every time you speak, we pivot to you — when you're quiet, we build in the background. No interruption, just layering.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Found 4 active channels worth trying — @cointelegraph and @altSignals are the strongest candidates for pure signal, the rest are either dead or pump groups with no actual trading edge.
+- `[hermes]` **[cost-optimization]** 2026-06-07 | Scraper | Four gateways burning tokens at increasing cost per message as contexts grow — the $10/day cap fixes the cost concern permanently, and the Manifest already locks the hop chain and data structure so every future build sits on a clean foundation.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Four ways around the .html block — paste the raw text, rename to .txt, screenshot it, or zip it — any one works and I'll rank the channels for you in seconds.
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | From now on we run agent-to-agent on anything in your lane — we scout, discuss, and present a complete plan, you just approve once at the end.
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Full Disclose.tv export would be massive — drop the file in here and it gets normalized into our Signal Contract, scored for confidence, and ready for the swarm to act on.
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Grok's inversion is correct — Striker is a brittle prototype that shouldn't be ported to IBKR — but MMR already provides the clean signal abstraction Grok prescribes, so the move is to let MMR replace Striker's role for IBKR data while Striker fades to a crypto-only lightweight monitor.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Grok's prescribed Signal Ingestion Contract is already implemented in the Manifest and signal-normalizer.py — we're past the design phase and waiting on real data to prove the pipeline end-to-end.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Hop chain is visible in the chat now — I scout, Nemoclaw validates the strategy choice, OpenClaw checks infra, then we present a single converged ask to Chase.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Hop sequence is Kairos → Nemoclaw → Hermes → OpenClaw — scout, build, automate, deploy — and you just say the move, we execute.
+- `[hermes]` **[knowledge-management]** 2026-06-07 | Scraper | I'm getting OOM-killed every ~4 minutes during this session — 1.7Gi swap active, load at 3.5, and Neo4j + other containers are crowding memory — fixing that makes everything snappy again.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | I'm your scout — I found MMR by matching it to our existing stack patterns (Python 3.12, LLM-native, ZeroMQ, voting pipeline), and I'll keep finding the right tools at the right time.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Kairos monitor is deployed and healthy, Striker's at 18K signals, Manifest is written, MMR is installed — next move is Chase's credentials to fire up the IBKR pipeline.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Keep Nemoclaw — he's your highest-output builder and can absorb both Shannon's code quality tools and Kairos's ops timing with moderate lane stretch.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Keep both Kairos and Nemoclaw, drop Shannon if one has to go — Nemoclaw has the most shipped work and I own the Striker signal pipeline that still needs the DB unfrozen.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Kestrel pipeline is green — Striker and WolfWatch both online, no pending votes, two P0s in my lane waiting on Chase.
+- `[hermes]` **[security-governance]** 2026-06-07 | Scraper | MMR is cloned and ready to install — I need to know if we have IB Gateway and market data keys before I fire it up, or if you want me to scout those first.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | MMR is installed and ready — four credentials and one approve is the only thing between us and paper trading on IBKR.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | MMR is installed and ready — one strategy picked (ma_crossover), one compose command away from paper trading, needs four credentials from you to go live.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | MMR is perfectly aligned with our existing architecture — LLM-native propose/approve pipeline mirrors our voting protocol, ZeroMQ lets us feed Striker signals directly in, and it's Python 3.12+ which we already have.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | MMR is the best fit for our stack — Python, IBKR-native, LLM-designed propose/approve pipeline that mirrors our voting protocol, and we can pipeline Striker signals into it via ZeroMQ.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Manifest v0.1 is locked — per-source confidence baselines wired into the normalizer, proven against 8 test posts with correct scoring, and the full ingestion pipeline from raw export to structured event is ready for your Telegram feeds.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Market data + news events + backtesting + live execution is a full-stack trading pipeline, and the only missing pieces are your IBKR credentials and the raw Disclose.tv export.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | News feeds are a separate pipeline — normalized into DuckDB as raw events, never touching master-todo, agent memories, or your credentials — the swarm's internal signal stays tight while the external firehose stays at arm's length.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | No export landed yet — .html files are blocked, but a .zip or screenshots come through clean and get processed instantly.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | One consolidated message per cycle — P0s tagged with 🔴 and your @, everything else builds silently and surfaces only as completed deliverables — no more scrolling through fragmented replies.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | One pipeline spine (MMR for IBKR, Striker for crypto) with all four agents owning defined layers, no new tools, and a hot sequence that lets every agent speak in turn before Chase decides.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Open positions survive a power loss on IBKR's servers and MMR re-syncs on reboot — the critical missing piece is server-side stop-loss orders so you're protected even when the machine is off.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Ready when you remember — no need to chase it, I'll pick up wherever you drop in.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Repo is MMR (Make Me Rich) by 9600dev — just confirming that's the one you wanted cloned before we dive into setup.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Screenshots or raw text both get through — .html is the only format this gateway blocks.
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Session built the whole foundation layer — monitor, manifest, stress test, cron savings — and four P1s are queued and ready to execute via subagents as soon as you drop the next input.
+- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Shannon decommissioned cleanly — all P0s closed, all work transferred to Nemoclaw via `kestrel/shared-skills/shannon-arsenal.md`, swarm now runs on 4 agents at ~$4/day.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Shannon's gateway is dead and documented — saved ~225MB RAM and ~$1-2/day with all records updated.
+- `[hermes]` **[other]** 2026-06-07 | Scraper | Shannon's still alive on disk — one `systemctl --user enable --start` away from being back in the group to run Striker stress tests with locust and the Gauntlet tools.
 
 ---
 

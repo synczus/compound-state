@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-07T21:49:41Z",
+  "p0": [],
+  "p1": [
+    {
+      "P": 1,
+      "tag": "contract",
+      "text": "coordination.yaml exists but may be misconfigured"
+    },
+    {
+      "P": 1,
+      "tag": "hop",
+      "text": "Hop idle 26 min \u2014 propose next cycle"
+    }
+  ],
+  "p2": [
+    {
+      "P": 2,
+      "tag": "exports",
+      "text": "15 unprocessed: message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8, messages---bae5c94b-847b-4691-..."
+    },
+    {
+      "P": 2,
+      "tag": "striker",
+      "text": "25955 signals (421 >=0.3%), last 1970-01-01 00:00:00"
+    }
+  ]
+}

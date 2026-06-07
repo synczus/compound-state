@@ -1,6 +1,6 @@
 {
   "topic": "hop protocol v1.1 full pipeline cycle completed",
-  "exchange_count": 2,
+  "exchange_count": 3,
   "max_exchanges": 4,
   "last_speaker": "OpenClaw",
   "converged": false,

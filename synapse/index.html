@@ -248,6 +248,19 @@
     </div>
   </div>
 
+  <!-- Pending Queue -->
+  <div class="panel">
+    <div class="panel-title">Pending Queue <span class="badge" id="pendingCount">0</span></div>
+    <div style="font-size:10px;padding:4px 0;display:flex;gap:8px;flex-wrap:wrap">
+      <span>Queued: <strong id="queuedCount" style="color:var(--amber)">—</strong></span>
+      <span>Urgent: <strong id="urgentCount" style="color:var(--green)">—</strong></span>
+      <span>High: <strong id="highCount" style="color:var(--blue)">—</strong></span>
+      <span>Medium: <strong id="mediumCount" style="color:var(--purple)">—</strong></span>
+      <span>Todos: <strong id="todoCount" style="color:var(--text)">—</strong></span>
+    </div>
+    <div id="pendingTodos" style="flex:1;overflow-y:auto;font-size:9px;color:var(--dim);margin-top:4px"></div>
+  </div>
+
   <!-- Crons -->
   <div class="panel">
     <div class="panel-title">Scheduler <span class="badge" id="cronCount">0/0</span></div>
@@ -388,6 +401,22 @@ function updateDashboard(data) {
   document.getElementById('lastUpdate').textContent = `updated ${new Date().toLocaleTimeString('en-US', {hour12:false})}`;
 }
 
+function updatePending(pending) {
+  document.getElementById('pendingCount').textContent = pending.pending_todos + pending.queued_signals;
+  document.getElementById('queuedCount').textContent = pending.queued_signals;
+  document.getElementById('urgentCount').textContent = pending.urgent_signals;
+  document.getElementById('highCount').textContent = pending.high_signals;
+  document.getElementById('mediumCount').textContent = pending.medium_signals;
+  document.getElementById('todoCount').textContent = pending.pending_todos;
+  
+  const todosEl = document.getElementById('pendingTodos');
+  if (pending.top_todos && pending.top_todos.length > 0) {
+    todosEl.innerHTML = pending.top_todos.map(t => `<div style="padding:2px 0">• ${t}</div>`).join('');
+  } else {
+    todosEl.innerHTML = '<div style="color:var(--dim)">Nothing pending</div>';
+  }
+}
+
 async function fetchAll() {
   try {
     // Try aggregated health
@@ -397,6 +426,13 @@ async function fetchAll() {
   } catch(e) {
     addLog('✗', `fetch error: ${e.message}`, 'red');
     document.getElementById('lastUpdate').textContent = 'offline';
+  }
+  try {
+    let resp = await fetch(API + '/pending');
+    let pending = await resp.json();
+    updatePending(pending);
+  } catch(e) {
+    // pending fetch is non-critical
   }
 }
 

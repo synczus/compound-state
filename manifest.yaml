@@ -67,13 +67,44 @@ dialogue:
 # ── Signal Ingestion Contract ─────────────────────────────────────────
 # Every external source normalizes into this shape BEFORE it reaches any
 # agent or pipeline. No per-source adapters. No special-case parsers.
-# Sources declare their profile; the ingestion layer normalizes.
+# Sources declare their profile + per-source confidence baseline.
+# Global confidence = source_baseline + event_delta (capped at 1.0)
 
 signals:
   event_bus:
     protocol: zmq
     port: 42006
     format: msgpack
+
+  # Per-source confidence baselines + routing thresholds
+  # Every event starts at the source baseline, then the normalizer/scorer
+  # applies a delta (+/-) based on event content. Global 0.75 would
+  # starve news sources (baseline 0.20-0.30) — per-source is correct.
+  routing:
+    default_lane: "scout"
+    high_confidence_threshold: 0.75
+    auto_append_to_todo: true
+    require_human_approval_below: 0.4
+
+  source_baselines:
+    - source_id: "whale-alert"
+      baseline_confidence: 0.90   # on-chain is truthy
+      description: "Raw blockchain transactions, structured data"
+    - source_id: "striker-crypto"
+      baseline_confidence: 0.70   # market data, threshold-validated
+      description: "Coinbase WS price move detector"
+    - source_id: "ibkr"
+      baseline_confidence: 0.75   # institutional data feed
+      description: "Interactive Brokers market data"
+    - source_id: "cointelegraph"
+      baseline_confidence: 0.40   # news, some hype markup
+      description: "English crypto + macro news feed"
+    - source_id: "disclosetv"
+      baseline_confidence: 0.25   # geopolitical firehose, high noise
+      description: "Unverified geopolitical event stream"
+    - source_id: "x-feed"
+      baseline_confidence: 0.20   # lowest baseline, highest noise
+      description: "Twitter/X social media feed"
 
   # The canonical event shape every source normalizes into.
   event_shape:
@@ -85,12 +116,15 @@ signals:
       body: string         # full raw text (optional)
       symbols: [string]    # affected instruments ("BTC", "SPY", "EURUSD")
       metrics:
-        confidence: float  # 0.0-1.0 — source or layer-assigned
+        confidence: float  # source_baseline + event_delta, 0.0-1.0
         magnitude: float   # 0.0-1.0 — event severity scale
         velocity: string   # "rising", "steady", "decaying"
     provenance:
       source_url: string   # original link
       raw_message_id: string # Telegram msg_id, WS sequence, etc.
+      provenance_hash: string # sha256 of canonical source string for audit
+      original_text: string # full raw text for re-parsing
+      media_urls: [string]  # attached images/media
       verified: bool       # false until agent review confirms
       verified_by: string  # agent id
 

@@ -236,6 +236,48 @@ def get_log():
         pass
     return entries[-15:] if entries else []
 
+def get_pending():
+    """Read pending queue from signals.md + master-todo.md."""
+    result = {
+        'queued_signals': 0,
+        'pending_todos': 0,
+        'urgent_signals': 0,
+        'high_signals': 0,
+        'medium_signals': 0,
+        'recent_queued': [],
+        'oldest_queued': '',
+        'top_todos': [],
+    }
+    try:
+        signals_file = KESTREL / 'signals.md'
+        if signals_file.exists():
+            text = signals_file.read_text()
+            lines = text.strip().split('\n')
+            queued = [l for l in lines if 'queue' in l or 'low_signal' in l]
+            urgent = [l for l in lines if 'urgent' in l]
+            high = [l for l in lines if 'high_signal' in l]
+            medium = [l for l in lines if 'medium_signal' in l]
+            result['queued_signals'] = len(queued)
+            result['urgent_signals'] = len(urgent)
+            result['high_signals'] = len(high)
+            result['medium_signals'] = len(medium)
+            result['recent_queued'] = [l[:120] for l in queued[-5:]]
+            if queued:
+                result['oldest_queued'] = queued[0][:120]
+    except:
+        pass
+    try:
+        todo_file = KESTREL / 'master-todo.md'
+        if todo_file.exists():
+            text = todo_file.read_text()
+            pending = [l.strip() for l in text.split('\n') if l.strip().startswith('- [ ]')]
+            result['pending_todos'] = len(pending)
+            result['top_todos'] = [l.replace('- [ ] ', '')[:120] for l in pending[:5]]
+    except:
+        pass
+    return result
+
+
 def build_state():
     """Build the full dashboard state."""
     return {
@@ -267,6 +309,14 @@ class SynapseHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             chat = get_chat()
             self.wfile.write(json.dumps(chat).encode())
+        elif self.path == '/api/pending':
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.send_header('Cache-Control', 'no-cache')
+            self.end_headers()
+            pending = get_pending()
+            self.wfile.write(json.dumps(pending).encode())
         elif self.path == '/' or self.path == '/index.html':
             self.path = '/index.html'
             super().do_GET()
