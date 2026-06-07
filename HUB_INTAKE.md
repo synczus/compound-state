@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T17:02:31Z_
+_Generated: 2026-06-07T17:17:33Z_
 
 Load this file at session start to wake up with full pipeline context.
 
