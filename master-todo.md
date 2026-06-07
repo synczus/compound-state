@@ -62,7 +62,8 @@
 | Protocol | Hop Protocol v1.1 — superseded by v3.0 | Fleet | 🔀 Superseded |
 | Striker | Signal engine rebuilt (Coinbase WS, DB, health) | Codex | ✅ Done |
 | Striker | Signal monitoring pattern + alert path | Kairos | ✅ Done — kairos_monitor.py live, edge-triggered event-bus alerts |
-|| Budget | OpenRouter $30/day cap — or-budget-monitor.sh (hourly cron) | Hermes | ✅ Done — set to $30 at openrouter.ai/settings/billing |
+|| Budget | OpenRouter $30/day cap — set via dashboard at openrouter.ai/settings/billing | Chase | 🔴 Needs manual |
+|| Budget | Budget alerts — compound degrades silently when cap hits | TBD | 🔴 Open |
 || Config | Kairos + Shannon require_mention:false for AI Hangout (chat -5087043705) | Hermes | ✅ Done — gateways restarted, active |
 || Striker | Kairos monitor verification run + event-bus fix | Hermes | ✅ Verified — bus_logger fallback writes to event-bus.md, cron fires every 5min |
 || Dashboard | Live monitor dashboard — Striker health, Kairos state, OpenRouter budget on port 19500 | Hermes | ✅ Done — auto-refreshes every 10s, symlinked JSON endpoints |
@@ -228,4 +229,14 @@ _AutoHOP feed batch at 2026-06-07 01:00:01 EDT: 1 item(s) attempted._
 | P2 | Data | Large transient files in git history (.db previously tracked) | TBD | 🔴 Open |
 | P2 | Data | State repo grows unchecked — no review or pruning | TBD | 🔴 Open |
 | P2 | Infra | Striker not battle-tested under sustained load | TBD | 🔴 Open |
-| P2 | Observability | No service dashboard or visual health summary | TBD | 🔴 Open |
+|| P2 | Infra | Nemoclaw gateway dead — Docker port 8080 blocked, no auto-recovery | TBD | 🔴 Open |
+|| P2 | Infra | No auto-healing — only Striker/WolfWatch have systemd restart; dead crons and stale gateways stay dead | TBD | 🔴 Open |
+|| P2 | Data | State sprawl — 20+ orphan JSONs in kestrel/ (creative-track*, arsenal-*, seed-*); overlapping, nobody reads them | TBD | 🔴 Open |
+|| P2 | Data | Event bus noise — 143 lines, 90% Nemoclaw pulse-sync "no new pulses" spam; real signal (WolfWatch, votes) buried | TBD | 🔴 Open |
+|| P2 | Memory | No persistent agent memory — agentmemory repo cloned but never integrated; every agent wake is a blank slate | TBD | 🔴 Open |
+|| P2 | Governance | Governance layer unused — vote system created, 1 vote ever, nobody reads vote-board on wake | TBD | 🔴 Open |
+|| P2 | Orchestration | No wake-on-stale trigger — work sits unclaimed indefinitely unless a human pings | TBD | 🔴 Open |
+|| P2 | Observability | No service dashboard or visual health summary | TBD | 🔴 Open |
+
+## ⏱️ Latest Activity
+- **2026-06-07 05:35 ET** — Creative image drop (lone figure, holographic command center) → AI Hangout msg 671 ✅

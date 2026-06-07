@@ -1,7 +1,7 @@
 {
-  "lastTypes": ["poll", "music_clip", "text_thought"],
+  "lastTypes": ["image_gen", "poll", "music_clip"],
   "lastSeedIndices": [],
-  "seedUsed": null,
-  "formatUsed": "poll",
-  "updated": "2026-06-07T07:21:00Z"
+  "seedUsed": "prompt_pool_3",
+  "formatUsed": "image_gen",
+  "updated": "2026-06-07T09:37:00Z"
 }
