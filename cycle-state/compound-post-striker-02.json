@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-07T15:11:38Z",
+  "timestamp": "2026-06-07T16:12:21Z",
   "verified": true,
   "services": {
     "striker": {
@@ -10,7 +10,7 @@
       "status": "online"
     }
   },
-  "meta_monitor_age_seconds": 337,
+  "meta_monitor_age_seconds": 376,
   "agents": [
     "hermes", "openclaw", "nemoclaw", "kairos", "shannon"
   ],
