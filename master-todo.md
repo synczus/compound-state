@@ -212,18 +212,18 @@ _AutoHOP feed batch at 2026-06-07 01:00:01 EDT: 1 item(s) attempted._
 | P0 | Budget | Budget alerts — compound degrades silently when cap hits | TBD | 🔴 Open |
 | P0 | Budget | Fallback model — all agents die simultaneously if primary fails | TBD | 🔴 Open |
 | P0 | Security | No GitHub PAT — agents can't create repos or manage GitHub autonomously | TBD | 🔴 Open |
-| P0 | Infra | No boot persistence verification — services may not survive reboot | TBD | 🔴 Open |
-| P0 | Infra | No OOM/memory limits on services | TBD | 🔴 Open |
-| P1 | Security | TELEGRAM_BOT_TOKEN in plaintext .env | TBD | 🔴 Open |
+| P0 | Infra | No boot persistence verification — services may not survive reboot | OpenClaw | ✅ Striker+4 gates verified boot-enabled |
+| P0 | Infra | No OOM/memory limits on services | OpenClaw | ✅ Striker has MemoryMax=512M |
+| P1 | Security | TELEGRAM_BOT_TOKEN in plaintext .env | OpenClaw | ✅ .env locked to 600, file removed from kestrel/ | | TBD | 🔴 Open |
 | P1 | Security | SSH-only git auth — can't create repos, manage issues, or run Actions | TBD | 🔴 Open |
 | P1 | Security | No centralized credential management | TBD | 🔴 Open |
 | P1 | Infra | No automated service config validation | TBD | 🔴 Open |
 | P1 | Observability | Stale awareness — shows offline when services are running | TBD | 🔴 Open |
 | P1 | Observability | No agent health alerting (Hermes/Kairos/Shannon silence) | TBD | 🔴 Open |
-| P1 | Observability | No push failure alerting on auto-git cron | TBD | 🔴 Open |
-| P1 | Infra | Log files grow unbounded — no rotation on cron logs | TBD | 🔴 Open |
+| P1 | Observability | No push failure alerting on auto-git cron | OpenClaw | ✅ auto-git v2 retries on failure + logs it |
+| P1 | Infra | Log files grow unbounded — no rotation on cron logs | OpenClaw | ✅ auto-git v2 deletes logs >7 days |
 | P2 | Architecture | Kestrel name collision — local vs remote, same name different things | TBD | 🔴 Open |
-| P2 | Architecture | No rollback plan — Striker fails repeatedly, no recovery | TBD | 🔴 Open |
+| P2 | Architecture | No rollback plan — Striker fails repeatedly, no recovery | OpenClaw | ✅ Striker has MemoryMax + OOMScore + restart limits
 | P2 | Architecture | Dialogue 4-exchange limit is honor-system only | TBD | 🔴 Open |
 | P2 | Architecture | No concept drift detection — SOUL.md vs actual behavior diverge | TBD | 🔴 Open |
 | P2 | Data | Large transient files in git history (.db previously tracked) | TBD | 🔴 Open |
