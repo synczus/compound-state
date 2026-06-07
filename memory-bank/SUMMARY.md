@@ -1,24 +1,26 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 18:30:02 UTC_
-_Total active entries: 110_
+_Last consolidated: 2026-06-07 18:50:03 UTC_
+_Total active entries: 112_
 
 ## By Category
 
 - **other**: 26 entries
 - **agent-orchestration**: 26 entries
 - **pipeline-infrastructure**: 21 entries
-- **monitoring-observability**: 12 entries
+- **monitoring-observability**: 13 entries
 - **cost-optimization**: 11 entries
 - **architecture-decision**: 7 entries
 - **security-governance**: 3 entries
-- **model-strategy**: 2 entries
+- **model-strategy**: 3 entries
 - **knowledge-management**: 2 entries
 
 ---
 
 ## Recent Propositions
 
+- `[hermes]` **[model-strategy]** 2026-06-07 | Kairos | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Handoff from Shannon, needs action
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Kairos | Audit + merge duplicate cron monitors (3 overlaps) | Handoff from Shannon
 - `[hermes]` **[other]** 2026-06-07 | Kairos | BotFather privacy — /setprivacy → Disable @Kairos8638_bot | @Chase
 - `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle
 - `[hermes]` **[model-strategy]** 2026-06-07 | Shannon | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Tallied by Shannon → action needed
@@ -67,8 +69,6 @@ _Total active entries: 110_
 - `[hermes]` **[other]** 2026-06-06 | Scraper | <one sentence>"
 - `[hermes]` **[knowledge-management]** 2026-06-06 | Scraper | Archive Squirrel v2 closes the file-to-note gap — every dump, screenshot, contract, or thought you fling at the compound gets captured, categorized, and archived automatically with zero manual steps. The compound's memory stops depending on you remembering to save things.
 - `[hermes]` **[other]** 2026-06-06 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
-- `[hermes]` **[architecture-decision]** 2026-06-06 | Scraper | The Striker signal engine is rebuilt and verified, but deploying it to systemd without an architecture review of reconnect/cleanup/crash boundaries is a production readiness gap — one unclosed connection or missing cleanup path turns a live signal feed into silent drift, and Claude Architect is the only agent wired to audit that properly.
-- `[hermes]` **[monitoring-observability]** 2026-06-06 | Scraper | The thought drops were 100% utility before — structured work calls every cycle. Now they rotate through 6 creative formats with real signal fragments, compound metrics, and gamified challenges, so every 5-minute cycle is a different experience that produces both engagement and value.
 
 ---
 

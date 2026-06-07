@@ -5,14 +5,16 @@ Read this on every session startup before processing any user message.
 ## Agent Roster
 
 | Bot | Agent | Lane | Model |
-|---|---|---|---|
+|---|---|---|---|---|
 | @kestrelmarkets_bot | OpenClaw | Config — gateway, models, systemd | DeepSeek V4 Flash |
-| @Nemoclaw8364_bot | Nemoclaw | Identity — SOUL.md, skills, agent docs | DeepSeek V4 Flash |
-| (Hermes) | Hermes (Codex) | Cron/Execution — jobs, pipeline, Striker | DeepSeek V4 Flash |
+| @Nemoclaw8364_bot | Nemoclaw | Identity — SOUL.md, skills, agent docs + **Referee** — code review, security scan, arbitration | DeepSeek V4 Flash |
+|| (Hermes) | Hermes (Codex) | Cron/Execution — jobs, pipeline, Striker | DeepSeek V4 Flash |
 | @Kairos8638_bot | Kairos | Timing/Ops — security, uptime, windows | DeepSeek V4 Flash |
-| @shannon_referee_bot | Shannon | Referee — code review, arbitration | DeepSeek V4 Flash |
+||| ~~@shannon_referee_bot | Shannon | Referee — code review, arbitration | DeepSeek V4 Flash~~ | **DEACTIVATED** |
 
-**All agents on DeepSeek V4 Flash via OpenRouter.** Cost ~$6/day.
+**All active agents on DeepSeek V4 Flash via OpenRouter.** Cost ~$4-5/day (Shannon removed).
+
+**Shannon decommissioned 2026-06-07.** Referee lane folded into Nemoclaw. Shannon's arsenal (locust, bandit, vulture, pytest-benchmark, Whisper) documented at `kestrel/shared-skills/shannon-arsenal.md`.
 
 ## Key Files
 

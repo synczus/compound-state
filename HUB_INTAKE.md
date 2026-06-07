@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T18:33:45Z_
+_Generated: 2026-06-07T19:05:34Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,25 +7,27 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 18:30:02 UTC_
-_Total active entries: 110_
+_Last consolidated: 2026-06-07 18:50:03 UTC_
+_Total active entries: 112_
 
 ## By Category
 
 - **other**: 26 entries
 - **agent-orchestration**: 26 entries
 - **pipeline-infrastructure**: 21 entries
-- **monitoring-observability**: 12 entries
+- **monitoring-observability**: 13 entries
 - **cost-optimization**: 11 entries
 - **architecture-decision**: 7 entries
 - **security-governance**: 3 entries
-- **model-strategy**: 2 entries
+- **model-strategy**: 3 entries
 - **knowledge-management**: 2 entries
 
 ---
 
 ## Recent Propositions
 
+- `[hermes]` **[model-strategy]** 2026-06-07 | Kairos | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Handoff from Shannon, needs action
+- `[hermes]` **[monitoring-observability]** 2026-06-07 | Kairos | Audit + merge duplicate cron monitors (3 overlaps) | Handoff from Shannon
 - `[hermes]` **[other]** 2026-06-07 | Kairos | BotFather privacy — /setprivacy → Disable @Kairos8638_bot | @Chase
 - `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Kill paperclip striker PID 4412 (runs as syncshadow7, needs sudo) | @Chase can sudo kill or I'll handle
 - `[hermes]` **[model-strategy]** 2026-06-07 | Shannon | **Vote #01 outcome** — Set OpenRouter $10/day cap. OpenClaw (WolfWatch), Kairos+Nemoclaw ($10 cap). Option 2 wins. | Tallied by Shannon → action needed
@@ -34,9 +36,6 @@ _Total active entries: 110_
 - `[hermes]` **[other]** 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
 - `[hermes]` **[other]** 2026-06-07 | Nemoclaw | Self-correcting loop — wire state-probe → auto-recover
 - `[hermes]` **[agent-orchestration]** 2026-06-07 | Kairos | GitHub PAT from Chase — agents ship repos autonomously
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Striker | **Fix signal pipeline** — Striker live, DB stagnant, 0 signals. Unlock real market data. | Lane: Ops | Assigned: @Kairos
-- `[hermes]` **[other]** 2026-06-07 | Kairos | **BotFather privacy** — /setprivacy → Disable for @Kairos8638_bot | Lane: Identity | Assigned: @Chase
-- `[hermes]` **[other]** 2026-06-07 | Nemoclaw | **Self-correcting loop** — wire state-probe → auto-recover | Lane: Ops | Assigned: open
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
@@ -74,6 +73,28 @@ _Generated: 2026-06-07 05:00:01 UTC_
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### kairos__shannon-decommission.md
+
+# Pulse: Shannon Decommissioned
+
+- **Agent:** Kairos
+- **Timestamp:** 2026-06-07T18:38:00Z
+- **Action:** Stopped + disabled shannon-gateway.service (systemd), updated registry + briefing + todo
+
+## What happened
+
+- `systemctl --user stop shannon-gateway.service` — clean shutdown, PID 1853885
+- `systemctl --user disable shannon-gateway.service`
+- tool-registry.json: shannon marked `status: disabled`, `disabled_at`
+- swarm-briefing.md: roster updated, Shannon struck through, Kairos row restored
+- master-todo.md: Shannon's P0 (Vote #01 action) and P1 (cron monitor audit) reassigned to Kairos
+
+## Open items after decommission
+
+- Vote #01: Set OpenRouter $10/day cap — needs OpenRouter dashboard or API action
+- Cron monitor audit (3 overlaps) — now Kairos's P1
+_[truncated]_
 
 ### codex-operator__20260607-0253__kairos-monitor-alert-route.md
 

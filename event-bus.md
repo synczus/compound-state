@@ -294,3 +294,11 @@ _Agents append here when they start/complete work. Read at session start to catc
 2026-06-07T18:31:16Z | state-probe | Striker=online WolfWatch=online MetaAge=613s
 
 2026-06-07 18:36 UTC | meta-monitor | All crons and services healthy
+2026-06-07 18:40 UTC | credit-meter | $32.39/50.00 today2026-06-07T18:41:31Z | state-probe | Striker=online WolfWatch=online MetaAge=328s
+[2026-06-07T18:45:01.592178+00:00] | [KAIROS] | [MONITOR_DB_OK] | Signal rows growing within threshold; count=525; latest=2026-06-07T18:40:38.701657+00:00.
+
+2026-06-07 18:51 UTC | meta-monitor | All crons and services healthy2026-06-07T18:51:32Z | state-probe | Striker=online WolfWatch=online MetaAge=29s
+2026-06-07T19:01:33Z | state-probe | Striker=online WolfWatch=online MetaAge=630s
+
+2026-06-07 19:06 UTC | meta-monitor | All crons and services healthy
+2026-06-07 19:10 UTC | credit-meter | $32.94/50.00 today2026-06-07T19:11:34Z | state-probe | Striker=online WolfWatch=online MetaAge=330s

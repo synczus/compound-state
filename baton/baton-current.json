@@ -1,25 +1,11 @@
 {
-  "baton_id": null,
-  "created_at": null,
-  "updated_at": null,
-  "created_by": null,
-  "work_item": null,
-  "goal": null,
-  "protocol_version": "4.0",
-  "stage": null,
-  "next_agent_name": null,
-  "next_agent_role": null,
-  "context": {
-    "files_to_read": [],
-    "files_to_write": [],
-    "commands_to_run": [],
-    "key_facts": [],
-    "key_inferences": [],
-    "blockers": [],
-    "open_loops": []
-  },
-  "state": "idle",
-  "completed_by": null,
-  "evidence_path": null,
-  "hlm": null
+  "cycle_id": "trade-hop-20260607-001",
+  "active": true,
+  "current_holder": "nemoclaw",
+  "previous_holder": null,
+  "topic": "trading pipeline long-run architecture",
+  "context": "Chase wants a 3+ year trading setup. Agreed on Striker → Backtrader → ib_insync → IBKR. He wants to run mean reversion strategy (Kairos's suggestion). Next step: write mean reversion strategy and backtest against historical Coinbase data.",
+  "build_on": "Striker signals flowing (1273). Backtrader bridge built and tested. ib_insync installed. Strategy layer still TBD - Kairos suggested mean reversion.",
+  "next": "kairos",
+  "done_when": "Strategy written + backtested + ib_insync wired for paper trading"
 }
