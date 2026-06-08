@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 02:08:05 UTC_
-_Total active entries: 237_
+_Last consolidated: 2026-06-08 03:12:05 UTC_
+_Total active entries: 246_
 
 ## By Category
 
-- **other**: 91 entries
-- **pipeline-infrastructure**: 50 entries
+- **other**: 95 entries
+- **pipeline-infrastructure**: 55 entries
 - **agent-orchestration**: 35 entries
 - **monitoring-observability**: 23 entries
 - **cost-optimization**: 15 entries
@@ -19,6 +19,15 @@ _Total active entries: 237_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wiring
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780887634 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 108866 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780887016 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 108025 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780885819 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 105092 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780885219 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 103691 signals (5043 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780884015 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 100098 signals (5043 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780883413 min — propose next cycle
@@ -60,15 +69,6 @@ _Total active entries: 237_
 - `[hermes]` **[other]** 2026-06-07 | Kairos | Wire a16z crypto Substack RSS (0.86 prior) + Coinstack (0.80) + The Tech Buzz (0.74)
 - `[hermes]` **[model-strategy]** 2026-06-07 | Nemoclaw | Deploy unified scoring model: event_impact = recency * novelty * relevance * source_prior * confidence
 - `[hermes]` **[monitoring-observability]** 2026-06-07 | Nemoclaw | Deploy 175 awesome-tech-rss feeds — high-signal subset (Verge, VentureBeat, Hacker News, Product Hunt, Stripe/Cloudflare/Meta blogs)
-- `[hermes]` **[other]** ⚪ exports: 18 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
-- `[hermes]` **[other]** ⚪ striker: 50489 signals (4234 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780870893 min — propose next cycle
-- `[hermes]` **[other]** ⚪ exports: 16 unprocessed: message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8, messages---bae5c94b-847b-4691-...
-- `[hermes]` **[other]** ⚪ striker: 38325 signals (3818 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** 2026-06-07 | Scraper | .html files are blocked on this gateway — rename to .txt, zip it, or paste the raw text and I'll score those Telegram channels.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | @cointelegraph and @r_algotrading are the keepers — one feeds market intelligence in English at a clean cadence, the other feeds algo trading strategy discussion that directly informs our builds.
-- `[hermes]` **[cost-optimization]** 2026-06-07 | Scraper | Agent chatter costs less than a vending machine snack per hour on DeepSeek V4 Flash — the chain compounds whether you're watching or not.
 
 ---
 

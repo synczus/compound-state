@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-08T02:14:03Z_
+_Generated: 2026-06-08T03:14:44Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 02:08:05 UTC_
-_Total active entries: 237_
+_Last consolidated: 2026-06-08 03:12:05 UTC_
+_Total active entries: 246_
 
 ## By Category
 
-- **other**: 91 entries
-- **pipeline-infrastructure**: 50 entries
+- **other**: 95 entries
+- **pipeline-infrastructure**: 55 entries
 - **agent-orchestration**: 35 entries
 - **monitoring-observability**: 23 entries
 - **cost-optimization**: 15 entries
@@ -26,21 +26,21 @@ _Total active entries: 237_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wiring
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780887634 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 108866 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780887016 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 108025 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780885819 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 105092 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780885219 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 103691 signals (5043 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780884015 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 100098 signals (5043 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780883413 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 97037 signals (5043 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780882230 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 91837 signals (4493 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 87393 signals (4490 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 80768 signals (4490 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
-- `[hermes]` **[other]** ⚪ striker: 78423 signals (4490 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 71354 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 68953 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 63983 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 62513 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 63552 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

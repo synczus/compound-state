@@ -9,6 +9,13 @@
   "openclaw_done": false,
   "complete": true,
   "auto": true,
-  "idle_since": "2026-06-07T22:20:00Z",
-  "last_updated": "2026-06-07T22:20:00Z"
+  "idle_since": "",
+  "last_updated": "2026-06-08T03:00:00Z",
+  "monitor_active": true,
+  "monitor_job": "agent-hop-chain",
+  "monitor_schedule": "every 30m",
+  "souls_updated": ["kairos-soul.md", "shannon-soul.md", "nemoclaw-soul.md"],
+  "initiation_protocol": "v3",
+  "coordination_board": "verified",
+  "n8n_status": "running on port 5678, needs owner setup"
 }

@@ -46,13 +46,13 @@ Update master-todo.md with the handoff.
 
 ## 5. Lane Assignments
 
-| Lane | Agent(s) | Scope |
-|---|---|---|
-| Config | OpenClaw | Gateway config, models, service files, systemd |
-| Cron/Execution | Hermes (Codex) | Timed jobs, pipeline triggers, coordination, Striker |
-| Identity | Nemoclaw | SOUL.md, personality, skills, agent docs |
-| Timing/Ops | Kairos | Security audits, uptime, windows, pipeline cadence |
-| Referee | Shannon | Code review, technical arbitration, signal analysis |
+| Lane | Agent(s) | Scope | SOUL File |
+|---|---|---|---|
+| Timing/Ops | Kairos | Security audits, uptime, windows, pipeline cadence, scouting | `identity/kairos-soul.md` |
+| Referee | Shannon | Code review, technical arbitration, signal analysis, scoring | `identity/shannon-soul.md` |
+| Identity/Build | Nemoclaw | SOUL.md, personality, skills, agent docs, identity architecture | `identity/nemoclaw-soul.md` |
+| Config | OpenClaw | Gateway config, models, service files, systemd | N/A |
+| Cron/Execution | Hermes (Codex) | Timed jobs, pipeline triggers, coordination, Striker | N/A |
 
 ## 6. After Every Action
 

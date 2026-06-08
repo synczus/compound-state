@@ -72,3 +72,29 @@
 - [exports] 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
 - [striker] 100098 signals (5043 >=0.3%), last 1970-01-01 00:00:00
 
+# Compound Pulse — 2026-06-08T02:30:19Z
+
+## P0 — Urgent
+
+
+## P1 — Active
+- [contract] coordination.yaml exists but may be misconfigured
+- [hop] Hop idle 1780885819 min — propose next cycle
+
+## P2 — Infra
+- [exports] 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [striker] 105092 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+
+# Compound Pulse — 2026-06-08T03:00:33Z
+
+## P0 — Urgent
+
+
+## P1 — Active
+- [contract] coordination.yaml exists but may be misconfigured
+- [hop] Hop idle 1780887634 min — propose next cycle
+
+## P2 — Infra
+- [exports] 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [striker] 108866 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+

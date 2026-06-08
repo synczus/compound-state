@@ -11,6 +11,7 @@
 - [x] 2026-06-07 | Kairos | kairos_monitor.py deployed — health tick freshness + DB row growth monitoring, edge-triggered alerts via bus_logger, cron */15 with flock ✅
 
 ## 🔴 P0 — Must Do
+- [ ] 2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wiring
 
 ## 🟡 P1 — Perplexity Priority Build Order
 - [ ] **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs
@@ -222,3 +223,35 @@
 - [ ] 🟡 hop: Hop idle 1780884015 min — propose next cycle
 - [ ] ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
 - [ ] ⚪ striker: 100098 signals (5043 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T02:20:19Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780885219 min — propose next cycle
+- [ ] ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 103691 signals (5043 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T02:30:19Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780885819 min — propose next cycle
+- [ ] ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 105092 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T02:50:15Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780887016 min — propose next cycle
+- [ ] ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 108025 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T03:00:33Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780887634 min — propose next cycle
+- [ ] ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 108866 signals (5082 >=0.3%), last 1970-01-01 00:00:00
+
+|--- pulse 2026-06-08T03:00:00Z (Kairos session) ---
+|- [x] ✅ Kairos SOUL.md updated — full Telegram context, profiles, tools, autonomy
+|- [x] ✅ Shannon SOUL.md updated — Telegram context, session startup, hop chain role  
+|- [x] ✅ Initiation protocol v3 updated — lane assignments now include SOUL file refs
+|- [x] ✅ Coordination board verified — coordination.yaml + baton + hop-sequence all good
+|- [x] ✅ Agent-hop-chain cron wired — every 30m, checks board, kicks stale chain
+|- [ ] 🔴 P0 | Chase | Set up n8n owner account at localhost:5678 → create API key → paste in chat

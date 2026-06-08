@@ -1,8 +1,8 @@
 {
-  "daily": 6.316420731,
-  "weekly": 6.316420731,
-  "monthly": 93.935964091,
-  "threshold": 10.00,
+  "daily": 9.34,
+  "weekly": 9.34,
+  "monthly": 96.96,
+  "threshold": 30.00,
   "exceeded": false,
-  "checked_at": "2026-06-08T01:34:52Z"
+  "checked_at": "2026-06-08T02:38:26Z"
 }
