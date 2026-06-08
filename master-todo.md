@@ -217,3 +217,41 @@
 - [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
 - [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T20:30:09Z ---
+- [ ] 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T21:00:33Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T21:30:05Z ---
+- [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T22:00:22Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T22:30:10Z ---
+- [ ] 🔴 health: Striker is activating — needs attention
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780957810 min — propose next cycle
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T23:00:07Z ---
+- [ ] 🔴 health: Striker is activating — needs attention
+- [ ] 🔴 hop: Active hop — nemoclaw's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00

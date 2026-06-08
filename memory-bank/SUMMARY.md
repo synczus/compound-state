@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 19:31:20 UTC_
-_Total active entries: 479_
+_Last consolidated: 2026-06-08 22:39:56 UTC_
+_Total active entries: 481_
 
 ## By Category
 
-- **other**: 180 entries
-- **pipeline-infrastructure**: 125 entries
+- **other**: 181 entries
+- **pipeline-infrastructure**: 126 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,8 @@ _Total active entries: 479_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** 🔴 health: Striker is activating — needs attention
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780957810 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780947003 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 139213 signals (5183 >=0.3%), last 1970-01-01 00:00:00
@@ -67,8 +69,6 @@ _Total active entries: 479_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat pipeline is caught up — zero new Telegram messages, 2 previously backlogged trade alerts scored and processed.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat pipeline is caught up — zero new Telegram messages, 2 previously backlogged trade alerts scored and processed.  [{"id": "call_00_3jeCKcjcsaXmdsRdSHB47356", "call_id": "call_00_3jeCKcjcsaXmdsRdSHB47356", "response_item_id": "fc_00_3jeCKcjcsaXmdsRdSHB47356", "type": "function", "function": {"name": "memory", "arguments": "{\"action\": \"add\", \"target\": \"memory\", \"content\": \"scripts/chat_ingest.py does not exist in kestrel. The live Telegram ingestion pipeline uses scripts/note-intake.py (Bot API polling) + scripts/ingestion/post-ingest-scorer.py (DuckDB scoring). The archive batch pipeline uses scripts/ingestion/archive-ingest.py + post-ingest-scorer.py.\"}"}}]
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Clarifying whether you want GitHub repo, Google Drive backup, or something else for your home directory upload.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Clock drift detected in inversion tracker (+48m forward skew) — gdrive-backup grew 2,723 files but skew hid the signal; container fleet is clean but system time should be NTP-tethered at next hygiene pass.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | CodeGraph index is current; no knowledge doc drift detected.
 
 ---
 

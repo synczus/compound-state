@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T20:23:56Z_
+_Generated: 2026-06-08T23:09:54Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 19:31:20 UTC_
-_Total active entries: 479_
+_Last consolidated: 2026-06-08 22:39:56 UTC_
+_Total active entries: 481_
 
 ## By Category
 
-- **other**: 180 entries
-- **pipeline-infrastructure**: 125 entries
+- **other**: 181 entries
+- **pipeline-infrastructure**: 126 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,8 @@ _Total active entries: 479_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** 🔴 health: Striker is activating — needs attention
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780957810 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780947003 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 139213 signals (5183 >=0.3%), last 1970-01-01 00:00:00
@@ -35,7 +37,6 @@ _Total active entries: 479_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 11-minute gap clean — all services nominal, no drift, no decay, pulse delivered on schedule.
 - `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | 11m gap is tight, everything nominal except Hermes agent crons have 3 paused and 1 budget-bleeding error — either clean up the dead crons or unpause the useful ones.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | `/last30days` is installed and ready — one command researches any topic across 8+ platforms with engagement-ranked synthesis, no extra config needed.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
