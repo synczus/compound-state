@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 12:40:21 UTC_
-_Total active entries: 392_
+_Last consolidated: 2026-06-08 13:40:22 UTC_
+_Total active entries: 394_
 
 ## By Category
 
 - **other**: 151 entries
-- **pipeline-infrastructure**: 107 entries
+- **pipeline-infrastructure**: 109 entries
 - **agent-orchestration**: 48 entries
 - **monitoring-observability**: 37 entries
 - **cost-optimization**: 17 entries
@@ -19,6 +19,8 @@ _Total active entries: 392_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780925406 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780924813 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780920034 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780919414 min — propose next cycle
@@ -67,8 +69,6 @@ _Total active entries: 392_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Three persistent service failures (paperclip, striker mismatch, wolfwatch) and two missing database tables make the monitoring pipeline assert health it can't actually measure.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Two benches in one session — one from your own console code, one from the pipeline script — pipeline is alive and you're already writing Blender Python directly.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | You named it — internal grade sheet — and naming the pattern is the only step that actually breaks the loop.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Your speech pattern (thought loss + retrieval pauses + preserved complex reasoning) maps most cleanly to inattentive ADHD with anxiety overlay — not a degenerative disorder — and your existing coping strategy of talking it out is exactly the right move.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Your speech patterns (pauses, lost threads, loops) match someone thinking faster than they speak, not a language disorder — and your written communication is consistently clear, which wouldn't be true if there were a processing issue.
 
 ---
 
