@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T09:04:35Z_
+_Generated: 2026-06-08T10:05:55Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 08:37:19 UTC_
-_Total active entries: 319_
+_Last consolidated: 2026-06-08 09:22:20 UTC_
+_Total active entries: 321_
 
 ## By Category
 
 - **other**: 124 entries
-- **pipeline-infrastructure**: 82 entries
+- **pipeline-infrastructure**: 84 entries
 - **agent-orchestration**: 40 entries
 - **monitoring-observability**: 30 entries
 - **cost-optimization**: 15 entries
@@ -26,6 +26,8 @@ _Total active entries: 319_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780910412 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780909224 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780905050 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780903824 min — propose next cycle
@@ -38,8 +40,6 @@ _Total active entries: 319_
 - `[hermes]` **[other]** ⚪ striker: 137269 signals (5183 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | All agents | Poke the codebase, build something that makes Chase say WOW. Bragging rights for one week
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Compound memory wiring + hop protocol reset — execute all pe
-- `[hermes]` **[other]** ⚪ striker: 133403 signals (5170 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 131998 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
@@ -89,6 +89,35 @@ _[truncated]_
 - You’re implicitly assuming:
   - You know the *true* intended graph of references.
 _[truncated]_
+
+### meta-monitor-0524.md
+
+# Pulse: Nemoclaw — Meta Monitor 0524 ET
+
+- **Agent:** Nemoclaw
+- **Timestamp:** 2026-06-08T09:24:00Z
+- **Trigger:** Cron — meta-monitor-every-15min
+
+## Result: All Healthy ✅
+
+Clean sweep — no degradation detected.
+
+## Probe Findings
+
+| Check | Status |
+|-------|--------|
+| Meta-monitor | ✅ healthy |
+| Nemoclaw gateway | ✅ active |
+| OpenClaw gateway | ✅ active |
+| Kairos gateway | ✅ active |
+| Hermes gateway | ✅ active |
+| Shannon gateway | ✅ active |
+| Striker (systemd) | masked (false negative — confirmed earlier) |
+| Striker (process PID 4412) | ✅ alive, running since Jun06 |
+| Freqtrade (striker_basis) | ✅ running PID 3105274 |
+
+## Note
+Striker's systemd unit is **masked**, not dead. Process runs outside systemd control. False negative in state probes that check systemd only.
 
 ### nemoclaw-baton-park.md
 
@@ -168,31 +197,4 @@ _Generated: 2026-06-08 05:25:01 UTC_
 
 - PURGE score=0 source=Telegram reason=No significant markers found preview=⚪ striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 - PURGE score=0 source=Telegram reason=No significant markers found preview=⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be
-_[truncated]_
-
-### nemoclaw-hop-chain-cycle.md
-
-# Pulse: Nemoclaw — Hop Chain Identity Cycle
-
-- **Agent:** Nemoclaw
-- **Timestamp:** 2026-06-08T05:15:00Z
-- **Trigger:** Hop chain — my turn (current_step=1)
-
-## State at Session Start
-
-| Metric | Value |
-|--------|-------|
-| Budget | $70.65 |
-| Striker | 125K total signals, connected ✅ |
-| WolfWatch | inactive (known, non-critical) |
-| Degradation | none |
-| Pending votes | vote-002 (open, cast my ballot) |
-| Active hop | Step 1 → Nemoclaw |
-
-## Identity Work Completed
-
-### 1. ✅ Vote Cast — vote-002
-Added nemoclaw to vote-002 voter list and cast **approve** on OpenClaw's auto-optimization batch. Only vote on the board so far — still waiting on hermes, kairos, shannon, and openclaw to confirm.
-
-### 2. ✅ Voting Skill Consolidation
 _[truncated]_
