@@ -418,3 +418,28 @@
 - [exports] 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - [striker] 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
 
+# Compound Pulse — 2026-06-08T16:30:26Z
+
+## P0 — Urgent
+
+
+## P1 — Active
+- [contract] coordination.yaml exists but may be misconfigured
+- [hop] Hop idle 1780936226 min — propose next cycle
+
+## P2 — Infra
+- [exports] 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [striker] 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+# Compound Pulse — 2026-06-08T17:00:24Z
+
+## P0 — Urgent
+- [hop] Active hop — nemoclaw's turn: Auto cycle — full squad sweep
+
+## P1 — Active
+- [contract] coordination.yaml exists but may be misconfigured
+
+## P2 — Infra
+- [exports] 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [striker] 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+

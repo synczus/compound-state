@@ -167,3 +167,15 @@
 - [ ] 2026-06-08 | Scraper | last30days is installed and wired as the compound's default broad research engine for Reddit/X/HN/GitHub/Polymarket/YT synthesis, while Perplexity Sonar Pro remains the inline fact-checker — use last30days for sentiment and investigation, Sonar for quick factual grounding.
 - [ ] 2026-06-08 | Scraper | n8n is the outlier — 5h uptime vs 37h for the rest of the stack; check logs for what triggered the restart.
 - [ ] 2026-06-08 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on.
+
+--- pulse 2026-06-08T16:30:26Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780936226 min — propose next cycle
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T17:00:24Z ---
+- [ ] 🔴 hop: Active hop — nemoclaw's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00

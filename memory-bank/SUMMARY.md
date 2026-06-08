@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 16:10:23 UTC_
-_Total active entries: 474_
+_Last consolidated: 2026-06-08 16:42:23 UTC_
+_Total active entries: 475_
 
 ## By Category
 
 - **other**: 177 entries
-- **pipeline-infrastructure**: 123 entries
+- **pipeline-infrastructure**: 124 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,7 @@ _Total active entries: 474_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780936226 min — propose next cycle
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 11-minute gap clean — all services nominal, no drift, no decay, pulse delivered on schedule.
@@ -68,7 +69,6 @@ _Total active entries: 474_
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Council of High Intelligence installed across all agent harnesses — 18 deliberating personas with multi-provider routing, structured debate rounds, and anti-groupthink enforcement.
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | Every message you've sent in the last 4 days — 1,139 records across architecture, config, tools, signals, and decisions — is now queryable in DuckDB and readable by any agent through CodeGraph, with new messages auto-ingested every 15 minutes and zero manual dumping required.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Everything nominal — Freqtrade responding, all 10 containers up, GDrive backup at 8.0G with 25,310 files, +1 new file since last pulse 12m ago.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | Freqtrade login at 127.0.0.1:8081 with ftuser/ftpass — and all three skills (last30days, impeccable, taste-skill) now installed across every agent harness.
 
 ---
 
