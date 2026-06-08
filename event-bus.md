@@ -116,4 +116,19 @@ _50 high-confidence signals analyzed_
 2026-06-08 09:38 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-08T09:49:59Z | state-probe | Striker=offline WolfWatch=online MetaAge=1511s
 
 2026-06-08 09:54 UTC | baton-auto-cycle | No pending P0/P1 work found on board
-2026-06-08 10:09 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 10:09 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-08T10:20:05Z | state-probe | Striker=offline WolfWatch=online MetaAge=3317s
+
+2026-06-08 10:24 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 10:24 UTC | meta-monitor | 🔴 Cron 'or-budget-monitor' stale — 273m since last run (max 240m)
+2026-06-08 10:25 UTC | meta-monitor | 🔧 or-budget-monitor: Found stale (273min), no cron job registered. Created wrapper script at scripts/or-budget-monitor.sh, ran once successfully. State: $137.20 cycle usage, exceeded threshold. Fix: register cron job 'or-budget-monitor' with schedule every 1h, isolated agentTurn running scripts/or-budget-monitor.sh. Needs main session to add job (cron restricted here).
+[2026-06-08T10:30:05.063050+00:00] | [WOLFWATCH] | [CRITICAL] | Striker HEALTH STALE: Striker health file is 13696s old (threshold 120s).
+[2026-06-08T10:30:05.063114+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker HEALTH STALE: failed or unconfigured
+[2026-06-08T10:30:05.063540+00:00] | [KAIROS] | [MONITOR_HEALTH_NOTIFY_SENT] | STALE: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"critical","title":"Striker HEALTH STALE","body":"Striker health file is 13696s old (threshold 120s).","timestamp":"2026-06-08T10:30:01.906275+00:00"
+[2026-06-08T10:30:05.534951+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: No new signal rows for 212 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.
+[2026-06-08T10:30:05.535025+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT: failed or unconfigured
+[2026-06-08T10:30:05.535482+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_SENT] | STAGNANT: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"important","title":"Striker DB STAGNANT","body":"No new signal rows for 212 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.","timest
+
+2026-06-08 10:38 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-08T10:50:11Z | state-probe | Striker=offline WolfWatch=online MetaAge=1534s
+
+2026-06-08 10:54 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 11:08 UTC | baton-auto-cycle | No pending P0/P1 work found on board

@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-08T10:11:20.619123+00:00",
-  "epoch_seconds": 1780913480,
+  "timestamp": "2026-06-08T11:11:20.996019+00:00",
+  "epoch_seconds": 1780917080,
   "board_summary": {
     "p0_pending": 0,
     "p1_pending": 0,
     "p2_pending": 0,
     "done": 0,
-    "in_progress": 28
+    "in_progress": 35
   },
   "striker": {
     "status": "connected",
@@ -64,7 +64,7 @@
     }
   ],
   "signal_intel": {
-    "last_analysis": "2026-06-08T10:15:20.687723+00:00",
+    "last_analysis": "2026-06-08T11:15:21.077496+00:00",
     "high_conf_signals": 50,
     "top_signal": {
       "symbol": "BTC-USD",

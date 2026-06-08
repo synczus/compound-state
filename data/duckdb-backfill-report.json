@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-06-08T10:30:00Z",
+  "phase_1_codegraph": {
+    "kestrel": {
+      "status": "already_up_to_date",
+      "files_indexed": 140,
+      "total_nodes": 2498,
+      "total_edges": 3751,
+      "languages": ["python:136", "yaml:3", "javascript:1"]
+    },
+    "openclaw_nemo": {
+      "status": "already_up_to_date",
+      "files_indexed": 4,
+      "total_nodes": 70,
+      "total_edges": 137,
+      "languages": ["python:2", "yaml:1", "javascript:1"]
+    }
+  },
+  "phase_2_databases": [
+    {
+      "path": "/home/synczus/kestrel/kestrel_state.db",
+      "engine": "sqlite",
+      "size_bytes": 12288,
+      "tables": ["commit_state"],
+      "row_counts": {"commit_state": 6}
+    },
+    {
+      "path": "/home/synczus/kestrel/notes.db",
+      "engine": "sqlite",
+      "size_bytes": 27648,
+      "tables": ["notes"],
+      "row_counts": {"notes": 1}
+    },
+    {
+      "path": "/home/synczus/kestrel/archivesquirrel/notes.db",
+      "engine": "sqlite",
+      "size_bytes": 24576,
+      "tables": ["notes"],
+      "row_counts": {"notes": 1}
+    },
+    {
+      "path": "/home/synczus/kestrel/memory-bank/archive.db",
+      "engine": "sqlite",
+      "size_bytes": 315392,
+      "tables": ["archives", "entries"],
+      "row_counts": {"archives": 397, "entries": 388}
+    },
+    {
+      "path": "/home/synczus/kestrel/kestrel_signals.db",
+      "engine": "sqlite",
+      "size_bytes": 35651584,
+      "tables": ["signals"],
+      "row_counts": {"signals": 138861},
+      "note": "PRIMARY SIGNAL STORE — 138,861 signal rows, largest by volume"
+    },
+    {
+      "path": "/home/synczus/kestrel/ingestion/signals.duckdb",
+      "engine": "duckdb",
+      "size_bytes": 3158016,
+      "tables": ["degradation_plan", "signals", "signal_scores", "source_agreement", "source_feedback", "source_health", "source_registry", "ranked_signal_queue", "source_freshness_watchdog"],
+      "row_counts": {
+        "degradation_plan": 12,
+        "signals": 96,
+        "signal_scores": 0,
+        "source_agreement": 0,
+        "source_feedback": 12,
+        "source_health": 12,
+        "source_registry": 12,
+        "ranked_signal_queue": 0,
+        "source_freshness_watchdog": 12
+      },
+      "note": "Ingestion pipeline DB — 96 signals, source registry with 12 sources"
+    },
+    {
+      "path": "/home/synczus/kestrel/signals.duckdb",
+      "engine": "duckdb",
+      "size_bytes": 28848128,
+      "tables": ["archive_batches", "archive_manifest", "archive_messages", "events", "mtf_diagnosis", "score_watermark", "signals", "signal_scores", "source_agreement", "source_feedback", "source_registry", "trade_log", "trade_setups"],
+      "row_counts": {
+        "archive_batches": 0,
+        "archive_manifest": 8,
+        "archive_messages": 848,
+        "events": 14604,
+        "mtf_diagnosis": 3,
+        "score_watermark": 0,
+        "signals": 4671,
+        "signal_scores": 4705,
+        "source_agreement": 2241,
+        "source_feedback": 15,
+        "source_registry": 15,
+        "trade_log": 0,
+        "trade_setups": 86
+      },
+      "note": "Primary pipeline DB — 14,604 events, 4,671 signals, 4,705 scores, 2,241 agreement records, 848 archive messages, 86 trade setups"
+    },
+    {
+      "path": "/home/synczus/kestrel/scoring/scores.duckdb",
+      "engine": "duckdb",
+      "size_bytes": 536576,
+      "tables": ["scored_signals"],
+      "row_counts": {"scored_signals": 3}
+    },
+    {
+      "path": "/home/synczus/kestrel/tv-receiver/signal_history.duckdb",
+      "engine": "duckdb",
+      "size_bytes": 1323008,
+      "tables": ["scored_signals"],
+      "row_counts": {"scored_signals": 2}
+    },
+    {
+      "path": "/home/synczus/kestrel/scripts/auto-improve/feedback.duckdb",
+      "engine": "duckdb",
+      "size_bytes": 1060864,
+      "tables": ["agent_feedback"],
+      "row_counts": {"agent_feedback": 73}
+    },
+    {
+      "path": "/home/synczus/kestrel/data/signals.duckdb",
+      "engine": "duckdb",
+      "size_bytes": 798720,
+      "tables": ["perplexity_research"],
+      "row_counts": {"perplexity_research": 5}
+    },
+    {
+      "path": "/home/synczus/kestrel/data/signals.db",
+      "engine": "sqlite",
+      "size_bytes": 12288,
+      "tables": [],
+      "row_counts": {}
+    },
+    {
+      "path": "/home/synczus/kestrel/data/kestrel_signals.db",
+      "engine": "sqlite",
+      "size_bytes": 12288,
+      "tables": [],
+      "row_counts": {}
+    }
+  ],
+  "recommendation": {
+    "primary_signal_store": "/home/synczus/kestrel/kestrel_signals.db",
+    "reason": "138,861 signal rows — 29x more signal data than any other DB. SQLite, directly queryable. This is the canonical raw signal repository.",
+    "primary_pipeline_db": "/home/synczus/kestrel/signals.duckdb",
+    "reason": "14,604 events, 4,671 processed signals with scores, source agreement records, and trade setups. DuckDB powers the pipeline processing layer. Best for analytical queries across enriched signal data."
+  },
+  "phase_3_inbox_summary": {
+    "inbox_jsonl_files": {
+      "total_files": 12,
+      "total_lines": 287,
+      "per_source": {
+        "a16z-crypto": 20,
+        "arxiv-ai": 50,
+        "bankless": 50,
+        "coindesk": 25,
+        "coinstack": 20,
+        "cointelegraph": 30,
+        "defillama": 5,
+        "fear-greed": 1,
+        "hacker-news": 25,
+        "techcrunch": 20,
+        "the-tech-buzz": 20,
+        "tldr": 21
+      }
+    },
+    "signal_json_files": {
+      "total_files": 50,
+      "time_range": "2026-06-07T21:49 to 2026-06-08T10:30",
+      "typical_size_bytes": "~615-668 per file",
+      "approx_total_data_bytes": 32000
+    },
+    "total_ingestable_items": 337
+  }
+}

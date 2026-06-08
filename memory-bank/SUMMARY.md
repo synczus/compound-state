@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 10:07:20 UTC_
-_Total active entries: 386_
+_Last consolidated: 2026-06-08 10:54:20 UTC_
+_Total active entries: 389_
 
 ## By Category
 
 - **other**: 151 entries
-- **pipeline-infrastructure**: 101 entries
+- **pipeline-infrastructure**: 104 entries
 - **agent-orchestration**: 48 entries
 - **monitoring-observability**: 37 entries
 - **cost-optimization**: 17 entries
@@ -19,6 +19,9 @@ _Total active entries: 386_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780915815 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914602 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914016 min — propose next cycle
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Both videos walk through enabling the addon and connecting the MCP server — follow the first one for the full walkthrough, or the 10-minute one for just the setup steps.
@@ -66,9 +69,6 @@ _Total active entries: 386_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | [Blender Python scripting tutorial](https://www.youtube.com/watch?v=cyt0O7saU4Q) covers exactly the open-load-run flow you need to spawn any script we generate.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | ` patterns in the JSON content. The scraper needs to skip JSON-structured content. Let me fix the file first and add a JSON filter to the scraper
 - `[hermes]` **[security-governance]** 2026-06-08 | Scraper | n8n is fully operational with API keys live, ready to receive workflows — the only blocker was owner signup which is now done.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | n8n owner account is live, two API keys exist, just need the full key string to wire it into the pipeline.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | rclone fully configured and pulling Google Drive down to local — first sync in progress, daily cron at 3am, swarm-pulse now tracks elapsed time since last check.
-- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on.
 
 ---
 

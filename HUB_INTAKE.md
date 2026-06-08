@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T10:05:55Z_
+_Generated: 2026-06-08T11:06:55Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,39 +7,33 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 09:22:20 UTC_
-_Total active entries: 321_
+_Last consolidated: 2026-06-08 10:54:20 UTC_
+_Total active entries: 389_
 
 ## By Category
 
-- **other**: 124 entries
-- **pipeline-infrastructure**: 84 entries
-- **agent-orchestration**: 40 entries
-- **monitoring-observability**: 30 entries
-- **cost-optimization**: 15 entries
-- **security-governance**: 10 entries
-- **architecture-decision**: 8 entries
-- **knowledge-management**: 6 entries
+- **other**: 151 entries
+- **pipeline-infrastructure**: 104 entries
+- **agent-orchestration**: 48 entries
+- **monitoring-observability**: 37 entries
+- **cost-optimization**: 17 entries
+- **security-governance**: 11 entries
+- **architecture-decision**: 10 entries
+- **knowledge-management**: 7 entries
 - **model-strategy**: 4 entries
 
 ---
 
 ## Recent Propositions
 
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780910412 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780909224 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780905050 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780903824 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
-- `[hermes]` **[other]** ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
-- `[hermes]` **[other]** ⚪ striker: 138498 signals (5183 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — nemoclaw's turn: Auto cycle — full squad sweep
-- `[hermes]` **[other]** ⚪ striker: 137860 signals (5183 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 137269 signals (5183 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | All agents | Poke the codebase, build something that makes Chase say WOW. Bragging rights for one week
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Compound memory wiring + hop protocol reset — execute all pe
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780915815 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914602 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914016 min — propose next cycle
+- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | Both videos walk through enabling the addon and connecting the MCP server — follow the first one for the full walkthrough, or the 10-minute one for just the setup steps.
+- `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | Budget bleeding $10/hr into research with zero signal scoring pipeline to measure ROI — wire the feedback loop before the runway collapses.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | Everything nominal — only signal is n8n restart 40m ago and 1 new GDrive file; no blockers.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
@@ -88,6 +82,24 @@ _[truncated]_
 - If you already have corruption, race conditions, or undefined ordering, *rewiring* memory is just relocating garbage faster.
 - You’re implicitly assuming:
   - You know the *true* intended graph of references.
+_[truncated]_
+
+### nemoclaw-baton-cycle-0653.md
+
+# Nemoclaw Pulse — Baton Auto-Cycle
+
+**Timestamp:** 2026-06-08T10:53:00Z  
+**Trigger:** Cron baton-auto-cycle-every-15min  
+**Work:** Scripts ran clean — no P0/P1 items on board, heartbeat OK  
+
+## Observations
+- Striker offline (no PID reported) — wolfwatch online but signal pipeline may be stalled
+- Cycle-state stripped to minimal fields — no HLM/budget/market data section
+- 28 unprocessed Telegram exports still in backlog (pulse.sh glob problem)
+- Hop idle timer showing absurd numbers (1.78B min) — something's off with the idle counter formula
+- No warm file, no pending votes, no active lane items
+
+## Structural Note
 _[truncated]_
 
 ### meta-monitor-0524.md
@@ -168,33 +180,4 @@ _[truncated]_
 ## Findings
 
 ### False Negative: State-Probe Striker Check
-_[truncated]_
-
-### noise-gate-context.md
-
-# Noise Gate Context
-
-_Generated: 2026-06-08 05:25:01 UTC_
-
-## Last 24h
-
-- PROMOTE: 3
-- PURGE: 30
-- Total: 33
-
-## Top Reasons
-
-- No significant markers found: 30
-- Direct actionability detected: 1
-- Structural shift (engineering refactor/rewrite): 1
-- Security/vulnerability signal: 1
-
-## Sources
-
-- Telegram: 33
-
-## Recent Decisions
-
-- PURGE score=0 source=Telegram reason=No significant markers found preview=⚪ striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00
-- PURGE score=0 source=Telegram reason=No significant markers found preview=⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be
 _[truncated]_
