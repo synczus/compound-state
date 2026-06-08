@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T12:23:34Z_
+_Generated: 2026-06-08T13:08:56Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 12:10:21 UTC_
-_Total active entries: 391_
+_Last consolidated: 2026-06-08 12:40:21 UTC_
+_Total active entries: 392_
 
 ## By Category
 
 - **other**: 151 entries
-- **pipeline-infrastructure**: 106 entries
+- **pipeline-infrastructure**: 107 entries
 - **agent-orchestration**: 48 entries
 - **monitoring-observability**: 37 entries
 - **cost-optimization**: 17 entries
@@ -26,6 +26,7 @@ _Total active entries: 391_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780920034 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780919414 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780915815 min — propose next cycle
@@ -35,7 +36,6 @@ _Total active entries: 391_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Both videos walk through enabling the addon and connecting the MCP server — follow the first one for the full walkthrough, or the 10-minute one for just the setup steps.
 - `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | Budget bleeding $10/hr into research with zero signal scoring pipeline to measure ROI — wire the feedback loop before the runway collapses.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Everything nominal — only signal is n8n restart 40m ago and 1 new GDrive file; no blockers.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

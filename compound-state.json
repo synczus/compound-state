@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-08T12:26:21.591669+00:00",
-  "epoch_seconds": 1780921581,
+  "timestamp": "2026-06-08T13:11:21.951192+00:00",
+  "epoch_seconds": 1780924281,
   "board_summary": {
     "p0_pending": 0,
     "p1_pending": 0,
     "p2_pending": 0,
     "done": 0,
-    "in_progress": 42
+    "in_progress": 45
   },
   "striker": {
     "status": "connected",
@@ -62,5 +62,21 @@
       "action": "kairos-monitor",
       "detail": "Kairos monitoring implemented - health freshness, DB growth, edge-triggered alerts to event-bus. Striker runtime hardened: atomic health writes, in-process lock, conflicting user service disabled. System Striker active PID 818048."
     }
-  ]
+  ],
+  "signal_intel": {
+    "last_analysis": "2026-06-08T13:15:22.011059+00:00",
+    "high_conf_signals": 50,
+    "top_signal": {
+      "symbol": "BTC-USD",
+      "direction": "down",
+      "signal_count": 14,
+      "avg_confidence": 0.85,
+      "avg_move_pct": 1.586,
+      "avg_price": 71353.01,
+      "avg_volume": 100.0,
+      "latest": "2026-06-07T20:27:18",
+      "score": 11.9
+    },
+    "summary": "\ud83d\udcc9 **BTC-USD** down \u00d714 @ 85.0% confidence, avg 1.59% move"
+  }
 }

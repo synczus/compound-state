@@ -4267,3 +4267,117 @@ Details:
 2026/06/08 08:29:01 INFO  : venv/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/REQUESTED: Copied (new)
 2026/06/08 08:29:01 INFO  : venv/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/RECORD: Copied (new)
 2026/06/08 08:29:01 INFO  : venv/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/WHEEL: Copied (new)
+2026/06/08 08:31:54 INFO  : venv/lib/python3.12/site-packages/yaml/composer.py: Copied (new)
+2026/06/08 08:31:55 INFO  : venv/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/top_level.txt: Copied (new)
+2026/06/08 08:31:55 INFO  : venv/lib/python3.12/site-packages/yaml/__init__.py: Copied (new)
+2026/06/08 08:31:57 INFO  : venv/lib/python3.12/site-packages/yaml/_yaml.cpython-312-x86_64-linux-gnu.so: Copied (new)
+2026/06/08 08:31:58 INFO  : venv/lib/python3.12/site-packages/yaml/constructor.py: Copied (new)
+2026/06/08 08:31:59 INFO  : venv/lib/python3.12/site-packages/yaml/dumper.py: Copied (new)
+2026/06/08 08:31:59 INFO  : venv/lib/python3.12/site-packages/yaml/cyaml.py: Copied (new)
+2026/06/08 08:32:01 INFO  : venv/lib/python3.12/site-packages/yaml/emitter.py: Copied (new)
+2026/06/08 08:32:01 INFO  : venv/lib/python3.12/site-packages/yaml/events.py: Copied (new)
+2026/06/08 08:32:01 INFO  : venv/lib/python3.12/site-packages/yaml/error.py: Copied (new)
+2026/06/08 08:32:01 INFO  : venv/lib/python3.12/site-packages/yaml/loader.py: Copied (new)
+2026/06/08 08:32:03 INFO  : venv/lib/python3.12/site-packages/yaml/representer.py: Copied (new)
+2026/06/08 08:32:03 INFO  : venv/lib/python3.12/site-packages/yaml/parser.py: Copied (new)
+2026/06/08 08:32:03 INFO  : venv/lib/python3.12/site-packages/yaml/reader.py: Copied (new)
+2026/06/08 08:32:18 ERROR : venv/lib/python3.12/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info: error reading destination directory: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/08 08:32:58 INFO  : venv/lib/python3.12/site-packages/yaml/scanner.py: Copied (new)
+2026/06/08 08:32:58 INFO  : venv/lib/python3.12/site-packages/yaml/resolver.py: Copied (new)
+2026/06/08 08:32:59 INFO  : venv/lib/python3.12/site-packages/yaml/nodes.py: Copied (new)
+2026/06/08 08:33:00 INFO  : venv/lib/python3.12/site-packages/yaml/serializer.py: Copied (new)
+2026/06/08 08:33:03 INFO  : venv/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/licenses/LICENSE: Copied (new)
+2026/06/08 08:33:05 INFO  : venv/lib/python3.12/site-packages/yaml/tokens.py: Copied (new)
+2026/06/08 08:34:36 ERROR : Google drive root 'backup/kestrel': not deleting files as there were IO errors
+2026/06/08 08:34:36 ERROR : Google drive root 'backup/kestrel': not deleting directories as there were IO errors
+2026/06/08 08:34:36 ERROR : Attempt 3/3 failed with 12 errors and: march failed with 2 error(s): first error: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/08 08:34:36 INFO  : 
+Transferred:   	  171.224 MiB / 171.224 MiB, 100%, 16.786 KiB/s, ETA 0s
+Errors:                12 (retrying may help)
+Checks:              7730 / 7730, 100%
+Transferred:         4160 / 4160, 100%
+Elapsed time:   2h34m35.2s
+
+2026/06/08 08:34:36 Failed to sync with 12 errors: last error was: march failed with 2 error(s): first error: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+[20260608-123941] Backup complete

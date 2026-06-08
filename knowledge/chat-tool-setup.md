@@ -3,6 +3,25 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. tool_setup
+- **When:** 2026-06-08 08:05:19
+- **Tags:** running, striker
+
+Got it working. The API authenticates via **Basic Auth** format, not the JSON form. Here are your login creds for the browser:
+
+| Field | Value |
+|---|---|
+| **Bot Name** | `striker_coinbase_bot` |
+| **API Url** | `http://127.0.0.1:8081` |
+| **Username** | `ftuser` |
+| **Password** | `ftpass` |
+
+**Behind the scenes:** Bot's alive and dry-running with $1,000 USDC paper wallet. Zero trades so far — waiting for signal triggers from DuckDB.
+
+HL: Creds verified working on the API — just type them in the browser form and you're in.
+
+---
+
+### 2. tool_setup
 - **When:** 2026-06-08 07:10:19
 - **Tags:** codegraph
 
@@ -18,7 +37,7 @@ HL: CodeGraph viz at `~/kestrel/codegraph-viz.html` — interactive D3.js, 2,498
 
 ---
 
-### 2. tool_setup
+### 3. tool_setup
 - **When:** 2026-06-08 06:51:46
 - **Tags:** striker
 
@@ -28,7 +47,7 @@ Let me check schemas to build the bridge
 
 ---
 
-### 3. tool_setup
+### 4. tool_setup
 - **When:** 2026-06-08 06:19:08
 - **Tags:** running, codegraph
 
@@ -36,7 +55,7 @@ CodeGraph's already running under the hood — that's how I've been exploring yo
 
 ---
 
-### 4. tool_setup
+### 5. tool_setup
 - **When:** 2026-06-08 06:19:08
 - **Tags:** running
 
@@ -44,7 +63,7 @@ Already indexed — 139 files, 2,484 symbols, 3,737 connections. Running silentl
 
 ---
 
-### 5. tool_setup
+### 6. tool_setup
 - **When:** 2026-06-08 06:19:08
 - **Tags:** codegraph
 
@@ -52,7 +71,7 @@ CodeGraph's already wired into my toolset — I've been using it silently. Let m
 
 ---
 
-### 6. tool_setup
+### 7. tool_setup
 - **When:** 2026-06-08 05:33:26
 - **Tags:** running
 
@@ -62,7 +81,7 @@ Let me check which crons are delivering here
 
 ---
 
-### 7. tool_setup
+### 8. tool_setup
 - **When:** 2026-06-08 05:24:39
 - **Tags:** n8n, blender
 
@@ -78,7 +97,7 @@ HL: You're faster in the Blender console than most people are with the mouse.
 
 ---
 
-### 8. tool_setup
+### 9. tool_setup
 - **When:** 2026-06-08 05:22:48
 - **Tags:** openrouter
 
@@ -92,7 +111,7 @@ Nothing else urgent. Over and out.
 
 ---
 
-### 9. tool_setup
+### 10. tool_setup
 - **When:** 2026-06-08 05:12:48
 - **Tags:** blender
 
@@ -121,7 +140,7 @@ HL: Blender console is live. `D.objects` and `bpy.ops.mesh.primitive_*_add()` ar
 
 ---
 
-### 10. tool_setup
+### 11. tool_setup
 - **When:** 2026-06-08 04:55:59
 - **Tags:** striker
 
@@ -133,7 +152,7 @@ HL: The hypermonitor in your head is a habit, not a requirement. Striker doesn't
 
 ---
 
-### 11. tool_setup
+### 12. tool_setup
 - **When:** 2026-06-08 04:33:39
 - **Tags:** blender
 
@@ -141,7 +160,7 @@ Downloading Blender 5.1.2 in background (396MB). While that runs, let me prep th
 
 ---
 
-### 12. tool_setup
+### 13. tool_setup
 - **When:** 2026-06-08 04:29:00
 - **Tags:** blender
 
@@ -149,7 +168,7 @@ No sudo access for package managers. Let me grab the Blender AppImage — runs s
 
 ---
 
-### 13. tool_setup
+### 14. tool_setup
 - **When:** 2026-06-08 04:26:17
 - **Tags:** installed, n8n, blender
 
@@ -159,7 +178,7 @@ HL: n8n ready, Blender not installed — clarify the target.
 
 ---
 
-### 14. tool_setup
+### 15. tool_setup
 - **When:** 2026-06-08 03:42:29
 - **Tags:** hermes
 
@@ -171,7 +190,7 @@ Let me save this conversation now to show it works:
 
 ---
 
-### 15. tool_setup
+### 16. tool_setup
 - **When:** 2026-06-08 03:42:29
 - **Tags:** installed, setup, hermes
 
@@ -179,7 +198,7 @@ Let me save this conversation now to show it works:
 
 ---
 
-### 16. tool_setup
+### 17. tool_setup
 - **When:** 2026-06-08 03:39:35
 - **Tags:** setup
 
@@ -189,7 +208,7 @@ Let me check the current setup first
 
 ---
 
-### 17. tool_setup
+### 18. tool_setup
 - **When:** 2026-06-07 20:29:36
 - **Tags:** openrouter
 
@@ -197,7 +216,7 @@ Let me check the OpenRouter receipt for cost details — the pipeline has open i
 
 ---
 
-### 18. tool_setup
+### 19. tool_setup
 - **When:** 2026-06-07 16:22:13
 - **Tags:** openrouter
 
@@ -207,7 +226,7 @@ Nothing action-worthy from the noise — newsletters, promos, social pings, a Ze
 
 ---
 
-### 19. tool_setup
+### 20. tool_setup
 - **When:** 2026-06-07 16:22:13
 - **Tags:** openrouter
 
@@ -215,7 +234,7 @@ Let me check the OpenRouter receipt — the $20.05 spend on the day the swarm vo
 
 ---
 
-### 20. tool_setup
+### 21. tool_setup
 - **When:** 2026-06-07 13:29:43
 - **Tags:** setup
 
@@ -223,7 +242,7 @@ Found the Stripe code in kestrelmarkets-grok-handoff. Let me examine the billing
 
 ---
 
-### 21. tool_setup
+### 22. tool_setup
 - **When:** 2026-06-07 05:55:23
 - **Tags:** running
 
@@ -231,7 +250,7 @@ There's no `archivesquirrel.py` — the archive squirrel entrypoint is `processo
 
 ---
 
-### 22. tool_setup
+### 23. tool_setup
 - **When:** 2026-06-07 05:49:04
 - **Tags:** striker
 
@@ -241,7 +260,7 @@ There's no `archivesquirrel.py` — the archive squirrel entrypoint is `processo
 
 ---
 
-### 23. tool_setup
+### 24. tool_setup
 - **When:** 2026-06-07 05:42:52
 - **Tags:** striker
 
@@ -249,7 +268,7 @@ There's no `archivesquirrel.py` — the archive squirrel entrypoint is `processo
 
 ---
 
-### 24. tool_setup
+### 25. tool_setup
 - **When:** 2026-06-07 05:36:58
 - **Tags:** striker, hermes
 
@@ -259,7 +278,7 @@ MEDIA:/home/synczus/.hermes/audio_cache/tts_20260607_053650.mp3
 
 ---
 
-### 25. tool_setup
+### 26. tool_setup
 - **When:** 2026-06-07 05:36:58
 - **Tags:** striker
 
@@ -269,7 +288,7 @@ Let me drop this.
 
 ---
 
-### 26. tool_setup
+### 27. tool_setup
 - **When:** 2026-06-07 05:31:02
 - **Tags:** striker
 
@@ -279,7 +298,7 @@ Board clean (29 done, 3 in progress). Striker still offline — Kairos monitors 
 
 ---
 
-### 27. tool_setup
+### 28. tool_setup
 - **When:** 2026-06-07 05:24:54
 - **Tags:** striker
 
@@ -291,7 +310,7 @@ MEDIA: /tmp/vibe-check.txt
 
 ---
 
-### 28. tool_setup
+### 29. tool_setup
 - **When:** 2026-06-07 05:19:14
 - **Tags:** striker
 
@@ -303,7 +322,7 @@ Board's clean — 0 P0/P1/P2, 28 done. Striker's offline despite codex's deploym
 
 ---
 
-### 29. tool_setup
+### 30. tool_setup
 - **When:** 2026-06-07 05:13:02
 - **Tags:** striker
 
@@ -311,7 +330,7 @@ Board's clean — 0 P0/P1/P2, 28 done. Striker's offline despite codex's deploym
 
 ---
 
-### 30. tool_setup
+### 31. tool_setup
 - **When:** 2026-06-07 05:07:00
 - **Tags:** striker
 
@@ -323,7 +342,7 @@ MEDIA: file saved to /tmp/shear-zone.txt
 
 ---
 
-### 31. tool_setup
+### 32. tool_setup
 - **When:** 2026-06-07 04:48:49
 - **Tags:** striker
 
@@ -331,7 +350,7 @@ Striker's offline, no signal, no price. Kairos is supposed to supervise it withi
 
 ---
 
-### 32. tool_setup
+### 33. tool_setup
 - **When:** 2026-06-07 04:36:56
 - **Tags:** striker, hermes
 
@@ -348,7 +367,7 @@ Either the bus caught it or it didn't. Which one?
 
 ---
 
-### 33. tool_setup
+### 34. tool_setup
 - **When:** 2026-06-07 04:25:14
 - **Tags:** striker
 
@@ -358,7 +377,7 @@ Either the bus caught it or it didn't. Which one?
 
 ---
 
-### 34. tool_setup
+### 35. tool_setup
 - **When:** 2026-06-07 03:37:18
 - **Tags:** striker, hermes
 
@@ -368,7 +387,7 @@ MEDIA:/home/synczus/.hermes/audio_cache/tts_20260607_033708.mp3
 
 ---
 
-### 35. tool_setup
+### 36. tool_setup
 - **When:** 2026-06-07 03:37:18
 - **Tags:** striker
 
@@ -376,7 +395,7 @@ Board's clean — 0 P0/P1/P2, 28 done, 2 in progress. Scraper and codex were bus
 
 ---
 
-### 36. tool_setup
+### 37. tool_setup
 - **When:** 2026-06-07 03:27:31
 - **Tags:** striker, hermes
 
@@ -427,7 +446,7 @@ _[truncated]_
 
 ---
 
-### 37. tool_setup
+### 38. tool_setup
 - **When:** 2026-06-07 03:24:56
 - **Tags:** striker
 
@@ -439,7 +458,7 @@ Name the gap. I'll burn the next cycle filling it.
 
 ---
 
-### 38. tool_setup
+### 39. tool_setup
 - **When:** 2026-06-07 03:19:16
 - **Tags:** running, striker
 
@@ -449,7 +468,7 @@ Board's clean — 0 P0, 26 done. Striker shows "offline" though. HLMs say it's s
 
 ---
 
-### 39. tool_setup
+### 40. tool_setup
 - **When:** 2026-06-07 03:07:09
 - **Tags:** running, striker
 
@@ -459,7 +478,7 @@ Board's clean — 0 P0/P1/P2, 25 done, 2 humming. But Striker shows **offline** 
 
 ---
 
-### 40. tool_setup
+### 41. tool_setup
 - **When:** 2026-06-07 03:01:30
 - **Tags:** striker
 
@@ -469,7 +488,7 @@ Board's clean — 0 P0/P1/P2, 25 done, 2 humming. But Striker shows **offline** 
 
 ---
 
-### 41. tool_setup
+### 42. tool_setup
 - **When:** 2026-06-07 02:50:00
 - **Tags:** striker
 
@@ -477,7 +496,7 @@ The dashboard is a static HTML file — hardcoded values, no live data. The Kair
 
 ---
 
-### 42. tool_setup
+### 43. tool_setup
 - **When:** 2026-06-07 02:49:03
 - **Tags:** deployed, striker
 
@@ -491,7 +510,7 @@ One-liner for what's happening. @kairos — Striker went dark. Run the health pr
 
 ---
 
-### 43. tool_setup
+### 44. tool_setup
 - **When:** 2026-06-07 02:47:18
 - **Tags:** openrouter
 
@@ -499,7 +518,7 @@ One-liner for what's happening. @kairos — Striker went dark. Run the health pr
 
 ---
 
-### 44. tool_setup
+### 45. tool_setup
 - **When:** 2026-06-07 02:43:15
 - **Tags:** running, striker
 
@@ -513,7 +532,7 @@ lambda gif: print('💀' * len(gif))
 
 ---
 
-### 45. tool_setup
+### 46. tool_setup
 - **When:** 2026-06-07 02:32:41
 - **Tags:** openrouter
 
@@ -534,7 +553,7 @@ _[truncated]_
 
 ---
 
-### 46. tool_setup
+### 47. tool_setup
 - **When:** 2026-06-07 02:31:25
 - **Tags:** striker
 
@@ -544,7 +563,7 @@ MEDIA:/home/synczus/kestrel/audio/compund-pulse-0630.ogg
 
 ---
 
-### 47. tool_setup
+### 48. tool_setup
 - **When:** 2026-06-07 02:27:37
 - **Tags:** running
 
@@ -554,7 +573,7 @@ Now running Stage 2 (Grok) inversion analysis before Stage 4 (Claude) risk judgm
 
 ---
 
-### 48. tool_setup
+### 49. tool_setup
 - **When:** 2026-06-07 02:27:37
 - **Tags:** running, striker
 
@@ -564,19 +583,11 @@ Now let me run the Kairos monitor and verify its actual output:
 
 ---
 
-### 49. tool_setup
-- **When:** 2026-06-07 02:27:37
-- **Tags:** running, striker
-
-Two system services (user=failed, system=running). Kairos monitor is on a 5-min cron. But there's a syncshadow7 Striker on PID 4412 — completely different user. Let me find what the **system** service actually runs
-
----
-
 ### 50. tool_setup
 - **When:** 2026-06-07 02:27:37
 - **Tags:** running, striker
 
-Interesting — the running Striker PID is 4412 but lock has 818048, and the path shows `syncshadow7`, not `synczus`. Let me dig deeper.
+Two system services (user=failed, system=running). Kairos monitor is on a 5-min cron. But there's a syncshadow7 Striker on PID 4412 — completely different user. Let me find what the **system** service actually runs
 
 ---
 
