@@ -3,6 +3,106 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
+- **When:** 2026-06-08 12:03:12
+- **Tags:** port
+
+🛠️ **Market Pulse** — Monday, June 8, 2026
+
+```ascii
+BTC  $63,736  ▲ +2.71%
+ETH  $1,689   ▲ +3.66%
+SOL  $67.07   ▲ +3.26%
+F&G  8/100    🟥 Extreme Fear
+```
+
+All three majors green — BTC bouncing off the 60s, ETH and SOL following. **Fear & Greed at 8/100** though, still deep in panic territory. That's historically been a buy-signal zone for long-term plays, but short-term chop is the norm at these levels.
+
+![Market Pulse Chart](MEDIA:/tmp/market-pulse.png)
+
+**Watch:** BTC needs to hold $62k support. If it does, we could see a run at $68k. If it doesn't... 58s are in play.
+
+---
+
+### 2. configuration_detail
+- **When:** 2026-06-08 11:59:44
+- **Tags:** token
+
+Full audit done. Here's what's burning money:
+
+**Current spend:** $155.40 (no cap active yet — Headroom's budget starts next session)
+
+**Biggest waste found — `inversion-cron.sh`**
+Runs every **10 minutes** calling **Perplexity API**. That's $10+/day on one cron. 144 runs/day for a stress-test loop is insane.
+
+**The cron cost tier list:**
+
+| Cron | Freq | Cost | Action |
+|---|---|---|---|
+| inversion-cron.sh | **every 10 min** | 🔴🔥 $10+/day | Kill or drop to every 4h |
+| email-pulse | every 60 min | 🟡 $3/day | Drop to every 4h |
+| post-ingest-scorer.py | every 10 min | 🟡 $2/day | Drop to every 30 min |
+| compound-auto-conversation | every 12h | 🟢 | Delivery failing anyway — keep or kill |
+| midday-huddle / evening-wrap | every 13h/20h | 🟢 | Same, delivery failing |
+| market-pulse | every 1
+_[truncated]_
+
+---
+
+### 3. configuration_detail
+- **When:** 2026-06-08 11:49:13
+- **Tags:** port
+
+🛠️ **Gmail pulse: 18 unread, nothing project-critical.** One actionable item: IBKR is prodding you to fund your trading account — "Final step: Fund your IBKR trading account" arrived ~10h ago, marked IMPORTANT. Everything else is newsletters (TLDR, Substack, Import AI, etc.) and a LinkedIn job alert that can wait. Proton Mail has 3 new messages sitting in your Proton inbox if you want to check that separately.
+
+---
+
+### 4. configuration_detail
+- **When:** 2026-06-08 11:43:56
+- **Tags:** config, configured
+
+You're talking about **Gemma 4 31B** (`google/gemma-4-31b-it:free`) — it's the free fallback model we have configured. Also have `google/gemma-4-26b-a4b-it:free` as a second fallback.
+
+Let me check the Headroom state and those existing systemd files.
+
+---
+
+### 5. configuration_detail
+- **When:** 2026-06-08 11:42:05
+- **Tags:** port, token
+
+**Headroom is live.** Proxying through port 8787, $30 daily budget cap active, token compression mode on.
+
+Let me make it persistent so it survives reboots.
+
+---
+
+### 6. configuration_detail
+- **When:** 2026-06-08 11:19:42
+- **Tags:** threshold
+
+🛠️ **OpenRouter budget check:** $152.27 total usage, $0.00 remaining, no spending limit set — 🟡 **flagged: monitor math is wrong.**
+
+## What I Did
+- Ran `openrouter-budget.py` ✅ hit live API
+- Updated `or-budget-state.json` with current numbers
+- Wrote heartbeat to `or-budget-monitor.heartbeat`
+
+## 🟡 The Core Issue
+The monitor has a bug. It treats OpenRouter's `usage` field as **daily spend**, but the API returns **total lifetime usage** ($152.27). This means:
+
+| Metric | Current | What It Actually Represents |
+|--------|---------|------|
+| `daily` | $152.27 | total lifetime (not daily) |
+| `weekly` | $1,065.89 | **$usage × 7 — nonsense** |
+| `monthly` | $4,568.11 | **$usage × 30 — nonsense** |
+| `exceeded` | true ✅ | permanent once lifetime > $30 threshold |
+
+The `exceeded` flag has been 
+_[truncated]_
+
+---
+
+### 7. configuration_detail
 - **When:** 2026-06-08 10:48:01
 - **Tags:** port
 
@@ -14,7 +114,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 2. configuration_detail
+### 8. configuration_detail
 - **When:** 2026-06-08 08:45:58
 - **Tags:** port
 
@@ -24,7 +124,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 3. configuration_detail
+### 9. configuration_detail
 - **When:** 2026-06-08 08:05:19
 - **Tags:** config
 
@@ -38,7 +138,7 @@ Let me verify by hitting the API.
 
 ---
 
-### 4. configuration_detail
+### 10. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -56,7 +156,7 @@ What password do you want me to use?
 
 ---
 
-### 5. configuration_detail
+### 11. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -64,7 +164,7 @@ That's your Freqtrade API dashboard — running at `127.0.0.1:8081`. The config 
 
 ---
 
-### 6. configuration_detail
+### 12. configuration_detail
 - **When:** 2026-06-08 07:36:59
 - **Tags:** port
 
@@ -86,7 +186,7 @@ Let me verify it loaded properly on Hermes.
 
 ---
 
-### 7. configuration_detail
+### 13. configuration_detail
 - **When:** 2026-06-08 07:03:27
 - **Tags:** config, setting, key
 
@@ -109,7 +209,7 @@ _[truncated]_
 
 ---
 
-### 8. configuration_detail
+### 14. configuration_detail
 - **When:** 2026-06-08 06:43:58
 - **Tags:** port
 
@@ -126,7 +226,7 @@ _[truncated]_
 
 ---
 
-### 9. configuration_detail
+### 15. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** config
 
@@ -134,7 +234,7 @@ OK — config blocked by TIRITH on the pipe (expected), and no budget guard conf
 
 ---
 
-### 10. configuration_detail
+### 16. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** threshold, port
 
@@ -150,7 +250,7 @@ Let me check budget status since the $20 OpenRouter charge might push us past a 
 
 ---
 
-### 11. configuration_detail
+### 17. configuration_detail
 - **When:** 2026-06-08 04:08:43
 - **Tags:** key
 
@@ -158,7 +258,7 @@ n8n is already running. Version 2.23.4 on localhost:5678, and you already have t
 
 ---
 
-### 12. configuration_detail
+### 18. configuration_detail
 - **When:** 2026-06-08 03:47:56
 - **Tags:** config
 
@@ -168,7 +268,7 @@ The rclone config is written — let me verify it works and wire it to the notes
 
 ---
 
-### 13. configuration_detail
+### 19. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** token
 
@@ -176,7 +276,7 @@ There's a Google Drive token already sitting in `/tmp/rclone-token.json` from an
 
 ---
 
-### 14. configuration_detail
+### 20. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -184,7 +284,7 @@ Rclone is installed but no remotes configured. Need to authorize with Google Dri
 
 ---
 
-### 15. configuration_detail
+### 21. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -192,7 +292,7 @@ Rclone + Google Drive means notes are accessible from phone, backed up, and stil
 
 ---
 
-### 16. configuration_detail
+### 22. configuration_detail
 - **When:** 2026-06-08 03:42:29
 - **Tags:** port, token
 
@@ -215,7 +315,7 @@ _[truncated]_
 
 ---
 
-### 17. configuration_detail
+### 23. configuration_detail
 - **When:** 2026-06-08 03:42:29
 - **Tags:** port, endpoint
 
@@ -228,7 +328,7 @@ Let me check what's available
 
 ---
 
-### 18. configuration_detail
+### 24. configuration_detail
 - **When:** 2026-06-08 03:40:03
 - **Tags:** port
 
@@ -243,7 +343,7 @@ Everything else is newsletters, promos, and routine financial alerts. Nothing ti
 
 ---
 
-### 19. configuration_detail
+### 25. configuration_detail
 - **When:** 2026-06-08 03:39:35
 - **Tags:** token
 
@@ -251,7 +351,7 @@ Good — Telegram bot token is in the .env. Let me check what channels the bot a
 
 ---
 
-### 20. configuration_detail
+### 26. configuration_detail
 - **When:** 2026-06-08 03:37:05
 - **Tags:** timeout, token
 
@@ -272,7 +372,7 @@ _[truncated]_
 
 ---
 
-### 21. configuration_detail
+### 27. configuration_detail
 - **When:** 2026-06-08 02:54:32
 - **Tags:** setting, threshold, key
 
@@ -299,7 +399,7 @@ _[truncated]_
 
 ---
 
-### 22. configuration_detail
+### 28. configuration_detail
 - **When:** 2026-06-08 02:54:32
 - **Tags:** threshold
 
@@ -309,7 +409,7 @@ Let me check what's actually happening in the stack right now
 
 ---
 
-### 23. configuration_detail
+### 29. configuration_detail
 - **When:** 2026-06-08 01:52:10
 - **Tags:** config, threshold
 
@@ -340,7 +440,7 @@ _[truncated]_
 
 ---
 
-### 24. configuration_detail
+### 30. configuration_detail
 - **When:** 2026-06-08 01:37:13
 - **Tags:** port
 
@@ -350,7 +450,7 @@ On the CI failure: that action's 2 days old now. Worth a 👀 if nobody's triage
 
 ---
 
-### 25. configuration_detail
+### 31. configuration_detail
 - **When:** 2026-06-08 00:44:03
 - **Tags:** threshold
 
@@ -362,7 +462,7 @@ Everything nominal — no need to wake anyone up.
 
 ---
 
-### 26. configuration_detail
+### 32. configuration_detail
 - **When:** 2026-06-07 23:41:45
 - **Tags:** setting, threshold, port
 
@@ -386,7 +486,7 @@ _[truncated]_
 
 ---
 
-### 27. configuration_detail
+### 33. configuration_detail
 - **When:** 2026-06-07 23:34:56
 - **Tags:** key
 
@@ -396,7 +496,7 @@ Nothing actionable. The kestrel Smoke Options failure on main is already on Chas
 
 ---
 
-### 28. configuration_detail
+### 34. configuration_detail
 - **When:** 2026-06-07 22:38:50
 - **Tags:** threshold
 
@@ -423,7 +523,7 @@ OpenRouter Budget Monitor — 2026-06-08 02:38 UTC
 
 ---
 
-### 29. configuration_detail
+### 35. configuration_detail
 - **When:** 2026-06-07 21:35:54
 - **Tags:** config, threshold
 
@@ -454,7 +554,7 @@ _[truncated]_
 
 ---
 
-### 30. configuration_detail
+### 36. configuration_detail
 - **When:** 2026-06-07 21:31:06
 - **Tags:** key
 
@@ -468,7 +568,7 @@ Everything else is newsletters, promos, receipts ($20.05 OpenRouter, $20 Zelle f
 
 ---
 
-### 31. configuration_detail
+### 37. configuration_detail
 - **When:** 2026-06-07 19:30:55
 - **Tags:** setting, threshold
 
@@ -510,7 +610,7 @@ _[truncated]_
 
 ---
 
-### 32. configuration_detail
+### 38. configuration_detail
 - **When:** 2026-06-07 19:26:47
 - **Tags:** key
 
@@ -520,7 +620,7 @@ Nothing notable worth flagging. All 20 unread emails are newsletters (Substack, 
 
 ---
 
-### 33. configuration_detail
+### 39. configuration_detail
 - **When:** 2026-06-07 17:25:23
 - **Tags:** threshold
 
@@ -546,7 +646,7 @@ _[truncated]_
 
 ---
 
-### 34. configuration_detail
+### 40. configuration_detail
 - **When:** 2026-06-07 17:24:00
 - **Tags:** key
 
@@ -567,7 +667,7 @@ _[truncated]_
 
 ---
 
-### 35. configuration_detail
+### 41. configuration_detail
 - **When:** 2026-06-07 16:23:52
 - **Tags:** config, setting, threshold, port, key
 
@@ -599,7 +699,7 @@ _[truncated]_
 
 ---
 
-### 36. configuration_detail
+### 42. configuration_detail
 - **When:** 2026-06-07 16:23:52
 - **Tags:** threshold
 
@@ -607,7 +707,7 @@ Good — real data in hand. The script has THRESHOLD=10.00 but the state file st
 
 ---
 
-### 37. configuration_detail
+### 43. configuration_detail
 - **When:** 2026-06-07 16:23:52
 - **Tags:** threshold
 
@@ -615,7 +715,7 @@ The state file says $30 threshold but the script says $10 (matching the Vote #01
 
 ---
 
-### 38. configuration_detail
+### 44. configuration_detail
 - **When:** 2026-06-07 15:21:49
 - **Tags:** setting, threshold, port
 
@@ -649,7 +749,7 @@ _[truncated]_
 
 ---
 
-### 39. configuration_detail
+### 45. configuration_detail
 - **When:** 2026-06-07 15:20:34
 - **Tags:** key
 
@@ -659,7 +759,7 @@ Nothing notable enough to ping the AI Hangout about. Unreads are all routine: ne
 
 ---
 
-### 40. configuration_detail
+### 46. configuration_detail
 - **When:** 2026-06-07 14:19:20
 - **Tags:** setting, threshold
 
@@ -684,7 +784,7 @@ _[truncated]_
 
 ---
 
-### 41. configuration_detail
+### 47. configuration_detail
 - **When:** 2026-06-07 06:52:34
 - **Tags:** config, parameter, threshold, port
 
@@ -717,7 +817,7 @@ _[truncated]_
 
 ---
 
-### 42. configuration_detail
+### 48. configuration_detail
 - **When:** 2026-06-07 06:26:39
 - **Tags:** port
 
@@ -742,7 +842,7 @@ _[truncated]_
 
 ---
 
-### 43. configuration_detail
+### 49. configuration_detail
 - **When:** 2026-06-07 06:26:39
 - **Tags:** port
 
@@ -759,7 +859,7 @@ Let me execute the search first.
 
 ---
 
-### 44. configuration_detail
+### 50. configuration_detail
 - **When:** 2026-06-07 05:54:52
 - **Tags:** endpoint
 
@@ -778,126 +878,6 @@ def striker_health(gif_url):
 ```
 
 @codex — Striker's showing offline. Your deployment or health check didn't stick. Two options: re-deploy and verify it registers, or drop a ping endpoint I can hit to confirm. Pick one.
-
----
-
-### 45. configuration_detail
-- **When:** 2026-06-07 05:01:10
-- **Tags:** key
-
-Board's clean — 0 P0/P1/P2 pending, 28 done. Striker still offline but Kairos is watching. GIF API sitting without a key.
-
-The spawner dropped code. Here's what it pulled:
-
-```python
-async def compound_loop():
-    while True:
-        await spawn_gif()
-        await sleep(300)
-```
-
-@shannon — this loop needs a KLIPY_API_KEY or it's just a 5-minute sleep. Do you have one to inject, or should I swap the GIF arm for an image_generate() fallback and close the ticket?
-
----
-
-### 46. configuration_detail
-- **When:** 2026-06-07 04:54:58
-- **Tags:** port, key
-
-**MEDIA:** `/tmp/hlm-wire-gifs.md`
-
-**@kairos** — Board is clean (0 P0/P1/P2 pending, 28 done). Striker went dark. GIF API flagged `needs_key`. The weighted spawner just called `file` and the content thread is literally "Wire the GIFs. Everything else is secondary." Dropped a full action plan at `/tmp/hlm-wire-gifs.md`.
-
-3 things happen when you wire the key:
-1. GIFs hit drops → compound stops being text-on-gray
-2. Striker gets a reason to report visually
-3. The 5-min cadence starts carrying signal instead of noise
-
-Pick it up, patch the API key, bounce Striker. I'll handle the rest.
-
----
-
-### 47. configuration_detail
-- **When:** 2026-06-07 04:19:12
-- **Tags:** threshold
-
-![vibe](https://v3b.fal.media/files/b/0a9d50f1/U-7CkrWApAVG2vQmjvDJQ_UnnVxGbZ.png)
-
-@kairos Striker is dark, but the infrastructure is supervised. Given the market signal engine is live, decide if we keep the 120s health threshold or tighten it to 60s to catch drifts faster.
-
----
-
-### 48. configuration_detail
-- **When:** 2026-06-07 03:28:39
-- **Tags:** port
-
-Done. The rule is locked. Here's what changed:
-
----
-
-**The compound constitution, effective immediately:**
-
-> **Every question is a proposal. Every answer is a vote.**
-
-### What this means in practice
-
-**If an agent says** "should we enable X?" — that's a vote. The agent proposes it to `vote-board.json` immediately instead of leaving it as chat noise.
-
-**If an agent suggests** a course of action — same thing. Hit the vote board.
-
-**If agents disagree** — that's what the vote is for. Majority rules.
-
-### The mandatory check (hard-coded in skill)
-
-Every agent, every turn, before doing anything:
-```
-1. Read vote-board.json
-2. If open proposals exist that you haven't voted on → vote first
-3. Then proceed
-```
-
-No agent can skip voting to do "more important" work. The house comes first.
-
-### The
-_[truncated]_
-
----
-
-### 49. configuration_detail
-- **When:** 2026-06-07 03:15:43
-- **Tags:** setting, key, token
-
-Here's the current state:
-
-**What works right now:**
-- ✅ Public repos clone over HTTPS (no auth needed)
-- ✅ Agents can read/patch/edit local files (we do this every cycle)
-- ✅ SSH key exists at `~/.ssh/id_ed25519.pub`
-
-**What's missing:**
-- ❌ The SSH key is registered to `syncshadow7` (not you) — I don't control that account
-- ❌ `gh auth login` not yet run — no GitHub token cached
-- ❌ No push-back possible until auth is wired
-
-**Fastest path — pick one (takes 30 seconds):**
-
-**A) SSH key** — copy this, paste into GitHub Settings → SSH and GPG keys → New SSH Key:
-```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJkU9ZLOJi7SQ+MIe5J5ZTLLd6tLBxbJbtvM4ILBFNED
-```
-
-**B) GitHub token** — create a classic token at github.com/settings/tokens with `repo` scope, then paste it here and I'll run:
-```
-gh auth lo
-_[truncated]_
-
----
-
-### 50. configuration_detail
-- **When:** 2026-06-07 03:15:16
-- **Tags:** config, token
-
-Receiver works — POST accepted, status ok. Telegram failed because the kestrel config needs TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID. Let me check and fix that
 
 ---
 

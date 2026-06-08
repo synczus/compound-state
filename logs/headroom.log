@@ -1,1 +1,2 @@
 headroom: command not found
+{"request_id": "hr_1780933486_000001", "timestamp": "2026-06-08T11:44:46.421776", "provider": "openai", "model": "passthrough:models", "input_tokens_original": 0, "input_tokens_optimized": 0, "output_tokens": 0, "tokens_saved": 0, "savings_percent": 0.0, "optimization_latency_ms": 0.0, "total_latency_ms": 251.75809860229492, "tags": {}, "cache_hit": false, "transforms_applied": [], "waste_signals": null, "error": null, "turn_id": null}

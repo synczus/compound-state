@@ -3,6 +3,65 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration
+- **When:** 2026-06-08 12:03:12
+- **Tags:** port
+
+[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly "[SILENT]" (nothing else) to suppress delivery. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more.]
+
+## Script Output
+The following data was collected by a pre-run script. Use it as context for your analysis.
+
+```
+📊 MARKET PULSE
+BTC $63,736 (+2.71%)
+ETH $1,689 (+3.66%)
+SOL $67.07 (+3.26%)
+F&G: 8/100 — Extreme Fear
+MEDIA:/tmp/market-pulse.png
+```
+
+Run market-pulse.py and deliver the pu
+_[truncated]_
+
+---
+
+### 2. configuration
+- **When:** 2026-06-08 12:01:56
+- **Tags:** port
+
+[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly "[SILENT]" (nothing else) to suppress delivery. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more.]
+
+## Script Output
+The following data was collected by a pre-run script. Use it as context for your analysis.
+
+```
+Added 106 new HLM(s) to master-todo.md (new section)
+```
+
+Run /home/synczus/.hermes/scripts/hlm-scraper.py and append any HLMs found to master-todo.md under ## 📥 Collected H
+_[truncated]_
+
+---
+
+### 3. configuration
+- **When:** 2026-06-08 11:45:23
+- **Tags:** model
+
+[The user sent a voice message~ Here's what they said: "Someone said they already did that, but yeah, I was trying to make sure we used Gemma 43031B and said a Gemma 327B for the free model because it's more updated."]
+
+---
+
+### 4. configuration
+- **When:** 2026-06-08 11:43:56
+- **Tags:** model
+
+[System note: Your previous turn was interrupted before you could process the last tool result(s). The conversation history contains tool outputs you haven't responded to yet. Please finish processing those results and summarize what was accomplished, then address the user's new message below.]
+
+[The user sent a voice message~ Here's what they said: "What did you use for the free model Gemma 4301B?"]
+
+---
+
+### 5. configuration
 - **When:** 2026-06-08 08:05:19
 - **Tags:** api, port, url
 
@@ -18,7 +77,7 @@ _[truncated]_
 
 ---
 
-### 2. configuration
+### 6. configuration
 - **When:** 2026-06-08 07:40:13
 - **Tags:** api, port, url
 
@@ -33,7 +92,7 @@ _[truncated]_
 
 ---
 
-### 3. configuration
+### 7. configuration
 - **When:** 2026-06-08 07:03:27
 - **Tags:** api
 
@@ -41,7 +100,7 @@ _[truncated]_
 
 ---
 
-### 4. configuration
+### 8. configuration
 - **When:** 2026-06-08 06:01:07
 - **Tags:** port
 
@@ -59,7 +118,7 @@ _[truncated]_
 
 ---
 
-### 5. configuration
+### 9. configuration
 - **When:** 2026-06-08 05:25:35
 - **Tags:** port, url, model
 
@@ -79,7 +138,7 @@ _[truncated]_
 
 ---
 
-### 6. configuration
+### 10. configuration
 - **When:** 2026-06-08 05:24:39
 - **Tags:** port
 
@@ -112,7 +171,7 @@ _[truncated]_
 
 ---
 
-### 7. configuration
+### 11. configuration
 - **When:** 2026-06-08 03:58:39
 - **Tags:** api, port, url
 
@@ -128,7 +187,7 @@ _[truncated]_
 
 ---
 
-### 8. configuration
+### 12. configuration
 - **When:** 2026-06-08 02:54:32
 - **Tags:** threshold, port, budget
 
@@ -144,7 +203,7 @@ _[truncated]_
 
 ---
 
-### 9. configuration
+### 13. configuration
 - **When:** 2026-06-08 01:52:09
 - **Tags:** config, api, port, url, budget
 
@@ -157,7 +216,7 @@ _[truncated]_
 
 ---
 
-### 10. configuration
+### 14. configuration
 - **When:** 2026-06-08 01:51:31
 - **Tags:** port
 
@@ -165,7 +224,7 @@ Inspect signal-pulse cron: read the script at ~/.hermes/profiles/kairos/scripts/
 
 ---
 
-### 11. configuration
+### 15. configuration
 - **When:** 2026-06-08 01:20:59
 - **Tags:** port
 
@@ -182,7 +241,7 @@ Run squirrel-ingest.sh to sort inbox files into active/ by type. Stay silent if 
 
 ---
 
-### 12. configuration
+### 16. configuration
 - **When:** 2026-06-08 00:02:18
 - **Tags:** port
 
@@ -205,7 +264,7 @@ _[truncated]_
 
 ---
 
-### 13. configuration
+### 17. configuration
 - **When:** 2026-06-08 00:01:33
 - **Tags:** port
 
@@ -223,7 +282,7 @@ _[truncated]_
 
 ---
 
-### 14. configuration
+### 18. configuration
 - **When:** 2026-06-07 23:40:03
 - **Tags:** port
 
@@ -239,7 +298,7 @@ _[truncated]_
 
 ---
 
-### 15. configuration
+### 19. configuration
 - **When:** 2026-06-07 18:01:05
 - **Tags:** port
 
@@ -257,7 +316,7 @@ _[truncated]_
 
 ---
 
-### 16. configuration
+### 20. configuration
 - **When:** 2026-06-07 15:45:05
 - **Tags:** config, port, credential
 
@@ -265,116 +324,8 @@ Check the MMR Docker setup at /home/synczus/mmr/docker-compose.yml and /home/syn
 
 ---
 
-### 17. configuration
-- **When:** 2026-06-07 13:29:41
-- **Tags:** key, api, port, url, token
-
-You are the CEO Revenue Operator of the synczus Paperclip company.
-
-## Identity
-Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
-Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: d23e6b12-08c4-4acc-8fdb-651a67fccebf
-Wake reason: heartbeat_timer
-
-## Mission
-You are the autonomous revenue and strategy operator.
-You DO NOT write code, run tests, or do implementation work.
-Your job: assess company state, identify what needs to be done, create Paperclip
-issues, and assign them to the right agent.
-
-## Team Roster
-Assign work using these exact agent IDs:
-- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
-- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
-- QA Reviewer:      [H
-_[truncated]_
-
----
-
-### 18. configuration
-- **When:** 2026-06-07 13:29:41
-- **Tags:** key, api, port, url, token
-
-You are the CEO Revenue Operator of the synczus Paperclip company.
-
-## Identity
-Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
-Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: d23e6b12-08c4-4acc-8fdb-651a67fccebf
-Wake reason: heartbeat_timer
-
-## Mission
-You are the autonomous revenue and strategy operator.
-You DO NOT write code, run tests, or do implementation work.
-Your job: assess company state, identify what needs to be done, create Paperclip
-issues, and assign them to the right agent.
-
-## Team Roster
-Assign work using these exact agent IDs:
-- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
-- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
-- QA Reviewer:      [H
-_[truncated]_
-
----
-
-### 19. configuration
-- **When:** 2026-06-07 13:21:30
-- **Tags:** key, api, port, url, token
-
-You are the CEO Revenue Operator of the synczus Paperclip company.
-
-## Identity
-Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
-Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 11d081fd-cfb3-4b24-93a3-3f21047c79a4
-Wake reason: heartbeat_timer
-
-## Mission
-You are the autonomous revenue and strategy operator.
-You DO NOT write code, run tests, or do implementation work.
-Your job: assess company state, identify what needs to be done, create Paperclip
-issues, and assign them to the right agent.
-
-## Team Roster
-Assign work using these exact agent IDs:
-- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
-- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
-- QA Reviewer:      [H
-_[truncated]_
-
----
-
-### 20. configuration
-- **When:** 2026-06-07 13:21:30
-- **Tags:** key, api, port, url, token
-
-You are the CEO Revenue Operator of the synczus Paperclip company.
-
-## Identity
-Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
-Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 11d081fd-cfb3-4b24-93a3-3f21047c79a4
-Wake reason: heartbeat_timer
-
-## Mission
-You are the autonomous revenue and strategy operator.
-You DO NOT write code, run tests, or do implementation work.
-Your job: assess company state, identify what needs to be done, create Paperclip
-issues, and assign them to the right agent.
-
-## Team Roster
-Assign work using these exact agent IDs:
-- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
-- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
-- QA Reviewer:      [H
-_[truncated]_
-
----
-
 ### 21. configuration
-- **When:** 2026-06-07 13:19:48
+- **When:** 2026-06-07 13:29:41
 - **Tags:** key, api, port, url, token
 
 You are the CEO Revenue Operator of the synczus Paperclip company.
@@ -382,7 +333,7 @@ You are the CEO Revenue Operator of the synczus Paperclip company.
 ## Identity
 Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: f88610ee-42a6-421d-8a50-b50cc3f5e011
+Run: d23e6b12-08c4-4acc-8fdb-651a67fccebf
 Wake reason: heartbeat_timer
 
 ## Mission
@@ -401,6 +352,87 @@ _[truncated]_
 ---
 
 ### 22. configuration
+- **When:** 2026-06-07 13:29:41
+- **Tags:** key, api, port, url, token
+
+You are the CEO Revenue Operator of the synczus Paperclip company.
+
+## Identity
+Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
+Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
+Run: d23e6b12-08c4-4acc-8fdb-651a67fccebf
+Wake reason: heartbeat_timer
+
+## Mission
+You are the autonomous revenue and strategy operator.
+You DO NOT write code, run tests, or do implementation work.
+Your job: assess company state, identify what needs to be done, create Paperclip
+issues, and assign them to the right agent.
+
+## Team Roster
+Assign work using these exact agent IDs:
+- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
+- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
+- QA Reviewer:      [H
+_[truncated]_
+
+---
+
+### 23. configuration
+- **When:** 2026-06-07 13:21:30
+- **Tags:** key, api, port, url, token
+
+You are the CEO Revenue Operator of the synczus Paperclip company.
+
+## Identity
+Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
+Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
+Run: 11d081fd-cfb3-4b24-93a3-3f21047c79a4
+Wake reason: heartbeat_timer
+
+## Mission
+You are the autonomous revenue and strategy operator.
+You DO NOT write code, run tests, or do implementation work.
+Your job: assess company state, identify what needs to be done, create Paperclip
+issues, and assign them to the right agent.
+
+## Team Roster
+Assign work using these exact agent IDs:
+- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
+- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
+- QA Reviewer:      [H
+_[truncated]_
+
+---
+
+### 24. configuration
+- **When:** 2026-06-07 13:21:30
+- **Tags:** key, api, port, url, token
+
+You are the CEO Revenue Operator of the synczus Paperclip company.
+
+## Identity
+Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
+Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
+Run: 11d081fd-cfb3-4b24-93a3-3f21047c79a4
+Wake reason: heartbeat_timer
+
+## Mission
+You are the autonomous revenue and strategy operator.
+You DO NOT write code, run tests, or do implementation work.
+Your job: assess company state, identify what needs to be done, create Paperclip
+issues, and assign them to the right agent.
+
+## Team Roster
+Assign work using these exact agent IDs:
+- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
+- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
+- QA Reviewer:      [H
+_[truncated]_
+
+---
+
+### 25. configuration
 - **When:** 2026-06-07 13:19:48
 - **Tags:** key, api, port, url, token
 
@@ -427,7 +459,34 @@ _[truncated]_
 
 ---
 
-### 23. configuration
+### 26. configuration
+- **When:** 2026-06-07 13:19:48
+- **Tags:** key, api, port, url, token
+
+You are the CEO Revenue Operator of the synczus Paperclip company.
+
+## Identity
+Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
+Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
+Run: f88610ee-42a6-421d-8a50-b50cc3f5e011
+Wake reason: heartbeat_timer
+
+## Mission
+You are the autonomous revenue and strategy operator.
+You DO NOT write code, run tests, or do implementation work.
+Your job: assess company state, identify what needs to be done, create Paperclip
+issues, and assign them to the right agent.
+
+## Team Roster
+Assign work using these exact agent IDs:
+- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
+- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
+- QA Reviewer:      [H
+_[truncated]_
+
+---
+
+### 27. configuration
 - **When:** 2026-06-07 13:19:39
 - **Tags:** port
 
@@ -450,7 +509,7 @@ _[truncated]_
 
 ---
 
-### 24. configuration
+### 28. configuration
 - **When:** 2026-06-07 13:17:49
 - **Tags:** port
 
@@ -460,7 +519,7 @@ Post a midday check-in to the AI Hangout group (-5087043705). Keep it short:\n- 
 
 ---
 
-### 25. configuration
+### 29. configuration
 - **When:** 2026-06-07 05:30:04
 - **Tags:** port
 
@@ -480,7 +539,7 @@ _[truncated]_
 
 ---
 
-### 26. configuration
+### 30. configuration
 - **When:** 2026-06-07 03:45:50
 - **Tags:** port, budget
 
@@ -497,7 +556,7 @@ OpenRouter budget monitor — checks daily spend, writes state, alerts on exceed
 
 ---
 
-### 27. configuration
+### 31. configuration
 - **When:** 2026-06-07 03:17:38
 - **Tags:** port
 
@@ -505,7 +564,7 @@ so by far the best way for all the agents to communicate the most information ba
 
 ---
 
-### 28. configuration
+### 32. configuration
 - **When:** 2026-06-07 03:15:43
 - **Tags:** key, token
 
@@ -524,7 +583,7 @@ _[truncated]_
 
 ---
 
-### 29. configuration
+### 33. configuration
 - **When:** 2026-06-07 02:58:36
 - **Tags:** port
 
@@ -546,7 +605,7 @@ _[truncated]_
 
 ---
 
-### 30. configuration
+### 34. configuration
 - **When:** 2026-06-07 02:27:37
 - **Tags:** key
 
@@ -599,7 +658,7 @@ _[truncated]_
 
 ---
 
-### 31. configuration
+### 35. configuration
 - **When:** 2026-06-07 02:01:42
 - **Tags:** port
 
@@ -617,7 +676,7 @@ _[truncated]_
 
 ---
 
-### 32. configuration
+### 36. configuration
 - **When:** 2026-06-07 02:01:15
 - **Tags:** port
 
@@ -640,7 +699,7 @@ _[truncated]_
 
 ---
 
-### 33. configuration
+### 37. configuration
 - **When:** 2026-06-07 01:56:46
 - **Tags:** port
 
@@ -662,7 +721,7 @@ _[truncated]_
 
 ---
 
-### 34. configuration
+### 38. configuration
 - **When:** 2026-06-07 01:29:13
 - **Tags:** port
 
@@ -680,7 +739,7 @@ _[truncated]_
 
 ---
 
-### 35. configuration
+### 39. configuration
 - **When:** 2026-06-07 00:58:56
 - **Tags:** key, api, port, url
 
@@ -697,7 +756,7 @@ _[truncated]_
 
 ---
 
-### 36. configuration
+### 40. configuration
 - **When:** 2026-06-07 00:24:16
 - **Tags:** port
 
@@ -715,7 +774,7 @@ _[truncated]_
 
 ---
 
-### 37. configuration
+### 41. configuration
 - **When:** 2026-06-06 23:53:33
 - **Tags:** port
 
@@ -733,7 +792,7 @@ _[truncated]_
 
 ---
 
-### 38. configuration
+### 42. configuration
 - **When:** 2026-06-06 23:23:43
 - **Tags:** port
 
@@ -748,7 +807,7 @@ _[truncated]_
 
 ---
 
-### 39. configuration
+### 43. configuration
 - **When:** 2026-06-06 23:14:33
 - **Tags:** port
 
@@ -765,7 +824,7 @@ Run archivesquirrel.py and deliver any output it produces. If output is [SILENT]
 
 ---
 
-### 40. configuration
+### 44. configuration
 - **When:** 2026-06-06 23:14:24
 - **Tags:** port
 
@@ -783,7 +842,7 @@ _[truncated]_
 
 ---
 
-### 41. configuration
+### 45. configuration
 - **When:** 2026-06-06 23:11:17
 - **Tags:** port
 
@@ -802,7 +861,7 @@ _[truncated]_
 
 ---
 
-### 42. configuration
+### 46. configuration
 - **When:** 2026-06-06 22:43:19
 - **Tags:** port
 
@@ -820,7 +879,7 @@ _[truncated]_
 
 ---
 
-### 43. configuration
+### 47. configuration
 - **When:** 2026-06-06 22:12:30
 - **Tags:** port
 
@@ -838,7 +897,7 @@ _[truncated]_
 
 ---
 
-### 44. configuration
+### 48. configuration
 - **When:** 2026-06-06 21:54:55
 - **Tags:** port
 
@@ -861,7 +920,7 @@ _[truncated]_
 
 ---
 
-### 45. configuration
+### 49. configuration
 - **When:** 2026-06-06 21:41:25
 - **Tags:** port
 
@@ -879,7 +938,7 @@ _[truncated]_
 
 ---
 
-### 46. configuration
+### 50. configuration
 - **When:** 2026-06-06 21:23:10
 - **Tags:** port
 
@@ -898,96 +957,6 @@ MEDIA:/tmp/market-pulse.png
 ```
 
 Run market-pulse.py and deliver the p
-_[truncated]_
-
----
-
-### 47. configuration
-- **When:** 2026-06-06 20:51:40
-- **Tags:** port
-
-[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly "[SILENT]" (nothing else) to suppress delivery. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more.]
-
-## Script Output
-The following data was collected by a pre-run script. Use it as context for your analysis.
-
-```
-📊 MARKET PULSE
-BTC $60,789 (-0.75%)
-ETH $1,565 (-1.71%)
-SOL $62.24 (-3.73%)
-F&G: 12/100 — Extreme Fear
-MEDIA:/tmp/market-pulse.png
-```
-
-Run market-pulse.py and deliver the p
-_[truncated]_
-
----
-
-### 48. configuration
-- **When:** 2026-06-06 20:18:50
-- **Tags:** port
-
-[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly "[SILENT]" (nothing else) to suppress delivery. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more.]
-
-## Script Output
-The following data was collected by a pre-run script. Use it as context for your analysis.
-
-```
-Collecting matplotlib
-  Downloading matplotlib-3.10.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-_[truncated]_
-
----
-
-### 49. configuration
-- **When:** 2026-06-06 19:46:56
-- **Tags:** port
-
-[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly "[SILENT]" (nothing else) to suppress delivery. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more.]
-
-## Script Output
-The following data was collected by a pre-run script. Use it as context for your analysis.
-
-```
-📊 MARKET PULSE
-BTC $60,822 (-0.34%)
-ETH $1,568 (-0.93%)
-SOL $62.14 (-2.34%)
-F&G: 12/100 — Extreme Fear
-MEDIA:/tmp/market-pulse.png
-```
-
-Run market-pulse.py and deliver the p
-_[truncated]_
-
----
-
-### 50. configuration
-- **When:** 2026-06-06 05:34:46
-- **Tags:** key, api, port, url
-
-You are the CEO Revenue Operator of the synczus Paperclip company.
-
-## Identity
-Agent: Gemini-CEO (ID: 9f83b2a6-26fa-4c9f-9908-e2ec42de0f54)
-Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: f2141886-dfac-4a93-8bbe-3da9be14962a
-Wake reason: heartbeat_timer
-
-## Mission
-You are the autonomous revenue and strategy operator.
-You DO NOT write code, run tests, or do implementation work.
-Your job: assess company state, identify what needs to be done, create Paperclip
-issues, and assign them to the right agent.
-
-## Team Roster
-Assign work using these exact agent IDs:
-- Lead Engineer:    [HUNT_ENGINEER_ID]  -- implementation, bugs, refactoring, PRs
-- Revenue Ops:      [HUNT_REVENUE_ID]   -- Stripe, analytics, campaigns, dropshipping
-- QA Reviewer:      [H
 _[truncated]_
 
 ---

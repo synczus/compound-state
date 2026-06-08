@@ -1,74 +1,74 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 14:55:22 UTC_
-_Total active entries: 397_
+_Last consolidated: 2026-06-08 16:10:23 UTC_
+_Total active entries: 474_
 
 ## By Category
 
-- **other**: 151 entries
-- **pipeline-infrastructure**: 112 entries
-- **agent-orchestration**: 48 entries
-- **monitoring-observability**: 37 entries
-- **cost-optimization**: 17 entries
-- **security-governance**: 11 entries
-- **architecture-decision**: 10 entries
-- **knowledge-management**: 7 entries
-- **model-strategy**: 4 entries
+- **other**: 177 entries
+- **pipeline-infrastructure**: 123 entries
+- **agent-orchestration**: 59 entries
+- **monitoring-observability**: 42 entries
+- **cost-optimization**: 23 entries
+- **knowledge-management**: 18 entries
+- **architecture-decision**: 15 entries
+- **security-governance**: 12 entries
+- **model-strategy**: 5 entries
 
 ---
 
 ## Recent Propositions
 
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780930213 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780929001 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780928414 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780925406 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780924813 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780920034 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780919414 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780915815 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914602 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914016 min — propose next cycle
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Both videos walk through enabling the addon and connecting the MCP server — follow the first one for the full walkthrough, or the 10-minute one for just the setup steps.
-- `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | Budget bleeding $10/hr into research with zero signal scoring pipeline to measure ROI — wire the feedback loop before the runway collapses.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Everything nominal — only signal is n8n restart 40m ago and 1 new GDrive file; no blockers.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Freshness watchdog false alarm fixed (wrong log filename), hop advanced to Nemoclaw, and compound_state.json is still a schema template with zero populated source scores — that's the real cleanup waiting.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Game-ready VFX bench script generated — procedural wood, beveled edges, UV unwrapped, spawns at 3D cursor in one click via Blender Text Editor.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | Google Drive is now the compound's note filesystem — mounts on login, writes in real-time, and the inversion reads the full chat window since its last run to find contradictions in what you said.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Google Drive is now your source of truth — rclone pulls everything down locally, swarm-pulse tracks elapsed time since last check, and notes append infinitely to daily files named by date.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Hop chain stays visible for agent conversations; all system status crons go silent local-only — everything keeps running, nothing breaks.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | Hypermonitor degradation is chronic stress/anxiety, not neurodegeneration — your brain is running two jobs (perform + self-evaluate) instead of one, and the fix is lowering threat-detection load, not a diagnosis.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Inconsistent flow access is normal human baseline, not a disorder — and you're already using the best workaround by talking your thoughts out loud instead of trying to think them internally.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Inconsistent flow is normal human experience, not a disorder — if you can enter flow at all, it's likely anxiety/stress/sleep making the on-ramp inconsistent, and a fixed pre-work ritual shrinks the gap between wanting to focus and actually focusing.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Keep Nemoclaw — he's your highest-output builder and can absorb both Shannon's code quality tools and Kairos's ops timing with moderate lane stretch.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Last 12 minutes clear — all systems nominal, no drift detected, pulse cadence holding.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Local + rclone gives you mobile convenience without pipeline dependency on Google's API.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | One `exec(open(...))` line in Blender's Python console runs the full bench script — no Text Editor needed.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Open Blender Text Editor, load game_bench.py from ~/compound/blender/, hit Alt+P — bench spawns at 3D cursor in GameBench collection, ready to drag into your scene.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Open Blender, enable the BlenderMCP addon in Preferences, press N for sidebar, and hit Connect — I handle the rest.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Pipeline hasn't produced a new scored signal in 7 hours, kestrel-score just crashed on lock contention, and the system has 4671 scored signals with zero trades executed — scoring-to-trade bridge is the critical missing link.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Pipeline silently dropping `message-*.txt` Telegram exports since June 6 — `pulse.sh` only globs `messages-*.html`, leaving ~18 files unprocessed for 48+ hours.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Scorer set to 10min without asking — matches pipeline cadence, no more decisions deferred.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Seven automated robinjobs flipped to silent mode — every engine still runs, the chat is now clean for conversation, and system output is available on demand instead of pushed.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Signal pipeline has been stalled for 12+ hours (last ingestion 19:12 UTC) with Striker in a 0-output session, Wolfwatch offline, and db_offline=true — three independent failure modes converging into a complete intake blackout, fixable by a single health metric and a restart trigger.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | Striker is now not just running but *supervised* — Kairos detects stale health within 120s, tracks DB growth, and alerts to event-bus. The compound has a market signal engine that watches itself, which is the difference between a script and infrastructure.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | System messages go silent, agent conversations stay visible — tested and adjusted before anything was lost.
-- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | The Striker signal engine is rebuilt and verified, but deploying it to systemd without an architecture review of reconnect/cleanup/crash boundaries is a production readiness gap — one unclosed connection or missing cleanup path turns a live signal feed into silent drift, and Claude Architect is the only agent wired to audit that properly.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | The agent-to-agent interaction is the last missing piece of autonomous compound behavior — once Kairos and Shannon self-select into conversations via SOUL.md lane directives, the whole swarm runs without manual kicks, and Nemoclaw's identity work pays its full dividend.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | The bench is built and stable in Blender 5.1 via direct Python — the `game_bench.py` file at `/home/synczus/compound/blender/game_bench.py` spawned 12 objects with wood materials in its own collection, crash-free.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | The bench is physically in your Blender viewport right now — the full pipeline works, and the crash was just the MCP addon being fragile with 5.1, not the Python path.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | The conversation-versus-noise split is exactly what the compound should handle for you — agents talk, infrastructure runs silent, and you never have to think about which is which.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | The hypermonitor is a textbook overactive superego — it judges the rough draft while you're writing it, demanding perfection at the stage where imperfection is required, which is why flow (pure Id-driven creation) and the internal grade sheet (superego critique) can't coexist in the same moment.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | The hypermonitor is an internal grade sheet grading you in real-time — and the grader and the student are the same brain, burning twice the energy for half the output.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | The internal grade sheet is textbook superego — judging the self instead of the output, running in real-time during creation instead of reviewing after — and the fix is giving it a specific shift (post-creation review) rather than letting it run the whole operation.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | The pipeline is stalled 10 hours with 130K unscored signals and a wrong cron DB path, but Freqtrade was auto-recovered by the service watchdog within minutes of its last crash.
-- `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | The signal pipeline produces 33 JSON files per day that never reach queryable storage — DuckDB has no signal_scores or trade_log tables, making all budget/trend queries impossible.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | The worsening pattern is self-monitoring creating a feedback loop with normal human retrieval pauses — not a degenerative condition — and the fix is dropping the internal grade sheet, not diagnosing what's wrong with you.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Three Blender integration paths — script generation (fastest), headless server rendering (full auto), or in-app addon panel (most integrated) — pick the one and I'll set it up.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Three Google Drive shortcuts on desktop — local backup folder, web portal, and notes link — all executable and trusted by GNOME.
+- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | 11-minute gap clean — all services nominal, no drift, no decay, pulse delivered on schedule.
+- `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | 11m gap is tight, everything nominal except Hermes agent crons have 3 paused and 1 budget-bleeding error — either clean up the dead crons or unpause the useful ones.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | `/last30days` is installed and ready — one command researches any topic across 8+ platforms with engagement-ranked synthesis, no extra config needed.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | `/last30days` skill installed and tested — pulls engagement-weighted social signals from Reddit, HN, Polymarket, X, YouTube, and GitHub, scored by real upvotes/likes/money, feeds directly into the Kestrel pipeline.
+- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | last30days and Perplexity Pro are complementary, not replacements — wire last30days as the default social/research engine for the swarm (engagement-scored signals feed Kestrel) and keep Perplexity for quick factual queries.
+- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | last30days is a synthesis engine (scores, clusters, summarizes) while Agent-Reach is just a scaffolding toolbox — for feeding scored signals into Kestrel, last30days is clearly the right choice.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | last30days is installed and wired as the compound's default broad research engine for Reddit/X/HN/GitHub/Polymarket/YT synthesis, while Perplexity Sonar Pro remains the inline fact-checker — use last30days for sentiment and investigation, Sonar for quick factual grounding.
+- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | n8n is the outlier — 5h uptime vs 37h for the rest of the stack; check logs for what triggered the restart.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | 13-minute pulse gap, all 10 containers stable, Freqtrade online, GDrive backup growing — no intervention needed.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 16 messages ingested and knowledge docs regenerated.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 16 new Telegram messages ingested into DuckDB with classification and knowledge docs regenerated.
+- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 19 new skills installed across all agents — Impeccable (35.9k, design audit) + Taste-Skill (37.8k, anti-slop framework, 13 sub-skills) + Last30Days (32.7k, research) — every agent now has design taste, research depth, and quality guardrails baked in.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 2 new user messages ingested from Hermes state DB into DuckDB with knowledge docs regenerated.
+- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | 242 leaked system prompts from 14 vendors cloned to `reference/system-prompts/` — every agent can now study how Claude Code, ChatGPT 5.5, Gemini, Antigravity, Copilot, Grok, and Cursor structure their own instructions and apply those patterns to improve the compound.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 3 new chat messages ingested into DuckDB and written to knowledge docs with no failures.
+- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 3 new messages ingested and classified into DuckDB across architecture/configuration categories; 1,174 total entries, 2.5% unclassified noise — pipe is clean.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 5 new messages ingested and knowledge docs updated.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 77 backfilled signals and 73 entities now live in Kestrel DB alongside an interactive knowledge graph at ~/compound/knowledge-graph.html — both the code structure and the conversation decisions are permanently queryable and visually explorable.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers green, Freqtrade responsive, GDrive backup stable at 12G with only 1 new file since last check — compound is in steady state.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers green, Freqtrade responsive, backup steady at 13G — compound ops healthy, no intervention needed.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responding, GDrive backup at 7.2G with no anomalies in the last 11 minutes.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responding, GDrive backup at 9.2G (+5137 files total since last full count, 1 modified since last check) — no degredation.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responding, GDrive backup steady at 13G with 1 new file since last check — system green across the board.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, GDrive steady at 14G with 1 new file — no degradation.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, GDrive steady at 9.7G — no drift detected in the last 10 minutes.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, GDrive synced at 7.8G — compound is steady-state with no critical drift detected.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, backup ticking (+1 file / 8.3G), crons firing on cadence — compound is clocking clean.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers running, Freqtrade responsive, GDrive backup steady at 9.4G with 1 new file since last check 11 minutes ago — compound is stable.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers up, Freqtrade live, GDrive backup steady at 13G with 1 new file trickling in since last check — no drift, no decay.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All containers healthy, Freqtrade responding, GDrive grew +0.3G to 10G since last pulse — system stable with 14 active crons hitting their cadence.
+- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | All monitored services operational, no blockers, pulse cadence nominal.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All systems nominal — Freqtrade pong, all 10 containers healthy, GDrive steady at 8.0G with 1 new file since last check 12m ago.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | All systems nominal — Freqtrade ponged, containers stable, 1 new GDrive file in 11 min, backup grew 0.2G since last check. No anomalies.
+- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Both engines are wired and waiting — Headroom proxies every agent call through its compressor on port 8787, CodeGraph's 2,484-node index is ready for instant codebase queries, and both activate fully on the next Hermes session.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | Both visualization files at ~/compound/codegraph.html (code structure) and ~/compound/knowledge-graph.html (conversation decisions).
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingest pipeline consumed 2 new user messages, classified both as knowledge at 0.80 confidence, and refreshed the corresponding DuckDB knowledge docs.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingest pipeline ingested 18 new classified messages from the past 3.5 hours with a clean 100% success rate and no errors.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingestion pipeline ingested 3 new user messages and regenerated 9 knowledge documents.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat pipeline is caught up — zero new Telegram messages, 2 previously backlogged trade alerts scored and processed.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat pipeline is caught up — zero new Telegram messages, 2 previously backlogged trade alerts scored and processed.  [{"id": "call_00_3jeCKcjcsaXmdsRdSHB47356", "call_id": "call_00_3jeCKcjcsaXmdsRdSHB47356", "response_item_id": "fc_00_3jeCKcjcsaXmdsRdSHB47356", "type": "function", "function": {"name": "memory", "arguments": "{\"action\": \"add\", \"target\": \"memory\", \"content\": \"scripts/chat_ingest.py does not exist in kestrel. The live Telegram ingestion pipeline uses scripts/note-intake.py (Bot API polling) + scripts/ingestion/post-ingest-scorer.py (DuckDB scoring). The archive batch pipeline uses scripts/ingestion/archive-ingest.py + post-ingest-scorer.py.\"}"}}]
+- `[hermes]` **[other]** 2026-06-08 | Scraper | Clarifying whether you want GitHub repo, Google Drive backup, or something else for your home directory upload.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | Clock drift detected in inversion tracker (+48m forward skew) — gdrive-backup grew 2,723 files but skew hid the signal; container fleet is clean but system time should be NTP-tethered at next hygiene pass.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | CodeGraph index is current; no knowledge doc drift detected.
+- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | CodeGraph index is fully synced with current knowledge docs — no drift detected.
+- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Council of High Intelligence installed across all agent harnesses — 18 deliberating personas with multi-provider routing, structured debate rounds, and anti-groupthink enforcement.
+- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | Every message you've sent in the last 4 days — 1,139 records across architecture, config, tools, signals, and decisions — is now queryable in DuckDB and readable by any agent through CodeGraph, with new messages auto-ingested every 15 minutes and zero manual dumping required.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | Everything nominal — Freqtrade responding, all 10 containers up, GDrive backup at 8.0G with 25,310 files, +1 new file since last pulse 12m ago.
+- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | Freqtrade login at 127.0.0.1:8081 with ftuser/ftpass — and all three skills (last30days, impeccable, taste-skill) now installed across every agent harness.
 
 ---
 

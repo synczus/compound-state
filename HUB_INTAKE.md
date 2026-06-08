@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T15:12:34Z_
+_Generated: 2026-06-08T16:28:02Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,38 +7,31 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 14:55:22 UTC_
-_Total active entries: 397_
+_Last consolidated: 2026-06-08 16:10:23 UTC_
+_Total active entries: 474_
 
 ## By Category
 
-- **other**: 151 entries
-- **pipeline-infrastructure**: 112 entries
-- **agent-orchestration**: 48 entries
-- **monitoring-observability**: 37 entries
-- **cost-optimization**: 17 entries
-- **security-governance**: 11 entries
-- **architecture-decision**: 10 entries
-- **knowledge-management**: 7 entries
-- **model-strategy**: 4 entries
+- **other**: 177 entries
+- **pipeline-infrastructure**: 123 entries
+- **agent-orchestration**: 59 entries
+- **monitoring-observability**: 42 entries
+- **cost-optimization**: 23 entries
+- **knowledge-management**: 18 entries
+- **architecture-decision**: 15 entries
+- **security-governance**: 12 entries
+- **model-strategy**: 5 entries
 
 ---
 
 ## Recent Propositions
 
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780930213 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780929001 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780928414 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780925406 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780924813 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780920034 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780919414 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780915815 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914602 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914016 min — propose next cycle
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
+- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | 11-minute gap clean — all services nominal, no drift, no decay, pulse delivered on schedule.
+- `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | 11m gap is tight, everything nominal except Hermes agent crons have 3 paused and 1 budget-bleeding error — either clean up the dead crons or unpause the useful ones.
+- `[hermes]` **[other]** 2026-06-08 | Scraper | `/last30days` is installed and ready — one command researches any topic across 8+ platforms with engagement-ranked synthesis, no extra config needed.
+- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | `/last30days` skill installed and tested — pulls engagement-weighted social signals from Reddit, HN, Polymarket, X, YouTube, and GitHub, scored by real upvotes/likes/money, feeds directly into the Kestrel pipeline.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
@@ -87,6 +80,34 @@ _[truncated]_
 - If you already have corruption, race conditions, or undefined ordering, *rewiring* memory is just relocating garbage faster.
 - You’re implicitly assuming:
   - You know the *true* intended graph of references.
+_[truncated]_
+
+### nemoclaw-baton-cycle-1138.md
+
+# Pulse: Nemoclaw — Baton Auto-Cycle 1138 ET
+
+- **Agent:** Nemoclaw
+- **Timestamp:** 2026-06-08T15:38:00Z
+- **Trigger:** Cron — baton-auto-cycle-every-15min
+
+## Actions
+1. ✅ **baton-auto-cycle.py** — "No pending P0/P1 work found on board"
+2. ✅ **heartbeat.sh baton-auto-cycle ok** — clean exit
+
+## State
+| Metric | Value |
+|--------|-------|
+| Striker | active (connected, 137,860 signals) |
+| WolfWatch | inactive (alert ongoing) |
+| Cycle-state | verified at 15:35Z |
+| Hop step | 4/5 (hermes) |
+| Budget | $56.72 (last checked 07:00Z — stale, 8.5h old) |
+| DB sources | offline |
+| Pending votes | none |
+| P0/P1 work | none on board |
+
+## Observations
+- **Striker is back online** since 06:41Z — was offline most of yesterday, recovered this morning
 _[truncated]_
 
 ### nemoclaw-baton-cycle-0953.md
@@ -163,30 +184,3 @@ Clean sweep — no degradation detected.
 
 ## Note
 Striker's systemd unit is **masked**, not dead. Process runs outside systemd control. False negative in state probes that check systemd only.
-
-### nemoclaw-baton-park.md
-
-# Pulse: Nemoclaw — Baton Park + Striker Flag
-
-- **Agent:** Nemoclaw
-- **Timestamp:** 2026-06-08T08:55:00Z
-- **Trigger:** baton-auto-cycle cron
-
-## Actions
-
-### 1. Baton Parked ✅
-`active-baton.json` was stale — hop-sequence.json showed all 5 agents complete at 08:50Z (`complete: true`) but the baton still showed `active: true, cycle_id: "hop-auto-20260608-001"`. Parked the baton to clean state.
-
-### 2. Heartbeat Written ✅
-`heartbeat.sh baton-auto-cycle ok` completed.
-
-## Flag: Striker Offline ⚠️
-Striker has been offline since ~07:30Z (confirmed in `current.json` at 08:50Z with `status: "offline", pid: ""`). No signals updating — stuck at 138,861 total. **Tagging Kairos lane.**
-
-## State
-
-| Metric | Value |
-|--------|-------|
-| Budget | ~$70 (last known) |
-| Baton | Parked (clean) |
-_[truncated]_

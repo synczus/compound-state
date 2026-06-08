@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-08T15:11:22.915093+00:00",
-  "epoch_seconds": 1780931482,
+  "timestamp": "2026-06-08T16:26:23.520799+00:00",
+  "epoch_seconds": 1780935983,
   "board_summary": {
     "p0_pending": 0,
     "p1_pending": 0,
     "p2_pending": 0,
     "done": 0,
-    "in_progress": 58
+    "in_progress": 2
   },
   "striker": {
     "status": "connected",
@@ -15,10 +15,10 @@
     "last_signal": "none"
   },
   "recent_hlms": [
-    "- [ ] 2026-06-08 | Scraper | ` patterns in the JSON content. The scraper needs to skip JSON-structured content. Let me fix the file first and add a JSON filter to the scraper",
-    "- [ ] 2026-06-08 | Scraper | n8n is fully operational with API keys live, ready to receive workflows \u2014 the only blocker was owner signup which is now done.",
-    "- [ ] 2026-06-08 | Scraper | n8n owner account is live, two API keys exist, just need the full key string to wire it into the pipeline.",
-    "- [ ] 2026-06-08 | Scraper | rclone fully configured and pulling Google Drive down to local \u2014 first sync in progress, daily cron at 3am, swarm-pulse now tracks elapsed time since last check.",
+    "- [ ] 2026-06-08 | Scraper | last30days and Perplexity Pro are complementary, not replacements \u2014 wire last30days as the default social/research engine for the swarm (engagement-scored signals feed Kestrel) and keep Perplexity for quick factual queries.",
+    "- [ ] 2026-06-08 | Scraper | last30days is a synthesis engine (scores, clusters, summarizes) while Agent-Reach is just a scaffolding toolbox \u2014 for feeding scored signals into Kestrel, last30days is clearly the right choice.",
+    "- [ ] 2026-06-08 | Scraper | last30days is installed and wired as the compound's default broad research engine for Reddit/X/HN/GitHub/Polymarket/YT synthesis, while Perplexity Sonar Pro remains the inline fact-checker \u2014 use last30days for sentiment and investigation, Sonar for quick factual grounding.",
+    "- [ ] 2026-06-08 | Scraper | n8n is the outlier \u2014 5h uptime vs 37h for the rest of the stack; check logs for what triggered the restart.",
     "- [ ] 2026-06-08 | Scraper | scraper migrated two broken crons under v3.2. The compound's auto-conversation now drops weighted heat every 5min instead of asking what to work on."
   ],
   "last_agent_actions": [],
@@ -62,21 +62,5 @@
       "action": "kairos-monitor",
       "detail": "Kairos monitoring implemented - health freshness, DB growth, edge-triggered alerts to event-bus. Striker runtime hardened: atomic health writes, in-process lock, conflicting user service disabled. System Striker active PID 818048."
     }
-  ],
-  "signal_intel": {
-    "last_analysis": "2026-06-08T15:15:22.979703+00:00",
-    "high_conf_signals": 50,
-    "top_signal": {
-      "symbol": "BTC-USD",
-      "direction": "down",
-      "signal_count": 14,
-      "avg_confidence": 0.85,
-      "avg_move_pct": 1.586,
-      "avg_price": 71353.01,
-      "avg_volume": 100.0,
-      "latest": "2026-06-07T20:27:18",
-      "score": 11.9
-    },
-    "summary": "\ud83d\udcc9 **BTC-USD** down \u00d714 @ 85.0% confidence, avg 1.59% move"
-  }
+  ]
 }
