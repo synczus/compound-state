@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-08T01:13:44Z_
+_Generated: 2026-06-08T02:14:03Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 01:05:05 UTC_
-_Total active entries: 230_
+_Last consolidated: 2026-06-08 02:08:05 UTC_
+_Total active entries: 237_
 
 ## By Category
 
-- **other**: 87 entries
-- **pipeline-infrastructure**: 47 entries
+- **other**: 91 entries
+- **pipeline-infrastructure**: 50 entries
 - **agent-orchestration**: 35 entries
 - **monitoring-observability**: 23 entries
 - **cost-optimization**: 15 entries
@@ -26,6 +26,13 @@ _Total active entries: 230_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780884015 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 100098 signals (5043 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780883413 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 97037 signals (5043 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780882230 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 91837 signals (4493 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 87393 signals (4490 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 80768 signals (4490 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
 - `[hermes]` **[other]** ⚪ striker: 78423 signals (4490 >=0.3%), last 1970-01-01 00:00:00
@@ -34,11 +41,6 @@ _Total active entries: 230_
 - `[hermes]` **[other]** ⚪ striker: 63983 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 62513 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 63552 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
-- `[hermes]` **[other]** ⚪ striker: 59986 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ exports: 19 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
-- `[hermes]` **[other]** ⚪ striker: 56641 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[knowledge-management]** **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

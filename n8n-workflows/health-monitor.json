@@ -1,0 +1,39 @@
+{
+  "name": "System Health Monitor",
+  "nodes": [
+    {
+      "name": "Cron Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "minutes", "minutesInterval": 15 }
+          ]
+        }
+      },
+      "position": [250, 300]
+    },
+    {
+      "name": "HTTP Request - Check Services",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "url": "http://localhost:3111/health",
+        "options": {}
+      },
+      "position": [450, 300]
+    },
+    {
+      "name": "Set Health Status",
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "agentmemory", "value": "={{$json.status === 'ok' ? '✅' : '❌'}}" }
+          ]
+        }
+      },
+      "position": [650, 300]
+    }
+  ],
+  "connections": {}
+}

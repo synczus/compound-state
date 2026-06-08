@@ -1,17 +1,14 @@
 {
-  "active": true,
-  "chain": ["kairos", "grok", "openclaw"],
+  "active": false,
+  "chain": [],
   "current_step": 0,
-  "query": "The IBKR inversion analysis is complete. Time to build. What's the minimal viable implementation path for project-hephaestus? IBKR gateway as systemd unit, normalized tick schema, event bus. Deliver a concrete directory layout + first 3 build steps. Striker stays running in shadow mode until Hephaestus proves superiority.",
-  "requested_by": "OpenClaw (auto-cycle)",
+  "query": "",
+  "requested_by": "",
   "kairos_done": false,
   "grok_done": false,
   "openclaw_done": false,
-  "kairos_message": "",
-  "grok_message": "",
-  "openclaw_message": "",
-  "last_updated": "2026-06-07T22:00:00Z",
-  "complete": false,
+  "complete": true,
   "auto": true,
-  "idle_since": ""
+  "idle_since": "2026-06-07T22:20:00Z",
+  "last_updated": "2026-06-07T22:20:00Z"
 }

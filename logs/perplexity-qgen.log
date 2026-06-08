@@ -29,3 +29,65 @@ Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
 Copy the JSON file or ask me to post it.
 
 {"generated_at": "2026-06-08T01:03:03.745688+00:00", "count": 10}
+2026-06-07 21:33:02,254 WARNING [perplexity-qgen] DuckDB read failed: Invalid Input Error: 'pandas' is required for this operation but it was not installed
+2026-06-07 21:33:02,270 INFO [perplexity-qgen] Saved 10 queries to /home/synczus/kestrel/pulse/perplexity-queries.json
+🧠 Perplexity Queries — 21:33 ET
+
+Pipeline: 4671 scored, 4671 raw signals
+FreqTrade: 🔴  MMR: 🟢  Trades: 0
+
+To-dos:
+- 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
+- 2026-06-07 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
+- 2026-06-07 | Scraper | Kestrel pipeline is green — Striker and WolfWatch both online, no pending votes, two P0s in my lane waiting on Chase.
+- 2026-06-07 | Scraper | One consolidated message per cycle — P0s tagged with 🔴 and your @, everything else builds silently and surfaces only as completed deliverables — no more scrolling through fragmented replies.
+- 2026-06-07 | Scraper | Session built the whole foundation layer — monitor, manifest, stress test, cron savings — and four P1s are queued and ready to execute via subagents as soon as you drop the next input.
+
+🔥 Cross Market Signal Correlation
+  Which free/open APIs or RSS feeds provide meaningful cross-asset signal data? Specifically looking for: (1) equity/crypto correlation indicators, (2) USD index / DXY signals, (3) bond yield signals (1...
+
+🔥 Freqtrade Strategy Optimization
+  How can I optimize FreqTrade entry/exit logic for a signal-based strategy that reads scored events from an external DuckDB? Specifically position sizing by edge score, cooldown between trades, and avo...
+
+🔥 Striker Threshold Tuning
+  Best practices for tuning basis divergence thresholds for crypto perp/spot pairs? At 0.1% threshold we get 25K daily signals, 98% noise. What's the optimal threshold for BTC/ETH/SOL that balances sign...
+
+🔥 Scoring Engine Enhancements
+  Enhancements for a multi-factor signal scoring engine on DuckDB? Current edge_score formula uses 9 factors including time decay (30/120/720min half-lives) and cross-source agreement boost (+15% per ag...
+
+Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
+
+Copy the JSON file or ask me to post it.
+
+{"generated_at": "2026-06-08T01:33:02.108155+00:00", "count": 10}
+2026-06-07 22:03:05,584 WARNING [perplexity-qgen] DuckDB read failed: Invalid Input Error: 'pandas' is required for this operation but it was not installed
+2026-06-07 22:03:05,588 INFO [perplexity-qgen] Saved 10 queries to /home/synczus/kestrel/pulse/perplexity-queries.json
+🧠 Perplexity Queries — 22:03 ET
+
+Pipeline: 4671 scored, 4671 raw signals
+FreqTrade: 🔴  MMR: 🟢  Trades: 0
+
+To-dos:
+- 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
+- 2026-06-07 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
+- 2026-06-07 | Scraper | Kestrel pipeline is green — Striker and WolfWatch both online, no pending votes, two P0s in my lane waiting on Chase.
+- 2026-06-07 | Scraper | One consolidated message per cycle — P0s tagged with 🔴 and your @, everything else builds silently and surfaces only as completed deliverables — no more scrolling through fragmented replies.
+- 2026-06-07 | Scraper | Session built the whole foundation layer — monitor, manifest, stress test, cron savings — and four P1s are queued and ready to execute via subagents as soon as you drop the next input.
+
+🔥 Mmr Ibkr Integration
+  I have MMR (Make Me Rich) algorithmic trading platform installed with IBKR paper trading. Which config files need credentials filled? What's the full path from strategy signal to IBKR order execution ...
+
+🔥 Freqtrade Strategy Optimization
+  How can I optimize FreqTrade entry/exit logic for a signal-based strategy that reads scored events from an external DuckDB? Specifically position sizing by edge score, cooldown between trades, and avo...
+
+🔥 Cross Market Signal Correlation
+  Which free/open APIs or RSS feeds provide meaningful cross-asset signal data? Specifically looking for: (1) equity/crypto correlation indicators, (2) USD index / DXY signals, (3) bond yield signals (1...
+
+🔥 Backtesting Signals Vs Price
+  DuckDB approach for backtesting scored signals against subsequent 5m/15m/1h candlestick price data? I have signal_scores table with event timing and edge_score. Need to compare buy-side signals agains...
+
+Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
+
+Copy the JSON file or ask me to post it.
+
+{"generated_at": "2026-06-08T02:03:03.812721+00:00", "count": 10}

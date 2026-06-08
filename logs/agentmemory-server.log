@@ -1,0 +1,59 @@
+
+  agentmemory
+  v0.9.27 · Persistent memory for AI coding agents
+
+│
+●  Attached to existing iii-engine (pid 2353358)
+[agentmemory] OPENROUTER_MODEL=anthropic/claude-sonnet-4-20250514 is in the premium tier. Background compression on this model can cost $5+/day under active use. Cheaper alternatives with comparable quality for memory compression: deepseek/deepseek-v4-pro, deepseek/deepseek-chat, qwen/qwen3-coder. See README "Cost-aware model selection" for the full table. Set AGENTMEMORY_SUPPRESS_COST_WARNING=1 to silence.
+[OTel] Traces initialized: engine=ws://localhost:49134, service=agentmemory
+[OTel] Metrics initialized: interval=30000ms
+[OTel] Global fetch instrumentation enabled
+[OTel] Logs initialized: delay=100ms, batch=1
+[OTel] Connected to engine at ws://localhost:49134/otel
+[iii] Worker registered with ID: c1374e4d-b268-48ec-8d7e-442a51718d63
+│
+◇  agentmemory v0.9.27 ──────────────────────────────────────────────╮
+│                                                                    │
+│  REST API     http://localhost:3111                                │
+│  Viewer       http://localhost:3113                                │
+│  Streams      ws://localhost:3112                                  │
+│  Engine       ws://localhost:49134                                 │
+│  iii console  (install: curl -fsSL                                 │
+│  https://install.iii.dev/iii/main/install.sh | VERSION=0.11.2 sh)  │
+│                                                                    │
+├────────────────────────────────────────────────────────────────────╯
+
+Try: agentmemory demo
+[agentmemory] Viewer started on http://localhost:3114 (fallback from 3113)
+[agentmemory] info No context available {"project":"/tmp/agentmemory-demo"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4iys0n_0af130604940","sessionId":"demo_mq4iys0c_93b16ea5d594","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4iyvvj_3770663ce690","sessionId":"demo_mq4iys0c_93b16ea5d594","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4iywgj_1f4d15416365","sessionId":"demo_mq4iys0c_93b16ea5d594","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] info Context generated {"blocks":1,"tokens":173}
+[agentmemory] error Summarize failed {"sessionId":"demo_mq4iys0c_93b16ea5d594","error":"openrouter API error (400): {\"error\":{\"message\":\"anthropic/claude-sonnet-4-20250514 is not a valid model ID\",\"code\":400},\"user_id\":\"user_38nY2BC620FGMcfICcwp6SiGYnP\"}"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4iywr1_a44a628bba65","sessionId":"demo_mq4iys0c_577709793c66","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4iywyn_d9a705adf6f5","sessionId":"demo_mq4iys0c_577709793c66","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] error Summarize failed {"sessionId":"demo_mq4iys0c_577709793c66","error":"openrouter API error (400): {\"error\":{\"message\":\"anthropic/claude-sonnet-4-20250514 is not a valid model ID\",\"code\":400},\"user_id\":\"user_38nY2BC620FGMcfICcwp6SiGYnP\"}"}
+[agentmemory] info Context generated {"blocks":2,"tokens":277}
+[agentmemory] info Observation captured {"obsId":"obs_mq4iyx9m_3dcdf4fcc8b8","sessionId":"demo_mq4iys0c_7456cc12f7e7","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] error Summarize failed {"sessionId":"demo_mq4iys0c_7456cc12f7e7","error":"openrouter API error (400): {\"error\":{\"message\":\"anthropic/claude-sonnet-4-20250514 is not a valid model ID\",\"code\":400},\"user_id\":\"user_38nY2BC620FGMcfICcwp6SiGYnP\"}"}
+[agentmemory] info Smart search compact {"query":"jwt auth middleware","results":5,"lessons":0}
+[agentmemory] info Smart search compact {"query":"database performance optimization","results":5,"lessons":0}
+[agentmemory] info Smart search compact {"query":"rate limiting","results":5,"lessons":0}
+[agentmemory] info Context generated {"blocks":3,"tokens":350}
+[agentmemory] info Observation captured {"obsId":"obs_mq4izls7_ebd657736c9d","sessionId":"demo_mq4izlok_e3b25ced84eb","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4izm4z_07705bb5b542","sessionId":"demo_mq4izlok_e3b25ced84eb","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4izmd4_743f3b74dbf1","sessionId":"demo_mq4izlok_e3b25ced84eb","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] error Summarize failed {"sessionId":"demo_mq4izlok_e3b25ced84eb","error":"openrouter API error (400): {\"error\":{\"message\":\"anthropic/claude-sonnet-4-20250514 is not a valid model ID\",\"code\":400},\"user_id\":\"user_38nY2BC620FGMcfICcwp6SiGYnP\"}"}
+[agentmemory] info Context generated {"blocks":4,"tokens":497}
+[agentmemory] info Observation captured {"obsId":"obs_mq4izmo6_bcbdebf9d3b0","sessionId":"demo_mq4izlok_8d16fe843f5c","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] info Observation captured {"obsId":"obs_mq4izmuc_0f06c1612e66","sessionId":"demo_mq4izlok_8d16fe843f5c","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] error Summarize failed {"sessionId":"demo_mq4izlok_8d16fe843f5c","error":"circuit_breaker_open"}
+[agentmemory] info Context generated {"blocks":5,"tokens":601}
+[agentmemory] info Observation captured {"obsId":"obs_mq4izn5l_eead8e9e02db","sessionId":"demo_mq4izlok_c561d27322cf","hook":"post_tool_use","compress":"synthetic"}
+[agentmemory] error Summarize failed {"sessionId":"demo_mq4izlok_c561d27322cf","error":"circuit_breaker_open"}
+[agentmemory] info Smart search compact {"query":"jwt auth middleware","results":5,"lessons":0}
+[agentmemory] info Smart search compact {"query":"database performance optimization","results":5,"lessons":0}
+[agentmemory] info Smart search compact {"query":"rate limiting","results":5,"lessons":0}
+
+[agentmemory] Shutting down...

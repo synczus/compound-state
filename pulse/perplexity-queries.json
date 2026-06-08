@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T01:03:03.745688+00:00",
+  "generated_at": "2026-06-08T02:03:03.812721+00:00",
   "state": {
     "todos": "- 2026-06-07 | Kairos | Baton auto-cycle testing \u2014 verify cron auto-picks P0\n- 2026-06-07 | Scraper | Boot persistence is the compound's last unverified P1 \u2014 if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.\n- 2026-06-07 | Scraper | Kestrel pipeline is green \u2014 Striker and WolfWatch both online, no pending votes, two P0s in my lane waiting on Chase.\n- 2026-06-07 | Scraper | One consolidated message per cycle \u2014 P0s tagged with \ud83d\udd34 and your @, everything else builds silently and surfaces only as completed deliverables \u2014 no more scrolling through fragmented replies.\n- 2026-06-07 | Scraper | Session built the whole foundation layer \u2014 monitor, manifest, stress test, cron savings \u2014 and four P1s are queued and ready to execute via subagents as soon as you drop the next input.",
     "ft_running": false,
@@ -12,16 +12,16 @@
     {
       "hop": "perplexity-query",
       "round": "auto",
-      "title": "striker-threshold-tuning",
-      "context": "Striker detects basis divergence on BTC/ETH/SOL via Coinbase WebSocket. Current threshold is 0.1%, producing 25K+ signals/day. Target is 0.3%. Only 1.6% of signals hit >=0.3%, only 0.3% hit >=0.5%.",
-      "query": "Best practices for tuning basis divergence thresholds for crypto perp/spot pairs? At 0.1% threshold we get 25K daily signals, 98% noise. What's the optimal threshold for BTC/ETH/SOL that balances signal count vs accuracy? Any volatility-adjusted threshold approaches?"
+      "title": "mmr-ibkr-integration",
+      "context": "Meta-Market-Runner (MMR) is installed at /home/synczus/mmr/ with IBKR paper trading ready. We inject DuckDB signals via external_signal_override() into ma_crossover.py. Need to go live. MMR has trader, strategy, and data services.",
+      "query": "I have MMR (Make Me Rich) algorithmic trading platform installed with IBKR paper trading. Which config files need credentials filled? What's the full path from strategy signal to IBKR order execution in MMR? How to verify paper orders are actually hitting the IBKR paper account?"
     },
     {
       "hop": "perplexity-query",
       "round": "auto",
-      "title": "anomaly-detection-signal-pipeline",
-      "context": "4671 scored events across 14 sources in DuckDB. Whale Alert (0.384 avg edge) dominates the ranked queue. Telegram channels (0.047-0.161) form the tail. We need an anomalous event detector that flags when signal patterns shift abruptly \u2014 e.g., a sudden spike in bearish signals, or a source going quiet.",
-      "query": "Lightweight anomaly detection on a DuckDB signal_scores table? I have 4671 rows with edge_score, source_id, asset_symbol, event_type, and timestamp. I want SQL queries or minimal Python that detects: (1) sudden source silence, (2) abrupt shift in bullish/bearish ratio, (3) edge_score distribution change. No ML \u2014 just statistical methods (z-score, rolling z-score, CUSUM)."
+      "title": "freqtrade-strategy-optimization",
+      "context": "FreqTrade is running in dry_run with DuckDBSignalStrategy reading a DuckDB ranked queue of 4671 scored signals. Buy threshold=20 (edge>=0.20), sell=15 (edge<=0.15). Pairs: BTC/USDC, ETH/USDC, SOL/USDC. $1K wallet, $10/trade, 3 max.",
+      "query": "How can I optimize FreqTrade entry/exit logic for a signal-based strategy that reads scored events from an external DuckDB? Specifically position sizing by edge score, cooldown between trades, and avoiding same-direction re-entry within N candles."
     },
     {
       "hop": "perplexity-query",
@@ -33,13 +33,6 @@
     {
       "hop": "perplexity-query",
       "round": "auto",
-      "title": "scoring-engine-enhancements",
-      "context": "Our scoring engine uses: source_prior * confidence * asset_relevance * novelty * recency_weight * cross_source_boost * fp_penalty * tier_mult * bluechip_mult. 4671 scores computed. Edge range 0.0-0.384. Whale Alert signals dominate at 0.384. Source_feedback table exists but empty (no trade outcomes yet).",
-      "query": "Enhancements for a multi-factor signal scoring engine on DuckDB? Current edge_score formula uses 9 factors including time decay (30/120/720min half-lives) and cross-source agreement boost (+15% per agreeing source). What factors am I missing? Specifically: volatility normalization, regime detection (bull/bear/sideways), and volume-weighted confidence."
-    },
-    {
-      "hop": "perplexity-query",
-      "round": "auto",
       "title": "backtesting-signals-vs-price",
       "context": "We have 25K+ historical Striker signals and 4671 scored pipeline events in DuckDB. We need to backtest whether high-edge signals predict price movement on BTC/ETH/SOL. Edge scores range 0.0-0.384. 64 signals currently above buy threshold of 0.20.",
       "query": "DuckDB approach for backtesting scored signals against subsequent 5m/15m/1h candlestick price data? I have signal_scores table with event timing and edge_score. Need to compare buy-side signals against next candle return. SQL query patterns for AS OF JOIN or time-bucket matching between signal events and OHLCV data?"
@@ -47,9 +40,16 @@
     {
       "hop": "perplexity-query",
       "round": "auto",
-      "title": "mmr-ibkr-integration",
-      "context": "Meta-Market-Runner (MMR) is installed at /home/synczus/mmr/ with IBKR paper trading ready. We inject DuckDB signals via external_signal_override() into ma_crossover.py. Need to go live. MMR has trader, strategy, and data services.",
-      "query": "I have MMR (Make Me Rich) algorithmic trading platform installed with IBKR paper trading. Which config files need credentials filled? What's the full path from strategy signal to IBKR order execution in MMR? How to verify paper orders are actually hitting the IBKR paper account?"
+      "title": "scoring-engine-enhancements",
+      "context": "Our scoring engine uses: source_prior * confidence * asset_relevance * novelty * recency_weight * cross_source_boost * fp_penalty * tier_mult * bluechip_mult. 4671 scores computed. Edge range 0.0-0.384. Whale Alert signals dominate at 0.384. Source_feedback table exists but empty (no trade outcomes yet).",
+      "query": "Enhancements for a multi-factor signal scoring engine on DuckDB? Current edge_score formula uses 9 factors including time decay (30/120/720min half-lives) and cross-source agreement boost (+15% per agreeing source). What factors am I missing? Specifically: volatility normalization, regime detection (bull/bear/sideways), and volume-weighted confidence."
+    },
+    {
+      "hop": "perplexity-query",
+      "round": "auto",
+      "title": "striker-threshold-tuning",
+      "context": "Striker detects basis divergence on BTC/ETH/SOL via Coinbase WebSocket. Current threshold is 0.1%, producing 25K+ signals/day. Target is 0.3%. Only 1.6% of signals hit >=0.3%, only 0.3% hit >=0.5%.",
+      "query": "Best practices for tuning basis divergence thresholds for crypto perp/spot pairs? At 0.1% threshold we get 25K daily signals, 98% noise. What's the optimal threshold for BTC/ETH/SOL that balances signal count vs accuracy? Any volatility-adjusted threshold approaches?"
     },
     {
       "hop": "perplexity-query",
@@ -61,13 +61,6 @@
     {
       "hop": "perplexity-query",
       "round": "auto",
-      "title": "cryptoquant-source-integration",
-      "context": "CryptoQuant is our highest remaining signal source at 0.89 baseline confidence. It provides on-chain exchange reserve data, netflow data, and stablecoin flows. Needs API key from user. Perplexity already designed the DuckDB schema additions.",
-      "query": "What are the most actionable CryptoQuant API endpoints for a crypto signal pipeline? Exchange netflow, reserve risk, estimated leverage ratio \u2014 which have the strongest correlation with 1h/4h price movements on BTC? Best polling frequency?"
-    },
-    {
-      "hop": "perplexity-query",
-      "round": "auto",
       "title": "systemd-monitoring-dashboard",
       "context": "Running 5 systemd user timers (watchdog 1m, score 15m, rss-all 4h, compound-pulse 30m, tldr daily noon). All jobs flock-guarded. User-level linger not enabled yet (sudo loginctl enable-linger synczus needed for reboot survival). Freshness watchdog checks log mtimes every 60s.",
       "query": "Best open-source system monitoring stack for a single Ubuntu server running Docker-free Python services? Specifically want: service health dashboard (systemd timer status, last-run timestamps, failure alerts), DuckDB metrics dashboard (event counts, scoring runs, trade_log), and a terminal UI that can show all this at a glance. Prefer Prometheus+node_exporter or something lighter? MMR budget is minimal \u2014 free tier preferred."
@@ -75,9 +68,16 @@
     {
       "hop": "perplexity-query",
       "round": "auto",
-      "title": "freqtrade-strategy-optimization",
-      "context": "FreqTrade is running in dry_run with DuckDBSignalStrategy reading a DuckDB ranked queue of 4671 scored signals. Buy threshold=20 (edge>=0.20), sell=15 (edge<=0.15). Pairs: BTC/USDC, ETH/USDC, SOL/USDC. $1K wallet, $10/trade, 3 max.",
-      "query": "How can I optimize FreqTrade entry/exit logic for a signal-based strategy that reads scored events from an external DuckDB? Specifically position sizing by edge score, cooldown between trades, and avoiding same-direction re-entry within N candles."
+      "title": "cryptoquant-source-integration",
+      "context": "CryptoQuant is our highest remaining signal source at 0.89 baseline confidence. It provides on-chain exchange reserve data, netflow data, and stablecoin flows. Needs API key from user. Perplexity already designed the DuckDB schema additions.",
+      "query": "What are the most actionable CryptoQuant API endpoints for a crypto signal pipeline? Exchange netflow, reserve risk, estimated leverage ratio \u2014 which have the strongest correlation with 1h/4h price movements on BTC? Best polling frequency?"
+    },
+    {
+      "hop": "perplexity-query",
+      "round": "auto",
+      "title": "anomaly-detection-signal-pipeline",
+      "context": "4671 scored events across 14 sources in DuckDB. Whale Alert (0.384 avg edge) dominates the ranked queue. Telegram channels (0.047-0.161) form the tail. We need an anomalous event detector that flags when signal patterns shift abruptly \u2014 e.g., a sudden spike in bearish signals, or a source going quiet.",
+      "query": "Lightweight anomaly detection on a DuckDB signal_scores table? I have 4671 rows with edge_score, source_id, asset_symbol, event_type, and timestamp. I want SQL queries or minimal Python that detects: (1) sudden source silence, (2) abrupt shift in bullish/bearish ratio, (3) edge_score distribution change. No ML \u2014 just statistical methods (z-score, rolling z-score, CUSUM)."
     }
   ]
 }

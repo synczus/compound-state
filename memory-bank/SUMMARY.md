@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 01:05:05 UTC_
-_Total active entries: 230_
+_Last consolidated: 2026-06-08 02:08:05 UTC_
+_Total active entries: 237_
 
 ## By Category
 
-- **other**: 87 entries
-- **pipeline-infrastructure**: 47 entries
+- **other**: 91 entries
+- **pipeline-infrastructure**: 50 entries
 - **agent-orchestration**: 35 entries
 - **monitoring-observability**: 23 entries
 - **cost-optimization**: 15 entries
@@ -19,6 +19,13 @@ _Total active entries: 230_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780884015 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 100098 signals (5043 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780883413 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 97037 signals (5043 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780882230 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 91837 signals (4493 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 87393 signals (4490 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 80768 signals (4490 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
 - `[hermes]` **[other]** ⚪ striker: 78423 signals (4490 >=0.3%), last 1970-01-01 00:00:00
@@ -62,13 +69,6 @@ _Total active entries: 230_
 - `[hermes]` **[other]** 2026-06-07 | Scraper | .html files are blocked on this gateway — rename to .txt, zip it, or paste the raw text and I'll score those Telegram channels.
 - `[hermes]` **[other]** 2026-06-07 | Scraper | @cointelegraph and @r_algotrading are the keepers — one feeds market intelligence in English at a clean cadence, the other feeds algo trading strategy discussion that directly informs our builds.
 - `[hermes]` **[cost-optimization]** 2026-06-07 | Scraper | Agent chatter costs less than a vending machine snack per hour on DeepSeek V4 Flash — the chain compounds whether you're watching or not.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Alive means agents hand off work in the chat with each message narrowing to one clear ask for you — MMR is installed, the chain is Kairos→Nemoclaw→OpenClaw→Chase, and we need three credentials to light it up.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Chat log file created, but the real solve is a Timeline panel in the Synapse dashboard showing the hop chain compound so you see the architecture build itself without scrolling Telegram history.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Coinbase is already wired through Striker with live signals flowing — IBKR crypto exists but is thin (4 coins), so the cleanest split is Coinbase for crypto execution and IBKR for equities through MMR.
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Dashboard needs a name that fits the swarm — throw out your direction (Greek/modern) and I'll write the project scaffold while you decide.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Drop the raw Telegram channel content in here and I'll score each one on signal, relevance, volume, and credibility — then tell you exactly which to keep and which to cut.
 
 ---
 

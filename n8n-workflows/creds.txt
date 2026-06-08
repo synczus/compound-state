@@ -1,0 +1,12 @@
+n8n Web UI: http://localhost:5678
+Email: admin@kestrel.io
+Password: KestrelAdmin1
+
+Available Webhooks:
+  POST /webhook/trade-signal    - Receive trade signal alerts
+  POST /webhook/agent-bridge    - Agent command routing (health|signals|status)
+
+Pre-installed Workflows:
+  🔍 System Health Monitor  - Polls services every 30 min
+  📡 Trade Signal Webhook   - Receives agent signal data
+  🤖 Agent Command Bridge   - Routes commands to workflows

@@ -1,0 +1,29 @@
+{
+  "name": "Signal Alert Webhook",
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "parameters": {
+        "path": "signal-alert",
+        "options": {},
+        "httpMethod": "POST",
+        "responseMode": "onReceived"
+      },
+      "position": [250, 300]
+    },
+    {
+      "name": "Format Message",
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "message", "value": "={{$json.symbol}}: {{$json.signal}} (score: {{$json.score}})" }
+          ]
+        }
+      },
+      "position": [450, 300]
+    }
+  ],
+  "connections": {}
+}
