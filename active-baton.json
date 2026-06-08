@@ -1,102 +1,11 @@
 {
-  "cycle_id": "hop-2026-06-07-sprint3-auto-optimize",
-  "protocol_version": "4.0",
-  "current_agent": "kairos",
-  "previous_agent": "AI Hangout Banking",
-  "stage": "intake",
-  "mission": {
-    "selected_work_item": "Meta-monitoring + self-correcting state + disaster recovery",
-    "real_goal": "Auto-optimize all compound weaknesses from Sprint 3 board",
-    "why_this_work_now": "Auto-optimize all compound weaknesses from Sprint 3 board",
-    "mission_type": "system_design",
-    "success_definition": "",
-    "non_goals": [],
-    "user_constraints": []
-  },
-  "classification": {
-    "requires_external_research": false,
-    "requires_repo_inspection": false,
-    "requires_terminal_execution": false,
-    "requires_file_changes": true,
-    "requires_runtime_verification": false,
-    "requires_risk_gate": false,
-    "requires_storage_commit": true,
-    "requires_user_confirmation": false
-  },
-  "state": {
-    "state_change": "none",
-    "known_current_state": [
-      "Baton initialized for new cycle"
-    ],
-    "verified_state": [],
-    "unverified_state": [],
-    "changed_state": [],
-    "proof_of_change": []
-  },
-  "facts": [],
-  "inferences": [],
-  "guesses_or_unverified": [],
-  "evidence": [],
-  "blockers": [],
-  "open_loops": [],
-  "agent_output": {
-    "summary": "",
-    "key_findings": [],
-    "risks": [],
-    "recommendations": [],
-    "do_not_touch": [],
-    "commands_or_actions": [],
-    "verification_steps": [],
-    "proof_required": []
-  },
-  "highest_leverage_move": {
-    "move": "",
-    "why": "",
-    "owner": "",
-    "first_step": "",
-    "expected_impact": "",
-    "risk": "",
-    "reversibility": "easy"
-  },
-  "persistent_storage_update": {
-    "should_store": true,
-    "commit_authority": "AI Hangout Banking",
-    "storage_targets": {
-      "notes": [],
-      "todo": [],
-      "hlm_tracker": [],
-      "open_loops": [],
-      "decision_log": [],
-      "evidence_log": [],
-      "risk_log": [],
-      "execution_log": [],
-      "blocked_items": [],
-      "next_cycle_queue": []
-    },
-    "memory_summary": "Cycle hop-2026-06-07-sprint3-auto-optimize started by kairos: Meta-monitoring + self-correcting state + disaster recovery",
-    "do_not_store": []
-  },
-  "handoff_integrity_check": {
-    "valid_json": true,
-    "next_agent_present": true,
-    "hlm_present": true,
-    "storage_update_present": true,
-    "facts_inferences_guesses_separated": true,
-    "state_claims_have_evidence": true,
-    "open_loops_preserved": true,
-    "no_unverified_success_claims": true
-  },
-  "termination_check": {
-    "should_terminate": false,
-    "reason": "",
-    "route_to_banking": false
-  },
-  "next_agent_routing": {
-    "next_agent_name": "Dynamic \u2014 first agent needed for this mission",
-    "next_agent_role": "",
-    "reason_for_next_hop": "New cycle initialized. Route based on classification flags.",
-    "instruction_to_next_agent": "",
-    "context_to_pass_forward": "",
-    "fallback_if_rejected": "Return to AI Hangout Banking with invalid-hop note."
-  }
+  "cycle_id": "hop-auto-20260608-001",
+  "active": true,
+  "current_holder": "nemoclaw",
+  "previous_holder": "chase",
+  "topic": "Compound memory wiring + hop protocol reset",
+  "context": "Night of 2026-06-08: Chase wants all HLMs implemented. Hop was dead - two baton files out of sync. Reset to clean state. Nemoclaw holds first, then OpenClaw, Kairos, Shannon, Hermes.",
+  "build_on": "Perplexity researcher cron live. Inversion cron on Grok multi-agent. Co-creator protocol in all SOUL.mds. Credit meter shows focus.",
+  "next": "openclaw",
+  "done_when": "All 5 agents wired to AgentMemory with compaction flush. Hop cycling cleanly."
 }

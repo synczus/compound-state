@@ -248,3 +248,27 @@ ModuleNotFoundError: No module named 'httpx'
 2026-06-08 01:15:02,070 [WARNING] stderr: 2026-06-08 01:15:02,049 [INFO] kestrel.noise_gate: PURGE: Telegram_1780895702.049113 | Score: 0 | Reason: No significant markers found
 2026-06-08 01:15:02,049 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
 
+2026-06-08 01:20:01,141 [INFO] trigger_autohop | force=False | signal=Chase | Sudo one-liner — run `sudo loginctl enable-linger synczus` once. Keeps services alive after logout.
+2026-06-08 01:20:01,141 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py Chase | Sudo one-liner — run `sudo loginctl enable-linger synczus` once. Keeps services alive after logout. --chain all
+2026-06-08 01:20:01,254 [INFO] done | rc=1 status=success | stdout=639 chars | stderr=227 chars
+2026-06-08 01:20:01,254 [WARNING] stderr: 2026-06-08 01:20:01,233 [INFO] kestrel.noise_gate: PURGE: Telegram_1780896001.23326 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:20:01,234 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:20:01,283 [INFO] trigger_autohop | force=False | signal=Chase | IBKR credentials — TWS_USERID, TWS_PASSWORD. Only needed if we switch from Coinbase to IBKR.
+2026-06-08 01:20:01,283 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py Chase | IBKR credentials — TWS_USERID, TWS_PASSWORD. Only needed if we switch from Coinbase to IBKR. --chain all
+2026-06-08 01:20:01,397 [INFO] done | rc=1 status=success | stdout=632 chars | stderr=228 chars
+2026-06-08 01:20:01,397 [WARNING] stderr: 2026-06-08 01:20:01,372 [INFO] kestrel.noise_gate: PURGE: Telegram_1780896001.372853 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:20:01,373 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:25:01,461 [INFO] trigger_autohop | force=False | signal=⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be
+2026-06-08 01:25:01,461 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py ⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-... --chain all
+2026-06-08 01:25:01,575 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-08 01:25:01,575 [WARNING] stderr: 2026-06-08 01:25:01,551 [INFO] kestrel.noise_gate: PURGE: Telegram_1780896301.551223 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:25:01,551 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:25:01,604 [INFO] trigger_autohop | force=False | signal=⚪ striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+2026-06-08 01:25:01,604 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py ⚪ striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00 --chain all
+2026-06-08 01:25:01,713 [INFO] done | rc=1 status=success | stdout=597 chars | stderr=228 chars
+2026-06-08 01:25:01,713 [WARNING] stderr: 2026-06-08 01:25:01,693 [INFO] kestrel.noise_gate: PURGE: Telegram_1780896301.693239 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:25:01,693 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+

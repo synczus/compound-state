@@ -1,11 +1,110 @@
 {
-  "cycle_id": "full-squad-20260608-001",
-  "active": true,
-  "current_holder": "nemoclaw",
-  "previous_holder": "chase",
-  "topic": "Full squad activation + sub-agent efficiency",
-  "context": "Chase activated ALL 5 agents: Shannon (stress tests + group), Hermes (budget/watchdog reporting), Kairos (scout), Nemoclaw (identity), OpenClaw (orchestration). Sub-agent spawning is now policy for any task >3 tool calls. Target: ~60% context bloat reduction. n8n running with fixed encryption key — needs Chase signup. Execution layer (Freqtrade + MMR) paper-ready — needs Bybit/IBKR keys.",
-  "build_on": "Tone shift complete (all agents cuss + emoji). Humor skill live. inside-jokes.md seeded. Perplexity feeder bumped to 5min. Hub rebuilt without numbers. ~/hub/ maps everything.",
-  "next": "chase",
-  "done_when": "n8n signed up + API key created. Bybit + IBKR keys provided. Stress test results posted by Shannon."
+  "cycle_id": "hop-auto-20260608-001",
+  "protocol_version": "4.0",
+  "current_agent": "nemoclaw",
+  "previous_agent": "chase",
+  "stage": "intake",
+  "mission": {
+    "selected_work_item": "Wire AgentMemory across all 5 agents + fix hop protocol",
+    "real_goal": "Persistent cross-agent memory with compaction flush hooks and clean hop cycling",
+    "why_this_work_now": "AgentMemory running empty on port 3111. Hop protocol dead with mismatched baton files.",
+    "mission_type": "system_design",
+    "success_definition": "All 5 agents have agentmemory tools, compaction flush at 40K tokens, hop cycling every 15 min",
+    "non_goals": [],
+    "user_constraints": []
+  },
+  "classification": {
+    "requires_external_research": false,
+    "requires_repo_inspection": false,
+    "requires_terminal_execution": true,
+    "requires_file_changes": true,
+    "requires_runtime_verification": true,
+    "requires_risk_gate": false,
+    "requires_storage_commit": true,
+    "requires_user_confirmation": false
+  },
+  "state": {
+    "state_change": "reset",
+    "known_current_state": [
+      "Two baton files out of sync",
+      "Hop sequence marked complete since June 7",
+      "AgentMemory running on :3111 with zero data"
+    ],
+    "verified_state": [],
+    "unverified_state": [],
+    "changed_state": ["Reset both baton files to matching state"],
+    "proof_of_change": []
+  },
+  "facts": [],
+  "inferences": [],
+  "guesses_or_unverified": [],
+  "evidence": [],
+  "blockers": [],
+  "open_loops": [
+    "Wire AgentMemory to all 5 agent configs",
+    "Set compaction flush at 40K token soft threshold",
+    "Tune baton auto-cycle to 15 min",
+    "Fix Striker status in cycle-state",
+    "Create shared-memory namespace for cross-agent facts"
+  ],
+  "agent_output": {
+    "summary": "Hop protocol reset. Baton files synced. Ready for execution.",
+    "key_findings": [],
+    "risks": [],
+    "recommendations": [],
+    "do_not_touch": [],
+    "commands_or_actions": [],
+    "verification_steps": [],
+    "proof_required": []
+  },
+  "highest_leverage_move": {
+    "move": "Wire AgentMemory to all 5 agents with compaction flush",
+    "why": "Chase explicitly wants persistent memory across all agents for compound-level recall",
+    "owner": "nemoclaw",
+    "first_step": "Add agentmemory config block to main OpenClaw openclaw.json",
+    "expected_impact": "All agents share persistent memory with importance scoring",
+    "risk": "low",
+    "reversibility": "easy"
+  },
+  "persistent_storage_update": {
+    "should_store": false,
+    "commit_authority": "nemoclaw",
+    "storage_targets": {
+      "notes": [],
+      "todo": [],
+      "hlm_tracker": [],
+      "open_loops": [],
+      "decision_log": [],
+      "evidence_log": [],
+      "risk_log": [],
+      "execution_log": [],
+      "blocked_items": [],
+      "next_cycle_queue": []
+    },
+    "memory_summary": "",
+    "do_not_store": []
+  },
+  "handoff_integrity_check": {
+    "valid_json": true,
+    "next_agent_present": true,
+    "hlm_present": true,
+    "storage_update_present": true,
+    "facts_inferences_guesses_separated": true,
+    "state_claims_have_evidence": true,
+    "open_loops_preserved": true,
+    "no_unverified_success_claims": true
+  },
+  "termination_check": {
+    "should_terminate": false,
+    "reason": "",
+    "route_to_banking": false
+  },
+  "next_agent_routing": {
+    "next_agent_name": "openclaw",
+    "next_agent_role": "Config and orchestration",
+    "reason_for_next_hop": "OpenClaw handles config changes for the main gateway",
+    "instruction_to_next_agent": "",
+    "context_to_pass_forward": "",
+    "fallback_if_rejected": ""
+  }
 }

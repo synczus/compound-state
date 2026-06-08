@@ -73,18 +73,22 @@ cmd_start() {
 import json
 d = {
     'active': True,
-    'chain': ['kairos', 'grok', 'openclaw'],
+    'chain': ['nemoclaw', 'openclaw', 'kairos', 'shannon', 'hermes'],
     'current_step': 0,
     'query': '''${query}''',
     'requested_by': '${by}',
     'kairos_done': False,
-    'grok_done': False,
+    'nemoclaw_done': False,
+    'shannon_done': False,
+    'hermes_done': False,
     'openclaw_done': False,
     'complete': False,
     'auto': True,
     'idle_since': '$ts',
     'kairos_message': '',
-    'grok_message': '',
+    'nemoclaw_message': '',
+    'shannon_message': '',
+    'hermes_message': '',
     'openclaw_message': '',
     'last_updated': '$ts'
 }
@@ -101,18 +105,22 @@ cmd_reset() {
 import json
 d = {
     'active': False,
-    'chain': ['kairos', 'grok', 'openclaw'],
+    'chain': ['nemoclaw', 'openclaw', 'kairos', 'shannon', 'hermes'],
     'current_step': 0,
     'query': '',
     'requested_by': '',
     'kairos_done': False,
-    'grok_done': False,
+    'nemoclaw_done': False,
+    'shannon_done': False,
+    'hermes_done': False,
     'openclaw_done': False,
     'complete': True,
     'auto': True,
     'idle_since': '$ts',
     'kairos_message': '',
-    'grok_message': '',
+    'nemoclaw_message': '',
+    'shannon_message': '',
+    'hermes_message': '',
     'openclaw_message': '',
     'last_updated': '$ts'
 }

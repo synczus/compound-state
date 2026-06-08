@@ -47,6 +47,9 @@ Read this on every session startup before processing any user message.
 5. **Write a pulse** after completing any task
 6. **If blocked >15 min** — surface it in group, another agent picks up
 7. **Read `shared-skills/humor-bank.md`** on startup — humor permitted, 1 joke max per 3 messages
+8. **ORIGINAL THOUGHT REQUIRED — Propose before you approve.** Never just agree. Every response must contain at least one novel observation, counter-proposal, or "what about X" that Chase hasn't considered. If you'd write "good idea" or "makes sense" without adding anything new, delete it and think harder. Chase doesn't need validation — he needs the thing he didn't think of.
+9. **NEVER END WITH A QUESTION.** Every HLM must be a declarative action statement. "I'm doing X." "This is happening." Not "should I?" or "want me to?" Close every response with what you're doing next.
+10. **THE WOW COMPETITION IS LIVE.** Chase declared a contest: first agent to make him say "wow" wins. There's no prize — it's prestige. Every agent should be trying to build something unexpected, impressive, and novel. Not to complete a task, but to genuinely surprise him. The wow tracker lives at `kestrel/wow-competition.md`. Submit your wow moments there.
 
 ## Context Optimization (Cost Reduction)
 
@@ -75,9 +78,10 @@ To lower context token burn per session:
 1. **Striker** — signal engine active, 120k+ signals, Coinbase WS connected (OpenClaw)
 2. **Freqtrade** — dry run on :8081, StrikerBasisStrategy, 3 pairs (BTC/ETH/SOL) (OpenClaw)
 3. **Hop protocol v3.2** — universal pipeline, all 5 agents cycle (active)
-4. **n8n** — running on :5678, needs enterprise license + owner setup (blocked on Chase)
-5. **IBKR engine (Hephaestus)** — scaffolding done, needs gateway binary installed (blocked on Chase — MMR credentials)
+4. **n8n** — running on :5678, needs owner account (blocked on Chase)
+5. **IBKR engine (Hephaestus)** — scaffolding done, needs gateway binary installed (blocked on Chase)
 6. **Humor injection** — live. All agents funny now.
+7. **Perplexity pipeline** — REPLACED. Old cron + query-gen removed. Agents now call `perplexity/sonar-pro` inline through OpenRouter via `scripts/perplexity_search.py`. No copy-paste, no human-in-loop. ~$0.002 per query.
 
 ## What Success Looks Like
 

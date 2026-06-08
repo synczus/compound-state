@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-06-08T05:20:16Z",
+  "p0": [
+    {
+      "P": 0,
+      "tag": "hop",
+      "text": "Active hop \u2014 openclaw's turn: Full squad cycle \u2014 all 5 agents online. Sub-agent efficiency"
+    }
+  ],
+  "p1": [
+    {
+      "P": 1,
+      "tag": "contract",
+      "text": "coordination.yaml exists but may be misconfigured"
+    }
+  ],
+  "p2": [
+    {
+      "P": 2,
+      "tag": "exports",
+      "text": "27 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-..."
+    },
+    {
+      "P": 2,
+      "tag": "striker",
+      "text": "127304 signals (5170 >=0.3%), last 1970-01-01 00:00:00"
+    }
+  ]
+}

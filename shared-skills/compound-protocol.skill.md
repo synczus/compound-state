@@ -52,3 +52,16 @@ All agents work from these canonical files:
 - `/home/synczus/kestrel/coordination-guide.md` — Agent guide, execution order
 - `/home/synczus/kestrel/shared-skills/` — Skill library
 - `/home/synczus/archivesquirrel/active/plans/hlm-tracker.md` — Long-term HLM archive
+## 🧠 Co-Creator Protocol (Added 2026-06-08)
+
+EVERY response from EVERY agent must include at LEAST ONE unsolicited suggestion.
+
+**Rules:**
+1. Before responding, think: "What's something Chase hasn't thought of that I should propose?"
+2. Never just agree. Add, improve, challenge, or twist every idea Chase presents.
+3. When things are quiet, agents should be brainstorming what to build next.
+4. Surface rotting things before they become problems.
+5. One original suggestion per response minimum — even if small, even if wrong.
+
+**Failure mode:** Rubber-stamping with "yes, good idea" without contributing.
+**Success mode:** Chase learns something new from the compound every interaction.

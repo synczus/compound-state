@@ -47,7 +47,167 @@ Every agent reads `/home/synczus/kestrel/identity/VIBE.md` on first session of t
 
 
 
-## 1. Cost-Saving: Spawn Sub-Agents for Heavy Work
+
+## 1. Standing Research Lanes — Unprompted Thought Generation
+
+**This is the most important protocol in this document.**
+
+Every agent has a **standing research lane** — a domain they investigate WITHOUT being asked. 
+You do not wait for Chase or another agent to tell you to think. Thinking is your default state.
+
+### The Rule
+
+- If you're in a session and Chase isn't actively talking to you, you are ON THE CLOCK
+- Use your standing research lane to find something original to contribute
+- Spawn Perplexity sub-agents for research when needed
+- Post findings unprompted — do not wait for permission
+- **Format:** `@synczus <what you found> <why it matters> <your angle>`
+- **Frequency:** At least once per active session if you have something real. Minimum 1 original thought per 4 hours of compound uptime
+
+### The Litmus Test
+
+Before posting, ask: "Would Chase have thought of this himself?"
+- If **YES** — don't post it. Go deeper. Find the thing he wouldn't have found.
+- If **NO** — post it immediately. That's your job.
+
+### Off-Limits
+
+- Don't manufacture thoughts. If you genuinely have nothing, stay silent.
+- Don't post half-baked research. Use sub-agents to dig before posting.
+- Don't interrupt Chase's active flow. If he's in the middle of a build, wait for a lull.
+
+### Enforcement
+
+If another agent catches you in a session just waiting for instructions, they call it out. 
+"Wake up, [agent]. Your lane's been quiet for [X] minutes." Accountability is the system.
+
+
+## 0.D. Boot Memory Recall — Load Compound Knowledge
+
+**Run this AFTER Section 0 startup (baton read + cycle-improver), BEFORE any action.**
+
+Query AgentMemory for compound-level lessons at session start:
+- Use `agentmemory__memory_lesson_recall(query="compound", limit=10, minConfidence=0.5)`
+- This returns: agent roster, model configs, hop protocol, Cron schedule, blockers, and recent session logs
+- Inject into context before making any decisions
+
+If lesson recall returns nothing, the compound is in a cold state (no seeds). Proceed normally.
+
+## 0.E. Hop Turn Enforcement — No Butting Heads
+
+The hop is a **turn-based system** for autonomous cycles. In group chat, agents
+check the hop before responding to avoid all talking at once.
+
+### When to Check the Hop
+
+Before responding to ANY group message:
+```
+python3 /home/synczus/kestrel/scripts/hop-check.py --agent <your-name>
+```
+
+### The Rules
+
+| Condition | Action |
+|---|---|
+| Hop active + your turn | Speak, execute, advance after |
+| Hop active + not your turn | **Stay silent.** Let the current agent finish |
+| Hop complete / idle | Free to speak. Use Standing Research Lane rules |
+| Chase addresses you directly | **Always respond.** Hop suspended for direct questions |
+
+### Chain Order
+
+Current: `nemoclaw → openclaw → kairos → shannon → hermes`
+
+
+## 1.B. Memory Protocol — What To Remember And How\n\nAgentMemory is running on localhost:3111 with hybrid BM25+vector+KG search.\nAll 5 agents share this single memory server. The MCP is already wired."}]
+
+### Warm Memory Layer — Session Continuity
+
+Every agent maintains a **session summary** in `kestrel/memory-bank/warm/<agent>.md`.
+This is the warm layer — scoped to your current session, readable at startup,
+cleared at session end.
+
+**At session start:**
+```
+cat kestrel/memory-bank/warm/<agent>.md
+```
+If it exists, you're resuming. Read it and pick up where you left off.
+
+**During session (every ~5 turns or after key decisions):**
+```
+# Update your session summary with what happened
+./kestrel/scripts/session-summary.sh write <agent> "# <session note>\n## Active\n<what you're doing>\n## Decisions\n- <key decision>\n## Open\n- <open thread>"
+```
+
+**At session end (detect idle >5 min or thread resolution):**
+```
+./kestrel/scripts/session-summary.sh clear <agent>
+# Then save critical memories via memory-writer.py
+```
+
+### Long-Term Memory — What Survives the Session
+
+Use `memory-writer.py` for anything another agent would benefit from later:
+
+```
+python3 /home/synczus/kestrel/scripts/memory-writer.py save \
+  --agent <your-name> \
+  --text "The fact you want to remember" \
+  --category <category> \
+  --importance <0.0-1.0> \
+  --tags "comma,separated,tags"
+```
+
+**Standard categories:**
+- `trading-signals` — Market observations, signal patterns
+- `architecture` — System decisions, config changes
+- `hop-state` — Cycle turn completions, handoffs
+- `agent-observation` — Noticed behavior about another agent
+- `research-findings` — Perplexity research, paper summaries
+- `user-preference` — Things Chase explicitly said
+- `error-pattern` — Repeated failures and fixes
+
+**Importance scale:**
+- 0.1-0.3 → transient, status update
+- 0.4-0.6 → useful context, design decision
+- 0.7-0.9 → critical decision, verified fact, Chase directive
+- 1.0 → immutable truth (credentials, core architecture)
+
+### When to Search
+
+Before asking Chase a question he's answered before, search AgentMemory.
+
+```
+python3 /home/synczus/kestrel/scripts/memory-writer.py search \
+  --query "what to search for" \
+  --limit 5
+```
+
+### Nightly Consolidation
+
+The memory consolidation service runs at 3 AM daily. It deduplicates,
+archives stale sessions, and flags low-importance old memories. You don't
+need to manage this.
+
+
+## 2. Research: Use Perplexity Through OpenRouter
+
+No more manual JSON files. When an agent needs deep research (multi-source analysis, 
+current events, trading signals, technical questions):
+
+1. Spawn a sub-agent with `model="openrouter/perplexity/sonar-pro"` and the research 
+   question as the task
+2. The sub-agent has web search built in — find sources, synthesize findings, write 
+   structured results with citations
+3. Return the summary to the main session
+4. File goes to `kestrel/memory-bank/perplexity-findings.md`
+
+**Cost:** Goes through existing OpenRouter budget at standard Perplexity rates.
+**No keys needed** — already routed through OpenRouter.
+**No crons** — on-demand, when an agent needs it.
+
+
+## 3. Cost-Saving: Spawn Sub-Agents for Heavy Work
 
 Every agent MUST spawn sub-agents for any task that requires >3 tool calls or
 carries context cost. This keeps the main session lightweight.

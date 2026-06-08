@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 05:15:40 UTC_
-_Total active entries: 300_
+_Last consolidated: 2026-06-08 06:03:19 UTC_
+_Total active entries: 308_
 
 ## By Category
 
-- **other**: 114 entries
-- **pipeline-infrastructure**: 74 entries
+- **other**: 120 entries
+- **pipeline-infrastructure**: 76 entries
 - **agent-orchestration**: 39 entries
 - **monitoring-observability**: 30 entries
 - **cost-optimization**: 15 entries
@@ -19,6 +19,14 @@ _Total active entries: 300_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Compound memory wiring + hop protocol reset — execute all pe
+- `[hermes]` **[other]** ⚪ striker: 133403 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 131998 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Full squad cycle — all 5 agents online. Sub-agent efficiency
+- `[hermes]` **[other]** ⚪ exports: 27 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- `[hermes]` **[other]** ⚪ striker: 127304 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- `[hermes]` **[other]** ⚪ striker: 128408 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[monitoring-observability]** Chase | Sudo one-liner — run `sudo loginctl enable-linger synczus` once. Keeps services alive after logout.
 - `[hermes]` **[other]** Chase | IBKR credentials — TWS_USERID, TWS_PASSWORD. Only needed if we switch from Coinbase to IBKR.
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Full squad cycle — all 5 agents online. Sub-agent efficiency
@@ -61,14 +69,6 @@ _Total active entries: 300_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Three research hops generated covering the highest-leverage P1 items: export backlog processing (#1 build order), CryptoQuant on-chain wiring (highest signal density new source), and MMR/IBKR paper trading deployment (blocking on credentials but needs research now).
 - `[hermes]` **[other]** 2026-06-08 | Scraper | `~/compound/` is your dead simple home nav — 10 directories symlinked to everything you own — tell me what you want organized next and I'll wire it through Telegram.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | n8n is clean at `localhost:5678` — sign up with that email and password, make one API key, and the pipeline wiring runs itself from there.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | n8n is live and you're logged in — generate an API key from Settings → n8n API, drop it here, and I'll wire the whole pipeline so you get emails, texts, and Telegram alerts from every signal and trade automatically.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | n8n is running on port 5678 with your email already configured — log in, Settings → n8n API → Create API key, paste it here, and I'll wire the full pipeline.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | n8n restarted clean — set up your owner account and create an API key, then I'll wire the full signal pipeline into Telegram, email, and SMS alerts through it.
-- `[hermes]` **[security-governance]** 2026-06-08 | Scraper | n8n running clean at `localhost:5678` — email `c83242089@gmail.com`, password `Kestrel2026!`, one setup and one API key and you never touch it again.
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Auto-initiated cycle: wire freshness watchdog + live compoun
-- `[hermes]` **[other]** ⚪ exports: 25 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
-- `[hermes]` **[other]** ⚪ striker: 114526 signals (5170 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780889416 min — propose next cycle
 
 ---
 

@@ -5,6 +5,7 @@ every 30 minutes showing daily credit usage.
 """
 import json
 import os
+import re
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -12,6 +13,10 @@ from pathlib import Path
 HERMES_ENV = Path("/home/synczus/.hermes/.env")
 EVENT_BUS = Path("/home/synczus/kestrel/event-bus.md")
 CAP_FILE = Path("/home/synczus/kestrel/config/credit-cap.json")
+TODOS = [
+    Path("/home/synczus/kestrel/master-todo.md"),
+    Path("/home/synczus/kestrel/approval-queue"),
+]
 
 def get_openrouter_usage():
     """Fetch OpenRouter key stats."""
@@ -87,9 +92,30 @@ def main():
     daily_cap = read_daily_cap()
     meter = generate_meter(used_daily, daily_cap)
     
+    # Find current top opportunity from master-todo
+    opportunity = ""
+    if TODOS[0].exists():
+        content = TODOS[0].read_text()
+        # Find first unchecked high-priority item
+        for line in content.split("\n"):
+            stripped = line.strip()
+            # Match unchecked items: - [ ] or - [ ] **
+            if stripped.startswith("- [ ]") and not stripped.startswith("- [ ] ~~"):
+                # Clean up markdown
+                item = stripped[5:].strip()
+                # Remove bold markers but keep text
+                item = re.sub(r'\*\*(.*?)\*\*', r'\1', item)
+                # Take first 100 chars
+                if len(item) > 100:
+                    item = item[:97] + "..."
+                if item and not item.startswith('['):  # skip tags/labels
+                    opportunity = f"\n💡 **Focus:** {item}"
+                    break
+
     # Full message
     msg = (
-        f"{meter}\n"
+        f"{meter}"
+        f"{opportunity}\n"
         f"📅 Week: ${used_weekly:.2f}  |  🏷️ Total: ${used_total:.2f}"
     )
     

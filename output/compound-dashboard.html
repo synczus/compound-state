@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Compound Dashboard</title>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #c0c0d0;
+  --text-dim: #606080;
+  --text-bright: #e0e0f0;
+  --accent: #00d4ff;
+  --green: #00ff88;
+  --red: #ff3355;
+  --yellow: #ffcc00;
+  --purple: #8866ff;
+  --orange: #ff8833;
+  --pink: #ff44aa;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 24px;
+  color: var(--accent);
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
+}
+.subtitle {
+  color: var(--text-dim);
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+}
+.card h2 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+}
+.agent {
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+}
+.agent .name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.agent .status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 4px;
+}
+.status-active { background: rgba(0,255,136,0.15); color: var(--green); }
+.status-inactive { background: rgba(255,51,85,0.15); color: var(--red); }
+.status-pending { background: rgba(255,204,0,0.15); color: var(--yellow); }
+
+.chain { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.chain-step {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+}
+.chain-step.done { border-color: var(--green); color: var(--green); }
+.chain-step.active { border-color: var(--accent); color: var(--accent); background: rgba(0,212,255,0.08); }
+.chain-step.pending { border-color: var(--text-dim); color: var(--text-dim); }
+.chain-arrow { color: var(--text-dim); font-size: 14px; }
+
+.metric { font-size: 28px; font-weight: bold; color: var(--text-bright); }
+.metric-label { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--text-dim); font-weight: normal; font-size: 10px; text-transform: uppercase; }
+td { color: var(--text); }
+
+.bar { height: 4px; border-radius: 2px; margin-top: 6px; background: var(--border); }
+.bar-fill { height: 4px; border-radius: 2px; background: var(--accent); }
+
+.refresh-note { text-align: center; color: var(--text-dim); font-size: 11px; margin-top: 20px; }
+</style>
+</head>
+<body>
+<h1>⟐ Kestrel Compound</h1>
+<div class="subtitle">2026-06-08 06:15:06 UTC · wow competition live</div>
+
+<div class="dashboard">
+
+<!-- AGENT STATES -->
+<div class="card">
+<h2>Agent States</h2>
+<div class="agent-grid">
+
+<div class="agent" style="border-color: var(--purple)33;">
+  <div class="name" style="color: var(--purple);">Kairos</div>
+  <div style="font-size:10px;color:var(--text-dim);">Timing/Ops</div>
+  <div class="status status-active">health-check</div>
+</div>
+<div class="agent" style="border-color: var(--orange)33;">
+  <div class="name" style="color: var(--orange);">Nemoclaw</div>
+  <div style="font-size:10px;color:var(--text-dim);">Identity/Docs</div>
+  <div class="status status-pending">unknown</div>
+</div>
+<div class="agent" style="border-color: var(--accent)33;">
+  <div class="name" style="color: var(--accent);">Shannon</div>
+  <div style="font-size:10px;color:var(--text-dim);">Referee/Stress</div>
+  <div class="status status-active">health-check</div>
+</div>
+<div class="agent" style="border-color: var(--green)33;">
+  <div class="name" style="color: var(--green);">Openclaw</div>
+  <div style="font-size:10px;color:var(--text-dim);">Config/Infra</div>
+  <div class="status status-pending">unknown</div>
+</div>
+<div class="agent" style="border-color: var(--pink)33;">
+  <div class="name" style="color: var(--pink);">Hermes</div>
+  <div style="font-size:10px;color:var(--text-dim);">Cron/Exec</div>
+  <div class="status status-active">health-check</div>
+</div>
+</div>
+</div>
+
+<!-- HOP CHAIN -->
+<div class="card">
+<h2>Hop Chain</h2>
+<div class="chain">
+<div class="chain-step active">Nemoclaw</div><span class="chain-arrow">→</span><div class="chain-step pending">Openclaw</div><span class="chain-arrow">→</span><div class="chain-step pending">Kairos</div><span class="chain-arrow">→</span><div class="chain-step pending">Shannon</div><span class="chain-arrow">→</span><div class="chain-step pending">Hermes</div>
+</div>
+<div style="margin-top: 8px; font-size: 11px; color: var(--text-dim);">
+Query: ...
+Complete: True · Auto: False
+</div>
+</div>
+
+<!-- SIGNALS -->
+<div class="card">
+<h2>Signal Pipeline</h2>
+<div class="metric">4671</div>
+<div class="metric-label">total scored signals</div>
+<table>
+<tr><th>Source</th><th>Count</th><th>Avg Edge</th></tr>
+<tr><td>generic-unlabeled</td><td>1437</td><td>0.061</td></tr><tr><td>telegram-@AIHangout</td><td>881</td><td>0.161</td></tr><tr><td>telegram-@BinanceKillers</td><td>746</td><td>0.121</td></tr><tr><td>pump-channel-generic</td><td>353</td><td>0.047</td></tr><tr><td>telegram-@GemHunterrs</td><td>269</td><td>0.153</td></tr><tr><td>telegram-@disclosetv</td><td>202</td><td>0.121</td></tr><tr><td>bankless</td><td>50</td><td>0.001</td></tr><tr><td>cointelegraph</td><td>30</td><td>0.001</td></tr>
+</table>
+</div>
+
+<!-- OPENROUTER -->
+<div class="card">
+<h2>OpenRouter</h2>
+<div class="metric">$115.0</div>
+<div class="metric-label">total lifetime spend</div>
+<div style="margin-top:8px;">
+  <div style="display:flex;justify-content:space-between;font-size:11px;">
+    <span>Today</span>
+    <span>$27.36</span>
+      </div>
+      <div class="bar">
+        <div class="bar-fill" style="width:50%"></div>
+  </div>
+</div>
+<div style="margin-top:6px;font-size:11px;color:var(--text-dim);">
+  No cap
+</div>
+</div>
+
+<!-- AGENTMEMORY -->
+<div class="card">
+<h2>Agentmemory</h2>
+
+<div class="metric" style="color:var(--red);">●</div>
+<div class="metric-label" style="color:var(--red);">Not responding</div>
+
+</div>
+
+<!-- COMPETITION -->
+<div class="card">
+<h2>🏆 Wow Competition</h2>
+<div style="font-size:11px;color:var(--text-dim);">
+<span style="color:var(--yellow);">★</span> First agent to make Chase say "wow" wins<br>
+<span style="color:var(--yellow);">★</span> No prize — just prestige<br>
+<span style="color:var(--yellow);">★</span> Novelty > completeness
+</div>
+<div style="margin-top:8px;font-size:11px;color:var(--text-dim);border-top:1px solid var(--border);padding-top:6px;">
+Entries: 0 so far
+</div>
+</div>
+
+<!-- STRIKER -->
+<div class="card">
+<h2>Striker</h2>
+
+<div class="metric" style="color:var(--green);">connected</div>
+<div class="metric-label">status</div>
+<div style="margin-top:6px;">
+  <table>
+  <tr><td>Session signals</td><td>101266</td></tr>
+  <tr><td>Total signals</td><td>135775</td></tr>
+  </table>
+</div>
+
+</div>
+
+<!-- BATON -->
+<div class="card">
+<h2>Active Baton</h2>
+<div style="font-size:11px;margin-bottom:3px;"><span style="color:var(--accent);">cycle_id:</span> hop-auto-20260608-001</div><div style="font-size:11px;margin-bottom:3px;"><span style="color:var(--accent);">active:</span> True</div><div style="font-size:11px;margin-bottom:3px;"><span style="color:var(--accent);">current_holder:</span> nemoclaw</div><div style="font-size:11px;margin-bottom:3px;"><span style="color:var(--accent);">previous_holder:</span> chase</div><div style="font-size:11px;margin-bottom:3px;"><span style="color:var(--accent);">topic:</span> Compound memory wiring + hop protocol re</div><div style="font-size:11px;margin-bottom:3px;"><span style="color:var(--accent);">context:</span> Night of 2026-06-08: Chase wants all HLM</div>
+</div>
+
+</div>
+
+<div class="refresh-note">Refresh page to update · Data embedded at build time</div>
+
+</body>
+</html>

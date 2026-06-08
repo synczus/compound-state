@@ -45,4 +45,20 @@ Event Bus — short-term signal memory
 2026-06-08 04:41 UTC | credit-meter | $17.71/50.00 today2026-06-08T04:50:57Z | state-probe | Striker=offline WolfWatch=online MetaAge=1529s
 2026-06-08T04:51:55Z | state-probe | Striker=offline WolfWatch=online MetaAge=1587s
 
-2026-06-08 05:10 UTC | credit-meter | $19.84/50.00 today
+2026-06-08 05:10 UTC | credit-meter | $19.84/50.00 today2026-06-08T05:20:09Z | state-probe | Striker=offline WolfWatch=online MetaAge=3281s
+
+2026-06-08 05:24 UTC | meta-monitor | All crons and services healthy
+2026-06-08 05:27 UTC | business-pulse | 📊 BTC $62581 | ETH $1651.38 | SOL $65.28 | Striker: connected | Signals: 127946 | Board: 0 done, 6 pending. Top: none
+2026-06-08 05:40 UTC | credit-meter | $22.47/50.00 today
+2026-06-08 05:46 UTC | credit-meter | $23.01/50.00 today2026-06-08T05:50:07Z | state-probe | Striker=offline WolfWatch=online MetaAge=1531s
+[2026-06-08T06:07:59.993246+00:00] | [WOLFWATCH] | [INFO] | Signal Intel: BTC-USD down: 🤖 **Signal Intel** — Autonomous Analysis
+📉 **BTC-USD down**
+• 14 signals @ 85.0% avg confidence
+• Avg move: 1.59%
+• Avg price: $71353.01
+• Score: 11.9
+
+_50 high-confidence signals analyzed_
+[2026-06-08T06:07:59.993325+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Signal Intel: BTC-USD down: failed or unconfigured
+
+2026-06-08 06:10 UTC | credit-meter | $27.00/50.00 today

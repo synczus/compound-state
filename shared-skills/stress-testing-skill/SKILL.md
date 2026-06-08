@@ -74,6 +74,8 @@ k6 scripts in `/home/synczus/kestrel/scripts/load-tests/`
 | k6 Load Test | `/home/synczus/kestrel/scripts/load-tests/paperclip-api.js` | Paperclip API performance test |
 | Backtrader Bridge | `/home/synczus/kestrel/scripts/striker-backtrader-bridge.py` | Backtest Striker signals against historical data |
 | Freqtrade Bridge | `/home/synczus/kestrel/freqtrade/` | Live paper-trading with Striker signals |
+| Inversion Cron | `/home/synczus/kestrel/scripts/inversion-cron.sh` | 10-min stress test of active work items (see Inversion Cron section) |
+| Perplexity Search | `/home/synczus/kestrel/scripts/perplexity_search.py` | Inline web-grounded research via OpenRouter (see `references/perplexity-inline-research.md`) |
 
 ## Agent Workflows
 
@@ -147,6 +149,62 @@ Monitor: cpu load, memory pressure, OOM scores, swap usage, disk I/O wait, netwo
 - **High memory** → `ps aux --sort=-%mem | head`, check OOM scores
 - **Socket limits** → `ss -s`, `/proc/sys/net/core/somaxconn`
 - **API slow** → `k6 run` with increasing VUs until p95 degrades
+
+### Inversion Cron: Automated Assault Testing
+
+**Pattern:** Every 10 minutes, a cron job reads the active work item, calls Perplexity to attack its assumptions, and writes a pulse. This pressure-tests the compound's current direction without human intervention.
+
+#### Setup
+
+```bash
+# 1. Create the inversion cron script
+cat > /home/synczus/kestrel/scripts/inversion-cron.sh << 'EOF'
+#!/bin/bash
+HOP_FILE="/home/synczus/kestrel/cycle-state/hop-sequence.json"
+SCRIPT="/home/synczus/kestrel/scripts/perplexity_search.py"
+PULSES="/home/synczus/kestrel/agent-pulses/$(date +%Y-%m-%d)"
+mkdir -p "$PULSES"
+QUERY=$(python3 -c "import json; h=json.load(open('$HOP_FILE')); print(h.get('query','No active work item'))")
+INVERSION=$(python3 "$SCRIPT" "Inversion analysis: The compound is working on '$QUERY'. Attack every assumption. What's wrong? What's overlooked? What should they do instead?")
+TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+echo "$TIMESTAMP | inversion-cron | $INVERSION" >> "$PULSES/inversion-pulse.md"
+echo "Inversion complete"
+EOF
+chmod +x /home/synczus/kestrel/scripts/inversion-cron.sh
+
+# 2. Add to crontab (every 10 min)
+(crontab -l 2>/dev/null; echo "*/10 * * * * cd /home/synczus/kestrel && bash scripts/inversion-cron.sh >> logs/inversion-cron.log 2>&1") | crontab -
+
+# 3. Verify
+crontab -l | grep inversion
+```
+
+#### How It Works
+
+1. **Cron fires** every 10 minutes
+2. **Script reads** `hop-sequence.json` to get the active query
+3. **Calls Perplexity** via `scripts/perplexity_search.py` with an inversion prompt: "Attack every assumption. What's wrong? What's overlooked?"
+4. **Writes pulse** to `agent-pulses/<date>/inversion-pulse.md` with timestamp and full analysis
+5. **Pulse bridge** picks it up and routes to the group every 15 min
+
+#### Inversion Prompt Template
+
+```
+"Inversion analysis: The compound is currently working on this: '{active_query}'. Attack every assumption. What's wrong with this plan? What's being overlooked? What should they be doing instead? Be blunt."
+```
+
+#### Cost
+
+~$0.002 per call (Perplexity Sonar Pro via OpenRouter). ~$0.29/day at 10-min intervals.
+
+#### Pitfalls
+
+- **Stale hop state** — If the hop-sequence.json query field isn't updated, the inversion attacks an irrelevant target. Keep the hop baton current.
+- **Noise at night** — If no agents are working, the inversion gets boring. Optional: skip if `active: false` in hop state.
+- **Perplexity API limits** — At 10-min intervals, that's 144 calls/day. Monitor for 429s.
+- **Inversion fatigue** — If every cycle produces the same critique, the pattern IS working — agents just need to resolve the underlying issue.
+- **No retry** — The cron script doesn't retry on timeout. Wrap in a simple retry loop for production.
+- **See also:** `references/perplexity-inline-research.md` for full Perplexity integration details.
 
 ## Scoring Rules
 

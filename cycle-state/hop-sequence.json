@@ -1,22 +1,27 @@
 {
   "active": true,
   "chain": [
-    "kairos",
     "nemoclaw",
     "openclaw",
+    "kairos",
     "shannon",
     "hermes"
   ],
-  "current_step": 2,
-  "query": "Full squad cycle — all 5 agents online. Sub-agent efficiency active.",
-  "requested_by": "chase-directive",
-  "kairos_done": true,
-  "nemoclaw_done": true,
+  "current_step": 0,
+  "query": "Auto cycle \u2014 full squad sweep",
+  "requested_by": "",
+  "nemoclaw_done": false,
   "openclaw_done": false,
+  "kairos_done": false,
   "shannon_done": false,
   "hermes_done": false,
   "complete": false,
   "auto": true,
   "idle_since": "",
-  "last_updated": "2026-06-08T05:15:00Z"
+  "last_updated": "2026-06-08T06:16:30Z",
+  "nemoclaw_message": "",
+  "kairos_message": "",
+  "shannon_message": "",
+  "hermes_message": "",
+  "openclaw_message": ""
 }

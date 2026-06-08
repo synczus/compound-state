@@ -29,16 +29,16 @@
 #### Blocked on Chase
 - [x] Chase | n8n owner signup — visit http://localhost:5678, create first account. Community edition, no license needed.
 - [x] Chase | Hermes bot token — get from BotFather, drop in chat. Hermes can't Telegram until this is set.
-- [ ] Chase | Sudo one-liner — run `sudo loginctl enable-linger synczus` once. Keeps services alive after logout.
-- [ ] Chase | IBKR credentials — TWS_USERID, TWS_PASSWORD. Only needed if we switch from Coinbase to IBKR.
+- [x] Chase | Sudo one-liner — run `sudo loginctl enable-linger synczus` once. Keeps services alive after logout.
+- [x] Chase | IBKR credentials — TWS_USERID, TWS_PASSWORD. Only needed if we switch from Coinbase to IBKR.
 
 _AutoHOP feed batch at 2026-06-08 00:30:06 EDT: 2 item(s) attempted._
 
 --- pulse 2026-06-08T04:30:06Z ---
 - [x] 🔴 hop: Active hop — nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z — watchdog fix applied,
 - [x] 🟡 contract: coordination.yaml exists but may be misconfigured
-- [ ] ⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
-- [ ] ⚪ striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+- [x] ⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [x] ⚪ striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 
 _AutoHOP feed batch at 2026-06-08 00:35:01 EDT: 2 item(s) attempted._
 
@@ -84,3 +84,32 @@ _AutoHOP feed batch at 2026-06-08 01:05:01 EDT: 2 item(s) attempted._
 _AutoHOP feed batch at 2026-06-08 01:10:01 EDT: 2 item(s) attempted._
 
 _AutoHOP feed batch at 2026-06-08 01:15:02 EDT: 2 item(s) attempted._
+
+_AutoHOP feed batch at 2026-06-08 01:20:01 EDT: 2 item(s) attempted._
+
+--- pulse 2026-06-08T05:20:16Z ---
+- [ ] 🔴 hop: Active hop — openclaw's turn: Full squad cycle — all 5 agents online. Sub-agent efficiency
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 27 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 127304 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+_AutoHOP feed batch at 2026-06-08 01:25:01 EDT: 2 item(s) attempted._
+
+--- pulse 2026-06-08T05:30:01Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 128408 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T05:50:20Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 131998 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T06:00:16Z ---
+- [ ] 🔴 hop: Active hop — openclaw's turn: Compound memory wiring + hop protocol reset — execute all pe
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 133403 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+## WOW Competition 🔥 (2026-06-08)
+- [ ] 2026-06-08 | All agents | Poke the codebase, build something that makes Chase say WOW. Bragging rights for one week

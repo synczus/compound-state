@@ -11,9 +11,19 @@
       "item": "\ud83d\udd34 hop: Active hop \u2014 nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z \u2014 watchdog fix applied,",
       "ok": true
     },
+    "0f30675b96ec383a": {
+      "attempted_at": "2026-06-08T01:20:01.117897-04:00",
+      "item": "Chase | Sudo one-liner \u2014 run `sudo loginctl enable-linger synczus` once. Keeps services alive after logout.",
+      "ok": true
+    },
     "18f121f29078c960": {
       "attempted_at": "2026-06-08T01:05:01.131948-04:00",
       "item": "2026-06-08 | Chase | #8 CryptoQuant API key",
+      "ok": true
+    },
+    "2893534deabfe3c6": {
+      "attempted_at": "2026-06-08T01:20:01.259842-04:00",
+      "item": "Chase | IBKR credentials \u2014 TWS_USERID, TWS_PASSWORD. Only needed if we switch from Coinbase to IBKR.",
       "ok": true
     },
     "300d75eca8e0b15c": {
@@ -36,6 +46,11 @@
       "item": "**#5** 2026-06-08 | Kairos | Newsletter scraper adapter \u2014 RSS first (/feed), IMAP fallback, sitemap.xml last, dedupe by URL + content hash. Targets: a16z, Coinstack, Tech Buzz, Milk Road, Bankless. ~4 hrs",
       "ok": true
     },
+    "4976e66a2dd352c8": {
+      "attempted_at": "2026-06-08T01:25:01.581504-04:00",
+      "item": "\u26aa striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00",
+      "ok": true
+    },
     "6102a2e56bb78465": {
       "attempted_at": "2026-06-08T00:45:01.847551-04:00",
       "item": "2026-06-08 | OpenClaw | #13 False-positive feedback loop \u2014 wire source_feedback table",
@@ -44,6 +59,11 @@
     "65b393f0e1695f83": {
       "attempted_at": "2026-06-08T00:25:01.738119-04:00",
       "item": "2026-06-08 | Chase | **Sign up fresh** at localhost:5678 + create n8n API key + paste in chat",
+      "ok": true
+    },
+    "717894e80b5f6120": {
+      "attempted_at": "2026-06-08T01:25:01.439185-04:00",
+      "item": "\u26aa exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...",
       "ok": true
     },
     "76e3a6ceffa735b1": {
@@ -177,5 +197,5 @@
       "ok": true
     }
   },
-  "runs_today": 29
+  "runs_today": 33
 }
