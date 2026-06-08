@@ -97,3 +97,6 @@ _50 high-confidence signals analyzed_
 
 ⏱️ Duration: 73s | Cost: $0.0013
 [2026-06-08T08:01:16.025622+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Overnight Run Complete: failed or unconfigured
+2026-06-08T08:20:03Z | state-probe | Striker=offline WolfWatch=online MetaAge=3330s
+
+2026-06-08 08:24 UTC | meta-monitor | All crons and services healthy

@@ -160,3 +160,9 @@ _AutoHOP feed batch at 2026-06-08 01:25:01 EDT: 2 item(s) attempted._
 - [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
 - [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - [ ] ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T08:20:11Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 28 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
