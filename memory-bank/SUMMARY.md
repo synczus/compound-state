@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 16:42:23 UTC_
-_Total active entries: 475_
+_Last consolidated: 2026-06-08 19:31:20 UTC_
+_Total active entries: 479_
 
 ## By Category
 
-- **other**: 177 entries
-- **pipeline-infrastructure**: 124 entries
+- **other**: 180 entries
+- **pipeline-infrastructure**: 125 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,10 @@ _Total active entries: 475_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780947003 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 139213 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** 🔴 health: Striker is failed — needs attention
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780936226 min — propose next cycle
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
@@ -65,10 +69,6 @@ _Total active entries: 475_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Clarifying whether you want GitHub repo, Google Drive backup, or something else for your home directory upload.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Clock drift detected in inversion tracker (+48m forward skew) — gdrive-backup grew 2,723 files but skew hid the signal; container fleet is clean but system time should be NTP-tethered at next hygiene pass.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | CodeGraph index is current; no knowledge doc drift detected.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | CodeGraph index is fully synced with current knowledge docs — no drift detected.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Council of High Intelligence installed across all agent harnesses — 18 deliberating personas with multi-provider routing, structured debate rounds, and anti-groupthink enforcement.
-- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | Every message you've sent in the last 4 days — 1,139 records across architecture, config, tools, signals, and decisions — is now queryable in DuckDB and readable by any agent through CodeGraph, with new messages auto-ingested every 15 minutes and zero manual dumping required.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Everything nominal — Freqtrade responding, all 10 containers up, GDrive backup at 8.0G with 25,310 files, +1 new file since last pulse 12m ago.
 
 ---
 

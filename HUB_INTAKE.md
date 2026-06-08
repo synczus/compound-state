@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T17:13:05Z_
+_Generated: 2026-06-08T20:23:56Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 16:42:23 UTC_
-_Total active entries: 475_
+_Last consolidated: 2026-06-08 19:31:20 UTC_
+_Total active entries: 479_
 
 ## By Category
 
-- **other**: 177 entries
-- **pipeline-infrastructure**: 124 entries
+- **other**: 180 entries
+- **pipeline-infrastructure**: 125 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,13 +26,16 @@ _Total active entries: 475_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780947003 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 139213 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** 🔴 health: Striker is failed — needs attention
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780936226 min — propose next cycle
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 11-minute gap clean — all services nominal, no drift, no decay, pulse delivered on schedule.
 - `[hermes]` **[cost-optimization]** 2026-06-08 | Scraper | 11m gap is tight, everything nominal except Hermes agent crons have 3 paused and 1 budget-bleeding error — either clean up the dead crons or unpause the useful ones.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | `/last30days` is installed and ready — one command researches any topic across 8+ platforms with engagement-ranked synthesis, no extra config needed.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | `/last30days` skill installed and tested — pulls engagement-weighted social signals from Reddit, HN, Polymarket, X, YouTube, and GitHub, scored by real upvotes/likes/money, feeds directly into the Kestrel pipeline.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

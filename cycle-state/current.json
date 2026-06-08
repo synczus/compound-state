@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-08T17:20:01.894901+00:00",
+  "timestamp": "2026-06-08T20:30:02.010964+00:00",
   "version": "0.1.0",
   "budget": {
     "paused": false,
@@ -8,12 +8,12 @@
   },
   "services": {
     "striker": {
-      "status": "inactive",
+      "status": "active",
       "health": {
         "status": "connected",
-        "connected_since": "2026-06-08T06:41:45.410268+00:00",
+        "connected_since": "2026-06-08T18:23:10.412817+00:00",
         "signals_this_session": 0,
-        "total_signals": 137860
+        "total_signals": 138861
       }
     },
     "wolfwatch": {
@@ -24,11 +24,6 @@
     "db_offline": true
   },
   "alerts": [
-    {
-      "source": "striker",
-      "severity": "error",
-      "reason": "striker service inactive"
-    },
     {
       "source": "wolfwatch",
       "severity": "error",

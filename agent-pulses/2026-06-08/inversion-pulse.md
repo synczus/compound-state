@@ -11901,3 +11901,33 @@ Bluntly: **full-squad sweep is a fantasy unless the enemy is already broken, exp
 
 ---
 *Cost: ~$0.0096 | Tokens: 677*
+2026-06-08T20:17:09Z | inversion-cron | ## Perplexity Search Results
+
+The plan is **lazy and fragile**: “auto cycle — full squad sweep” assumes more automation and more area coverage will create better outcomes, when in practice it often creates **overcommitment, blind spots, and false confidence**. The bigger failure is that it treats the squad like a single blunt instrument instead of a set of tasks that need prioritization, sequencing, and control.[3][5]
+
+What’s wrong with it:
+
+- **It ignores target isolation.** In squad fights, the difference between winning and wiping is often whether you force **one opponent at a time** instead of taking a bad multi-angle fight.[3]
+- **It assumes sweeping everything is efficient.** Thorough sweeps are expensive in time, attention, and exposure; military doctrine distinguishes between **hasty** and **deliberate** sweeps because the more thorough version is slower and riskier.[5]
+- **It overlooks overwatch and counter-pressure.** A sweep without someone controlling adjacent threats is exactly how you get pinched, ambushed, or hit while committed.[3][5]
+- **It conflates coverage with control.** Covering more ground is not the same as securing it. A “full squad sweep” can still leave lethal gaps if nobody is marking, screening, or checking the next threat lane.[5]
+- **It ignores fatigue and tempo.** The more aggressive the sweep, the more likely the squad burns focus, misreads the situation, and makes the same error repeatedly under stress.[5]
+
+What they’re overlooking:
+
+- **The enemy gets a vote.** Sweeps fail when they assume the area is passive. Doctrine explicitly warns to expect booby traps, overwatching forces, and secondary hazards during sweep actions.[5]
+- **Phase discipline matters.** A good sweep is not “go everywhere now”; it is **detect, mark, isolate, control, then clear**.[5]
+- **Not every problem needs a full-team answer.** Sometimes the right move is a smaller element to fix the immediate issue while the rest of the squad holds angles, suppresses, or blocks escape routes.[3][5]
+
+What they should be doing instead:
+
+- **Break the squad into roles, not into a mob.** Use one element to **observe/overwatch**, one to **isolate**, and one to **act**.[3][5]
+- **Prioritize threat lanes.** Don’t sweep blindly across all directions; clear the angles that can actually kill you first.[3]
+- **Force one-vs-one engagements.** Make the fight uneven in your favor by denying crossfire and pinches.[3]
+- **Use controlled, incremental clearing.** Clear a segment, confirm it, then move. Don’t “full squad sweep” into uncertain space just because the plan sounds comprehensive.[5]
+- **Build the plan around failure modes.** Ask: where do we get pinned, flanked, delayed, or baited? If the plan can’t answer those, it’s not a plan—it’s optimism.[3][5]
+
+Bluntly: **“Auto cycle — full squad sweep” sounds like a slogan, not a strategy.** It maximizes motion, not outcome. The squad should be executing a **controlled, role-based, threat-prioritized clearing process**, not trying to brute-force the entire problem at once.[3][5]
+
+---
+*Cost: ~$0.0109 | Tokens: 761*

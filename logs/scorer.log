@@ -333,3 +333,47 @@ Traceback (most recent call last):
 _duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 3938386) by user synczus. See also https://duckdb.org/docs/stable/connect/concurrency
 [scorer 17:00:01] Scoring 4 new events
 [scorer 17:00:01] Scored 4 events, 4 bucket rebuilds, top-20 written
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 402, in <module>
+    run()
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 88, in run
+    con = duckdb.connect(DB)
+          ^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 4005001) by user synczus. See also https://duckdb.org/docs/stable/connect/concurrency
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 402, in <module>
+    run()
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 88, in run
+    con = duckdb.connect(DB)
+          ^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 4041680) by user synczus. See also https://duckdb.org/docs/stable/connect/concurrency
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 402, in <module>
+    run()
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 88, in run
+    con = duckdb.connect(DB)
+          ^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 50777) by user synczus. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 402, in <module>
+    run()
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 88, in run
+    con = duckdb.connect(DB)
+          ^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 113672) by user synczus. See also https://duckdb.org/docs/stable/connect/concurrency
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 402, in <module>
+    run()
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 88, in run
+    con = duckdb.connect(DB)
+          ^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 165397) by user synczus. See also https://duckdb.org/docs/stable/connect/concurrency
+[scorer 20:00:01] Scoring 12 new events
+[scorer 20:00:02] Scored 12 events, 12 bucket rebuilds, top-20 written
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 402, in <module>
+    run()
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 88, in run
+    con = duckdb.connect(DB)
+          ^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 266488) by user synczus. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
