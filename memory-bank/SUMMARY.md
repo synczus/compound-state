@@ -1,13 +1,13 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 06:03:19 UTC_
-_Total active entries: 308_
+_Last consolidated: 2026-06-08 07:00:01 UTC_
+_Total active entries: 315_
 
 ## By Category
 
-- **other**: 120 entries
-- **pipeline-infrastructure**: 76 entries
-- **agent-orchestration**: 39 entries
+- **other**: 124 entries
+- **pipeline-infrastructure**: 78 entries
+- **agent-orchestration**: 40 entries
 - **monitoring-observability**: 30 entries
 - **cost-optimization**: 15 entries
 - **security-governance**: 10 entries
@@ -19,6 +19,13 @@ _Total active entries: 308_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
+- `[hermes]` **[other]** ⚪ striker: 138498 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — nemoclaw's turn: Auto cycle — full squad sweep
+- `[hermes]` **[other]** ⚪ striker: 137860 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 137269 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[agent-orchestration]** 2026-06-08 | All agents | Poke the codebase, build something that makes Chase say WOW. Bragging rights for one week
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Compound memory wiring + hop protocol reset — execute all pe
 - `[hermes]` **[other]** ⚪ striker: 133403 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 131998 signals (5170 >=0.3%), last 1970-01-01 00:00:00
@@ -62,13 +69,6 @@ _Total active entries: 308_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | All three SOUL files updated, coordination board verified, agent-hop-chain cron live every 30m — n8n API key from Settings → n8n API is the only remaining block.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | Casual tone locked in — saved to permanent memory, no more robot speak.
 - `[hermes]` **[security-governance]** 2026-06-08 | Scraper | Clean n8n running at `localhost:5678` — one owner setup and one API key creation and we're wired for good.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Fresh n8n at `localhost:5678` — set up your owner account, create an API key, paste it here, and I'll wire the full signal pipeline into Telegram, email, and workflow automation.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | Go to `localhost:5678` (root, not `/signin`) — the setup screen will let you create the account, not log into one that doesn't exist yet.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Hermes runs 3 autonomous cron jobs and the gateway 24/7 without active chat — the signal pipeline, hop chain, and agent pulses all compound in background.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Root URL `localhost:5678` shows the setup form — create account there, not at `/signin`.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Three research hops generated covering the highest-leverage P1 items: export backlog processing (#1 build order), CryptoQuant on-chain wiring (highest signal density new source), and MMR/IBKR paper trading deployment (blocking on credentials but needs research now).
-- `[hermes]` **[other]** 2026-06-08 | Scraper | `~/compound/` is your dead simple home nav — 10 directories symlinked to everything you own — tell me what you want organized next and I'll wire it through Telegram.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | n8n is clean at `localhost:5678` — sign up with that email and password, make one API key, and the pipeline wiring runs itself from there.
 
 ---
 

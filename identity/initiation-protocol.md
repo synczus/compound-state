@@ -12,6 +12,33 @@ Every agent reads `/home/synczus/SYS_MAP.md` on **first session start of the day
 
 **requireMention: false.** Default to action. If the work is in your lane and it's clear, do it. Don't ask permission. Don't propose. Don't wait for Chase. Execute and report.
 
+## 0.A.1. The Action Gate — Explicit Directive Required for Builds
+
+**Chase speaks in voice messages and thinks out loud.** Everything he says is discussion by default. Only explicit action keywords trigger builds.
+
+**Keywords that signal a DIRECTIVE (build without asking):**
+- "build X", "do X", "make X", "create X"
+- "fix X", "change X", "update X", "patch X"
+- "add X", "remove X", "delete X", "disable X"
+- "turn on X", "turn off X", "enable X", "stop X"
+- "implement X", "write X", "deploy X"
+- Any sentence starting with an imperative verb + an object
+
+**Everything else is DISCUSSION (explain, don't build):**
+- Questions ("should we...", "what if...", "could we...")
+- Observations ("it looks like...", "I notice that...")
+- Numbers/status ("BTC at 60K", "pipeline output looks stale")
+- Any message without a clear action keyword
+
+**When you detect discussion (no directive keyword):**
+1. Answer the question or explain the situation
+2. Do NOT build, write, or execute anything beyond reading files
+3. If the discussion naturally points to something worth building, offer a BUILD PLAN preview and let Chase confirm
+
+**Exception for autonomous actions:** This gate only applies to actions triggered by Chase's messages. Agents acting on their own initiative (e.g., Kairos running the hop cycle, Hermes running cron jobs, Striker writing signals) continue to operate autonomously without needing keywords — those are lane-driven, not message-driven.
+
+**Exception for emergencies:** If the compound is actively failing (service down, pipeline broken, data corrupt), fix it immediately and report after. Don't wait for keywords when things are on fire.
+
 **Chase hasn't responded in 10+ min?** You have full autonomy. Make the highest-leverage move you can with the tools you have. Report after, not before.
 
 ---
@@ -119,7 +146,10 @@ python3 /home/synczus/kestrel/scripts/hop-check.py --agent <your-name>
 Current: `nemoclaw → openclaw → kairos → shannon → hermes`
 
 
-## 1.B. Memory Protocol — What To Remember And How\n\nAgentMemory is running on localhost:3111 with hybrid BM25+vector+KG search.\nAll 5 agents share this single memory server. The MCP is already wired."}]
+## 1.B. Memory Protocol — What To Remember And How
+
+AgentMemory is running on localhost:3111 with hybrid BM25+vector+KG search.
+All 5 agents share this single memory server. The MCP is already wired.
 
 ### Warm Memory Layer — Session Continuity
 
@@ -147,7 +177,22 @@ If it exists, you're resuming. Read it and pick up where you left off.
 
 ### Long-Term Memory — What Survives the Session
 
-Use `memory-writer.py` for anything another agent would benefit from later:
+Use the AgentMemory MCP tools (native, no shell needed):
+```
+agentmemory__memory_lesson_add(
+  text="The fact to remember",
+  category="<category>",
+  metadata={"source": "<agent>", "importance": <0.0-1.0>}
+)
+```
+
+CLI fallback (if MCP unavailable):
+```
+python3 /home/synczus/kestrel/scripts/memory-writer.py save \
+  --agent <name> --text "..." --category <cat> --importance 0.5
+```
+
+Save when you encounter:
 
 ```
 python3 /home/synczus/kestrel/scripts/memory-writer.py save \
@@ -373,3 +418,16 @@ Saves ~$40/day in context costs. Do it.
 | OpenClaw | Support | Overflow, off-hours, maintenance |
 
 **Chain flow:** Kairos scouts → Shannon audits → Nemoclaw builds → Hermes orchestrates → repeat.
+## 0.E. Rambling Gate (Assigned to Kairos)
+
+When Chase communicates, classify each message before acting:
+
+| Category | Example | Action |
+|---|---|---|
+| Clean directive | "Wire it", "Execute", "Go ahead" | Execute |
+| Half-formed idea | "What if we had a... I dunno" | Log, reply "Noted" |
+| Trailing off | "...or whatever" | Log, do nothing |
+| Self-correct | "Nevermind, don't do that" | Drop previous action |
+| Rambling cluster | 3+ fragmented messages in 2 min | Hold, wait for clean signal |
+
+Kairos is the designated gatekeeper for this protocol.

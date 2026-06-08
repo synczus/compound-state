@@ -46,43 +46,143 @@ _LOCK_HANDLE = None
 
 @dataclass(slots=True)
 class Signal:
-    """A single structured signal emitted by Striker."""
+    """A single structured trade signal emitted by Striker.
+    
+    Includes entry price, take-profit, and stop-loss levels
+    calculated from recent volatility (ATR) in the detection window.
+    """
     timestamp: str
     symbol: str
-    price: float
     direction: str       # "long" | "short"
+    entry_price: float   # The price that triggered the signal
+    take_profit: float   # Target exit for profit
+    stop_loss: float     # Target exit for loss
     confidence: float    # 0.0–1.0
-    move_pct: float
+    move_pct: float      # % move vs window anchor
     volume: Optional[float] = None
+    atr_pct: Optional[float] = None  # Volatility measure (high-low range %)
+    price: Optional[float] = None   # Kept for backwards-compatible DB writes
 
     def to_json(self) -> str:
         return json.dumps(asdict(self))
 
     def to_db_tuple(self) -> tuple:
-        return (self.timestamp, self.symbol, self.price, self.direction,
-                self.confidence, self.move_pct, self.volume)
+        return (self.timestamp, self.symbol, self.direction,
+                self.entry_price, self.take_profit, self.stop_loss,
+                self.confidence, self.move_pct, self.volume, self.atr_pct)
 
 
-# ── Signal Store ────────────────────────────────────────────────────────────
+# ── Database ────────────────────────────────────────────────────────────────
 
 def init_db() -> None:
-    """Create the signals table if it doesn't exist."""
+    """Create or recreate the signals table with trade-ready columns.
+    
+    Migrates the old schema (price column, no TP/SL) to the new schema
+    (entry_price, take_profit, stop_loss, atr_pct) by recreating the table
+    via a temp table. Loses the old price column but preserves all rows.
+    """
     conn = sqlite3.connect(str(SIGNALS_DB))
     try:
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS signals (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                timestamp TEXT NOT NULL,
-                symbol TEXT NOT NULL,
-                price REAL NOT NULL,
-                direction TEXT NOT NULL,
-                confidence REAL NOT NULL,
-                move_pct REAL NOT NULL,
-                volume REAL
-            )
-        """)
-        conn.execute("""
-            CREATE INDEX IF NOT EXISTS idx_signals_ts ON signals(timestamp)
+        old_cols = conn.execute("PRAGMA table_info(signals)").fetchall()
+        if old_cols:
+            col_names = [c[1] for c in old_cols]
+            # Check if already migrated
+            if "entry_price" in col_names and "take_profit" in col_names and "stop_loss" in col_names:
+                # Drop the orphan table if it survived a previous crash
+                conn.execute("DROP TABLE IF EXISTS signals_v2")
+                # Check if the old "price" column is still NOT NULL — if yes, 
+                # old schema needs full table recreate
+                price_col = [c for c in old_cols if c[1] == "price"]
+                if price_col and price_col[0][3] != 0:  # notnull flag
+                    logger.info("Old schema detected (price NOT NULL). Recreating table.")
+                    conn.executescript("""
+                        DROP TABLE IF EXISTS signals_v2;
+                        CREATE TABLE signals_v3 (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            timestamp TEXT NOT NULL,
+                            symbol TEXT NOT NULL,
+                            direction TEXT DEFAULT '',
+                            entry_price REAL DEFAULT 0.0,
+                            take_profit REAL DEFAULT 0.0,
+                            stop_loss REAL DEFAULT 0.0,
+                            confidence REAL DEFAULT 0.0,
+                            move_pct REAL DEFAULT 0.0,
+                            volume REAL,
+                            atr_pct REAL
+                        );
+                        INSERT INTO signals_v3 (id, timestamp, symbol, direction, entry_price, confidence, move_pct, volume)
+                            SELECT id, timestamp, symbol,
+                                COALESCE(direction, ''),
+                                COALESCE(entry_price, price, 0.0),
+                                COALESCE(confidence, 0.0),
+                                COALESCE(move_pct, 0.0),
+                                volume
+                            FROM signals;
+                        DROP TABLE IF EXISTS signals;
+                        ALTER TABLE signals_v3 RENAME TO signals;
+                        CREATE INDEX IF NOT EXISTS idx_signals_ts ON signals(timestamp);
+                    """)
+                    count = conn.execute("SELECT COUNT(*) FROM signals").fetchone()[0]
+                    logger.info("Full migration complete — %d old signals preserved", count)
+                else:
+                    logger.info("Schema already clean — no migration needed")
+            else:
+                # Partial migration — columns missing. Full recreate.
+                logger.info("Partial schema detected. Running full recreate.")
+                conn.executescript("""
+                    DROP TABLE IF EXISTS signals_v2;
+                    CREATE TABLE signals_v3 (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        timestamp TEXT NOT NULL,
+                        symbol TEXT NOT NULL,
+                        direction TEXT DEFAULT '',
+                        entry_price REAL DEFAULT 0.0,
+                        take_profit REAL DEFAULT 0.0,
+                        stop_loss REAL DEFAULT 0.0,
+                        confidence REAL DEFAULT 0.0,
+                        move_pct REAL DEFAULT 0.0,
+                        volume REAL,
+                        atr_pct REAL
+                    );
+                    INSERT INTO signals_v3 (id, timestamp, symbol, direction, entry_price, confidence, move_pct, volume)
+                        SELECT id, timestamp, symbol,
+                            COALESCE(direction, ''),
+                            COALESCE(price, 0.0),
+                            COALESCE(confidence, 0.0),
+                            COALESCE(move_pct, 0.0),
+                            volume
+                        FROM signals;
+                    DROP TABLE IF EXISTS signals;
+                    ALTER TABLE signals_v3 RENAME TO signals;
+                    CREATE INDEX IF NOT EXISTS idx_signals_ts ON signals(timestamp);
+                """)
+                count = conn.execute("SELECT COUNT(*) FROM signals").fetchone()[0]
+                logger.info("Full migration complete — %d old signals preserved", count)
+        else:
+            # Fresh table — create new schema directly
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS signals (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    timestamp TEXT NOT NULL,
+                    symbol TEXT NOT NULL,
+                    direction TEXT DEFAULT '',
+                    entry_price REAL DEFAULT 0.0,
+                    take_profit REAL DEFAULT 0.0,
+                    stop_loss REAL DEFAULT 0.0,
+                    confidence REAL DEFAULT 0.0,
+                    move_pct REAL DEFAULT 0.0,
+                    volume REAL,
+                    atr_pct REAL
+                )
+            """)
+            conn.execute("""
+                CREATE INDEX IF NOT EXISTS idx_signals_ts ON signals(timestamp)
+            """)
+    except Exception as e:
+        logger.error("init_db failed: %s — wiping orphan tables and retrying", e)
+        conn.executescript("""
+            DROP TABLE IF EXISTS signals_v2;
+            DROP TABLE IF EXISTS signals_v3;
         """)
         conn.commit()
     finally:
@@ -94,11 +194,13 @@ def write_signal(signal: Signal) -> None:
     conn = sqlite3.connect(str(SIGNALS_DB))
     try:
         conn.execute(
-            "INSERT INTO signals (timestamp, symbol, price, direction, confidence, move_pct, volume) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?)",
+            "INSERT INTO signals (timestamp, symbol, direction, entry_price, take_profit, stop_loss, confidence, move_pct, volume, atr_pct) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             signal.to_db_tuple(),
         )
         conn.commit()
+    except Exception as e:
+        logger.error("write_signal failed: %s", e)
     finally:
         conn.close()
 
@@ -107,41 +209,16 @@ def signal_count() -> int:
     """Return total signals in DB."""
     conn = sqlite3.connect(str(SIGNALS_DB))
     try:
-        row = conn.execute("SELECT COUNT(*) FROM signals").fetchone()
-        return row[0] if row else 0
+        return conn.execute("SELECT COUNT(*) FROM signals").fetchone()[0]
     finally:
         conn.close()
 
 
-# ── Single Instance Guard ───────────────────────────────────────────────────
-
-def acquire_single_instance_lock() -> bool:
-    """Prevent duplicate Striker scanners from writing competing health/DB state."""
-    global _LOCK_HANDLE
-    _LOCK_HANDLE = LOCK_FILE.open("a+")
-    try:
-        fcntl.flock(_LOCK_HANDLE, fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except BlockingIOError:
-        logger.error("another Striker instance already holds %s", LOCK_FILE)
-        return False
-    _LOCK_HANDLE.seek(0)
-    _LOCK_HANDLE.truncate()
-    _LOCK_HANDLE.write(str(os.getpid()))
-    _LOCK_HANDLE.flush()
-    return True
-
-
-# ── Health ──────────────────────────────────────────────────────────────────
-
 def write_health(state: dict) -> None:
-    """Persist current health state for external health checks."""
-    try:
-        state["updated_at"] = datetime.now(timezone.utc).isoformat()
-        tmp_file = HEALTH_FILE.with_suffix(HEALTH_FILE.suffix + ".tmp")
-        tmp_file.write_text(json.dumps(state, indent=2))
-        os.replace(tmp_file, HEALTH_FILE)
-    except Exception:
-        pass
+    """Atomically write health JSON file."""
+    tmp = HEALTH_FILE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(state, default=str))
+    tmp.rename(HEALTH_FILE)
 
 
 # ── Price Tracker ───────────────────────────────────────────────────────────
@@ -149,61 +226,86 @@ def write_health(state: dict) -> None:
 @dataclass(slots=True)
 class PriceTracker:
     """
-    Tracks prices for signal detection using a trailing 5-minute window.
+    Maintains a sliding window of price data per symbol.
     
-    Emits a signal when the current price deviates >threshold from the
-    window anchor (first tick seen in each 5-minute epoch). This avoids
-    the "last-tick vs this-tick" problem where consecutive ticks are
-    milliseconds apart and barely move.
+    Tracks high/low within each window for ATR-based TP/SL calculation.
+    Emits a Signal when price moves beyond PRICE_MOVE_THRESHOLD from the
+    window anchor price.
     """
-    _prices: dict[str, dict] = field(default_factory=dict)
-    _window_anchor: dict[str, dict] = field(default_factory=dict)  # symbol -> {price, epoch_start}
-    WINDOW_SECONDS: int = 60  # 1 minute window
-    MIN_WINDOW_TICKS: int = 5
+    WINDOW_SECONDS: int = 60         # 1-minute windows for volatility
+    MIN_WINDOW_TICKS: int = 5         # minimum ticks before evaluating signals (for 0.08% threshold)
+    _prices: dict = field(default_factory=dict)
+    _window_anchor: dict = field(default_factory=dict)
     _tick_counts: dict[str, int] = field(default_factory=dict)
+    _window_highs: dict[str, float] = field(default_factory=dict)
+    _window_lows: dict[str, float] = field(default_factory=dict)
 
     def seed(self, symbol: str, price: float, volume: Optional[float] = None) -> None:
         """Seed initial price and start the first window."""
         now = time.time()
         self._prices[symbol] = {"price": price, "volume": volume}
         self._window_anchor[symbol] = {"price": price, "epoch_start": now, "volume": volume}
+        self._window_highs[symbol] = price
+        self._window_lows[symbol] = price
         self._tick_counts[symbol] = 0
 
-    def _get_window_anchor(self, symbol: str, now: float, price: float, volume: Optional[float] = None) -> None:
-        """Return or reset the anchor for the current 5-minute window."""
-        anchor = self._window_anchor.get(symbol)
-        if anchor is None or (now - anchor["epoch_start"]) >= self.WINDOW_SECONDS:
-            # Start a new window
-            self._window_anchor[symbol] = {"price": price, "epoch_start": now, "volume": volume}
-            self._tick_counts[symbol] = 0
+    def _reset_window(self, symbol: str, now: float, price: float, volume: Optional[float] = None) -> None:
+        """Start a fresh window with the given price as anchor."""
+        self._window_anchor[symbol] = {"price": price, "epoch_start": now, "volume": volume}
+        self._window_highs[symbol] = price
+        self._window_lows[symbol] = price
+        self._tick_counts[symbol] = 0
+
+    def _compute_tp_sl(self, symbol: str, entry: float, direction: str) -> tuple[float, float]:
+        """
+        Compute take-profit and stop-loss levels based on ATR (high-low range)
+        within the current detection window.
+        
+        ATR = (high - low) / entry * 100 (as percentage of entry price)
+        TP multiplier: 2x ATR (capped at 5%)
+        SL multiplier: 0.5x ATR (floored at 0.3%)
+        """
+        high = self._window_highs.get(symbol, entry)
+        low = self._window_lows.get(symbol, entry * 0.995)
+        atr_pct = max((high - low) / entry * 100, 0.1)
+        
+        if direction == "long":
+            tp_mult = min(atr_pct * 2.0, 5.0) / 100.0
+            sl_mult = max(atr_pct * 0.5, 0.3) / 100.0
+            tp = round(entry * (1 + tp_mult), 2)
+            sl = round(entry * (1 - sl_mult), 2)
+        else:
+            tp_mult = min(atr_pct * 2.0, 5.0) / 100.0
+            sl_mult = max(atr_pct * 0.5, 0.3) / 100.0
+            tp = round(entry * (1 - tp_mult), 2)
+            sl = round(entry * (1 + sl_mult), 2)
+        
+        return tp, sl, round(atr_pct, 4)
 
     def update(self, symbol: str, price: float, volume: Optional[float] = None) -> Optional[Signal]:
-        """
-        Ingest a new price tick. Returns a Signal if the move exceeds threshold
-        relative to the 5-minute trailing window anchor.
-        """
+        """Ingest a new tick. Returns a Signal with entry, TP, SL if move exceeds threshold."""
         now = time.time()
         now_iso = datetime.now(timezone.utc).isoformat()
         prev = self._prices.get(symbol)
 
         if prev is None:
-            # First tick — seed and wait for a window
             self.seed(symbol, price, volume)
             return None
 
-        # Update last-tick tracker (used only for seeding, not signal comparison)
         self._prices[symbol] = {"price": price, "volume": volume or prev.get("volume")}
 
-        # Refresh or create window anchor
         anchor = self._window_anchor.get(symbol)
         if anchor is None or (now - anchor["epoch_start"]) >= self.WINDOW_SECONDS:
-            anchor = {"price": price, "epoch_start": now, "volume": volume}
-            self._window_anchor[symbol] = anchor
-            self._tick_counts[symbol] = 0
+            self._reset_window(symbol, now, price, volume)
+            return None
+
+        if price > self._window_highs.get(symbol, price):
+            self._window_highs[symbol] = price
+        if price < self._window_lows.get(symbol, price):
+            self._window_lows[symbol] = price
 
         self._tick_counts[symbol] = self._tick_counts.get(symbol, 0) + 1
 
-        # Only evaluate after we have enough ticks in this window
         if self._tick_counts[symbol] < self.MIN_WINDOW_TICKS:
             return None
 
@@ -215,17 +317,25 @@ class PriceTracker:
 
         if abs(move_pct) >= PRICE_MOVE_THRESHOLD:
             direction = "long" if move_pct > 0 else "short"
-            confidence = min(abs(move_pct) / 5.0, 1.0)  # 5% move = full confidence
-            logger.info("SIGNAL: %s vs anchor %.2f (%.4f%% move in %.0fs window)",
-                        symbol, anchor_price, move_pct, now - anchor["epoch_start"])
+            confidence = min(abs(move_pct) / 5.0, 1.0)
+            tp, sl, atr_pct = self._compute_tp_sl(symbol, anchor_price, direction)
+
+            logger.info(
+                "SIGNAL: %s %s entry=%.2f TP=%.2f SL=%.2f (%.4f%% move, ATR=%.2f%%)",
+                symbol, direction.upper(), price, tp, sl,
+                move_pct, atr_pct
+            )
             sig = Signal(
                 timestamp=now_iso,
                 symbol=symbol,
-                price=price,
                 direction=direction,
+                entry_price=price,
+                take_profit=tp,
+                stop_loss=sl,
                 confidence=round(confidence, 4),
                 move_pct=round(move_pct, 4),
                 volume=volume or anchor.get("volume"),
+                atr_pct=atr_pct,
             )
             return sig
 
@@ -234,175 +344,131 @@ class PriceTracker:
 
 # ── WebSocket Client ────────────────────────────────────────────────────────
 
-class StrikerClient:
-    """Async WebSocket client for Coinbase market data."""
+class CoinbaseClient:
+    """WebSocket client for Coinbase Advanced Trade ticker feed."""
+    
+    SUBSCRIBE_TEMPLATE = {
+        "type": "subscribe",
+        "product_ids": SCAN_SYMBOLS,
+        "channel": "ticker",
+    }
 
-    def __init__(self) -> None:
+    def __init__(self, queue: asyncio.Queue):
+        self.queue = queue
         self.tracker = PriceTracker()
-        self._running = True
-        self._connected_since: Optional[str] = None
+        self._stop = False
+        self._ws = None
         self._signals_this_session = 0
-        self._total_signals = 0
-
-    async def _subscribe(self, ws) -> None:
-        """Send the subscription message for all configured symbols."""
-        channel = "ticker"  # Coinbase ticker channel sends real-time price updates
-        product_ids = SCAN_SYMBOLS
-        subscribe_msg = {
-            "type": "subscribe",
-            "product_ids": product_ids,
-            "channel": channel,
-        }
-        await ws.send(json.dumps(subscribe_msg))
-        logger.info("subscribed to %s on %s for %s", channel, COINBASE_WS_URL, product_ids)
-
-    async def _handle_message(self, raw: str) -> None:
-        """Route an incoming websocket message using Coinbase Advanced Trade format."""
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            logger.warning("unparseable message: %.120s", raw)
-            return
-
-        channel = data.get("channel", "")
-        events = data.get("events", [])
-
-        if channel == "ticker":
-            for event in events:
-                event_type = event.get("type", "")
-                tickers = event.get("tickers", [])
-                for ticker in tickers:
-                    product_id = ticker.get("product_id", "")
-                    price_str = ticker.get("price", "")
-                    volume_str = ticker.get("volume_24_h")
-
-                    if not price_str:
-                        continue
-
-                    try:
-                        price = float(price_str)
-                    except (ValueError, TypeError):
-                        continue
-
-                    volume = float(volume_str) if volume_str else None
-
-                    if event_type == "snapshot":
-                        # Seed the price tracker with initial price — no signal
-                        self.tracker.seed(product_id, price, volume)
-                        logger.debug("seeded %s @ %.2f", product_id, price)
-                    elif event_type == "update":
-                        signal = self.tracker.update(product_id, price, volume)
-                        if signal:
-                            self._signals_this_session += 1
-                            self._total_signals += 1
-                            write_signal(signal)
-                            logger.info("SIGNAL: %s %s @ %.2f (%.2f%%)",
-                                        signal.symbol, signal.direction.upper(),
-                                        signal.price, signal.move_pct)
-                            print(signal.to_json(), flush=True)
-
-        elif channel == "subscriptions":
-            logger.info("subscription confirmed: %s", data.get("events", []))
-        elif channel == "heartbeats":
-            pass  # silent — Coinbase sends regular heartbeats
-        else:
-            logger.debug("unhandled channel: %s", channel)
-
-    async def _health_tick(self) -> None:
-        """Periodically refresh the health file with current state."""
-        while self._running:
-            await asyncio.sleep(60)
-            try:
-                write_health({
-                    "status": "connected" if self._connected_since else "disconnected",
-                    "connected_since": self._connected_since,
-                    "signals_this_session": self._signals_this_session,
-                    "total_signals": signal_count(),
-                })
-            except Exception as e:
-                logger.warning("health_tick failed (will retry): %s", e)
-
-    async def connect(self) -> None:
-        """Main connect-reconnect loop."""
-        backoff = 1  # seconds
-
-        # Start periodic health refresh in background
-        asyncio.create_task(self._health_tick())
-
-        while self._running:
-            self._connected_since = None
-            try:
-                logger.info("connecting to %s", COINBASE_WS_URL)
-                async with websockets.connect(
-                    COINBASE_WS_URL,
-                    ping_interval=20,
-                    ping_timeout=10,
-                    max_size=2 ** 20,  # 1 MB
-                ) as ws:
-                    logger.info("connected")
-                    self._connected_since = datetime.now(timezone.utc).isoformat()
-                    backoff = 1  # reset on successful connect
-                    write_health({
-                        "status": "connected",
-                        "connected_since": self._connected_since,
-                        "signals_this_session": self._signals_this_session,
-                        "total_signals": signal_count(),
-                    })
-
-                    await self._subscribe(ws)
-
-                    async for message in ws:
-                        await self._handle_message(message)
-
-            except websockets.ConnectionClosed:
-                logger.warning("connection closed (reconnecting in %ds)", backoff)
-            except asyncio.TimeoutError:
-                logger.warning("timeout (reconnecting in %ds)", backoff)
-            except OSError as exc:
-                logger.error("network error: %s (reconnect in %ds)", exc, backoff)
-
-            # Write health as disconnected
-            write_health({
-                "status": "disconnected",
-                "connected_since": None,
-                "signals_this_session": self._signals_this_session,
-                "total_signals": signal_count(),
-            })
-
-            if not self._running:
-                break
-
-            # Exponential backoff, cap at 30s
-            await asyncio.sleep(backoff)
-            backoff = min(backoff * 2, 30)
 
     def stop(self) -> None:
-        """Signal graceful shutdown."""
-        self._running = False
+        self._stop = True
+
+    async def connect(self) -> None:
+        retry = 1
+        write_health({"status": "starting", "connected_since": None, "signals_this_session": 0, "total_signals": signal_count()})
+        while not self._stop:
+            try:
+                logger.info("connecting to %s", COINBASE_WS_URL)
+                async with websockets.connect(COINBASE_WS_URL) as ws:
+                    self._ws = ws
+                    write_health({"status": "connected", "connected_since": datetime.now(timezone.utc).isoformat(),
+                                  "signals_this_session": self._signals_this_session, "total_signals": signal_count()})
+                    await ws.send(json.dumps(self.SUBSCRIBE_TEMPLATE))
+                    msg = await ws.recv()
+                    data = json.loads(msg)
+                    logger.info("subscription confirmed: %s", json.dumps(data.get("result", data)))
+                    retry = 1
+
+                    async for raw in ws:
+                        if self._stop:
+                            break
+                        try:
+                            tick = json.loads(raw)
+                        except json.JSONDecodeError:
+                            continue
+                        channel = tick.get("channel", "")
+                        if channel != "ticker":
+                            continue
+                        events = tick.get("events", [])
+                        for ev in events:
+                            tickers = ev.get("tickers", [])
+                            for t in tickers:
+                                symbol = t.get("product_id", "")
+                                price_s = t.get("price", "")
+                                volume_s = t.get("volume_24_h", "")
+                                if not symbol or not price_s:
+                                    continue
+                                try:
+                                    price = float(price_s)
+                                except (ValueError, TypeError):
+                                    continue
+                                volume = float(volume_s) if volume_s else None
+                                signal = self.tracker.update(symbol, price, volume)
+                                if signal is not None:
+                                    self._signals_this_session += 1
+                                    write_signal(signal)
+                                    logger.info(
+                                        "SIGNAL: %s %s entry=%.2f TP=%.2f SL=%.2f (%.2f%% move)",
+                                        signal.symbol, signal.direction.upper(),
+                                        signal.entry_price, signal.take_profit,
+                                        signal.stop_loss, signal.move_pct
+                                    )
+                                    print(signal.to_json(), flush=True)
+                                    await self.queue.put(signal)
+            except (websockets.ConnectionClosed, OSError, asyncio.TimeoutError) as exc:
+                if not self._stop:
+                    logger.warning("connection lost (%s), reconnecting in %ds", exc, retry)
+                    write_health({"status": f"reconnecting in {retry}s", "error": str(exc),
+                                  "signals_this_session": self._signals_this_session, "total_signals": signal_count()})
+                    await asyncio.sleep(retry)
+                    retry = min(retry * 2, 60)
+            except Exception as exc:
+                logger.error("unexpected error: %s", exc, exc_info=True)
+                if not self._stop:
+                    await asyncio.sleep(retry)
+                    retry = min(retry * 2, 60)
+
+    @property
+    def signals_this_session(self) -> int:
+        return self._signals_this_session
 
 
-# ── Entry Point ─────────────────────────────────────────────────────────────
+# ── Queue & Signal Processor ────────────────────────────────────────────────
 
-async def main():
-    # Setup logging to stderr (stdout reserved for signal JSON)
+class SignalProcessor:
+    """Processes signals from the queue for external routing or logging."""
+
+    def __init__(self, queue: asyncio.Queue):
+        self.queue = queue
+
+    async def run(self) -> None:
+        while True:
+            signal = await self.queue.get()
+            try:
+                pass  # Future: route to execution layer, Telegram, webhook
+            except Exception as exc:
+                logger.error("signal_processor: %s", exc)
+
+
+# ── Main ────────────────────────────────────────────────────────────────────
+
+async def main() -> None:
+    q: asyncio.Queue[Signal] = asyncio.Queue(maxsize=QUEUE_MAX_SIZE)
+
+    init_db()
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-        stream=sys.stderr,
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+    logger.info(
+        "Kestrel Striker starting — symbols=%s, threshold=%.1f%%",
+        SCAN_SYMBOLS, PRICE_MOVE_THRESHOLD,
     )
 
-    logger.info("Kestrel Striker starting — symbols=%s, threshold=%.1f%%",
-                SCAN_SYMBOLS, PRICE_MOVE_THRESHOLD)
+    client = CoinbaseClient(q)
 
-    if not acquire_single_instance_lock():
-        return 2
-
-    # Init DB schema
-    init_db()
-
-    client = StrikerClient()
-
-    # Wire up signal handling for systemd's SIGTERM
     loop = asyncio.get_running_loop()
     for sig in (signal.SIGTERM, signal.SIGINT):
         loop.add_signal_handler(sig, client.stop)

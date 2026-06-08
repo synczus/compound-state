@@ -29,8 +29,8 @@ def query_high_confidence(db_path: Path, min_conf: float = 0.2) -> list[dict]:
     cur = conn.cursor()
 
     rows = cur.execute("""
-        SELECT id, timestamp, symbol, price, direction, confidence,
-               move_pct, volume
+        SELECT id, timestamp, symbol, entry_price, direction, confidence,
+               move_pct, volume, take_profit, stop_loss, atr_pct
         FROM signals
         WHERE confidence >= ?
         ORDER BY confidence DESC, id DESC
@@ -56,8 +56,8 @@ def build_insight(signals: list[dict]) -> dict:
         b = by_symbol[key]
         b["count"] += 1
         b["confidences"].append(s["confidence"])
-        if s.get("price"):
-            b["prices"].append(s["price"])
+        if s.get("entry_price"):
+            b["prices"].append(s["entry_price"])
         b["moves"].append(s["move_pct"])
         b["volumes"].append(s.get("volume", 0))
         if s["timestamp"] > b["latest"]:

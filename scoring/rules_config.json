@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "name": "market_striker_scoring",
+  "max_score": 100,
+  "weight_buckets": {
+    "trend_regime": {
+      "max": 40,
+      "name": "Trend & Regime Alignment",
+      "sub_weights": {
+        "trend_direction_match": 15,
+        "regime_stability": 10,
+        "higher_tf_confluence": 10,
+        "momentum_divergence": 5
+      }
+    },
+    "volume_liquidity": {
+      "max": 25,
+      "name": "Volume & Liquidity",
+      "sub_weights": {
+        "volume_spike_ratio": 15,
+        "liquidity_depth": 5,
+        "slippage_risk": 5
+      }
+    },
+    "setup_quality": {
+      "max": 20,
+      "name": "Setup Quality",
+      "sub_weights": {
+        "signal_freshness_window": 8,
+        "pattern_clarity": 7,
+        "entry_price_accuracy": 5
+      }
+    },
+    "timeframe_alignment": {
+      "max": 10,
+      "name": "Timeframe Alignment",
+      "sub_weights": {
+        "weekly_daily_alignment": 5,
+        "hourly_confirmation": 5
+      }
+    },
+    "recency": {
+      "max": 5,
+      "name": "Signal Recency & Decay",
+      "sub_weights": {
+        "last_5min_multiplier": 3,
+        "decay_half_life_minutes": 2
+      }
+    }
+  },
+  "score_buckets": {
+    "trade": { "min": 70, "max": 100, "action": "Consider entry with position sizing" },
+    "watch": { "min": 40, "max": 69, "action": "Monitor for confirmation/improvement" },
+    "ignore": { "min": 0, "max": 39, "action": "Skip — insufficient confluence" }
+  },
+  "llm_intervention": {
+    "enabled": true,
+    "apply_when_score_between": [35, 50],
+    "model": "openrouter/perplexity/sonar-pro",
+    "prompt_template": "Score this signal in gray zone ({score}/100). Assess: {signal_json}. Respond: raise_to=, or lower_to=, reasoning="
+  },
+  "decay": {
+    "half_life_minutes": 10,
+    "max_age_minutes": 60,
+    "recency_bonus_new_signal": 3
+  }
+}

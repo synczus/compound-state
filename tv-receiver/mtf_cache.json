@@ -1,0 +1,92 @@
+{
+  "BTC-USD_1h": {
+    "fetched_at": 1780901949.8213837,
+    "analysis": {
+      "timeframe": "1h",
+      "trend": 0.531,
+      "trend_direction": "ranging",
+      "volatility": 0.902,
+      "sr_proximity": 0.582,
+      "current_price": 62944.3,
+      "period_high": 64234.45,
+      "period_low": 61146.42,
+      "atr_pct": 0.9021,
+      "candle_count": 53
+    }
+  },
+  "BTC-USD_4h": {
+    "fetched_at": 1780901955.4466972,
+    "analysis": {
+      "timeframe": "4h",
+      "trend": 0.602,
+      "trend_direction": "ranging",
+      "volatility": 1,
+      "sr_proximity": 0.477,
+      "current_price": 62924,
+      "period_high": 67149.71,
+      "period_low": 59073.01,
+      "atr_pct": 1,
+      "candle_count": 35
+    }
+  },
+  "BTC-USD_1d": {
+    "fetched_at": 1780901955.6340153,
+    "analysis": {
+      "timeframe": "1d",
+      "trend": 0.073,
+      "trend_direction": "downtrend",
+      "volatility": 1,
+      "sr_proximity": 0.204,
+      "current_price": 62963.83,
+      "period_high": 78123.68,
+      "period_low": 59073.01,
+      "atr_pct": 1,
+      "candle_count": 25
+    }
+  },
+  "SOL-USD_1h": {
+    "fetched_at": 1780902082.5126185,
+    "analysis": {
+      "timeframe": "1h",
+      "trend": 0.5,
+      "trend_direction": "ranging",
+      "volatility": 1,
+      "sr_proximity": 0.463,
+      "current_price": 65.6,
+      "period_high": 67.9,
+      "period_low": 63.62,
+      "atr_pct": 1,
+      "candle_count": 53
+    }
+  },
+  "SOL-USD_4h": {
+    "fetched_at": 1780902082.748237,
+    "analysis": {
+      "timeframe": "4h",
+      "trend": 0.589,
+      "trend_direction": "ranging",
+      "volatility": 1,
+      "sr_proximity": 0.366,
+      "current_price": 65.66,
+      "period_high": 75.27,
+      "period_low": 60.11,
+      "atr_pct": 1,
+      "candle_count": 35
+    }
+  },
+  "SOL-USD_1d": {
+    "fetched_at": 1780902092.0286138,
+    "analysis": {
+      "timeframe": "1d",
+      "trend": 0,
+      "trend_direction": "downtrend",
+      "volatility": 1,
+      "sr_proximity": 0.198,
+      "current_price": 65.61,
+      "period_high": 87.91,
+      "period_low": 60.11,
+      "atr_pct": 1,
+      "candle_count": 25
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "_description": "TradingView → Striker Scoring System — tunable weights and thresholds",
+  "_version": "1.0.0",
+
+  "scoring": {
+    "max_total": 100,
+    "buckets": {
+      "trend_regime": {
+        "weight": 40,
+        "fields": {
+          "trend_alignment": 15,
+          "volatility_regime": 10,
+          "htf_confluence": 10,
+          "support_resistance": 5
+        }
+      },
+      "volume_liquidity": {
+        "weight": 25,
+        "fields": {
+          "volume_expansion": 12,
+          "liquidity_depth": 8,
+          "spread_quality": 5
+        }
+      },
+      "setup_quality": {
+        "weight": 20,
+        "fields": {
+          "pattern_clarity": 8,
+          "entry_precision": 7,
+          "risk_reward": 5
+        }
+      },
+      "timeframe_alignment": {
+        "weight": 10,
+        "fields": {
+          "mtf_agreement": 6,
+          "entry_timeframe_strength": 4
+        }
+      },
+      "freshness": {
+        "weight": 5,
+        "fields": {
+          "signal_age": 3,
+          "confirmation_count": 2
+        }
+      }
+    }
+  },
+
+  "thresholds": {
+    "trade": 70,
+    "watch": 40,
+    "ignore": 0
+  },
+
+  "action_buckets": {
+    "trade": {
+      "label": "TRADE",
+      "emoji": "⚡",
+      "description": "High-confidence signal — ready for execution",
+      "require_human_approval": false
+    },
+    "watch": {
+      "label": "WATCH",
+      "emoji": "👁️",
+      "description": "Moderate signal — monitor for confirmation",
+      "require_human_approval": false
+    },
+    "ignore": {
+      "label": "IGNORE",
+      "emoji": "⏭️",
+      "description": "Low-confidence noise — no action needed",
+      "require_human_approval": false
+    }
+  },
+
+  "llm_intervention": {
+    "enabled": true,
+    "score_floor": 35,
+    "score_ceiling": 75,
+    "prompt_template": "Score {score}/100 signal: {symbol} {direction} at {price}. Rules say {bucket}. Current regime: {regime}. Volume: {volume}. Explain why this might be wrong or what nuance is missing."
+  },
+
+  "server": {
+    "host": "127.0.0.1",
+    "port": 18900,
+    "endpoint": "/webhook/tradingview"
+  },
+
+  "telegram": {
+    "enabled": true,
+    "min_score_to_alert": 40,
+    "chat_id": "-5087043705"
+  },
+
+  "agentmemory": {
+    "enabled": true,
+    "min_score_to_store": 40,
+    "api_url": "http://localhost:3111/agentmemory"
+  }
+}

@@ -61,4 +61,19 @@ Event Bus — short-term signal memory
 _50 high-confidence signals analyzed_
 [2026-06-08T06:07:59.993325+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Signal Intel: BTC-USD down: failed or unconfigured
 
-2026-06-08 06:10 UTC | credit-meter | $27.00/50.00 today
+2026-06-08 06:10 UTC | credit-meter | $27.00/50.00 today2026-06-08T06:20:12Z | state-probe | Striker=offline WolfWatch=online MetaAge=3336s
+
+2026-06-08 06:24 UTC | meta-monitor | All crons and services healthy[2026-06-08T06:30:01.381635+00:00] | [KAIROS] | [MONITOR_HEALTH_DEGRADED] | Health file fresh (0s old), but Striker status is stopped.
+[2026-06-08T06:30:06.401536+00:00] | [KAIROS] | [MONITOR_HEALTH_NOTIFY_FAILED] | DEGRADED: timed out
+[2026-06-08T06:30:06.872974+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker HEALTH DEGRADED: Health file fresh (0s old), but Striker status is stopped.
+[2026-06-08T06:30:06.873035+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker HEALTH DEGRADED: failed or unconfigured
+
+2026-06-08 06:40 UTC | credit-meter | $30.77/50.00 today[2026-06-08T06:45:01.456485+00:00] | [KAIROS] | [MONITOR_HEALTH_STALE] | Striker health file is 196s old (threshold 120s).
+[2026-06-08T06:45:06.475528+00:00] | [KAIROS] | [MONITOR_HEALTH_NOTIFY_FAILED] | STALE: timed out
+[2026-06-08T06:45:11.822406+00:00] | [WOLFWATCH] | [CRITICAL] | Striker HEALTH STALE: Striker health file is 196s old (threshold 120s).
+[2026-06-08T06:45:11.822510+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker HEALTH STALE: failed or unconfigured
+2026-06-08T06:50:07Z | state-probe | Striker=offline WolfWatch=online MetaAge=1529s
+[2026-06-08T06:52:19.939056+00:00] | [WOLFWATCH] | [IMPORTANT] | Budget cap exceeded: OpenRouter daily spend $32.26740384 exceeds $30.00 threshold. Set hard cap at https://openrouter.ai/settings/billing
+[2026-06-08T06:52:19.939124+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Budget cap exceeded: failed or unconfigured
+
+2026-06-08 07:10 UTC | credit-meter | $34.51/50.00 today

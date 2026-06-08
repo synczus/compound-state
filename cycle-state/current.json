@@ -1,20 +1,19 @@
 {
-  "timestamp": "2026-06-08T06:15:01.350774+00:00",
+  "timestamp": "2026-06-08T07:15:01.732594+00:00",
   "version": "0.1.0",
   "budget": {
     "paused": false,
-    "balance": 64.9282,
-    "checked_at": "2026-06-08T06:00:06Z"
+    "balance": 56.715,
+    "checked_at": "2026-06-08T07:00:07Z"
   },
   "services": {
     "striker": {
       "status": "active",
       "health": {
         "status": "connected",
-        "connected_since": "2026-06-07T22:16:33.042841+00:00",
-        "signals_this_session": 101598,
-        "total_signals": 136107,
-        "updated_at": "2026-06-08T06:14:29.383959+00:00"
+        "connected_since": "2026-06-08T06:41:45.410268+00:00",
+        "signals_this_session": 0,
+        "total_signals": 137860
       }
     },
     "wolfwatch": {

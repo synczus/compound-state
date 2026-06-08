@@ -1,7 +1,1 @@
-{
-  "status": "connected",
-  "connected_since": "2026-06-07T22:16:33.042841+00:00",
-  "signals_this_session": 101634,
-  "total_signals": 136143,
-  "updated_at": "2026-06-08T06:17:29.394578+00:00"
-}
+{"status": "connected", "connected_since": "2026-06-08T06:41:45.410268+00:00", "signals_this_session": 0, "total_signals": 137860}

@@ -45,79 +45,69 @@ VALID_CATEGORIES = [
 
 
 def save_memory(args):
-    """Save a memory to AgentMemory via REST API or MCP."""
+    """Save a memory to AgentMemory via CLI."""
     
-    payload = {
-        "text": args.text,
-        "category": args.category if args.category else "bootstrap",
-        "metadata": {
-            "source": args.agent,
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-            "importance": args.importance,
-        }
+    # CLI is the only reliable path - REST API is behind MCP auth
+    import subprocess
+    
+    metadata = {
+        "source": args.agent,
+        "importance": args.importance,
     }
-    
     if args.tags:
-        payload["metadata"]["tags"] = args.tags.split(",")
+        metadata["tags"] = args.tags.split(",")
     
-    # Try REST API first
+    metadata_json = json.dumps(metadata, separators=(",", ":"))
+    
+    cmd = [
+        "agentmemory", "add",
+        "--quiet",
+        "--category", args.category or "bootstrap",
+        "--text", args.text,
+        "--metadata", metadata_json,
+    ]
+    
+    env = os.environ.copy()
+    env["AGENTMEMORY_SUPPRESS_COST_WARNING"] = "1"
+    
     try:
-        data = json.dumps(payload).encode()
-        req = urllib.request.Request(
-            f"{AGENTMEMORY_URL}/memories",
-            data=data,
-            headers={"Content-Type": "application/json"},
-            method="POST"
-        )
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            result = json.loads(resp.read())
-            print(f"[memory-writer] ✅ Saved: {result.get('id', 'unknown')} (importance={args.importance})")
-            return result
-    except (urllib.error.URLError, urllib.error.HTTPError) as e:
-        print(f"[memory-writer] REST API failed ({e}), trying CLI fallback...", file=sys.stderr)
-    
-    # Fallback: use the agentmemory CLI
-    cmd = f'agentmemory add --category "{args.category or "bootstrap"}" --text "{args.text}" --metadata \'{{"source":"{args.agent}","importance":{args.importance}}}\''
-    if args.tags:
-        cmd += f' --tags "{args.tags}"'
-    
-    print(f"[memory-writer] CLI fallback: {cmd[:100]}...")
-    ret = os.system(cmd)
-    if ret == 0:
-        print(f"[memory-writer] ✅ Saved via CLI (importance={args.importance})")
-    else:
-        print(f"[memory-writer] ❌ Failed to save (exit={ret})", file=sys.stderr)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30, env=env)
+        if result.returncode == 0:
+            # Extract memory ID from output
+            for line in result.stdout.split("\n"):
+                if "memId" in line or "saved" in line.lower():
+                    print(f"[memory-writer] ✅ Saved (importance={args.importance})")
+                    return
+            print(f"[memory-writer] ✅ Saved (importance={args.importance})")
+        else:
+            print(f"[memory-writer] ❌ CLI failed (exit={result.returncode}): {result.stderr[:200]}", file=sys.stderr)
+            sys.exit(1)
+    except subprocess.TimeoutExpired:
+        print(f"[memory-writer] ⚠️ Timed out (30s) - memory may still be saved", file=sys.stderr)
+    except FileNotFoundError:
+        print(f"[memory-writer] ❌ 'agentmemory' CLI not found", file=sys.stderr)
         sys.exit(1)
 
 
 def search_memories(args):
-    """Search memories via AgentMemory."""
-    query = args.query or " ".join(sys.argv[3:])
+    """Search memories via AgentMemory CLI."""
+    import subprocess
+    
+    cmd = ["agentmemory", "search", "--quiet", "--query", args.query, "--limit", str(args.limit)]
+    if args.category:
+        cmd.extend(["--category", args.category])
+    
+    env = os.environ.copy()
+    env["AGENTMEMORY_SUPPRESS_COST_WARNING"] = "1"
     
     try:
-        data = json.dumps({"query": query, "limit": args.limit, "category": args.category}).encode()
-        req = urllib.request.Request(
-            f"{AGENTMEMORY_URL}/memories/search",
-            data=data,
-            headers={"Content-Type": "application/json"},
-            method="POST"
-        )
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            results = json.loads(resp.read())
-            memories = results.get("memories", results.get("results", []))
-            print(f"[memory-writer] Found {len(memories)} memories:")
-            for m in memories[:args.limit]:
-                meta = m.get("metadata", {})
-                imp = meta.get("importance", "?")
-                src = meta.get("source", "?")
-                text = m.get("text", m.get("content", ""))[:120]
-                print(f"  [{imp}] {src}: {text}")
-            return memories
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30, env=env)
+        if result.returncode == 0:
+            print(result.stdout)
+        else:
+            print(f"[memory-writer] Search failed: {result.stderr[:200]}", file=sys.stderr)
     except Exception as e:
-        print(f"[memory-writer] Search failed: {e}", file=sys.stderr)
-        # CLI search fallback
-        cmd = f'agentmemory search --query "{query}" --limit {args.limit}'
-        os.system(cmd)
+        print(f"[memory-writer] Search error: {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -141,26 +141,8 @@
   .market-row .change.down { color: var(--red); }
   .market-row .signal { font-size: 9px; padding: 1px 4px; border-radius: 2px; background: var(--border); }
 
-  /* Budget panel */
-  .budget-bar {
-    height: 24px;
-    background: var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    margin: 6px 0;
-  }
-  .budget-bar .fill {
-    height: 100%;
-    border-radius: 4px;
-    transition: width 1s;
-    background: linear-gradient(90deg, var(--green), var(--amber));
-  }
-  .budget-bar .fill.danger { background: linear-gradient(90deg, var(--amber), var(--red)); }
-  .budget-text { display: flex; justify-content: space-between; font-size: 11px; }
-  .budget-text .used { color: var(--dim); }
-
-  /* Activity log */
+  /* Panel badges */
+  .panel .badge {
   .log-panel { grid-column: 1 / 4; }
   .log-list {
     flex: 1;
@@ -225,17 +207,6 @@
         <div class="value" id="uptimeVal">—</div>
       </div>
     </div>
-  </div>
-
-  <!-- Budget -->
-  <div class="panel">
-    <div class="panel-title">OpenRouter Budget <span class="badge" id="budgetLabel">$0/$50</span></div>
-    <div class="budget-bar"><div class="fill" id="budgetBar" style="width:0%"></div></div>
-    <div class="budget-text">
-      <span class="used" id="budgetUsed">$0.00 used today</span>
-      <span id="budgetRemaining">$50.00 left</span>
-    </div>
-    <div style="margin-top:auto;padding-top:8px;font-size:9px;color:var(--dim)" id="budgetWeekly">Weekly: —</div>
   </div>
 
   <!-- Market / Striker -->
@@ -334,22 +305,6 @@ function updateDashboard(data) {
     ramBar.style.width = ram + '%';
     ramBar.className = 'fill ' + (ram > 80 ? 'red' : ram > 60 ? 'amber' : 'blue');
     document.getElementById('diskBar').style.width = disk + '%';
-  }
-
-  // Budget
-  if (data.budget) {
-    let used = data.budget.daily || 0;
-    let limit = data.budget.daily_limit || 50;
-    let pct = Math.min(used / limit * 100, 100);
-    document.getElementById('budgetLabel').textContent = `$${used.toFixed(1)}/$${limit}`;
-    let bar = document.getElementById('budgetBar');
-    bar.style.width = pct + '%';
-    bar.className = 'fill ' + (pct > 85 ? 'danger' : '');
-    document.getElementById('budgetUsed').textContent = `$${used.toFixed(2)} used today`;
-    document.getElementById('budgetRemaining').textContent = `$${(limit - used).toFixed(2)} left`;
-    if (data.budget.weekly_estimated) {
-      document.getElementById('budgetWeekly').textContent = `Weekly est: $${data.budget.weekly_estimated.toFixed(2)}`;
-    }
   }
 
   // Market
