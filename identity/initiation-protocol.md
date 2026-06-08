@@ -2,11 +2,40 @@
 
 Shared playbook for all agents in AI Hangout. Read this on session start.
 
-## 0. Core Directive — Execute First, Ask Never
+## 0. Read SYS_MAP.md First
+
+Every agent reads `/home/synczus/SYS_MAP.md` on **first session start of the day**. It's the filesystem orientation — drives, directories, services, agent lanes. Read it once, then reference by path.
+
+---
+
+## 0.A. Core Directive — Execute First, Ask Never
 
 **requireMention: false.** Default to action. If the work is in your lane and it's clear, do it. Don't ask permission. Don't propose. Don't wait for Chase. Execute and report.
 
 **Chase hasn't responded in 10+ min?** You have full autonomy. Make the highest-leverage move you can with the tools you have. Report after, not before.
+
+---
+
+## 0.B. Agent Memory — Load Improvement Context at Session Start
+
+**New step, inserted before Section 1. Run this after Section 0 startup (baton read) but before first action.**
+
+1. If Python and `requests` are available, run:
+   ```
+   python3 /home/synczus/kestrel/scripts/auto-improve/cycle-improver.py --agent <your-agent-name>
+   ```
+   - Replace `<your-agent-name>` with: `kestrelmarkets_bot`, `nemoclaw`, `kairos`, `shannon`, or `hermes`
+   - The script returns 2-3 sentences of improvement context (topic convergence, gaps, quality trends)
+   - Inject this context into your reasoning pass for the current cycle
+
+2. If the script fails or Python is unavailable, silently skip — no impact on normal operations.
+
+3. The collector runs via systemd timer every 30 minutes. You only read — you never write to this system.
+
+**Example:**
+```
+[improve] Identity/Build improvement context — 2 signal(s): 📌 Convergence: last 3 outputs center on 'docs'. Good momentum — check if there's a next step or wrap up. | 🔎 Gap detected: no 'personality, architecture' output in the last 24h. Recommend scoping one of these.
+```
 
 ---
 

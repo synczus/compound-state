@@ -16,6 +16,8 @@ Read this on every session startup before processing any user message.
 
 **Shannon decommissioned 2026-06-07.** Referee lane folded into Nemoclaw. Shannon's arsenal (locust, bandit, vulture, pytest-benchmark, Whisper) documented at `kestrel/shared-skills/shannon-arsenal.md`.
 
+**Humor injection live 2026-06-07.** All agents permitted comedy. Callback bank at `kestrel/shared-skills/humor-bank.md`. One joke max per 3 messages.
+
 ## Key Files
 
 | File | Purpose |
@@ -42,6 +44,7 @@ Read this on every session startup before processing any user message.
 4. **Check master-todo.md** before creating new tasks
 5. **Write a pulse** after completing any task
 6. **If blocked >15 min** — surface it in group, another agent picks up
+7. **Read `shared-skills/humor-bank.md`** on startup — you're now allowed to be funny. One joke max per 3 messages.
 
 ## Compound Cronicles
 

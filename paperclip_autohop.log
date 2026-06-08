@@ -70,3 +70,33 @@ ModuleNotFoundError: No module named 'httpx'
 2026-06-07 01:00:01,891 [WARNING] stderr: 2026-06-07 01:00:01,872 [INFO] kestrel.noise_gate: PURGE: Telegram_1780808401.872881 | Score: 0 | Reason: No significant markers found
 2026-06-07 01:00:01,873 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
 
+2026-06-08 00:00:01,182 [INFO] trigger_autohop | force=False | signal=2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wi
+2026-06-08 00:00:01,182 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wiring --chain all
+2026-06-08 00:00:01,313 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-08 00:00:01,313 [WARNING] stderr: 2026-06-08 00:00:01,283 [INFO] kestrel.noise_gate: PURGE: Telegram_1780891201.283432 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:00:01,283 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:10:01,879 [INFO] trigger_autohop | force=False | signal=**#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bu
+2026-06-08 00:10:01,880 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs --chain all
+2026-06-08 00:10:01,986 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-08 00:10:01,986 [WARNING] stderr: 2026-06-08 00:10:01,967 [INFO] kestrel.noise_gate: PURGE: Telegram_1780891801.967128 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:10:01,967 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:10:02,019 [INFO] trigger_autohop | force=False | signal=**#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, w
+2026-06-08 00:10:02,019 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py **#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs --chain all
+2026-06-08 00:10:02,132 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-08 00:10:02,132 [WARNING] stderr: 2026-06-08 00:10:02,111 [INFO] kestrel.noise_gate: PURGE: Telegram_1780891802.111346 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:10:02,111 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:15:01,204 [INFO] trigger_autohop | force=False | signal=**#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs
+2026-06-08 00:15:01,204 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py **#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs --chain all
+2026-06-08 00:15:01,332 [INFO] done | rc=1 status=success | stdout=651 chars | stderr=228 chars
+2026-06-08 00:15:01,332 [WARNING] stderr: 2026-06-08 00:15:01,310 [INFO] kestrel.noise_gate: PURGE: Telegram_1780892101.310712 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:15:01,311 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:15:01,359 [INFO] trigger_autohop | force=False | signal=**#4** 2026-06-08 | Nemoclaw | Self-healing cron — systemd timers per job, shared retry wrapper with exponential backoff
+2026-06-08 00:15:01,359 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py **#4** 2026-06-08 | Nemoclaw | Self-healing cron — systemd timers per job, shared retry wrapper with exponential backoff, flock dedup, one watchdog script. ~4 hrs --chain all
+2026-06-08 00:15:01,468 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-08 00:15:01,469 [WARNING] stderr: 2026-06-08 00:15:01,448 [INFO] kestrel.noise_gate: PURGE: Telegram_1780892101.448931 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:15:01,449 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+

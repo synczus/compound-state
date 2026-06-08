@@ -375,3 +375,4 @@
 2026-06-07 20:46:22,306 - uvicorn.error - ERROR - [Errno 98] error while attempting to bind on address ('127.0.0.1', 8081): address already in use
 2026-06-07 20:46:22,306 - uvicorn.error - INFO - Waiting for application shutdown.
 2026-06-07 20:46:22,306 - uvicorn.error - INFO - Application shutdown complete.
+2026-06-08 00:11:56,577 - freqtrade - INFO - SIGINT received, aborting ...

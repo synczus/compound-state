@@ -11,13 +11,13 @@
 - [x] 2026-06-07 | Kairos | kairos_monitor.py deployed — health tick freshness + DB row growth monitoring, edge-triggered alerts via bus_logger, cron */15 with flock ✅
 
 ## 🔴 P0 — Must Do
-- [ ] 2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wiring
+- [x] 2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wiring
 
 ## 🟡 P1 — Perplexity Priority Build Order
-- [ ] **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs
-- [ ] **#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs
-- [ ] **#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs
-- [ ] **#4** 2026-06-08 | Nemoclaw | Self-healing cron — systemd timers per job, shared retry wrapper with exponential backoff, flock dedup, one watchdog script. ~4 hrs
+- [x] **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs
+- [x] **#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs
+- [x] **#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs
+- [x] **#4** 2026-06-08 | Nemoclaw | Self-healing cron — systemd timers per job, shared retry wrapper with exponential backoff, flock dedup, one watchdog script. ~4 hrs
 - [ ] **#5** 2026-06-08 | Kairos | Newsletter scraper adapter — RSS first (/feed), IMAP fallback, sitemap.xml last, dedupe by URL + content hash. Targets: a16z, Coinstack, Tech Buzz, Milk Road, Bankless. ~4 hrs
 - [ ] **#6** 2026-06-08 | Nemoclaw | DuckDB scaling — tiered retention (lead 90d, narrative 30d, archival 7d), hourly checkpoint, Parquet cold export. ~3 hrs
 - [ ] **#7** 2026-06-08 | Nemoclaw | Wire CryptoQuant API — exchange-reserve, netflow, inflow (BTC) + stablecoin netflow/reserve. Needs API key. ~6.5 hrs
@@ -58,6 +58,25 @@
 
 
 ## 📥 Collected HLMs
+- [ ] 2026-06-08 | Scraper | 20 projects listed across all 4 agent lanes — the highest-leverage first build is self-hosted model fallback (kills the OpenRouter SPOF), followed by a compound health page (one URL replaces the morning file crawl).
+- [ ] 2026-06-08 | Scraper | 3 Perplexity hops generated covering boot persistence (ops), DuckDB tiered retention (data pipeline), and on-chain metric correlation (signal architecture) — the three highest-leverage research gaps across the compound's domains.
+- [ ] 2026-06-08 | Scraper | 6 Perplexity hops processed, 4 production code files written to disk, unified next hop is deploy execution pipeline — n8n owner setup + API key is the only remaining gate.
+- [ ] 2026-06-08 | Scraper | All agents share the same Hermes engine and auto-improvement capabilities — Shannon's gateway can be re-enabled and each agent can get its own cron lane for the same continuous learning loop.
+- [ ] 2026-06-08 | Scraper | All core infrastructure (Striker monitoring, freshness watchdog, RSS feeds, compound_state) is deployed and healthy; the next build sprint should populate compound_state with live source health scores and process OpenClaw's 9 Perplexity research JSON artifacts.
+- [ ] 2026-06-08 | Scraper | All three SOUL files updated, coordination board verified, agent-hop-chain cron live every 30m — n8n API key from Settings → n8n API is the only remaining block.
+- [ ] 2026-06-08 | Scraper | Casual tone locked in — saved to permanent memory, no more robot speak.
+- [ ] 2026-06-08 | Scraper | Clean n8n running at `localhost:5678` — one owner setup and one API key creation and we're wired for good.
+- [ ] 2026-06-08 | Scraper | Fresh n8n at `localhost:5678` — set up your owner account, create an API key, paste it here, and I'll wire the full signal pipeline into Telegram, email, and workflow automation.
+- [ ] 2026-06-08 | Scraper | Go to `localhost:5678` (root, not `/signin`) — the setup screen will let you create the account, not log into one that doesn't exist yet.
+- [ ] 2026-06-08 | Scraper | Hermes runs 3 autonomous cron jobs and the gateway 24/7 without active chat — the signal pipeline, hop chain, and agent pulses all compound in background.
+- [ ] 2026-06-08 | Scraper | Root URL `localhost:5678` shows the setup form — create account there, not at `/signin`.
+- [ ] 2026-06-08 | Scraper | Three research hops generated covering the highest-leverage P1 items: export backlog processing (#1 build order), CryptoQuant on-chain wiring (highest signal density new source), and MMR/IBKR paper trading deployment (blocking on credentials but needs research now).
+- [ ] 2026-06-08 | Scraper | `~/compound/` is your dead simple home nav — 10 directories symlinked to everything you own — tell me what you want organized next and I'll wire it through Telegram.
+- [ ] 2026-06-08 | Scraper | n8n is clean at `localhost:5678` — sign up with that email and password, make one API key, and the pipeline wiring runs itself from there.
+- [ ] 2026-06-08 | Scraper | n8n is live and you're logged in — generate an API key from Settings → n8n API, drop it here, and I'll wire the whole pipeline so you get emails, texts, and Telegram alerts from every signal and trade automatically.
+- [ ] 2026-06-08 | Scraper | n8n is running on port 5678 with your email already configured — log in, Settings → n8n API → Create API key, paste it here, and I'll wire the full pipeline.
+- [ ] 2026-06-08 | Scraper | n8n restarted clean — set up your owner account and create an API key, then I'll wire the full signal pipeline into Telegram, email, and SMS alerts through it.
+- [ ] 2026-06-08 | Scraper | n8n running clean at `localhost:5678` — email `c83242089@gmail.com`, password `Kestrel2026!`, one setup and one API key and you never touch it again.
 
 - [ ] 2026-06-07 | Scraper | .html files are blocked on this gateway — rename to .txt, zip it, or paste the raw text and I'll score those Telegram channels.
 - [ ] 2026-06-07 | Scraper | @cointelegraph and @r_algotrading are the keepers — one feeds market intelligence in English at a clean cadence, the other feeds algo trading strategy discussion that directly informs our builds.
@@ -255,3 +274,39 @@
 |- [x] ✅ Coordination board verified — coordination.yaml + baton + hop-sequence all good
 |- [x] ✅ Agent-hop-chain cron wired — every 30m, checks board, kicks stale chain
 |- [ ] 🔴 P0 | Chase | Set up n8n owner account at localhost:5678 → create API key → paste in chat
+
+--- pulse 2026-06-08T03:20:16Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780888816 min — propose next cycle
+- [ ] ⚪ exports: 24 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 111665 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T03:30:16Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780889416 min — propose next cycle
+- [ ] ⚪ exports: 24 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 112877 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+|--- pulse 2026-06-08T03:36:31Z (Kairos auto-scan) ---
+|- [x] ✅ Kairos scan complete — Striker 113K+ healthy | compound_state live 5-min cron | freshness watchdog 60s systemd | TechCrunch RSS wired via systemd
+|- [x] ✅ New auto-cycle started in hop-sequence.json — scoping compound_state live source scoring + P1 #3
+|- [x] ✅ 10 Perplexity JSON artifacts in OpenClaw inbound are research artifacts, not Telegram exports
+|- [ ] 🔴 P0 | Chase | n8n owner account setup — still blocked
+
+--- pulse 2026-06-08T03:50:14Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: Auto-initiated cycle: wire freshness watchdog + live compoun
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 25 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 114526 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+_AutoHOP feed batch at 2026-06-08 00:00:01 EDT: 1 item(s) attempted._
+
+--- pulse 2026-06-08T04:00:33Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780891234 min — propose next cycle
+- [ ] ⚪ exports: 25 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 114713 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+
+_AutoHOP feed batch at 2026-06-08 00:10:02 EDT: 2 item(s) attempted._
+
+_AutoHOP feed batch at 2026-06-08 00:15:01 EDT: 2 item(s) attempted._

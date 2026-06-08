@@ -1,0 +1,22 @@
+[Unit]
+Description=Auto-improve feedback collector — logs agent outputs to AgentMemory every 30 min
+Documentation=https://github.com/kestrelmarkets/auto-improve
+Wants=agentmemory.service
+After=agentmemory.service network-online.target
+
+[Service]
+Type=oneshot
+User=synczus
+Group=synczus
+WorkingDirectory=/home/synczus/kestrel/scripts/auto-improve
+Environment=AGENTMEMORY_URL=http://localhost:3111
+Environment=FEEDBACK_LOOP_COUNT=50
+Environment=FEEDBACK_PIPELINE_LINES=200
+ExecStart=/home/synczus/kestrel/scripts/auto-improve/feedback-collector.py
+StandardOutput=journal
+StandardError=journal
+# Best-effort: don't fail the timer if the script fails
+SuccessExitStatus=0 1
+
+[Install]
+WantedBy=default.target

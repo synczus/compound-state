@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-08T03:09:05.668469+00:00",
-  "epoch_seconds": 1780888145,
+  "timestamp": "2026-06-08T04:13:06.032831+00:00",
+  "epoch_seconds": 1780891986,
   "board_summary": {
     "p0_pending": 0,
     "p1_pending": 0,
     "p2_pending": 0,
-    "done": 8,
-    "in_progress": 31
+    "done": 11,
+    "in_progress": 38
   },
   "striker": {
     "status": "connected",

@@ -1,21 +1,23 @@
 {
-  "active": false,
-  "chain": [],
+  "active": true,
+  "chain": [
+    "kairos",
+    "nemoclaw",
+    "openclaw"
+  ],
   "current_step": 0,
-  "query": "",
-  "requested_by": "",
+  "query": "2026-06-07 | Kairos | Baton auto-cycle testing \u2014 verify cron auto-picks P0",
+  "requested_by": "openclaw-auto",
   "kairos_done": false,
   "grok_done": false,
   "openclaw_done": false,
-  "complete": true,
+  "complete": false,
   "auto": true,
   "idle_since": "",
-  "last_updated": "2026-06-08T03:00:00Z",
+  "last_updated": "2026-06-08T03:35:01Z",
   "monitor_active": true,
   "monitor_job": "agent-hop-chain",
   "monitor_schedule": "every 30m",
-  "souls_updated": ["kairos-soul.md", "shannon-soul.md", "nemoclaw-soul.md"],
-  "initiation_protocol": "v3",
-  "coordination_board": "verified",
-  "n8n_status": "running on port 5678, needs owner setup"
+  "n8n_status": "running on port 5678, needs owner setup (blocked on Chase)",
+  "nemoclaw_done": false
 }

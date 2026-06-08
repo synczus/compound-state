@@ -1,290 +1,118 @@
 """
-Striker Bridge — Full Execution Layer v2
-- Reads DuckDB signal_scores ranked queue
-- Checks daily budget guard ($50 cap, $5 floor, $10 per-trade)
-- POSTs high-confidence signals to FreqTrade /api/v1/forceentry
-- Journals every trade to DuckDB trade_log
-- Paper-mode safe (all trades marked is_paper=True)
+Striker Bridge — full wiring:
+ DuckDB signal_scores -> confidence threshold -> position size -> POST FreqTrade API
+ -> journal to DuckDB trade_log
 """
-import json
-import logging
-import time
+import json, logging, time
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
 
-import duckdb
-import requests
+import duckdb, requests
 from requests.auth import HTTPBasicAuth
 
 logger = logging.getLogger(__name__)
 
-# Config
-DUCKDB_PATH = str(Path.home() / "kestrel/signals.duckdb")
-FT_API_BASE = "http://127.0.0.1:8092/api/v1"
+DUCKDB_PATH = str(Path.home() / "kestrel/data/striker.duckdb")
+FT_API_BASE = "http://127.0.0.1:8080/api/v1"
 FT_USER = "ftuser"
-FT_PASS = "ftpass"
-
-DAILY_CAP_USD = 50.0
-FLOOR_USD = 5.0
-PER_TRADE_CAP = 10.0
-MIN_SCORE = 0.15
-SIGNAL_TTL_MIN = 60
-POLL_SECONDS = 60
-
-# Map asset bases to Freqtrade pair format
-FT_PAIR_MAP = {
-    "BTC": "BTC/USDC",
-    "ETH": "ETH/USDC",
-    "SOL": "SOL/USDC",
-}
-
-# Event types that imply direction
-BULLISH_EVENTS = {"whale_transfer", "funding_event", "crypto_narrative"}
-BEARISH_EVENTS = {"regulatory_event", "geopolitical_event"}
-
-# Source trust weights from pipeline priors
+FT_PASS = "ftpass123"
 SOURCE_PRIORS = {
-    "whale-alert": 0.384,
-    "defillama": 0.340,
-    "cointelegraph": 0.66,
-    "coindesk": 0.60,
-    "disclosetv": 0.121,
-    "bankless": 0.108,
-    "tldr": 0.106,
+    "whale-alert": 0.384, "defillama": 0.340,
+    "telegram-@AIHangout": 0.161, "telegram-@GemHunterrs": 0.153,
+    "telegram-@BinanceKillers": 0.121, "telegram-@disclosetv": 0.121,
+    "generic-unlabeled": 0.061, "pump-channel-generic": 0.047,
 }
+FT_PAIR_MAP = {"BTC": "BTC/USDT:USDT", "ETH": "ETH/USDT:USDT", "SOL": "SOL/USDT:USDT"}
 
-
-def _auth() -> HTTPBasicAuth:
-    return HTTPBasicAuth(FT_USER, FT_PASS)
-
-
-def _ft_get(endpoint: str) -> Optional[dict]:
+def ft_get(endpoint):
     try:
-        r = requests.get(f"{FT_API_BASE}{endpoint}", auth=_auth(), timeout=5)
-        r.raise_for_status()
-        return r.json()
+        r = requests.get(f"{FT_API_BASE}{endpoint}", auth=HTTPBasicAuth(FT_USER, FT_PASS), timeout=5)
+        r.raise_for_status(); return r.json()
     except Exception as e:
-        logger.error(f"FT GET {endpoint}: {e}")
-        return None
+        logger.error(f"FT GET {endpoint} failed: {e}"); return None
 
-
-def _ft_post(endpoint: str, payload: dict) -> Optional[dict]:
+def ft_post(endpoint, payload):
     try:
-        r = requests.post(f"{FT_API_BASE}{endpoint}", json=payload, auth=_auth(), timeout=5)
-        r.raise_for_status()
-        return r.json()
+        r = requests.post(f"{FT_API_BASE}{endpoint}", json=payload, auth=HTTPBasicAuth(FT_USER, FT_PASS), timeout=5)
+        r.raise_for_status(); return r.json()
     except Exception as e:
-        logger.error(f"FT POST {endpoint}: {e}")
-        return None
+        logger.error(f"FT POST {endpoint} failed: {e}"); return None
 
-
-def _budget_check() -> tuple[bool, float]:
-    """
-    Returns (ok: bool, remaining: float).
-    ok=True if remaining budget >= floor.
-    """
+def get_daily_spend(engine="freqtrade"):
     try:
         con = duckdb.connect(DUCKDB_PATH, read_only=True)
         r = con.execute("""
-            SELECT COALESCE(SUM(amount_usd), 0)
-            FROM trade_log
-            WHERE date_trunc('day', executed_at) = date_trunc('day', NOW())
-        """).fetchone()
-        con.close()
-        spent = float(r[0]) if r else 0.0
-        remaining = DAILY_CAP_USD - spent
-        return remaining >= FLOOR_USD, remaining
+            SELECT COALESCE(SUM(amount_usd), 0) FROM trade_log
+            WHERE date_trunc('day', executed_at) = date_trunc('day', NOW()) AND engine = ?
+        """, [engine]).fetchone()
+        con.close(); return float(r[0]) if r else 0.0
     except Exception as e:
-        logger.error(f"Budget check failed: {e}")
-        return True, DAILY_CAP_USD  # fail open until trade_log exists
+        logger.error(f"Daily spend query failed: {e}"); return 50.0
 
-
-def _infer_direction(event_type: str, source_id: str) -> Optional[str]:
-    """Infer trade direction from event type and source."""
-    et = event_type.lower()
-    if et in BULLISH_EVENTS:
-        return "long"
-    if et in BEARISH_EVENTS:
-        return "short"
-    # For neutral events, use source trust as heuristic
-    if source_id in TRUSTED_SOURCES:
-        # Whale alerts are typically sell pressure (short)
-        if source_id == "whale-alert" and et == "general_news":
-            return "short"
-        # DefiLlama TVL inflow is bullish
-        if source_id == "defillama":
-            return "long"
-    return None
-
-
-TRUSTED_SOURCES = {"whale-alert", "defillama", "cointelegraph", "coindesk"}
-
-
-def _fetch_signals() -> list[dict]:
-    """Fetch top-ranked signals from DuckDB for BTC/ETH/SOL."""
+def fetch_top_signals():
     try:
-        cutoff = (datetime.utcnow() - timedelta(minutes=SIGNAL_TTL_MIN)).isoformat()
+        cutoff = (datetime.utcnow() - timedelta(minutes=30)).isoformat()
         con = duckdb.connect(DUCKDB_PATH, read_only=True)
         rows = con.execute("""
-            SELECT
-                score_id,
-                source_id,
-                event_type,
-                CAST(edge_score AS DOUBLE) AS edge_score,
-                asset_symbol,
-                event_ts,
-                source_prior
+            SELECT event_id, asset, signal_direction, CAST(score AS DOUBLE) AS score, source, created_at
             FROM signal_scores
-            WHERE (
-                asset_symbol IN ('BTC', 'ETH', 'SOL')
-                OR source_id IN ('whale-alert', 'defillama')
-            )
-              AND scored_at >= ?
-              AND CAST(edge_score AS DOUBLE) >= ?
-            ORDER BY edge_score DESC
-            LIMIT 20
-        """, [cutoff, MIN_SCORE]).fetchall()
+            WHERE asset IN ('BTC', 'ETH', 'SOL') AND created_at >= ? AND CAST(score AS DOUBLE) >= 0.15
+            ORDER BY score DESC LIMIT 20
+        """, [cutoff]).fetchall()
         con.close()
-        return [
-            {
-                "score_id": r[0],
-                "source": r[1],
-                "event_type": r[2],
-                "score": float(r[3]),
-                "asset": r[4] or "BTC",  # default BTC if asset_symbol is null
-                "event_ts": str(r[5]),
-                "prior": float(r[6]),
-            }
-            for r in rows
-        ]
+        return [{"event_id": r[0], "asset": r[1], "direction": r[2].upper(), "score": r[3], "source": r[4], "created_at": r[5]} for r in rows]
     except Exception as e:
-        logger.error(f"fetch_signals error: {e}")
-        return []
+        logger.error(f"fetch_top_signals error: {e}"); return []
 
-
-def _compute_stake(signal: dict) -> float:
-    """
-    Position size: base $3 + score-weighted addition.
-    Trusted sources get up to 2x weight.
-    """
-    score = signal["score"]
-    source = signal["source"]
+def compute_stake(score, source):
     source_weight = SOURCE_PRIORS.get(source, 0.061)
     raw = 3.0 + (score * source_weight * 50.0)
-    return round(min(raw, PER_TRADE_CAP), 2)
+    return round(min(raw, 10.0, 50.0 - get_daily_spend()), 2)
 
-
-def _journal_trade(signal: dict, pair: str, direction: str,
-                    stake: float, ft_response: dict) -> None:
-    """Write executed trade to DuckDB trade_log."""
+def journal_trade(event_id, asset, direction, stake, pair, ft_response):
     try:
         con = duckdb.connect(DUCKDB_PATH)
-        con.execute("""
-            INSERT INTO trade_log
-                (pair, side, amount, price, amount_usd,
-                 signal_score, source, engine, executed_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, 'freqtrade', NOW())
-        """, [
-            pair,
-            direction,
-            stake / ft_response.get("filled_avg", 1.0),
-            ft_response.get("filled_avg", 0.0),
-            stake,
-            signal["score"],
-            signal["source"],
-        ])
+        con.execute("CREATE TABLE IF NOT EXISTS trade_log (id VARCHAR DEFAULT gen_random_uuid(), event_id VARCHAR, engine VARCHAR, asset VARCHAR, pair VARCHAR, direction VARCHAR, amount_usd DOUBLE, is_paper BOOLEAN, ft_trade_id VARCHAR, executed_at TIMESTAMP DEFAULT NOW())")
+        con.execute("INSERT INTO trade_log (event_id, engine, asset, pair, direction, amount_usd, is_paper, ft_trade_id) VALUES (?, 'freqtrade', ?, ?, ?, ?, TRUE, ?)",
+                    [event_id, asset, pair, direction, stake, str(ft_response.get("trade_id", ""))])
         con.close()
-        logger.info(f"Journaled trade: {pair} {direction} ${stake:.2f}")
     except Exception as e:
-        logger.error(f"Journal error: {e}")
+        logger.error(f"journal_trade error: {e}")
 
+def force_entry(pair, direction, stake):
+    payload = {"pair": pair, "side": "long" if direction in ["BUY", "LONG", "BULLISH"] else "short", "stake_amount": stake, "ordertype": "market"}
+    return ft_post("/forceentry", payload)
 
-def _force_entry(pair: str, direction: str, stake: float) -> Optional[dict]:
-    """
-    POST /api/v1/forceentry to inject trade.
-    Requires force_entry_enable: true in config.
-    """
-    payload = {
-        "pair": pair,
-        "side": direction,
-        "stake_amount": stake,
-        "order_type": "market",
-    }
-    return _ft_post("/forceentry", payload)
-
-
-def run(paper_mode: bool = True):
-    """Main loop: poll DuckDB, check budget, inject trades via FT API."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s %(levelname)s [bridge] %(message)s",
-    )
-    logger.info(f"Bridge starting | paper={paper_mode}")
-
-    # Check FT health
-    health = _ft_get("/ping")
-    if not health:
-        logger.error("FreqTrade API unreachable — is it running on port 8080?")
-        logger.info("Start FreqTrade first, then restart bridge")
-        return
-
-    logger.info(f"FreqTrade API healthy: {health}")
-
-    processed_ids: set = set()
-
+def run_bridge(paper_mode=True, poll_seconds=60):
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s [bridge] %(message)s")
+    logger.info(f"Striker Bridge starting | paper={paper_mode}")
+    if not ft_get("/ping"):
+        logger.error("FreqTrade API not reachable"); return
+    processed_ids = set()
     while True:
         try:
-            ok, remaining = _budget_check()
-            if not ok:
+            remaining = 50.0 - get_daily_spend()
+            if remaining < 5.0:
                 logger.warning(f"Budget guard RED: remaining=${remaining:.2f}")
-                time.sleep(POLL_SECONDS)
-                continue
-
-            signals = _fetch_signals()
-            new_signals = [
-                s for s in signals
-                if s["score_id"] not in processed_ids
-            ]
-
-            logger.info(f"Signals: {len(signals)} total, {len(new_signals)} new, budget=${remaining:.2f}")
-
-            for sig in new_signals:
-                direction = _infer_direction(sig["event_type"], sig["source"])
-                if not direction:
-                    logger.debug(f"Skipping {sig['score_id']}: no direction inferred")
-                    continue
-
-                asset = sig["asset"]
-                pair = FT_PAIR_MAP.get(asset)
-                if not pair:
-                    logger.debug(f"Skipping {asset}: no pair mapping")
-                    continue
-
-                stake = _compute_stake(sig)
-                if stake < 1.0:
-                    continue
-
-                logger.info(
-                    f"Entry: {pair} {direction} score={sig['score']:.3f} "
-                    f"source={sig['source']} stake=${stake:.2f}"
-                )
-
-                resp = _force_entry(pair, direction, stake)
+                time.sleep(poll_seconds); continue
+            signals = fetch_top_signals()
+            for sig in [s for s in signals if s["event_id"] not in processed_ids]:
+                pair = FT_PAIR_MAP.get(sig["asset"])
+                if not pair: continue
+                stake = compute_stake(sig["score"], sig["source"])
+                if stake < 1.0: continue
+                logger.info(f"Signal: {sig['asset']} {sig['direction']} score={sig['score']:.3f} stake=${stake:.2f}")
+                resp = force_entry(pair, sig["direction"], stake)
                 if resp:
-                    _journal_trade(sig, pair, direction, stake, resp)
-                    processed_ids.add(sig["score_id"])
-                    logger.info(f"Trade injected: {pair} | {resp}")
-
-                # Bound processed set
+                    journal_trade(sig["event_id"], sig["asset"], sig["direction"], stake, pair, resp)
+                    processed_ids.add(sig["event_id"])
+                    logger.info(f"Trade injected: {pair} | FT trade_id={resp.get('trade_id')}")
                 if len(processed_ids) > 10000:
                     processed_ids = set(list(processed_ids)[-5000:])
-
         except Exception as e:
-            logger.error(f"Loop error: {e}")
-
-        time.sleep(POLL_SECONDS)
-
+            logger.error(f"Bridge loop error: {e}")
+        time.sleep(poll_seconds)
 
 if __name__ == "__main__":
-    run(paper_mode=True)
+    run_bridge(paper_mode=True)

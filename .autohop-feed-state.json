@@ -1,6 +1,21 @@
 {
-  "date": "2026-06-07",
+  "date": "2026-06-08",
   "processed": {
+    "3316b3fa3af1d1d7": {
+      "attempted_at": "2026-06-08T00:10:01.992272-04:00",
+      "item": "**#2** 2026-06-08 | Kairos | Post-ingest scoring job \u2014 edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs",
+      "ok": true
+    },
+    "7e778edd02b226fa": {
+      "attempted_at": "2026-06-08T00:15:01.337519-04:00",
+      "item": "**#4** 2026-06-08 | Nemoclaw | Self-healing cron \u2014 systemd timers per job, shared retry wrapper with exponential backoff, flock dedup, one watchdog script. ~4 hrs",
+      "ok": true
+    },
+    "81fea5e0e66652ca": {
+      "attempted_at": "2026-06-08T00:00:01.156201-04:00",
+      "item": "2026-06-08 | Chase | Set up n8n owner account + create API key at Settings \u2192 n8n API \u2192 paste key in chat for pipeline wiring",
+      "ok": true
+    },
     "8d36bccfcb6cd02e": {
       "attempted_at": "2026-06-07T01:00:01.761056-04:00",
       "item": "2026-06-06 | Scraper | The creative thought drops were 8 separate \u26aa ideas on the board. Now they're a single live cron rotation with weighted selection logic and concrete examples \u2014 the compound's auto-conversation went from \"what should we work on\" to \"here's a signal fragment, a contradiction, or a bet\" every 5 minutes, and the only dead spot is whichever agent doesn't respond.",
@@ -21,6 +36,11 @@
       "item": "2026-06-06 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique), and adding it doubles the DB's philosophical range \u2014 Oblique breaks rules, Six Hats structures thinking. Together they cover chaos *and* structure, which means the compound can now frame any problem from either direction every 5 minutes.",
       "ok": true
     },
+    "b767e504fa9a531c": {
+      "attempted_at": "2026-06-08T00:10:01.856609-04:00",
+      "item": "**#1** 2026-06-08 | Kairos | Archive batch processor \u2014 scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs",
+      "ok": true
+    },
     "d9b8f70e9474bd03": {
       "attempted_at": "2026-06-06T15:30:01.984193-04:00",
       "item": "2026-06-06 | Hermes | Wire Shannon Closer as auto-judge for every dialogue round \u2014 scores both propositions after each exchange",
@@ -30,7 +50,12 @@
       "attempted_at": "2026-06-07T00:00:01.346507-04:00",
       "item": "2026-06-06 | Scraper | Shared coordination surface is live \u2014 agents now check master-todo.md before every response.",
       "ok": true
+    },
+    "f1f54b543bf09732": {
+      "attempted_at": "2026-06-08T00:15:01.180019-04:00",
+      "item": "**#3** 2026-06-08 | Kairos | Freshness watchdog \u2014 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs",
+      "ok": true
     }
   },
-  "runs_today": 3
+  "runs_today": 5
 }

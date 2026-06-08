@@ -153,3 +153,65 @@ Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
 Copy the JSON file or ask me to post it.
 
 {"generated_at": "2026-06-08T03:03:03.748369+00:00", "count": 10}
+2026-06-07 23:33:01,009 WARNING [perplexity-qgen] DuckDB read failed: Invalid Input Error: 'pandas' is required for this operation but it was not installed
+2026-06-07 23:33:01,023 INFO [perplexity-qgen] Saved 10 queries to /home/synczus/kestrel/pulse/perplexity-queries.json
+🧠 Perplexity Queries — 23:33 ET
+
+Pipeline: 4671 scored, 4671 raw signals
+FreqTrade: 🔴  MMR: 🔴  Trades: 0
+
+To-dos:
+- 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
+- 2026-06-07 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
+- 2026-06-07 | Scraper | Kestrel pipeline is green — Striker and WolfWatch both online, no pending votes, two P0s in my lane waiting on Chase.
+- 2026-06-07 | Scraper | One consolidated message per cycle — P0s tagged with 🔴 and your @, everything else builds silently and surfaces only as completed deliverables — no more scrolling through fragmented replies.
+- 2026-06-07 | Scraper | Session built the whole foundation layer — monitor, manifest, stress test, cron savings — and four P1s are queued and ready to execute via subagents as soon as you drop the next input.
+
+🔥 Scoring Engine Enhancements
+  Enhancements for a multi-factor signal scoring engine on DuckDB? Current edge_score formula uses 9 factors including time decay (30/120/720min half-lives) and cross-source agreement boost (+15% per ag...
+
+🔥 Cross Market Signal Correlation
+  Which free/open APIs or RSS feeds provide meaningful cross-asset signal data? Specifically looking for: (1) equity/crypto correlation indicators, (2) USD index / DXY signals, (3) bond yield signals (1...
+
+🔥 Cryptoquant Source Integration
+  What are the most actionable CryptoQuant API endpoints for a crypto signal pipeline? Exchange netflow, reserve risk, estimated leverage ratio — which have the strongest correlation with 1h/4h price mo...
+
+🔥 Anomaly Detection Signal Pipeline
+  Lightweight anomaly detection on a DuckDB signal_scores table? I have 4671 rows with edge_score, source_id, asset_symbol, event_type, and timestamp. I want SQL queries or minimal Python that detects: ...
+
+Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
+
+Copy the JSON file or ask me to post it.
+
+{"generated_at": "2026-06-08T03:33:00.864496+00:00", "count": 10}
+2026-06-08 00:03:03,868 WARNING [perplexity-qgen] DuckDB read failed: Invalid Input Error: 'pandas' is required for this operation but it was not installed
+2026-06-08 00:03:03,874 INFO [perplexity-qgen] Saved 10 queries to /home/synczus/kestrel/pulse/perplexity-queries.json
+🧠 Perplexity Queries — 00:03 ET
+
+Pipeline: 4671 scored, 4671 raw signals
+FreqTrade: 🔴  MMR: 🔴  Trades: 0
+
+To-dos:
+- 2026-06-07 | Kairos | Baton auto-cycle testing — verify cron auto-picks P0
+- 2026-06-08 | Scraper | Three research hops generated covering the highest-leverage P1 items: export backlog processing (#1 build order), CryptoQuant on-chain wiring (highest signal density new source), and MMR/IBKR paper trading deployment (blocking on credentials but needs research now).
+- 2026-06-07 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
+- 2026-06-07 | Scraper | Kestrel pipeline is green — Striker and WolfWatch both online, no pending votes, two P0s in my lane waiting on Chase.
+- 2026-06-07 | Scraper | One consolidated message per cycle — P0s tagged with 🔴 and your @, everything else builds silently and surfaces only as completed deliverables — no more scrolling through fragmented replies.
+
+🔥 Openrouter Cost Optimization
+  Strategies to reduce OpenRouter API costs when running multi-agent systems? Current burn ~$50/day with 2 always-on agents. Already using require_mention for secondary agents, sub-agents with fresh con...
+
+🔥 Scoring Engine Enhancements
+  Enhancements for a multi-factor signal scoring engine on DuckDB? Current edge_score formula uses 9 factors including time decay (30/120/720min half-lives) and cross-source agreement boost (+15% per ag...
+
+🔥 Cross Market Signal Correlation
+  Which free/open APIs or RSS feeds provide meaningful cross-asset signal data? Specifically looking for: (1) equity/crypto correlation indicators, (2) USD index / DXY signals, (3) bond yield signals (1...
+
+🔥 Striker Threshold Tuning
+  Best practices for tuning basis divergence thresholds for crypto perp/spot pairs? At 0.1% threshold we get 25K daily signals, 98% noise. What's the optimal threshold for BTC/ETH/SOL that balances sign...
+
+Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
+
+Copy the JSON file or ask me to post it.
+
+{"generated_at": "2026-06-08T04:03:03.748526+00:00", "count": 10}
