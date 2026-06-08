@@ -1,16 +1,16 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 04:14:06 UTC_
-_Total active entries: 275_
+_Last consolidated: 2026-06-08 05:15:40 UTC_
+_Total active entries: 300_
 
 ## By Category
 
-- **other**: 103 entries
-- **pipeline-infrastructure**: 69 entries
-- **agent-orchestration**: 37 entries
-- **monitoring-observability**: 25 entries
+- **other**: 114 entries
+- **pipeline-infrastructure**: 74 entries
+- **agent-orchestration**: 39 entries
+- **monitoring-observability**: 30 entries
 - **cost-optimization**: 15 entries
-- **security-governance**: 8 entries
+- **security-governance**: 10 entries
 - **architecture-decision**: 8 entries
 - **knowledge-management**: 6 entries
 - **model-strategy**: 4 entries
@@ -19,6 +19,31 @@ _Total active entries: 275_
 
 ## Recent Propositions
 
+- `[hermes]` **[monitoring-observability]** Chase | Sudo one-liner — run `sudo loginctl enable-linger synczus` once. Keeps services alive after logout.
+- `[hermes]` **[other]** Chase | IBKR credentials — TWS_USERID, TWS_PASSWORD. Only needed if we switch from Coinbase to IBKR.
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Full squad cycle — all 5 agents online. Sub-agent efficiency
+- `[hermes]` **[other]** ⚪ striker: 123386 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Full squad activation — all 5 agents online. Shannon runs st
+- `[hermes]` **[other]** ⚪ striker: 122250 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z — watchdog fix applied,
+- `[hermes]` **[other]** ⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- `[hermes]` **[other]** ⚪ striker: 119337 signals (5170 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** 2026-06-08 | Chase | #1 n8n enterprise license — drop in Settings → Usage & Plan
+- `[hermes]` **[security-governance]** 2026-06-08 | Chase | #7 MMR credentials — TWS_USERID, TWS_PASSWORD, MASSIVE_API_KEY
+- `[hermes]` **[security-governance]** 2026-06-08 | Chase | #8 CryptoQuant API key
+- `[hermes]` **[monitoring-observability]** 2026-06-08 | Chase | #4 Sudo auth — loginctl enable-linger synczus
+- `[openclaw]` **[monitoring-observability]** 2026-06-08 | OpenClaw | #4 Boot persistence — needs sudo: sudo loginctl enable-linger synczus
+- `[openclaw]` **[pipeline-infrastructure]** 2026-06-08 | OpenClaw | #20 Perplexity pipeline — inbound files discovered
+- `[openclaw]` **[other]** 2026-06-08 | OpenClaw | #14 Dead code hunt — vulture running
+- `[openclaw]` **[other]** 2026-06-08 | OpenClaw | #2 One-shot deployer — draft docker-compose
+- `[openclaw]` **[other]** 2026-06-08 | OpenClaw | #3 Cron graveyard — audit all systemd + crons
+- `[openclaw]` **[pipeline-infrastructure]** 2026-06-08 | OpenClaw | #11 Auto-code-review — git hooks + bandit + vulture pipeline
+- `[openclaw]` **[monitoring-observability]** 2026-06-08 | OpenClaw | #12 Signal quality dashboard — Grafana
+- `[openclaw]` **[other]** 2026-06-08 | OpenClaw | #13 False-positive feedback loop — wire source_feedback table
+- `[openclaw]` **[monitoring-observability]** 2026-06-08 | OpenClaw | #18 Synapse dashboard deploy
+- `[openclaw]` **[agent-orchestration]** 2026-06-08 | OpenClaw | #21 Agent memory overhaul
+- `[openclaw]` **[other]** 2026-06-08 | OpenClaw | #22 ProVara integration — Ed25519 signing
+- `[openclaw]` **[agent-orchestration]** 2026-06-08 | OpenClaw | #23 Project diversification — CloakBrowser, AgentMemory, etc.
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780891234 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 114713 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | 20 projects listed across all 4 agent lanes — the highest-leverage first build is self-hosted model fallback (kills the OpenRouter SPOF), followed by a compound health page (one URL replaces the morning file crawl).
@@ -44,31 +69,6 @@ _Total active entries: 275_
 - `[hermes]` **[other]** ⚪ exports: 25 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - `[hermes]` **[other]** ⚪ striker: 114526 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780889416 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 112877 signals (5170 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780888816 min — propose next cycle
-- `[hermes]` **[other]** ⚪ exports: 24 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
-- `[hermes]` **[other]** ⚪ striker: 111665 signals (5170 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wiring
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780887634 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 108866 signals (5082 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780887016 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 108025 signals (5082 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780885819 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 105092 signals (5082 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780885219 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 103691 signals (5043 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780884015 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 100098 signals (5043 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780883413 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 97037 signals (5043 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780882230 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 91837 signals (4493 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 87393 signals (4490 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 80768 signals (4490 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
-- `[hermes]` **[other]** ⚪ striker: 78423 signals (4490 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 71354 signals (4350 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[other]** ⚪ striker: 68953 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 
 ---
 

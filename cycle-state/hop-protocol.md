@@ -9,19 +9,23 @@ The hop is not a task list. The hop is the **compound's nervous system** — str
 ```json
 {
   "active": true,
-  "chain": ["kairos", "grok", "openclaw"],
+  "chain": ["kairos", "nemoclaw", "openclaw", "shannon", "hermes"],
   "current_step": 0,
   "query": "Next investigation topic",
   "requested_by": "kairos (auto)",
   "kairos_done": false,
-  "grok_done": false,
+  "nemoclaw_done": false,
   "openclaw_done": false,
+  "shannon_done": false,
+  "hermes_done": false,
   "complete": false,
   "auto": true,
   "idle_since": "2026-06-07T17:00:00Z",
   "kairos_message": "",
-  "grok_message": "",
-  "openclaw_message": ""
+  "nemoclaw_message": "",
+  "openclaw_message": "",
+  "shannon_message": "",
+  "hermes_message": ""
 }
 ```
 
@@ -29,8 +33,12 @@ The hop is not a task list. The hop is the **compound's nervous system** — str
 
 Every hop runs in strict order:
 1. **Kairos** (step 0) — Scout, research, find the edge, propose the mission
-2. **Grok** (step 1) — Invert, critique, stress-test. Find why it fails.
-3. **OpenClaw** (step 2) — Build, commit, ship. Architect the solution.
+2. **Nemoclaw** (step 1) — Identity, docs, knowledge. Maintain SOULs, skills, humor profile
+3. **OpenClaw** (step 2) — Build, commit, ship. Architect the solution, write the code
+4. **Shannon** (step 3) — Referee, stress-test, judge. Score the signal, call bullshit
+5. **Hermes** (step 4) — Orchestrate, cron, budget. Track execution, manage system jobs
+
+**Queue the next hop:** When current_step advances past last (4), the hop completes and the next auto-hop fires at the configured interval.
 
 When `current_step` advances, the next agent sees their flag and fires.
 

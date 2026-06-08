@@ -100,3 +100,151 @@ ModuleNotFoundError: No module named 'httpx'
 2026-06-08 00:15:01,469 [WARNING] stderr: 2026-06-08 00:15:01,448 [INFO] kestrel.noise_gate: PURGE: Telegram_1780892101.448931 | Score: 0 | Reason: No significant markers found
 2026-06-08 00:15:01,449 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
 
+2026-06-08 00:20:01,441 [INFO] trigger_autohop | force=False | signal=**#5** 2026-06-08 | Kairos | Newsletter scraper adapter — RSS first (/feed), IMAP fallback, sitemap.xml last, dedupe by 
+2026-06-08 00:20:01,441 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py **#5** 2026-06-08 | Kairos | Newsletter scraper adapter — RSS first (/feed), IMAP fallback, sitemap.xml last, dedupe by URL + content hash. Targets: a16z, Coinstack, Tech Buzz, Milk Road, Bankless. ~4 hrs --chain all
+2026-06-08 00:20:01,556 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-08 00:20:01,557 [WARNING] stderr: 2026-06-08 00:20:01,534 [INFO] kestrel.noise_gate: PURGE: Telegram_1780892401.534876 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:20:01,535 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:20:01,585 [INFO] trigger_autohop | force=False | signal=**#6** 2026-06-08 | Nemoclaw | DuckDB scaling — tiered retention (lead 90d, narrative 30d, archival 7d), hourly checkpoi
+2026-06-08 00:20:01,585 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py **#6** 2026-06-08 | Nemoclaw | DuckDB scaling — tiered retention (lead 90d, narrative 30d, archival 7d), hourly checkpoint, Parquet cold export. ~3 hrs --chain all
+2026-06-08 00:20:01,695 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=228 chars
+2026-06-08 00:20:01,695 [WARNING] stderr: 2026-06-08 00:20:01,676 [INFO] kestrel.noise_gate: PURGE: Telegram_1780892401.676226 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:20:01,676 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:25:01,761 [INFO] trigger_autohop | force=False | signal=2026-06-08 | Chase | **Sign up fresh** at localhost:5678 + create n8n API key + paste in chat
+2026-06-08 00:25:01,762 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | Chase | **Sign up fresh** at localhost:5678 + create n8n API key + paste in chat --chain all
+2026-06-08 00:25:01,868 [INFO] done | rc=1 status=success | stdout=625 chars | stderr=228 chars
+2026-06-08 00:25:01,868 [WARNING] stderr: 2026-06-08 00:25:01,848 [INFO] kestrel.noise_gate: PURGE: Telegram_1780892701.848462 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:25:01,848 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:25:01,895 [INFO] trigger_autohop | force=False | signal=2026-06-08 | Nemoclaw | Wire n8n scenarios: Telegram bot token, webhook endpoint, compound triggers (blocked on API key)
+2026-06-08 00:25:01,896 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | Nemoclaw | Wire n8n scenarios: Telegram bot token, webhook endpoint, compound triggers (blocked on API key) --chain all
+2026-06-08 00:25:02,001 [INFO] done | rc=1 status=success | stdout=652 chars | stderr=227 chars
+2026-06-08 00:25:02,001 [WARNING] stderr: 2026-06-08 00:25:01,980 [INFO] kestrel.noise_gate: PURGE: Telegram_1780892701.98015 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:25:01,980 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:30:01,093 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #4 Boot persistence — needs sudo: sudo loginctl enable-linger synczus
+2026-06-08 00:30:01,094 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #4 Boot persistence — needs sudo: sudo loginctl enable-linger synczus --chain all
+2026-06-08 00:30:01,209 [INFO] done | rc=1 status=success | stdout=625 chars | stderr=228 chars
+2026-06-08 00:30:01,209 [WARNING] stderr: 2026-06-08 00:30:01,187 [INFO] kestrel.noise_gate: PURGE: Telegram_1780893001.187372 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:30:01,187 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:30:01,237 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #20 Perplexity pipeline — inbound files discovered
+2026-06-08 00:30:01,237 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #20 Perplexity pipeline — inbound files discovered --chain all
+2026-06-08 00:30:06,703 [INFO] done | rc=2 status=success | stdout=943 chars | stderr=1323 chars
+2026-06-08 00:30:06,703 [WARNING] stderr: 2026-06-08 00:30:01,327 [INFO] kestrel.noise_gate: PROMOTE: Telegram_1780893001.327234 | Score: 5 | Reason: Direct actionability detected
+2026-06-08 00:30:01,336 [INFO] kestrel.hub: MIROFISH APPROVED: score=6/10 route=cheap cost=$0.0003 remaining=$5.0000
+2026-06-08 00:30:01,336 [INFO] kestrel.hub: ROUTE hermes -> OpenRouter (hermes)
+2026-06-08 00:30:01,336 [INFO] kestrel.openrouter: OpenRouter call | role=hermes model=meta-llama/llama-3.3-70b-instruct:free tokens=1500
+2026-06-08 00:30:06,674 [IN
+2026-06-08 00:35:01,095 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #14 Dead code hunt — vulture running
+2026-06-08 00:35:01,096 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #14 Dead code hunt — vulture running --chain all
+2026-06-08 00:35:01,205 [INFO] done | rc=1 status=success | stdout=592 chars | stderr=228 chars
+2026-06-08 00:35:01,205 [WARNING] stderr: 2026-06-08 00:35:01,186 [INFO] kestrel.noise_gate: PURGE: Telegram_1780893301.186409 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:35:01,186 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:35:01,235 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #2 One-shot deployer — draft docker-compose
+2026-06-08 00:35:01,235 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #2 One-shot deployer — draft docker-compose --chain all
+2026-06-08 00:35:01,353 [INFO] done | rc=1 status=success | stdout=599 chars | stderr=228 chars
+2026-06-08 00:35:01,353 [WARNING] stderr: 2026-06-08 00:35:01,331 [INFO] kestrel.noise_gate: PURGE: Telegram_1780893301.331106 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:35:01,331 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:40:01,416 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #3 Cron graveyard — audit all systemd + crons
+2026-06-08 00:40:01,416 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #3 Cron graveyard — audit all systemd + crons --chain all
+2026-06-08 00:40:01,526 [INFO] done | rc=1 status=success | stdout=601 chars | stderr=228 chars
+2026-06-08 00:40:01,527 [WARNING] stderr: 2026-06-08 00:40:01,506 [INFO] kestrel.noise_gate: PURGE: Telegram_1780893601.506377 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:40:01,506 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:40:01,555 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #11 Auto-code-review — git hooks + bandit + vulture pipeline
+2026-06-08 00:40:01,555 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #11 Auto-code-review — git hooks + bandit + vulture pipeline --chain all
+2026-06-08 00:40:01,664 [INFO] done | rc=1 status=success | stdout=616 chars | stderr=228 chars
+2026-06-08 00:40:01,664 [WARNING] stderr: 2026-06-08 00:40:01,641 [INFO] kestrel.noise_gate: PURGE: Telegram_1780893601.641824 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:40:01,642 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:45:01,735 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #12 Signal quality dashboard — Grafana
+2026-06-08 00:45:01,735 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #12 Signal quality dashboard — Grafana --chain all
+2026-06-08 00:45:01,842 [INFO] done | rc=1 status=success | stdout=594 chars | stderr=228 chars
+2026-06-08 00:45:01,842 [WARNING] stderr: 2026-06-08 00:45:01,822 [INFO] kestrel.noise_gate: PURGE: Telegram_1780893901.822916 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:45:01,823 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:45:01,869 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #13 False-positive feedback loop — wire source_feedback table
+2026-06-08 00:45:01,869 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #13 False-positive feedback loop — wire source_feedback table --chain all
+2026-06-08 00:45:01,975 [INFO] done | rc=1 status=success | stdout=617 chars | stderr=228 chars
+2026-06-08 00:45:01,975 [WARNING] stderr: 2026-06-08 00:45:01,956 [INFO] kestrel.noise_gate: PURGE: Telegram_1780893901.956553 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:45:01,957 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:50:01,442 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #18 Synapse dashboard deploy
+2026-06-08 00:50:01,442 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #18 Synapse dashboard deploy --chain all
+2026-06-08 00:50:01,554 [INFO] done | rc=1 status=success | stdout=584 chars | stderr=227 chars
+2026-06-08 00:50:01,554 [WARNING] stderr: 2026-06-08 00:50:01,533 [INFO] kestrel.noise_gate: PURGE: Telegram_1780894201.53298 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:50:01,533 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:50:01,582 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #21 Agent memory overhaul
+2026-06-08 00:50:01,582 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #21 Agent memory overhaul --chain all
+2026-06-08 00:50:07,181 [INFO] done | rc=2 status=success | stdout=918 chars | stderr=1341 chars
+2026-06-08 00:50:07,181 [WARNING] stderr: 2026-06-08 00:50:01,672 [INFO] kestrel.noise_gate: PROMOTE: Telegram_1780894201.672095 | Score: 4 | Reason: Structural shift (engineering refactor/rewrite)
+2026-06-08 00:50:01,672 [INFO] kestrel.hub: MIROFISH APPROVED: score=4/10 route=cheap cost=$0.0003 remaining=$4.9997
+2026-06-08 00:50:01,672 [INFO] kestrel.hub: ROUTE hermes -> OpenRouter (hermes)
+2026-06-08 00:50:01,672 [INFO] kestrel.openrouter: OpenRouter call | role=hermes model=meta-llama/llama-3.3-70b-instruct:free tokens=1500
+2026-06-0
+2026-06-08 00:55:01,247 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #22 ProVara integration — Ed25519 signing
+2026-06-08 00:55:01,247 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #22 ProVara integration — Ed25519 signing --chain all
+2026-06-08 00:55:01,362 [INFO] done | rc=1 status=success | stdout=597 chars | stderr=228 chars
+2026-06-08 00:55:01,362 [WARNING] stderr: 2026-06-08 00:55:01,339 [INFO] kestrel.noise_gate: PURGE: Telegram_1780894501.339311 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:55:01,339 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 00:55:01,391 [INFO] trigger_autohop | force=False | signal=2026-06-08 | OpenClaw | #23 Project diversification — CloakBrowser, AgentMemory, etc.
+2026-06-08 00:55:01,392 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | OpenClaw | #23 Project diversification — CloakBrowser, AgentMemory, etc. --chain all
+2026-06-08 00:55:01,498 [INFO] done | rc=1 status=success | stdout=617 chars | stderr=228 chars
+2026-06-08 00:55:01,498 [WARNING] stderr: 2026-06-08 00:55:01,478 [INFO] kestrel.noise_gate: PURGE: Telegram_1780894501.478783 | Score: 0 | Reason: No significant markers found
+2026-06-08 00:55:01,479 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:00:01,571 [INFO] trigger_autohop | force=False | signal=2026-06-08 | Chase | #1 n8n enterprise license — drop in Settings → Usage & Plan
+2026-06-08 01:00:01,572 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | Chase | #1 n8n enterprise license — drop in Settings → Usage & Plan --chain all
+2026-06-08 01:00:01,686 [INFO] done | rc=1 status=success | stdout=612 chars | stderr=228 chars
+2026-06-08 01:00:01,686 [WARNING] stderr: 2026-06-08 01:00:01,664 [INFO] kestrel.noise_gate: PURGE: Telegram_1780894801.664579 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:00:01,665 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:00:01,714 [INFO] trigger_autohop | force=False | signal=2026-06-08 | Chase | #7 MMR credentials — TWS_USERID, TWS_PASSWORD, MASSIVE_API_KEY
+2026-06-08 01:00:01,714 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | Chase | #7 MMR credentials — TWS_USERID, TWS_PASSWORD, MASSIVE_API_KEY --chain all
+2026-06-08 01:00:01,819 [INFO] done | rc=1 status=success | stdout=615 chars | stderr=228 chars
+2026-06-08 01:00:01,819 [WARNING] stderr: 2026-06-08 01:00:01,800 [INFO] kestrel.noise_gate: PURGE: Telegram_1780894801.800821 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:00:01,801 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:05:01,155 [INFO] trigger_autohop | force=False | signal=2026-06-08 | Chase | #8 CryptoQuant API key
+2026-06-08 01:05:01,155 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | Chase | #8 CryptoQuant API key --chain all
+2026-06-08 01:05:01,268 [INFO] done | rc=1 status=success | stdout=575 chars | stderr=228 chars
+2026-06-08 01:05:01,268 [WARNING] stderr: 2026-06-08 01:05:01,247 [INFO] kestrel.noise_gate: PURGE: Telegram_1780895101.247102 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:05:01,247 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:05:01,296 [INFO] trigger_autohop | force=False | signal=2026-06-08 | Chase | #4 Sudo auth — loginctl enable-linger synczus
+2026-06-08 01:05:01,297 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 2026-06-08 | Chase | #4 Sudo auth — loginctl enable-linger synczus --chain all
+2026-06-08 01:05:01,406 [INFO] done | rc=1 status=success | stdout=598 chars | stderr=228 chars
+2026-06-08 01:05:01,406 [WARNING] stderr: 2026-06-08 01:05:01,385 [INFO] kestrel.noise_gate: PURGE: Telegram_1780895101.385674 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:05:01,386 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:10:01,476 [INFO] trigger_autohop | force=False | signal=🔴 hop: Active hop — nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z — watchdog fix applied,
+2026-06-08 01:10:01,477 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 🔴 hop: Active hop — nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z — watchdog fix applied, --chain all
+2026-06-08 01:10:01,597 [INFO] done | rc=1 status=success | stdout=629 chars | stderr=295 chars
+2026-06-08 01:10:01,597 [WARNING] stderr: 2026-06-08 01:10:01,572 [INFO] kestrel.noise_gate: PROMOTE: Telegram_1780895401.572159 | Score: 5 | Reason: Security/vulnerability signal
+2026-06-08 01:10:01,573 [WARNING] kestrel.hub: MIROFISH REJECTED: score=3/10 cost=$0.0000 remaining=$4.9994 reason=hard data (1pts); source cited; magnitude
+
+2026-06-08 01:10:01,627 [INFO] trigger_autohop | force=False | signal=🟡 contract: coordination.yaml exists but may be misconfigured
+2026-06-08 01:10:01,627 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py 🟡 contract: coordination.yaml exists but may be misconfigured --chain all
+2026-06-08 01:10:01,743 [INFO] done | rc=1 status=success | stdout=593 chars | stderr=228 chars
+2026-06-08 01:10:01,743 [WARNING] stderr: 2026-06-08 01:10:01,722 [INFO] kestrel.noise_gate: PURGE: Telegram_1780895401.722231 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:10:01,722 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:15:01,810 [INFO] trigger_autohop | force=False | signal=Chase | n8n owner signup — visit http://localhost:5678, create first account. Community edition, no license needed.
+2026-06-08 01:15:01,811 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py Chase | n8n owner signup — visit http://localhost:5678, create first account. Community edition, no license needed. --chain all
+2026-06-08 01:15:01,920 [INFO] done | rc=1 status=success | stdout=647 chars | stderr=228 chars
+2026-06-08 01:15:01,920 [WARNING] stderr: 2026-06-08 01:15:01,900 [INFO] kestrel.noise_gate: PURGE: Telegram_1780895701.900096 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:15:01,900 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+
+2026-06-08 01:15:01,949 [INFO] trigger_autohop | force=False | signal=Chase | Hermes bot token — get from BotFather, drop in chat. Hermes can't Telegram until this is set.
+2026-06-08 01:15:01,949 [INFO] launching: /home/synczus/.hermes/hermes-agent/venv/bin/python3 /home/synczus/kestrel/run_autohop.py Chase | Hermes bot token — get from BotFather, drop in chat. Hermes can't Telegram until this is set. --chain all
+2026-06-08 01:15:02,070 [INFO] done | rc=1 status=success | stdout=633 chars | stderr=228 chars
+2026-06-08 01:15:02,070 [WARNING] stderr: 2026-06-08 01:15:02,049 [INFO] kestrel.noise_gate: PURGE: Telegram_1780895702.049113 | Score: 0 | Reason: No significant markers found
+2026-06-08 01:15:02,049 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+

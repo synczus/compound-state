@@ -1,16 +1,10 @@
 {
   "alerts": [
     {
-      "job": "rss-feed-adapter",
-      "status": "STALE",
-      "age_seconds": 16851,
-      "max_seconds": 14400
-    },
-    {
       "job": "tldr-scraper",
       "status": "NO_LOG",
       "age": -1
     }
   ],
-  "checked_at": "2026-06-08T04:17:00Z"
+  "checked_at": "2026-06-08T05:18:00Z"
 }

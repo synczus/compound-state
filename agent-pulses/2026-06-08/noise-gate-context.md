@@ -1,35 +1,38 @@
 # Noise Gate Context
 
-_Generated: 2026-06-08 04:15:01 UTC_
+_Generated: 2026-06-08 05:15:02 UTC_
 
 ## Last 24h
 
-- PROMOTE: 0
-- PURGE: 7
-- Total: 7
+- PROMOTE: 3
+- PURGE: 26
+- Total: 29
 
 ## Top Reasons
 
-- No significant markers found: 7
+- No significant markers found: 26
+- Direct actionability detected: 1
+- Structural shift (engineering refactor/rewrite): 1
+- Security/vulnerability signal: 1
 
 ## Sources
 
-- Telegram: 7
+- Telegram: 29
 
 ## Recent Decisions
 
-- PURGE score=0 source=Telegram reason=No significant markers found preview=**#4** 2026-06-08 | Nemoclaw | Self-healing cron — systemd timers per job, shared retry wrapper with exponential backoff
-- PURGE score=0 source=Telegram reason=No significant markers found preview=**#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs
-- PURGE score=0 source=Telegram reason=No significant markers found preview=**#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, w
-- PURGE score=0 source=Telegram reason=No significant markers found preview=**#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bu
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | Chase | Set up n8n owner account + create API key at Settings → n8n API → paste key in chat for pipeline wi
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Scraper | The creative thought drops were 8 separate ⚪ ideas on the board. Now they're a single live cron r
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Scraper | Shared coordination surface is live — agents now check master-todo.md before every response.
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | OpenClaw | Deploy token usage metrics first before building cost dashboard — phase instrumentation
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Hermes | Diagnose $20/day OpenRouter spend — check dashboard for which model/provider is burning credits
-- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-06 | Hermes | Wire Shannon Closer as auto-judge for every dialogue round — scores both propositions after each e
-- PROMOTE score=12 source=OnChainBot reason=Direct actionability detected; Structural shift (engineering refactor/rewrite); Convergence detected preview=Breaking: ETH liquidity drain detected on Uniswap v3. 40% pool depletion in 6 hours. Verified across 3 sources. Hedge re
+- PURGE score=0 source=Telegram reason=No significant markers found preview=Chase | Hermes bot token — get from BotFather, drop in chat. Hermes can't Telegram until this is set.
+- PURGE score=0 source=Telegram reason=No significant markers found preview=Chase | n8n owner signup — visit http://localhost:5678, create first account. Community edition, no license needed.
+- PURGE score=0 source=Telegram reason=No significant markers found preview=🟡 contract: coordination.yaml exists but may be misconfigured
+- PROMOTE score=5 source=Telegram reason=Security/vulnerability signal preview=🔴 hop: Active hop — nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z — watchdog fix applied,
+- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | Chase | #4 Sudo auth — loginctl enable-linger synczus
+- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | Chase | #8 CryptoQuant API key
+- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | Chase | #7 MMR credentials — TWS_USERID, TWS_PASSWORD, MASSIVE_API_KEY
+- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | Chase | #1 n8n enterprise license — drop in Settings → Usage & Plan
+- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | OpenClaw | #23 Project diversification — CloakBrowser, AgentMemory, etc.
+- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | OpenClaw | #22 ProVara integration — Ed25519 signing
+- PROMOTE score=4 source=Telegram reason=Structural shift (engineering refactor/rewrite) preview=2026-06-08 | OpenClaw | #21 Agent memory overhaul
+- PURGE score=0 source=Telegram reason=No significant markers found preview=2026-06-08 | OpenClaw | #18 Synapse dashboard deploy
 
 ## Agent Use
 

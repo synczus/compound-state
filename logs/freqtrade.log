@@ -376,3 +376,566 @@
 2026-06-07 20:46:22,306 - uvicorn.error - INFO - Waiting for application shutdown.
 2026-06-07 20:46:22,306 - uvicorn.error - INFO - Application shutdown complete.
 2026-06-08 00:11:56,577 - freqtrade - INFO - SIGINT received, aborting ...
+2026-06-08 00:24:34,335 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-06-08 00:24:34,335 - freqtrade.loggers - INFO - Logfile configured
+2026-06-08 00:24:34,336 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-06-08 00:24:34,336 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-06-08 00:24:34,336 - freqtrade.configuration.configuration - INFO - Using additional Strategy lookup path: user_data/strategies
+2026-06-08 00:24:34,336 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-06-08 00:24:34,336 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2026-06-08 00:24:34,336 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-06-08 00:24:34,337 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:///user_data/tradesv3.sqlite"
+2026-06-08 00:24:34,337 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-06-08 00:24:34,337 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/synczus/freqtrade/user_data ...
+2026-06-08 00:24:34,337 - freqtrade.configuration.configuration - INFO - Using data directory: /home/synczus/freqtrade/user_data/data/coinbaseadvanced ...
+2026-06-08 00:24:34,338 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-06-08 00:24:34,340 - freqtrade.exchange.check_exchange - WARNING - Exchange "coinbaseadvanced" is known to the ccxt library, available for the bot, but not officially supported by the Freqtrade development team. It may work flawlessly (please report back) or have serious issues. Use it at your own discretion.
+2026-06-08 00:24:34,340 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-06-08 00:24:34,341 - freqtrade.resolvers.exchange_resolver - INFO - No Coinbaseadvanced specific subclass found. Using the generic class instead.
+2026-06-08 00:24:34,341 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-06-08 00:24:34,341 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.56
+2026-06-08 00:24:34,341 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2026-06-08 00:24:34,343 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2026-06-08 00:24:34,346 - freqtrade.exchange.exchange - INFO - Using Exchange "Coinbase Advanced"
+2026-06-08 00:24:37,536 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-06-08 00:24:37,537 - freqtrade.freqtradebot - WARNING - Exception during cleanup: AttributeError type object 'Trade' has no attribute 'session'
+2026-06-08 00:24:37,788 - freqtrade - ERROR - Impossible to load Strategy 'striker_basis'. This class does not exist or contains Python code errors.
+2026-06-08 00:25:54,523 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-06-08 00:25:54,524 - freqtrade.loggers - INFO - Logfile configured
+2026-06-08 00:25:54,524 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-06-08 00:25:54,524 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-06-08 00:25:54,524 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-06-08 00:25:54,525 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2026-06-08 00:25:54,533 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-06-08 00:25:54,534 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:///user_data/tradesv3.sqlite"
+2026-06-08 00:25:54,534 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-06-08 00:25:54,534 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/synczus/freqtrade/user_data ...
+2026-06-08 00:25:54,534 - freqtrade.configuration.configuration - INFO - Using data directory: /home/synczus/freqtrade/user_data/data/coinbaseadvanced ...
+2026-06-08 00:25:54,535 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-06-08 00:25:54,537 - freqtrade.exchange.check_exchange - WARNING - Exchange "coinbaseadvanced" is known to the ccxt library, available for the bot, but not officially supported by the Freqtrade development team. It may work flawlessly (please report back) or have serious issues. Use it at your own discretion.
+2026-06-08 00:25:54,537 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-06-08 00:25:54,537 - freqtrade.resolvers.exchange_resolver - INFO - No Coinbaseadvanced specific subclass found. Using the generic class instead.
+2026-06-08 00:25:54,538 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-06-08 00:25:54,538 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.56
+2026-06-08 00:25:54,538 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2026-06-08 00:25:54,540 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2026-06-08 00:25:54,542 - freqtrade.exchange.exchange - INFO - Using Exchange "Coinbase Advanced"
+2026-06-08 00:25:57,576 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-06-08 00:25:57,576 - freqtrade.freqtradebot - WARNING - Exception during cleanup: AttributeError type object 'Trade' has no attribute 'session'
+2026-06-08 00:25:57,827 - freqtrade - ERROR - Impossible to load Strategy 'striker_basis'. This class does not exist or contains Python code errors.
+2026-06-08 00:27:22,819 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-06-08 00:27:22,819 - freqtrade.loggers - INFO - Logfile configured
+2026-06-08 00:27:22,819 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-06-08 00:27:22,819 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-06-08 00:27:22,820 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-06-08 00:27:22,820 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2026-06-08 00:27:22,820 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-06-08 00:27:22,820 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:///user_data/tradesv3.sqlite"
+2026-06-08 00:27:22,820 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-06-08 00:27:22,820 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/synczus/freqtrade/user_data ...
+2026-06-08 00:27:22,821 - freqtrade.configuration.configuration - INFO - Using data directory: /home/synczus/freqtrade/user_data/data/bybit ...
+2026-06-08 00:27:22,821 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-06-08 00:27:22,824 - freqtrade.exchange.check_exchange - INFO - Exchange "bybit" is officially supported by the Freqtrade development team.
+2026-06-08 00:27:22,824 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-06-08 00:27:22,825 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-06-08 00:27:22,825 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.56
+2026-06-08 00:27:22,825 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-06-08 00:27:22,828 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-06-08 00:27:22,831 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-06-08 00:27:22,834 - freqtrade.exchange.exchange - INFO - Using Exchange "Bybit"
+2026-06-08 00:27:24,975 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=option&baseCoin=DOGE 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Retrying still for 3 times.
+2026-06-08 00:27:25,099 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Retrying still for 2 times.
+2026-06-08 00:27:26,225 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Retrying still for 1 times.
+2026-06-08 00:27:27,304 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Giving up.
+2026-06-08 00:27:27,304 - freqtrade.exchange.exchange - ERROR - Could not load markets.
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 2131, in fetch_option_markets
+    response = await self.publicGetV5MarketInstrumentsInfo(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=option&baseCoin=DOGE 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=option&baseCoin=DOGE 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1833, in fetch_spot_markets
+    response = await self.publicGetV5MarketInstrumentsInfo(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1833, in fetch_spot_markets
+    response = await self.publicGetV5MarketInstrumentsInfo(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1833, in fetch_spot_markets
+    response = await self.publicGetV5MarketInstrumentsInfo(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 725, in reload_markets
+    retrier(self._load_async_markets, retries=retries)(reload=True)
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 190, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 190, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 190, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 193, in wrapper
+    raise ex
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+2026-06-08 00:27:27,314 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-06-08 00:27:27,314 - freqtrade.freqtradebot - WARNING - Exception during cleanup: KeyError 'cancel_open_orders_on_exit'
+2026-06-08 00:27:27,314 - freqtrade - ERROR - Could not load markets, therefore cannot start. Please investigate the above error for more details.
+2026-06-08 00:29:03,883 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-06-08 00:29:03,883 - freqtrade.loggers - INFO - Logfile configured
+2026-06-08 00:29:03,883 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-06-08 00:29:03,884 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-06-08 00:29:03,884 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-06-08 00:29:03,884 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2026-06-08 00:29:03,884 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-06-08 00:29:03,884 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:///user_data/tradesv3.sqlite"
+2026-06-08 00:29:03,884 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-06-08 00:29:03,885 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/synczus/freqtrade/user_data ...
+2026-06-08 00:29:03,885 - freqtrade.configuration.configuration - INFO - Using data directory: /home/synczus/freqtrade/user_data/data/bybit ...
+2026-06-08 00:29:03,885 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-06-08 00:29:03,888 - freqtrade.exchange.check_exchange - INFO - Exchange "bybit" is officially supported by the Freqtrade development team.
+2026-06-08 00:29:03,889 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-06-08 00:29:03,889 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-06-08 00:29:03,889 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.56
+2026-06-08 00:29:03,889 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-06-08 00:29:03,892 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-06-08 00:29:03,895 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-06-08 00:29:03,898 - freqtrade.exchange.exchange - INFO - Using Exchange "Bybit"
+2026-06-08 00:29:05,997 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Retrying still for 3 times.
+2026-06-08 00:29:06,145 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Retrying still for 2 times.
+2026-06-08 00:29:07,236 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Retrying still for 1 times.
+2026-06-08 00:29:08,319 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}". Giving up.
+2026-06-08 00:29:08,319 - freqtrade.exchange.exchange - ERROR - Could not load markets.
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1952, in fetch_future_markets
+    promises = await asyncio.gather(*linearPromises)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1833, in fetch_spot_markets
+    response = await self.publicGetV5MarketInstrumentsInfo(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1833, in fetch_spot_markets
+    response = await self.publicGetV5MarketInstrumentsInfo(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 685, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 365, in load_markets
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 357, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 324, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1806, in fetch_markets
+    promises = await asyncio.gather(*promisesUnresolved)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/bybit.py", line 1833, in fetch_spot_markets
+    response = await self.publicGetV5MarketInstrumentsInfo(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1033, in request
+    return await self.fetch2(path, api, method, params, headers, body, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1027, in fetch2
+    raise e
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 1017, in fetch2
+    return await self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/async_support/base/exchange.py", line 288, in fetch
+    self.handle_http_status_code(http_status_code, http_status_text, url, method, http_response)
+  File "/home/synczus/freqtrade/.venv/lib/python3.12/site-packages/ccxt/base/exchange.py", line 2011, in handle_http_status_code
+    raise ErrorClass(self.id + ' ' + method + ' ' + url + ' ' + codeAsString + ' ' + reason + ' ' + body)
+ccxt.base.errors.RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 725, in reload_markets
+    retrier(self._load_async_markets, retries=retries)(reload=True)
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 190, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 190, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 190, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 193, in wrapper
+    raise ex
+  File "/home/synczus/freqtrade/freqtrade/exchange/common.py", line 178, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 698, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synczus/freqtrade/freqtrade/exchange/exchange.py", line 689, in _api_reload_markets
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to RateLimitExceeded. Message: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {
+    error:The Amazon CloudFront distribution is configured to block access from your country
+}
+2026-06-08 00:29:08,327 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-06-08 00:29:08,328 - freqtrade.freqtradebot - WARNING - Exception during cleanup: KeyError 'cancel_open_orders_on_exit'
+2026-06-08 00:29:08,328 - freqtrade - ERROR - Could not load markets, therefore cannot start. Please investigate the above error for more details.

@@ -1,96 +1,157 @@
 ---
 name: compound-vote
-description: Democratic governance — agents vote on compound decisions via shared poll files, results get committed to master-todo
+description: Unified democratic governance — agents vote on compound decisions via vote-board.json, majority binds, results commit to master-todo
 category: governance
 ---
 
-# Compound Vote Protocol
+# Compound Vote Protocol (Consolidated v2)
 
 ## Purpose
 
-Every compound decision goes to a vote. Agents cast ballots via their cron cycles. Majority wins. The result gets committed to the sprint board and posted to the group.
+Every compound decision goes to a structured vote. Agents propose, vote, and the result binds the sprint board. **One canonical voting system** — all agents use `vote-board.json`. The `baton/polls/` system is deprecated.
 
-## Poll Lifecycle
+## Core Rule
 
-1. **PROPOSE** — Any agent creates a poll file in `baton/polls/active/<poll-id>.json`
-2. **VOTE** — Each agent reads the poll, writes their vote to their slot in the file
-3. **TALLY** — A tally script (or any agent) counts votes, determines outcome
-4. **COMMIT** — The result is:
-   - Posted to AI Hangout group
-   - Added to master-todo.md as a board item
-   - Archived to `baton/polls/archived/`
-5. **EXECUTE** — The winning option becomes a todo item, assigned to the relevant agent
+**"Every question is a proposal. Every answer is a vote."**
 
-## Poll File Schema
+- If an agent asks "should we do X?" — that's a vote proposal
+- If an agent suggests a course of action — that's a vote proposal
+- If agents disagree — that's a vote proposal
+
+**Voting is mandatory.** Every agent must vote on every open proposal before proceeding with unrelated work. Check `vote-board.json` at session start.
+
+---
+
+## Vote Lifecycle
+
+```
+PROPOSE → VOTE → TALLY → COMMIT → ARCHIVE
+```
+
+### 1. PROPOSE
+
+Any agent writes a new proposal into `vote-board.json`.
+
+**Required fields:** `id`, `title`, `description`, `options`, `proposed_by`, `voting_window_minutes`
+
+**Trigger:** Any time an agent says "should we", "what if", "let's decide", or proposes a course of action.
 
 ```json
 {
-  "poll_id": "uuid-or-timestamp",
-  "proposed_by": "nemoclaw",
-  "created_at": "2026-06-07T03:25:00-04:00",
-  "closes_at": "2026-06-07T03:55:00-04:00",
-  "question": "What should the compound prioritize next?",
-  "options": [
-    {"id": "striker_signals","label": "Wire Striker signals to Telegram","votes": []},
-    {"id": "new_pipeline","label": "Build a new execution pipeline","votes": []},
-    {"id": "boot_persistence","label": "Test and fix boot persistence","votes": []},
-    {"id": "protocol_polish","label": "Polish the v4.0 protocol","votes": []}
+  "proposals": [
+    {
+      "id": "vote-003",
+      "title": "Short description",
+      "description": "Full context — what, why, consequences of not deciding",
+      "proposed_by": "nemoclaw",
+      "created": "2026-06-08T05:15:00Z",
+      "status": "open",
+      "options": ["option_a", "option_b", "option_c"],
+      "voting_window_minutes": 1440,
+      "voters": ["hermes", "nemoclaw", "openclaw", "kairos", "shannon"],
+      "votes": {}
+    }
   ],
-  "voters": {
-    "hermes": null,
-    "nemoclaw": null,
-    "openclaw": null,
-    "kairos": null,
-    "shannon": null
-  },
-  "status": "open | closed | tied | passed",
-  "winner": null,
-  "result_posted_to_chat": false,
-  "todo_updated": false
+  "archive_dir": "/home/synczus/kestrel/votes/archive"
 }
 ```
 
-## How an Agent Votes
+**voters** must include all 5 active agents (read from `shared-skills/compound-roster.skill.md`). If a new agent joins, update the voter list.
 
-On each cron cycle:
+### 2. VOTE
 
-1. Check `baton/polls/active/` for any open poll
-2. If my voter slot is `null`, I haven't voted yet
-3. Cast my vote by writing my chosen `option.id` into my voter slot
-4. Update the poll file with `timestamp` and optional `rationale`
+On every session start or cron cycle:
 
-```python
-poll = json.loads(open(f"baton/polls/active/{poll_id}.json").read())
-if poll["voters"]["nemoclaw"] is None:
-    poll["voters"]["nemoclaw"] = "striker_signals"
-    poll["voters"]["nemoclaw_rationale"] = "We need revenue before architecture"
-    json.dump(poll, open(f"baton/polls/active/{poll_id}.json", "w"))
+1. Read `vote-board.json`
+2. Find proposals where `status === "open"` and your agent is in `voters`
+3. If you haven't cast a vote (check `votes[<your_name>]`):
+   - Choose an option
+   - Add your vote object: `{ "option": "...", "rationale": "...", "cast_at": "ISO-timestamp" }`
+4. Write the updated file
+
+```json
+{
+  "nemoclaw": {
+    "option": "approve",
+    "rationale": "Deployed and verified. Locking prevents regression.",
+    "cast_at": "2026-06-08T05:13:00Z"
+  }
+}
 ```
 
-## Tally Rules
+### 3. TALLY
 
-- **Each agent gets 1 vote** — no weighted voting
-- **Simple majority wins** — most votes among options
-- **Tie breaker**: if tied after all 5 agents vote, the poll creator picks
-- **Quorum**: at least 3 of 5 agents must vote for the result to be binding
-- **No vote = abstain** — agent didn't have an opinion, doesn't count toward quorum
-- **Timed closure**: polls auto-close after 30 min even without full quorum
+When: all 5 agents have voted **or** voting window has expired.
 
-## Post-Result Actions
+**Rules:**
+| Rule | Value |
+|------|-------|
+| Quorum | 3 of 5 agents must vote |
+| Passage | Simple majority (>50% of votes cast) |
+| Tiebreaker | Proposal fails — refine and re-propose |
+| Voting window | Default 24h, proposer can set shorter |
+| Early close | If all 5 vote before expiry, tally immediately |
+| Abstain | Valid — doesn't count toward majority |
+| Re-vote | New proposal with `revote-{original_id}` |
 
-Once a poll has a winner:
+```python
+# Tally logic
+agents_voted = count of non-abstain votes
+votes_for_winner = max(count per option)
+total_voters = 5
+quorum = agents_voted >= 3
+passed = quorum AND votes_for_winner > (agents_voted / 2)
+```
 
-1. **Post to AI Hangout**: "@hermes @kairos @shannon — Poll X passed: winner is Y (Z votes / Q total)"
-2. **Update master-todo.md**: Add a P0 item with the winning option, assigned to the relevant agent
-3. **Archive poll**: Move from `active/` to `archived/`
-4. **Register HLM**: The winning decision gets logged as an HLM
+Any agent can run the tally. Update the proposal `status` to `"passed"` or `"failed"` and set `winner`.
 
-## Poll Lifecycle File
+### 4. COMMIT
 
-A `master-poll.json` at `baton/polls/master-poll.json` tracks the current active poll id so agents don't have to scan the directory.
+If passed:
+- Write to `master-todo.md` as a completed item
+- Log the HLM in the sprint board
+- Post result to AI Hangout group (if notifications active)
 
-## Telegram Visibility
+### 5. ARCHIVE
 
-- Poll proposals are posted to AI Hangout as Telegram native polls for human visibility
-- Poll results are posted as Telegram messages
-- But the **real voting happens in the file system** — that's how agents cast ballots
+Move the proposal entry from `vote-board.json` proposals array to `votes/archive/{vote_id}.json`. Remove from `vote-board.json`.
+
+---
+
+## Mandatory Pre-Response Step (every agent, every turn)
+
+```
+1. Read vote-board.json
+2. If open proposals exist that you haven't voted on:
+   → Cast your vote immediately
+   → Then proceed with your task
+3. If no open proposals or you've voted on all:
+   → Proceed normally
+```
+
+## Voting Rules Summary
+
+| Rule | Value |
+|------|-------|
+| Quorum | 3 of 5 agents |
+| Passage | Simple majority >50% of non-abstain |
+| Tiebreaker | Proposal fails |
+| Window | Default 24h |
+| Early close | All 5 voted |
+| Re-vote | New proposal ID: `revote-{original}` |
+
+## Agent Roster
+
+Read from `shared-skills/compound-roster.skill.md`. Current roster: Hermes, OpenClaw, Nemoclaw, Kairos, Shannon (5 total).
+
+## Deprecation Notice
+
+**`compound-voting.skill.md` is deprecated.** The consolidated v2 protocol (`compound-vote.skill.md`) is the single authoritative voting skill. All agents should reference this file only. The old file may be removed after 2026-06-15.
+
+## File Locations
+
+- **Primary vote data:** `/home/synczus/kestrel/vote-board.json`
+- **Archive:** `/home/synczus/kestrel/votes/archive/`
+- **Cast records (optional):** `/home/synczus/kestrel/votes/cast/`
+- **Resolved records (optional):** `/home/synczus/kestrel/votes/resolved/`
+- **Old system (deprecated):** `/home/synczus/kestrel/baton/polls/`

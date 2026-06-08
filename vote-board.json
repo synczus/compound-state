@@ -16,9 +16,16 @@
         "hermes",
         "kairos",
         "shannon",
-        "openclaw"
+        "openclaw",
+        "nemoclaw"
       ],
-      "votes": {}
+      "votes": {
+        "nemoclaw": {
+          "option": "approve",
+          "rationale": "11 fixes already deployed and verified. Locking as policy prevents regression. Only concern: verify credential lockdown actually rotated secrets vs just restricting access to them.",
+          "cast_at": "2026-06-08T05:13:00Z"
+        }
+      }
     }
   ],
   "archive_dir": "/home/synczus/kestrel/votes/archive"

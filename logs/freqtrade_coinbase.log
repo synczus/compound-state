@@ -1,0 +1,82 @@
+2026-06-08 00:29:24,092 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-06-08 00:29:24,092 - freqtrade.loggers - INFO - Logfile configured
+2026-06-08 00:29:24,092 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-06-08 00:29:24,092 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-06-08 00:29:24,093 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-06-08 00:29:24,093 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2026-06-08 00:29:24,093 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-06-08 00:29:24,093 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:///user_data/tradesv3_coinbase.sqlite"
+2026-06-08 00:29:24,093 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-06-08 00:29:24,094 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/synczus/freqtrade/user_data ...
+2026-06-08 00:29:24,094 - freqtrade.configuration.configuration - INFO - Using data directory: /home/synczus/freqtrade/user_data/data/coinbaseadvanced ...
+2026-06-08 00:29:24,094 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-06-08 00:29:24,097 - freqtrade.exchange.check_exchange - WARNING - Exchange "coinbaseadvanced" is known to the ccxt library, available for the bot, but not officially supported by the Freqtrade development team. It may work flawlessly (please report back) or have serious issues. Use it at your own discretion.
+2026-06-08 00:29:24,097 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-06-08 00:29:24,097 - freqtrade.resolvers.exchange_resolver - INFO - No Coinbaseadvanced specific subclass found. Using the generic class instead.
+2026-06-08 00:29:24,097 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-06-08 00:29:24,098 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.56
+2026-06-08 00:29:24,098 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2026-06-08 00:29:24,100 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2026-06-08 00:29:24,102 - freqtrade.exchange.exchange - INFO - Using Exchange "Coinbase Advanced"
+2026-06-08 00:29:27,200 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy DuckDBSignalStrategy from '/home/synczus/freqtrade/user_data/strategies/DuckDBSignalStrategy.py'...
+2026-06-08 00:29:27,201 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-06-08 00:29:27,201 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value from the configuration: 5m.
+2026-06-08 00:29:27,201 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDC.
+2026-06-08 00:29:27,201 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: 10.
+2026-06-08 00:29:27,201 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 30, 'exit': 30, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2026-06-08 00:29:27,202 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 3.
+2026-06-08 00:29:27,202 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2026-06-08 00:29:27,202 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2026-06-08 00:29:27,202 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2026-06-08 00:29:27,202 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-06-08 00:29:27,202 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-06-08 00:29:27,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-06-08 00:29:27,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2026-06-08 00:29:27,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-06-08 00:29:27,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2026-06-08 00:29:27,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-06-08 00:29:27,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDC
+2026-06-08 00:29:27,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 10
+2026-06-08 00:29:27,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 1
+2026-06-08 00:29:27,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 30, 'exit': 30, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-06-08 00:29:27,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-06-08 00:29:27,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-06-08 00:29:27,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-06-08 00:29:27,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-06-08 00:29:27,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-06-08 00:29:27,205 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-06-08 00:29:27,205 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-06-08 00:29:27,205 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2026-06-08 00:29:27,205 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 3
+2026-06-08 00:29:27,205 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-06-08 00:29:27,248 - freqtrade.wallets - INFO - Wallets synced.
+2026-06-08 00:29:33,060 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2026-06-08 00:29:33,175 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 127.0.0.1:8081
+2026-06-08 00:29:33,175 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2026-06-08 00:29:33,187 - uvicorn.error - INFO - Started server process [2973475]
+2026-06-08 00:29:33,187 - uvicorn.error - INFO - Waiting for application startup.
+2026-06-08 00:29:33,188 - uvicorn.error - INFO - Application startup complete.
+2026-06-08 00:29:33,188 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
+2026-06-08 00:29:33,190 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/home/synczus/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2026-06-08 00:29:33,190 - freqtrade.freqtradebot - INFO - Starting initial pairlist refresh
+2026-06-08 00:29:33,192 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 3 pairs: ['BTC/USDC', 'ETH/USDC', 'SOL/USDC']
+2026-06-08 00:29:33,193 - freqtrade.freqtradebot - INFO - Initial Pairlist refresh took 0.00s
+2026-06-08 00:29:33,193 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-06-08 00:29:33,193 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_score_threshold = 80
+2026-06-08 00:29:33,194 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-06-08 00:29:33,194 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_score_threshold = 60
+2026-06-08 00:29:33,194 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2026-06-08 00:29:33,194 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2026-06-08 00:29:33,194 - freqtrade.worker - INFO - Changing state to: RUNNING
+2026-06-08 00:29:33,196 - freqtrade.util.migrations.migrate_wallet_history - INFO - Starting wallet history migration...
+2026-06-08 00:29:33,200 - freqtrade.util.migrations.migrate_wallet_history - INFO - Wallet history migration completed.
+2026-06-08 00:29:33,207 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2026-06-08 00:29:33,208 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `coinbaseadvanced`\n*Stake per trade:* `10 USDC`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.05`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `DuckDBSignalStrategy`"}
+2026-06-08 00:29:33,208 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2026-06-08 00:29:33,787 - DuckDBSignalStrategy - ERROR - Budget check failed: IO Error: Cannot open database "/home/synczus/projects/striker/data/signals.duckdb" in read-only mode: database does not exist
+2026-06-08 00:29:33,790 - DuckDBSignalStrategy - ERROR - DuckDB read error for BTC: IO Error: Cannot open database "/home/synczus/projects/striker/data/signals.duckdb" in read-only mode: database does not exist
+2026-06-08 00:29:33,793 - DuckDBSignalStrategy - ERROR - Budget check failed: IO Error: Cannot open database "/home/synczus/projects/striker/data/signals.duckdb" in read-only mode: database does not exist
+2026-06-08 00:29:33,796 - DuckDBSignalStrategy - ERROR - DuckDB read error for ETH: IO Error: Cannot open database "/home/synczus/projects/striker/data/signals.duckdb" in read-only mode: database does not exist
+2026-06-08 00:29:33,800 - DuckDBSignalStrategy - ERROR - Budget check failed: IO Error: Cannot open database "/home/synczus/projects/striker/data/signals.duckdb" in read-only mode: database does not exist
+2026-06-08 00:29:33,803 - DuckDBSignalStrategy - ERROR - DuckDB read error for SOL: IO Error: Cannot open database "/home/synczus/projects/striker/data/signals.duckdb" in read-only mode: database does not exist
+2026-06-08 00:29:38,209 - freqtrade.worker - INFO - Bot heartbeat. PID=2973475, version='2026.6-dev-3e12c1b', state='RUNNING'

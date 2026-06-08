@@ -3,21 +3,20 @@
   "chain": [
     "kairos",
     "nemoclaw",
-    "openclaw"
+    "openclaw",
+    "shannon",
+    "hermes"
   ],
-  "current_step": 0,
-  "query": "2026-06-07 | Kairos | Baton auto-cycle testing \u2014 verify cron auto-picks P0",
-  "requested_by": "openclaw-auto",
-  "kairos_done": false,
-  "grok_done": false,
+  "current_step": 2,
+  "query": "Full squad cycle — all 5 agents online. Sub-agent efficiency active.",
+  "requested_by": "chase-directive",
+  "kairos_done": true,
+  "nemoclaw_done": true,
   "openclaw_done": false,
+  "shannon_done": false,
+  "hermes_done": false,
   "complete": false,
   "auto": true,
   "idle_since": "",
-  "last_updated": "2026-06-08T03:35:01Z",
-  "monitor_active": true,
-  "monitor_job": "agent-hop-chain",
-  "monitor_schedule": "every 30m",
-  "n8n_status": "running on port 5678, needs owner setup (blocked on Chase)",
-  "nemoclaw_done": false
+  "last_updated": "2026-06-08T05:15:00Z"
 }

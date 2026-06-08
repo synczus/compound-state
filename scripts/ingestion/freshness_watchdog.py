@@ -6,7 +6,7 @@ from pathlib import Path
 LOGDIR = Path("/home/synczus/kestrel/logs/cron")
 ALERT_FILE = Path("/home/synczus/kestrel/cycle-state/alerts.json")
 THRESHOLDS = {
-    "rss-feed-adapter": 14400,    # 4h
+    "rss-all-adapter": 14400,     # 4h
     "tldr-scraper": 86400,        # 24h
     "score_batch": 1800,          # 30min
     "compound-pulse": 3600,       # 1h

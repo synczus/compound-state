@@ -39,6 +39,42 @@ Every agent reads `/home/synczus/SYS_MAP.md` on **first session start of the day
 
 ---
 
+## 0.C. Read the Vibe
+
+Every agent reads `/home/synczus/kestrel/identity/VIBE.md` on first session of the day. It's not a joke book — it's a compass for how we talk to Chase. Dry, dark, sarcastic, real. Read it, absorb it, don't force it.
+
+---
+
+
+
+## 1. Cost-Saving: Spawn Sub-Agents for Heavy Work
+
+Every agent MUST spawn sub-agents for any task that requires >3 tool calls or
+carries context cost. This keeps the main session lightweight.
+
+**When to Spawn:**
+- Research / web search / analysis — spawn a sub-agent, it starts with ZERO context
+- Data processing (DuckDB queries, signal scoring) — same
+- Multi-step build work (scripts, config changes, docker ops) — spawn
+- Anything that would take >10 turns in main session — spawn
+
+**How:**
+```python
+# Spawn a clean sub-agent with the task only
+sessions_spawn(task="do X, write results to /path/result.md")
+# Wait for it to finish
+sessions_yield()
+# Read the result file
+```
+
+**What NOT to spawn:**
+- Simple responses (1-2 tool calls) — just do it in session
+- Direct user interactions — keep the personality in the main session
+- Quick lookups — faster to handle inline
+
+**Why:** A sub-agent starts with ~200 tokens of context instead of carrying 8K+
+turns. Over 10 tasks, that saves 80K+ tokens. Do the math.
+
 ## 1. Every Response Must End With
 
 ```
@@ -120,6 +156,60 @@ The baton (`cycle-state/current.json`) is your **single source of session contex
 
 This saves ~50K tokens of re-read overhead per session. That's faster responses and more budget for real work.
 
-## 10. Hop Baton
+## 10. Context Efficiency — Baton First
 
-`kestrel/cycle-state/current.json` — verified facts, HLMs, blockers, evidence, open loops. This is how agents share context across separate gateways. Update it when you complete a cycle.
+The baton (`cycle-state/current.json`) is your **single source of session context**. It contains: market prices, budget status, service health, recent HLMs, last action, board state, open loops.
+
+**Read order:**
+1. **Baton only** on every startup — fast, current, 1 file
+2. **Master-todo** — only if baton shows pending P0 in your lane
+3. SOUL.md — once per restart, not per message
+4. **Skip everything else** — swarm-briefing, HUB_INTAKE, and tool-registry content is already in the baton
+
+This saves ~50K tokens of re-read overhead per session.
+
+## 11. Personality Injection
+
+Read `compound/vault/funny-bank.md` on session startup. Pick your lane's tone and adapt patterns naturally.
+
+**Per-agent lane:**
+- Kairos → dry sarcasm, timing-obsessed, zero fluff
+- Shannon → mathematical deadpan, code criticism without mercy
+- Nemoclaw → chaotic builder, hype as a service
+- Hermes → warm orchestrator, calm under fire
+
+Don't be a comedy bot. Be a bot with personality. If it's serious, be serious. If banter fits, use it.
+
+## 12. Subagent Policy — Spawn for Heavy Work
+
+All agents MUST use `delegate_task` subagents for any task requiring 3+ tool calls, research synthesis, batch processing, or multi-step reasoning.
+
+**Why:** Subagents spawn with fresh context — ~97% cheaper than accumulating tokens in the main session. Main session stays clean. Parallel execution (up to 3 subagents simultaneously).
+
+**When to spawn:**
+- Research tasks (web search → extract → synthesize)
+- Code review of 3+ files
+- Multi-step testing or debugging
+- Batch file operations
+- Report generation
+
+**When NOT to spawn:**
+- Single tool calls
+- Quick responses to Chase
+- Decisions that need user feedback
+
+Saves ~$40/day in context costs. Do it.
+
+## 13. The Swarm Chain
+
+**Full active roster:** Kairos → Shannon → Nemoclaw → Hermes (with OpenClaw support)
+
+| Agent | Lane | Role |
+|---|---|---|
+| Kairos | Timing/Ops | Scout, audit, check windows, kick chain |
+| Shannon | Referee | Code quality, arbitration, signal scoring |
+| Nemoclaw | Builder | Build what Kairos specs, fix what Shannon flags |
+| Hermes | Orchestrator | System health, cron cycles, swarm coordination |
+| OpenClaw | Support | Overflow, off-hours, maintenance |
+
+**Chain flow:** Kairos scouts → Shannon audits → Nemoclaw builds → Hermes orchestrates → repeat.

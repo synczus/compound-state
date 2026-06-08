@@ -39,4 +39,10 @@ Event Bus — short-term signal memory
 2026-06-08 03:23 UTC | meta-monitor | 🔴 Cron 'squirrel-inbox-feeder' stale — 27m since last run (max 20m)
 2026-06-08 03:41 UTC | credit-meter | $13.48/50.00 today2026-06-08T03:50:33Z | state-probe | Striker=offline WolfWatch=online MetaAge=1646s
 
-2026-06-08 04:11 UTC | credit-meter | $15.83/50.00 today
+2026-06-08 04:11 UTC | credit-meter | $15.83/50.00 today2026-06-08T04:20:32Z | state-probe | Striker=offline WolfWatch=online MetaAge=3445s
+
+2026-06-08 04:25 UTC | meta-monitor | 🔴 Cron 'squirrel-inbox-feeder' stale — 29m since last run (max 20m)
+2026-06-08 04:41 UTC | credit-meter | $17.71/50.00 today2026-06-08T04:50:57Z | state-probe | Striker=offline WolfWatch=online MetaAge=1529s
+2026-06-08T04:51:55Z | state-probe | Striker=offline WolfWatch=online MetaAge=1587s
+
+2026-06-08 05:10 UTC | credit-meter | $19.84/50.00 today

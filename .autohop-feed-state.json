@@ -1,9 +1,54 @@
 {
   "date": "2026-06-08",
   "processed": {
+    "081e326c2217a590": {
+      "attempted_at": "2026-06-08T01:15:01.925946-04:00",
+      "item": "Chase | Hermes bot token \u2014 get from BotFather, drop in chat. Hermes can't Telegram until this is set.",
+      "ok": true
+    },
+    "0bf64a64f7f2f995": {
+      "attempted_at": "2026-06-08T01:10:01.451920-04:00",
+      "item": "\ud83d\udd34 hop: Active hop \u2014 nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z \u2014 watchdog fix applied,",
+      "ok": true
+    },
+    "18f121f29078c960": {
+      "attempted_at": "2026-06-08T01:05:01.131948-04:00",
+      "item": "2026-06-08 | Chase | #8 CryptoQuant API key",
+      "ok": true
+    },
+    "300d75eca8e0b15c": {
+      "attempted_at": "2026-06-08T00:55:01.223336-04:00",
+      "item": "2026-06-08 | OpenClaw | #22 ProVara integration \u2014 Ed25519 signing",
+      "ok": true
+    },
     "3316b3fa3af1d1d7": {
       "attempted_at": "2026-06-08T00:10:01.992272-04:00",
       "item": "**#2** 2026-06-08 | Kairos | Post-ingest scoring job \u2014 edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs",
+      "ok": true
+    },
+    "3799d14da31d0ed1": {
+      "attempted_at": "2026-06-08T00:40:01.394458-04:00",
+      "item": "2026-06-08 | OpenClaw | #3 Cron graveyard \u2014 audit all systemd + crons",
+      "ok": true
+    },
+    "3e35aa378c088a87": {
+      "attempted_at": "2026-06-08T00:20:01.417727-04:00",
+      "item": "**#5** 2026-06-08 | Kairos | Newsletter scraper adapter \u2014 RSS first (/feed), IMAP fallback, sitemap.xml last, dedupe by URL + content hash. Targets: a16z, Coinstack, Tech Buzz, Milk Road, Bankless. ~4 hrs",
+      "ok": true
+    },
+    "6102a2e56bb78465": {
+      "attempted_at": "2026-06-08T00:45:01.847551-04:00",
+      "item": "2026-06-08 | OpenClaw | #13 False-positive feedback loop \u2014 wire source_feedback table",
+      "ok": true
+    },
+    "65b393f0e1695f83": {
+      "attempted_at": "2026-06-08T00:25:01.738119-04:00",
+      "item": "2026-06-08 | Chase | **Sign up fresh** at localhost:5678 + create n8n API key + paste in chat",
+      "ok": true
+    },
+    "76e3a6ceffa735b1": {
+      "attempted_at": "2026-06-08T00:35:01.212067-04:00",
+      "item": "2026-06-08 | OpenClaw | #2 One-shot deployer \u2014 draft docker-compose",
       "ok": true
     },
     "7e778edd02b226fa": {
@@ -21,6 +66,16 @@
       "item": "2026-06-06 | Scraper | The creative thought drops were 8 separate \u26aa ideas on the board. Now they're a single live cron rotation with weighted selection logic and concrete examples \u2014 the compound's auto-conversation went from \"what should we work on\" to \"here's a signal fragment, a contradiction, or a bet\" every 5 minutes, and the only dead spot is whichever agent doesn't respond.",
       "ok": true
     },
+    "8f0e956c1d93594f": {
+      "attempted_at": "2026-06-08T00:20:01.562371-04:00",
+      "item": "**#6** 2026-06-08 | Nemoclaw | DuckDB scaling \u2014 tiered retention (lead 90d, narrative 30d, archival 7d), hourly checkpoint, Parquet cold export. ~3 hrs",
+      "ok": true
+    },
+    "8fedc05fb1d6598b": {
+      "attempted_at": "2026-06-08T00:30:01.214975-04:00",
+      "item": "2026-06-08 | OpenClaw | #20 Perplexity pipeline \u2014 inbound files discovered",
+      "ok": true
+    },
     "93312ed1f3215f0a": {
       "attempted_at": "2026-06-06T16:00:01.506991-04:00",
       "item": "2026-06-06 | Hermes | Diagnose $20/day OpenRouter spend \u2014 check dashboard for which model/provider is burning credits",
@@ -36,9 +91,44 @@
       "item": "2026-06-06 | Scraper | Six Thinking Hats is the second most influential creativity framework ever created (after Oblique), and adding it doubles the DB's philosophical range \u2014 Oblique breaks rules, Six Hats structures thinking. Together they cover chaos *and* structure, which means the compound can now frame any problem from either direction every 5 minutes.",
       "ok": true
     },
+    "987a845035675ebf": {
+      "attempted_at": "2026-06-08T01:05:01.274224-04:00",
+      "item": "2026-06-08 | Chase | #4 Sudo auth \u2014 loginctl enable-linger synczus",
+      "ok": true
+    },
+    "a0ca018d9c8a7ac4": {
+      "attempted_at": "2026-06-08T01:00:01.547395-04:00",
+      "item": "2026-06-08 | Chase | #1 n8n enterprise license \u2014 drop in Settings \u2192 Usage & Plan",
+      "ok": true
+    },
+    "b357b92cd2cb1f68": {
+      "attempted_at": "2026-06-08T00:25:01.873864-04:00",
+      "item": "2026-06-08 | Nemoclaw | Wire n8n scenarios: Telegram bot token, webhook endpoint, compound triggers (blocked on API key)",
+      "ok": true
+    },
     "b767e504fa9a531c": {
       "attempted_at": "2026-06-08T00:10:01.856609-04:00",
       "item": "**#1** 2026-06-08 | Kairos | Archive batch processor \u2014 scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs",
+      "ok": true
+    },
+    "c95153b8dce9ba54": {
+      "attempted_at": "2026-06-08T00:50:01.559663-04:00",
+      "item": "2026-06-08 | OpenClaw | #21 Agent memory overhaul",
+      "ok": true
+    },
+    "cb4645d8aa4547ba": {
+      "attempted_at": "2026-06-08T00:55:01.368635-04:00",
+      "item": "2026-06-08 | OpenClaw | #23 Project diversification \u2014 CloakBrowser, AgentMemory, etc.",
+      "ok": true
+    },
+    "ce9e451eb5973065": {
+      "attempted_at": "2026-06-08T01:00:01.692551-04:00",
+      "item": "2026-06-08 | Chase | #7 MMR credentials \u2014 TWS_USERID, TWS_PASSWORD, MASSIVE_API_KEY",
+      "ok": true
+    },
+    "cf43d1d04de9b0f1": {
+      "attempted_at": "2026-06-08T00:40:01.532654-04:00",
+      "item": "2026-06-08 | OpenClaw | #11 Auto-code-review \u2014 git hooks + bandit + vulture pipeline",
       "ok": true
     },
     "d9b8f70e9474bd03": {
@@ -51,11 +141,41 @@
       "item": "2026-06-06 | Scraper | Shared coordination surface is live \u2014 agents now check master-todo.md before every response.",
       "ok": true
     },
+    "e36eafdff5637366": {
+      "attempted_at": "2026-06-08T01:15:01.786921-04:00",
+      "item": "Chase | n8n owner signup \u2014 visit http://localhost:5678, create first account. Community edition, no license needed.",
+      "ok": true
+    },
     "f1f54b543bf09732": {
       "attempted_at": "2026-06-08T00:15:01.180019-04:00",
       "item": "**#3** 2026-06-08 | Kairos | Freshness watchdog \u2014 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs",
       "ok": true
+    },
+    "f2483bd172906d00": {
+      "attempted_at": "2026-06-08T00:50:01.419280-04:00",
+      "item": "2026-06-08 | OpenClaw | #18 Synapse dashboard deploy",
+      "ok": true
+    },
+    "f27b62a8e0ec6bca": {
+      "attempted_at": "2026-06-08T00:30:01.065828-04:00",
+      "item": "2026-06-08 | OpenClaw | #4 Boot persistence \u2014 needs sudo: sudo loginctl enable-linger synczus",
+      "ok": true
+    },
+    "f5366cf67de0db2b": {
+      "attempted_at": "2026-06-08T01:10:01.602890-04:00",
+      "item": "\ud83d\udfe1 contract: coordination.yaml exists but may be misconfigured",
+      "ok": true
+    },
+    "f75f8c5244684f7c": {
+      "attempted_at": "2026-06-08T00:35:01.072407-04:00",
+      "item": "2026-06-08 | OpenClaw | #14 Dead code hunt \u2014 vulture running",
+      "ok": true
+    },
+    "ff10ec14d048efce": {
+      "attempted_at": "2026-06-08T00:45:01.711847-04:00",
+      "item": "2026-06-08 | OpenClaw | #12 Signal quality dashboard \u2014 Grafana",
+      "ok": true
     }
   },
-  "runs_today": 5
+  "runs_today": 29
 }

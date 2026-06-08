@@ -215,3 +215,65 @@ Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
 Copy the JSON file or ask me to post it.
 
 {"generated_at": "2026-06-08T04:03:03.748526+00:00", "count": 10}
+2026-06-08 00:33:00,265 WARNING [perplexity-qgen] DuckDB read failed: Invalid Input Error: 'pandas' is required for this operation but it was not installed
+2026-06-08 00:33:00,267 INFO [perplexity-qgen] Saved 10 queries to /home/synczus/kestrel/pulse/perplexity-queries.json
+🧠 Perplexity Queries — 00:33 ET
+
+Pipeline: 4671 scored, 4671 raw signals
+FreqTrade: 🟢  MMR: 🔴  Trades: 0
+
+To-dos:
+- 2026-06-08 | OpenClaw | #14 Dead code hunt — vulture running
+- 2026-06-08 | OpenClaw | #2 One-shot deployer — draft docker-compose
+- 2026-06-08 | OpenClaw | #3 Cron graveyard — audit all systemd + crons
+- 2026-06-08 | OpenClaw | #11 Auto-code-review — git hooks + bandit + vulture pipeline
+- 2026-06-08 | OpenClaw | #12 Signal quality dashboard — Grafana
+
+🔥 Systemd Monitoring Dashboard
+  Best open-source system monitoring stack for a single Ubuntu server running Docker-free Python services? Specifically want: service health dashboard (systemd timer status, last-run timestamps, failure...
+
+🔥 Freqtrade Strategy Optimization
+  How can I optimize FreqTrade entry/exit logic for a signal-based strategy that reads scored events from an external DuckDB? Specifically position sizing by edge score, cooldown between trades, and avo...
+
+🔥 Backtesting Signals Vs Price
+  DuckDB approach for backtesting scored signals against subsequent 5m/15m/1h candlestick price data? I have signal_scores table with event timing and edge_score. Need to compare buy-side signals agains...
+
+🔥 Cross Market Signal Correlation
+  Which free/open APIs or RSS feeds provide meaningful cross-asset signal data? Specifically looking for: (1) equity/crypto correlation indicators, (2) USD index / DXY signals, (3) bond yield signals (1...
+
+Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
+
+Copy the JSON file or ask me to post it.
+
+{"generated_at": "2026-06-08T04:33:00.105910+00:00", "count": 10}
+2026-06-08 01:03:03,866 WARNING [perplexity-qgen] DuckDB read failed: Invalid Input Error: 'pandas' is required for this operation but it was not installed
+2026-06-08 01:03:03,872 INFO [perplexity-qgen] Saved 10 queries to /home/synczus/kestrel/pulse/perplexity-queries.json
+🧠 Perplexity Queries — 01:03 ET
+
+Pipeline: 4671 scored, 4671 raw signals
+FreqTrade: 🟢  MMR: 🔴  Trades: 0
+
+To-dos:
+- 2026-06-08 | Chase | #8 CryptoQuant API key
+- 2026-06-08 | Chase | #4 Sudo auth — loginctl enable-linger synczus
+- 🔴 hop: Active hop — nemoclaw's turn: Kairos cycle check 2026-06-08T04:15Z — watchdog fix applied,
+- 🟡 contract: coordination.yaml exists but may be misconfigured
+- ⚪ exports: 26 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+
+🔥 Systemd Monitoring Dashboard
+  Best open-source system monitoring stack for a single Ubuntu server running Docker-free Python services? Specifically want: service health dashboard (systemd timer status, last-run timestamps, failure...
+
+🔥 Mmr Ibkr Integration
+  I have MMR (Make Me Rich) algorithmic trading platform installed with IBKR paper trading. Which config files need credentials filled? What's the full path from strategy signal to IBKR order execution ...
+
+🔥 Cross Market Signal Correlation
+  Which free/open APIs or RSS feeds provide meaningful cross-asset signal data? Specifically looking for: (1) equity/crypto correlation indicators, (2) USD index / DXY signals, (3) bond yield signals (1...
+
+🔥 Anomaly Detection Signal Pipeline
+  Lightweight anomaly detection on a DuckDB signal_scores table? I have 4671 rows with edge_score, source_id, asset_symbol, event_type, and timestamp. I want SQL queries or minimal Python that detects: ...
+
+Full JSON with all 10 queries → kestrel/pulse/perplexity-queries.json
+
+Copy the JSON file or ask me to post it.
+
+{"generated_at": "2026-06-08T05:03:03.751333+00:00", "count": 10}

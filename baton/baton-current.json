@@ -1,11 +1,11 @@
 {
-  "cycle_id": "trade-hop-20260607-001",
+  "cycle_id": "full-squad-20260608-001",
   "active": true,
   "current_holder": "nemoclaw",
-  "previous_holder": null,
-  "topic": "trading pipeline long-run architecture",
-  "context": "Chase wants a 3+ year trading setup. Agreed on Striker → Backtrader → ib_insync → IBKR. He wants to run mean reversion strategy (Kairos's suggestion). Next step: write mean reversion strategy and backtest against historical Coinbase data.",
-  "build_on": "Striker signals flowing (1273). Backtrader bridge built and tested. ib_insync installed. Strategy layer still TBD - Kairos suggested mean reversion.",
-  "next": "kairos",
-  "done_when": "Strategy written + backtested + ib_insync wired for paper trading"
+  "previous_holder": "chase",
+  "topic": "Full squad activation + sub-agent efficiency",
+  "context": "Chase activated ALL 5 agents: Shannon (stress tests + group), Hermes (budget/watchdog reporting), Kairos (scout), Nemoclaw (identity), OpenClaw (orchestration). Sub-agent spawning is now policy for any task >3 tool calls. Target: ~60% context bloat reduction. n8n running with fixed encryption key — needs Chase signup. Execution layer (Freqtrade + MMR) paper-ready — needs Bybit/IBKR keys.",
+  "build_on": "Tone shift complete (all agents cuss + emoji). Humor skill live. inside-jokes.md seeded. Perplexity feeder bumped to 5min. Hub rebuilt without numbers. ~/hub/ maps everything.",
+  "next": "chase",
+  "done_when": "n8n signed up + API key created. Bybit + IBKR keys provided. Stress test results posted by Shannon."
 }
