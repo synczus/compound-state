@@ -131,4 +131,18 @@ _50 high-confidence signals analyzed_
 2026-06-08 10:38 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-08T10:50:11Z | state-probe | Striker=offline WolfWatch=online MetaAge=1534s
 
 2026-06-08 10:54 UTC | baton-auto-cycle | No pending P0/P1 work found on board
-2026-06-08 11:08 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 11:08 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-08T11:20:05Z | state-probe | Striker=offline WolfWatch=online MetaAge=3328s
+
+2026-06-08 11:23 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 11:24 UTC | meta-monitor | All crons and services healthy
+2026-06-08 11:28 UTC | business-pulse | 📊 BTC $63572 | ETH $1690.45 | SOL $66.77 | Striker: connected | Signals: 137860 | Board: 0 done, 35 pending. Top: none
+2026-06-08 11:39 UTC | baton-auto-cycle | No pending P0/P1 work found on board[2026-06-08T11:45:03.745684+00:00] | [WOLFWATCH] | [CRITICAL] | Striker HEALTH STALE: Striker health file is 18196s old (threshold 120s).
+[2026-06-08T11:45:03.745754+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker HEALTH STALE: failed or unconfigured
+[2026-06-08T11:45:03.746224+00:00] | [KAIROS] | [MONITOR_HEALTH_NOTIFY_SENT] | STALE: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"critical","title":"Striker HEALTH STALE","body":"Striker health file is 18196s old (threshold 120s).","timestamp":"2026-06-08T11:45:01.670533+00:00"
+[2026-06-08T11:45:04.171800+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: No new signal rows for 287 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.
+[2026-06-08T11:45:04.171869+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT: failed or unconfigured
+[2026-06-08T11:45:04.172258+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_SENT] | STAGNANT: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"important","title":"Striker DB STAGNANT","body":"No new signal rows for 287 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.","timest
+2026-06-08T11:50:05Z | state-probe | Striker=offline WolfWatch=online MetaAge=1530s
+
+2026-06-08 11:54 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 12:09 UTC | baton-auto-cycle | No pending P0/P1 work found on board

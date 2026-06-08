@@ -3,6 +3,54 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
+- **When:** 2026-06-08 07:40:13
+- **Tags:** config
+
+The API is live (`pong` OK) but the password in config is literally `***` — a never-filled placeholder.
+
+**Fix:** I can set a real password and restart the API server. Want me to:
+
+1. Set password to something real in the config
+2. Restart freqtrade so the API picks it up
+3. You log in with the new creds
+
+Or if you just want to try logging in through the browser, the username is **ftuser** — you'll need to set the password first though since it's currently `***`.
+
+What password do you want me to use?
+
+---
+
+### 2. configuration_detail
+- **When:** 2026-06-08 07:40:13
+- **Tags:** config
+
+That's your Freqtrade API dashboard — running at `127.0.0.1:8081`. The config has the API server enabled with username `ftuser`. Let me check the password and see if it's reachable
+
+---
+
+### 3. configuration_detail
+- **When:** 2026-06-08 07:36:59
+- **Tags:** port
+
+Installed to all 71 agents. The skill lives at `~/.agents/skills/last30days/` and is available to:
+
+| Agent | How |
+|---|---|
+| **Hermes** (this one) | Symlinked ✅ |
+| **OpenClaw** | Symlinked ✅ |
+| **Codex** | Universal ✅ |
+| **Claude Code** | Symlinked ✅ |
+| **Gemini CLI** | Universal ✅ |
+| **GitHub Copilot** | Universal ✅ |
+| Antigravity, Amp, Cline, Cursor, Zed, Warp, OpenCode +59 more | Universal ✅ |
+
+One fail — PromptScript (doesn't support global installs, irrelevant).
+
+Let me verify it loaded properly on Hermes.
+
+---
+
+### 4. configuration_detail
 - **When:** 2026-06-08 07:03:27
 - **Tags:** config, setting, key
 
@@ -25,7 +73,7 @@ _[truncated]_
 
 ---
 
-### 2. configuration_detail
+### 5. configuration_detail
 - **When:** 2026-06-08 06:43:58
 - **Tags:** port
 
@@ -42,7 +90,7 @@ _[truncated]_
 
 ---
 
-### 3. configuration_detail
+### 6. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** config
 
@@ -50,7 +98,7 @@ OK — config blocked by TIRITH on the pipe (expected), and no budget guard conf
 
 ---
 
-### 4. configuration_detail
+### 7. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** threshold, port
 
@@ -66,7 +114,7 @@ Let me check budget status since the $20 OpenRouter charge might push us past a 
 
 ---
 
-### 5. configuration_detail
+### 8. configuration_detail
 - **When:** 2026-06-08 04:08:43
 - **Tags:** key
 
@@ -74,7 +122,7 @@ n8n is already running. Version 2.23.4 on localhost:5678, and you already have t
 
 ---
 
-### 6. configuration_detail
+### 9. configuration_detail
 - **When:** 2026-06-08 03:47:56
 - **Tags:** config
 
@@ -84,7 +132,7 @@ The rclone config is written — let me verify it works and wire it to the notes
 
 ---
 
-### 7. configuration_detail
+### 10. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** token
 
@@ -92,7 +140,7 @@ There's a Google Drive token already sitting in `/tmp/rclone-token.json` from an
 
 ---
 
-### 8. configuration_detail
+### 11. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -100,7 +148,7 @@ Rclone is installed but no remotes configured. Need to authorize with Google Dri
 
 ---
 
-### 9. configuration_detail
+### 12. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -108,7 +156,7 @@ Rclone + Google Drive means notes are accessible from phone, backed up, and stil
 
 ---
 
-### 10. configuration_detail
+### 13. configuration_detail
 - **When:** 2026-06-08 03:42:29
 - **Tags:** port, token
 
@@ -131,7 +179,7 @@ _[truncated]_
 
 ---
 
-### 11. configuration_detail
+### 14. configuration_detail
 - **When:** 2026-06-08 03:42:29
 - **Tags:** port, endpoint
 
@@ -144,7 +192,7 @@ Let me check what's available
 
 ---
 
-### 12. configuration_detail
+### 15. configuration_detail
 - **When:** 2026-06-08 03:40:03
 - **Tags:** port
 
@@ -159,7 +207,7 @@ Everything else is newsletters, promos, and routine financial alerts. Nothing ti
 
 ---
 
-### 13. configuration_detail
+### 16. configuration_detail
 - **When:** 2026-06-08 03:39:35
 - **Tags:** token
 
@@ -167,7 +215,7 @@ Good — Telegram bot token is in the .env. Let me check what channels the bot a
 
 ---
 
-### 14. configuration_detail
+### 17. configuration_detail
 - **When:** 2026-06-08 03:37:05
 - **Tags:** timeout, token
 
@@ -188,7 +236,7 @@ _[truncated]_
 
 ---
 
-### 15. configuration_detail
+### 18. configuration_detail
 - **When:** 2026-06-08 02:54:32
 - **Tags:** setting, threshold, key
 
@@ -215,7 +263,7 @@ _[truncated]_
 
 ---
 
-### 16. configuration_detail
+### 19. configuration_detail
 - **When:** 2026-06-08 02:54:32
 - **Tags:** threshold
 
@@ -225,7 +273,7 @@ Let me check what's actually happening in the stack right now
 
 ---
 
-### 17. configuration_detail
+### 20. configuration_detail
 - **When:** 2026-06-08 01:52:10
 - **Tags:** config, threshold
 
@@ -256,7 +304,7 @@ _[truncated]_
 
 ---
 
-### 18. configuration_detail
+### 21. configuration_detail
 - **When:** 2026-06-08 01:37:13
 - **Tags:** port
 
@@ -266,7 +314,7 @@ On the CI failure: that action's 2 days old now. Worth a 👀 if nobody's triage
 
 ---
 
-### 19. configuration_detail
+### 22. configuration_detail
 - **When:** 2026-06-08 00:44:03
 - **Tags:** threshold
 
@@ -278,7 +326,7 @@ Everything nominal — no need to wake anyone up.
 
 ---
 
-### 20. configuration_detail
+### 23. configuration_detail
 - **When:** 2026-06-07 23:41:45
 - **Tags:** setting, threshold, port
 
@@ -302,7 +350,7 @@ _[truncated]_
 
 ---
 
-### 21. configuration_detail
+### 24. configuration_detail
 - **When:** 2026-06-07 23:34:56
 - **Tags:** key
 
@@ -312,7 +360,7 @@ Nothing actionable. The kestrel Smoke Options failure on main is already on Chas
 
 ---
 
-### 22. configuration_detail
+### 25. configuration_detail
 - **When:** 2026-06-07 22:38:50
 - **Tags:** threshold
 
@@ -339,7 +387,7 @@ OpenRouter Budget Monitor — 2026-06-08 02:38 UTC
 
 ---
 
-### 23. configuration_detail
+### 26. configuration_detail
 - **When:** 2026-06-07 21:35:54
 - **Tags:** config, threshold
 
@@ -370,7 +418,7 @@ _[truncated]_
 
 ---
 
-### 24. configuration_detail
+### 27. configuration_detail
 - **When:** 2026-06-07 21:31:06
 - **Tags:** key
 
@@ -384,7 +432,7 @@ Everything else is newsletters, promos, receipts ($20.05 OpenRouter, $20 Zelle f
 
 ---
 
-### 25. configuration_detail
+### 28. configuration_detail
 - **When:** 2026-06-07 19:30:55
 - **Tags:** setting, threshold
 
@@ -426,7 +474,7 @@ _[truncated]_
 
 ---
 
-### 26. configuration_detail
+### 29. configuration_detail
 - **When:** 2026-06-07 19:26:47
 - **Tags:** key
 
@@ -436,7 +484,7 @@ Nothing notable worth flagging. All 20 unread emails are newsletters (Substack, 
 
 ---
 
-### 27. configuration_detail
+### 30. configuration_detail
 - **When:** 2026-06-07 17:25:23
 - **Tags:** threshold
 
@@ -462,7 +510,7 @@ _[truncated]_
 
 ---
 
-### 28. configuration_detail
+### 31. configuration_detail
 - **When:** 2026-06-07 17:24:00
 - **Tags:** key
 
@@ -483,7 +531,7 @@ _[truncated]_
 
 ---
 
-### 29. configuration_detail
+### 32. configuration_detail
 - **When:** 2026-06-07 16:23:52
 - **Tags:** config, setting, threshold, port, key
 
@@ -515,7 +563,7 @@ _[truncated]_
 
 ---
 
-### 30. configuration_detail
+### 33. configuration_detail
 - **When:** 2026-06-07 16:23:52
 - **Tags:** threshold
 
@@ -523,7 +571,7 @@ Good — real data in hand. The script has THRESHOLD=10.00 but the state file st
 
 ---
 
-### 31. configuration_detail
+### 34. configuration_detail
 - **When:** 2026-06-07 16:23:52
 - **Tags:** threshold
 
@@ -531,7 +579,7 @@ The state file says $30 threshold but the script says $10 (matching the Vote #01
 
 ---
 
-### 32. configuration_detail
+### 35. configuration_detail
 - **When:** 2026-06-07 15:21:49
 - **Tags:** setting, threshold, port
 
@@ -565,7 +613,7 @@ _[truncated]_
 
 ---
 
-### 33. configuration_detail
+### 36. configuration_detail
 - **When:** 2026-06-07 15:20:34
 - **Tags:** key
 
@@ -575,7 +623,7 @@ Nothing notable enough to ping the AI Hangout about. Unreads are all routine: ne
 
 ---
 
-### 34. configuration_detail
+### 37. configuration_detail
 - **When:** 2026-06-07 14:19:20
 - **Tags:** setting, threshold
 
@@ -600,7 +648,7 @@ _[truncated]_
 
 ---
 
-### 35. configuration_detail
+### 38. configuration_detail
 - **When:** 2026-06-07 06:52:34
 - **Tags:** config, parameter, threshold, port
 
@@ -633,7 +681,7 @@ _[truncated]_
 
 ---
 
-### 36. configuration_detail
+### 39. configuration_detail
 - **When:** 2026-06-07 06:26:39
 - **Tags:** port
 
@@ -658,7 +706,7 @@ _[truncated]_
 
 ---
 
-### 37. configuration_detail
+### 40. configuration_detail
 - **When:** 2026-06-07 06:26:39
 - **Tags:** port
 
@@ -675,7 +723,7 @@ Let me execute the search first.
 
 ---
 
-### 38. configuration_detail
+### 41. configuration_detail
 - **When:** 2026-06-07 05:54:52
 - **Tags:** endpoint
 
@@ -697,7 +745,7 @@ def striker_health(gif_url):
 
 ---
 
-### 39. configuration_detail
+### 42. configuration_detail
 - **When:** 2026-06-07 05:01:10
 - **Tags:** key
 
@@ -716,7 +764,7 @@ async def compound_loop():
 
 ---
 
-### 40. configuration_detail
+### 43. configuration_detail
 - **When:** 2026-06-07 04:54:58
 - **Tags:** port, key
 
@@ -733,7 +781,7 @@ Pick it up, patch the API key, bounce Striker. I'll handle the rest.
 
 ---
 
-### 41. configuration_detail
+### 44. configuration_detail
 - **When:** 2026-06-07 04:19:12
 - **Tags:** threshold
 
@@ -743,7 +791,7 @@ Pick it up, patch the API key, bounce Striker. I'll handle the rest.
 
 ---
 
-### 42. configuration_detail
+### 45. configuration_detail
 - **When:** 2026-06-07 03:28:39
 - **Tags:** port
 
@@ -779,7 +827,7 @@ _[truncated]_
 
 ---
 
-### 43. configuration_detail
+### 46. configuration_detail
 - **When:** 2026-06-07 03:15:43
 - **Tags:** setting, key, token
 
@@ -809,7 +857,7 @@ _[truncated]_
 
 ---
 
-### 44. configuration_detail
+### 47. configuration_detail
 - **When:** 2026-06-07 03:15:16
 - **Tags:** config, token
 
@@ -817,7 +865,7 @@ Receiver works — POST accepted, status ok. Telegram failed because the kestrel
 
 ---
 
-### 45. configuration_detail
+### 48. configuration_detail
 - **When:** 2026-06-07 03:15:16
 - **Tags:** key
 
@@ -831,7 +879,7 @@ Routing directly to Codex per v4.0 dynamic cycle (Intake → Required Risk Gate 
 
 ---
 
-### 46. configuration_detail
+### 49. configuration_detail
 - **When:** 2026-06-07 03:13:10
 - **Tags:** endpoint
 
@@ -841,7 +889,7 @@ Board is quiet — 0 P0, 0 P1, 25 done. But Striker shows **offline | last signa
 
 ---
 
-### 47. configuration_detail
+### 50. configuration_detail
 - **When:** 2026-06-07 02:54:56
 - **Tags:** timeout
 
@@ -858,60 +906,6 @@ curl -s -o /dev/null -w "%{http_code}" \
 ```
 
 Kairos — what's the retry window if Striker stays dark past 10min? Override timeout or escalate to Shannon? Pick one.
-
----
-
-### 48. configuration_detail
-- **When:** 2026-06-07 02:50:00
-- **Tags:** threshold, endpoint
-
-Banked. Now you see it at `http://localhost:19500/` — live data, no refresh needed.
-
-The dashboard went from a static badge collection to a live monitor. Three new sections:
-
-**🔭 Striker** — WS status (connected/distrupted), uptime since 01:53 EDT, health file last updated, signal counts
-
-**Kairos Monitor** — health status (OK/STALE/ERROR), DB status (WARMUP/STAGNANT/OK), signal row count, first-seen timestamp
-
-**💰 Cost** — daily spend ($15.10 — flashing red over $10 threshold), weekly/monthly totals
-
-All three JSON endpoints are symlinked into the dashboard directory so they update live with zero scripts. Page auto-refreshes the data every 10s. The dashboard watchdog probably already had it on a 5-min restart cycle, so this survives reboots too.
-
-**HL:** The compound now has a visible pul
-_[truncated]_
-
----
-
-### 49. configuration_detail
-- **When:** 2026-06-07 02:50:00
-- **Tags:** port
-
-There's a dashboard on port 19500 but it doesn't have Striker or monitor data. Let me see what it looks like and what's missing
-
----
-
-### 50. configuration_detail
-- **When:** 2026-06-07 02:47:18
-- **Tags:** config, setting, key
-
-Grok's inversion executed. Here's the full discharge:
-
----
-
-## Cycle Complete — Grok Stage 2 → AI Hangout Banking
-
-### Executed
-
-**1. OpenRouter Budget Guardrail** ($15.10/day → $10 target)
-- Built `or-budget-monitor.sh` — polls OpenRouter `/api/v1/auth/key` for daily spend
-- Edge-triggered — alerts once on first exceedance, stays quiet on repeats
-- Cron registered: **every 1h**, state file at `kestrel/or-budget-state.json`
-- ⚠️ **User action required:** OpenRouter hard cap at `openrouter.ai/settings/billing` — no API push for limits. Current spend is $15.10/day with zero guardrail active
-
-**2. Kairos + Shannon `requireMention:false`**
-- `kairos/config.yaml` — telegram.require_mention: **false** (+ reactions: true)
-- `shannon/config.yaml` — telegram.require_mention: **false** (+ reactions:
-_[truncated]_
 
 ---
 

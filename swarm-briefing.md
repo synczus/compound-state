@@ -81,7 +81,12 @@ To lower context token burn per session:
 4. **n8n** — running on :5678, needs owner account (blocked on Chase)
 5. **IBKR engine (Hephaestus)** — scaffolding done, needs gateway binary installed (blocked on Chase)
 6. **Humor injection** — live. All agents funny now.
-7. **Perplexity pipeline** — REPLACED. Old cron + query-gen removed. Agents now call `perplexity/sonar-pro` inline through OpenRouter via `scripts/perplexity_search.py`. No copy-paste, no human-in-loop. ~$0.002 per query.
+7. **Research pipeline** — Two-tier:
+   - **last30days** — broad multi-platform research (Reddit, X, YT, HN, Polymarket, GitHub). Invoke with `/last30days <topic>`. Default for "what are people saying about X" and sentiment/investigation research. Free, no API cost.
+   - **Perplexity Sonar Pro** — quick factual grounding. Call via `scripts/perplexity_search.py` through OpenRouter. Default for "verify this claim" and real-time data queries. ~$0.002/query, Chase has Perplexity Pro.
+   - Rule: broad research → last30days first. Quick fact → Sonar. Both when you need depth + verification.
+8. **Design tool** — `/impeccable` installed to all agents. 23 commands for design polish, audit, init, color, typography, motion, and more. Run `/impeccable init` in any project to set up PRODUCT.md + DESIGN.md. Every agent uses it before generating UI.
+9. **System prompt reference** — `reference/system-prompts/` -> 242 leaked system prompts from Anthropic, OpenAI, Google, xAI, Meta, Microsoft, Perplexity, Cursor, and more (41.4k⭐ repo). Study these to improve SOUL files and agent behavior. Vendors cover Claude Code/Design/Opus/Sonnet, ChatGPT 5.5/Codex, Gemini/Antigravity, Grok, Copilot, Cursor, Perplexity.
 
 ## What Success Looks Like
 

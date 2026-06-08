@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 10:54:20 UTC_
-_Total active entries: 389_
+_Last consolidated: 2026-06-08 12:10:21 UTC_
+_Total active entries: 391_
 
 ## By Category
 
 - **other**: 151 entries
-- **pipeline-infrastructure**: 104 entries
+- **pipeline-infrastructure**: 106 entries
 - **agent-orchestration**: 48 entries
 - **monitoring-observability**: 37 entries
 - **cost-optimization**: 17 entries
@@ -19,6 +19,8 @@ _Total active entries: 389_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780920034 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780919414 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780915815 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914602 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914016 min — propose next cycle
@@ -67,8 +69,6 @@ _Total active entries: 389_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Your speech pattern (thought loss + retrieval pauses + preserved complex reasoning) maps most cleanly to inattentive ADHD with anxiety overlay — not a degenerative disorder — and your existing coping strategy of talking it out is exactly the right move.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Your speech patterns (pauses, lost threads, loops) match someone thinking faster than they speak, not a language disorder — and your written communication is consistently clear, which wouldn't be true if there were a processing issue.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | [Blender Python scripting tutorial](https://www.youtube.com/watch?v=cyt0O7saU4Q) covers exactly the open-load-run flow you need to spawn any script we generate.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | ` patterns in the JSON content. The scraper needs to skip JSON-structured content. Let me fix the file first and add a JSON filter to the scraper
-- `[hermes]` **[security-governance]** 2026-06-08 | Scraper | n8n is fully operational with API keys live, ready to receive workflows — the only blocker was owner signup which is now done.
 
 ---
 

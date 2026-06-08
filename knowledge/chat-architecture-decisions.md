@@ -3,6 +3,187 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. architecture_explanation
+- **When:** 2026-06-08 07:54:46
+- **Tags:** structure
+
+**system_prompts_leaks** by asgeirtj — 41.4k ★, featured in Washington Post.
+
+**What it is:** A massive repo of extracted system prompts from every major AI model. Updated regularly (last commit June 7).
+
+**Contains prompts from:**
+- **Anthropic:** Claude Opus 4.8, Sonnet 4.6, Claude Code, Claude Design, Cowork
+- **OpenAI:** GPT-5.5 Thinking/Instant/Pro API/Codex, GPT-5.4, GPT-5.3
+- **Google:** Gemini 3.5 Flash, 3.1 Pro, Antigravity CLI
+- **xAI:** Grok, Grok Expert
+- **+** GitHub Copilot, VS Code Agent, Cursor, Perplexity, Docker Gordon AI, Zed, Amp
+
+**Why it matters for the compound:** This is like having the source code for every major AI agent's brain. We can read how Claude Code structures its tool-use instructions, how Codex handles file operations, how Copilot does context management
+_[truncated]_
+
+---
+
+### 2. architecture_explanation
+- **When:** 2026-06-08 07:50:36
+- **Tags:** layer, structure
+
+**Council of High Intelligence** by 0xNyk — 930 ★, CC0 license.
+
+**What it is:** 18 AI personas debating your hardest decisions in structured multi-round deliberation. Aristotle, Feynman, Torvalds, Kahneman, Taleb, Karpathy — each with a specific domain and model backend.
+
+**Modes:**
+- **Full** — 3 rounds: independent analysis → cross-examination → final positions
+- **Quick** — 2 rounds, no cross-examination
+- **Duo** — polarity pair dialectic (e.g. Socrates vs Feynman)
+
+**Why it's interesting for the compound:**
+- Multi-round structured disagreement with dissent quotas and novelty gates — mirrors what we've been building with the compound governance (vote-board.json, mandatory voting)
+- Each persona has a polarity pair — forces genuine tension instead of consensus drift
+- Problem Restate 
+_[truncated]_
+
+---
+
+### 3. architecture_explanation
+- **When:** 2026-06-08 07:38:02
+- **Tags:** flow
+
+That's **taste-skill** by Leonxlnx — an anti-slop frontend design framework for AI agents.
+
+**What it is:** A collection of sub-skills that make AI-generated UIs look polished instead of generic. Three dials (VARIANCE, MOTION, DENSITY) you can tune 1-10. Includes:
+
+- `design-taste-frontend` — main v2 experimental
+- `minimalist-ui` — Notion/Linear vibes
+- `industrial-brutalist-ui` — Swiss type, sharp contrast
+- `image-to-code` — generate comps → analyze → code
+- `redesign-existing-projects` — audit then fix existing UIs
+- Image gen skills for comps, brand kits, mobile flows
+
+**Different beast from last30days.** This is output quality control, not research. Would be useful when you're building frontends — web dashboards, trading UIs, etc. — to make them look premium instead of boilerplate.
+
+
+_[truncated]_
+
+---
+
+### 4. architecture_explanation
+- **When:** 2026-06-08 07:36:59
+- **Tags:** pipeline
+
+**Installed and working.** Test run completed in 23.8s — researched Solana sentiment across Reddit, Hacker News, Polymarket, and GitHub. Produced a grounded brief with sources and scores.
+
+**What's live now:**
+- Installed to all 71 agents (Hermes, OpenClaw, Codex, Claude Code, Gemini CLI, etc.)
+- Hermes can invoke it anytime — e.g. `last30days SOL ETF approval`
+- Free sources work out of the box: Reddit, HN, Polymarket, GitHub, web
+
+**To unlock full capability, we need:**
+- `yt-dlp` installed → YouTube transcripts
+- X/Twitter login or `XAI_API_KEY` → Twitter/X posts
+- `BRAVE_API_KEY` → web search (2K free queries/month)
+- `SCRAPECREATORS_API_KEY` → TikTok, Instagram, Pinterest
+
+Want me to install yt-dlp and set up the API keys we have (OpenRouter already set, can use that for Perplexity So
+_[truncated]_
+
+---
+
+### 5. architecture_explanation
+- **When:** 2026-06-08 07:32:05
+- **Tags:** pipeline
+
+Not installed yet — was waiting for the go-ahead.
+
+**Comparison for the compound:**
+
+**last30days-skill** — social signal radar
+- Reddit, X, YouTube, HN, Polymarket, Bluesky, GitHub, web
+- Scores by upvotes/likes/social proof — finds what people *actually care about*
+- Free, agent-native, runs directly
+- Better for: sentiment, community buzz, finding the zeitgeist on a topic
+
+**Perplexity Pro** — research depth
+- Authoritative web + academic sources
+- Deep grounded answers with citations
+- You already have it, so cost is zero
+- Better for: factual deep-dives, verifying claims, technical research
+
+**I'd use both — different jobs:**
+
+- `last30days` as the **default search** for quick topic briefs and sentiment reads (what's the vibe on SOL this week?)
+- Perplexity when we need **authoritativ
+_[truncated]_
+
+---
+
+### 6. architecture_explanation
+- **When:** 2026-06-08 07:28:11
+- **Tags:** pipeline, layer
+
+Quick comparison:
+
+**last30days-skill** (32.7k ★) — **Synthesis layer**
+- Searches Reddit, X, YouTube, HN, Polymarket, GitHub, Bluesky, web
+- AI judge scores/synthesizes into grounded cited briefs
+- Cross-source clustering, entity resolution, ELI5 mode
+- Shareable dark-mode HTML briefs
+- v3.3.2, mature
+
+**Agent-Reach** (23.5k ★) — **Data access layer**
+- Scaffolding that installs CLI tools for Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, WeChat
+- Zero API fees (cookie-based auth)
+- No synthesis/judge step — returns raw platform data
+- v1.4.0, newer
+- Heavier Chinese platform coverage (Bilibili, XiaoHongShu, Douyin)
+
+**Verdict:** `last30days-skill` wins for the compound. We already have raw data access (Striker, DuckDB, web_search). What we don't have is a mult
+_[truncated]_
+
+---
+
+### 7. architecture_explanation
+- **When:** 2026-06-08 07:22:58
+- **Tags:** pipeline
+
+That's **last30days-skill** by mvanhorn — 32.7k stars, MIT license, v3.3.2.
+
+**What it does:** An AI agent that researches any topic across Reddit, X, YouTube, HN, Polymarket, GitHub, Bluesky, and the web in parallel — then an AI judge synthesizes everything into a grounded, cited brief scored by upvotes/likes/relevance.
+
+Good fit for the compound. It'd give us real-time signal from social/community sentiment about any ticker, project, or event — feed that right into the signal pipeline.
+
+Want me to install it? For Hermes it'd be:
+```
+npx skills add mvanhorn/last30days-skill -g
+```
+
+Or if you want me to convert it into a native Hermes skill so it works with our tool stack instead of relying on npx, that's doable too.
+
+HL: 32.7k-star cross-platform research skill — install or convert into c
+_[truncated]_
+
+---
+
+### 8. architecture_explanation
+- **When:** 2026-06-08 07:14:31
+- **Tags:** structure
+
+🛠️ **Budget monitor ran — got real numbers, found a bug.**
+
+**Actual OpenRouter state:**
+- Cumulative usage: **$140.50**
+- Remaining: **$0.00** (free tier credits exhausted)
+- Limit: **null** (no hard cap — keeps running on pay-as-you-go)
+- Exceeded flag: **true** (threshold was $30, but this is cumulative not daily)
+
+⚠️ **Bug in the monitor:** The state file treats OpenRouter's **cumulative** `usage` field as a daily value, then multiplies by 7 and 30 for fake weekly/monthly projections. Those numbers (`$983.48` weekly, `$4,214.95` monthly) are mathematically meaningless — the API returns total lifetime spend, not daily. The state file's structure is misleading.
+
+**What I did:**
+- Ran the monitor ✅ — heartbeat written, state file updated
+- Data source (`openrouter-budget.json`) is clean —
+_[truncated]_
+
+---
+
+### 9. architecture_explanation
 - **When:** 2026-06-08 06:58:17
 - **Tags:** structure
 
@@ -24,7 +205,7 @@ _[truncated]_
 
 ---
 
-### 2. architecture_explanation
+### 10. architecture_explanation
 - **When:** 2026-06-08 06:51:46
 - **Tags:** layer
 
@@ -46,7 +227,7 @@ HL: 134K missing signals identified and actively migrating. CodeGraph re-indexed
 
 ---
 
-### 3. architecture_explanation
+### 11. architecture_explanation
 - **When:** 2026-06-08 06:19:08
 - **Tags:** architecture, flow, module
 
@@ -71,7 +252,7 @@ _[truncated]_
 
 ---
 
-### 4. architecture_explanation
+### 12. architecture_explanation
 - **When:** 2026-06-08 06:01:07
 - **Tags:** pipeline, structure, pattern
 
@@ -89,7 +270,7 @@ _[truncated]_
 
 ---
 
-### 5. architecture_explanation
+### 13. architecture_explanation
 - **When:** 2026-06-08 05:58:58
 - **Tags:** pipeline, layer
 
@@ -115,7 +296,7 @@ _[truncated]_
 
 ---
 
-### 6. architecture_explanation
+### 14. architecture_explanation
 - **When:** 2026-06-08 05:52:27
 - **Tags:** layer, service
 
@@ -139,7 +320,7 @@ _[truncated]_
 
 ---
 
-### 7. architecture_explanation
+### 15. architecture_explanation
 - **When:** 2026-06-08 05:42:36
 - **Tags:** flow
 
@@ -160,7 +341,7 @@ _[truncated]_
 
 ---
 
-### 8. architecture_explanation
+### 16. architecture_explanation
 - **When:** 2026-06-08 05:33:26
 - **Tags:** pipeline, service
 
@@ -184,7 +365,7 @@ HL: 10 noise crons silenced. Functionality untouched — all agents, watchdogs, 
 
 ---
 
-### 9. architecture_explanation
+### 17. architecture_explanation
 - **When:** 2026-06-08 05:33:26
 - **Tags:** pipeline, service
 
@@ -200,7 +381,7 @@ Got 31 crons. Let me identify the noise makers — anything under 60min interval
 
 ---
 
-### 10. architecture_explanation
+### 18. architecture_explanation
 - **When:** 2026-06-08 05:25:35
 - **Tags:** pipeline
 
@@ -214,7 +395,7 @@ HL: Voice → Python → 3D model in one sitting. That's the pipeline working ex
 
 ---
 
-### 11. architecture_explanation
+### 19. architecture_explanation
 - **When:** 2026-06-08 05:06:29
 - **Tags:** flow
 
@@ -240,7 +421,7 @@ _[truncated]_
 
 ---
 
-### 12. architecture_explanation
+### 20. architecture_explanation
 - **When:** 2026-06-08 05:05:11
 - **Tags:** pipeline, flow
 
@@ -259,7 +440,7 @@ HL: Describe what you want, I script it, it spawns in your Blender. Pick the fir
 
 ---
 
-### 13. architecture_explanation
+### 21. architecture_explanation
 - **When:** 2026-06-08 04:52:23
 - **Tags:** flow
 
@@ -281,7 +462,7 @@ _[truncated]_
 
 ---
 
-### 14. architecture_explanation
+### 22. architecture_explanation
 - **When:** 2026-06-08 04:50:05
 - **Tags:** architecture, flow, structure, pattern
 
@@ -302,7 +483,7 @@ _[truncated]_
 
 ---
 
-### 15. architecture_explanation
+### 23. architecture_explanation
 - **When:** 2026-06-08 04:48:06
 - **Tags:** flow, pattern
 
@@ -324,7 +505,7 @@ _[truncated]_
 
 ---
 
-### 16. architecture_explanation
+### 24. architecture_explanation
 - **When:** 2026-06-08 04:41:13
 - **Tags:** flow
 
@@ -343,7 +524,7 @@ _[truncated]_
 
 ---
 
-### 17. architecture_explanation
+### 25. architecture_explanation
 - **When:** 2026-06-08 04:33:39
 - **Tags:** pipeline
 
@@ -363,7 +544,7 @@ HL: Blender 5.1.2 installed, headless pipeline proven. You talk, I build, it spa
 
 ---
 
-### 18. architecture_explanation
+### 26. architecture_explanation
 - **When:** 2026-06-08 04:26:54
 - **Tags:** layer
 
@@ -381,7 +562,7 @@ HL: Clarify "blender" before building — could mean 3D software, n8n automation
 
 ---
 
-### 19. architecture_explanation
+### 27. architecture_explanation
 - **When:** 2026-06-08 04:08:43
 - **Tags:** flow, service, structure
 
@@ -405,7 +586,7 @@ _[truncated]_
 
 ---
 
-### 20. architecture_explanation
+### 28. architecture_explanation
 - **When:** 2026-06-08 03:47:56
 - **Tags:** architecture
 
@@ -428,7 +609,7 @@ _[truncated]_
 
 ---
 
-### 21. architecture_explanation
+### 29. architecture_explanation
 - **When:** 2026-06-08 03:42:29
 - **Tags:** architecture
 
@@ -444,7 +625,7 @@ Let me build both. Phase 1 first — saving your notes as I process them:
 
 ---
 
-### 22. architecture_explanation
+### 30. architecture_explanation
 - **When:** 2026-06-08 03:39:35
 - **Tags:** architecture
 
@@ -460,7 +641,7 @@ Let me build it
 
 ---
 
-### 23. architecture_explanation
+### 31. architecture_explanation
 - **When:** 2026-06-08 03:37:21
 - **Tags:** pipeline, pattern
 
@@ -485,7 +666,7 @@ _[truncated]_
 
 ---
 
-### 24. architecture_explanation
+### 32. architecture_explanation
 - **When:** 2026-06-08 02:39:16
 - **Tags:** pipeline, structure
 
@@ -502,7 +683,7 @@ _[truncated]_
 
 ---
 
-### 25. architecture_explanation
+### 33. architecture_explanation
 - **When:** 2026-06-08 00:00:32
 - **Tags:** layer, pattern
 
@@ -529,7 +710,7 @@ _[truncated]_
 
 ---
 
-### 26. architecture_explanation
+### 34. architecture_explanation
 - **When:** 2026-06-07 22:33:41
 - **Tags:** flow
 
@@ -543,7 +724,7 @@ Already sent an email heads-up with both of these.
 
 ---
 
-### 27. architecture_explanation
+### 35. architecture_explanation
 - **When:** 2026-06-07 20:32:35
 - **Tags:** pipeline
 
@@ -572,7 +753,7 @@ _[truncated]_
 
 ---
 
-### 28. architecture_explanation
+### 36. architecture_explanation
 - **When:** 2026-06-07 20:01:43
 - **Tags:** layer, structure
 
@@ -580,7 +761,7 @@ Evening wrap time. Here's what stood out today: the big story was COMPUTEX 2026 
 
 ---
 
-### 29. architecture_explanation
+### 37. architecture_explanation
 - **When:** 2026-06-07 18:29:02
 - **Tags:** service
 
@@ -616,7 +797,7 @@ _[truncated]_
 
 ---
 
-### 30. architecture_explanation
+### 38. architecture_explanation
 - **When:** 2026-06-07 18:25:10
 - **Tags:** pipeline
 
@@ -629,7 +810,7 @@ _[truncated]_
 
 ---
 
-### 31. architecture_explanation
+### 39. architecture_explanation
 - **When:** 2026-06-07 17:18:43
 - **Tags:** service
 
@@ -649,7 +830,7 @@ The scan found 15 unread emails. Below are the most notable ones filtered by sig
 
 ---
 
-### 32. architecture_explanation
+### 40. architecture_explanation
 - **When:** 2026-06-07 13:29:43
 - **Tags:** integration
 
@@ -672,7 +853,7 @@ _[truncated]_
 
 ---
 
-### 33. architecture_explanation
+### 41. architecture_explanation
 - **When:** 2026-06-07 13:29:41
 - **Tags:** pipeline
 
@@ -691,7 +872,7 @@ _[truncated]_
 
 ---
 
-### 34. architecture_explanation
+### 42. architecture_explanation
 - **When:** 2026-06-07 13:25:27
 - **Tags:** architecture, flow
 
@@ -717,7 +898,7 @@ _[truncated]_
 
 ---
 
-### 35. architecture_explanation
+### 43. architecture_explanation
 - **When:** 2026-06-07 13:21:30
 - **Tags:** pipeline, flow
 
@@ -741,7 +922,7 @@ _[truncated]_
 
 ---
 
-### 36. architecture_explanation
+### 44. architecture_explanation
 - **When:** 2026-06-07 13:17:49
 - **Tags:** pattern
 
@@ -755,7 +936,7 @@ Sprint's tracking well on core intent classification, but we're a day behind on 
 
 ---
 
-### 37. architecture_explanation
+### 45. architecture_explanation
 - **When:** 2026-06-07 13:17:47
 - **Tags:** pipeline
 
@@ -765,7 +946,7 @@ Sprint's tracking well on core intent classification, but we're a day behind on 
 
 ---
 
-### 38. architecture_explanation
+### 46. architecture_explanation
 - **When:** 2026-06-07 05:50:16
 - **Tags:** pipeline
 
@@ -787,7 +968,7 @@ _[truncated]_
 
 ---
 
-### 39. architecture_explanation
+### 47. architecture_explanation
 - **When:** 2026-06-07 04:48:05
 - **Tags:** pipeline
 
@@ -812,7 +993,7 @@ _[truncated]_
 
 ---
 
-### 40. architecture_explanation
+### 48. architecture_explanation
 - **When:** 2026-06-07 04:43:08
 - **Tags:** pipeline
 
@@ -830,7 +1011,7 @@ Board's clean (0 P0, 28 done) but Striker's offline and WolfWatch on 18790 isn't
 
 ---
 
-### 41. architecture_explanation
+### 49. architecture_explanation
 - **When:** 2026-06-07 03:36:04
 - **Tags:** architecture, pipeline
 
@@ -853,7 +1034,7 @@ _[truncated]_
 
 ---
 
-### 42. architecture_explanation
+### 50. architecture_explanation
 - **When:** 2026-06-07 03:33:58
 - **Tags:** service
 
@@ -880,181 +1061,6 @@ _[truncated]_
 | **Zelle** — $40 from Cynthia Grubbs | Two $20 payments on Jun 6 (11:16 and 20:53 UTC). |
 | **Coinbase** — ID verification canceled | User-initiated cance
 _[truncated]_
-
----
-
-### 43. architecture_explanation
-- **When:** 2026-06-07 03:33:55
-- **Tags:** pipeline, layer
-
-Persistent memory never got wired in. Here's where we are:
-
----
-
-**Persistent memory:** ❌ Not hooked up. `agentmemory` was cloned to `projects/agentmemory/` but it's a TypeScript III-engine system that needs `iii-engine` on port 49134, MCP tool registration, and a build pipeline. It was flagged as P2 and never touched after cloning.
-
-What we have instead is Hermes's built-in memory (MEMORY.md / USER.md) — flat file key-value, no graph, no cross-agent shared memory layer.
-
----
-
-**Todo board — what's left to do:**
-
-✅ **Done this sprint:** Striker engine, Kairos monitor, WolfWatch receiver, dashboard, OpenRouter budget monitor, requireMention flips, Hop v4.0 baton system, voting constitution
-
-🔴 **Still needs work:**
-
-| Item | Lane | Why it's still open |
-|------|------|---------------------|
-
-_[truncated]_
-
----
-
-### 44. architecture_explanation
-- **When:** 2026-06-07 03:31:18
-- **Tags:** layer
-
-```
-      ___           ___           ___           ___           ___     
-     /\  \         /\  \         /\__\         /\  \         /\  \    
-    /::\  \       /::\  \       /::|  |       /::\  \       /::\  \   
-   /:/\:\  \     /:/\:\  \     /:|:|  |      /:/\:\  \     /:/\:\  \  
-  /:/  \:\  \   /:/  \:\  \   /:/|:|__|__   /::\~\:\  \   /:/  \:\  \ 
- /:/__/ \:\__\ /:/__/ \:\__\ /:/ |::::\__\ /:/\:\ \:\__\ /:/__/ \:\__\
- \:\  \  \/__/ \:\  \ /:/  / \/__/~~/:/  / \/__\:\/:/  / \:\  \ /:/  /
-  \:\  \        \:\  /:/  /        /:/  /       \::/  /   \:\  /:/  / 
-   \:\  \        \:\/:/  /        /:/  /         \/__/     \:\/:/  /  
-    \:\__\        \::/  /        /:/  /                     \::/  /   
-     \/__/         \/__/         \/__/                       \/__/    
-      ___      
-_[truncated]_
-
----
-
-### 45. architecture_explanation
-- **When:** 2026-06-07 03:23:10
-- **Tags:** structure
-
-Done. Here's what was built and where it lives:
-
----
-
-## Hop Baton System — Complete
-
-The compound now has a formal handoff protocol with persistent state files that any agent can read, write, validate, and pass.
-
-### Files created
-
-| File | Purpose |
-|------|---------|
-| `kestrel/shared-skills/hop-v4.0.md` | Protocol spec — schema, lanes, rules, kill switch, dynamic routing |
-| `kestrel/shared-skills/hop-baton-schema.json` | Canonical JSON template — every agent uses this as the format contract |
-| `kestrel/shared-skills/scripts/hop-baton-validator.py` | Validates baton JSON against schema — run before every handoff |
-| `kestrel/shared-skills/scripts/hop-baton-init.py` | Creates a new cycle from parked state — sets mission, classification, flags |
-| `kestrel/shared-skills/scripts/hop-bato
-_[truncated]_
-
----
-
-### 46. architecture_explanation
-- **When:** 2026-06-07 03:17:38
-- **Tags:** architecture, layer, structure, pattern
-
-You're right — this is the core architecture question for the swarm. Let me state what we converged on clearly so it's locked.
-
----
-
-**The compound's communication stack, best-to-worst for information density:**
-
-### 🥇 Best: Hop baton context packets (v4.0)
-Every handoff carries the full mission state — facts, evidence, risks, blockers, open loops, storage updates, routing. The next agent inherits everything the previous one learned. This is the highest-bandwidth channel because it's **structured, complete, and lossless**.
-
-Format: the `universal_baton_schema` JSON — the single artifact that passes between agents with zero information loss.
-
-### 🥈 Second: Compound-state.json (awareness injection)
-Every agent reads `compound-state.json` at response start — Striker health, Kairos monitor sta
-_[truncated]_
-
----
-
-### 47. architecture_explanation
-- **When:** 2026-06-07 03:15:16
-- **Tags:** pipeline, component, service, structure
-
-v4.0 cycle complete. Here's the full discharge:
-
----
-
-## HOP v4.0 → Stage 6 Banking
-
-### Mission: Close the alert delivery loop
-
-**Classification:** local_execution  
-**Dynamic route:** Intake → Codex (skip Perplexity/Grok/Gemini/Claude — already verified) → Banking
-
-### What was built
-
-| Component | File | Status |
-|-----------|------|--------|
-| FastAPI receiver | `/home/synczus/kestrel/scripts/wolfwatch-receiver.py` | ✅ Live on :18790 |
-| Systemd service | `~/.config/systemd/user/wolfwatch-receiver.service` | ✅ Active + enabled for boot |
-| Event-bus logging | Integrated — proven | ✅ `[WOLFWATCH]` entries in event-bus.md |
-| Telegram dispatch | Via `signals/telegram.py` send_alert() | ✅ `"telegram":"sent"` verified |
-| Dashboard update | index.html shows `:18790 → Telegram` | ✅ Live on 
-_[truncated]_
-
----
-
-### 48. architecture_explanation
-- **When:** 2026-06-07 03:15:16
-- **Tags:** pipeline
-
-**Complete. The full pipeline works.**
-
-```
-kairos_monitor.py  ──POST──▶  :18790 wolfwatch-receiver  ──send_alert()──▶ Telegram AI Hangout
-                                    │
-                                    └──▶ event-bus.md ✅ sent
-```
-
-Event-bus proves it: `"Telegram dispatch for Striker DB STAGNANT: sent"` at 07:13:26 UTC.
-
-Now let me enable boot persistence and bank everything
-
----
-
-### 49. architecture_explanation
-- **When:** 2026-06-07 02:58:02
-- **Tags:** architecture, pipeline, service
-
-Full context assembled. Here's the Hop v3.3 discharge.
-
----
-
-```json
-{
-  "cycle_id": "hop-2026-06-07-monitor-alert-loop",
-  "protocol_version": "3.3",
-  "current_agent": "Hermes (Stage 0 — AI Hangout Intake)",
-  "previous_agent": "AI Hangout (user handoff via template)",
-  "selected_work_item": "Restore WolfWatch alert delivery on :18790 so Kairos monitor alerts (MONITOR_DB_STAGNANT, MONITOR_HEALTH_STALE, etc.) reach Telegram",
-  "stage": 0,
-  "state_change": "MONITOR_DB_STAGNANT detected at 02:50 EDT → notify_wolfwatch failed → WolfWatch router is syncshadow7 infra, not synczus",
-  "facts": [
-    "Kairos monitor detects state transitions and attempts POST to 127.0.0.1:18790",
-    "WolfWatch router service references syncshadow7 paths (/home/syncshadow7/...) — different user",
-    "syncsha
-_[truncated]_
-
----
-
-### 50. architecture_explanation
-- **When:** 2026-06-07 02:58:02
-- **Tags:** service
-
-**WolfWatch is a syncshadow7 service.** The router files at `/home/syncshadow7/huntsystems/projects/wolfwatch/` are wired to a different user's venv and environment. The service file references `syncshadow7` paths, user services, and a venv we don't control from here.
-
-Let me assess all options before routing.
 
 ---
 
