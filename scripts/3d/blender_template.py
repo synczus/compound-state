@@ -25,20 +25,19 @@ def clear_scene():
 
 
 def setup_camera(location=(7, -7, 5), target=(0, 0, 0)):
-    """Position camera looking at target."""
+    """Position camera looking at target using Track To constraint."""
     bpy.ops.object.camera_add(location=location)
     cam = bpy.context.active_object
     cam.name = "Camera"
-    # Point at target
-    direction = (target[0] - location[0],
-                 target[1] - location[1],
-                 target[2] - location[2])
-    cam.rotation_euler = (
-        direction[2] * 0.1,
-        0,
-        direction[1] * 0.1
-    )
     bpy.context.scene.camera = cam
+    # Add Track To constraint
+    track = cam.constraints.new(type="TRACK_TO")
+    track.target = bpy.data.objects.new("CameraTarget", None)
+    track.target.location = target
+    track.track_axis = "TRACK_NEGATIVE_Z"
+    track.up_axis = "UP_Y"
+    # Add target to scene collection
+    bpy.context.scene.collection.objects.link(track.target)
     return cam
 
 

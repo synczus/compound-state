@@ -1,0 +1,8 @@
+2026-06-08 04:31:44,569 - BlenderMCPServer - INFO - BlenderMCP server starting up
+2026-06-08 04:31:44,571 - BlenderMCPServer - ERROR - Failed to connect to Blender: [Errno 111] Connection refused
+2026-06-08 04:31:44,571 - BlenderMCPServer - ERROR - Failed to connect to Blender
+2026-06-08 04:31:44,573 - BlenderMCPServer - ERROR - Failed to connect to Blender: [Errno 111] Connection refused
+2026-06-08 04:31:44,573 - BlenderMCPServer - ERROR - Failed to connect to Blender
+2026-06-08 04:31:44,573 - BlenderMCPServer - WARNING - Could not connect to Blender on startup: Could not connect to Blender. Make sure the Blender addon is running.
+2026-06-08 04:31:44,573 - BlenderMCPServer - WARNING - Make sure the Blender addon is running before using Blender resources or tools
+2026-06-08 04:31:44,574 - BlenderMCPServer - INFO - BlenderMCP server shut down

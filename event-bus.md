@@ -99,4 +99,13 @@ _50 high-confidence signals analyzed_
 [2026-06-08T08:01:16.025622+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Overnight Run Complete: failed or unconfigured
 2026-06-08T08:20:03Z | state-probe | Striker=offline WolfWatch=online MetaAge=3330s
 
-2026-06-08 08:24 UTC | meta-monitor | All crons and services healthy
+2026-06-08 08:24 UTC | meta-monitor | All crons and services healthy2026-06-08T08:50:07Z | state-probe | Striker=offline WolfWatch=online MetaAge=1534s
+
+2026-06-08 04:54 ET | nemoclaw | baton-auto-cycle | Parked stale baton — hop sequence showed complete:true but active-baton.json was still live. Striker offline since ~07:30Z (confirmed at 08:50Z). Flagged for Kairos.
+
+2026-06-08 09:08 UTC | baton-auto-cycle | No pending P0/P1 work found on board[2026-06-08T09:15:03.983276+00:00] | [WOLFWATCH] | [CRITICAL] | Striker HEALTH STALE: Striker health file is 9196s old (threshold 120s).
+[2026-06-08T09:15:03.983329+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker HEALTH STALE: failed or unconfigured
+[2026-06-08T09:15:03.983741+00:00] | [KAIROS] | [MONITOR_HEALTH_NOTIFY_SENT] | STALE: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"critical","title":"Striker HEALTH STALE","body":"Striker health file is 9196s old (threshold 120s).","timestamp":"2026-06-08T09:15:02.037208+00:00"}
+[2026-06-08T09:15:04.416264+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: No new signal rows for 137 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.
+[2026-06-08T09:15:04.416316+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT: failed or unconfigured
+[2026-06-08T09:15:04.416668+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_SENT] | STAGNANT: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"important","title":"Striker DB STAGNANT","body":"No new signal rows for 137 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.","timest

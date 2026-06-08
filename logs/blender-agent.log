@@ -1,0 +1,24 @@
+00:01.337  reports          | ERROR Cannot read file "/tmp/blender_workspace.blend": No such file or directory
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 02:18:37)
+2026-06-08 04:32:17,853 - BlenderMCPServer - INFO - BlenderMCP server starting up
+2026-06-08 04:32:17,854 - BlenderMCPServer - INFO - Connected to Blender at localhost:9876
+2026-06-08 04:32:17,854 - BlenderMCPServer - INFO - Created new persistent connection to Blender
+2026-06-08 04:32:17,854 - BlenderMCPServer - INFO - Sending command: get_telemetry_consent with params: None
+2026-06-08 04:32:17,854 - BlenderMCPServer - ERROR - Socket connection error: [Errno 104] Connection reset by peer
+2026-06-08 04:32:17,854 - BlenderMCPServer - ERROR - Failed to connect to Blender: [Errno 111] Connection refused
+2026-06-08 04:32:17,854 - BlenderMCPServer - WARNING - Existing connection is no longer valid: Not connected to Blender
+2026-06-08 04:32:17,854 - BlenderMCPServer - ERROR - Failed to connect to Blender: [Errno 111] Connection refused
+2026-06-08 04:32:17,854 - BlenderMCPServer - ERROR - Failed to connect to Blender
+2026-06-08 04:32:17,855 - BlenderMCPServer - WARNING - Could not connect to Blender on startup: Could not connect to Blender. Make sure the Blender addon is running.
+2026-06-08 04:32:17,855 - BlenderMCPServer - WARNING - Make sure the Blender addon is running before using Blender resources or tools
+2026-06-08 04:32:17,856 - BlenderMCPServer - INFO - BlenderMCP server shut down
+Server thread started
+BlenderMCP server started on localhost:9876
+BlenderMCP addon registered
+BLENDER_MCP_ADDON_LOADED
+BLENDER_HEADLESS_READY
+Error accepting connection: [Errno 9] Bad file descriptor
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+
+Blender quit

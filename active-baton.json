@@ -1,11 +1,14 @@
 {
-  "cycle_id": "hop-auto-20260608-001",
-  "active": true,
+  "cycle_id": "parked",
+  "active": false,
   "current_holder": "nemoclaw",
   "previous_holder": "chase",
   "topic": "Compound memory wiring + hop protocol reset",
   "context": "Night of 2026-06-08: Chase wants all HLMs implemented. Hop was dead - two baton files out of sync. Reset to clean state. Nemoclaw holds first, then OpenClaw, Kairos, Shannon, Hermes.",
   "build_on": "Perplexity researcher cron live. Inversion cron on Grok multi-agent. Co-creator protocol in all SOUL.mds. Credit meter shows focus.",
   "next": "openclaw",
-  "done_when": "All 5 agents wired to AgentMemory with compaction flush. Hop cycling cleanly."
+  "done_when": "All 5 agents wired to AgentMemory with compaction flush. Hop cycling cleanly.",
+  "stage": "parked",
+  "parked_at": "2026-06-08T08:54:44Z",
+  "park_reason": "Hop cycle complete (all 5 agents done at 08:50Z). Baton stale."
 }

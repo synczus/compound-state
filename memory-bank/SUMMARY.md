@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 07:52:19 UTC_
-_Total active entries: 318_
+_Last consolidated: 2026-06-08 09:07:20 UTC_
+_Total active entries: 320_
 
 ## By Category
 
 - **other**: 124 entries
-- **pipeline-infrastructure**: 81 entries
+- **pipeline-infrastructure**: 83 entries
 - **agent-orchestration**: 40 entries
 - **monitoring-observability**: 30 entries
 - **cost-optimization**: 15 entries
@@ -19,6 +19,8 @@ _Total active entries: 318_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780909224 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780905050 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780903824 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
@@ -67,8 +69,6 @@ _Total active entries: 318_
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | 20 projects listed across all 4 agent lanes — the highest-leverage first build is self-hosted model fallback (kills the OpenRouter SPOF), followed by a compound health page (one URL replaces the morning file crawl).
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | 3 Perplexity hops generated covering boot persistence (ops), DuckDB tiered retention (data pipeline), and on-chain metric correlation (signal architecture) — the three highest-leverage research gaps across the compound's domains.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | 6 Perplexity hops processed, 4 production code files written to disk, unified next hop is deploy execution pipeline — n8n owner setup + API key is the only remaining gate.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | All agents share the same Hermes engine and auto-improvement capabilities — Shannon's gateway can be re-enabled and each agent can get its own cron lane for the same continuous learning loop.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | All core infrastructure (Striker monitoring, freshness watchdog, RSS feeds, compound_state) is deployed and healthy; the next build sprint should populate compound_state with live source health scores and process OpenClaw's 9 Perplexity research JSON artifacts.
 
 ---
 
