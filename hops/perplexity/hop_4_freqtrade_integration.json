@@ -1,0 +1,18 @@
+{
+  "hop": "perpetual-hop",
+  "agent": "perplexity",
+  "round": 4,
+  "short_title": "freqtrade-signal-integration",
+  "context": "We have built and are running a multi-source signal ingestion pipeline feeding into a DuckDB database. Running sources: Striker (35K live price signals on BTC/ETH/SOL), Whale Alert (on-chain whale txns, score 0.38), DefiLlama (TVL data, 0.34), Cointelegraph/Disclose.tv/TLDR/legacy archives. Every source is scored through a tier-based engine (lead_indicator, catalyst_confirmation, narrative_formation, archival_reference) with half-life time-decay and source confidence priors. Top signals get written to a ranked queue. Freqtrade 2026.6-dev is installed at /home/synczus/freqtrade, configured for Bybit futures (isolated margin), dry-run $1000 wallet, BTC/ETH/SOL pairs on 5m timeframe. A basic RSI strategy exists (striker_basis.py). USERS GOAL: Build a Freqtrade strategy that reads our scored signal queue from DuckDB and uses high-confidence events (Whale Alert > 0.35, whale txns, exchange flow changes) to trigger entries with proper risk management. The strategy must: 1) Read from DuckDB signals table via custom dataframe provider or external API, 2) Only act on signals above a configurable confidence threshold, 3) Use tier-appropriate position sizing (lead_indicator = smaller position, catalyst = full position), 4) Maintain the existing Bybit futures config with isolated margin. We also need: duckdb connection from within Freqtrade strategy code, a signal normalizer that maps external event types (whale_transfer, defi_tvl_flow, geopolitical_event) to tradeable conditions, and a risk overlay that caps concurrent trades based on signal source diversity (don't take 3 whale alerts in a row, require at least one different source type). What's the concrete implementation plan - file structure, required code, strategy class outline, and integration points?",
+  "instructions": "Respond with ONLY valid JSON. No explanations, no markdown.",
+  "output_schema": {
+    "strategy_architecture": "string",
+    "required_files": ["string"],
+    "strategy_class_outline": "string",
+    "signal_mapping": "object",
+    "risk_overlay": "string",
+    "implementation_order": ["string"],
+    "estimated_effort_hours": 0.0,
+    "round_5_prompt": "string"
+  }
+}

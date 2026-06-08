@@ -1,0 +1,52 @@
+{
+  "hop": "autonomous-compound",
+  "agent": "perplexity",
+  "round": 5,
+  "short_title": "synapse-dashboard-backfilling-velocity-circuitbreaker",
+  "context": "We've built a full signal ingestion pipeline with 25+ sources across 4 tiers (lead_indicator, catalyst_confirmation, narrative_formation, archival_reference). Pipeline state: 4434 events in DuckDB across 3 tables (events, signal_scores, source_feedback), all scored with edge_score formula (source_prior * confidence * relevance * novelty * recency_weight * boost * penalty * tier_mult * bluechip_mult). Top-20 ranked queue updates every 60s. Freshness watchdog checks 222 tracked sources every 60s with auto-quarantine at 10 stale cycles. Budget guard at $50/day OpenRouter cap.
+
+We need to ship 4 things:
+
+(1) SYNAPSE DASHBOARD — FastAPI backend serving 4 endpoints:
+- GET /health — source health scores 0-100 (freshness + volume_stability + quality). Each source gets a heatmap card with color coding (green=90+, yellow=60-89, red=<60).
+- GET /queue — top-20 ranked signals sorted by edge_score. Each signal shows: source_icon, asset_symbol, event_type, edge_score (color-coded), age (human-readable like "3m ago"), and a one-line headline.
+- GET /state — compound state JSON: OpenRouter balance, budget used today, degradation mode (none/soft/drop), wire statuses.
+- GET /alerts — last 10 system alerts: source quarantined, budget warning, stale service, etc.
+
+All endpoints should be lightweight DuckDB queries with <200ms response time. No LLM calls. Frontend: single HTML file with vanilla JS, TailwindCDN, no build step.
+
+(2) BACKFILLING HISTORIC SCORES — If we change the scoring formula (new source prior, new tier, different decay rate), how to recompute all existing scores? Current score_id = f'{signal_id}:{source_id}' and uses ON CONFLICT(signal_id, source_id) DO UPDATE. Should the backfill be a one-time SQL UPDATE or a full Python re-scoring pass through all historical events? How to version scoring models in DuckDB so we can roll back?
+
+(3) VELOCITY CIRCUIT BREAKER — If a source suddenly spikes (CTF-like scenario: Disclose.tv doing 1000 events/min with 0.95 confidence scoring 0.89 edge_score), how to detect and dampen? Per-source velocity tracking (events per 5-min window), threshold trigger (e.g., >300% of baseline cadence), auto-downgrade tier on spike (lead_indicator → quarantine). What's the schema for velocity tracking — a rolling window SQL table? How to store baseline cadence per source?
+
+(4) SCORING MODEL VERSIONING — How to store and version scoring model configurations in DuckDB? Current scoring is hardcoded Python constants (tier_mult, bluechip_mult, half_lives). Want to make it configurable via a DuckDB table: version_id, effective_date, parameters JSON. SQL query reads active version at scoring time. Rollback = UPDATE active flag. What's the exact schema?
+
+All 4 need concrete implementation guidance — SQL schemas, Python skeletons, API designs. No theoretical advice, only buildable artifacts.",
+  "instructions": "Respond with ONLY valid JSON. No markdown, no explanations. Return a single JSON object with 4 keys: synapse_dashboard, backfill_strategy, circuit_breaker, scoring_versioning. Each key contains a string with the implementation design.",
+  "output_schema": {
+    "synapse_dashboard": {
+      "fastapi_structure": "string",
+      "health_query": "string",
+      "queue_query": "string",
+      "state_query": "string",
+      "alerts_query": "string",
+      "total_effort_hours": 0.0
+    },
+    "backfill_strategy": {
+      "recommended_approach": "string",
+      "sql_or_python": "string",
+      "rollback_schema": "string"
+    },
+    "circuit_breaker": {
+      "schema_sql": "string",
+      "detection_logic": "string",
+      "auto_downgrade_flow": "string"
+    },
+    "scoring_versioning": {
+      "schema_sql": "string",
+      "active_version_query": "string",
+      "rollback_sql": "string"
+    },
+    "recommended_next_hop": "string"
+  }
+}

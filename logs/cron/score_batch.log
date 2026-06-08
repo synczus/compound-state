@@ -1,0 +1,176 @@
+[scorer 23:28:07] No new signals to score.
+[scorer 23:28:07] Ranked queue written: 20 signals to /home/synczus/kestrel/pulse/ranked-queue.json
+[scorer 23:28:07] Done. Scored 0 new signals, queue written.
+
+Rank  Signal ID         Source                Asset     Type                    Event TS                         Score
+------------------------------------------------------------------------------------------------------------------------
+   1  85fbe2f1823c69b8  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   2  737c70fa57aa0f08  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   3  5774b74d978dce71  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   4  7a6be7116edda426  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   5  7a3df2cfb3ebb01e  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   6  4434-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.461720      0.2079
+   7  4432-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.461662      0.2079
+   8  4425-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.461498      0.2079
+   9  4420-unknown-telegram-export  unknown-telegram-export  BTC       price_event             2026-06-07 19:12:27.461357      0.2079
+  10  4412-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.461197      0.2079
+  11  4409-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.461117      0.2079
+  12  4403-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.460978      0.2079
+  13  4399-unknown-telegram-export  unknown-telegram-export  ETH       general_news            2026-06-07 19:12:27.460901      0.2079
+  14  4396-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.460838      0.2079
+  15  4395-unknown-telegram-export  unknown-telegram-export  BTC       price_event             2026-06-07 19:12:27.460810      0.2079
+  16  4394-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460793      0.2079
+  17  4384-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460578      0.2079
+  18  4378-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.460452      0.2079
+  19  4375-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460378      0.2079
+  20  4368-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460224      0.2079
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/score_batch.py", line 763, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/ingestion/score_batch.py", line 737, in main
+    con = db_connect()
+          ^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/ingestion/score_batch.py", line 180, in db_connect
+    return duckdb.connect(DB_PATH)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 2212328) by user synczus. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+[scorer 23:35:03] No new signals to score.
+[scorer 23:35:03] Ranked queue written: 20 signals to /home/synczus/kestrel/pulse/ranked-queue.json
+[scorer 23:35:03] Done. Scored 0 new signals, queue written.
+
+Rank  Signal ID         Source                Asset     Type                    Event TS                         Score
+------------------------------------------------------------------------------------------------------------------------
+   1  85fbe2f1823c69b8  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   2  737c70fa57aa0f08  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   3  5774b74d978dce71  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   4  7a6be7116edda426  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   5  7a3df2cfb3ebb01e  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3990
+   6  4434-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.461720      0.2079
+   7  4432-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.461662      0.2079
+   8  4425-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.461498      0.2079
+   9  4420-unknown-telegram-export  unknown-telegram-export  BTC       price_event             2026-06-07 19:12:27.461357      0.2079
+  10  4412-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.461197      0.2079
+  11  4409-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.461117      0.2079
+  12  4403-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.460978      0.2079
+  13  4399-unknown-telegram-export  unknown-telegram-export  ETH       general_news            2026-06-07 19:12:27.460901      0.2079
+  14  4396-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.460838      0.2079
+  15  4395-unknown-telegram-export  unknown-telegram-export  BTC       price_event             2026-06-07 19:12:27.460810      0.2079
+  16  4394-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460793      0.2079
+  17  4384-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460578      0.2079
+  18  4378-unknown-telegram-export  unknown-telegram-export  BTC       whale_transfer          2026-06-07 19:12:27.460452      0.2079
+  19  4375-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460378      0.2079
+  20  4368-unknown-telegram-export  unknown-telegram-export  BTC       general_news            2026-06-07 19:12:27.460224      0.2079
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/score_batch.py", line 763, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/ingestion/score_batch.py", line 737, in main
+    con = db_connect()
+          ^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/ingestion/score_batch.py", line 180, in db_connect
+    return duckdb.connect(DB_PATH)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 2226398) by user synczus. See also https://duckdb.org/docs/stable/connect/concurrency
+[scorer 23:42:51] No new signals to score.
+[scorer 23:42:51] Ranked queue written: 20 signals to /home/synczus/kestrel/pulse/ranked-queue.json
+[scorer 23:42:51] Done. Scored 0 new signals, queue written.
+
+Rank  Signal ID         Source                Asset     Type                    Event TS                         Score
+------------------------------------------------------------------------------------------------------------------------
+   1  3352-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.459950      0.4614
+   2  2474-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.446374      0.4614
+   3  737c70fa57aa0f08  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3563
+   4  7a3df2cfb3ebb01e  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3563
+   5  5774b74d978dce71  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3563
+   6  85fbe2f1823c69b8  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3563
+   7  7a6be7116edda426  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3563
+   8  908-unknown-telegram-export  telegram-@toshibase   ETH       general_news            2026-06-07 19:12:25.070069      0.2504
+   9  775-unknown-telegram-export  telegram-@SHIBINU_ERC  ETH       general_news            2026-06-07 19:12:25.065351      0.2504
+  10  774-unknown-telegram-export  telegram-@WuniETH     ETH       whale_transfer          2026-06-07 19:12:25.065318      0.2504
+  11  773-unknown-telegram-export  telegram-@PepiETH     ETH       general_news            2026-06-07 19:12:25.065282      0.2504
+  12  767-unknown-telegram-export  telegram-@PepeZero_ethFeels  ETH       general_news            2026-06-07 19:12:25.065087      0.2504
+  13  760-unknown-telegram-export  telegram-@PepeDogeFlokiBUY  ETH       whale_transfer          2026-06-07 19:12:25.064863      0.2504
+  14  751-unknown-telegram-export  telegram-@Crypto_War_Land  ETH       whale_transfer          2026-06-07 19:12:25.064500      0.2504
+  15  750-unknown-telegram-export  telegram-@betrayedETH  ETH       whale_transfer          2026-06-07 19:12:25.064478      0.2504
+  16  744-unknown-telegram-export  telegram-@HIPSERC20   ETH       general_news            2026-06-07 19:12:25.064266      0.2504
+  17  742-unknown-telegram-export  telegram-@betrayedETH  ETH       whale_transfer          2026-06-07 19:12:25.064203      0.2504
+  18  732-unknown-telegram-export  telegram-@biokript    BTC       general_news            2026-06-07 19:12:25.063856      0.2504
+  19  731-unknown-telegram-export  telegram-@Moonpepe_erc20  ETH       general_news            2026-06-07 19:12:25.063830      0.2504
+  20  730-unknown-telegram-export  telegram-@Moonpepe_erc20  ETH       general_news            2026-06-07 19:12:25.063801      0.2504
+[scorer 23:47:04] No new signals to score.
+[scorer 23:47:04] Ranked queue written: 20 signals to /home/synczus/kestrel/pulse/ranked-queue.json
+[scorer 23:47:04] Done. Scored 0 new signals, queue written.
+
+Rank  Signal ID         Source                Asset     Type                    Event TS                         Score
+------------------------------------------------------------------------------------------------------------------------
+   1  3352-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.459950      0.4267
+   2  2474-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.446374      0.4267
+   3  737c70fa57aa0f08  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3494
+   4  7a3df2cfb3ebb01e  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3494
+   5  5774b74d978dce71  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3494
+   6  85fbe2f1823c69b8  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3494
+   7  7a6be7116edda426  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3494
+   8  908-unknown-telegram-export  telegram-@toshibase   ETH       general_news            2026-06-07 19:12:25.070069      0.2455
+   9  775-unknown-telegram-export  telegram-@SHIBINU_ERC  ETH       general_news            2026-06-07 19:12:25.065351      0.2455
+  10  774-unknown-telegram-export  telegram-@WuniETH     ETH       whale_transfer          2026-06-07 19:12:25.065318      0.2455
+  11  773-unknown-telegram-export  telegram-@PepiETH     ETH       general_news            2026-06-07 19:12:25.065282      0.2455
+  12  767-unknown-telegram-export  telegram-@PepeZero_ethFeels  ETH       general_news            2026-06-07 19:12:25.065087      0.2455
+  13  760-unknown-telegram-export  telegram-@PepeDogeFlokiBUY  ETH       whale_transfer          2026-06-07 19:12:25.064863      0.2455
+  14  751-unknown-telegram-export  telegram-@Crypto_War_Land  ETH       whale_transfer          2026-06-07 19:12:25.064500      0.2455
+  15  750-unknown-telegram-export  telegram-@betrayedETH  ETH       whale_transfer          2026-06-07 19:12:25.064478      0.2455
+  16  744-unknown-telegram-export  telegram-@HIPSERC20   ETH       general_news            2026-06-07 19:12:25.064266      0.2455
+  17  742-unknown-telegram-export  telegram-@betrayedETH  ETH       whale_transfer          2026-06-07 19:12:25.064203      0.2455
+  18  732-unknown-telegram-export  telegram-@biokript    BTC       general_news            2026-06-07 19:12:25.063856      0.2455
+  19  731-unknown-telegram-export  telegram-@Moonpepe_erc20  ETH       general_news            2026-06-07 19:12:25.063830      0.2455
+  20  730-unknown-telegram-export  telegram-@Moonpepe_erc20  ETH       general_news            2026-06-07 19:12:25.063801      0.2455
+[scorer 00:00:23] No new signals to score.
+[scorer 00:00:23] Ranked queue written: 20 signals to /home/synczus/kestrel/pulse/ranked-queue.json
+[scorer 00:00:23] Done. Scored 0 new signals, queue written.
+
+Rank  Signal ID         Source                Asset     Type                    Event TS                         Score
+------------------------------------------------------------------------------------------------------------------------
+   1  3352-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.459950      0.3841
+   2  2474-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.446374      0.3841
+   3  737c70fa57aa0f08  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   4  7a3df2cfb3ebb01e  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   5  5774b74d978dce71  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   6  85fbe2f1823c69b8  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   7  7a6be7116edda426  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   8  2427-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.193577      0.2392
+   9  2381-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.192318      0.2392
+  10  2350-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.191609      0.2392
+  11  2324-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.191109      0.2392
+  12  2251-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.189634      0.2392
+  13  2176-unknown-telegram-export  telegram-@AIHangout   ETH       general_news            2026-06-07 19:12:26.187520      0.2392
+  14  1998-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.183710      0.2392
+  15  1942-unknown-telegram-export  telegram-@AIHangout   ETH       price_event             2026-06-07 19:12:26.181976      0.2392
+  16  1888-unknown-telegram-export  telegram-@AIHangout   BTC       general_news            2026-06-07 19:12:26.180800      0.2392
+  17  1838-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.179357      0.2392
+  18  1832-unknown-telegram-export  telegram-@AIHangout   BTC       general_news            2026-06-07 19:12:26.179215      0.2392
+  19  1813-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.178662      0.2392
+  20  1794-unknown-telegram-export  telegram-@AIHangout   BTC       geopolitical_event      2026-06-07 19:12:26.178205      0.2392
+[scorer 00:15:13] No new signals to score.
+[scorer 00:15:13] Ranked queue written: 20 signals to /home/synczus/kestrel/pulse/ranked-queue.json
+[scorer 00:15:13] Done. Scored 0 new signals, queue written.
+
+Rank  Signal ID         Source                Asset     Type                    Event TS                         Score
+------------------------------------------------------------------------------------------------------------------------
+   1  3352-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.459950      0.3841
+   2  2474-unknown-telegram-export  whale-alert           N/A       general_news            2026-06-07 19:12:26.446374      0.3841
+   3  737c70fa57aa0f08  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   4  7a3df2cfb3ebb01e  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   5  5774b74d978dce71  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   6  85fbe2f1823c69b8  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   7  7a6be7116edda426  defillama             N/A       defi_tvl_flow           2026-06-07 19:09:23.456637      0.3403
+   8  2427-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.193577      0.2392
+   9  2381-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.192318      0.2392
+  10  2350-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.191609      0.2392
+  11  2324-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.191109      0.2392
+  12  2251-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.189634      0.2392
+  13  2176-unknown-telegram-export  telegram-@AIHangout   ETH       general_news            2026-06-07 19:12:26.187520      0.2392
+  14  1998-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.183710      0.2392
+  15  1942-unknown-telegram-export  telegram-@AIHangout   ETH       price_event             2026-06-07 19:12:26.181976      0.2392
+  16  1888-unknown-telegram-export  telegram-@AIHangout   BTC       general_news            2026-06-07 19:12:26.180800      0.2392
+  17  1838-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.179357      0.2392
+  18  1832-unknown-telegram-export  telegram-@AIHangout   BTC       general_news            2026-06-07 19:12:26.179215      0.2392
+  19  1813-unknown-telegram-export  telegram-@AIHangout   BTC       price_event             2026-06-07 19:12:26.178662      0.2392
+  20  1794-unknown-telegram-export  telegram-@AIHangout   BTC       geopolitical_event      2026-06-07 19:12:26.178205      0.2392

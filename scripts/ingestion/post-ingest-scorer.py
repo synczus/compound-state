@@ -13,7 +13,7 @@ Implements Perplexity's Round 3 design: 9-step post-ingest scoring pipeline.
 8. Recompute top-20 queue
 9. Update watermark
 """
-import json, os, sys, copy
+import json, os, sys, copy, glob
 from datetime import datetime, timezone
 from math import exp, log as math_log
 
@@ -43,6 +43,7 @@ try:
 except ImportError as e:
     log(f"Missing dep: {e}")
     sys.exit(1)
+STAGING = os.path.join(KESTREL, "ingestion", "staging")
 
 def load_config():
     with open(CONFIG) as f:
@@ -83,9 +84,85 @@ def save_top20(rows):
 
 def run():
     now = datetime.now(timezone.utc)
-    watermark = load_watermark()
     
     con = duckdb.connect(DB)
+    
+    # 0. Stage 0: Consume any JSONL staging files from archive-ingest
+    # This avoids concurrent write conflicts — archive-ingest writes JSONL, scorer reads + inserts
+    staging_files = sorted(glob.glob(os.path.join(STAGING, "events_*.jsonl")))
+    if staging_files:
+        staged_total = 0
+        for sf in staging_files:
+            try:
+                with open(sf) as f:
+                    events = [json.loads(line) for line in f if line.strip()]
+                if not events:
+                    os.remove(sf)
+                    continue
+                
+                # Ensure events table exists
+                con.execute('''
+                    CREATE TABLE IF NOT EXISTS events (
+                        row_id INTEGER PRIMARY KEY,
+                        source_id VARCHAR NOT NULL,
+                        event_type VARCHAR,
+                        timestamp TIMESTAMP,
+                        payload_headline VARCHAR,
+                        payload_body TEXT,
+                        symbols VARCHAR,
+                        lane VARCHAR DEFAULT 'queue',
+                        action VARCHAR DEFAULT 'archive_ingest',
+                        confidence DOUBLE DEFAULT 0.3,
+                        magnitude DOUBLE,
+                        velocity VARCHAR,
+                        provenance_source_url VARCHAR,
+                        provenance_hash VARCHAR,
+                        scored BOOLEAN DEFAULT false,
+                        ingested_ts TIMESTAMP DEFAULT now()
+                    )
+                ''')
+                
+                # Get max row_id
+                max_row = con.execute("SELECT COALESCE(MAX(row_id), 0) FROM events").fetchone()[0]
+                
+                batch = []
+                for i, evt in enumerate(events):
+                    max_row += 1
+                    batch.append((
+                        max_row,
+                        evt.get("source_id", "unknown"),
+                        evt.get("event_type", "general_news"),
+                        evt.get("timestamp", now.isoformat()),
+                        evt.get("headline", "")[:600],
+                        evt.get("body", "")[:2000],
+                        evt.get("symbols"),
+                        "queue",
+                        "archive_ingest",
+                        0.30,
+                        None,  # magnitude
+                        None,  # velocity
+                        evt.get("provenance_url"),
+                        evt.get("provenance_hash", "")[:32]
+                    ))
+                
+                con.executemany('''
+                    INSERT INTO events (
+                        row_id, source_id, event_type, timestamp, payload_headline,
+                        payload_body, symbols, lane, action, confidence,
+                        magnitude, velocity, provenance_source_url, provenance_hash
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ''', batch)
+                
+                os.remove(sf)
+                staged_total += len(batch)
+                log(f"Consumed {len(batch)} events from {os.path.basename(sf)}")
+            except Exception as e:
+                log(f"Failed to consume {sf}: {e}")
+        
+        if staged_total:
+            log(f"Staging total: {staged_total} events written to DuckDB")
+    
+    watermark = load_watermark()
     
     # 1. Check if events table exists
     tables = [r[0] for r in con.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='main'").fetchall()]

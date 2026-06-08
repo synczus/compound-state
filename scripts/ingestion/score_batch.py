@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Post-Ingest Scoring Engine v1.0
-Implements Perplexity Round 3 design: 6-step post-ingest scoring pipeline.
+Implements 6-step post-ingest scoring pipeline for the Kestrel signal pipeline.
 
 Scores events from the 'signals' table against the signal_scores table.
 Computes recency decay, cross-source agreement boost, false-positive penalty,
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS source_agreement (
 """
 
 SEED_FEEDBACK = """
-INSERT OR IGNORE INTO source_feedback (source_id, true_positive, false_positive, neutral, wolf_rate, updated_ts)
+INSERT OR REPLACE INTO source_feedback (source_id, true_positive, false_positive, neutral, wolf_rate, updated_ts)
 VALUES
     ('whale-alert',      85,  5, 10, 0.05, CURRENT_TIMESTAMP),
     ('a16z-crypto',      60,  5, 35, 0.08, CURRENT_TIMESTAMP),
@@ -153,8 +153,9 @@ VALUES
     ('disclosetv',       35, 20, 45, 0.36, CURRENT_TIMESTAMP);
 """
 
-DROP_SIGNAL_SCORES = "DROP TABLE IF EXISTS signal_scores;"
-DROP_SOURCE_AGREEMENT = "DROP TABLE IF EXISTS source_agreement;"
+DROP_SIGNAL_SCORES = "DROP TABLE IF EXISTS signal_scores CASCADE;"
+DROP_SOURCE_AGREEMENT = "DROP TABLE IF EXISTS source_agreement CASCADE;"
+DROP_SOURCE_FEEDBACK = "DROP TABLE IF EXISTS source_feedback CASCADE;"
 
 # ─── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -179,12 +180,36 @@ def db_connect():
     return duckdb.connect(DB_PATH)
 
 
+def table_has_column(con, table: str, column: str) -> bool:
+    """Check if a column exists in a table."""
+    rows = con.execute(
+        "SELECT column_name FROM information_schema.columns "
+        "WHERE table_name=? AND column_name=?",
+        (table, column)
+    ).fetchall()
+    return len(rows) > 0
+
+
 def init_db(con):
-    """Create tables if they don't exist."""
+    """Create tables if they don't exist, migrate if needed."""
+    # signal_scores — migrate if missing scored_at column (old schema)
+    if not table_has_column(con, "signal_scores", "scored_at"):
+        log("Migrating signal_scores to new schema...")
+        con.execute("ALTER TABLE signal_scores ADD COLUMN IF NOT EXISTS scored_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    # Ensure signal_scores exists
     con.execute(CREATE_SIGNAL_SCORES)
+
+    # source_feedback
     con.execute(CREATE_SOURCE_FEEDBACK)
-    con.execute(CREATE_SOURCE_AGREEMENT)
     con.execute(SEED_FEEDBACK)
+
+    # source_agreement — migrate if missing bucket_id column (old schema)
+    if not table_has_column(con, "source_agreement", "bucket_id"):
+        log("Migrating source_agreement to new schema (dropping old)...")
+        con.execute("DROP TABLE IF EXISTS source_agreement CASCADE")
+        con.execute(CREATE_SOURCE_AGREEMENT)
+    else:
+        con.execute(CREATE_SOURCE_AGREEMENT)
 
 
 def get_unscored(con):
@@ -217,7 +242,12 @@ def get_all_signals(con):
         FROM signals s
         ORDER BY s.ts_ns ASC
     """).fetchall()
-    cols = [d[0] for d in con.execute("SELECT * FROM signals LIMIT 0").description]
+    cols = [d[0] for d in con.execute("""
+        SELECT s.signal_id, s.source_id, s.event_type, s.ts_ns,
+               s.headline, s.body_text, s.symbols, s.confidence,
+               s.magnitude, s.velocity, s.lane, s.ingested_at
+        FROM signals s LIMIT 0
+    """).description]
     return rows, cols
 
 
@@ -225,7 +255,7 @@ def get_all_signals(con):
 
 
 def compute_agreement_boost(con, source_id: str, event_ts: datetime,
-                            asset_symbol: str) -> float:
+                            asset_symbol: str, now: datetime) -> float:
     """
     Compute cross-source agreement boost.
     Bucket = 15-min window; count distinct sources; boost = 1.0 + min(0.35, 0.15*(n-1))
@@ -234,11 +264,13 @@ def compute_agreement_boost(con, source_id: str, event_ts: datetime,
     if not asset_symbol:
         return 1.0
 
+    from datetime import timedelta
     bucket_min = event_ts.replace(minute=(event_ts.minute // 15) * 15,
                                   second=0, microsecond=0)
-    bucket_end = bucket_min.replace(minute=bucket_min.minute + 15)
+    bucket_end = bucket_min + timedelta(minutes=15)
 
     try:
+        # Check existing scores in this bucket for this asset
         sources = con.execute("""
             SELECT DISTINCT source_id FROM signal_scores
             WHERE asset_symbol = ?
@@ -288,11 +320,10 @@ def score_signal(con, row: dict, now: datetime, wolf_map: dict) -> dict | None:
 
     # Magnitude / velocity
     mag = float(magnitude) if magnitude else 0.0
-    vel = str(velocity) if velocity else ""
+    vel = None
 
     # Asset symbol: pick the first from symbols list
     symbol_list = symbols if isinstance(symbols, list) else []
-    # DuckDB returns VARCHAR[] as Python list-of-strings
     asset_symbol = symbol_list[0].strip().upper() if symbol_list else None
 
     # Recency decay
@@ -306,7 +337,8 @@ def score_signal(con, row: dict, now: datetime, wolf_map: dict) -> dict | None:
     novelty = 1.0
 
     # Cross-source agreement boost (looks at existing scores in same 15-min bucket)
-    agreement_boost = compute_agreement_boost(con, source_id, event_ts, asset_symbol)
+    agreement_boost = compute_agreement_boost(con, source_id, event_ts,
+                                              asset_symbol, now)
 
     # False-positive penalty from source_feedback
     wolf_rate = wolf_map.get(source_id, 0.0)
@@ -378,17 +410,15 @@ def insert_score(con, score: dict):
             event_ts, ingested_ts, source_prior, reported_confidence,
             magnitude, velocity, asset_relevance, novelty,
             recency_minutes, recency_weight, cross_source_boost,
-            false_positive_penalty, edge_score, tier, rationale, scored_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
-                  CURRENT_TIMESTAMP)
+            false_positive_penalty, edge_score, tier, rationale
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT (score_id) DO UPDATE SET
             recency_minutes = EXCLUDED.recency_minutes,
             recency_weight = EXCLUDED.recency_weight,
             cross_source_boost = EXCLUDED.cross_source_boost,
             false_positive_penalty = EXCLUDED.false_positive_penalty,
             edge_score = EXCLUDED.edge_score,
-            rationale = EXCLUDED.rationale,
-            scored_at = CURRENT_TIMESTAMP
+            rationale = EXCLUDED.rationale
     """, (
         score["score_id"], score["signal_id"], score["source_id"],
         score["asset_symbol"], score["event_type"], score["event_ts"],
@@ -412,28 +442,55 @@ def rebuild_agreement_buckets(con):
     """
     log("Rebuilding agreement buckets...")
 
+    # Clear existing
     con.execute("DELETE FROM source_agreement")
 
-    # Get all scored events with asset symbols grouped into 15-min buckets
+    # Get all unique buckets: 15-min windows per asset symbol
     buckets = con.execute("""
         SELECT DISTINCT
             asset_symbol,
-            date_trunc('minute', event_ts) - INTERVAL (EXTRACT(MINUTE FROM event_ts)::INT % 15) MINUTE AS bucket_minute
+            date_trunc('minute', event_ts) -
+                INTERVAL (EXTRACT(MINUTE FROM event_ts)::INTEGER % 15) MINUTE
+                AS bucket_minute
         FROM signal_scores
         WHERE asset_symbol IS NOT NULL
           AND asset_symbol != ''
     """).fetchall()
 
+    # Also check signals that haven't been scored yet
+    buckets2 = con.execute("""
+        SELECT DISTINCT
+            UPPER(s.symbols[1]) AS asset_symbol,
+            date_trunc('minute', epoch_ms(CAST(s.ts_ns / 1000000 AS BIGINT))) -
+                INTERVAL (EXTRACT(MINUTE FROM epoch_ms(CAST(s.ts_ns / 1000000 AS BIGINT)))::INTEGER % 15) MINUTE
+                AS bucket_minute
+        FROM signals s
+        WHERE len(s.symbols) > 0
+          AND s.symbols[1] IS NOT NULL
+          AND s.symbols[1] != ''
+    """).fetchall()
+
+    all_buckets = set()
+    for r in buckets:
+        all_buckets.add((r[0], r[1]))
+    for r in buckets2:
+        all_buckets.add((r[0], r[1]))
+
     updated = 0
-    for asset_symbol, bucket_min in buckets:
-        # Count distinct sources in this bucket
+    for asset_symbol, bucket_min in all_buckets:
+        if not asset_symbol or not bucket_min:
+            continue
+
+        bucket_end = bucket_min + time_delta_minutes(15)
+
+        # Count distinct sources in this bucket from signal_scores
         sources = con.execute("""
             SELECT DISTINCT source_id
             FROM signal_scores
             WHERE asset_symbol = ?
-              AND date_trunc('minute', event_ts) >= ?
-              AND date_trunc('minute', event_ts) < ? + INTERVAL '15 minutes'
-        """, (asset_symbol, bucket_min, bucket_min)).fetchall()
+              AND event_ts >= ?
+              AND event_ts < ?
+        """, (asset_symbol, bucket_min, bucket_end)).fetchall()
 
         source_ids = {r[0] for r in sources}
         agreeing = len(source_ids)
@@ -447,14 +504,14 @@ def rebuild_agreement_buckets(con):
 
         boost = round(boost, 3)
 
-        # Get all signal_ids in this bucket
+        # Get all signal_ids in this bucket (from signal_scores)
         signals = con.execute("""
             SELECT signal_id
             FROM signal_scores
             WHERE asset_symbol = ?
-              AND date_trunc('minute', event_ts) >= ?
-              AND date_trunc('minute', event_ts) < ? + INTERVAL '15 minutes'
-        """, (asset_symbol, bucket_min, bucket_min)).fetchall()
+              AND event_ts >= ?
+              AND event_ts < ?
+        """, (asset_symbol, bucket_min, bucket_end)).fetchall()
 
         bucket_id = make_bucket_id(asset_symbol, bucket_min)
 
@@ -482,7 +539,13 @@ def rebuild_agreement_buckets(con):
             except Exception as e:
                 log(f"Bucket insert error for {signal_id}: {e}")
 
-    log(f"Agreement buckets rebuilt: {updated} entries")
+    log(f"Agreement buckets rebuilt: {updated} entries across {len(all_buckets)} buckets")
+
+
+def time_delta_minutes(m: int):
+    """Create a timedelta of m minutes."""
+    from datetime import timedelta
+    return timedelta(minutes=m)
 
 
 # ─── Queue Output ───────────────────────────────────────────────────────────────
@@ -494,6 +557,7 @@ def write_ranked_queue(con):
         SELECT signal_id, source_id, asset_symbol, event_type,
                event_ts, edge_score
         FROM signal_scores
+        WHERE edge_score > 0
         ORDER BY edge_score DESC, event_ts DESC
         LIMIT 20
     """).fetchall()
@@ -519,7 +583,7 @@ def write_ranked_queue(con):
 
     log(f"Ranked queue written: {len(queue)} signals to {QUEUE_PATH}")
 
-    # Also print to stdout
+    # Print to stdout
     if queue:
         print(f"\n{'Rank':>4s}  {'Signal ID':16s}  {'Source':20s}  {'Asset':8s}  "
               f"{'Type':22s}  {'Event TS':28s}  {'Score':>8s}")
@@ -539,40 +603,46 @@ def print_stats(con):
     """Print scoring stats: unscored count, breakdown by source_id and tier."""
     total_signals = con.execute("SELECT COUNT(*) FROM signals").fetchone()[0]
     total_scored = con.execute("SELECT COUNT(*) FROM signal_scores").fetchone()[0]
-    unscored = total_signals - con.execute("""
+
+    # Count signal_scores that actually have a matching signal in the signals table
+    matching = con.execute("""
         SELECT COUNT(*) FROM signal_scores ss
         INNER JOIN signals s ON ss.signal_id = s.signal_id
     """).fetchone()[0]
+    unscored = total_signals - matching
 
     print("=" * 70)
     print("  SIGNAL SCORING STATS")
     print("=" * 70)
-    print(f"  Total signals:     {total_signals:>6d}")
-    print(f"  Total scores:      {total_scored:>6d}")
-    print(f"  Unscored (matching signals table): {unscored:>6d}")
+    print(f"  Total signals:                  {total_signals:>6d}")
+    print(f"  Total scores (all sources):     {total_scored:>6d}")
+    print(f"  Scores matching signals table:  {matching:>6d}")
+    print(f"  Unscored signals:               {unscored:>6d}")
     print()
 
-    # Score counts by source_id
+    # Score counts by source_id (only those matching signals table)
     print(f"  {'Source ID':25s}  {'Scored':>8s}  {'Avg Edge':>10s}  {'Tier':22s}")
     print(f"  {'-'*25}  {'-'*8}  {'-'*10}  {'-'*22}")
     rows = con.execute("""
-        SELECT source_id, COUNT(*), ROUND(AVG(edge_score), 4), tier
-        FROM signal_scores
-        GROUP BY source_id, tier
+        SELECT ss.source_id, COUNT(*), ROUND(AVG(ss.edge_score), 4), ss.tier
+        FROM signal_scores ss
+        INNER JOIN signals s ON ss.signal_id = s.signal_id
+        GROUP BY ss.source_id, ss.tier
         ORDER BY COUNT(*) DESC
     """).fetchall()
     for sid, cnt, avg_edge, tier in rows:
         print(f"  {sid:25s}  {cnt:8d}  {avg_edge:>10.4f}  {tier:22s}")
 
-    # Score counts by tier
+    # Score counts by tier (matching only)
     print()
     print(f"  {'Tier':22s}  {'Scored':>8s}  {'Avg Edge':>10s}")
     print(f"  {'-'*22}  {'-'*8}  {'-'*10}")
     rows = con.execute("""
-        SELECT tier, COUNT(*), ROUND(AVG(edge_score), 4)
-        FROM signal_scores
-        GROUP BY tier
-        ORDER BY AVG(edge_score) DESC
+        SELECT ss.tier, COUNT(*), ROUND(AVG(ss.edge_score), 4)
+        FROM signal_scores ss
+        INNER JOIN signals s ON ss.signal_id = s.signal_id
+        GROUP BY ss.tier
+        ORDER BY AVG(ss.edge_score) DESC
     """).fetchall()
     for tier, cnt, avg_edge in rows:
         print(f"  {tier:22s}  {cnt:8d}  {avg_edge:>10.4f}")
@@ -583,12 +653,20 @@ def print_stats(con):
     print(f"  {'-'*25}  {'-'*10}  {'-'*11}")
     rows = con.execute("""
         SELECT source_id, wolf_rate,
-               ROUND(MAX(0.70, 1.0 - 0.40 * wolf_rate), 4) AS fp_penalty
+               ROUND(GREATEST(0.70, 1.0 - 0.40 * wolf_rate), 4) AS fp_penalty
         FROM source_feedback
         ORDER BY wolf_rate DESC
     """).fetchall()
     for sid, wolf, penalty in rows:
         print(f"  {sid:25s}  {wolf:>10.3f}  {penalty:>11.4f}")
+
+    # Source priors
+    print()
+    print(f"  {'Source ID':20s}  {'Prior':>8s}  {'Tier':22s}")
+    print(f"  {'-'*20}  {'-'*8}  {'-'*22}")
+    for sid, prior in sorted(SOURCE_PRIORS.items(), key=lambda x: -x[1]):
+        tier = TIER_OF_SOURCE.get(sid, "unknown")
+        print(f"  {sid:20s}  {prior:>8.2f}  {tier:22s}")
 
     # Agreement bucket count
     bucket_count = con.execute("SELECT COUNT(DISTINCT bucket_id) FROM source_agreement").fetchone()[0]
@@ -611,8 +689,9 @@ def score_all(con, reset: bool = False):
     wolf_map = {r[0]: float(r[1]) for r in wolf_rows}
 
     if reset:
-        log("Reset mode: clearing all signal_scores...")
+        log("Reset mode: clearing signal_scores and source_agreement...")
         con.execute("DELETE FROM signal_scores")
+        con.execute("DELETE FROM source_agreement")
         rows, cols = get_all_signals(con)
     else:
         rows, cols = get_unscored(con)
@@ -671,7 +750,7 @@ def main():
         scored = score_all(con, reset=True)
         write_ranked_queue(con)
         con.close()
-        log(f"Done. Scored {scored} total signals, queue written.")
+        log(f"Done. Re-scored {scored} total signals, queue written.")
     else:
         # Default: score all unscored
         scored = score_all(con, reset=False)

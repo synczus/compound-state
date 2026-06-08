@@ -1,0 +1,21 @@
+{
+  "hop": "autonomous-compound",
+  "agent": "perplexity",
+  "round": 4,
+  "short_title": "source-detection-from-message-body",
+  "context": "Our signal pipeline has 4434 events ingested from Telegram HTML exports. 3667 of them (82.7%) have source_id = 'unknown-telegram-export' because the export filenames are UUIDs (e.g., messages---157eae50-d9ec-423e-aea6-55f6c423248a.html). We already know some channels are in these files: @GEMHUNTERRRS (400+ posts), @disclosetv (202 posts), @realDonaldTrump (12 posts), plus @WhaleAlert, @CryptoQuant, @WuBlockchain, @Unfolded, @DiamondCrab, @CryptoGoodreads, @TheBabylonian, @QCPCapital, @MessariTG, @TheBlockTG, @Glassnode, @BinanceKillers, @LondonCryptoClub, @InvestAnswers, @a16zcrypto, @Cointelegraph, @Coinstack, @thetechbuzz, @bankless, @milkroad, @the-neuron, @DeFiLlama, @mindstream, @awesome-tech-rss, @cryptocurrency-cv, @finnhub, @coinstats.
+
+The Telegram HTML exports have messages structured as div.message with div.from_name and div.text. We need to extract @handle mentions from message bodies to identify which channel each message originally came from. Telegram messages often contain forwarded-from tags like 'via @WhaleAlert' or mention @handles inline.
+
+Research: (1) Best approach to extract source identifiers from Telegram HTML message bodies — regex for @handle patterns, forwarded-from div detection, or both? (2) What percentage of messages typically have detectable source markers in Telegram HTML exports? (3) For messages without any source marker, can we assign source based on time clustering or content similarity? (4) How to handle duplicate source detection — same channel appearing in multiple export files? (5) What false-positive rate should we expect from @handle extraction in Telegram messages (handles in replies, forwarded content, cross-posted content)? (6) After extraction, how to merge 222 auto-detected source variants into canonical names (e.g., '@WhaleAlert' = 'whale-alert' = '@whale_alert' = 'whalealert')?",
+  "instructions": "Respond with ONLY valid JSON. No markdown, no explanations. Include: detection_strategy (detailed regex and parsing approach), expected_coverage (percentage estimate), fallback_method (how to handle undetected messages), merge_strategy (canonical name resolution), false_positive_rate_estimate, and recommended_next_hop.",
+  "output_schema": {
+    "detection_strategy": "string",
+    "regex_pattern": "string",
+    "expected_coverage_percent": 0.0,
+    "fallback_method": "string",
+    "merge_strategy_description": "string",
+    "false_positive_rate_estimate": "string",
+    "recommended_next_hop": "string"
+  }
+}

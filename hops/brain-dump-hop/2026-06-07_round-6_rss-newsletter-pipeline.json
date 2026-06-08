@@ -1,0 +1,31 @@
+{
+  "hop": "autonomous-compound",
+  "agent": "perplexity",
+  "round": 6,
+  "short_title": "rss-newsletter-pipeline-production",
+  "context": "We have a working RSS adapter pattern for Cointelegraph (cronned every 15min, 30 articles ingested live to DuckDB). We need to multiply this pattern across 8 more newsletter/RSS sources: a16z Crypto Substack (https://a16zcrypto.substack.com/feed — verified DNS, curl timeout), Coinstack Substack (coinstack.substack.com/feed — HTTP 200 verified), The Tech Buzz Substack (thetechbuzz.substack.com/feed — HTTP 200 verified), TLDR Newsletter (already integrated), Milk Road (platform unknown — newsletter format, need platform detection), Bankless (newsletter/podcast, platform unknown), The Neuron (AI newsletter), Mindstream (tech/startup newsletter).
+
+We already have: RSS.app-based generic RSS adapter, TLDR scraper using readability-lxml, Substack /feed endpoint detector, Python feedparser library, and a DuckDB writer that normalizes to {row_id, source_id, event_type, timestamp, headline, body, symbols, lane, action, confidence, provenance}.
+
+Research: (1) Exact feedparser + readability-lxml pattern that's working for Cointelegraph — replicate for a16z (Substack RSS), Coinstack (Substack RSS), Tech Buzz (Substack RSS). What changes per source — just the URL and source_id? (2) For Milk Road and Bankless — how to detect their publishing platform (Substack, Ghost, WordPress, Beehiiv, etc.) from their homepage HTML or RSS auto-discovery? (3) The Neuron and Mindstream — do they have RSS feeds? What's their platform? (4) Should we have one generic RSS poller cron (runs every 15min, iterates all RSS sources) or one cron per source? (5) How to handle RSS items that are already in DuckDB from a previous cron run — dedup by GUID + source_id + truncated timestamp? (6) What about rate limiting — hitting 8+ RSS feeds every 15min from same IP — any polite interval concerns for Substack/WordPress/Beehiiv? (7) For Substack feeds specifically, do they include full article body in RSS or just preview — if preview only, do we need to fetch each article URL separately with readability-lxml? (8) How to score newsletter content differently from Telegram headlines — newsletter articles are long-form (lower density, higher depth) vs Telegram (high density, shallow). Should newsletter scores have a different recency half-life (maybe 720min narrative_formation tier)?
+
+Give exact build plan: file structure changes, cron configs, adapter templates, dedup strategy. No theory.",
+  "instructions": "Respond with ONLY valid JSON. No markdown, no explanations. Include: platform_list (array of objects with name, url, platform, rss_status, effort_minutes), adapter_template (generic Python class), cron_strategy (single vs per-source), dedup_sql, scoring_adjustment (newsletter vs telegram differences), and effort_total_hours.",
+  "output_schema": {
+    "platform_list": [
+      {
+        "name": "string",
+        "url": "string",
+        "platform": "string",
+        "rss_status": "string",
+        "effort_minutes": 0
+      }
+    ],
+    "adapter_template": "string",
+    "cron_strategy": "string",
+    "dedup_sql": "string",
+    "scoring_adjustment": "string",
+    "effort_total_hours": 0.0,
+    "recommended_next_hop": "string"
+  }
+}

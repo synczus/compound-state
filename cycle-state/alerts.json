@@ -1,0 +1,10 @@
+{
+  "alerts": [
+    {
+      "job": "tldr-scraper",
+      "status": "NO_LOG",
+      "age": -1
+    }
+  ],
+  "checked_at": "2026-06-08T00:16:03Z"
+}

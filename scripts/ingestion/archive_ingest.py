@@ -932,7 +932,10 @@ def main():
         action_summarize(args)
     elif args.dry_run:
         action_dry_run(args)
-    elif args.file or True:  # Default: ingest
+    elif args.file:
+        return action_ingest(args)
+    else:
+        # Default: ingest all unprocessed files
         return action_ingest(args)
 
     return 0

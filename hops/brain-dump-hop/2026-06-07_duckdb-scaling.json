@@ -1,0 +1,33 @@
+{
+  "stage": "research",
+  "hop_title": "duckdb-timeseries-scaling",
+  "date": "2026-06-07",
+  "context_preserved": true,
+  "key_findings": [
+    "DuckDB is SINGLE-WRITER per database file — multiple processes CANNOT write to the same .duckdb file concurrently. Second writer gets 'already opened by another process' error. This is critical for our architecture: archive-ingest, post-ingest-scorer, and freshness-watchdog all write to signals.duckdb from separate cron processes — they will fail when they overlap",
+    "Partition by month, not day — one table per logical dataset. DuckDB supports SET PARTITIONED BY (year(ts), month(ts)). Daily aggregation done in queries via DATE_TRUNC('day', ts), not separate daily tables",
+    "CHECKPOINT is the core maintenance mechanism — flushes WAL, reclaims space from deletes. Set wal_autocheckpoint higher (256-512MB) for write-heavy workloads to avoid constant I/O spikes from tiny default (16MB)",
+    "VACUUM ANALYZE refreshes statistics for query optimizer — matters for fast-changing tables on hot signals table. Run after significant data volume change",
+    "Parquet export for data > 90 days old — keeps DuckDB file small and fast. Partition Parquet exports by month for easy querying",
+    "For current scale (4434 events, ~few MB), no partitioning or checkpoint tuning needed yet. This research is PREVENTATIVE for when we hit millions of rows"
+  ],
+  "sources": [
+    "https://duckdb.org/docs/current/connect/concurrency",
+    "https://www.dench.com/blog/duckdb-in-production",
+    "https://duckdb.org/docs/stable/sql/statements/checkpoint.html",
+    "https://github.com/duckdb/duckdb/discussions/4899",
+    "https://motherduck.com/learn/partitioned-writes-parquet-ducklake/",
+    "https://duckdb.org/2024/11/29/duckdb-tricks-part-3.html"
+  ],
+  "uncertainties": [
+    "Whether individual chron jobs (archive-ingest, post-ingest-scorer, watchdog) currently conflict on DuckDB write access — testing needed",
+    "Whether our cron jobs create connections in a way that allows within-process concurrency (cursor per thread)"
+  ],
+  "research_gaps": [
+    "Need to test concurrent write scenario: run archive-ingest + post-ingest-scorer simultaneously and check for DuckDB lock errors",
+    "Need to test READ_ONLY connection from Synapse dashboard while writer cron is running — does it work?",
+    "Need to decide: single writer process vs time-multiplexed writers vs DuckLake for multi-writer support",
+    "Need to estimate monthly row growth: 4434 events from 8 files ≈ 550 events per file → with 25 sources at 500 events/day ≈ 12,500 events/day ≈ 375K/month"
+  ],
+  "recommended_next_hop": "Fix the concurrency issue FIRST: make post-ingest-scorer the single writer process, move archive-ingest to write through the scorer (same process), and verify Synapse dashboard can READ_ONLY connect while writer is running. Then partition events table by month once data exceeds 100K rows."
+}

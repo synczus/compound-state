@@ -1,0 +1,40 @@
+{
+  "max_open_trades": 3,
+  "stake_currency": "USDC",
+  "stake_amount": 10,
+  "tradable_balance_ratio": 0.99,
+  "fiat_display_currency": "USD",
+  "dry_run": true,
+  "dry_run_wallet": 100,
+  "cancel_open_orders_on_exit": false,
+  "trading_mode": "spot",
+  "margin_mode": "",
+  "exchange": {
+    "name": "coinbaseadvanced",
+    "key": "YOUR_CB_API_KEY",
+    "secret": "YOUR_CB_API_SECRET",
+    "ccxt_config": {},
+    "ccxt_async_config": {},
+    "pair_whitelist": ["BTC/USDC", "ETH/USDC", "SOL/USDC"],
+    "pair_blacklist": []
+  },
+  "pairlists": [{"method": "StaticPairList"}],
+  "telegram": {"enabled": false},
+  "api_server": {
+    "enabled": true,
+    "listen_ip_address": "127.0.0.1",
+    "listen_port": 8080,
+    "verbosity": "error",
+    "enable_openapi": false,
+    "jwt_secret_key": "CHANGE_ME_RANDOM_32CHARS",
+    "CORS_origins": [],
+    "username": "ftuser",
+    "password": "ftpass"
+  },
+  "bot_name": "striker_ft",
+  "initial_state": "running",
+  "force_entry_enable": false,
+  "internalize_strategy": false,
+  "strategy": "DuckDBSignalStrategy",
+  "strategy-path": "/home/synczus/kestrel/execution/freqtrade/strategies"
+}

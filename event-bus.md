@@ -12,3 +12,11 @@ Event Bus — short-term signal memory
 | 2026-06-08 00:12 | brain-dump-hop:build-order-ranked | Perplexity ranked build order: #1 archive batch processor (4hrs), #2 scoring job (6hrs), #3 freshness watchdog (3hrs), #4 CryptoQuant (6.5hrs), #5 Striker tuning (2hrs), #6 dashboard (5hrs). 9+ unprocessed exports sitting in inbound/. Striker dead last. Priorities updated in master-todo.
 
 2026-06-07 23:10 UTC | credit-meter | $45.64/50.00 today| 2026-06-08 00:30 | perpetual-hop:rounds-4-6 | Batch Perplexity dump banked: (4) self-healing cron — systemd timers + flock + JSON state, (5) newsletter scraping — RSS first, IMAP fallback, sitemap last, (6) DuckDB scaling — one writer, daily partitions, tiered retention, Parquet cold storage. All notes in hop-notes/.
+2026-06-07T23:21:42Z | state-probe | Striker=offline WolfWatch=online MetaAge=3549s
+
+2026-06-07 23:22 UTC | meta-monitor | 🔴 Cron 'squirrel-inbox-feeder' stale — 27m since last run (max 20m)
+2026-06-07 23:27 UTC | business-pulse | 📊 BTC $63051 | ETH $1678.57 | SOL $65.99 | Striker: connected | Signals: 58886 | Board: 3 done, 8 pending. Top: none
+2026-06-07 23:40 UTC | credit-meter | $49.37/50.00 today| 2026-06-07 23:50 | pipeline:source-resolution-complete | Source resolver fixed all 3667 unknown events — 0 remaining unknown. Re-scored 4671 signals with differentiated source priors. Top: whale-alert (0.4267), defillama (0.3494). Timers re-enabled.
+2026-06-07T23:58:17Z | state-probe | Striker=offline WolfWatch=online MetaAge=2145s
+
+2026-06-08 00:10 UTC | credit-meter | $0.31/50.00 today

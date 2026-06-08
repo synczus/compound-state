@@ -12,9 +12,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 KESTREL = "/home/synczus/kestrel"
-DB = os.path.join(KESTREL, "signals.duckdb")
+STAGING = os.path.join(KESTREL, "ingestion", "staging")
 INBOUND = os.path.expanduser("~/.openclaw/media/inbound")
 CONFIG = os.path.join(KESTREL, "manifests", "coordination.yaml")
+
+# NEW: Write to JSONL staging file instead of direct DuckDB
+# The post-ingest-scorer reads staging files and bulk-inserts into DuckDB
+STAGING_FILE = os.path.join(STAGING, f"events_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.jsonl")
 
 # Source detection by filename/pattern
 SOURCE_DETECT = [
@@ -179,11 +183,6 @@ def extract_telegram_source(text):
 
 def run():
     import yaml
-    try:
-        import duckdb
-    except:
-        log("duckdb not installed")
-        return 1
     
     try:
         from bs4 import BeautifulSoup
@@ -196,55 +195,125 @@ def run():
     baselines = config["signal_ingestion"]["source_baselines"]
     generic_bl = baselines.get("generic-news", {"baseline": 0.30})
     
-    # Connect DuckDB and ensure tables
-    con = duckdb.connect(DB)
+    # Load manifest from local JSON (avoids DuckDB concurrent write risk)
+    manifest_path = os.path.join(STAGING, "archive_manifest.json")
+    manifest = {"files": {}}
+    if os.path.exists(manifest_path):
+        try:
+            manifest = json.load(open(manifest_path))
+        except:
+            manifest = {"files": {}}
+    processed = set(manifest.get("files", {}).keys())
     
-    # Create manifest table if missing
-    con.execute("""
-        CREATE TABLE IF NOT EXISTS archive_manifest (
-            file_path VARCHAR PRIMARY KEY,
-            file_hash VARCHAR NOT NULL,
-            channel_source VARCHAR NOT NULL,
-            message_count INTEGER NOT NULL,
-            processed_at TIMESTAMP NOT NULL DEFAULT now(),
-            status VARCHAR NOT NULL DEFAULT 'done'
-        )
-    """)
+    # Get next row_id from manifest
+    max_row = int(manifest.get("last_row_id", 0))
     
-    # Create events table if missing
-    con.execute("""
-        CREATE TABLE IF NOT EXISTS events (
-            row_id INTEGER PRIMARY KEY,
-            source_id VARCHAR NOT NULL,
-            event_type VARCHAR,
-            timestamp TIMESTAMP,
-            payload_headline VARCHAR,
-            payload_body TEXT,
-            symbols VARCHAR,
-            lane VARCHAR,
-            action VARCHAR,
-            confidence DOUBLE,
-            magnitude DOUBLE,
-            velocity VARCHAR,
-            provenance_source_url VARCHAR,
-            provenance_hash VARCHAR,
-            scored BOOLEAN DEFAULT false,
-            ingested_ts TIMESTAMP DEFAULT now()
-        )
-    """)
+    # Scan inbound dir
+    inbound_path = Path(INBOUND)
+    if not inbound_path.exists():
+        log(f"Inbound dir not found: {INBOUND}")
+        return 1
     
-    # Get already processed files
-    processed = set()
-    try:
-        processed = {r[0] for r in con.execute("SELECT file_path FROM archive_manifest").fetchall()}
-    except:
-        pass
+    html_files = sorted([f for f in inbound_path.glob("*.html") if f.is_file()])
+    log(f"Found {len(html_files)} HTML files in inbound/{len(processed)} already processed")
     
-    # Get max row_id for new insertions
-    try:
-        max_row = con.execute("SELECT COALESCE(MAX(row_id), 0) FROM events").fetchone()[0]
-    except:
-        max_row = 0
+    total_new = 0
+    batch_events = []
+    
+    for fp in html_files:
+        abs_path = str(fp.resolve())
+        
+        # Skip already processed
+        if abs_path in processed:
+            continue
+        
+        # Detect source
+        source_id = detect_source(fp.name)
+        
+        # Read and hash file
+        file_hash = hashlib.sha256(open(abs_path, 'rb').read()).hexdigest()
+        
+        # Extract messages
+        messages = extract_messages(abs_path)
+        
+        if not messages:
+            log(f"No messages extracted from {fp.name}")
+            continue
+        
+        msg_count = 0
+        for msg in messages:
+            text = msg.get("text", "")
+            if not text:
+                continue
+            
+            max_row += 1
+            msg_count += 1
+            
+            # Compute dedup key
+            dedup = compute_dedup_key(text[:200], source_id)
+            
+            # Parse timestamp
+            ts = parse_timestamp(msg.get("timestamp", ""))
+            if not ts:
+                ts = datetime.now(timezone.utc).isoformat()
+            
+            # Classify
+            event_type = classify_event(text)
+            
+            # Get baseline from config
+            bl = baselines.get(source_id, generic_bl)
+            
+            # Detect symbols
+            symbols = msg.get("symbols", [])
+            
+            # Detect Telegram source reference
+            telegram_source = extract_telegram_source(text)
+            
+            batch_events.append({
+                "source_id": telegram_source or source_id,
+                "event_type": event_type,
+                "timestamp": ts,
+                "headline": text[:600],
+                "body": text[:2000],
+                "symbols": ",".join(symbols) if symbols else None,
+                "provenance_url": abs_path,
+                "provenance_hash": dedup[:32]
+            })
+        
+        total_new += msg_count
+        
+        # Mark file as processed in local manifest
+        manifest["files"][abs_path] = {
+            "hash": file_hash,
+            "source": source_id,
+            "count": msg_count,
+            "processed_at": datetime.now(timezone.utc).isoformat()
+        }
+        
+        log(f"  {fp.name}: {msg_count} messages ({source_id})")
+    
+    # Write events to staging JSONL file (for scorer to consume)
+    if batch_events:
+        staging_path = os.path.join(STAGING, f"events_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.jsonl")
+        os.makedirs(STAGING, exist_ok=True)
+        with open(staging_path, 'w') as f:
+            for evt in batch_events:
+                f.write(json.dumps(evt) + '\n')
+        
+        # Update manifest with last row_id
+        manifest["last_row_id"] = max_row
+        with open(manifest_path, 'w') as f:
+            json.dump(manifest, f, indent=2)
+        
+        log(f"Wrote {len(batch_events)} events to {staging_path}")
+    else:
+        log("No new events to write")
+    
+    # Summary
+    file_count = len([f for f in html_files if str(f.resolve()) not in processed])
+    log(f"Processed {file_count} files, {total_new} new events")
+    
+    return 0 if total_new > 0 else 0
     
     # Scan inbound dir
     inbound_path = Path(INBOUND)
@@ -327,39 +396,36 @@ def run():
         
         total_new += msg_count
         
-        # Mark file processed in manifest
-        con.execute("""
-            INSERT INTO archive_manifest (file_path, file_hash, channel_source, message_count, processed_at, status)
-            VALUES (?, ?, ?, ?, now(), 'done')
-            ON CONFLICT (file_path) DO UPDATE SET status = 'done'
-        """, (abs_path, file_hash, source_id, msg_count))
+        # Mark file as processed in local manifest
+        manifest["files"][abs_path] = {
+            "hash": file_hash,
+            "source": source_id,
+            "count": msg_count,
+            "processed_at": datetime.now(timezone.utc).isoformat()
+        }
         
         log(f"  {fp.name}: {msg_count} messages ({source_id})")
     
-    # Bulk insert all new events in single transaction
+    # Write events to staging JSONL file (for scorer to consume)
     if batch_events:
-        con.executemany("""
-            INSERT INTO events (
-                row_id, source_id, event_type, timestamp, payload_headline, 
-                payload_body, symbols, lane, action, confidence, 
-                magnitude, velocity, provenance_source_url, provenance_hash
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, batch_events)
-        log(f"Bulk insert: {len(batch_events)} events across {total_new} messages")
+        staging_path = os.path.join(STAGING, f"events_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.jsonl")
+        os.makedirs(STAGING, exist_ok=True)
+        with open(staging_path, 'w') as f:
+            for evt in batch_events:
+                f.write(json.dumps(evt) + '\n')
+        
+        # Update manifest with last row_id
+        manifest["last_row_id"] = max_row
+        with open(manifest_path, 'w') as f:
+            json.dump(manifest, f, indent=2)
+        
+        log(f"Wrote {len(batch_events)} events to {os.path.relpath(staging_path)}")
+    else:
+        log("No new events to write")
     
     # Summary
     file_count = len([f for f in html_files if str(f.resolve()) not in processed])
     log(f"Processed {file_count} files, {total_new} new events")
-    
-    # Stats
-    try:
-        total = con.execute("SELECT COUNT(*) FROM events").fetchone()[0]
-        sources = con.execute("SELECT source_id, COUNT(*) as cnt FROM events GROUP BY source_id ORDER BY cnt DESC LIMIT 5").fetchall()
-        log(f"Total events in DuckDB: {total}")
-        for src, cnt in sources:
-            log(f"  {src}: {cnt}")
-    except:
-        pass
     
     return 0 if total_new > 0 else 0
 

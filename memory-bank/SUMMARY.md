@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 23:15:04 UTC_
-_Total active entries: 218_
+_Last consolidated: 2026-06-08 00:03:04 UTC_
+_Total active entries: 225_
 
 ## By Category
 
-- **other**: 75 entries
+- **other**: 82 entries
 - **pipeline-infrastructure**: 47 entries
 - **agent-orchestration**: 35 entries
 - **monitoring-observability**: 23 entries
@@ -19,6 +19,13 @@ _Total active entries: 218_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 63983 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 62513 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 63552 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- `[hermes]` **[other]** ⚪ striker: 59986 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ exports: 19 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
+- `[hermes]` **[other]** ⚪ striker: 56641 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[knowledge-management]** **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs
 - `[hermes]` **[other]** **#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs
 - `[hermes]` **[other]** **#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs
@@ -62,13 +69,6 @@ _Total active entries: 218_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Every hop in the chain reviews the last — if I suggest something wrong or out of order, the next agent corrects it before it gets to you, so the chain auto-improves without Chase having to steer.
 - `[hermes]` **[other]** 2026-06-07 | Scraper | Every message from me is now a single condensed signal — no fluff, no lead-up, only the highest-leverage information you need to act on.
 - `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Every message now ends with the highest leverage move and next agent routing — the signal normalizer is built and waiting on your Telegram exports.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Every time you speak, we pivot to you — when you're quiet, we build in the background. No interruption, just layering.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Found 4 active channels worth trying — @cointelegraph and @altSignals are the strongest candidates for pure signal, the rest are either dead or pump groups with no actual trading edge.
-- `[hermes]` **[cost-optimization]** 2026-06-07 | Scraper | Four gateways burning tokens at increasing cost per message as contexts grow — the $10/day cap fixes the cost concern permanently, and the Manifest already locks the hop chain and data structure so every future build sits on a clean foundation.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Four ways around the .html block — paste the raw text, rename to .txt, screenshot it, or zip it — any one works and I'll rank the channels for you in seconds.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | From now on we run agent-to-agent on anything in your lane — we scout, discuss, and present a complete plan, you just approve once at the end.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Full Disclose.tv export would be massive — drop the file in here and it gets normalized into our Signal Contract, scored for confidence, and ready for the swarm to act on.
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Grok's inversion is correct — Striker is a brittle prototype that shouldn't be ported to IBKR — but MMR already provides the clean signal abstraction Grok prescribes, so the move is to let MMR replace Striker's role for IBKR data while Striker fades to a crypto-only lightweight monitor.
 
 ---
 

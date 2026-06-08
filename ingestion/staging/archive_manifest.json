@@ -1,0 +1,113 @@
+{
+  "files": {
+    "/home/synczus/.openclaw/media/inbound/messages---1e5aaa95-ce60-4ca5-ba3a-889dd36a7afe.html": {
+      "hash": "470a2a1348fb84dd36638422243b4a7726a5c57f110642863ff9c88756c6063f",
+      "source": "unknown-telegram-export",
+      "count": 214,
+      "processed_at": "2026-06-07T23:30:01.979165+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---6a3f122d-f9ed-41be-8a16-697a2dfb6c21.html": {
+      "hash": "cefbb2363c79013c077857defb5c2aa345eee70c60e09c48d26b6d7d5e0be776",
+      "source": "unknown-telegram-export",
+      "count": 642,
+      "processed_at": "2026-06-07T23:30:02.404197+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---78644aa0-5359-4c2a-9004-64b909dea6eb.html": {
+      "hash": "cd11879cc5ada159cf1414a884f6f8396331549a437b2c374731f2ccbb646046",
+      "source": "unknown-telegram-export",
+      "count": 998,
+      "processed_at": "2026-06-07T23:30:02.649713+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---bae5c94b-847b-4691-af79-9b97a40aafb0.html": {
+      "hash": "df2b24ae417d4724201297713ee238ef4ef4cfeb991a6dcd2dcd5d0e501e973d",
+      "source": "unknown-telegram-export",
+      "count": 296,
+      "processed_at": "2026-06-07T23:30:03.122260+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---d800797f-698e-48d5-ae96-4c68d31d5941.html": {
+      "hash": "79a575f74461cecfb70ec2022cea31875b2e376f94f48851322acdd9ffbdfa1a",
+      "source": "unknown-telegram-export",
+      "count": 966,
+      "processed_at": "2026-06-07T23:30:04.101075+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---df4e7c96-5338-4268-a305-4bd41fba3e53.html": {
+      "hash": "3e303c2cdbce0eeb7a405f40d75a6edbc8d85e73ecf47c31518598facdc6df72",
+      "source": "unknown-telegram-export",
+      "count": 971,
+      "processed_at": "2026-06-07T23:30:04.692337+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---e30d8e2a-804f-4a43-80c6-1ef4bb044c0b.html": {
+      "hash": "de89fb11275e268132a4965db50fa04435239ae3429ea947d82821213a042444",
+      "source": "unknown-telegram-export",
+      "count": 1,
+      "processed_at": "2026-06-07T23:30:04.693583+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---e95c45e9-2ad0-497c-9cc1-b0026de94212.html": {
+      "hash": "ae1bdd8cc894760b8603f78ea21824712f8c95cddea2090c5999ef72de87d451",
+      "source": "unknown-telegram-export",
+      "count": 987,
+      "processed_at": "2026-06-07T23:30:09.265329+00:00"
+    },
+    "/home/synczus/.openclaw/media/inbound/messages---f74412db-1e7b-442b-a9d7-28a04ac4d9ac.html": {
+      "hash": "de89fb11275e268132a4965db50fa04435239ae3429ea947d82821213a042444",
+      "source": "unknown-telegram-export",
+      "count": 1,
+      "processed_at": "2026-06-07T23:30:09.266619+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---158026db-a3ce-4bf3-afdb-31f2a9d97a09.html": {
+      "hash": "470a2a1348fb84dd36638422243b4a7726a5c57f110642863ff9c88756c6063f",
+      "source": "unknown-telegram-export",
+      "count": 214,
+      "processed_at": "2026-06-07T23:40:02.048754+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---2e52e923-7c30-490a-a76c-889d9cbfb2e2.html": {
+      "hash": "ae1bdd8cc894760b8603f78ea21824712f8c95cddea2090c5999ef72de87d451",
+      "source": "unknown-telegram-export",
+      "count": 987,
+      "processed_at": "2026-06-07T23:40:06.643489+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---3da67a3e-ae3e-4d66-b006-23fcad338f69.html": {
+      "hash": "df2b24ae417d4724201297713ee238ef4ef4cfeb991a6dcd2dcd5d0e501e973d",
+      "source": "unknown-telegram-export",
+      "count": 296,
+      "processed_at": "2026-06-07T23:40:07.186748+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---5fb2182a-de35-4001-b4b6-7bd825bb1c97.html": {
+      "hash": "de89fb11275e268132a4965db50fa04435239ae3429ea947d82821213a042444",
+      "source": "unknown-telegram-export",
+      "count": 1,
+      "processed_at": "2026-06-07T23:40:07.187877+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---820cbcfd-5115-4af8-bfc7-dcaad9eddc03.html": {
+      "hash": "3e303c2cdbce0eeb7a405f40d75a6edbc8d85e73ecf47c31518598facdc6df72",
+      "source": "unknown-telegram-export",
+      "count": 971,
+      "processed_at": "2026-06-07T23:40:07.732812+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---83896dff-4c6e-4edd-ac2a-be5fe5aeef9d.html": {
+      "hash": "de89fb11275e268132a4965db50fa04435239ae3429ea947d82821213a042444",
+      "source": "unknown-telegram-export",
+      "count": 1,
+      "processed_at": "2026-06-07T23:40:07.734097+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---923dd8e3-af3d-47c8-ad65-924c874d75a3.html": {
+      "hash": "cd11879cc5ada159cf1414a884f6f8396331549a437b2c374731f2ccbb646046",
+      "source": "unknown-telegram-export",
+      "count": 998,
+      "processed_at": "2026-06-07T23:40:08.000573+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---9899f9f8-82b4-4eae-95b1-1c1699f5ca4b.html": {
+      "hash": "79a575f74461cecfb70ec2022cea31875b2e376f94f48851322acdd9ffbdfa1a",
+      "source": "unknown-telegram-export",
+      "count": 966,
+      "processed_at": "2026-06-07T23:40:08.972651+00:00"
+    },
+    "/home/synczus/.openclaw-nemo/.openclaw/media/inbound/messages---d7119e4c-51d2-4b01-84b1-7205cb502b28.html": {
+      "hash": "cefbb2363c79013c077857defb5c2aa345eee70c60e09c48d26b6d7d5e0be776",
+      "source": "unknown-telegram-export",
+      "count": 642,
+      "processed_at": "2026-06-07T23:40:09.428577+00:00"
+    }
+  },
+  "last_row_id": 10152
+}

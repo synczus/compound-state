@@ -1,0 +1,166 @@
+{
+  "timestamp": "2026-06-08T00:15:13.785343+00:00",
+  "queue": [
+    {
+      "signal_id": "3352-unknown-telegram-export",
+      "source_id": "whale-alert",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "event_ts": "2026-06-07 19:12:26.459950",
+      "edge_score": 0.3841
+    },
+    {
+      "signal_id": "2474-unknown-telegram-export",
+      "source_id": "whale-alert",
+      "asset_symbol": null,
+      "event_type": "general_news",
+      "event_ts": "2026-06-07 19:12:26.446374",
+      "edge_score": 0.3841
+    },
+    {
+      "signal_id": "737c70fa57aa0f08",
+      "source_id": "defillama",
+      "asset_symbol": null,
+      "event_type": "defi_tvl_flow",
+      "event_ts": "2026-06-07 19:09:23.456637",
+      "edge_score": 0.3403
+    },
+    {
+      "signal_id": "7a3df2cfb3ebb01e",
+      "source_id": "defillama",
+      "asset_symbol": null,
+      "event_type": "defi_tvl_flow",
+      "event_ts": "2026-06-07 19:09:23.456637",
+      "edge_score": 0.3403
+    },
+    {
+      "signal_id": "5774b74d978dce71",
+      "source_id": "defillama",
+      "asset_symbol": null,
+      "event_type": "defi_tvl_flow",
+      "event_ts": "2026-06-07 19:09:23.456637",
+      "edge_score": 0.3403
+    },
+    {
+      "signal_id": "85fbe2f1823c69b8",
+      "source_id": "defillama",
+      "asset_symbol": null,
+      "event_type": "defi_tvl_flow",
+      "event_ts": "2026-06-07 19:09:23.456637",
+      "edge_score": 0.3403
+    },
+    {
+      "signal_id": "7a6be7116edda426",
+      "source_id": "defillama",
+      "asset_symbol": null,
+      "event_type": "defi_tvl_flow",
+      "event_ts": "2026-06-07 19:09:23.456637",
+      "edge_score": 0.3403
+    },
+    {
+      "signal_id": "2427-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.193577",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "2381-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.192318",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "2350-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.191609",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "2324-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.191109",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "2251-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.189634",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "2176-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "ETH",
+      "event_type": "general_news",
+      "event_ts": "2026-06-07 19:12:26.187520",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "1998-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.183710",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "1942-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "ETH",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.181976",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "1888-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "general_news",
+      "event_ts": "2026-06-07 19:12:26.180800",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "1838-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.179357",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "1832-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "general_news",
+      "event_ts": "2026-06-07 19:12:26.179215",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "1813-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "price_event",
+      "event_ts": "2026-06-07 19:12:26.178662",
+      "edge_score": 0.2392
+    },
+    {
+      "signal_id": "1794-unknown-telegram-export",
+      "source_id": "telegram-@AIHangout",
+      "asset_symbol": "BTC",
+      "event_type": "geopolitical_event",
+      "event_ts": "2026-06-07 19:12:26.178205",
+      "edge_score": 0.2392
+    }
+  ],
+  "count": 20
+}

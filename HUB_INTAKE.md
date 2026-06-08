@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-07
-_Generated: 2026-06-07T23:12:34Z_
+_Generated: 2026-06-08T00:13:18Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,35 +7,36 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-07 22:59:04 UTC_
-_Total active entries: 202_
+_Last consolidated: 2026-06-08 00:03:04 UTC_
+_Total active entries: 225_
 
 ## By Category
 
-- **other**: 64 entries
+- **other**: 82 entries
 - **pipeline-infrastructure**: 47 entries
 - **agent-orchestration**: 35 entries
-- **monitoring-observability**: 21 entries
-- **cost-optimization**: 14 entries
+- **monitoring-observability**: 23 entries
+- **cost-optimization**: 15 entries
 - **architecture-decision**: 8 entries
-- **security-governance**: 5 entries
+- **security-governance**: 6 entries
+- **knowledge-management**: 5 entries
 - **model-strategy**: 4 entries
-- **knowledge-management**: 4 entries
 
 ---
 
 ## Recent Propositions
 
-- `[hermes]` **[other]** 2026-06-07 | Kairos | Wire Cointelegraph Telegram as live feed — highest cadence, quickest win per Perplexity deep-dive 🥇
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Nemoclaw | Build CryptoQuant API adapter — on-chain metrics (exchange inflows/outflows, reserves, stablecoin flows, whale activity) — highest signal density ~6.5 hrs
-- `[hermes]` **[security-governance]** 2026-06-07 | Kairos | Wire cryptocurrency.cv API — 200+ crypto news sources, no API key, free unlimited tier 🆓
-- `[hermes]` **[other]** 2026-06-07 | Kairos | Wire a16z crypto Substack RSS (0.86 prior) + Coinstack (0.80) + The Tech Buzz (0.74)
-- `[hermes]` **[model-strategy]** 2026-06-07 | Nemoclaw | Deploy unified scoring model: event_impact = recency * novelty * relevance * source_prior * confidence
-- `[hermes]` **[monitoring-observability]** 2026-06-07 | Nemoclaw | Deploy 175 awesome-tech-rss feeds — high-signal subset (Verge, VentureBeat, Hacker News, Product Hunt, Stripe/Cloudflare/Meta blogs)
-- `[hermes]` **[other]** ⚪ exports: 18 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
-- `[hermes]` **[other]** ⚪ striker: 50489 signals (4234 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780870893 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 63983 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 62513 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 63552 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- `[hermes]` **[other]** ⚪ striker: 59986 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ exports: 19 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
+- `[hermes]` **[other]** ⚪ striker: 56641 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[knowledge-management]** **#1** 2026-06-08 | Kairos | Archive batch processor — scan inbound/ for 9+ Telegram exports, parse HTML/zip, dedupe, bulk insert. ~4 hrs
+- `[hermes]` **[other]** **#2** 2026-06-08 | Kairos | Post-ingest scoring job — edge_score from signal_scores table, rebuild agreement buckets, write top-20 JSON. ~6 hrs
+- `[hermes]` **[other]** **#3** 2026-06-08 | Kairos | Freshness watchdog — 1-min cron, JSON state, auto-quarantine after 10 stale cycles. ~3 hrs
+- `[hermes]` **[other]** **#4** 2026-06-08 | Nemoclaw | Self-healing cron — systemd timers per job, shared retry wrapper with exponential backoff, flock dedup, one watchdog script. ~4 hrs
 _[truncated]_
 
 ## Noise Gate Context (last 24h)

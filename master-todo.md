@@ -144,3 +144,33 @@
 - [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
 - [ ] ⚪ exports: 18 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
 - [ ] ⚪ striker: 50489 signals (4234 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-07T23:20:13Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 19 unprocessed: message---ad6ecc98-562c-4741-8, message---1ec39867-8c21-4eaf-8, message---08b94249-686b-40b9-8...
+- [ ] ⚪ striker: 56641 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-07T23:35:01Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 59986 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-07T23:50:17Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 62513 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-07T23:56:59Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 63552 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T00:00:23Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 63983 signals (4350 >=0.3%), last 1970-01-01 00:00:00
