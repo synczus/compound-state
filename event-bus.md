@@ -19,4 +19,6 @@ Event Bus — short-term signal memory
 2026-06-07 23:40 UTC | credit-meter | $49.37/50.00 today| 2026-06-07 23:50 | pipeline:source-resolution-complete | Source resolver fixed all 3667 unknown events — 0 remaining unknown. Re-scored 4671 signals with differentiated source priors. Top: whale-alert (0.4267), defillama (0.3494). Timers re-enabled.
 2026-06-07T23:58:17Z | state-probe | Striker=offline WolfWatch=online MetaAge=2145s
 
-2026-06-08 00:10 UTC | credit-meter | $0.31/50.00 today
+2026-06-08 00:10 UTC | credit-meter | $0.31/50.00 today2026-06-08T00:19:57Z | state-probe | Striker=offline WolfWatch=online MetaAge=3444s
+
+2026-06-08 00:22 UTC | meta-monitor | 🔴 Cron 'squirrel-inbox-feeder' stale — 27m since last run (max 20m)

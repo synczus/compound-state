@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 00:03:04 UTC_
-_Total active entries: 225_
+_Last consolidated: 2026-06-08 00:30:01 UTC_
+_Total active entries: 226_
 
 ## By Category
 
-- **other**: 82 entries
+- **other**: 83 entries
 - **pipeline-infrastructure**: 47 entries
 - **agent-orchestration**: 35 entries
 - **monitoring-observability**: 23 entries
@@ -19,6 +19,7 @@ _Total active entries: 225_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 68953 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 63983 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 62513 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 63552 signals (4350 >=0.3%), last 1970-01-01 00:00:00
@@ -68,7 +69,6 @@ _Total active entries: 225_
 - `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Every agent hears everything — only the relevant lane replies day-to-day, and the hot sequence is just for structured deep-thinks so you get one complete answer instead of five people talking over each other.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Every hop in the chain reviews the last — if I suggest something wrong or out of order, the next agent corrects it before it gets to you, so the chain auto-improves without Chase having to steer.
 - `[hermes]` **[other]** 2026-06-07 | Scraper | Every message from me is now a single condensed signal — no fluff, no lead-up, only the highest-leverage information you need to act on.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Every message now ends with the highest leverage move and next agent routing — the signal normalizer is built and waiting on your Telegram exports.
 
 ---
 
