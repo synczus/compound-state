@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 07:00:01 UTC_
-_Total active entries: 315_
+_Last consolidated: 2026-06-08 07:52:19 UTC_
+_Total active entries: 318_
 
 ## By Category
 
 - **other**: 124 entries
-- **pipeline-infrastructure**: 78 entries
+- **pipeline-infrastructure**: 81 entries
 - **agent-orchestration**: 40 entries
 - **monitoring-observability**: 30 entries
 - **cost-optimization**: 15 entries
@@ -19,6 +19,9 @@ _Total active entries: 315_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780905050 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780903824 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
 - `[hermes]` **[other]** ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
 - `[hermes]` **[other]** ⚪ striker: 138498 signals (5183 >=0.3%), last 1970-01-01 00:00:00
@@ -66,9 +69,6 @@ _Total active entries: 315_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | 6 Perplexity hops processed, 4 production code files written to disk, unified next hop is deploy execution pipeline — n8n owner setup + API key is the only remaining gate.
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | All agents share the same Hermes engine and auto-improvement capabilities — Shannon's gateway can be re-enabled and each agent can get its own cron lane for the same continuous learning loop.
 - `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | All core infrastructure (Striker monitoring, freshness watchdog, RSS feeds, compound_state) is deployed and healthy; the next build sprint should populate compound_state with live source health scores and process OpenClaw's 9 Perplexity research JSON artifacts.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | All three SOUL files updated, coordination board verified, agent-hop-chain cron live every 30m — n8n API key from Settings → n8n API is the only remaining block.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | Casual tone locked in — saved to permanent memory, no more robot speak.
-- `[hermes]` **[security-governance]** 2026-06-08 | Scraper | Clean n8n running at `localhost:5678` — one owner setup and one API key creation and we're wired for good.
 
 ---
 

@@ -1,0 +1,785 @@
+=== GDrive Sync Mon Jun  8 07:47:16 AM UTC 2026 ===
+Syncing kestrel/identities...
+2026/06/08 03:47:39 INFO  : VIBE.md: Copied (new)
+2026/06/08 03:47:39 INFO  : initiation-protocol.md: Copied (new)
+2026/06/08 03:47:39 INFO  : kairos-soul.md: Copied (new)
+2026/06/08 03:47:39 INFO  : hermes-soul.md: Copied (new)
+2026/06/08 03:47:40 INFO  : openclaw-soul.md: Copied (new)
+2026/06/08 03:47:40 INFO  : nemoclaw-soul.md: Copied (new)
+2026/06/08 03:47:40 INFO  : shannon-soul.md: Copied (new)
+2026/06/08 03:47:40 INFO  : 
+Transferred:   	   21.228 KiB / 21.228 KiB, 100%, 5.309 KiB/s, ETA 0s
+Transferred:            7 / 7, 100%
+Elapsed time:        24.4s
+
+Syncing kestrel/scripts...
+2026/06/08 03:47:43 NOTICE: ingestion/compound-pulse.py: Can't follow symlink without -L/--copy-links
+2026/06/08 03:47:46 INFO  : auto-git-sync.sh: Copied (new)
+2026/06/08 03:47:46 INFO  : awareness.py: Copied (new)
+2026/06/08 03:47:46 INFO  : auto-push.sh: Copied (new)
+2026/06/08 03:47:46 INFO  : auto-git.sh: Copied (new)
+2026/06/08 03:47:48 INFO  : baton-auto-cycle.py: Copied (new)
+2026/06/08 03:47:48 INFO  : content-spawner.py: Copied (new)
+2026/06/08 03:47:48 INFO  : business-pulse.py: Copied (new)
+2026/06/08 03:47:48 INFO  : creative-picker.py: Copied (new)
+2026/06/08 03:47:49 INFO  : dashboard-gen.py: Copied (new)
+2026/06/08 03:47:49 INFO  : dashboard-aggregator.py: Copied (new)
+2026/06/08 03:47:49 INFO  : gdrive-sync.sh: Copied (new)
+2026/06/08 03:47:49 INFO  : gif-finder.py: Copied (new)
+2026/06/08 03:47:51 INFO  : health-check.sh: Copied (new)
+2026/06/08 03:47:51 INFO  : heartbeat.sh: Copied (new)
+2026/06/08 03:47:51 INFO  : hop-controller.sh: Copied (new)
+2026/06/08 03:47:51 INFO  : hop-check.py: Copied (new)
+2026/06/08 03:47:52 INFO  : inversion-cron.py: Copied (new)
+2026/06/08 03:47:52 INFO  : kestrel-pipeline.sh: Copied (new)
+2026/06/08 03:47:52 INFO  : inversion-cron.sh: Copied (new)
+2026/06/08 03:47:52 INFO  : memory-consolidate.py: Copied (new)
+2026/06/08 03:47:54 INFO  : meta-monitor.py: Copied (new)
+2026/06/08 03:47:54 INFO  : mtf-analyzer.py: Copied (new)
+2026/06/08 03:47:54 INFO  : memory-writer.py: Copied (new)
+2026/06/08 03:47:54 INFO  : multi-tf-analyzer.py: Copied (new)
+2026/06/08 03:47:55 INFO  : note-intake.py: Copied (new)
+2026/06/08 03:47:55 INFO  : note-intake-server.py: Copied (new)
+2026/06/08 03:47:55 INFO  : note-sync.sh: Copied (new)
+2026/06/08 03:47:56 INFO  : openrouter-budget.py: Copied (new)
+2026/06/08 03:47:57 INFO  : or-meter.sh: Copied (new)
+2026/06/08 03:47:57 INFO  : perplexity_search.py: Copied (new)
+2026/06/08 03:47:57 INFO  : recover.sh: Copied (new)
+2026/06/08 03:47:58 INFO  : session-summary.sh: Copied (new)
+2026/06/08 03:47:58 INFO  : signal-filter.py: Copied (new)
+2026/06/08 03:47:59 INFO  : signal-intel.py: Copied (new)
+2026/06/08 03:47:59 INFO  : start-agentmemory.sh: Copied (new)
+2026/06/08 03:47:59 INFO  : state-probe.sh: Copied (new)
+2026/06/08 03:48:00 INFO  : stress-test.sh: Copied (new)
+2026/06/08 03:48:00 INFO  : stress-test-results.md: Copied (new)
+2026/06/08 03:48:00 INFO  : striker-backtrader-bridge.py: Copied (new)
+2026/06/08 03:48:01 INFO  : system-audit.sh: Copied (new)
+2026/06/08 03:48:02 INFO  : trade-extractor.py: Copied (new)
+2026/06/08 03:48:02 INFO  : trade-pipeline.py: Copied (new)
+2026/06/08 03:48:02 INFO  : wake-monitor.py: Copied (new)
+2026/06/08 03:48:02 INFO  : wolfwatch-receiver.py: Copied (new)
+2026/06/08 03:48:42 INFO  : 
+Transferred:   	  187.331 KiB / 2.551 MiB, 7%, 813 B/s, ETA 50m51s
+Transferred:           44 / 93, 47%
+Elapsed time:       1m1.4s
+Transferring:
+ *                                write-token.py:  0% /338, 0/s, -
+ *                   load-tests/paperclip-api.js:  0% /667, 0/s, -
+ *                      trading/signal_to_mmr.py:  0% /2.548Ki, 0/s, -
+ *                     trading/striker_bridge.py:  0% /5.415Ki, 0/s, -
+
+2026/06/08 03:48:56 INFO  : trading/signal_to_mmr.py: Copied (new)
+2026/06/08 03:48:56 INFO  : write-token.py: Copied (new)
+2026/06/08 03:48:56 INFO  : trading/striker_bridge.py: Copied (new)
+2026/06/08 03:48:56 INFO  : load-tests/paperclip-api.js: Copied (new)
+2026/06/08 03:48:59 INFO  : trading/telegram-logger.py: Copied (new)
+2026/06/08 03:48:59 INFO  : trading/supervisor.py: Copied (new)
+2026/06/08 03:48:59 INFO  : trading/whale_alert_adapter.py: Copied (new)
+2026/06/08 03:48:59 INFO  : trading/__pycache__/striker_bridge.cpython-312.pyc: Copied (new)
+2026/06/08 03:49:01 INFO  : trading/__pycache__/supervisor.cpython-312.pyc: Copied (new)
+2026/06/08 03:49:01 INFO  : auto-improve/auto-improve.service: Copied (new)
+2026/06/08 03:49:02 INFO  : auto-improve/boot-improvement-context.sh: Copied (new)
+2026/06/08 03:49:02 INFO  : auto-improve/cycle-improver.py: Copied (new)
+2026/06/08 03:49:04 INFO  : self-healing/compound-state.py: Copied (new)
+2026/06/08 03:49:04 INFO  : auto-improve/feedback-collector.py: Copied (new)
+2026/06/08 03:49:05 INFO  : self-healing/compound-state.sh: Copied (new)
+2026/06/08 03:49:30 INFO  : self-healing/health-scorer.py: Copied (new)
+2026/06/08 03:49:30 INFO  : self-healing/openclaw-hop-trigger.py: Copied (new)
+2026/06/08 03:49:30 INFO  : self-healing/freshness-watchdog.py: Copied (new)
+2026/06/08 03:49:34 INFO  : ingestion/.dedup_state.json: Copied (new)
+2026/06/08 03:49:35 INFO  : ingestion/archive-ingest.py: Copied (new)
+2026/06/08 03:49:35 INFO  : ingestion/archive_ingest.py: Copied (new)
+2026/06/08 03:49:36 INFO  : ingestion/dedup.py: Copied (new)
+2026/06/08 03:49:39 INFO  : ingestion/duckdb-maintenance.py: Copied (new)
+2026/06/08 03:49:39 INFO  : ingestion/duckdb_writer.py: Copied (new)
+2026/06/08 03:49:39 INFO  : auto-improve/feedback.duckdb: Copied (new)
+2026/06/08 03:49:41 INFO  : ingestion/defillama-adapter.py: Copied (new)
+2026/06/08 03:49:41 INFO  : ingestion/freshness_watchdog.py: Copied (new)
+2026/06/08 03:49:41 INFO  : ingestion/extract.py: Copied (new)
+2026/06/08 03:49:41 INFO  : ingestion/fear-greed-adapter.py: Copied (new)
+2026/06/08 03:49:42 INFO  : 
+Transferred:   	    4.450 MiB / 4.608 MiB, 97%, 97.420 KiB/s, ETA 1s
+Transferred:           73 / 93, 78%
+Elapsed time:       2m1.4s
+Transferring:
+ *                  ingestion/pending-summary.sh:100% /2.067Ki, 2.065Ki/s, 0s
+ *               ingestion/post-ingest-scorer.py:100% /15.112Ki, 15.100Ki/s, 0s
+ *                            ingestion/pulse.sh:100% /2.093Ki, 2.092Ki/s, 0s
+ *                    ingestion/ranked-queue.sql:100% /1.530Ki, 0/s, -
+
+2026/06/08 03:49:42 INFO  : ingestion/pending-summary.sh: Copied (new)
+2026/06/08 03:49:43 INFO  : ingestion/ranked-queue.sql: Copied (new)
+2026/06/08 03:49:43 INFO  : ingestion/pulse.sh: Copied (new)
+2026/06/08 03:49:43 INFO  : ingestion/post-ingest-scorer.py: Copied (new)
+2026/06/08 03:49:45 INFO  : ingestion/rss-feed-adapter.py: Copied (new)
+2026/06/08 03:49:45 INFO  : ingestion/rss-all-adapter.py: Copied (new)
+2026/06/08 03:49:46 INFO  : ingestion/router.py: Copied (new)
+2026/06/08 03:49:46 INFO  : ingestion/sage.py: Copied (new)
+2026/06/08 03:49:47 INFO  : ingestion/scoring-migration.py: Copied (new)
+2026/06/08 03:49:47 INFO  : ingestion/tldr-scraper.py: Copied (new)
+2026/06/08 03:49:47 INFO  : ingestion/source_resolver.py: Copied (new)
+2026/06/08 03:49:47 INFO  : ingestion/score_batch.py: Copied (new)
+2026/06/08 03:49:51 INFO  : ingestion/adapters/disclosetv.py: Copied (new)
+2026/06/08 03:49:51 INFO  : ingestion/adapters/cointelegraph.py: Copied (new)
+2026/06/08 03:49:51 INFO  : ingestion/adapters/tldr.py: Copied (new)
+2026/06/08 03:49:51 INFO  : ingestion/adapters/generic.py: Copied (new)
+2026/06/08 03:49:54 INFO  : ingestion/adapters/whale-alert.py: Copied (new)
+2026/06/08 03:49:54 INFO  : ingestion/__pycache__/archive_ingest.cpython-312.pyc: Copied (new)
+2026/06/08 03:49:54 INFO  : ingestion/__pycache__/duckdb_writer.cpython-312.pyc: Copied (new)
+2026/06/08 03:49:54 INFO  : ingestion/__pycache__/router.cpython-312.pyc: Copied (new)
+2026/06/08 03:49:54 INFO  : 
+Transferred:   	    4.611 MiB / 4.611 MiB, 100%, 52.974 KiB/s, ETA 0s
+Transferred:           93 / 93, 100%
+Elapsed time:      2m13.6s
+
+Syncing kestrel/cycle-state...
+2026/06/08 03:49:58 INFO  : alerts.json: Copied (new)
+2026/06/08 03:49:59 INFO  : creative-log.md: Copied (new)
+2026/06/08 03:49:59 INFO  : coinbase-execution-wrapper-01.json: Copied (new)
+2026/06/08 03:49:59 INFO  : compound-post-striker-02.json: Copied (new)
+2026/06/08 03:50:00 INFO  : current.json: Copied (new)
+2026/06/08 03:50:00 INFO  : hop-sequence.json: Copied (new)
+2026/06/08 03:50:00 INFO  : hop-protocol.md: Copied (new)
+2026/06/08 03:50:00 INFO  : 
+Transferred:   	   11.867 KiB / 11.867 KiB, 100%, 2.967 KiB/s, ETA 0s
+Transferred:            7 / 7, 100%
+Elapsed time:         6.1s
+
+Syncing kestrel/staging...
+2026/06/08 03:50:11 INFO  : There was nothing to transfer
+2026/06/08 03:50:11 INFO  : 
+Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                 3 / 3, 100%
+Elapsed time:        10.9s
+
+Syncing kestrel/dashboard...
+2026/06/08 03:50:48 NOTICE: or-budget-state.json: Can't follow symlink without -L/--copy-links
+2026/06/08 03:50:48 NOTICE: striker_health.json: Can't follow symlink without -L/--copy-links
+2026/06/08 03:50:48 NOTICE: kairos_monitor_state.json: Can't follow symlink without -L/--copy-links
+2026/06/08 03:50:53 INFO  : business-pulse.json: Copied (new)
+2026/06/08 03:50:53 INFO  : index.html: Copied (new)
+2026/06/08 03:50:53 INFO  : health.html: Copied (new)
+2026/06/08 03:50:53 INFO  : aggregated-health.json: Copied (new)
+2026/06/08 03:50:55 INFO  : pending.json: Copied (new)
+2026/06/08 03:50:55 INFO  : 
+Transferred:   	   25.325 KiB / 25.325 KiB, 100%, 4.219 KiB/s, ETA 0s
+Transferred:            5 / 5, 100%
+Elapsed time:        43.6s
+
+Syncing DuckDB signals...
+2026/06/08 03:51:56 INFO  : 
+Transferred:   	   16.625 MiB / 30.512 MiB, 54%, 259.845 KiB/s, ETA 54s
+Transferred:            0 / 1, 0%
+Elapsed time:       1m1.4s
+Transferring:
+ *                                signals.duckdb: 54% /30.512Mi, 259.845Ki/s, 54s
+
+2026/06/08 03:52:46 INFO  : signals.duckdb: Copied (new)
+2026/06/08 03:52:46 INFO  : 
+Transferred:   	   30.512 MiB / 30.512 MiB, 100%, 253.022 KiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:      1m50.8s
+
+2026/06/08 03:53:38 INFO  : signals-20260608-074716.duckdb.gz: Copied (new)
+2026/06/08 03:53:38 INFO  : 
+Transferred:   	    9.270 MiB / 9.270 MiB, 100%, 140.572 KiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:        50.8s
+
+Syncing OpenClaw workspace...
+2026/06/08 03:53:43 INFO  : HEARTBEAT.md: Copied (new)
+2026/06/08 03:53:43 INFO  : AGENTS.md: Copied (new)
+2026/06/08 03:53:43 INFO  : SOUL.md: Copied (new)
+2026/06/08 03:53:43 INFO  : IDENTITY.md: Copied (new)
+2026/06/08 03:53:45 INFO  : TOOLS.md: Copied (new)
+2026/06/08 03:53:45 INFO  : USER.md: Copied (new)
+2026/06/08 03:53:45 INFO  : chase-vid2.jpg: Copied (new)
+2026/06/08 03:53:45 INFO  : chase-video.jpg: Copied (new)
+2026/06/08 03:53:47 INFO  : hello world: Copied (new)
+2026/06/08 03:53:47 INFO  : kestrel-systems-overview.pdf: Copied (new)
+2026/06/08 03:53:47 INFO  : compound-status.png: Copied (new)
+2026/06/08 03:53:47 INFO  : compound-status-v2.png: Copied (new)
+2026/06/08 03:53:48 INFO  : kestrel_n8n_api_key.txt: Copied (new)
+2026/06/08 03:53:49 INFO  : skills-lock.json: Copied (new)
+2026/06/08 03:53:49 INFO  : system-architecture.pdf: Copied (new)
+2026/06/08 03:53:50 INFO  : system-architecture.png: Copied (new)
+2026/06/08 03:53:51 INFO  : memory/2026-06-06.md: Copied (new)
+2026/06/08 03:53:51 INFO  : memory/2026-06-07.md: Copied (new)
+2026/06/08 03:53:52 INFO  : memory/2026-06-08.md: Copied (new)
+2026/06/08 03:53:53 INFO  : .openclaw/workspace-state.json: Copied (new)
+2026/06/08 03:53:57 INFO  : .agents/skills/commit-history/EXAMPLES.md: Copied (new)
+2026/06/08 03:53:59 INFO  : .agents/skills/agentmemory-rest-api/REFERENCE.md: Copied (new)
+2026/06/08 03:53:59 INFO  : .agents/skills/agentmemory-rest-api/SKILL.md: Copied (new)
+2026/06/08 03:53:59 INFO  : .agents/skills/commit-history/SKILL.md: Copied (new)
+2026/06/08 03:54:01 INFO  : .agents/skills/agentmemory-hooks/REFERENCE.md: Copied (new)
+2026/06/08 03:54:02 INFO  : .agents/skills/agentmemory-hooks/SKILL.md: Copied (new)
+2026/06/08 03:54:02 INFO  : .agents/skills/agentmemory-mcp-tools/REFERENCE.md: Copied (new)
+2026/06/08 03:54:02 INFO  : .agents/skills/agentmemory-mcp-tools/SKILL.md: Copied (new)
+2026/06/08 03:54:03 INFO  : .agents/skills/commit-context/EXAMPLES.md: Copied (new)
+2026/06/08 03:54:03 INFO  : .agents/skills/commit-context/SKILL.md: Copied (new)
+2026/06/08 03:54:04 INFO  : .agents/skills/forget/EXAMPLES.md: Copied (new)
+2026/06/08 03:54:37 INFO  : .agents/skills/recall/EXAMPLES.md: Copied (new)
+2026/06/08 03:54:37 INFO  : .agents/skills/handoff/SKILL.md: Copied (new)
+2026/06/08 03:54:37 INFO  : .agents/skills/forget/SKILL.md: Copied (new)
+2026/06/08 03:54:37 INFO  : .agents/skills/handoff/EXAMPLES.md: Copied (new)
+2026/06/08 03:54:39 INFO  : 
+Transferred:   	  592.100 KiB / 608.151 KiB, 97%, 3.068 KiB/s, ETA 5s
+Transferred:           35 / 48, 73%
+Elapsed time:       1m1.6s
+Transferring:
+ *                .agents/skills/recall/SKILL.md:100% /1.920Ki, 982/s, 0s
+ *              .agents/skills/recap/EXAMPLES.md:100% /1.453Ki, 743/s, 0s
+ *                 .agents/skills/recap/SKILL.md:100% /1.993Ki, 1020/s, 0s
+ *           .agents/skills/remember/EXAMPLES.md:100% /1.715Ki, 0/s, -
+
+2026/06/08 03:54:39 INFO  : .agents/skills/recap/EXAMPLES.md: Copied (new)
+2026/06/08 03:54:39 INFO  : .agents/skills/recap/SKILL.md: Copied (new)
+2026/06/08 03:54:40 INFO  : .agents/skills/recall/SKILL.md: Copied (new)
+2026/06/08 03:54:41 INFO  : .agents/skills/remember/EXAMPLES.md: Copied (new)
+2026/06/08 03:54:44 INFO  : .agents/skills/session-history/EXAMPLES.md: Copied (new)
+2026/06/08 03:54:44 INFO  : .agents/skills/remember/SKILL.md: Copied (new)
+2026/06/08 03:54:46 INFO  : .agents/skills/session-history/SKILL.md: Copied (new)
+2026/06/08 03:54:47 INFO  : .agents/skills/write-agentmemory-skill/SKILL.md: Copied (new)
+2026/06/08 03:54:49 INFO  : .agents/skills/agentmemory-config/REFERENCE.md: Copied (new)
+2026/06/08 03:54:50 INFO  : .agents/skills/agentmemory-config/SKILL.md: Copied (new)
+2026/06/08 03:54:50 INFO  : .agents/skills/agentmemory-agents/REFERENCE.md: Copied (new)
+2026/06/08 03:54:50 INFO  : .agents/skills/agentmemory-architecture/SKILL.md: Copied (new)
+2026/06/08 03:54:50 INFO  : .agents/skills/agentmemory-agents/SKILL.md: Copied (new)
+2026/06/08 03:54:50 INFO  : 
+Transferred:   	  610.009 KiB / 610.009 KiB, 100%, 2.520 KiB/s, ETA 0s
+Transferred:           48 / 48, 100%
+Elapsed time:      1m12.6s
+
+Syncing memory files...
+2026/06/08 03:54:55 INFO  : 2026-06-07.md: Copied (new)
+2026/06/08 03:54:55 INFO  : 2026-06-06.md: Copied (new)
+2026/06/08 03:54:55 INFO  : 2026-06-08.md: Copied (new)
+2026/06/08 03:54:55 INFO  : 
+Transferred:   	   38.031 KiB / 38.031 KiB, 100%, 12.679 KiB/s, ETA 0s
+Transferred:            3 / 3, 100%
+Elapsed time:         5.1s
+
+Syncing memory bank...
+2026/06/08 03:55:02 INFO  : .memory-fed.json: Copied (new)
+2026/06/08 03:55:02 INFO  : SUMMARY.md: Copied (new)
+2026/06/08 03:55:02 INFO  : agent-memory-research.md: Copied (new)
+2026/06/08 03:55:02 INFO  : archive.db: Copied (new)
+2026/06/08 03:55:54 INFO  : knowledge/noise-gate-context.md: Copied (new)
+2026/06/08 03:55:54 INFO  : knowledge/noise-gate-events.jsonl: Copied (new)
+2026/06/08 03:55:55 INFO  : archive/hermes_proposition_20260606_135853.md: Copied (new)
+2026/06/08 03:55:55 INFO  : warm/openclaw.md: Copied (new)
+2026/06/08 03:55:55 INFO  : archive/hermes_proposition_20260606_141057.md: Copied (new)
+2026/06/08 03:55:56 INFO  : archive/hermes_proposition_20260606_141751.md: Copied (new)
+2026/06/08 03:55:56 INFO  : archive/hermes_proposition_20260606_141828_01_d9b8f70e9474.md: Copied (new)
+2026/06/08 03:55:57 INFO  : archive/hermes_proposition_20260606_141828_02_93312ed1f321.md: Copied (new)
+2026/06/08 03:55:57 INFO  : archive/hermes_proposition_20260606_141828_05_56444c81963c.md: Copied (new)
+2026/06/08 03:55:57 INFO  : archive/hermes_proposition_20260606_141828_06_9a6e64fdac23.md: Copied (new)
+2026/06/08 03:55:58 INFO  : archive/hermes_proposition_20260606_141828_07_2912bbcb73a6.md: Copied (new)
+2026/06/08 03:55:58 INFO  : archive/hermes_proposition_20260606_211501_01_81f459b3a13b.md: Copied (new)
+2026/06/08 03:55:58 INFO  : 
+Transferred:   	  316.020 KiB / 419.936 KiB, 75%, 2.261 KiB/s, ETA 45s
+Transferred:           16 / 330, 5%
+Elapsed time:       1m2.9s
+Transferring:
+ * archive/hermes_proposi…501_02_296b0c0f61d5.md:100% /1.102Ki, 1.100Ki/s, 0s
+ * archive/hermes_proposi…501_03_931586db1df1.md:100% /348, 347/s, 0s
+ * archive/hermes_proposi…501_04_e8a3ccd70abc.md:100% /197, 0/s, -
+ * archive/hermes_proposi…501_05_0b030e92e83d.md:  0% /242, 0/s, -
+
+2026/06/08 03:55:59 INFO  : archive/hermes_proposition_20260606_211501_02_296b0c0f61d5.md: Copied (new)
+2026/06/08 03:55:59 INFO  : archive/hermes_proposition_20260606_211501_03_931586db1df1.md: Copied (new)
+2026/06/08 03:55:59 INFO  : archive/hermes_proposition_20260606_211501_04_e8a3ccd70abc.md: Copied (new)
+2026/06/08 03:56:00 INFO  : archive/hermes_proposition_20260606_211501_05_0b030e92e83d.md: Copied (new)
+2026/06/08 03:56:00 INFO  : archive/hermes_proposition_20260606_211501_07_ea8d05b0337b.md: Copied (new)
+2026/06/08 03:56:00 INFO  : archive/hermes_proposition_20260606_211501_08_d9616f39ad28.md: Copied (new)
+2026/06/08 03:56:01 INFO  : archive/hermes_proposition_20260606_211501_09_bfe6ebefe0cd.md: Copied (new)
+2026/06/08 03:56:01 INFO  : archive/hermes_proposition_20260606_211501_10_1aded38aa4e3.md: Copied (new)
+2026/06/08 03:56:02 INFO  : archive/hermes_proposition_20260606_211501_11_b1d7d01463ec.md: Copied (new)
+2026/06/08 03:56:02 INFO  : archive/hermes_proposition_20260606_211501_12_9452a0f29f5c.md: Copied (new)
+2026/06/08 03:56:03 INFO  : archive/hermes_proposition_20260606_213001_13_542ad3c1bac8.md: Copied (new)
+2026/06/08 03:56:03 INFO  : archive/hermes_proposition_20260606_213001_14_6b13d26b16e0.md: Copied (new)
+2026/06/08 03:56:03 INFO  : archive/hermes_proposition_20260606_213001_15_c5034cfb4401.md: Copied (new)
+2026/06/08 03:56:04 INFO  : archive/hermes_proposition_20260606_213001_16_ea453f1dad5f.md: Copied (new)
+2026/06/08 03:56:04 INFO  : archive/hermes_proposition_20260606_214501_02_b57627ffec58.md: Copied (new)
+2026/06/08 03:56:41 INFO  : archive/hermes_proposition_20260606_214501_06_18c89584baa9.md: Copied (new)
+2026/06/08 03:56:42 INFO  : archive/hermes_proposition_20260606_220001_08_9e150cfc3f7a.md: Copied (new)
+2026/06/08 03:56:42 INFO  : archive/hermes_proposition_20260606_214501_05_fc08d19314af.md: Copied (new)
+2026/06/08 03:56:42 INFO  : archive/hermes_proposition_20260606_214501_07_d53ca6927fbf.md: Copied (new)
+2026/06/08 03:56:44 INFO  : archive/hermes_proposition_20260606_220442_09_dacc2f368a56.md: Copied (new)
+2026/06/08 03:56:44 INFO  : archive/hermes_proposition_20260606_221501_03_69e9352b5255.md: Copied (new)
+2026/06/08 03:56:44 INFO  : archive/hermes_proposition_20260606_221501_04_9cb21e76bed5.md: Copied (new)
+2026/06/08 03:56:44 INFO  : archive/hermes_proposition_20260606_221501_02_aa4a92b1e7b3.md: Copied (new)
+2026/06/08 03:56:46 INFO  : archive/hermes_proposition_20260606_221501_05_0e76d40306a3.md: Copied (new)
+2026/06/08 03:56:46 INFO  : archive/hermes_proposition_20260606_221501_06_ff53e3905ed1.md: Copied (new)
+2026/06/08 03:56:46 INFO  : archive/hermes_proposition_20260606_221501_07_489b14b7365f.md: Copied (new)
+2026/06/08 03:56:46 INFO  : archive/hermes_proposition_20260606_224501_08_23e24eb1e30d.md: Copied (new)
+2026/06/08 03:56:47 INFO  : archive/hermes_proposition_20260606_224501_10_d57af57735d4.md: Copied (new)
+2026/06/08 03:56:47 INFO  : archive/hermes_proposition_20260606_224501_09_0449d54d06a7.md: Copied (new)
+2026/06/08 03:56:49 INFO  : archive/hermes_proposition_20260606_224501_12_8f61d58d58b0.md: Copied (new)
+2026/06/08 03:56:49 INFO  : archive/hermes_proposition_20260606_224501_11_d5c06e46dbc2.md: Copied (new)
+2026/06/08 03:56:49 INFO  : archive/hermes_proposition_20260606_224501_14_96807409c28a.md: Copied (new)
+2026/06/08 03:56:49 INFO  : archive/hermes_proposition_20260606_224501_13_f66cbff38699.md: Copied (new)
+2026/06/08 03:56:52 INFO  : archive/hermes_proposition_20260606_231501_01_1b6d83f76489.md: Copied (new)
+2026/06/08 03:56:52 INFO  : archive/hermes_proposition_20260606_224501_15_af1320369865.md: Copied (new)
+2026/06/08 03:56:52 INFO  : archive/hermes_proposition_20260606_231501_02_e66a15497b50.md: Copied (new)
+2026/06/08 03:56:52 INFO  : archive/hermes_proposition_20260606_231501_04_20f860bf1678.md: Copied (new)
+2026/06/08 03:56:54 INFO  : archive/hermes_proposition_20260606_231501_07_9fd9184556e6.md: Copied (new)
+2026/06/08 03:56:54 INFO  : archive/hermes_proposition_20260606_231501_19_f83247a7fbd4.md: Copied (new)
+2026/06/08 03:56:55 INFO  : archive/hermes_proposition_20260606_231501_22_0fb2d47618dc.md: Copied (new)
+2026/06/08 03:56:55 INFO  : archive/hermes_proposition_20260606_231501_23_42438616aee1.md: Copied (new)
+2026/06/08 03:56:56 INFO  : archive/hermes_proposition_20260606_231501_25_c41e710a8d2a.md: Copied (new)
+2026/06/08 03:56:56 INFO  : archive/hermes_proposition_20260606_231501_24_8315d89e2007.md: Copied (new)
+2026/06/08 03:56:57 INFO  : archive/hermes_proposition_20260606_234501_01_3cad0ba63ce7.md: Copied (new)
+2026/06/08 03:56:57 INFO  : archive/hermes_proposition_20260606_234501_02_87ab905025e6.md: Copied (new)
+2026/06/08 03:56:57 INFO  : archive/hermes_proposition_20260606_234501_03_950d8862cf27.md: Copied (new)
+2026/06/08 03:56:58 INFO  : archive/hermes_proposition_20260606_234501_04_8d36bccfcb6c.md: Copied (new)
+2026/06/08 03:56:58 INFO  : 
+Transferred:   	  347.404 KiB / 423.361 KiB, 82%, 1.134 KiB/s, ETA 1m6s
+Transferred:           63 / 330, 19%
+Elapsed time:       2m2.9s
+Transferring:
+ * archive/hermes_proposi…501_05_1fb798ecb345.md:100% /426, 425/s, 0s
+ * archive/hermes_proposi…942_01_e15947ce9841.md:100% /264, 263/s, 0s
+ * archive/hermes_proposi…942_20_3e9da3ffb81f.md:100% /177, 176/s, 0s
+ * archive/hermes_proposi…942_21_2d1313d4b319.md:100% /278, 0/s, -
+
+2026/06/08 03:56:58 INFO  : archive/hermes_proposition_20260606_234501_05_1fb798ecb345.md: Copied (new)
+2026/06/08 03:56:59 INFO  : archive/hermes_proposition_20260606_234942_01_e15947ce9841.md: Copied (new)
+2026/06/08 03:56:59 INFO  : archive/hermes_proposition_20260606_234942_20_3e9da3ffb81f.md: Copied (new)
+2026/06/08 03:56:59 INFO  : archive/hermes_proposition_20260606_234942_21_2d1313d4b319.md: Copied (new)
+2026/06/08 03:57:00 INFO  : archive/hermes_proposition_20260606_234942_23_e15947ce9841.md: Copied (new)
+2026/06/08 03:57:00 INFO  : archive/hermes_proposition_20260606_234942_24_2d1313d4b319.md: Copied (new)
+2026/06/08 03:57:00 INFO  : archive/hermes_proposition_20260607_003001_21_1303178a0b10.md: Copied (new)
+2026/06/08 03:57:01 INFO  : archive/hermes_proposition_20260607_003001_22_ef3605ca4f34.md: Copied (new)
+2026/06/08 03:57:02 INFO  : archive/hermes_proposition_20260607_010001_23_ae40cd239c87.md: Copied (new)
+2026/06/08 03:57:02 INFO  : archive/hermes_proposition_20260607_010001_24_964ff2fe3779.md: Copied (new)
+2026/06/08 03:57:40 INFO  : archive/hermes_proposition_20260607_010001_27_949fd7391d36.md: Copied (new)
+2026/06/08 03:57:41 INFO  : archive/hermes_proposition_20260607_010001_25_908b460d2fe7.md: Copied (new)
+2026/06/08 03:57:41 INFO  : archive/hermes_proposition_20260607_010001_22_f9f9e799a31d.md: Copied (new)
+2026/06/08 03:57:41 INFO  : archive/hermes_proposition_20260607_010001_26_94ec7e2d67ab.md: Copied (new)
+2026/06/08 03:57:42 INFO  : archive/hermes_proposition_20260607_013001_28_d06c167f6382.md: Copied (new)
+2026/06/08 03:57:42 INFO  : archive/hermes_proposition_20260607_013001_29_2ee11712a314.md: Copied (new)
+2026/06/08 03:57:42 INFO  : archive/hermes_proposition_20260607_010001_28_b0baf8dce02f.md: Copied (new)
+2026/06/08 03:57:42 INFO  : archive/hermes_proposition_20260607_013001_30_dfc65309bb34.md: Copied (new)
+2026/06/08 03:57:44 INFO  : archive/hermes_proposition_20260607_023544_33_0dcbe5b8a6cf.md: Copied (new)
+2026/06/08 03:57:44 INFO  : archive/hermes_proposition_20260607_013001_31_e80dc32b7f85.md: Copied (new)
+2026/06/08 03:57:45 INFO  : archive/hermes_proposition_20260607_140403_01_7871e06cbf8a.md: Copied (new)
+2026/06/08 03:57:47 INFO  : archive/hermes_proposition_20260607_140403_03_e2ff41accfe5.md: Copied (new)
+2026/06/08 03:57:47 INFO  : archive/hermes_proposition_20260607_140403_02_852466906399.md: Copied (new)
+2026/06/08 03:57:47 INFO  : archive/hermes_proposition_20260607_020001_32_033a6cfe1374.md: Copied (new)
+2026/06/08 03:57:48 INFO  : archive/hermes_proposition_20260607_141903_01_921af3b54ea3.md: Copied (new)
+2026/06/08 03:57:49 INFO  : archive/hermes_proposition_20260607_141903_03_7b9b134d1d9b.md: Copied (new)
+2026/06/08 03:57:49 INFO  : archive/hermes_proposition_20260607_141903_02_30d1301478c7.md: Copied (new)
+2026/06/08 03:57:49 INFO  : archive/hermes_proposition_20260607_141903_04_65c386e1517a.md: Copied (new)
+2026/06/08 03:57:49 INFO  : archive/hermes_proposition_20260607_141903_05_664fc314ebdc.md: Copied (new)
+2026/06/08 03:57:50 INFO  : archive/hermes_proposition_20260607_141903_06_9b6c566c4fea.md: Copied (new)
+2026/06/08 03:57:50 INFO  : archive/hermes_proposition_20260607_141903_07_482dca91f2a1.md: Copied (new)
+2026/06/08 03:57:51 INFO  : archive/hermes_proposition_20260607_141903_08_88d004f5e4d4.md: Copied (new)
+2026/06/08 03:57:51 INFO  : archive/hermes_proposition_20260607_141903_09_d3c3cd4e079e.md: Copied (new)
+2026/06/08 03:57:52 INFO  : archive/hermes_proposition_20260607_143001_01_c34f77598150.md: Copied (new)
+2026/06/08 03:57:52 INFO  : archive/hermes_proposition_20260607_143001_02_059b77c4a6ff.md: Copied (new)
+2026/06/08 03:57:53 INFO  : archive/hermes_proposition_20260607_143001_03_16877dfe24a8.md: Copied (new)
+2026/06/08 03:57:54 INFO  : archive/hermes_proposition_20260607_143001_04_1d782b6cc9d3.md: Copied (new)
+2026/06/08 03:57:54 INFO  : archive/hermes_proposition_20260607_143001_05_7c9ab29f970a.md: Copied (new)
+2026/06/08 03:57:54 INFO  : archive/hermes_proposition_20260607_143001_06_613faeca19b9.md: Copied (new)
+2026/06/08 03:57:55 INFO  : archive/hermes_proposition_20260607_143001_07_97eb422744fc.md: Copied (new)
+2026/06/08 03:57:55 INFO  : archive/hermes_proposition_20260607_143001_08_1fc90c87a04e.md: Copied (new)
+2026/06/08 03:57:55 INFO  : archive/hermes_proposition_20260607_145003_03_5badde5afd68.md: Copied (new)
+2026/06/08 03:57:56 INFO  : archive/hermes_proposition_20260607_145003_04_7e583037549a.md: Copied (new)
+2026/06/08 03:57:57 INFO  : archive/hermes_proposition_20260607_173001_02_ab6fafebcd0e.md: Copied (new)
+2026/06/08 03:57:57 INFO  : archive/hermes_proposition_20260607_173001_04_de0531cbb56a.md: Copied (new)
+2026/06/08 03:57:57 INFO  : archive/hermes_proposition_20260607_173001_03_58c69a4e2a8c.md: Copied (new)
+2026/06/08 03:57:58 INFO  : archive/hermes_proposition_20260607_175504_10_6c19d2411ebb.md: Copied (new)
+2026/06/08 03:57:58 INFO  : archive/hermes_proposition_20260607_175504_11_f5366cf67de0.md: Copied (new)
+2026/06/08 03:57:58 INFO  : 
+Transferred:   	  366.756 KiB / 427.620 KiB, 86%, 522 B/s, ETA 1m59s
+Transferred:          111 / 330, 34%
+Elapsed time:       3m2.9s
+Transferring:
+ * archive/hermes_proposi…504_12_2f2c17f79a27.md:100% /161, 160/s, 0s
+ * archive/hermes_proposi…504_13_aaca55403491.md:100% /273, 272/s, 0s
+ * archive/hermes_proposi…504_14_b5b49cd9cdd0.md:100% /195, 0/s, -
+ * archive/hermes_proposi…104_15_0993dfbab08b.md:  0% /299, 0/s, -
+
+2026/06/08 03:57:59 INFO  : archive/hermes_proposition_20260607_175504_13_aaca55403491.md: Copied (new)
+2026/06/08 03:57:59 INFO  : archive/hermes_proposition_20260607_175504_12_2f2c17f79a27.md: Copied (new)
+2026/06/08 03:57:59 INFO  : archive/hermes_proposition_20260607_175504_14_b5b49cd9cdd0.md: Copied (new)
+2026/06/08 03:58:00 INFO  : archive/hermes_proposition_20260607_181104_15_0993dfbab08b.md: Copied (new)
+2026/06/08 03:58:00 INFO  : archive/hermes_proposition_20260607_181104_16_786edaf2706b.md: Copied (new)
+2026/06/08 03:58:00 INFO  : archive/hermes_proposition_20260607_181104_17_27b9cdada622.md: Copied (new)
+2026/06/08 03:58:01 INFO  : archive/hermes_proposition_20260607_181104_18_667f9c1bacf6.md: Copied (new)
+2026/06/08 03:58:01 INFO  : archive/hermes_proposition_20260607_181104_19_ce4229357b62.md: Copied (new)
+2026/06/08 03:58:02 INFO  : archive/hermes_proposition_20260607_181104_20_c156d34fd346.md: Copied (new)
+2026/06/08 03:58:02 INFO  : archive/hermes_proposition_20260607_181104_21_a1bfee49aac9.md: Copied (new)
+2026/06/08 03:58:03 INFO  : archive/hermes_proposition_20260607_181104_22_7f4911918a32.md: Copied (new)
+2026/06/08 03:58:03 INFO  : archive/hermes_proposition_20260607_181104_23_2a914d09fc92.md: Copied (new)
+2026/06/08 03:58:03 INFO  : archive/hermes_proposition_20260607_181104_24_eef3b0eb3e28.md: Copied (new)
+2026/06/08 03:58:04 INFO  : archive/hermes_proposition_20260607_181104_25_8bfa2b5b9038.md: Copied (new)
+2026/06/08 03:58:04 INFO  : archive/hermes_proposition_20260607_181104_26_d68f0f556029.md: Copied (new)
+2026/06/08 03:58:04 INFO  : archive/hermes_proposition_20260607_181104_27_d2a54ed449a5.md: Copied (new)
+2026/06/08 03:58:05 INFO  : archive/hermes_proposition_20260607_181104_28_98846d964c2f.md: Copied (new)
+2026/06/08 03:58:05 INFO  : archive/hermes_proposition_20260607_181104_29_775478b06d83.md: Copied (new)
+2026/06/08 03:58:06 INFO  : archive/hermes_proposition_20260607_181104_30_bc64f5d949e3.md: Copied (new)
+2026/06/08 03:58:30 INFO  : archive/hermes_proposition_20260607_181104_31_30b9067c0c97.md: Copied (new)
+2026/06/08 03:58:31 INFO  : archive/hermes_proposition_20260607_181104_34_465e7969fce6.md: Copied (new)
+2026/06/08 03:58:31 INFO  : archive/hermes_proposition_20260607_181104_33_c6a2ad8c24d3.md: Copied (new)
+2026/06/08 03:58:31 INFO  : archive/hermes_proposition_20260607_181104_32_8fcccae8b8ce.md: Copied (new)
+2026/06/08 03:58:32 INFO  : archive/hermes_proposition_20260607_181104_35_64e74b22461e.md: Copied (new)
+2026/06/08 03:58:34 INFO  : archive/hermes_proposition_20260607_181104_36_f6c7898951a7.md: Copied (new)
+2026/06/08 03:58:34 INFO  : archive/hermes_proposition_20260607_181104_38_43bb0bfdde9d.md: Copied (new)
+2026/06/08 03:58:34 INFO  : archive/hermes_proposition_20260607_181104_37_ddd438bd8292.md: Copied (new)
+2026/06/08 03:58:34 INFO  : archive/hermes_proposition_20260607_181104_39_64c8312c64ea.md: Copied (new)
+2026/06/08 03:58:35 INFO  : archive/hermes_proposition_20260607_181104_40_140f78e2ed52.md: Copied (new)
+2026/06/08 03:58:35 INFO  : archive/hermes_proposition_20260607_181104_41_c37e4478660c.md: Copied (new)
+2026/06/08 03:58:37 INFO  : archive/hermes_proposition_20260607_181104_43_b34180640c51.md: Copied (new)
+2026/06/08 03:58:38 INFO  : archive/hermes_proposition_20260607_181104_44_0311f7998b8e.md: Copied (new)
+2026/06/08 03:58:40 INFO  : archive/hermes_proposition_20260607_181104_45_8db910974d9b.md: Copied (new)
+2026/06/08 03:58:40 INFO  : archive/hermes_proposition_20260607_181104_46_4330e1e14e28.md: Copied (new)
+2026/06/08 03:58:40 INFO  : archive/hermes_proposition_20260607_181104_42_dcd5f6f8ab02.md: Copied (new)
+2026/06/08 03:58:40 INFO  : archive/hermes_proposition_20260607_181104_47_f3e068beb367.md: Copied (new)
+2026/06/08 03:58:43 INFO  : archive/hermes_proposition_20260607_181104_49_fc7e0bde7b86.md: Copied (new)
+2026/06/08 03:58:43 INFO  : archive/hermes_proposition_20260607_181104_51_abad5d60a926.md: Copied (new)
+2026/06/08 03:58:43 INFO  : archive/hermes_proposition_20260607_181104_50_0fa1272470d6.md: Copied (new)
+2026/06/08 03:58:43 INFO  : archive/hermes_proposition_20260607_181104_48_4dfc3861ef87.md: Copied (new)
+2026/06/08 03:58:46 INFO  : archive/hermes_proposition_20260607_181104_53_6f1d75047c07.md: Copied (new)
+2026/06/08 03:58:47 INFO  : archive/hermes_proposition_20260607_181104_55_58ab5ee43344.md: Copied (new)
+2026/06/08 03:58:47 INFO  : archive/hermes_proposition_20260607_181104_54_3df6152ff189.md: Copied (new)
+2026/06/08 03:58:47 INFO  : archive/hermes_proposition_20260607_181104_52_58924aa9bdec.md: Copied (new)
+2026/06/08 03:58:48 INFO  : archive/hermes_proposition_20260607_181104_56_7fdbb15ad4fa.md: Copied (new)
+2026/06/08 03:58:50 INFO  : archive/hermes_proposition_20260607_181104_57_bdc7d3c21844.md: Copied (new)
+2026/06/08 03:58:50 INFO  : archive/hermes_proposition_20260607_181104_58_71394aee7470.md: Copied (new)
+2026/06/08 03:58:50 INFO  : archive/hermes_proposition_20260607_181104_60_3d5bff277863.md: Copied (new)
+2026/06/08 03:58:50 INFO  : archive/hermes_proposition_20260607_181104_59_324ba378a2af.md: Copied (new)
+2026/06/08 03:58:52 INFO  : archive/hermes_proposition_20260607_181104_61_042b4c09b056.md: Copied (new)
+2026/06/08 03:58:52 INFO  : archive/hermes_proposition_20260607_181104_62_17b5490b327b.md: Copied (new)
+2026/06/08 03:58:52 INFO  : archive/hermes_proposition_20260607_181104_63_b891963fb006.md: Copied (new)
+2026/06/08 03:58:52 INFO  : archive/hermes_proposition_20260607_181104_64_7cd1deeca57d.md: Copied (new)
+2026/06/08 03:58:53 INFO  : archive/hermes_proposition_20260607_181104_65_11dc066d993a.md: Copied (new)
+2026/06/08 03:58:54 INFO  : archive/hermes_proposition_20260607_181104_66_3bc61a29094b.md: Copied (new)
+2026/06/08 03:58:54 INFO  : archive/hermes_proposition_20260607_181104_67_6f3e4b7792d4.md: Copied (new)
+2026/06/08 03:58:54 INFO  : archive/hermes_proposition_20260607_181104_68_6397f017b08b.md: Copied (new)
+2026/06/08 03:58:56 INFO  : archive/hermes_proposition_20260607_181104_70_7ccbbb770efa.md: Copied (new)
+2026/06/08 03:58:57 INFO  : archive/hermes_proposition_20260607_181104_71_80c4ce51e5e7.md: Copied (new)
+2026/06/08 03:58:57 INFO  : archive/hermes_proposition_20260607_181104_73_e2d2ac1ae60c.md: Copied (new)
+2026/06/08 03:58:57 INFO  : archive/hermes_proposition_20260607_181104_72_2206c2c28465.md: Copied (new)
+2026/06/08 03:58:58 INFO  : archive/hermes_proposition_20260607_181104_74_4c3029828076.md: Copied (new)
+2026/06/08 03:58:58 INFO  : archive/hermes_proposition_20260607_181104_75_e79dd4fcbd13.md: Copied (new)
+2026/06/08 03:58:58 INFO  : archive/hermes_proposition_20260607_181104_77_485a72e19f97.md: Copied (new)
+2026/06/08 03:58:58 INFO  : archive/hermes_proposition_20260607_181104_76_84bcf15865f8.md: Copied (new)
+2026/06/08 03:58:58 INFO  : 
+Transferred:   	  392.442 KiB / 431.334 KiB, 91%, 557 B/s, ETA 1m11s
+Transferred:          176 / 330, 53%
+Elapsed time:       4m2.9s
+Transferring:
+ * archive/hermes_proposi…104_78_ba57edb2fb9c.md:100% /378, 0/s, -
+ * archive/hermes_proposi…104_79_49c0fc034222.md:100% /290, 0/s, -
+ * archive/hermes_proposi…104_80_b6632be0b131.md:100% /354, 0/s, -
+ * archive/hermes_proposi…104_81_248e36da82c2.md:  0% /358, 0/s, -
+
+2026/06/08 03:59:00 INFO  : archive/hermes_proposition_20260607_181104_79_49c0fc034222.md: Copied (new)
+2026/06/08 03:59:00 INFO  : archive/hermes_proposition_20260607_181104_78_ba57edb2fb9c.md: Copied (new)
+2026/06/08 03:59:00 INFO  : archive/hermes_proposition_20260607_181104_80_b6632be0b131.md: Copied (new)
+2026/06/08 03:59:00 INFO  : archive/hermes_proposition_20260607_181104_81_248e36da82c2.md: Copied (new)
+2026/06/08 03:59:01 INFO  : archive/hermes_proposition_20260607_181104_82_6523632555f0.md: Copied (new)
+2026/06/08 03:59:01 INFO  : archive/hermes_proposition_20260607_181104_83_fe1e86f331a8.md: Copied (new)
+2026/06/08 03:59:01 INFO  : archive/hermes_proposition_20260607_181104_84_87dd078c7985.md: Copied (new)
+2026/06/08 03:59:02 INFO  : archive/hermes_proposition_20260607_182704_89_9e48a0d58ae2.md: Copied (new)
+2026/06/08 03:59:40 INFO  : archive/hermes_proposition_20260607_185904_03_96b868eae2cc.md: Copied (new)
+2026/06/08 03:59:41 INFO  : archive/hermes_proposition_20260607_182704_91_b031c05d9927.md: Copied (new)
+2026/06/08 03:59:41 INFO  : archive/hermes_proposition_20260607_185904_04_6c7b10194ca2.md: Copied (new)
+2026/06/08 03:59:41 INFO  : archive/hermes_proposition_20260607_182704_90_4af1303c304b.md: Copied (new)
+2026/06/08 03:59:42 INFO  : archive/hermes_proposition_20260607_185904_05_d980a4c67da2.md: Copied (new)
+2026/06/08 03:59:43 INFO  : archive/hermes_proposition_20260607_185904_07_40e02e600257.md: Copied (new)
+2026/06/08 03:59:43 INFO  : archive/hermes_proposition_20260607_185904_06_fd49dd70abc2.md: Copied (new)
+2026/06/08 03:59:43 INFO  : archive/hermes_proposition_20260607_185904_08_9ddde7ffeca2.md: Copied (new)
+2026/06/08 03:59:44 INFO  : archive/hermes_proposition_20260607_185904_100_f685970b994b.md: Copied (new)
+2026/06/08 03:59:46 INFO  : archive/hermes_proposition_20260607_185904_101_8fa3459b0e8e.md: Copied (new)
+2026/06/08 03:59:46 INFO  : archive/hermes_proposition_20260607_185904_98_95d3c6ac9baa.md: Copied (new)
+2026/06/08 03:59:47 INFO  : archive/hermes_proposition_20260607_191504_01_b767e504fa9a.md: Copied (new)
+2026/06/08 03:59:47 INFO  : archive/hermes_proposition_20260607_191504_02_3316b3fa3af1.md: Copied (new)
+2026/06/08 03:59:48 INFO  : archive/hermes_proposition_20260607_191504_03_f1f54b543bf0.md: Copied (new)
+2026/06/08 03:59:48 INFO  : archive/hermes_proposition_20260607_191504_04_7e778edd02b2.md: Copied (new)
+2026/06/08 03:59:48 INFO  : archive/hermes_proposition_20260607_191504_06_8f0e956c1d93.md: Copied (new)
+2026/06/08 03:59:48 INFO  : archive/hermes_proposition_20260607_191504_05_3e35aa378c08.md: Copied (new)
+2026/06/08 03:59:49 INFO  : archive/hermes_proposition_20260607_191504_07_2c31f9155325.md: Copied (new)
+2026/06/08 03:59:49 INFO  : archive/hermes_proposition_20260607_191504_08_3f218e70aa19.md: Copied (new)
+2026/06/08 03:59:50 INFO  : archive/hermes_proposition_20260607_191504_10_4c82e85f5e8a.md: Copied (new)
+2026/06/08 03:59:50 INFO  : archive/hermes_proposition_20260607_191504_09_7d749e4d7b7d.md: Copied (new)
+2026/06/08 03:59:52 INFO  : archive/hermes_proposition_20260607_191504_15_d7b6ed8ba5e5.md: Copied (new)
+2026/06/08 03:59:53 INFO  : archive/hermes_proposition_20260607_191504_11_195f43059451.md: Copied (new)
+2026/06/08 03:59:53 INFO  : archive/hermes_proposition_20260607_191504_20_a057b6ec9eda.md: Copied (new)
+2026/06/08 03:59:53 INFO  : archive/hermes_proposition_20260607_191504_16_7628fcdba107.md: Copied (new)
+2026/06/08 03:59:54 INFO  : archive/hermes_proposition_20260607_191504_21_bb4219b8ba5f.md: Copied (new)
+2026/06/08 03:59:54 INFO  : archive/hermes_proposition_20260607_193001_119_e5ad0b4193e8.md: Copied (new)
+2026/06/08 03:59:54 INFO  : archive/hermes_proposition_20260607_193001_120_26fbc823914c.md: Copied (new)
+2026/06/08 03:59:54 INFO  : archive/hermes_proposition_20260607_191504_22_ba078e28581b.md: Copied (new)
+2026/06/08 03:59:55 INFO  : archive/hermes_proposition_20260607_194704_123_8038e990b0d2.md: Copied (new)
+2026/06/08 03:59:56 INFO  : archive/hermes_proposition_20260607_194704_124_2a50993c9d6f.md: Copied (new)
+2026/06/08 03:59:56 INFO  : archive/hermes_proposition_20260607_200001_128_a14fb855a937.md: Copied (new)
+2026/06/08 03:59:56 INFO  : archive/hermes_proposition_20260607_200001_132_d52cd6bf66bf.md: Copied (new)
+2026/06/08 03:59:57 INFO  : archive/hermes_proposition_20260607_200304_136_160e3f518e98.md: Copied (new)
+2026/06/08 03:59:57 INFO  : archive/hermes_proposition_20260607_203001_140_f822cb8f6da1.md: Copied (new)
+2026/06/08 03:59:57 INFO  : archive/hermes_proposition_20260607_203404_144_80dd6f3efac4.md: Copied (new)
+2026/06/08 03:59:58 INFO  : archive/hermes_proposition_20260607_210001_147_a8c65de1465a.md: Copied (new)
+2026/06/08 03:59:58 INFO  : 
+Transferred:   	  405.974 KiB / 432.840 KiB, 94%, 419 B/s, ETA 1m5s
+Transferred:          221 / 330, 67%
+Elapsed time:       5m2.9s
+Transferring:
+ * archive/hermes_proposi…01_148_7db58aa9935f.md:100% /197, 196/s, 0s
+ * archive/hermes_proposi…05_152_e2b986fb0043.md:100% /197, 196/s, 0s
+ * archive/hermes_proposi…05_156_539206add4cf.md:100% /197, 196/s, 0s
+ * archive/hermes_proposi…05_158_f1d841220813.md:100% /177, 0/s, -
+
+2026/06/08 03:59:58 INFO  : archive/hermes_proposition_20260607_212105_156_539206add4cf.md: Copied (new)
+2026/06/08 03:59:58 INFO  : archive/hermes_proposition_20260607_210505_152_e2b986fb0043.md: Copied (new)
+2026/06/08 03:59:59 INFO  : archive/hermes_proposition_20260607_210001_148_7db58aa9935f.md: Copied (new)
+2026/06/08 03:59:59 INFO  : archive/hermes_proposition_20260607_213605_158_f1d841220813.md: Copied (new)
+2026/06/08 04:00:00 INFO  : archive/hermes_proposition_20260607_215205_162_c3d05b8cb64d.md: Copied (new)
+2026/06/08 04:00:00 INFO  : archive/hermes_proposition_20260607_213605_160_360aabddd6c2.md: Copied (new)
+2026/06/08 04:00:00 INFO  : archive/hermes_proposition_20260607_215205_164_0df275d71920.md: Copied (new)
+2026/06/08 04:00:01 INFO  : archive/hermes_proposition_20260607_220805_166_ac3f526375b7.md: Copied (new)
+2026/06/08 04:00:01 INFO  : archive/hermes_proposition_20260607_220805_168_e7bda33afbc3.md: Copied (new)
+2026/06/08 04:00:02 INFO  : archive/hermes_proposition_20260607_222405_170_c103c600522d.md: Copied (new)
+2026/06/08 04:00:02 INFO  : archive/hermes_proposition_20260607_222405_172_6ed3be2cf417.md: Copied (new)
+2026/06/08 04:00:02 INFO  : archive/hermes_proposition_20260607_224005_174_03593384fdec.md: Copied (new)
+2026/06/08 04:00:03 INFO  : archive/hermes_proposition_20260607_225605_178_25fcdb86c711.md: Copied (new)
+2026/06/08 04:00:03 INFO  : archive/hermes_proposition_20260607_224005_176_a226084be844.md: Copied (new)
+2026/06/08 04:00:03 INFO  : archive/hermes_proposition_20260607_225605_180_4ffa87d43d29.md: Copied (new)
+2026/06/08 04:00:04 INFO  : archive/hermes_proposition_20260607_231205_01_81fea5e0e666.md: Copied (new)
+2026/06/08 04:00:04 INFO  : archive/hermes_proposition_20260607_231205_183_8d308c7e4699.md: Copied (new)
+2026/06/08 04:00:26 INFO  : archive/hermes_proposition_20260607_232805_189_98568d7de042.md: Copied (new)
+2026/06/08 04:00:28 INFO  : archive/hermes_proposition_20260607_232805_187_4285bfc1dc88.md: Copied (new)
+2026/06/08 04:00:30 INFO  : archive/hermes_proposition_20260607_232805_188_78c928b72b15.md: Copied (new)
+2026/06/08 04:00:30 INFO  : archive/hermes_proposition_20260607_231205_185_f2c5c2000e7a.md: Copied (new)
+2026/06/08 04:00:30 INFO  : archive/hermes_proposition_20260607_234305_191_da63dde67986.md: Copied (new)
+2026/06/08 04:00:30 INFO  : archive/hermes_proposition_20260607_234305_193_90c81140e838.md: Copied (new)
+2026/06/08 04:00:32 INFO  : archive/hermes_proposition_20260607_235805_196_c0d74a524a83.md: Copied (new)
+2026/06/08 04:00:32 INFO  : archive/hermes_proposition_20260607_235805_194_ca4f63d513f6.md: Copied (new)
+2026/06/08 04:00:32 INFO  : archive/hermes_proposition_20260607_235805_197_b89a6589b5bc.md: Copied (new)
+2026/06/08 04:00:32 INFO  : archive/hermes_proposition_20260608_001406_215_db13d662ed17.md: Copied (new)
+2026/06/08 04:00:35 INFO  : archive/hermes_proposition_20260608_001406_35_62fe179489fa.md: Copied (new)
+2026/06/08 04:00:35 INFO  : archive/hermes_proposition_20260608_001406_217_d0bd1b09c2fe.md: Copied (new)
+2026/06/08 04:00:35 INFO  : archive/hermes_proposition_20260608_001406_34_32e43845a97b.md: Copied (new)
+2026/06/08 04:00:35 INFO  : archive/hermes_proposition_20260608_001406_36_2e3cd8283b1b.md: Copied (new)
+2026/06/08 04:00:36 INFO  : archive/hermes_proposition_20260608_001406_38_0912507cd150.md: Copied (new)
+2026/06/08 04:00:36 INFO  : archive/hermes_proposition_20260608_001406_39_2dee6191f6e6.md: Copied (new)
+2026/06/08 04:00:36 INFO  : archive/hermes_proposition_20260608_001406_37_0de31f1a26c7.md: Copied (new)
+2026/06/08 04:00:37 INFO  : archive/hermes_proposition_20260608_001406_40_779520fde3a4.md: Copied (new)
+2026/06/08 04:00:39 INFO  : archive/hermes_proposition_20260608_001406_43_d92492c360d9.md: Copied (new)
+2026/06/08 04:00:40 INFO  : archive/hermes_proposition_20260608_001406_44_be3211a07723.md: Copied (new)
+2026/06/08 04:00:40 INFO  : archive/hermes_proposition_20260608_001406_41_0d05be7c8cdf.md: Copied (new)
+2026/06/08 04:00:40 INFO  : archive/hermes_proposition_20260608_001406_42_7f8f1f9969ad.md: Copied (new)
+2026/06/08 04:00:41 INFO  : archive/hermes_proposition_20260608_001406_46_6c7aca98ec90.md: Copied (new)
+2026/06/08 04:00:41 INFO  : archive/hermes_proposition_20260608_001406_45_6139bad731de.md: Copied (new)
+2026/06/08 04:00:41 INFO  : archive/hermes_proposition_20260608_001406_47_44936ba6eead.md: Copied (new)
+2026/06/08 04:00:41 INFO  : archive/hermes_proposition_20260608_001406_48_29b9e722bae0.md: Copied (new)
+2026/06/08 04:00:43 INFO  : archive/hermes_proposition_20260608_001406_49_ffd2acfd8bcb.md: Copied (new)
+2026/06/08 04:00:43 INFO  : archive/hermes_proposition_20260608_001406_50_f667e432a671.md: Copied (new)
+2026/06/08 04:00:43 INFO  : archive/hermes_proposition_20260608_001406_52_d594666df348.md: Copied (new)
+2026/06/08 04:00:43 INFO  : archive/hermes_proposition_20260608_001406_51_866110e29327.md: Copied (new)
+2026/06/08 04:00:44 INFO  : archive/hermes_proposition_20260608_003001_15_18f121f29078.md: Copied (new)
+2026/06/08 04:00:44 INFO  : archive/hermes_proposition_20260608_003001_14_ce9e451eb597.md: Copied (new)
+2026/06/08 04:00:44 INFO  : archive/hermes_proposition_20260608_003001_13_a0ca018d9c8a.md: Copied (new)
+2026/06/08 04:00:44 INFO  : archive/hermes_proposition_20260608_003001_16_987a84503567.md: Copied (new)
+2026/06/08 04:00:45 INFO  : archive/hermes_proposition_20260608_004518_11_717894e80b5f.md: Copied (new)
+2026/06/08 04:00:45 INFO  : archive/hermes_proposition_20260608_004518_09_0bf64a64f7f2.md: Copied (new)
+2026/06/08 04:00:45 INFO  : archive/hermes_proposition_20260608_004518_12_4976e66a2dd3.md: Copied (new)
+2026/06/08 04:00:46 INFO  : archive/hermes_proposition_20260608_010001_09_39caddc167f2.md: Copied (new)
+2026/06/08 04:00:47 INFO  : archive/hermes_proposition_20260608_010001_12_fab986f95d80.md: Copied (new)
+2026/06/08 04:00:47 INFO  : archive/hermes_proposition_20260608_010025_14_5b6a7373e577.md: Copied (new)
+2026/06/08 04:00:49 INFO  : archive/hermes_proposition_20260608_010025_11_12557a9eb096.md: Copied (new)
+2026/06/08 04:00:49 INFO  : archive/hermes_proposition_20260608_011540_01_0f30675b96ec.md: Copied (new)
+2026/06/08 04:00:49 INFO  : archive/hermes_proposition_20260608_013001_09_685ab123ca25.md: Copied (new)
+2026/06/08 04:00:49 INFO  : archive/hermes_proposition_20260608_011540_02_2893534deabf.md: Copied (new)
+2026/06/08 04:00:50 INFO  : archive/hermes_proposition_20260608_013001_11_d0ef0f5212b3.md: Copied (new)
+2026/06/08 04:00:50 INFO  : archive/hermes_proposition_20260608_013001_12_ee03b1eb1a51.md: Copied (new)
+2026/06/08 04:00:51 INFO  : archive/hermes_proposition_20260608_013001_14_9cec81913839.md: Copied (new)
+2026/06/08 04:00:51 INFO  : archive/hermes_proposition_20260608_013001_15_3f0a5748b338.md: Copied (new)
+2026/06/08 04:00:52 INFO  : archive/hermes_proposition_20260608_020001_18_a370a710a946.md: Copied (new)
+2026/06/08 04:00:52 INFO  : archive/hermes_proposition_20260608_020319_19_9ebbc37d94f6.md: Copied (new)
+2026/06/08 04:00:52 INFO  : archive/hermes_proposition_20260608_020319_22_3eba694165db.md: Copied (new)
+2026/06/08 04:00:52 INFO  : archive/hermes_proposition_20260608_021919_23_84a52b827c5d.md: Copied (new)
+2026/06/08 04:00:53 INFO  : archive/hermes_proposition_20260608_023001_26_6a5a5050bc62.md: Copied (new)
+2026/06/08 04:00:54 INFO  : archive/hermes_proposition_20260608_023519_27_004dad2e4330.md: Copied (new)
+2026/06/08 04:00:54 INFO  : archive/hermes_proposition_20260608_025119_31_a6f09b74cef6.md: Copied (new)
+2026/06/08 04:00:54 INFO  : archive/hermes_proposition_20260608_023519_30_835e2b84329c.md: Copied (new)
+2026/06/08 04:00:55 INFO  : archive/hermes_proposition_20260608_025119_34_c1e5c275c985.md: Copied (new)
+2026/06/08 04:00:55 INFO  : archive/hermes_proposition_20260608_030001_38_90e902ea2a7d.md: Copied (new)
+2026/06/08 04:00:55 INFO  : archive/hermes_proposition_20260608_032219_39_66dbbe04b951.md: Copied (new)
+2026/06/08 04:00:55 INFO  : archive/hermes_proposition_20260608_033719_44_c6874db0b5fd.md: Copied (new)
+2026/06/08 04:00:56 INFO  : archive/hermes_proposition_20260608_035219_48_794bd282aa19.md: Copied (new)
+2026/06/08 04:00:57 INFO  : archive/openclaw_proposition_20260606_141057.md: Copied (new)
+2026/06/08 04:00:57 INFO  : archive/openclaw_proposition_07062025_0908.md: Copied (new)
+2026/06/08 04:00:58 INFO  : 
+Transferred:   	  426.486 KiB / 435.136 KiB, 98%, 483 B/s, ETA 18s
+Transferred:          301 / 330, 91%
+Elapsed time:       6m2.9s
+Transferring:
+ * archive/openclaw_propo…ion_20260606_141751.md:  0% /300, 0/s, -
+ * archive/openclaw_propo…828_03_93b4a7bc54c0.md:  0% /260, 0/s, -
+ * archive/openclaw_propo…828_04_a641d35b1ee4.md:  0% /300, 0/s, -
+ * archive/openclaw_propo…501_01_fd77edfd453d.md:  0% /239, 0/s, -
+
+2026/06/08 04:01:54 INFO  : archive/openclaw_proposition_20260606_141828_04_a641d35b1ee4.md: Copied (new)
+2026/06/08 04:01:54 INFO  : archive/openclaw_proposition_20260606_141751.md: Copied (new)
+2026/06/08 04:01:54 INFO  : archive/openclaw_proposition_20260606_141828_03_93b4a7bc54c0.md: Copied (new)
+2026/06/08 04:01:54 INFO  : archive/openclaw_proposition_20260606_194501_01_fd77edfd453d.md: Copied (new)
+2026/06/08 04:01:55 INFO  : archive/openclaw_proposition_20260606_194501_02_6327c1607835.md: Copied (new)
+2026/06/08 04:01:55 INFO  : archive/openclaw_proposition_20260606_194501_03_e9859dfa507f.md: Copied (new)
+2026/06/08 04:01:55 INFO  : archive/openclaw_proposition_20260606_194501_05_2e9d75bc2a4e.md: Copied (new)
+2026/06/08 04:01:55 INFO  : archive/openclaw_proposition_20260606_194501_04_556ad4a4b25a.md: Copied (new)
+2026/06/08 04:01:57 INFO  : archive/openclaw_proposition_20260606_194501_08_54dab83876fb.md: Copied (new)
+2026/06/08 04:01:57 INFO  : archive/openclaw_proposition_20260606_194501_06_2019805726fa.md: Copied (new)
+2026/06/08 04:01:57 INFO  : archive/openclaw_proposition_20260606_194501_07_f9852826d665.md: Copied (new)
+2026/06/08 04:01:58 INFO  : archive/openclaw_proposition_20260606_211501_06_24b26b7cb3ea.md: Copied (new)
+2026/06/08 04:01:58 INFO  : archive/openclaw_proposition_20260607_181104_87_5ee194d1503a.md: Copied (new)
+2026/06/08 04:01:58 INFO  : archive/openclaw_proposition_20260607_051501_34_c965efc10f82.md: Copied (new)
+2026/06/08 04:01:58 INFO  : 
+Transferred:   	  435.748 KiB / 438.283 KiB, 99%, 449 B/s, ETA 5s
+Transferred:          315 / 330, 95%
+Elapsed time:       7m2.9s
+Transferring:
+ * archive/openclaw_propo…001_01_f27b62a8e0ec.md:100% /244, 243/s, 0s
+ * archive/openclaw_propo…001_02_8fedc05fb1d6.md:100% /219, 0/s, -
+ * archive/openclaw_propo…001_03_f75f8c524468.md:100% /191, 0/s, -
+ * archive/openclaw_propo…001_04_76e3a6ceffa7.md:  0% /205, 0/s, -
+
+2026/06/08 04:01:59 INFO  : archive/openclaw_proposition_20260608_003001_01_f27b62a8e0ec.md: Copied (new)
+2026/06/08 04:02:00 INFO  : archive/openclaw_proposition_20260608_003001_02_8fedc05fb1d6.md: Copied (new)
+2026/06/08 04:02:00 INFO  : archive/openclaw_proposition_20260608_003001_03_f75f8c524468.md: Copied (new)
+2026/06/08 04:02:00 INFO  : archive/openclaw_proposition_20260608_003001_04_76e3a6ceffa7.md: Copied (new)
+2026/06/08 04:02:00 INFO  : archive/openclaw_proposition_20260608_003001_05_3799d14da31d.md: Copied (new)
+2026/06/08 04:02:01 INFO  : archive/openclaw_proposition_20260608_003001_07_ff10ec14d048.md: Copied (new)
+2026/06/08 04:02:01 INFO  : archive/openclaw_proposition_20260608_003001_06_cf43d1d04de9.md: Copied (new)
+2026/06/08 04:02:55 INFO  : archive/openclaw_proposition_20260608_003001_08_6102a2e56bb7.md: Copied (new)
+2026/06/08 04:02:55 INFO  : archive/openclaw_proposition_20260608_003001_11_300d75eca8e0.md: Copied (new)
+2026/06/08 04:02:55 INFO  : archive/openclaw_proposition_20260608_003001_10_c95153b8dce9.md: Copied (new)
+2026/06/08 04:02:55 INFO  : archive/openclaw_proposition_20260608_003001_09_f2483bd17290.md: Copied (new)
+2026/06/08 04:02:56 INFO  : archive/openclaw_proposition_agent_roles.md: Copied (new)
+2026/06/08 04:02:56 INFO  : archive/openclaw_proposition_channel_prompts.md: Copied (new)
+2026/06/08 04:02:57 INFO  : archive/openclaw_proposition_20260608_003001_12_cb4645d8aa45.md: Copied (new)
+2026/06/08 04:02:58 INFO  : archive/openclaw_proposition_dedup_duckdb_20260607.md: Copied (new)
+2026/06/08 04:02:58 INFO  : 
+Transferred:   	  439.142 KiB / 439.142 KiB, 100%, 126 B/s, ETA 0s
+Transferred:          330 / 330, 100%
+Elapsed time:       8m2.0s
+
+Syncing pulse...
+2026/06/08 04:03:02 INFO  : a16z-crypto-inbox.jsonl: Copied (new)
+2026/06/08 04:03:02 INFO  : coindesk-inbox.jsonl: Copied (new)
+2026/06/08 04:03:03 INFO  : arxiv-ai-inbox.jsonl: Copied (new)
+2026/06/08 04:03:03 INFO  : bankless-inbox.jsonl: Copied (new)
+2026/06/08 04:03:58 INFO  : compound-pulse.py: Copied (new)
+2026/06/08 04:03:58 INFO  : cointelegraph-inbox.jsonl: Copied (new)
+2026/06/08 04:03:58 INFO  : coinstack-inbox.jsonl: Copied (new)
+2026/06/08 04:03:58 INFO  : defillama-inbox.jsonl: Copied (new)
+2026/06/08 04:03:59 INFO  : 
+Transferred:   	  310.564 KiB / 389.568 KiB, 80%, 6.197 KiB/s, ETA 12s
+Transferred:            8 / 58, 14%
+Elapsed time:       1m1.6s
+Transferring:
+ *                        fear-greed-inbox.jsonl:100% /512, 511/s, 0s
+ *                       hacker-news-inbox.jsonl:100% /22.190Ki, 22.188Ki/s, 0s
+ *                            mtf-diagnosis.json:100% /3.172Ki, 3.168Ki/s, 0s
+ *                       perplexity-queries.json:100% /7.887Ki, 7.882Ki/s, 0s
+
+2026/06/08 04:04:00 INFO  : fear-greed-inbox.jsonl: Copied (new)
+2026/06/08 04:04:00 INFO  : hacker-news-inbox.jsonl: Copied (new)
+2026/06/08 04:04:00 INFO  : mtf-diagnosis.json: Copied (new)
+2026/06/08 04:04:00 INFO  : perplexity-queries.json: Copied (new)
+2026/06/08 04:04:01 INFO  : perplexity-queries.log: Copied (new)
+2026/06/08 04:04:56 INFO  : signal-20260607-2250.json: Copied (new)
+2026/06/08 04:04:56 INFO  : signal-20260607-2149.json: Copied (new)
+2026/06/08 04:04:56 INFO  : ranked-queue.json: Copied (new)
+2026/06/08 04:04:56 INFO  : signal-20260607-2221.json: Copied (new)
+2026/06/08 04:04:57 INFO  : signal-20260607-2320.json: Copied (new)
+2026/06/08 04:04:58 INFO  : signal-20260607-2356.json: Copied (new)
+2026/06/08 04:04:58 INFO  : signal-20260607-2350.json: Copied (new)
+2026/06/08 04:04:58 INFO  : signal-20260607-2335.json: Copied (new)
+2026/06/08 04:04:59 INFO  : signal-20260608-0000.json: Copied (new)
+2026/06/08 04:04:59 INFO  : signal-20260608-0030.json: Copied (new)
+2026/06/08 04:04:59 INFO  : signal-20260608-0020.json: Copied (new)
+2026/06/08 04:04:59 INFO  : signal-20260608-0050.json: Copied (new)
+2026/06/08 04:04:59 INFO  : 
+Transferred:   	  334.906 KiB / 400.323 KiB, 84%, 803 B/s, ETA 1m23s
+Transferred:           25 / 58, 43%
+Elapsed time:       2m1.6s
+Transferring:
+ *                     signal-20260608-0100.json:100% /660, 0/s, -
+ *                     signal-20260608-0120.json:100% /660, 0/s, -
+ *                     signal-20260608-0130.json:  0% /614, 0/s, -
+ *                     signal-20260608-0150.json:  0% /614, 0/s, -
+
+2026/06/08 04:05:00 INFO  : signal-20260608-0100.json: Copied (new)
+2026/06/08 04:05:00 INFO  : signal-20260608-0120.json: Copied (new)
+2026/06/08 04:05:02 INFO  : signal-20260608-0150.json: Copied (new)
+2026/06/08 04:05:02 INFO  : signal-20260608-0130.json: Copied (new)
+2026/06/08 04:05:02 INFO  : signal-20260608-0200.json: Copied (new)
+2026/06/08 04:05:02 INFO  : signal-20260608-0220.json: Copied (new)
+2026/06/08 04:05:56 INFO  : signal-20260608-0300.json: Copied (new)
+2026/06/08 04:05:56 INFO  : signal-20260608-0250.json: Copied (new)
+2026/06/08 04:05:56 INFO  : signal-20260608-0230.json: Copied (new)
+2026/06/08 04:05:56 INFO  : signal-20260608-0320.json: Copied (new)
+2026/06/08 04:05:58 INFO  : signal-20260608-0330.json: Copied (new)
+2026/06/08 04:05:58 INFO  : signal-20260608-0350.json: Copied (new)
+2026/06/08 04:05:58 INFO  : signal-20260608-0400.json: Copied (new)
+2026/06/08 04:05:58 INFO  : signal-20260608-0420.json: Copied (new)
+2026/06/08 04:05:59 INFO  : signal-20260608-0430.json: Copied (new)
+2026/06/08 04:05:59 INFO  : signal-20260608-0450.json: Copied (new)
+2026/06/08 04:05:59 INFO  : 
+Transferred:   	  346.615 KiB / 402.125 KiB, 86%, 462 B/s, ETA 2m2s
+Transferred:           41 / 58, 71%
+Elapsed time:       3m1.6s
+Transferring:
+ *                     signal-20260608-0500.json:100% /666, 665/s, 0s
+ *                     signal-20260608-0520.json:100% /668, 667/s, 0s
+ *                     signal-20260608-0530.json:  0% /502, 0/s, -
+ *                     signal-20260608-0550.json:  0% /502, 0/s, -
+
+2026/06/08 04:05:59 INFO  : signal-20260608-0500.json: Copied (new)
+2026/06/08 04:05:59 INFO  : signal-20260608-0520.json: Copied (new)
+2026/06/08 04:06:01 INFO  : signal-20260608-0530.json: Copied (new)
+2026/06/08 04:06:01 INFO  : signal-20260608-0550.json: Copied (new)
+2026/06/08 04:06:01 INFO  : signal-20260608-0620.json: Copied (new)
+2026/06/08 04:06:01 INFO  : signal-20260608-0600.json: Copied (new)
+2026/06/08 04:06:42 INFO  : signal-20260608-0700.json: Copied (new)
+2026/06/08 04:06:42 INFO  : signal-20260608-0630.json: Copied (new)
+2026/06/08 04:06:42 INFO  : signal-20260608-0650.json: Copied (new)
+2026/06/08 04:06:42 INFO  : signal-20260608-0720.json: Copied (new)
+2026/06/08 04:06:44 INFO  : signal-20260608-0730.json: Copied (new)
+2026/06/08 04:06:44 INFO  : signal-20260608-0750.json: Copied (new)
+2026/06/08 04:06:44 ERROR : the-tech-buzz-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-08 04:01:09.549617875 -0400 EDT to 2026-06-08 04:04:51.263375876 -0400 EDT)
+2026/06/08 04:06:44 ERROR : techcrunch-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-08 04:00:58.43957702 -0400 EDT to 2026-06-08 04:04:44.768193048 -0400 EDT)
+2026/06/08 04:06:45 INFO  : signal-20260608-0800.json: Copied (new)
+2026/06/08 04:06:45 INFO  : tldr-inbox.jsonl: Copied (new)
+2026/06/08 04:06:45 INFO  : trade-ready.json: Copied (new)
+2026/06/08 04:06:45 ERROR : Google drive root 'compound-notes/pulse': not deleting files as there were IO errors
+2026/06/08 04:06:45 ERROR : Google drive root 'compound-notes/pulse': not deleting directories as there were IO errors
+2026/06/08 04:06:45 ERROR : Attempt 1/3 failed with 2 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-08 04:00:58.43957702 -0400 EDT to 2026-06-08 04:04:44.768193048 -0400 EDT)
+2026/06/08 04:06:47 INFO  : fear-greed-inbox.jsonl: Updated modification time in destination
+2026/06/08 04:06:47 INFO  : a16z-crypto-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:47 INFO  : arxiv-ai-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:48 INFO  : techcrunch-inbox.jsonl: Copied (new)
+2026/06/08 04:06:49 INFO  : the-tech-buzz-inbox.jsonl: Copied (new)
+2026/06/08 04:06:49 INFO  : bankless-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:49 INFO  : coinstack-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:49 INFO  : coindesk-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:51 INFO  : hacker-news-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:51 INFO  : defillama-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:51 INFO  : cointelegraph-inbox.jsonl: Copied (replaced existing)
+2026/06/08 04:06:51 ERROR : Attempt 2/3 succeeded
+2026/06/08 04:06:51 INFO  : 
+Transferred:   	  662.462 KiB / 662.462 KiB, 100%, 15.843 KiB/s, ETA 0s
+Checks:                56 / 56, 100%
+Transferred:           66 / 66, 100%
+Elapsed time:      3m53.0s
+
+
+=== Sync Complete Mon Jun  8 08:06:51 AM UTC 2026 ===
+Total:   5 TiB
+Used:    131.117 GiB
+Free:    4.870 TiB
+Trashed: 13.387 GiB
+Other:   2.214 GiB
+

@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-06-08T07:21:35.719393+00:00",
+  "symbols": {
+    "BTC-USD": {
+      "symbol": "BTC-USD",
+      "analyzed_at": "2026-06-08T07:21:33.189520+00:00",
+      "current_price": 63098.0,
+      "timeframes": {
+        "30m": {
+          "timeframe": "30m",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "1h": {
+          "timeframe": "1h",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "4h": {
+          "timeframe": "4h",
+          "close": 63098.0,
+          "candles": 84,
+          "trend": {
+            "direction": "neutral",
+            "strength": 0.0,
+            "ema_slope": -0.0002,
+            "price_vs_ema": 0.96
+          },
+          "support_resistance": {
+            "support": 61557.0,
+            "resistance": 0,
+            "support_levels": [
+              59228.0,
+              59665.0,
+              61206.0,
+              61557.0,
+              65708.0
+            ],
+            "resistance_levels": [
+              61422.0,
+              62800.0
+            ],
+            "atr_pct": 6.46
+          }
+        },
+        "1d": {
+          "timeframe": "1d",
+          "error": "insufficient data",
+          "candles": 0
+        }
+      },
+      "confluence": {
+        "score": 0,
+        "rating": "LOW"
+      }
+    },
+    "ETH-USD": {
+      "symbol": "ETH-USD",
+      "analyzed_at": "2026-06-08T07:21:35.063185+00:00",
+      "current_price": 1687.04,
+      "timeframes": {
+        "30m": {
+          "timeframe": "30m",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "1h": {
+          "timeframe": "1h",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "4h": {
+          "timeframe": "4h",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "1d": {
+          "timeframe": "1d",
+          "close": 1687.04,
+          "candles": 23,
+          "trend": {
+            "direction": "neutral",
+            "strength": 0,
+            "ema_slope": 0
+          },
+          "support_resistance": {
+            "support": 0,
+            "resistance": 2377.64,
+            "support_levels": [
+              1947.32,
+              2224.38
+            ],
+            "resistance_levels": [
+              2377.64,
+              2420.01,
+              2462.81
+            ],
+            "atr_pct": 56.36
+          }
+        }
+      },
+      "confluence": {
+        "score": 0,
+        "rating": "LOW"
+      }
+    },
+    "SOL-USD": {
+      "symbol": "SOL-USD",
+      "analyzed_at": "2026-06-08T07:21:35.719379+00:00",
+      "current_price": 0,
+      "timeframes": {
+        "30m": {
+          "timeframe": "30m",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "1h": {
+          "timeframe": "1h",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "4h": {
+          "timeframe": "4h",
+          "error": "insufficient data",
+          "candles": 0
+        },
+        "1d": {
+          "timeframe": "1d",
+          "error": "insufficient data",
+          "candles": 0
+        }
+      },
+      "confluence": {
+        "score": 50,
+        "rating": "MODERATE"
+      }
+    }
+  }
+}

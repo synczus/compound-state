@@ -76,4 +76,24 @@ _50 high-confidence signals analyzed_
 [2026-06-08T06:52:19.939056+00:00] | [WOLFWATCH] | [IMPORTANT] | Budget cap exceeded: OpenRouter daily spend $32.26740384 exceeds $30.00 threshold. Set hard cap at https://openrouter.ai/settings/billing
 [2026-06-08T06:52:19.939124+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Budget cap exceeded: failed or unconfigured
 
-2026-06-08 07:10 UTC | credit-meter | $34.51/50.00 today
+2026-06-08 07:10 UTC | credit-meter | $34.51/50.00 today2026-06-08T07:19:58Z | state-probe | Striker=offline WolfWatch=online MetaAge=3320s
+
+2026-06-08 07:24 UTC | meta-monitor | All crons and services healthy2026-06-08T07:50:09Z | state-probe | Striker=offline WolfWatch=online MetaAge=1535s
+[2026-06-08T08:00:04.198038+00:00] | [WOLFWATCH] | [CRITICAL] | Striker HEALTH STALE: Striker health file is 4696s old (threshold 120s).
+[2026-06-08T08:00:04.198093+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker HEALTH STALE: failed or unconfigured
+[2026-06-08T08:00:04.198475+00:00] | [KAIROS] | [MONITOR_HEALTH_NOTIFY_SENT] | STALE: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"critical","title":"Striker HEALTH STALE","body":"Striker health file is 4696s old (threshold 120s).","timestamp":"2026-06-08T08:00:01.957877+00:00"}
+[2026-06-08T08:00:04.223431+00:00] | [KAIROS] | [MONITOR_DB_STAGNANT] | No new signal rows for 62 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.
+[2026-06-08T08:00:04.710297+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: No new signal rows for 62 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.
+[2026-06-08T08:00:04.710353+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT: failed or unconfigured
+[2026-06-08T08:00:04.710704+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_SENT] | STAGNANT: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"important","title":"Striker DB STAGNANT","body":"No new signal rows for 62 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.","timesta
+[2026-06-08T08:01:16.025556+00:00] | [WOLFWATCH] | [IMPORTANT] | Overnight Run Complete: 🌙 *Overnight Run Complete — 2026-06-08*
+
+🎯 Regime: `UNKNOWN`
+💰 Raider Equity: $0 (+0.00%)
+
+📝 Brief: ✅
+🧪 NNE Sim: ❌ FAILED
+✍️ Content: ✅
+
+⏱️ Duration: 73s | Cost: $0.0013
+[2026-06-08T08:01:16.025622+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Overnight Run Complete: failed or unconfigured

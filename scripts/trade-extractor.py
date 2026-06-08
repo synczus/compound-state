@@ -260,13 +260,14 @@ def process_signals(backfill=False, dry_run=False):
     """Main entry point: scan signals table and extract trade setups."""
     con = duckdb.connect(DB_PATH)
     
-    # Get the watermark of last processed signal
+    # Get the watermark of last processed signal (by ingested_at)
     if not backfill:
-        last_id = con.execute("""
-            SELECT COALESCE(MAX(split_part(signal_id, '-', 1))::INTEGER, 0)
-            FROM signals 
-            WHERE signal_id IN (SELECT signal_id FROM trade_setups WHERE signal_id IS NOT NULL)
+        last_ts = con.execute("""
+            SELECT MAX(s.ingested_at)
+            FROM signals s
+            WHERE s.signal_id IN (SELECT signal_id FROM trade_setups WHERE signal_id IS NOT NULL)
         """).fetchone()[0]
+        last_id = 1 if last_ts else 0
     else:
         last_id = 0
     
@@ -278,8 +279,8 @@ def process_signals(backfill=False, dry_run=False):
           AND body_text NOT LIKE '%✅%'
           AND body_text NOT LIKE '%Profit%'
     """
-    if not backfill and last_id > 0:
-        query += f" AND CAST(split_part(signal_id, '-', 1) AS INTEGER) > {last_id}"
+    if not backfill and last_ts:
+        query += f" AND ingested_at > '{last_ts}'::TIMESTAMP"
     
     query += " ORDER BY ingested_at DESC LIMIT 200"
     

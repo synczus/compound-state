@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T07:03:34Z_
+_Generated: 2026-06-08T08:03:55Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 07:00:01 UTC_
-_Total active entries: 315_
+_Last consolidated: 2026-06-08 07:52:19 UTC_
+_Total active entries: 318_
 
 ## By Category
 
 - **other**: 124 entries
-- **pipeline-infrastructure**: 78 entries
+- **pipeline-infrastructure**: 81 entries
 - **agent-orchestration**: 40 entries
 - **monitoring-observability**: 30 entries
 - **cost-optimization**: 15 entries
@@ -26,6 +26,9 @@ _Total active entries: 315_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780905050 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780903824 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
 - `[hermes]` **[other]** ⚪ striker: 138861 signals (5183 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
 - `[hermes]` **[other]** ⚪ striker: 138498 signals (5183 >=0.3%), last 1970-01-01 00:00:00
@@ -37,8 +40,6 @@ _Total active entries: 315_
 - `[hermes]` **[other]** ⚪ striker: 133403 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 131998 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Full squad cycle — all 5 agents online. Sub-agent efficiency
-- `[hermes]` **[other]** ⚪ exports: 27 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
-- `[hermes]` **[other]** ⚪ striker: 127304 signals (5170 >=0.3%), last 1970-01-01 00:00:00
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
