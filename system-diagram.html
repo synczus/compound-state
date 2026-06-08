@@ -1,0 +1,253 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kestrel Markets System Architecture</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f8fafc;
+    --fg: #172033;
+    --muted: #5b6475;
+    --line: #64748b;
+    --neutral: #e2e8f0;
+    --input: #bfdbfe;
+    --process: #c7d2fe;
+    --storage: #99f6e4;
+    --exec: #bbf7d0;
+    --risk: #fecaca;
+    --trust: #fde68a;
+    --agent: #f3e8ff;
+  }
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--fg);
+    font: 13px/1.4 ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+  main {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+  svg { width: 100%; height: auto; display: block; }
+  .title { font-size: 22px; font-weight: 700; fill: #0f3b6b; }
+  .subtitle { font-size: 13px; fill: #5b6475; }
+  .label { font-size: 13px; font-weight: 600; fill: #172033; }
+  .small { font-size: 11px; fill: #5b6475; }
+  .tiny { font-size: 10px; fill: #5b6475; }
+  .node { stroke: #94a3b8; stroke-width: 1.2; rx: 5; ry: 5; }
+  .input { fill: #bfdbfe; }
+  .process { fill: #c7d2fe; }
+  .storage { fill: #99f6e4; }
+  .exec { fill: #bbf7d0; }
+  .risk { fill: #fecaca; }
+  .trust { fill: #fde68a; }
+  .agent { fill: #f3e8ff; }
+  .edge { stroke: #64748b; stroke-width: 1.5; fill: none; }
+  .zone { fill: none; stroke: #94a3b8; stroke-width: 1.2; stroke-dasharray: 6 4; opacity: 0.7; }
+  .zone-label { font-size: 12px; font-weight: 600; fill: #5b6475; }
+  .glow { filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12)); }
+  .tag { font-size:10px; fill:#3b82f6; font-weight:600; }
+</style>
+<main>
+<svg viewBox="0 0 1020 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 Z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="510" y="30" class="title" text-anchor="middle">Kestrel Markets — Operating System Architecture</text>
+  <text x="510" y="50" class="subtitle" text-anchor="middle">Signal Intelligence | Risk-Managed Execution | Cryptographic Audit</text>
+
+  <!-- ============ ZONE: DATA SOURCES ============ -->
+  <rect x="20" y="65" width="310" height="150" class="zone"/>
+  <text x="175" y="82" class="zone-label" text-anchor="middle">Data Sources (25+)</text>
+
+  <rect x="35" y="92" width="135" height="50" class="node input"/>
+  <text x="102" y="112" class="label" text-anchor="middle">Telegram Channels</text>
+  <text x="102" y="130" class="small" text-anchor="middle">Whale Alert · Disclose.tv · TLDR</text>
+
+  <rect x="185" y="92" width="130" height="50" class="node input"/>
+  <text x="250" y="112" class="label" text-anchor="middle">WebSocket</text>
+  <text x="250" y="130" class="small" text-anchor="middle">Coinbase Price Feed</text>
+
+  <rect x="35" y="155" width="135" height="50" class="node input"/>
+  <text x="102" y="175" class="label" text-anchor="middle">RSS Feeds</text>
+  <text x="102" y="193" class="small" text-anchor="middle">Cointelegraph · a16z</text>
+
+  <rect x="185" y="155" width="130" height="50" class="node input"/>
+  <text x="250" y="175" class="label" text-anchor="middle">On-Chain</text>
+  <text x="250" y="193" class="small" text-anchor="middle">CryptoQuant (pending)</text>
+
+  <!-- ============ ZONE: PIPELINE ============ -->
+  <rect x="350" y="65" width="310" height="245" class="zone"/>
+  <text x="505" y="82" class="zone-label" text-anchor="middle">Signal Pipeline</text>
+
+  <!-- Adapters -->
+  <rect x="365" y="92" width="130" height="40" class="node process"/>
+  <text x="430" y="110" class="label" text-anchor="middle">Adapters</text>
+  <text x="430" y="125" class="small" text-anchor="middle">Normalize incoming data</text>
+
+  <!-- Router -->
+  <rect x="510" y="92" width="135" height="40" class="node process"/>
+  <text x="577" y="110" class="label" text-anchor="middle">Router</text>
+  <text x="577" y="125" class="small" text-anchor="middle">Score + classify signals</text>
+
+  <!-- Dedup -->
+  <rect x="365" y="148" width="130" height="40" class="node process"/>
+  <text x="430" y="166" class="label" text-anchor="middle">Dedup Engine</text>
+  <text x="430" y="181" class="small" text-anchor="middle">Hash-check · 24h spam filter</text>
+
+  <!-- Scorer -->
+  <rect x="510" y="148" width="135" height="40" class="node process"/>
+  <text x="577" y="166" class="label" text-anchor="middle">Post-Ingest Scorer</text>
+  <text x="577" y="181" class="small" text-anchor="middle">9-step scoring pipeline</text>
+
+  <!-- DuckDB -->
+  <rect x="365" y="208" width="280" height="55" class="node storage" rx="6"/>
+  <text x="505" y="228" class="label" text-anchor="middle">DuckDB (Signal Database)</text>
+  <text x="505" y="244" class="small" text-anchor="middle">Queryable · 14,586 events · 19,240 scores</text>
+  <text x="505" y="257" class="tiny" text-anchor="middle">events table: source_id · confidence · lane · action · magnitude</text>
+
+  <!-- Provara -->
+  <rect x="365" y="272" width="280" height="30" class="node trust" rx="5"/>
+  <text x="505" y="291" class="small" text-anchor="middle" font-weight="600">Provara Vault (CSigned) — Ed25519 · SHA-256 hash chain</text>
+
+  <!-- Pipeline internal arrows -->
+  <path d="M495,112 L508,112" class="edge" marker-end="url(#arrow)"/>
+  <path d="M430,132 L430,146" class="edge" marker-end="url(#arrow)"/>
+  <path d="M577,132 L577,146" class="edge" marker-end="url(#arrow)"/>
+  <path d="M495,168 L508,168" class="edge" marker-end="url(#arrow)"/>
+  <path d="M505,208 L505,270" class="edge" marker-end="url(#arrow)"/>
+
+  <!-- ============ ZONE: EXECUTION ============ -->
+  <rect x="20" y="230" width="310" height="250" class="zone"/>
+  <text x="175" y="248" class="zone-label" text-anchor="middle">Execution Layer (Dual Stack)</text>
+
+  <!-- Stack A -->
+  <rect x="35" y="258" width="280" height="90" class="node exec" rx="6"/>
+  <text x="175" y="278" class="label" text-anchor="middle">Stack A: Coinbase Spot (Freqtrade)</text>
+  <text x="175" y="296" class="small" text-anchor="middle">US Regulated Exchange</text>
+  <text x="175" y="314" class="small" text-anchor="middle">BTC-USD · ETH-USD · SOL-USD</text>
+  <text x="175" y="332" class="tiny" text-anchor="middle">Best for trending markets · Spot-only</text>
+
+  <!-- Stack B -->
+  <rect x="35" y="360" width="280" height="90" class="node exec" rx="6"/>
+  <text x="175" y="380" class="label" text-anchor="middle">Stack B: Bybit Futures</text>
+  <text x="175" y="398" class="small" text-anchor="middle">Basis Divergence + RSI Strategy</text>
+  <text x="175" y="416" class="small" text-anchor="middle">Profits from spot-futures spreads</text>
+  <text x="175" y="434" class="tiny" text-anchor="middle">Works in sideways markets too</text>
+
+  <!-- ============ ZONE: CONTROL ============ -->
+  <rect x="680" y="65" width="320" height="185" class="zone"/>
+  <text x="840" y="82" class="zone-label" text-anchor="middle">Risk &amp; Control Layer</text>
+
+  <rect x="695" y="92" width="145" height="45" class="node risk"/>
+  <text x="767" y="112" class="label" text-anchor="middle">Budget Guard</text>
+  <text x="767" y="130" class="small" text-anchor="middle">$50/day · Degrade at $5</text>
+
+  <rect x="850" y="92" width="140" height="45" class="node risk"/>
+  <text x="920" y="112" class="label" text-anchor="middle">Freshness Watchdog</text>
+  <text x="920" y="130" class="small" text-anchor="middle">222 sources · 60s checks</text>
+
+  <rect x="695" y="148" width="145" height="45" class="node risk"/>
+  <text x="767" y="168" class="label" text-anchor="middle">Health Scorer</text>
+  <text x="767" y="186" class="small" text-anchor="middle">0-100 per source</text>
+
+  <rect x="850" y="148" width="140" height="45" class="node risk"/>
+  <text x="920" y="168" class="label" text-anchor="middle">Dual Supervisor</text>
+  <text x="920" y="186" class="small" text-anchor="middle">Manage both stacks</text>
+
+  <rect x="695" y="203" width="295" height="35" class="node risk" rx="5"/>
+  <text x="842" y="222" class="small" text-anchor="middle" font-weight="600">Systemd Auto-Recovery (3 services)</text>
+
+  <!-- ============ ZONE: AGENTS ============ -->
+  <rect x="680" y="265" width="320" height="95" class="zone"/>
+  <text x="840" y="282" class="zone-label" text-anchor="middle">Agent Oversight</text>
+
+  <rect x="695" y="293" width="90" height="55" class="node agent"/>
+  <text x="740" y="314" class="small" text-anchor="middle" font-weight="600">Kairos</text>
+  <text x="740" y="330" class="tiny" text-anchor="middle">Scout</text>
+
+  <rect x="795" y="293" width="90" height="55" class="node agent"/>
+  <text x="840" y="314" class="small" text-anchor="middle" font-weight="600">Nemoclaw</text>
+  <text x="840" y="330" class="tiny" text-anchor="middle">Identity</text>
+
+  <rect x="895" y="293" width="90" height="55" class="node agent"/>
+  <text x="940" y="314" class="small" text-anchor="middle" font-weight="600">Hermes</text>
+  <text x="940" y="330" class="tiny" text-anchor="middle">Executor</text>
+
+  <!-- ============ ZONE: OUTPUT ============ -->
+  <rect x="680" y="375" width="320" height="105" class="zone"/>
+  <text x="840" y="392" class="zone-label" text-anchor="middle">Output &amp; Interface</text>
+
+  <rect x="695" y="403" width="290" height="42" class="node neutral"/>
+  <text x="840" y="422" class="label" text-anchor="middle">Synapse Dashboard</text>
+  <text x="840" y="438" class="small" text-anchor="middle">Port 19888 · Health + Queue + State + Alerts</text>
+
+  <rect x="695" y="452" width="290" height="20" class="node input" rx="4"/>
+  <text x="840" y="466" class="tiny" text-anchor="middle">plotly · matplotlib · CSV/Parquet export</text>
+
+  <!-- ============ FLOW ARROWS ============ -->
+  <!-- Sources to Pipeline -->
+  <path d="M310,140 L363,140" class="edge" marker-end="url(#arrow)"/>
+  <path d="M310,165 L363,165" class="edge" marker-end="url(#arrow)"/>
+
+  <!-- Pipeline to Execution -->
+  <path d="M365,235 L317,235" class="edge" marker-end="url(#arrow)"/>
+  <path d="M365,270 L317,270" class="edge" marker-end="url(#arrow-blue)" stroke="#3b82f6"/>
+
+  <!-- Pipeline to Provara (down) -->
+  <path d="M505,287 L505,310" class="edge" marker-end="url(#arrow)" stroke="#f59e0b" stroke-dasharray="6 3"/>
+
+  <!-- Provara to DuckDB (bidirectional-ish) -->
+  <path d="M645,290 L660,290 L660,235 L647,235" class="edge" marker-end="url(#arrow)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+
+  <!-- Pipeline to Control -->
+  <path d="M660,180 L693,180" class="edge" marker-end="url(#arrow)"/>
+
+  <!-- Control to Execution -->
+  <path d="M175,228 L175,256" class="edge" marker-end="url(#arrow)" stroke="#dc2626"/>
+
+  <!-- Pipeline to Agents -->
+  <path d="M660,140 L693,140" class="edge" marker-end="url(#arrow)"/>
+
+  <!-- Agents to Output -->
+  <path d="M840,358 L840,401" class="edge" marker-end="url(#arrow)"/>
+
+  <!-- Execution to Output -->
+  <path d="M300,410 L693,410" class="edge" marker-end="url(#arrow)"/>
+
+  <!-- ============ LEGEND ============ -->
+  <rect x="20" y="500" width="980" height="50" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="520" class="label">Legend:</text>
+  <rect x="100" y="508" width="14" height="14" fill="#bfdbfe" rx="2"/>
+  <text x="120" y="520" class="small">Input</text>
+  <rect x="175" y="508" width="14" height="14" fill="#c7d2fe" rx="2"/>
+  <text x="195" y="520" class="small">Process</text>
+  <rect x="260" y="508" width="14" height="14" fill="#99f6e4" rx="2"/>
+  <text x="280" y="520" class="small">Storage</text>
+  <rect x="340" y="508" width="14" height="14" fill="#bbf7d0" rx="2"/>
+  <text x="360" y="520" class="small">Execution</text>
+  <rect x="435" y="508" width="14" height="14" fill="#fecaca" rx="2"/>
+  <text x="455" y="520" class="small">Risk/Control</text>
+  <rect x="540" y="508" width="14" height="14" fill="#fde68a" rx="2"/>
+  <text x="560" y="520" class="small">Trust/Signing</text>
+  <rect x="650" y="508" width="14" height="14" fill="#f3e8ff" rx="2"/>
+  <text x="670" y="520" class="small">Agent</text>
+  <rect x="735" y="508" width="14" height="14" fill="#e2e8f0" rx="2"/>
+  <text x="755" y="520" class="small">Output</text>
+  <line x1="835" y1="514" x2="875" y2="514" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="885" y="520" class="small">Data flow</text>
+
+  <!-- Genesis block -->
+  <text x="510" y="580" class="tiny" text-anchor="middle">Built by Huntsystems · Hunt Information Systems LLC · 2026</text>
+</svg>
+</main>
+</body>
+</html>

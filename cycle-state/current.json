@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-08T00:30:01.782233+00:00",
+  "timestamp": "2026-06-08T01:15:01.229805+00:00",
   "version": "0.1.0",
   "budget": {
     "paused": false,
-    "balance": 89.6453,
-    "checked_at": "2026-06-08T00:15:06Z"
+    "balance": 87.0044,
+    "checked_at": "2026-06-08T01:00:07Z"
   },
   "services": {
     "striker": {
@@ -12,9 +12,9 @@
       "health": {
         "status": "connected",
         "connected_since": "2026-06-07T22:16:33.042841+00:00",
-        "signals_this_session": 36772,
-        "total_signals": 71281,
-        "updated_at": "2026-06-08T00:29:28.078794+00:00"
+        "signals_this_session": 50148,
+        "total_signals": 84657,
+        "updated_at": "2026-06-08T01:14:28.225979+00:00"
       }
     },
     "wolfwatch": {
@@ -190,65 +190,50 @@
     "telegram-@mentionanother": {
       "queue": 3
     },
-    "telegram-@GemHunterrsDiscover": {
+    "crypto-garden": {
+      "queue": 2445
+    },
+    "telegram-@Trumptoken1st": {
       "queue": 3
     },
-    "telegram-@evadoreio": {
+    "telegram-@univelVR": {
       "queue": 3
     },
-    "telegram-@Tonystvrk": {
+    "telegram-@SIRIUSAMPLIFIERbot": {
+      "queue": 3
+    },
+    "telegram-@unibase_buy_bot": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsPresaleStarts": {
+      "queue": 3
+    },
+    "telegram-@SafeguardJoin": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsThe": {
       "queue": 6
     },
-    "telegram-@sdcbank": {
+    "telegram-@BotFatherin": {
       "queue": 3
     },
-    "telegram-@leverabetcom": {
+    "telegram-@gmail": {
       "queue": 3
     },
-    "telegram-@refreebot": {
-      "queue": 9
-    },
-    "telegram-@BotFatherfor": {
+    "telegram-@Kairos8638_botor": {
       "queue": 3
     },
-    "binance-killers": {
-      "queue": 4172
-    },
-    "telegram-@maral_bsc": {
+    "telegram-@mentionfilter": {
       "queue": 3
     },
-    "telegram-@QuollFinanceis": {
+    "telegram-@argsif": {
       "queue": 3
     },
-    "telegram-@DeHero_official": {
+    "telegram-@anthropic": {
       "queue": 3
     },
-    "telegram-@BabyBNBTiger": {
-      "queue": 9
-    },
-    "telegram-@Shitcoingemscallx": {
+    "telegram-@BKCEOto": {
       "queue": 3
-    },
-    "telegram-@Florkycoin": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsTHESE": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsSocials": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsTheydo": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsGet": {
-      "queue": 3
-    },
-    "telegram-@Nemoclaw8364_botis": {
-      "queue": 3
-    },
-    "telegram-@whip_22": {
-      "queue": 2
     },
     "telegram-@nestpalsJoin": {
       "queue": 3
@@ -307,91 +292,25 @@
     "telegram-@Kairos8638_botto": {
       "queue": 9
     },
-    "crypto-garden": {
-      "queue": 2445
-    },
-    "telegram-@Trumptoken1st": {
+    "telegram-@PrimeXBT_Airdropbot": {
       "queue": 3
     },
-    "telegram-@univelVR": {
+    "telegram-@hubswirl_SwirlToken": {
       "queue": 3
     },
-    "telegram-@SIRIUSAMPLIFIERbot": {
+    "telegram-@ZodiacsRace": {
       "queue": 3
     },
-    "telegram-@unibase_buy_bot": {
+    "telegram-@GemHunterrsETH": {
       "queue": 3
     },
-    "telegram-@GemHunterrsPresaleStarts": {
+    "telegram-@clashforstash": {
       "queue": 3
     },
-    "telegram-@SafeguardJoin": {
+    "telegram-@shannon_referee_botcan": {
       "queue": 3
     },
-    "telegram-@GemHunterrsThe": {
-      "queue": 6
-    },
-    "telegram-@BotFatherin": {
-      "queue": 3
-    },
-    "telegram-@gmail": {
-      "queue": 3
-    },
-    "telegram-@Kairos8638_botor": {
-      "queue": 3
-    },
-    "telegram-@mentionfilter": {
-      "queue": 3
-    },
-    "telegram-@argsif": {
-      "queue": 3
-    },
-    "telegram-@anthropic": {
-      "queue": 3
-    },
-    "telegram-@BKCEOto": {
-      "queue": 3
-    },
-    "telegram-@disclosetv": {
-      "queue": 606
-    },
-    "telegram-@senshi_labsFOR": {
-      "queue": 3
-    },
-    "telegram-@PerryBNBChat": {
-      "queue": 3
-    },
-    "telegram-@Xaientire": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsJoin": {
-      "queue": 12
-    },
-    "telegram-@GemHunterrsMake": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsPresale": {
-      "queue": 6
-    },
-    "telegram-@TheGemPad": {
-      "queue": 9
-    },
-    "telegram-@GemHunterrsCHART": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsStay": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsNow": {
-      "queue": 3
-    },
-    "telegram-@mentiononly": {
-      "queue": 3
-    },
-    "telegram-@shannon_referee_bot": {
-      "queue": 3
-    },
-    "telegram-@shannon_referee_botand": {
+    "telegram-@mentionsto": {
       "queue": 3
     },
     "telegram-@realDonaldTrump": {
@@ -442,51 +361,6 @@
     "telegram-@Nemoclaw8364_bottoken": {
       "queue": 3
     },
-    "telegram-@CoinMarketCap": {
-      "queue": 3
-    },
-    "telegram-@yukkycoin": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrs__________________________________________________________Website": {
-      "queue": 21
-    },
-    "telegram-@HULKSCALLS": {
-      "queue": 3
-    },
-    "telegram-@Shannon": {
-      "queue": 3
-    },
-    "telegram-@hermes": {
-      "queue": 3
-    },
-    "telegram-@huntsystems_bot": {
-      "queue": 3
-    },
-    "telegram-@Last_Satoshi_01To": {
-      "queue": 2
-    },
-    "telegram-@SafeEvolveCryptoSEC": {
-      "queue": 3
-    },
-    "telegram-@NeonLinkGaming": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrs": {
-      "queue": 804
-    },
-    "telegram-@GemHunterrsPinkSale": {
-      "queue": 3
-    },
-    "telegram-@GemHunterrsExplore": {
-      "queue": 3
-    },
-    "telegram-@Kairos8638_bot": {
-      "queue": 12
-    },
-    "telegram-@Kairos8638_botis": {
-      "queue": 3
-    },
     "telegram-@DBMETA_airdrop_bot": {
       "queue": 6
     },
@@ -535,25 +409,151 @@
     "whale-alert": {
       "queue": 2994
     },
-    "telegram-@PrimeXBT_Airdropbot": {
+    "telegram-@CoinMarketCap": {
       "queue": 3
     },
-    "telegram-@hubswirl_SwirlToken": {
+    "telegram-@yukkycoin": {
       "queue": 3
     },
-    "telegram-@ZodiacsRace": {
+    "telegram-@GemHunterrs__________________________________________________________Website": {
+      "queue": 21
+    },
+    "telegram-@HULKSCALLS": {
       "queue": 3
     },
-    "telegram-@GemHunterrsETH": {
+    "telegram-@Shannon": {
       "queue": 3
     },
-    "telegram-@clashforstash": {
+    "telegram-@hermes": {
       "queue": 3
     },
-    "telegram-@shannon_referee_botcan": {
+    "telegram-@huntsystems_bot": {
       "queue": 3
     },
-    "telegram-@mentionsto": {
+    "telegram-@Last_Satoshi_01To": {
+      "queue": 2
+    },
+    "telegram-@maral_bsc": {
+      "queue": 3
+    },
+    "telegram-@QuollFinanceis": {
+      "queue": 3
+    },
+    "telegram-@DeHero_official": {
+      "queue": 3
+    },
+    "telegram-@BabyBNBTiger": {
+      "queue": 9
+    },
+    "telegram-@Shitcoingemscallx": {
+      "queue": 3
+    },
+    "telegram-@Florkycoin": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsTHESE": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsSocials": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsTheydo": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsGet": {
+      "queue": 3
+    },
+    "telegram-@Nemoclaw8364_botis": {
+      "queue": 3
+    },
+    "telegram-@whip_22": {
+      "queue": 2
+    },
+    "telegram-@GemHunterrsDiscover": {
+      "queue": 3
+    },
+    "telegram-@evadoreio": {
+      "queue": 3
+    },
+    "telegram-@Tonystvrk": {
+      "queue": 6
+    },
+    "telegram-@sdcbank": {
+      "queue": 3
+    },
+    "telegram-@leverabetcom": {
+      "queue": 3
+    },
+    "telegram-@refreebot": {
+      "queue": 9
+    },
+    "telegram-@BotFatherfor": {
+      "queue": 3
+    },
+    "binance-killers": {
+      "queue": 4172
+    },
+    "telegram-@SafeEvolveCryptoSEC": {
+      "queue": 3
+    },
+    "telegram-@NeonLinkGaming": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrs": {
+      "queue": 804
+    },
+    "telegram-@GemHunterrsPinkSale": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsExplore": {
+      "queue": 3
+    },
+    "telegram-@Kairos8638_bot": {
+      "queue": 12
+    },
+    "telegram-@Kairos8638_botis": {
+      "queue": 3
+    },
+    "telegram-@disclosetv": {
+      "queue": 606
+    },
+    "telegram-@senshi_labsFOR": {
+      "queue": 3
+    },
+    "telegram-@PerryBNBChat": {
+      "queue": 3
+    },
+    "telegram-@Xaientire": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsJoin": {
+      "queue": 12
+    },
+    "telegram-@GemHunterrsMake": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsPresale": {
+      "queue": 6
+    },
+    "telegram-@TheGemPad": {
+      "queue": 9
+    },
+    "telegram-@GemHunterrsCHART": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsStay": {
+      "queue": 3
+    },
+    "telegram-@GemHunterrsNow": {
+      "queue": 3
+    },
+    "telegram-@mentiononly": {
+      "queue": 3
+    },
+    "telegram-@shannon_referee_bot": {
+      "queue": 3
+    },
+    "telegram-@shannon_referee_botand": {
       "queue": 3
     },
     "telegram-@AlchemyPay": {

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kestrel Compound — System Architecture</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 20px;
+  }
+  .container {
+    max-width: 1100px;
+    width: 100%;
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  h1 {
+    color: #e2e8f0;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  svg { width: 100%; height: auto; display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Kestrel Compound</h1>
+  <div class="subtitle">Autonomous Investment Operating System  ·  June 2026</div>
+  <svg viewBox="0 0 1040 920" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+      </marker>
+      <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#38bdf8"/>
+      </marker>
+      <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#22c55e"/>
+      </marker>
+      <linearGradient id="grad-source" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#1e40af"/><stop offset="100%" stop-color="#3b82f6"/>
+      </linearGradient>
+      <linearGradient id="grad-pipe" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#a855f7"/>
+      </linearGradient>
+      <linearGradient id="grad-store" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#10b981"/>
+      </linearGradient>
+      <linearGradient id="grad-scorer" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#d97706"/><stop offset="100%" stop-color="#f59e0b"/>
+      </linearGradient>
+      <linearGradient id="grad-trade" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#dc2626"/><stop offset="100%" stop-color="#ef4444"/>
+      </linearGradient>
+      <linearGradient id="grad-auto" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#3b82f6"/>
+      </linearGradient>
+      <filter id="shadow">
+        <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+      </filter>
+    </defs>
+
+    <!-- Background layers -->
+    <!-- Layer 1: Sources -->
+    <rect x="30" y="30" width="980" height="130" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="55" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">DATA SOURCES</text>
+
+    <!-- Source boxes -->
+    <rect x="45" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="100" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">Whale Alert</text>
+
+    <rect x="165" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="220" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">CoinDesk RSS</text>
+
+    <rect x="285" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="340" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">Substack (4)</text>
+
+    <rect x="405" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="460" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">Fear &amp; Greed</text>
+
+    <rect x="525" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="580" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">DefiLlama</text>
+
+    <rect x="645" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="700" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">Striker</text>
+
+    <rect x="765" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="820" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">HN + ArXiv</text>
+
+    <rect x="885" y="68" width="110" height="36" rx="8" fill="url(#grad-source)" filter="url(#shadow)"/>
+    <text x="940" y="91" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">Telegram Exports</text>
+
+    <!-- Source flow arrows going down -->
+    <line x1="100" y1="104" x2="100" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="220" y1="104" x2="220" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="340" y1="104" x2="340" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="460" y1="104" x2="460" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="580" y1="104" x2="580" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="700" y1="104" x2="700" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="820" y1="104" x2="820" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="940" y1="104" x2="940" y2="145" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Merge into pipeline -->
+    <path d="M100,140 L940,140" stroke="#334155" stroke-width="1.5" fill="none"/>
+    <line x1="520" y1="140" x2="520" y2="185" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Layer 2: Ingestion -->
+    <rect x="30" y="190" width="980" height="120" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="212" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">INGESTION PIPELINE</text>
+
+    <!-- Router -->
+    <rect x="45" y="228" width="220" height="68" rx="10" fill="url(#grad-pipe)" filter="url(#shadow)"/>
+    <text x="155" y="255" fill="#fff" font-size="12" text-anchor="middle" font-weight="600">Router</text>
+    <text x="155" y="273" fill="#ddd6fe" font-size="9" text-anchor="middle">confidence baselines + deltas</text>
+    <text x="155" y="286" fill="#ddd6fe" font-size="9" text-anchor="middle">4 routing lanes</text>
+
+    <!-- Dedup -->
+    <rect x="310" y="228" width="220" height="68" rx="10" fill="url(#grad-pipe)" filter="url(#shadow)"/>
+    <text x="420" y="255" fill="#fff" font-size="12" text-anchor="middle" font-weight="600">Dedup</text>
+    <text x="420" y="273" fill="#ddd6fe" font-size="9" text-anchor="middle">SHA256 content hash</text>
+    <text x="420" y="286" fill="#ddd6fe" font-size="9" text-anchor="middle">30-day rolling store</text>
+
+    <!-- ProVara Sign -->
+    <rect x="575" y="228" width="200" height="68" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4,3" filter="url(#shadow)"/>
+    <text x="675" y="255" fill="#c084fc" font-size="12" text-anchor="middle" font-weight="600">ProVara (coming)</text>
+    <text x="675" y="273" fill="#a78bfa" font-size="9" text-anchor="middle">Ed25519 cryptographic</text>
+    <text x="675" y="286" fill="#a78bfa" font-size="9" text-anchor="middle">event signing</text>
+
+    <!-- Logs -->
+    <rect x="820" y="228" width="170" height="68" rx="10" fill="url(#grad-pipe)" filter="url(#shadow)"/>
+    <text x="905" y="255" fill="#fff" font-size="12" text-anchor="middle" font-weight="600">File Logger</text>
+    <text x="905" y="273" fill="#ddd6fe" font-size="9" text-anchor="middle">JSONL + event bus</text>
+    <text x="905" y="286" fill="#ddd6fe" font-size="9" text-anchor="middle">freshness watchdog</text>
+
+    <!-- Arrows between pipeline components -->
+    <line x1="265" y1="262" x2="305" y2="262" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="530" y1="262" x2="570" y2="262" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="775" y1="262" x2="815" y2="262" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Pipeline to Storage -->
+    <line x1="520" y1="310" x2="520" y2="355" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Layer 3: Storage -->
+    <rect x="30" y="360" width="980" height="100" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="382" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">STORAGE LAYER</text>
+
+    <!-- DuckDB -->
+    <rect x="45" y="396" width="340" height="50" rx="10" fill="url(#grad-store)" filter="url(#shadow)"/>
+    <text x="215" y="418" fill="#fff" font-size="14" text-anchor="middle" font-weight="600">DuckDB  ·  signals.duckdb</text>
+    <text x="215" y="436" fill="#d1fae5" font-size="9" text-anchor="middle">4,671 scored events  ·  14 sources  ·  19 MB</text>
+
+    <!-- Git / GitHub -->
+    <rect x="420" y="396" width="200" height="50" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="520" y="418" fill="#34d399" font-size="12" text-anchor="middle" font-weight="600">GitHub (compound-state)</text>
+    <text x="520" y="436" fill="#6ee7b7" font-size="9" text-anchor="middle">auto-push every 4 hours</text>
+
+    <!-- ProVara vault -->
+    <rect x="655" y="396" width="200" height="50" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="4,3" filter="url(#shadow)"/>
+    <text x="755" y="418" fill="#c084fc" font-size="12" text-anchor="middle" font-weight="600">ProVara Vault (restored)</text>
+    <text x="755" y="436" fill="#a78bfa" font-size="9" text-anchor="middle">106 files recovered</text>
+
+    <!-- Archive -->
+    <rect x="890" y="396" width="100" height="50" rx="10" fill="url(#grad-store)" filter="url(#shadow)"/>
+    <text x="940" y="418" fill="#fff" font-size="11" text-anchor="middle" font-weight="600">Archive</text>
+    <text x="940" y="436" fill="#d1fae5" font-size="9" text-anchor="middle">Squirrel</text>
+
+    <!-- Storage to Scorer -->
+    <line x1="520" y1="460" x2="520" y2="505" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Layer 4: Scoring -->
+    <rect x="30" y="510" width="980" height="90" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="532" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">SCORING ENGINE</text>
+
+    <!-- Score box -->
+    <rect x="45" y="545" width="440" height="42" rx="10" fill="url(#grad-scorer)" filter="url(#shadow)"/>
+    <text x="265" y="564" fill="#fff" font-size="11" text-anchor="middle" font-weight="600">score_batch.py</text>
+    <text x="265" y="579" fill="#fef3c7" font-size="9" text-anchor="middle">every 15 min  ·  4,671 scored  ·  148 above buy threshold</text>
+
+    <!-- Ranked Queue -->
+    <rect x="520" y="545" width="240" height="42" rx="10" fill="url(#grad-scorer)" filter="url(#shadow)"/>
+    <text x="640" y="564" fill="#fff" font-size="11" text-anchor="middle" font-weight="600">Ranked Queue</text>
+    <text x="640" y="579" fill="#fef3c7" font-size="9" text-anchor="middle">sorted by edge_score (0.0 - 0.384)</text>
+
+    <!-- Perplexity Queries -->
+    <rect x="795" y="545" width="190" height="42" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="890" y="564" fill="#fbbf24" font-size="11" text-anchor="middle" font-weight="600">Perplexity Query Gen</text>
+    <text x="890" y="579" fill="#fde68a" font-size="9" text-anchor="middle">10 queries every 30 min</text>
+
+    <!-- Ranked Queue to Trade -->
+    <line x1="520" y1="600" x2="520" y2="655" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Layer 5: Trading Execution -->
+    <rect x="30" y="660" width="980" height="120" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="682" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">TRADING EXECUTION</text>
+
+    <!-- FreqTrade -->
+    <rect x="45" y="698" width="300" height="68" rx="10" fill="url(#grad-trade)" filter="url(#shadow)"/>
+    <text x="195" y="720" fill="#fff" font-size="13" text-anchor="middle" font-weight="600">FreqTrade  ·  Crypto</text>
+    <text x="195" y="737" fill="#fecaca" font-size="9" text-anchor="middle">Coinbase Advanced spot</text>
+    <text x="195" y="752" fill="#fecaca" font-size="9" text-anchor="middle">BTC  ·  ETH  ·  SOL  ·  $1K paper wallet</text>
+
+    <!-- MMR -->
+    <rect x="380" y="698" width="300" height="68" rx="10" fill="url(#grad-trade)" filter="url(#shadow)"/>
+    <text x="530" y="720" fill="#fff" font-size="13" text-anchor="middle" font-weight="600">MMR  ·  Equities</text>
+    <text x="530" y="737" fill="#fecaca" font-size="9" text-anchor="middle">Interactive Brokers paper</text>
+    <text x="530" y="752" fill="#fecaca" font-size="9" text-anchor="middle">20 signals injected  ·  adapter polling</text>
+
+    <!-- Supervisor -->
+    <rect x="720" y="698" width="260" height="68" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="850" y="720" fill="#f87171" font-size="12" text-anchor="middle" font-weight="600">Dual Supervisor</text>
+    <text x="850" y="737" fill="#fca5a5" font-size="9" text-anchor="middle">shared $50/day budget guard</text>
+    <text x="850" y="752" fill="#fca5a5" font-size="9" text-anchor="middle">auto-restart on crash</text>
+
+    <!-- Side arrows from supervisor to engines -->
+    <line x1="720" y1="715" x2="685" y2="715" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="720" y1="740" x2="685" y2="740" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Bottom arrow: profit feedback -->
+    <line x1="520" y1="780" x2="520" y2="825" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow-green)"/>
+
+    <!-- Layer 6: Results -->
+    <rect x="30" y="830" width="980" height="70" rx="12" fill="#1e293b" stroke="#166534" stroke-width="1"/>
+    <text x="50" y="852" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">MONITORING &amp; RESULTS</text>
+
+    <rect x="45" y="862" width="220" height="28" rx="8" fill="#166534" filter="url(#shadow)"/>
+    <text x="155" y="881" fill="#86efac" font-size="10" text-anchor="middle">trade_log (DuckDB)</text>
+
+    <rect x="290" y="862" width="220" height="28" rx="8" fill="#166534" filter="url(#shadow)"/>
+    <text x="400" y="881" fill="#86efac" font-size="10" text-anchor="middle">Synapse Dashboard</text>
+
+    <rect x="535" y="862" width="220" height="28" rx="8" fill="#166534" filter="url(#shadow)"/>
+    <text x="645" y="881" fill="#86efac" font-size="10" text-anchor="middle">Systemd Health Alerts</text>
+
+    <rect x="780" y="862" width="210" height="28" rx="8" fill="#166534" filter="url(#shadow)"/>
+    <text x="885" y="881" fill="#86efac" font-size="10" text-anchor="middle">OpenRouter Meter ($50/day)</text>
+
+    <!-- Subtle labels -->
+    <text x="30" y="78" fill="#475569" font-size="9" font-family="monospace">Layer 1</text>
+    <text x="30" y="238" fill="#475569" font-size="9" font-family="monospace">Layer 2</text>
+    <text x="30" y="408" fill="#475569" font-size="9" font-family="monospace">Layer 3</text>
+    <text x="30" y="558" fill="#475569" font-size="9" font-family="monospace">Layer 4</text>
+    <text x="30" y="708" fill="#475569" font-size="9" font-family="monospace">Layer 5</text>
+    <text x="30" y="870" fill="#475569" font-size="9" font-family="monospace">Layer 6</text>
+
+    <!-- Status dots -->
+    <circle cx="980" cy="50" r="4" fill="#22c55e"/>
+    <text x="990" y="54" fill="#22c55e" font-size="9">14 sources live</text>
+    <circle cx="980" cy="210" r="4" fill="#22c55e"/>
+    <text x="990" y="214" fill="#22c55e" font-size="9">pipeline running</text>
+    <circle cx="980" cy="380" r="4" fill="#22c55e"/>
+    <text x="990" y="384" fill="#22c55e" font-size="9">all tables active</text>
+    <circle cx="980" cy="528" r="4" fill="#22c55e"/>
+    <text x="990" y="532" fill="#22c55e" font-size="9">scoring active</text>
+    <circle cx="980" cy="678" r="4" fill="#22c55e"/>
+    <text x="990" y="682" fill="#22c55e" font-size="9">trades paper only</text>
+    <circle cx="980" cy="850" r="4" fill="#fbbf24"/>
+    <text x="990" y="854" fill="#fbbf24" font-size="9">dashboard pending</text>
+  </svg>
+  <div style="display:flex;justify-content:space-between;margin-top:20px;padding-top:16px;border-top:1px solid #334155;color:#64748b;font-size:11px;">
+    <span>All systems paper mode — no real money at risk</span>
+    <span>Generated by OpenClaw  ·  June 7, 2026</span>
+  </div>
+</div>
+</body>
+</html>

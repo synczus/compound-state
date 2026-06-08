@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 # Config
 DUCKDB_PATH = str(Path.home() / "kestrel/signals.duckdb")
-FT_API_BASE = "http://127.0.0.1:8080/api/v1"
+FT_API_BASE = "http://127.0.0.1:8092/api/v1"
 FT_USER = "ftuser"
 FT_PASS = "ftpass"
 

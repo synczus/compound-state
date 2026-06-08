@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 00:30:01 UTC_
-_Total active entries: 226_
+_Last consolidated: 2026-06-08 01:05:05 UTC_
+_Total active entries: 230_
 
 ## By Category
 
-- **other**: 83 entries
+- **other**: 87 entries
 - **pipeline-infrastructure**: 47 entries
 - **agent-orchestration**: 35 entries
 - **monitoring-observability**: 23 entries
@@ -19,6 +19,10 @@ _Total active entries: 226_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 80768 signals (4490 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- `[hermes]` **[other]** ⚪ striker: 78423 signals (4490 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 71354 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 68953 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 63983 signals (4350 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 62513 signals (4350 >=0.3%), last 1970-01-01 00:00:00
@@ -65,10 +69,6 @@ _Total active entries: 226_
 - `[hermes]` **[other]** 2026-06-07 | Scraper | Coinbase is already wired through Striker with live signals flowing — IBKR crypto exists but is thin (4 coins), so the cleanest split is Coinbase for crypto execution and IBKR for equities through MMR.
 - `[hermes]` **[monitoring-observability]** 2026-06-07 | Scraper | Dashboard needs a name that fits the swarm — throw out your direction (Greek/modern) and I'll write the project scaffold while you decide.
 - `[hermes]` **[other]** 2026-06-07 | Scraper | Drop the raw Telegram channel content in here and I'll score each one on signal, relevance, volume, and credibility — then tell you exactly which to keep and which to cut.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Drop those four credentials into the .env file and MMR paper trades in under 2 minutes — and when you're gone, agents whisper in the background and you come back to something built.
-- `[hermes]` **[agent-orchestration]** 2026-06-07 | Scraper | Every agent hears everything — only the relevant lane replies day-to-day, and the hot sequence is just for structured deep-thinks so you get one complete answer instead of five people talking over each other.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-07 | Scraper | Every hop in the chain reviews the last — if I suggest something wrong or out of order, the next agent corrects it before it gets to you, so the chain auto-improves without Chase having to steer.
-- `[hermes]` **[other]** 2026-06-07 | Scraper | Every message from me is now a single condensed signal — no fluff, no lead-up, only the highest-leverage information you need to act on.
 
 ---
 

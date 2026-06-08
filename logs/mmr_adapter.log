@@ -1,0 +1,16 @@
+2026-06-07 20:43:37,367 INFO [mmr_adapter] MMR adapter started | paper=True | poll=60s
+2026-06-07 20:43:37,593 INFO [mmr_adapter] Single-shot: 0 signals injected
+2026-06-07 20:44:15,742 INFO [mmr_adapter] MMR adapter started | paper=True | poll=60s
+2026-06-07 20:44:15,752 ERROR [mmr_adapter] DuckDB equity signal read error: type object 'datetime.datetime' has no attribute 'UTC'
+2026-06-07 20:44:15,752 ERROR [mmr_adapter] DuckDB crypto signal read error: type object 'datetime.datetime' has no attribute 'UTC'
+2026-06-07 20:44:15,752 INFO [mmr_adapter] Single-shot: 0 signals injected
+2026-06-07 20:44:28,069 INFO [mmr_adapter] MMR adapter started | paper=True | poll=60s
+2026-06-07 20:44:28,079 ERROR [mmr_adapter] DuckDB equity signal read error: type object 'datetime.datetime' has no attribute 'UTC'
+2026-06-07 20:44:28,079 ERROR [mmr_adapter] DuckDB crypto signal read error: type object 'datetime.datetime' has no attribute 'UTC'
+2026-06-07 20:44:28,079 INFO [mmr_adapter] Single-shot: 0 signals injected
+2026-06-07 20:44:58,892 INFO [mmr_adapter] MMR adapter started | paper=True | poll=60s
+2026-06-07 20:44:58,902 ERROR [mmr_adapter] DuckDB equity signal read error: type object 'datetime.datetime' has no attribute 'datetime'
+2026-06-07 20:44:58,902 ERROR [mmr_adapter] DuckDB crypto signal read error: type object 'datetime.datetime' has no attribute 'datetime'
+2026-06-07 20:44:58,902 INFO [mmr_adapter] Single-shot: 0 signals injected
+2026-06-07 20:45:06,286 INFO [mmr_adapter] MMR adapter started | paper=True | poll=60s
+2026-06-07 20:45:44,325 INFO [mmr_adapter] MMR adapter started | paper=True | poll=60s

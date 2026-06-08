@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-08T00:25:01Z",
+  "timestamp": "2026-06-08T00:54:55Z",
   "cron_health": {
     "crons": [
       {
@@ -7,7 +7,7 @@
         "label": "\ud83c\udfa4 Voice Drop",
         "freq": "12h",
         "status": "healthy",
-        "age_seconds": 9211,
+        "age_seconds": 11005,
         "last_run": "2026-06-07T21:51:30Z"
       },
       {
@@ -15,7 +15,7 @@
         "label": "\ud83d\udcca Market Pulse",
         "freq": "12h",
         "status": "healthy",
-        "age_seconds": 9090,
+        "age_seconds": 10884,
         "last_run": "2026-06-07T21:53:31Z"
       },
       {
@@ -23,15 +23,15 @@
         "label": "\ud83d\udcc1 Squirrel Feeder",
         "freq": "5min",
         "status": "stale",
-        "age_seconds": 1794,
-        "last_run": "2026-06-07T23:55:07Z"
+        "age_seconds": 1787,
+        "last_run": "2026-06-08T00:25:08Z"
       },
       {
         "name": "hlm-scraper-every-6h",
         "label": "\ud83d\udccb HLM Scraper",
         "freq": "6h",
         "status": "healthy",
-        "age_seconds": 8673,
+        "age_seconds": 10467,
         "last_run": "2026-06-07T22:00:28Z"
       },
       {
@@ -47,7 +47,7 @@
         "label": "\ud83d\udce4 Git Sync",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 460,
+        "age_seconds": 2254,
         "last_run": "2026-06-08T00:17:21Z"
       },
       {
@@ -55,7 +55,7 @@
         "label": "\ud83d\udd0d Meta-Monitor",
         "freq": "15min",
         "status": "healthy",
-        "age_seconds": 146,
+        "age_seconds": 1940,
         "last_run": "2026-06-08T00:22:35Z"
       },
       {
@@ -71,8 +71,8 @@
         "label": "\ud83d\udcb0 Budget Monitor",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 3312,
-        "last_run": "2026-06-07T23:29:49Z"
+        "age_seconds": 1362,
+        "last_run": "2026-06-08T00:32:13Z"
       }
     ],
     "summary": {
@@ -97,12 +97,12 @@
     }
   ],
   "cost": {
-    "daily": 48.346616114,
+    "daily": 1.192427519,
     "estimated_per_run": 0.002,
     "daily_estimated": 1.46,
     "weekly_estimated": 10.22,
     "monthly_estimated": 43.8,
-    "last_checked": "2026-06-07T23:29:49Z",
+    "last_checked": "2026-06-08T00:32:13Z",
     "daily_limit": 30.0,
     "per_cron": {
       "\ud83c\udfa4 Voice Drop": {

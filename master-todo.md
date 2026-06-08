@@ -180,3 +180,21 @@
 - [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
 - [ ] ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
 - [ ] ⚪ striker: 68953 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T00:30:05Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 22 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 71354 signals (4350 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T00:50:12Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 78423 signals (4490 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-08T01:00:27Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: The IBKR inversion analysis is complete. Time to build. What
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 23 unprocessed: message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-, message---1ec39867-8c21-4eaf-8...
+- [ ] ⚪ striker: 80768 signals (4490 >=0.3%), last 1970-01-01 00:00:00

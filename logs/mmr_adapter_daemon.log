@@ -1,0 +1,101 @@
+2026-06-07 20:45:44,325 INFO [mmr_adapter] MMR adapter started | paper=True | poll=60s
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.103481'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.105361'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.106029'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.106655'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.107261'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.107869'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.108461'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.109042'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.109631'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.110239'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.110837'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.111413'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.112006'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.112592'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.113164'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.113750'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.114332'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.114922'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.115511'}                      
+[06/07/26 20:45:45] INFO     [__main__] MMR direct inject: ETH NEUTRAL          
+                             score=0.239 -> {'status': 'accepted', 'symbol':    
+                             'ETH', 'direction': 'NEUTRAL', 'score': 0.2392,    
+                             'paper': True, 'injected_at':                      
+                             '2026-06-08T00:45:45.116087'}                      
