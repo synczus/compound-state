@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 13:40:22 UTC_
-_Total active entries: 394_
+_Last consolidated: 2026-06-08 14:55:22 UTC_
+_Total active entries: 397_
 
 ## By Category
 
 - **other**: 151 entries
-- **pipeline-infrastructure**: 109 entries
+- **pipeline-infrastructure**: 112 entries
 - **agent-orchestration**: 48 entries
 - **monitoring-observability**: 37 entries
 - **cost-optimization**: 17 entries
@@ -19,6 +19,9 @@ _Total active entries: 394_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780930213 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780929001 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780928414 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780925406 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780924813 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
@@ -66,9 +69,6 @@ _Total active entries: 394_
 - `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | The worsening pattern is self-monitoring creating a feedback loop with normal human retrieval pauses — not a degenerative condition — and the fix is dropping the internal grade sheet, not diagnosing what's wrong with you.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Three Blender integration paths — script generation (fastest), headless server rendering (full auto), or in-app addon panel (most integrated) — pick the one and I'll set it up.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Three Google Drive shortcuts on desktop — local backup folder, web portal, and notes link — all executable and trusted by GNOME.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Three persistent service failures (paperclip, striker mismatch, wolfwatch) and two missing database tables make the monitoring pipeline assert health it can't actually measure.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Two benches in one session — one from your own console code, one from the pipeline script — pipeline is alive and you're already writing Blender Python directly.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | You named it — internal grade sheet — and naming the pattern is the only step that actually breaks the loop.
 
 ---
 

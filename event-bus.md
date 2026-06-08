@@ -171,3 +171,11 @@ _50 high-confidence signals analyzed_
 [2026-06-08T14:15:04.125361+00:00] | [WOLFWATCH] | [IMPORTANT] | Striker DB STAGNANT: No new signal rows for 437 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.
 [2026-06-08T14:15:04.125419+00:00] | [WOLFWATCH] | [WARNING] | Telegram dispatch for Striker DB STAGNANT: failed or unconfigured
 [2026-06-08T14:15:04.125784+00:00] | [KAIROS] | [MONITOR_DB_NOTIFY_SENT] | STAGNANT: 200:{"status":"ok","telegram":"failed","payload":{"source":"kairos-striker-monitor","severity":"important","title":"Striker DB STAGNANT","body":"No new signal rows for 437 minutes; count=138861; latest=2026-06-08T06:57:33.421957+00:00.","timest
+
+2026-06-08 14:20 UTC | meta-monitor | All crons and services healthy2026-06-08T14:20:12Z | state-probe | Striker=offline WolfWatch=online MetaAge=8s
+
+2026-06-08 14:23 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 14:38 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-08T14:50:19Z | state-probe | Striker=offline WolfWatch=online MetaAge=1815s
+
+2026-06-08 14:53 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-08 15:08 UTC | baton-auto-cycle | No pending P0/P1 work found on board

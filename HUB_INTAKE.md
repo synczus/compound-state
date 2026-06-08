@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-08
-_Generated: 2026-06-08T14:10:55Z_
+_Generated: 2026-06-08T15:12:34Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 13:40:22 UTC_
-_Total active entries: 394_
+_Last consolidated: 2026-06-08 14:55:22 UTC_
+_Total active entries: 397_
 
 ## By Category
 
 - **other**: 151 entries
-- **pipeline-infrastructure**: 109 entries
+- **pipeline-infrastructure**: 112 entries
 - **agent-orchestration**: 48 entries
 - **monitoring-observability**: 37 entries
 - **cost-optimization**: 17 entries
@@ -26,6 +26,9 @@ _Total active entries: 394_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780930213 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780929001 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780928414 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780925406 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780924813 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
@@ -36,7 +39,6 @@ _Total active entries: 394_
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780914016 min — propose next cycle
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Boot persistence is the compound's last unverified P1 — if one agent drops on restart the whole autonomous loop breaks silently, and proving it holds (or fixing what doesn't) is the difference between a demo and a production system.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | Boot persistence is the difference between a demo that works now and a system that works tomorrow.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Both videos walk through enabling the addon and connecting the MCP server — follow the first one for the full walkthrough, or the 10-minute one for just the setup steps.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
