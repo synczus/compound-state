@@ -1,8 +1,60 @@
 # Market Signals & Trading
 
-_Auto-updated from Telegram chat history | 7 latest entries_
+_Auto-updated from Telegram chat history | 13 latest entries_
 
 ### 1. signal
+- **When:** 2026-06-08 19:04:05
+- **Tags:** eth
+
+[The user sent a voice message~ Here's what they said: "Do you think it could be the harness that we installed for there it goes. It clawed isn't working for some reason clawed is It doesn't call tools or anything. I just it is thanks for a second then logs out. I don't understand it I think it's because of the harness that we installed on the agents. There's a harness that I got off the go that I installed. I'm not sure I opened up Jim and I and it said something about The harness wasn't working or something the tool wasn't working. Do you think that's maybe the reason why the tools aren't working and Claude's not working and Jim and I know Jim and I was working, but codex Claude doesn't work on"]
+
+---
+
+### 2. signal
+- **When:** 2026-06-08 18:57:11
+- **Tags:** exit
+
+[The user sent a voice message~ Here's what they said: "Give me a long-ass prompt for what I need to get perplexity to have them fix all the agents that aren't working. I need to do deep research and figure out what's going on."]
+
+---
+
+### 3. signal
+- **When:** 2026-06-08 15:09:41
+- **Tags:** eth
+
+[The user sent a voice message~ Here's what they said: "Something changed the nothing's nothing's going automatically anymore like it was before it's just two people and two agents"]
+
+---
+
+### 4. signal
+- **When:** 2026-06-08 13:03:14
+- **Tags:** eth
+
+[System note: Your previous turn was interrupted before you could process the last tool result(s). The conversation history contains tool outputs you haven't responded to yet. Please finish processing those results and summarize what was accomplished, then address the user's new message below.]
+
+[The user sent a voice message~ Here's what they said: "I think this is from the auto routing because it's something's eating it. I just saw like a dollar fifty go out the window. I don't know"]
+
+---
+
+### 5. signal
+- **When:** 2026-06-08 13:00:06
+- **Tags:** eth
+
+[System note: Your previous turn was interrupted before you could process the last tool result(s). The conversation history contains tool outputs you haven't responded to yet. Please finish processing those results and summarize what was accomplished, then address the user's new message below.]
+
+[The user sent a voice message~ Here's what they said: "Something we change is eating credits, so I'm not sure what it is, but we need to figure out what it is."]
+
+---
+
+### 6. signal
+- **When:** 2026-06-08 12:50:12
+- **Tags:** eth
+
+woah something just ate my credits
+
+---
+
+### 7. signal
 - **When:** 2026-06-08 12:16:37
 - **Tags:** eth
 
@@ -12,7 +64,7 @@ _Auto-updated from Telegram chat history | 7 latest entries_
 
 ---
 
-### 2. signal
+### 8. signal
 - **When:** 2026-06-08 06:29:14
 - **Tags:** eth
 
@@ -20,7 +72,7 @@ _Auto-updated from Telegram chat history | 7 latest entries_
 
 ---
 
-### 3. signal
+### 9. signal
 - **When:** 2026-06-08 03:45:01
 - **Tags:** signal
 
@@ -30,7 +82,7 @@ _Auto-updated from Telegram chat history | 7 latest entries_
 
 ---
 
-### 4. signal
+### 10. signal
 - **When:** 2026-06-08 03:37:05
 - **Tags:** exit
 
@@ -40,7 +92,7 @@ _Auto-updated from Telegram chat history | 7 latest entries_
 
 ---
 
-### 5. signal
+### 11. signal
 - **When:** 2026-06-08 03:30:55
 - **Tags:** signal
 
@@ -48,7 +100,7 @@ Compress the initiation-protocol.md file by removing verbose examples, redundant
 
 ---
 
-### 6. signal
+### 12. signal
 - **When:** 2026-06-07 16:57:52
 - **Tags:** signal, market, analysis
 
@@ -56,7 +108,7 @@ Find 15-20 high-quality Telegram signal channels in these categories: crypto tra
 
 ---
 
-### 7. signal
+### 13. signal
 - **When:** 2026-06-06 00:12:45
 - **Tags:** market, leverage
 

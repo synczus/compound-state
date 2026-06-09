@@ -1,8 +1,40 @@
 # Tools & Infrastructure
 
-_Auto-updated from Telegram chat history | 13 latest entries_
+_Auto-updated from Telegram chat history | 16 latest entries_
 
 ### 1. tool
+- **When:** 2026-06-08 15:05:10
+- **Tags:** hermes
+
+[The user sent a voice message~ Here's what they said: "We're the other agents, the only agents to answer right now are Caros and Hermes."]
+
+---
+
+### 2. tool
+- **When:** 2026-06-08 13:08:19
+- **Tags:** striker
+
+synczus@ubuntu:~$ sudo systemctl stop kestrel-striker kestrel-mirofish && pkill -u syncshadow7 -f "kestrel|striker|regime_handler|code-wraith" && pkill -f "kestrel|striker|mirofish"
+[sudo] password for synczus: 
+pkill: killing pid 3879 failed: Operation not permitted
+pkill: killing pid 4392 failed: Operation not permitted
+pkill: killing pid 4412 failed: Operation not permitted
+pkill: killing pid 11994 failed: Operation not permitted
+synczus@ubuntu:~$
+
+---
+
+### 3. tool
+- **When:** 2026-06-08 13:01:16
+- **Tags:** striker
+
+[System note: Your previous turn was interrupted before you could process the last tool result(s). The conversation history contains tool outputs you haven't responded to yet. Please finish processing those results and summarize what was accomplished, then address the user's new message below.]
+
+[The user sent a voice message~ Here's what they said: "The striker engine is under sync shadow 7, nothing should be under sync shadow 7. I'm not going to be using that anymore, and I don't want it to cause any problems, so let's move everything from sync shadow 7 over to this profile."]
+
+---
+
+### 4. tool
 - **When:** 2026-06-08 06:32:11
 - **Tags:** tor
 
@@ -12,7 +44,7 @@ _Auto-updated from Telegram chat history | 13 latest entries_
 
 ---
 
-### 2. tool
+### 5. tool
 - **When:** 2026-06-08 06:30:30
 - **Tags:** tor
 
@@ -20,7 +52,7 @@ _Auto-updated from Telegram chat history | 13 latest entries_
 
 ---
 
-### 3. tool
+### 6. tool
 - **When:** 2026-06-08 06:19:08
 - **Tags:** tor
 
@@ -30,7 +62,7 @@ _Auto-updated from Telegram chat history | 13 latest entries_
 
 ---
 
-### 4. tool
+### 7. tool
 - **When:** 2026-06-08 05:58:58
 - **Tags:** codegraph
 
@@ -38,7 +70,7 @@ what about this for codegraph that way we can organize the shit out of my files 
 
 ---
 
-### 5. tool
+### 8. tool
 - **When:** 2026-06-08 05:52:27
 - **Tags:** headroom
 
@@ -46,7 +78,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 6. tool
+### 9. tool
 - **When:** 2026-06-08 04:52:23
 - **Tags:** tor
 
@@ -54,7 +86,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 7. tool
+### 10. tool
 - **When:** 2026-06-08 04:33:39
 - **Tags:** tor
 
@@ -64,7 +96,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 8. tool
+### 11. tool
 - **When:** 2026-06-08 04:26:54
 - **Tags:** blender
 
@@ -72,7 +104,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 9. tool
+### 12. tool
 - **When:** 2026-06-08 03:47:56
 - **Tags:** tor
 
@@ -82,7 +114,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 10. tool
+### 13. tool
 - **When:** 2026-06-08 03:42:29
 - **Tags:** tor
 
@@ -92,7 +124,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 11. tool
+### 14. tool
 - **When:** 2026-06-08 03:39:17
 - **Tags:** hermes
 
@@ -100,7 +132,7 @@ Compress /home/synczus/kestrel/identity/hermes-soul.md (6,710 bytes) by ~60%. Ke
 
 ---
 
-### 12. tool
+### 15. tool
 - **When:** 2026-06-06 12:15:19
 - **Tags:** hermes, tor
 
@@ -110,7 +142,7 @@ Compress /home/synczus/kestrel/identity/hermes-soul.md (6,710 bytes) by ~60%. Ke
 
 ---
 
-### 13. tool
+### 16. tool
 - **When:** 2026-06-05 22:59:32
 - **Tags:** openrouter
 
