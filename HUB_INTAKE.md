@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-09
-_Generated: 2026-06-09T05:10:19Z_
+_Generated: 2026-06-09T08:25:37Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 03:01:01 UTC_
-_Total active entries: 483_
+_Last consolidated: 2026-06-09 06:01:02 UTC_
+_Total active entries: 484_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 127 entries
+- **pipeline-infrastructure**: 128 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,7 @@ _Total active entries: 483_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780984820 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780974005 min — propose next cycle
 - `[hermes]` **[other]** ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - `[hermes]` **[other]** 🔴 health: Striker is activating — needs attention
@@ -37,86 +38,83 @@ _Total active entries: 483_
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780936226 min — propose next cycle
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | 11-minute gap clean — all services nominal, no drift, no decay, pulse delivered on schedule.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 04:13:56 UTC_
+_Generated: 2026-06-09 08:01:17 UTC_
 
 ## Last 24h
 
-- PROMOTE: 37
-- PURGE: 66
-- Total: 103
+- PROMOTE: 42
+- PURGE: 48
+- Total: 90
 
 ## Top Reasons
 
-- No significant markers found: 66
-- Security/vulnerability signal: 30
+- No significant markers found: 48
+- Security/vulnerability signal: 32
+- Convergence detected: 7
 - Dependency/ecosystem shift: 6
-- Structural shift (engineering refactor/rewrite): 5
-- Direct actionability detected: 4
-- Convergence detected: 4
+- Direct actionability detected: 5
+- Structural shift (engineering refactor/rewrite): 4
 
 ## Sources
 
-- Telegram: 30
-- GitHub_vscode: 16
-- GitHub_llama.cpp: 11
+- GitHub_vscode: 20
+- GitHub_llama.cpp: 15
+- GitHub_unsloth: 13
+- GitHub_ollama: 11
 - GitHub_ComfyUI: 11
 - GitHub_langchain: 10
 - GitHub_openai-python: 10
-- GitHub_unsloth: 10
-- GitHub_ollama: 5
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit f899992 by Alexis Rolland: fix: Add back apply_rotary_emb for Qwen Image (#14364)
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit cb9600e by Connor Peet: Only show WSL remote picker option on Windows (#320543)  Fixes #320541  Co-authored-by: C
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit ffd6d6e by Henning Dieterichs: Fixes CI
 _[truncated]_
 
 ## Today's Pulses (newest first)
 
 ### inversion-pulse.md
 
-2026-06-09T04:17:07Z | inversion-cron |
+2026-06-09T04:17:07Z | inversion-cron | 
+2026-06-09T08:17:01Z | inversion-cron |
 
 ### noise-gate-context.md
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 04:13:56 UTC_
+_Generated: 2026-06-09 08:01:17 UTC_
 
 ## Last 24h
 
-- PROMOTE: 37
-- PURGE: 66
-- Total: 103
+- PROMOTE: 42
+- PURGE: 48
+- Total: 90
 
 ## Top Reasons
 
-- No significant markers found: 66
-- Security/vulnerability signal: 30
+- No significant markers found: 48
+- Security/vulnerability signal: 32
+- Convergence detected: 7
 - Dependency/ecosystem shift: 6
-- Structural shift (engineering refactor/rewrite): 5
-- Direct actionability detected: 4
-- Convergence detected: 4
+- Direct actionability detected: 5
+- Structural shift (engineering refactor/rewrite): 4
 
 ## Sources
 
-- Telegram: 30
-- GitHub_vscode: 16
-- GitHub_llama.cpp: 11
+- GitHub_vscode: 20
+- GitHub_llama.cpp: 15
+- GitHub_unsloth: 13
+- GitHub_ollama: 11
 - GitHub_ComfyUI: 11
 - GitHub_langchain: 10
 - GitHub_openai-python: 10
-- GitHub_unsloth: 10
-- GitHub_ollama: 5
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit f899992 by Alexis Rolland: fix: Add back apply_rotary_emb for Qwen Image (#14364)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 58c0981 by Henning Dieterichs: Registers @vscode/markdown-editor in markdown-language-features extension
 _[truncated]_

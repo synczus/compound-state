@@ -330,3 +330,39 @@
 - [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
 - [ ] ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-09T05:30:10Z ---
+- [ ] 🔴 hop: Active hop — nemoclaw's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-09T06:00:19Z ---
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] 🟡 hop: Hop idle 1780984820 min — propose next cycle
+- [ ] ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-09T06:30:05Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-09T07:00:20Z ---
+- [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-09T07:30:05Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-09T08:00:07Z ---
+- [ ] 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
+- [ ] 🟡 contract: coordination.yaml exists but may be misconfigured
+- [ ] ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00

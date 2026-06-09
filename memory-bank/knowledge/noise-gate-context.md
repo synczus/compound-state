@@ -1,47 +1,46 @@
 # Noise Gate Context
 
-_Generated: 2026-06-09 04:13:56 UTC_
+_Generated: 2026-06-09 08:01:17 UTC_
 
 ## Last 24h
 
-- PROMOTE: 37
-- PURGE: 66
-- Total: 103
+- PROMOTE: 42
+- PURGE: 48
+- Total: 90
 
 ## Top Reasons
 
-- No significant markers found: 66
-- Security/vulnerability signal: 30
+- No significant markers found: 48
+- Security/vulnerability signal: 32
+- Convergence detected: 7
 - Dependency/ecosystem shift: 6
-- Structural shift (engineering refactor/rewrite): 5
-- Direct actionability detected: 4
-- Convergence detected: 4
+- Direct actionability detected: 5
+- Structural shift (engineering refactor/rewrite): 4
 
 ## Sources
 
-- Telegram: 30
-- GitHub_vscode: 16
-- GitHub_llama.cpp: 11
+- GitHub_vscode: 20
+- GitHub_llama.cpp: 15
+- GitHub_unsloth: 13
+- GitHub_ollama: 11
 - GitHub_ComfyUI: 11
 - GitHub_langchain: 10
 - GitHub_openai-python: 10
-- GitHub_unsloth: 10
-- GitHub_ollama: 5
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit f899992 by Alexis Rolland: fix: Add back apply_rotary_emb for Qwen Image (#14364)
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 3ac3c20 by Reese Levine: ggml-webgpu: Add clang-format job (#24308)  * Add clang-format job  * try local formatti
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit cb9600e by Connor Peet: Only show WSL remote picker option on Windows (#320543)  Fixes #320541  Co-authored-by: C
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit e8303fa by Connor Peet: Add tooltips to agent host session config pickers (#320542)  * Add tooltips to agent host
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit cb9f639 by Comfy Org PR Bot: chore(openapi): sync shared API contract from cloud@5273c30 (#14266)
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 7facb8e by Rob Lourens: Make Agent Host git-blob URIs label friendly (#317450)  * Make git blob URIs label friend
-- PROMOTE score=9 source=GitHub_vscode reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit cdb2a31 by Don Jayamanne: Disable VS Code completions as  agent-host backed sessions, provide their own completio
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 91e5eeb by vs-code-engineering[bot]: [cherry-pick] Render keybindings for OpenInVSCode and OpenWorkspaceInAgents 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 2f63868 by Harald Kirschner: Fix Chronicle cloud search timeouts with 7-day default window (#318620)  - Change de
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit cf97fae by Michael Han: Studio: keep chat in place when composer attachments resize it (#6070)  * Studio: keep ch
-- PROMOTE score=4 source=GitHub_unsloth reason=Structural shift (engineering refactor/rewrite) preview=Commit b2b4e4c by Daniel Han: CI: allowlist deepseek_ocr2 in the compiler full-model-sweep (#6085)  transformers-latest 
-- PROMOTE score=12 source=GitHub_unsloth reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal; Convergence detected preview=Commit e20a6c3 by Daniel Han: Restore KTO logps truncation guard for TRL (re-apply dropped #5996) (#6086)  * Restore KTO
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 58c0981 by Henning Dieterichs: Registers @vscode/markdown-editor in markdown-language-features extension
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit ffd6d6e by Henning Dieterichs: Fixes CI
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 961e9a3 by fiesh: server : do not clear slots without unified KV cache (#24190)  * Always export idle slots to RA
+- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 4c97a94 by Jesse Gross: mlxthread: preserve the original stack when worker work panics  Work that panics on the l
+- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 07588c6 by Jesse Gross: mlxrunner/cache: split KVCache and RotatingKVCache into their own files  cache.go had gro
+- PROMOTE score=5 source=GitHub_ollama reason=Direct actionability detected preview=Commit 177aefb by Jesse Gross: nn/recurrent: return per-boundary states from the gated-delta kernels  CausalConv1D and G
+- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit d006220 by Jesse Gross: mlxrunner: drive MTP speculation through cache snapshots  Speculation used a parallel hie
+- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit ded2db7 by Jesse Gross: mlxrunner: capture prefill snapshots across the forward  Prefill no longer splits its bat
+- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 1abd56b by Jesse Gross: mlxrunner: record committed MTP drafts before streaming them  The batched MTP accept path
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit fd3271e by Yash Raj Pandey: ggml-cpu : fix rms_norm_back wrong output under in-place aliasing (#24305)  * ggml-cp
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit f0152ef by Sigbjørn Skjæret: models : fix plamo2 attention_key/value_length regression (#24317)
+- PROMOTE score=3 source=GitHub_unsloth reason=Convergence detected preview=Commit 8292e69 by Daniel Han: Studio: make code comments and docstrings more succinct (#6029)  Trim and tighten code com
 
 ## Agent Use
 
