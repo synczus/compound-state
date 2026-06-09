@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-09
-_Generated: 2026-06-09T11:10:52Z_
+_Generated: 2026-06-09T12:26:00Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 09:01:04 UTC_
-_Total active entries: 485_
+_Last consolidated: 2026-06-09 12:02:05 UTC_
+_Total active entries: 486_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 129 entries
+- **pipeline-infrastructure**: 130 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,7 @@ _Total active entries: 485_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781006421 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780995626 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780984820 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780974005 min — propose next cycle
@@ -38,25 +39,24 @@ _Total active entries: 485_
 - `[hermes]` **[other]** 🔴 health: Striker is failed — needs attention
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780936226 min — propose next cycle
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | 1,117 symbols mapped across 139 files with 2,376 connections — open `file:///home/synczus/synapse/codegraph.html` to drag through the graph and see how everything in Kestrel connects.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 11:07:54 UTC_
+_Generated: 2026-06-09 12:12:40 UTC_
 
 ## Last 24h
 
-- PROMOTE: 46
-- PURGE: 51
-- Total: 97
+- PROMOTE: 47
+- PURGE: 55
+- Total: 102
 
 ## Top Reasons
 
-- No significant markers found: 51
-- Security/vulnerability signal: 35
+- No significant markers found: 55
+- Security/vulnerability signal: 36
 - Dependency/ecosystem shift: 7
 - Convergence detected: 7
 - Structural shift (engineering refactor/rewrite): 5
@@ -64,9 +64,9 @@ _Generated: 2026-06-09 11:07:54 UTC_
 
 ## Sources
 
-- GitHub_vscode: 22
-- GitHub_llama.cpp: 20
-- GitHub_unsloth: 13
+- GitHub_vscode: 23
+- GitHub_llama.cpp: 22
+- GitHub_unsloth: 15
 - GitHub_ollama: 11
 - GitHub_ComfyUI: 11
 - GitHub_langchain: 10
@@ -74,27 +74,33 @@ _Generated: 2026-06-09 11:07:54 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit ae735b1 by Nick Towle: ui: Fix excessive style recalculation on hover (#24243)
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 33f4397 by Wasim Yousef Said: Studio fix recipe dataset preview (#6031)  * Studio: fix recipe dataset preview  * 
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### inversion-pulse.md
+
+2026-06-09T04:17:07Z | inversion-cron | 
+2026-06-09T08:17:01Z | inversion-cron | 
+2026-06-09T12:17:02Z | inversion-cron |
 
 ### noise-gate-context.md
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 11:07:54 UTC_
+_Generated: 2026-06-09 12:12:40 UTC_
 
 ## Last 24h
 
-- PROMOTE: 46
-- PURGE: 51
-- Total: 97
+- PROMOTE: 47
+- PURGE: 55
+- Total: 102
 
 ## Top Reasons
 
-- No significant markers found: 51
-- Security/vulnerability signal: 35
+- No significant markers found: 55
+- Security/vulnerability signal: 36
 - Dependency/ecosystem shift: 7
 - Convergence detected: 7
 - Structural shift (engineering refactor/rewrite): 5
@@ -102,9 +108,9 @@ _Generated: 2026-06-09 11:07:54 UTC_
 
 ## Sources
 
-- GitHub_vscode: 22
-- GitHub_llama.cpp: 20
-- GitHub_unsloth: 13
+- GitHub_vscode: 23
+- GitHub_llama.cpp: 22
+- GitHub_unsloth: 15
 - GitHub_ollama: 11
 - GitHub_ComfyUI: 11
 - GitHub_langchain: 10
@@ -112,10 +118,5 @@ _Generated: 2026-06-09 11:07:54 UTC_
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0c61709 by Benjamin Christopher Simmonds: sessions: experiment to move harness picker below input (#320584)  Add 
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 33f4397 by Wasim Yousef Said: Studio fix recipe dataset preview (#6031)  * Studio: fix recipe dataset preview  * 
 _[truncated]_
-
-### inversion-pulse.md
-
-2026-06-09T04:17:07Z | inversion-cron | 
-2026-06-09T08:17:01Z | inversion-cron |

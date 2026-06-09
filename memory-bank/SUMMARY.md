@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 09:01:04 UTC_
-_Total active entries: 485_
+_Last consolidated: 2026-06-09 12:02:05 UTC_
+_Total active entries: 486_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 129 entries
+- **pipeline-infrastructure**: 130 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,7 @@ _Total active entries: 485_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781006421 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780995626 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780984820 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780974005 min — propose next cycle
@@ -68,7 +69,6 @@ _Total active entries: 485_
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Both engines are wired and waiting — Headroom proxies every agent call through its compressor on port 8787, CodeGraph's 2,484-node index is ready for instant codebase queries, and both activate fully on the next Hermes session.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | Both visualization files at ~/compound/codegraph.html (code structure) and ~/compound/knowledge-graph.html (conversation decisions).
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingest pipeline consumed 2 new user messages, classified both as knowledge at 0.80 confidence, and refreshed the corresponding DuckDB knowledge docs.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingest pipeline ingested 18 new classified messages from the past 3.5 hours with a clean 100% success rate and no errors.
 
 ---
 
