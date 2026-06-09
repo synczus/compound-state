@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-09
-_Generated: 2026-06-09T16:26:20Z_
+_Generated: 2026-06-09T17:11:24Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -46,28 +46,28 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 16:06:17 UTC_
+_Generated: 2026-06-09 17:08:00 UTC_
 
 ## Last 24h
 
-- PROMOTE: 55
-- PURGE: 71
-- Total: 126
+- PROMOTE: 58
+- PURGE: 72
+- Total: 130
 
 ## Top Reasons
 
-- No significant markers found: 71
-- Security/vulnerability signal: 41
+- No significant markers found: 72
+- Security/vulnerability signal: 43
+- Dependency/ecosystem shift: 8
 - Convergence detected: 8
 - Structural shift (engineering refactor/rewrite): 7
-- Dependency/ecosystem shift: 7
 - Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 34
-- GitHub_llama.cpp: 24
-- GitHub_unsloth: 19
+- GitHub_vscode: 36
+- GitHub_llama.cpp: 25
+- GitHub_unsloth: 20
 - GitHub_ComfyUI: 16
 - GitHub_ollama: 11
 - GitHub_langchain: 11
@@ -76,11 +76,48 @@ _Generated: 2026-06-09 16:06:17 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 278e45d by Benjamin Christopher Simmonds: Merge pull request #320603 from microsoft/benibenj/weak-flea  Fix sessi
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 5a41503 by Megan Rogge: Fix background terminal notification agent routing (#320608)  Co-authored-by: Megan Rogge
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit e25a32e by Sigbjørn Skjæret: ci : fix windows release (#24369)
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 2554636 by Wasim Yousef Said: Studio: follow-up fix for GGUF developer prompts (#6115)  * Studio: merge developer
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### noise-gate-context.md
+
+# Noise Gate Context
+
+_Generated: 2026-06-09 17:08:00 UTC_
+
+## Last 24h
+
+- PROMOTE: 58
+- PURGE: 72
+- Total: 130
+
+## Top Reasons
+
+- No significant markers found: 72
+- Security/vulnerability signal: 43
+- Dependency/ecosystem shift: 8
+- Convergence detected: 8
+- Structural shift (engineering refactor/rewrite): 7
+- Direct actionability detected: 5
+
+## Sources
+
+- GitHub_vscode: 36
+- GitHub_llama.cpp: 25
+- GitHub_unsloth: 20
+- GitHub_ComfyUI: 16
+- GitHub_ollama: 11
+- GitHub_langchain: 11
+- GitHub_openai-python: 10
+- GitHub_AutoGPT: 1
+
+## Recent Decisions
+
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit ccc887a by Christof Marti: Update assessment for installing packages (#320606)
+_[truncated]_
 
 ### inversion-pulse.md
 
@@ -88,40 +125,3 @@ _[truncated]_
 2026-06-09T08:17:01Z | inversion-cron | 
 2026-06-09T12:17:02Z | inversion-cron | 
 2026-06-09T16:17:01Z | inversion-cron |
-
-### noise-gate-context.md
-
-# Noise Gate Context
-
-_Generated: 2026-06-09 16:06:17 UTC_
-
-## Last 24h
-
-- PROMOTE: 55
-- PURGE: 71
-- Total: 126
-
-## Top Reasons
-
-- No significant markers found: 71
-- Security/vulnerability signal: 41
-- Convergence detected: 8
-- Structural shift (engineering refactor/rewrite): 7
-- Dependency/ecosystem shift: 7
-- Direct actionability detected: 5
-
-## Sources
-
-- GitHub_vscode: 34
-- GitHub_llama.cpp: 24
-- GitHub_unsloth: 19
-- GitHub_ComfyUI: 16
-- GitHub_ollama: 11
-- GitHub_langchain: 11
-- GitHub_openai-python: 10
-- GitHub_AutoGPT: 1
-
-## Recent Decisions
-
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 278e45d by Benjamin Christopher Simmonds: Merge pull request #320603 from microsoft/benibenj/weak-flea  Fix sessi
-_[truncated]_
