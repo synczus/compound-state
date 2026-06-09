@@ -1,47 +1,47 @@
 # Noise Gate Context
 
-_Generated: 2026-06-09 17:08:00 UTC_
+_Generated: 2026-06-09 20:19:57 UTC_
 
 ## Last 24h
 
-- PROMOTE: 58
-- PURGE: 72
-- Total: 130
+- PROMOTE: 65
+- PURGE: 81
+- Total: 146
 
 ## Top Reasons
 
-- No significant markers found: 72
-- Security/vulnerability signal: 43
-- Dependency/ecosystem shift: 8
+- No significant markers found: 81
+- Security/vulnerability signal: 49
+- Dependency/ecosystem shift: 10
+- Structural shift (engineering refactor/rewrite): 8
 - Convergence detected: 8
-- Structural shift (engineering refactor/rewrite): 7
-- Direct actionability detected: 5
+- Direct actionability detected: 6
 
 ## Sources
 
-- GitHub_vscode: 36
-- GitHub_llama.cpp: 25
+- GitHub_vscode: 46
+- GitHub_llama.cpp: 27
 - GitHub_unsloth: 20
-- GitHub_ComfyUI: 16
+- GitHub_ComfyUI: 18
+- GitHub_langchain: 13
 - GitHub_ollama: 11
-- GitHub_langchain: 11
 - GitHub_openai-python: 10
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit ccc887a by Christof Marti: Update assessment for installing packages (#320606)
-- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit e25a32e by Sigbjørn Skjæret: ci : fix windows release (#24369)
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 2554636 by Wasim Yousef Said: Studio: follow-up fix for GGUF developer prompts (#6115)  * Studio: merge developer
-- PROMOTE score=3 source=GitHub_vscode reason=Dependency/ecosystem shift preview=Commit ec9476b by dependabot[bot]: Bump shell-quote from 1.8.1 to 1.8.4 in /extensions/copilot (#320602)  Bumps [shell-q
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 278e45d by Benjamin Christopher Simmonds: Merge pull request #320603 from microsoft/benibenj/weak-flea  Fix sessi
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 4836095 by Pascal: ui: add opt-in run_javascript frontend tool (#24244)  * ui: add opt-in run_javascript frontend
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 5a41503 by Megan Rogge: Fix background terminal notification agent routing (#320608)  Co-authored-by: Megan Rogge
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 184009c by Jukka Seppänen: feat: Add model support for SCAIL-2 (#14373)  * initial SCAIL2 support
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 9fc6f5f by Alexis Rolland: Move bg_removal_model input socket to first position for nicer display (#14353)
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 57be586 by oobabooga: Studio: improve OpenAI- and Anthropic-compatible API spec compliance (#6010)  * Studio: fix
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 40ae583 by Vritant Bhardwaj: Merge pull request #320538 from microsoft/mid-lizard  Enhance model fallback behavio
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit e0a1c83 by vs-code-engineering[bot]: [cherry-pick] Update link to permission level docs (release branch) (#320598
+- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 0f45b2c by Nidhi Rajani: feat(openai): support `apply_patch` built-in tool (#37157)  [Docs](https://github.com/la
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit c7d01d5 by Mason Daugherty: release(openai): 1.3.0 (#37989)
+- PROMOTE score=9 source=GitHub_vscode reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit 21c5fff by Ladislau Szomoru: Agent Host - adopt changesets breaking changes (#320636)  * Bring over the latest ve
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit ad56489 by Kohaku-Blueleaf: Ensure conditions are not trainable to avoid bugs (#14368)
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit 76da245 by Rémy Mathieu: webui: implement pinned conversations support (#21387)  * webui: implement pinned conver
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 50b471b by Megan Rogge: Run background terminal notifications on the conversation model (#320639)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 4b47f07 by Megan Rogge: xterm@6.1.0-beta.285 (#320646)  Diff: https://github.com/xtermjs/xterm.js/compare/6.1.0-b
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 99dcaab by Martin Aeschlimann: Skills contributed by VS Code Client do not contain descriptions (#320644)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 07f2a8a by Martin Aeschlimann: Avoid fetching chat modes on menu bar update (#320609)  * Avoid fetching chat mode
+- PROMOTE score=13 source=GitHub_vscode reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit f8a5597 by Connor Peet: Kill full server process tree in agent host kill_running_server (#320631)  * Kill full se
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 8ed18a4 by Megan Rogge: Fix Rerun Task closing/removing one of the terminals (#320432)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 5c9d3ec by Tyler James Leonhardt: Revert "Add context size picker for Claude Agent models" (#320614)  Revert "Add
 
 ## Agent Use
 

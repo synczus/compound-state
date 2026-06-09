@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-09
-_Generated: 2026-06-09T17:11:24Z_
+_Generated: 2026-06-09T20:26:41Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 15:02:06 UTC_
-_Total active entries: 487_
+_Last consolidated: 2026-06-09 18:04:07 UTC_
+_Total active entries: 488_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 131 entries
+- **pipeline-infrastructure**: 132 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,7 @@ _Total active entries: 487_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781028027 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781017222 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781006421 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780995626 min — propose next cycle
@@ -39,45 +40,44 @@ _Total active entries: 487_
 - `[hermes]` **[other]** ⚪ striker: 139213 signals (5183 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** 🔴 health: Striker is failed — needs attention
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780936226 min — propose next cycle
-- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 1 new message ingested from state DB — classified as knowledge/architecture from a skill-context block, regenerated knowledge docs with refreshed content.
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 17:08:00 UTC_
+_Generated: 2026-06-09 20:19:57 UTC_
 
 ## Last 24h
 
-- PROMOTE: 58
-- PURGE: 72
-- Total: 130
+- PROMOTE: 65
+- PURGE: 81
+- Total: 146
 
 ## Top Reasons
 
-- No significant markers found: 72
-- Security/vulnerability signal: 43
-- Dependency/ecosystem shift: 8
+- No significant markers found: 81
+- Security/vulnerability signal: 49
+- Dependency/ecosystem shift: 10
+- Structural shift (engineering refactor/rewrite): 8
 - Convergence detected: 8
-- Structural shift (engineering refactor/rewrite): 7
-- Direct actionability detected: 5
+- Direct actionability detected: 6
 
 ## Sources
 
-- GitHub_vscode: 36
-- GitHub_llama.cpp: 25
+- GitHub_vscode: 46
+- GitHub_llama.cpp: 27
 - GitHub_unsloth: 20
-- GitHub_ComfyUI: 16
+- GitHub_ComfyUI: 18
+- GitHub_langchain: 13
 - GitHub_ollama: 11
-- GitHub_langchain: 11
 - GitHub_openai-python: 10
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit e25a32e by Sigbjørn Skjæret: ci : fix windows release (#24369)
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 2554636 by Wasim Yousef Said: Studio: follow-up fix for GGUF developer prompts (#6115)  * Studio: merge developer
+- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 0f45b2c by Nidhi Rajani: feat(openai): support `apply_patch` built-in tool (#37157)  [Docs](https://github.com/la
+- PROMOTE score=9 source=GitHub_vscode reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit 21c5fff by Ladislau Szomoru: Agent Host - adopt changesets breaking changes (#320636)  * Bring over the latest ve
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -86,37 +86,37 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 17:08:00 UTC_
+_Generated: 2026-06-09 20:19:57 UTC_
 
 ## Last 24h
 
-- PROMOTE: 58
-- PURGE: 72
-- Total: 130
+- PROMOTE: 65
+- PURGE: 81
+- Total: 146
 
 ## Top Reasons
 
-- No significant markers found: 72
-- Security/vulnerability signal: 43
-- Dependency/ecosystem shift: 8
+- No significant markers found: 81
+- Security/vulnerability signal: 49
+- Dependency/ecosystem shift: 10
+- Structural shift (engineering refactor/rewrite): 8
 - Convergence detected: 8
-- Structural shift (engineering refactor/rewrite): 7
-- Direct actionability detected: 5
+- Direct actionability detected: 6
 
 ## Sources
 
-- GitHub_vscode: 36
-- GitHub_llama.cpp: 25
+- GitHub_vscode: 46
+- GitHub_llama.cpp: 27
 - GitHub_unsloth: 20
-- GitHub_ComfyUI: 16
+- GitHub_ComfyUI: 18
+- GitHub_langchain: 13
 - GitHub_ollama: 11
-- GitHub_langchain: 11
 - GitHub_openai-python: 10
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit ccc887a by Christof Marti: Update assessment for installing packages (#320606)
+- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 0f45b2c by Nidhi Rajani: feat(openai): support `apply_patch` built-in tool (#37157)  [Docs](https://github.com/la
 _[truncated]_
 
 ### inversion-pulse.md
@@ -124,4 +124,5 @@ _[truncated]_
 2026-06-09T04:17:07Z | inversion-cron | 
 2026-06-09T08:17:01Z | inversion-cron | 
 2026-06-09T12:17:02Z | inversion-cron | 
-2026-06-09T16:17:01Z | inversion-cron |
+2026-06-09T16:17:01Z | inversion-cron | 
+2026-06-09T20:17:01Z | inversion-cron |
