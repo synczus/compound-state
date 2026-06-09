@@ -64,3 +64,6 @@ To github.com:synczus/compound-state.git
    6fa1ac7..5d8513e  main -> main
 2026-06-08 20:30:16 — committed and pushed: HUB_INTAKE.md agent-pulses/2026-06-08/inversion-pulse.md auto-git.log compound-state.json cycle-state/current.json cycle-state/hop-sequence.json dashboard/pending.json data/.chat-ingest-state.json dat
 Tue Jun  9 12:30:01 AM EDT 2026 — git gc (281476K)
+To github.com:synczus/compound-state.git
+   5d8513e..bd50439  main -> main
+2026-06-09 00:30:04 — committed and pushed: HUB_INTAKE.md auto-git.log compound-state.json cycle-state/current.json cycle-state/hop-sequence.json data/.chat-ingest-state.json data/signals.duckdb data/trade_signals.json knowledge/chat-config-det
