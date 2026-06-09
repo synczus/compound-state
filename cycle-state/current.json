@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-09T00:30:01.243636+00:00",
+  "timestamp": "2026-06-09T04:30:01.128638+00:00",
   "version": "0.1.0",
   "budget": {
     "paused": false,
@@ -8,7 +8,7 @@
   },
   "services": {
     "striker": {
-      "status": "inactive",
+      "status": "active",
       "health": {
         "status": "connected",
         "connected_since": "2026-06-08T18:23:10.412817+00:00",
@@ -24,11 +24,6 @@
     "db_offline": true
   },
   "alerts": [
-    {
-      "source": "striker",
-      "severity": "error",
-      "reason": "striker service inactive"
-    },
     {
       "source": "wolfwatch",
       "severity": "error",

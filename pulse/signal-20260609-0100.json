@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-06-09T01:00:29Z",
+  "p0": [
+    {
+      "P": 0,
+      "tag": "hop",
+      "text": "Active hop \u2014 shannon's turn: Auto cycle \u2014 full squad sweep"
+    }
+  ],
+  "p1": [
+    {
+      "P": 1,
+      "tag": "contract",
+      "text": "coordination.yaml exists but may be misconfigured"
+    }
+  ],
+  "p2": [
+    {
+      "P": 2,
+      "tag": "exports",
+      "text": "30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-..."
+    },
+    {
+      "P": 2,
+      "tag": "striker",
+      "text": "139862 signals (5183 >=0.3%), last 1970-01-01 00:00:00"
+    }
+  ]
+}

@@ -422,3 +422,17 @@ _duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel
 [scorer 00:00:01] Scoring 6 new events
 [scorer 00:00:01] Scored 6 events, 6 bucket rebuilds, top-20 written
 [scorer 00:30:01] No new events to score
+[scorer 01:00:01] No new events to score
+[scorer 01:30:01] No new events to score
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 402, in <module>
+    run()
+  File "/home/synczus/kestrel/scripts/ingestion/post-ingest-scorer.py", line 88, in run
+    con = duckdb.connect(DB)
+          ^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 485080) by user synczus. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+[scorer 02:30:01] No new events to score
+[scorer 03:00:01] No new events to score
+[scorer 03:30:01] No new events to score
+[scorer 04:00:01] No new events to score
+[scorer 04:30:01] No new events to score

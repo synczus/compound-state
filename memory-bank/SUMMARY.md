@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-08 22:39:56 UTC_
-_Total active entries: 481_
+_Last consolidated: 2026-06-09 03:01:01 UTC_
+_Total active entries: 483_
 
 ## By Category
 
-- **other**: 181 entries
-- **pipeline-infrastructure**: 126 entries
+- **other**: 182 entries
+- **pipeline-infrastructure**: 127 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,8 @@ _Total active entries: 481_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780974005 min — propose next cycle
+- `[hermes]` **[other]** ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - `[hermes]` **[other]** 🔴 health: Striker is activating — needs attention
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780957810 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780947003 min — propose next cycle
@@ -67,8 +69,6 @@ _Total active entries: 481_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingest pipeline ingested 18 new classified messages from the past 3.5 hours with a clean 100% success rate and no errors.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingestion pipeline ingested 3 new user messages and regenerated 9 knowledge documents.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat pipeline is caught up — zero new Telegram messages, 2 previously backlogged trade alerts scored and processed.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat pipeline is caught up — zero new Telegram messages, 2 previously backlogged trade alerts scored and processed.  [{"id": "call_00_3jeCKcjcsaXmdsRdSHB47356", "call_id": "call_00_3jeCKcjcsaXmdsRdSHB47356", "response_item_id": "fc_00_3jeCKcjcsaXmdsRdSHB47356", "type": "function", "function": {"name": "memory", "arguments": "{\"action\": \"add\", \"target\": \"memory\", \"content\": \"scripts/chat_ingest.py does not exist in kestrel. The live Telegram ingestion pipeline uses scripts/note-intake.py (Bot API polling) + scripts/ingestion/post-ingest-scorer.py (DuckDB scoring). The archive batch pipeline uses scripts/ingestion/archive-ingest.py + post-ingest-scorer.py.\"}"}}]
-- `[hermes]` **[other]** 2026-06-08 | Scraper | Clarifying whether you want GitHub repo, Google Drive backup, or something else for your home directory upload.
 
 ---
 
