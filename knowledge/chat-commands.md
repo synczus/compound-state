@@ -1,8 +1,16 @@
 # Build Commands
 
-_Auto-updated from Telegram chat history | 8 latest entries_
+_Auto-updated from Telegram chat history | 9 latest entries_
 
 ### 1. build
+- **When:** 2026-06-09 10:01:05
+- **Tags:** fix
+
+Fix no tool calls by the agents, whoever has tools right now.
+
+---
+
+### 2. build
 - **When:** 2026-06-07 23:19:39
 - **Tags:** write
 
@@ -13,7 +21,7 @@ _[truncated]_
 
 ---
 
-### 2. build
+### 3. build
 - **When:** 2026-06-07 18:08:56
 - **Tags:** build
 
@@ -21,7 +29,7 @@ Build a TLDR newsletter scraper at /home/synczus/synapse/tldr_scraper.py. It fet
 
 ---
 
-### 3. build
+### 4. build
 - **When:** 2026-06-07 17:34:12
 - **Tags:** build
 
@@ -29,7 +37,7 @@ Build signal-normalizer.py — a Python script that reads raw Telegram channel e
 
 ---
 
-### 4. build
+### 5. build
 - **When:** 2026-06-05 23:26:06
 - **Tags:** fix
 
@@ -61,7 +69,7 @@ _[truncated]_
 
 ---
 
-### 5. build
+### 6. build
 - **When:** 2026-06-05 23:19:39
 - **Tags:** run
 
@@ -88,7 +96,7 @@ Report:
 
 ---
 
-### 6. build
+### 7. build
 - **When:** 2026-06-05 23:18:37
 - **Tags:** run
 
@@ -118,7 +126,7 @@ Success criteria:
 
 ---
 
-### 7. build
+### 8. build
 - **When:** 2026-06-05 22:55:33
 - **Tags:** create
 
@@ -126,7 +134,7 @@ create a hop for a line of agents, codex, hermes desktop, perplexity, gemini cha
 
 ---
 
-### 8. build
+### 9. build
 - **When:** 2026-06-05 22:42:26
 - **Tags:** fix
 

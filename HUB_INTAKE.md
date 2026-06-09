@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-09
-_Generated: 2026-06-09T12:26:00Z_
+_Generated: 2026-06-09T16:26:20Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 12:02:05 UTC_
-_Total active entries: 486_
+_Last consolidated: 2026-06-09 15:02:06 UTC_
+_Total active entries: 487_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 130 entries
+- **pipeline-infrastructure**: 131 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,7 @@ _Total active entries: 486_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781017222 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781006421 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780995626 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780984820 min — propose next cycle
@@ -45,36 +46,38 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 12:12:40 UTC_
+_Generated: 2026-06-09 16:06:17 UTC_
 
 ## Last 24h
 
-- PROMOTE: 47
-- PURGE: 55
-- Total: 102
+- PROMOTE: 55
+- PURGE: 71
+- Total: 126
 
 ## Top Reasons
 
-- No significant markers found: 55
-- Security/vulnerability signal: 36
+- No significant markers found: 71
+- Security/vulnerability signal: 41
+- Convergence detected: 8
+- Structural shift (engineering refactor/rewrite): 7
 - Dependency/ecosystem shift: 7
-- Convergence detected: 7
-- Structural shift (engineering refactor/rewrite): 5
 - Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 23
-- GitHub_llama.cpp: 22
-- GitHub_unsloth: 15
+- GitHub_vscode: 34
+- GitHub_llama.cpp: 24
+- GitHub_unsloth: 19
+- GitHub_ComfyUI: 16
 - GitHub_ollama: 11
-- GitHub_ComfyUI: 11
-- GitHub_langchain: 10
+- GitHub_langchain: 11
 - GitHub_openai-python: 10
+- GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 33f4397 by Wasim Yousef Said: Studio fix recipe dataset preview (#6031)  * Studio: fix recipe dataset preview  * 
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 278e45d by Benjamin Christopher Simmonds: Merge pull request #320603 from microsoft/benibenj/weak-flea  Fix sessi
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 5a41503 by Megan Rogge: Fix background terminal notification agent routing (#320608)  Co-authored-by: Megan Rogge
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -83,40 +86,42 @@ _[truncated]_
 
 2026-06-09T04:17:07Z | inversion-cron | 
 2026-06-09T08:17:01Z | inversion-cron | 
-2026-06-09T12:17:02Z | inversion-cron |
+2026-06-09T12:17:02Z | inversion-cron | 
+2026-06-09T16:17:01Z | inversion-cron |
 
 ### noise-gate-context.md
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 12:12:40 UTC_
+_Generated: 2026-06-09 16:06:17 UTC_
 
 ## Last 24h
 
-- PROMOTE: 47
-- PURGE: 55
-- Total: 102
+- PROMOTE: 55
+- PURGE: 71
+- Total: 126
 
 ## Top Reasons
 
-- No significant markers found: 55
-- Security/vulnerability signal: 36
+- No significant markers found: 71
+- Security/vulnerability signal: 41
+- Convergence detected: 8
+- Structural shift (engineering refactor/rewrite): 7
 - Dependency/ecosystem shift: 7
-- Convergence detected: 7
-- Structural shift (engineering refactor/rewrite): 5
 - Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 23
-- GitHub_llama.cpp: 22
-- GitHub_unsloth: 15
+- GitHub_vscode: 34
+- GitHub_llama.cpp: 24
+- GitHub_unsloth: 19
+- GitHub_ComfyUI: 16
 - GitHub_ollama: 11
-- GitHub_ComfyUI: 11
-- GitHub_langchain: 10
+- GitHub_langchain: 11
 - GitHub_openai-python: 10
+- GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 33f4397 by Wasim Yousef Said: Studio fix recipe dataset preview (#6031)  * Studio: fix recipe dataset preview  * 
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 278e45d by Benjamin Christopher Simmonds: Merge pull request #320603 from microsoft/benibenj/weak-flea  Fix sessi
 _[truncated]_
