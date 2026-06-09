@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-09
-_Generated: 2026-06-09T08:25:37Z_
+_Generated: 2026-06-09T11:10:52Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 06:01:02 UTC_
-_Total active entries: 484_
+_Last consolidated: 2026-06-09 09:01:04 UTC_
+_Total active entries: 485_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 128 entries
+- **pipeline-infrastructure**: 129 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,7 @@ _Total active entries: 484_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780995626 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780984820 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780974005 min — propose next cycle
 - `[hermes]` **[other]** ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
@@ -44,27 +45,27 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 08:01:17 UTC_
+_Generated: 2026-06-09 11:07:54 UTC_
 
 ## Last 24h
 
-- PROMOTE: 42
-- PURGE: 48
-- Total: 90
+- PROMOTE: 46
+- PURGE: 51
+- Total: 97
 
 ## Top Reasons
 
-- No significant markers found: 48
-- Security/vulnerability signal: 32
+- No significant markers found: 51
+- Security/vulnerability signal: 35
+- Dependency/ecosystem shift: 7
 - Convergence detected: 7
-- Dependency/ecosystem shift: 6
+- Structural shift (engineering refactor/rewrite): 5
 - Direct actionability detected: 5
-- Structural shift (engineering refactor/rewrite): 4
 
 ## Sources
 
-- GitHub_vscode: 20
-- GitHub_llama.cpp: 15
+- GitHub_vscode: 22
+- GitHub_llama.cpp: 20
 - GitHub_unsloth: 13
 - GitHub_ollama: 11
 - GitHub_ComfyUI: 11
@@ -73,41 +74,36 @@ _Generated: 2026-06-09 08:01:17 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit ffd6d6e by Henning Dieterichs: Fixes CI
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit ae735b1 by Nick Towle: ui: Fix excessive style recalculation on hover (#24243)
 _[truncated]_
 
 ## Today's Pulses (newest first)
-
-### inversion-pulse.md
-
-2026-06-09T04:17:07Z | inversion-cron | 
-2026-06-09T08:17:01Z | inversion-cron |
 
 ### noise-gate-context.md
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 08:01:17 UTC_
+_Generated: 2026-06-09 11:07:54 UTC_
 
 ## Last 24h
 
-- PROMOTE: 42
-- PURGE: 48
-- Total: 90
+- PROMOTE: 46
+- PURGE: 51
+- Total: 97
 
 ## Top Reasons
 
-- No significant markers found: 48
-- Security/vulnerability signal: 32
+- No significant markers found: 51
+- Security/vulnerability signal: 35
+- Dependency/ecosystem shift: 7
 - Convergence detected: 7
-- Dependency/ecosystem shift: 6
+- Structural shift (engineering refactor/rewrite): 5
 - Direct actionability detected: 5
-- Structural shift (engineering refactor/rewrite): 4
 
 ## Sources
 
-- GitHub_vscode: 20
-- GitHub_llama.cpp: 15
+- GitHub_vscode: 22
+- GitHub_llama.cpp: 20
 - GitHub_unsloth: 13
 - GitHub_ollama: 11
 - GitHub_ComfyUI: 11
@@ -116,5 +112,10 @@ _Generated: 2026-06-09 08:01:17 UTC_
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 58c0981 by Henning Dieterichs: Registers @vscode/markdown-editor in markdown-language-features extension
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0c61709 by Benjamin Christopher Simmonds: sessions: experiment to move harness picker below input (#320584)  Add 
 _[truncated]_
+
+### inversion-pulse.md
+
+2026-06-09T04:17:07Z | inversion-cron | 
+2026-06-09T08:17:01Z | inversion-cron |

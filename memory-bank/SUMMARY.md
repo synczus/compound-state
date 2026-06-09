@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 06:01:02 UTC_
-_Total active entries: 484_
+_Last consolidated: 2026-06-09 09:01:04 UTC_
+_Total active entries: 485_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 128 entries
+- **pipeline-infrastructure**: 129 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,7 @@ _Total active entries: 484_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780995626 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780984820 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780974005 min — propose next cycle
 - `[hermes]` **[other]** ⚪ exports: 30 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
@@ -68,7 +69,6 @@ _Total active entries: 484_
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | Both visualization files at ~/compound/codegraph.html (code structure) and ~/compound/knowledge-graph.html (conversation decisions).
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingest pipeline consumed 2 new user messages, classified both as knowledge at 0.80 confidence, and refreshed the corresponding DuckDB knowledge docs.
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingest pipeline ingested 18 new classified messages from the past 3.5 hours with a clean 100% success rate and no errors.
-- `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | Chat ingestion pipeline ingested 3 new user messages and regenerated 9 knowledge documents.
 
 ---
 

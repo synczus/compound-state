@@ -4381,3 +4381,504 @@ Details:
 ]
 , rateLimitExceeded
 [20260608-123941] Backup complete
+[20260609-100001] Starting GDrive backup...
+2026/06/09 06:00:02 NOTICE: hermes: Can't follow symlink without -L/--copy-links
+2026/06/09 06:00:03 NOTICE: reference/system-prompts: Can't follow symlink without -L/--copy-links
+2026/06/09 06:00:04 NOTICE: dashboard/or-budget-state.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:00:04 NOTICE: dashboard/striker_health.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:00:04 NOTICE: dashboard/kairos_monitor_state.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:00:05 INFO  : HUB_INTAKE.md: Copied (replaced existing)
+2026/06/09 06:00:05 INFO  : auto-git.log: Copied (replaced existing)
+2026/06/09 06:00:05 ERROR : compound-state.json: corrupted on transfer: md5 hash differ "f2bd67a8bde91427f2e24b6091547af8" vs "4f48b8797fbb3a8f6c4be75b54448e18"
+2026/06/09 06:00:05 INFO  : compound-state.json: Removing failed copy
+2026/06/09 06:00:05 INFO  : event-bus.md: Copied (replaced existing)
+2026/06/09 06:00:06 INFO  : kairos_monitor_state.json: Copied (replaced existing)
+2026/06/09 06:00:07 INFO  : or-budget-state.json: Copied (replaced existing)
+2026/06/09 06:00:07 INFO  : master-todo.md: Copied (replaced existing)
+2026/06/09 06:00:50 INFO  : ingestion/.processed_files.log: Updated modification time in destination
+2026/06/09 06:00:50 INFO  : knowledge/chat-commands.md: Updated modification time in destination
+2026/06/09 06:00:50 INFO  : aggregated-health.json: Copied (replaced existing)
+2026/06/09 06:00:50 INFO  : striker_health.json: Copied (replaced existing)
+2026/06/09 06:00:51 INFO  : .codegraph/daemon.log: Copied (replaced existing)
+2026/06/09 06:00:51 INFO  : architecture/system_blueprint.md: Copied (new)
+2026/06/09 06:00:53 INFO  : cron-health/or-budget-monitor.heartbeat: Copied (replaced existing)
+2026/06/09 06:00:54 INFO  : agent-pulses/2026-06-09/inversion-pulse.md: Copied (new)
+2026/06/09 06:00:55 INFO  : agent-pulses/2026-06-09/noise-gate-context.md: Copied (new)
+2026/06/09 06:00:55 INFO  : cron-health/baton-auto-cycle.heartbeat: Copied (replaced existing)
+2026/06/09 06:00:55 INFO  : agent-pulses/2026-06-09/memory-consolidation-0300.json: Copied (new)
+2026/06/09 06:00:57 INFO  : cron-health/meta-monitor.heartbeat: Copied (replaced existing)
+2026/06/09 06:02:00 INFO  : cycle-state/hop-sequence.json: Copied (replaced existing)
+2026/06/09 06:02:00 INFO  : cron-health/squirrel-inbox-feeder.heartbeat: Copied (replaced existing)
+2026/06/09 06:02:01 INFO  : cron-health/auto-git-sync.heartbeat: Copied (replaced existing)
+2026/06/09 06:02:01 INFO  : cron-health/dashboard-aggregator.heartbeat: Copied (replaced existing)
+2026/06/09 06:02:01 ERROR : data/trade_signals.json: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1Qe0QhXQARpQ9OknUWNu-1yWHURCuN6ij?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-09 05:50:12.335422044 -0400 EDT to 2026-06-09 06:00:12.056618765 -0400 EDT)
+2026/06/09 06:02:03 INFO  : data/openrouter-budget.json: Copied (replaced existing)
+2026/06/09 06:02:12 NOTICE: scripts/ingestion/compound-pulse.py: Can't follow symlink without -L/--copy-links
+2026/06/09 06:02:52 INFO  : data/.chat-ingest-state.json: Copied (replaced existing)
+2026/06/09 06:02:52 INFO  : dashboard/aggregated-health.json: Copied (replaced existing)
+2026/06/09 06:02:52 INFO  : dashboard/pending.json: Copied (replaced existing)
+2026/06/09 06:02:52 INFO  : cycle-state/current.json: Copied (replaced existing)
+2026/06/09 06:02:56 INFO  : core/unified/live_ingest.py: Copied (new)
+2026/06/09 06:02:58 INFO  : agent-pulses/2026-06-08/nemoclaw-baton-cycle-0953.md: Copied (new)
+2026/06/09 06:02:58 INFO  : core/unified/scoring_engine.py: Copied (new)
+2026/06/09 06:02:58 INFO  : core/unified/main.py: Copied (new)
+2026/06/09 06:02:59 NOTICE: venv/lib64: Can't follow symlink without -L/--copy-links
+2026/06/09 06:03:00 INFO  : agent-pulses/2026-06-08/nemoclaw-baton-cycle-1138.md: Copied (new)
+2026/06/09 06:03:00 ERROR : data/state_store.db/mem%3Ahealth.bin: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 12436 to 12404)
+2026/06/09 06:03:01 NOTICE: venv/bin/python: Can't follow symlink without -L/--copy-links
+2026/06/09 06:03:01 NOTICE: venv/bin/python3.12: Can't follow symlink without -L/--copy-links
+2026/06/09 06:03:01 NOTICE: venv/bin/python3: Can't follow symlink without -L/--copy-links
+2026/06/09 06:03:02 INFO  : agent-pulses/2026-06-08/inversion-pulse.md: Copied (replaced existing)
+2026/06/09 06:03:03 INFO  : data/state_store.db/mem%3Aindex%3Abm25%3Abm25%3Aidx_mq5dmlex_ee830517d12e%3A00000.bin: Copied (new)
+2026/06/09 06:03:03 INFO  : data/state_store.db/mem%3Aindex%3Abm25%3Abm25%3Aidx_mq5dmlex_0f34273cdbf0%3A00000.bin: Copied (new)
+2026/06/09 06:03:04 INFO  : data/state_store.db/mem%3Aindex%3Abm25%3Abm25%3Aidx_mq5t5k05_bb6ce5a5e970%3A00000.bin: Copied (new)
+2026/06/09 06:03:39 INFO  : data/state_store.db/mem%3Aindex%3Abm25%3Avectors%3Aidx_mq5dmlfa_5288f56e8e07%3A00000.bin: Copied (new)
+2026/06/09 06:03:39 ERROR : data/state_store.db/mem%3Aaccess.bin: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1L1bVvJzwvF75eLIPuh6nLmSNhHYC1gcP?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 56000 to 56712)
+2026/06/09 06:03:39 ERROR : data/state_store.db/mem%3Aaudit.bin: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1KBAlHEGbLcNXhyOUsAQN7xrQboSAYINs?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 630536 to 635784)
+2026/06/09 06:03:40 INFO  : data/state_store.db/mem%3Ainsights.bin: Copied (new)
+2026/06/09 06:03:40 ERROR : data/state_store.db/mem%3Amemories.bin: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1T85-y4B_afYOG5wfsgUxrMFh3zRzx8ov?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 1283052 to 1311440)
+2026/06/09 06:03:41 INFO  : data/state_store.db/mem%3Aindex%3Abm25.bin: Copied (replaced existing)
+2026/06/09 06:03:41 INFO  : data/state_store.db/mem%3Aindex%3Abm25%3Avectors%3Aidx_mq5dmlfa_7d116884b75d%3A00000.bin: Copied (new)
+2026/06/09 06:03:41 INFO  : data/state_store.db/mem%3Alessons.bin: Copied (replaced existing)
+2026/06/09 06:03:42 INFO  : data/state_store.db/mem%3Aindex%3Abm25%3Avectors%3Aidx_mq5t5k0d_aa2547b28ca5%3A00000.bin: Copied (new)
+2026/06/09 06:03:42 INFO  : identity/kairos-soul.md: Copied (replaced existing)
+2026/06/09 06:03:43 INFO  : identity/nemoclaw-soul.md: Copied (replaced existing)
+2026/06/09 06:03:43 INFO  : identity/hermes-soul.md: Copied (replaced existing)
+2026/06/09 06:03:45 INFO  : identity/openclaw-soul.md: Copied (replaced existing)
+2026/06/09 06:03:45 INFO  : identity/shannon-soul.md: Copied (replaced existing)
+2026/06/09 06:03:45 INFO  : knowledge/chat-config-details.md: Copied (replaced existing)
+2026/06/09 06:03:45 INFO  : knowledge/chat-architecture-decisions.md: Copied (replaced existing)
+2026/06/09 06:03:47 INFO  : knowledge/chat-decisions.md: Copied (replaced existing)
+2026/06/09 06:03:47 INFO  : knowledge/chat-status-reports.md: Copied (replaced existing)
+2026/06/09 06:03:47 INFO  : knowledge/chat-configurations.md: Copied (replaced existing)
+2026/06/09 06:03:48 INFO  : knowledge/chat-signals.md: Copied (replaced existing)
+2026/06/09 06:03:48 ERROR : memory-bank/.memory-fed.json: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1znwSHijgiyra7XmmZfT-n6xRAwv8zyzh?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-09 06:00:01.613505635 -0400 EDT to 2026-06-09 06:02:04.441301189 -0400 EDT)
+2026/06/09 06:03:48 INFO  : knowledge/chat-tool-setup.md: Copied (replaced existing)
+2026/06/09 06:03:49 INFO  : knowledge/chat-tools.md: Copied (replaced existing)
+2026/06/09 06:03:50 INFO  : memory-bank/SUMMARY.md: Copied (replaced existing)
+2026/06/09 06:03:50 ERROR : pulse/a16z-crypto-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 16100 to 16099)
+2026/06/09 06:03:50 INFO  : output/compound-dashboard.html: Copied (replaced existing)
+2026/06/09 06:03:50 ERROR : pulse/coinstack-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 14546 to 14545)
+2026/06/09 06:03:50 ERROR : pulse/coindesk-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-09 05:56:35.718613094 -0400 EDT to 2026-06-09 06:01:17.454976828 -0400 EDT)
+2026/06/09 06:03:50 ERROR : pulse/fear-greed-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-09 05:57:21.182911788 -0400 EDT to 2026-06-09 06:01:54.402927728 -0400 EDT)
+2026/06/09 06:03:50 ERROR : pulse/defillama-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-09 05:57:15.871279101 -0400 EDT to 2026-06-09 06:01:54.108789882 -0400 EDT)
+2026/06/09 06:03:51 INFO  : pulse/signal-20260608-1300.json: Copied (new)
+2026/06/09 06:03:51 INFO  : pulse/signal-20260608-1250.json: Copied (new)
+2026/06/09 06:03:51 INFO  : pulse/signal-20260608-1320.json: Copied (new)
+2026/06/09 06:03:52 INFO  : pulse/signal-20260608-1230.json: Copied (new)
+2026/06/09 06:03:53 INFO  : pulse/signal-20260608-1330.json: Copied (new)
+2026/06/09 06:03:54 INFO  : pulse/signal-20260608-1400.json: Copied (new)
+2026/06/09 06:03:54 INFO  : pulse/signal-20260608-1420.json: Copied (new)
+2026/06/09 06:03:54 INFO  : pulse/signal-20260608-1350.json: Copied (new)
+2026/06/09 06:03:56 INFO  : pulse/signal-20260608-1520.json: Copied (new)
+2026/06/09 06:03:56 INFO  : pulse/signal-20260608-1430.json: Copied (new)
+2026/06/09 06:03:56 INFO  : pulse/signal-20260608-1500.json: Copied (new)
+2026/06/09 06:03:56 INFO  : pulse/signal-20260608-1450.json: Copied (new)
+2026/06/09 06:03:58 INFO  : pulse/signal-20260608-1630.json: Copied (new)
+2026/06/09 06:03:58 INFO  : pulse/signal-20260608-1600.json: Copied (new)
+2026/06/09 06:03:58 INFO  : pulse/signal-20260608-1700.json: Copied (new)
+2026/06/09 06:03:58 INFO  : pulse/signal-20260608-1530.json: Copied (new)
+2026/06/09 06:03:59 INFO  : pulse/signal-20260608-1730.json: Copied (new)
+2026/06/09 06:04:02 INFO  : pulse/signal-20260608-1830.json: Copied (new)
+2026/06/09 06:04:02 INFO  : pulse/signal-20260608-1800.json: Copied (new)
+2026/06/09 06:04:02 INFO  : pulse/signal-20260608-1900.json: Copied (new)
+2026/06/09 06:04:02 INFO  : pulse/signal-20260608-1930.json: Copied (new)
+2026/06/09 06:04:04 INFO  : pulse/signal-20260608-2130.json: Copied (new)
+2026/06/09 06:04:04 INFO  : pulse/signal-20260608-2030.json: Copied (new)
+2026/06/09 06:04:04 INFO  : pulse/signal-20260608-2100.json: Copied (new)
+2026/06/09 06:04:24 INFO  : pulse/signal-20260608-2230.json: Copied (new)
+2026/06/09 06:04:27 INFO  : pulse/signal-20260608-2330.json: Copied (new)
+2026/06/09 06:04:29 INFO  : pulse/signal-20260608-2000.json: Copied (new)
+2026/06/09 06:04:33 INFO  : pulse/signal-20260609-0000.json: Copied (new)
+2026/06/09 06:04:33 INFO  : pulse/signal-20260609-0030.json: Copied (new)
+2026/06/09 06:04:35 INFO  : pulse/signal-20260608-2200.json: Copied (new)
+2026/06/09 06:04:37 INFO  : pulse/signal-20260609-0100.json: Copied (new)
+2026/06/09 06:04:37 INFO  : pulse/signal-20260608-2300.json: Copied (new)
+2026/06/09 06:04:37 INFO  : pulse/signal-20260609-0130.json: Copied (new)
+2026/06/09 06:04:38 INFO  : pulse/signal-20260609-0200.json: Copied (new)
+2026/06/09 06:04:41 INFO  : pulse/signal-20260609-0230.json: Copied (new)
+2026/06/09 06:04:41 INFO  : pulse/signal-20260609-0300.json: Copied (new)
+2026/06/09 06:04:42 INFO  : pulse/signal-20260609-0330.json: Copied (new)
+2026/06/09 06:04:42 INFO  : pulse/signal-20260609-0400.json: Copied (new)
+2026/06/09 06:04:43 INFO  : pulse/signal-20260609-0430.json: Copied (new)
+2026/06/09 06:04:43 INFO  : pulse/signal-20260609-0500.json: Copied (new)
+2026/06/09 06:04:45 INFO  : pulse/signal-20260609-0530.json: Copied (new)
+2026/06/09 06:04:45 INFO  : pulse/signal-20260609-0600.json: Copied (new)
+2026/06/09 06:04:45 INFO  : pulse/signal-20260609-0700.json: Copied (new)
+2026/06/09 06:04:45 INFO  : pulse/signal-20260609-0630.json: Copied (new)
+2026/06/09 06:04:48 INFO  : pulse/signal-20260609-0730.json: Copied (new)
+2026/06/09 06:04:48 INFO  : pulse/signal-20260609-0830.json: Copied (new)
+2026/06/09 06:04:48 INFO  : pulse/signal-20260609-0800.json: Copied (new)
+2026/06/09 06:04:48 INFO  : pulse/signal-20260609-0900.json: Copied (new)
+2026/06/09 06:04:48 ERROR : pulse/techcrunch-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 18999 to 18997)
+2026/06/09 06:04:48 ERROR : pulse/arxiv-ai-inbox.jsonl: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1G6l7B-dpfcwS1Smxm0peBvpdvgX1BpSk?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 87844 to 87852)
+2026/06/09 06:04:48 ERROR : pulse/bankless-inbox.jsonl: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/11zdFp_8MDKs0toF5ZvaOvu5_NZApcTp0?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 42872 to 42875)
+2026/06/09 06:04:48 ERROR : pulse/hacker-news-inbox.jsonl: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1_xE0PuOIMOL3XTjqo_le3NjqVwq3-hm1?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 22877 to 22880)
+2026/06/09 06:04:48 ERROR : pulse/cointelegraph-inbox.jsonl: Failed to copy: Patch "https://www.googleapis.com/upload/drive/v3/files/1jSlg8P3Y4UGSCSw96CFsh1gvN12hIq6E?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 33328 to 33327)
+2026/06/09 06:04:48 ERROR : pulse/the-tech-buzz-inbox.jsonl: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 17764 to 17762)
+2026/06/09 06:04:49 INFO  : pulse/signal-20260609-1000.json: Copied (new)
+2026/06/09 06:04:49 INFO  : pulse/signal-20260609-0930.json: Copied (new)
+2026/06/09 06:04:49 INFO  : pulse/tldr-inbox.jsonl: Copied (replaced existing)
+2026/06/09 06:04:50 INFO  : pulse/trade-ready.json: Copied (replaced existing)
+2026/06/09 06:04:51 INFO  : memory-bank/archive/hermes_proposition_20260608_092522_204_9d2b4d0cdc9f.md: Copied (new)
+2026/06/09 06:04:52 INFO  : memory-bank/archive/hermes_proposition_20260608_094022_208_ba2f1754d62e.md: Copied (new)
+2026/06/09 06:04:52 INFO  : memory-bank/archive/hermes_proposition_20260608_084021_191_4e07d28d0b0f.md: Copied (new)
+2026/06/09 06:04:52 INFO  : memory-bank/archive/hermes_proposition_20260608_102522_220_215b35f62f42.md: Copied (new)
+2026/06/09 06:04:52 INFO  : memory-bank/archive/hermes_proposition_20260608_103001_224_9cd2f10a40f0.md: Copied (new)
+2026/06/09 06:04:53 INFO  : memory-bank/archive/hermes_proposition_20260608_105522_228_9451065f5c2d.md: Copied (new)
+2026/06/09 06:04:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_06_0c1ebba8bd25.md: Copied (new)
+2026/06/09 06:04:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_05_acbd435029a5.md: Copied (new)
+2026/06/09 06:04:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_07_c79cbe5e3432.md: Copied (new)
+2026/06/09 06:04:55 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_08_de1810f517ba.md: Copied (new)
+2026/06/09 06:04:55 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_104_6466595661f6.md: Copied (new)
+2026/06/09 06:04:55 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_105_5aabec3f78a2.md: Copied (new)
+2026/06/09 06:04:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_107_a9b11a904232.md: Copied (new)
+2026/06/09 06:04:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_109_6a60ee4f675b.md: Copied (new)
+2026/06/09 06:04:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_106_0faf31231eb2.md: Copied (new)
+2026/06/09 06:05:00 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_108_da4c077d6b94.md: Copied (new)
+2026/06/09 06:05:00 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_12_ac2761b10b0f.md: Copied (new)
+2026/06/09 06:05:00 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_11_6b4ced267712.md: Copied (new)
+2026/06/09 06:05:00 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_10_a5764484b2b4.md: Copied (new)
+2026/06/09 06:05:01 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_13_f91aa4ebf987.md: Copied (new)
+2026/06/09 06:05:02 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_14_d1a230baa57e.md: Copied (new)
+2026/06/09 06:05:02 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_15_fe82864b6d72.md: Copied (new)
+2026/06/09 06:05:02 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_17_98928b15ab86.md: Copied (new)
+2026/06/09 06:05:03 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_18_c3c019bb0f34.md: Copied (new)
+2026/06/09 06:05:03 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_20_024d3a2599f3.md: Copied (new)
+2026/06/09 06:05:03 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_19_54334119dd74.md: Copied (new)
+2026/06/09 06:05:03 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_22_7f77411a1773.md: Copied (new)
+2026/06/09 06:05:04 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_23_06a0853b8cac.md: Copied (new)
+2026/06/09 06:05:05 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_25_2525097e7486.md: Copied (new)
+2026/06/09 06:05:05 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_26_fd5bbfd25a38.md: Copied (new)
+2026/06/09 06:05:45 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_27_336cf41a7bb3.md: Copied (new)
+2026/06/09 06:05:46 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_29_1e549bfc9534.md: Copied (new)
+2026/06/09 06:05:46 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_30_517e32f0aefa.md: Copied (new)
+2026/06/09 06:05:46 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_31_ea7c0b9ac20d.md: Copied (new)
+2026/06/09 06:05:46 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_32_bfabae3d0ac2.md: Copied (new)
+2026/06/09 06:05:47 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_34_374a7603d15f.md: Copied (new)
+2026/06/09 06:05:49 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_38_07730ba50586.md: Copied (new)
+2026/06/09 06:05:49 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_33_8f588c7ffa8c.md: Copied (new)
+2026/06/09 06:05:49 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_42_1be8f96c7925.md: Copied (new)
+2026/06/09 06:05:51 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_41_55667cd2839a.md: Copied (new)
+2026/06/09 06:05:51 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_43_3af37f56cd2d.md: Copied (new)
+2026/06/09 06:05:51 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_46_c72ba905bf21.md: Copied (new)
+2026/06/09 06:05:51 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_47_4efca57ad202.md: Copied (new)
+2026/06/09 06:05:52 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_50_50dc7170bf2a.md: Copied (new)
+2026/06/09 06:05:52 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_51_e7a98ee9e4be.md: Copied (new)
+2026/06/09 06:05:53 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_49_5d59d888b43f.md: Copied (new)
+2026/06/09 06:05:53 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_52_fb034d18c0db.md: Copied (new)
+2026/06/09 06:05:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_53_8b84f089d211.md: Copied (new)
+2026/06/09 06:05:55 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_55_c96064a4348b.md: Copied (new)
+2026/06/09 06:05:55 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_56_47208f65a6eb.md: Copied (new)
+2026/06/09 06:05:55 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_54_11f4884a90bf.md: Copied (new)
+2026/06/09 06:05:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_60_1381f277646f.md: Copied (new)
+2026/06/09 06:05:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_58_338ca0b21fce.md: Copied (new)
+2026/06/09 06:05:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_59_3461bc3eaed7.md: Copied (new)
+2026/06/09 06:05:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_57_fa7a9a32f686.md: Copied (new)
+2026/06/09 06:05:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_62_57f58877627b.md: Copied (new)
+2026/06/09 06:05:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_63_3f18f664ee9e.md: Copied (new)
+2026/06/09 06:05:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_64_bd1d2dbcee91.md: Copied (new)
+2026/06/09 06:05:59 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_66_6e3659a42b27.md: Copied (new)
+2026/06/09 06:05:59 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_68_8dcfcae5b921.md: Copied (new)
+2026/06/09 06:05:59 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_67_a3e86b95dc8d.md: Copied (new)
+2026/06/09 06:06:00 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_69_9843bf43661a.md: Copied (new)
+2026/06/09 06:06:01 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_70_be719dd73f72.md: Copied (new)
+2026/06/09 06:06:01 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_71_2c4aa4e6901b.md: Copied (new)
+2026/06/09 06:06:01 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_72_c2ca9b1e7c9c.md: Copied (new)
+2026/06/09 06:06:01 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_73_eee73c23e8cb.md: Copied (new)
+2026/06/09 06:06:56 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_79_4faadc0c367e.md: Copied (new)
+2026/06/09 06:06:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_80_0cc3c561364a.md: Copied (new)
+2026/06/09 06:06:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_76_8a4f9ea2d356.md: Copied (new)
+2026/06/09 06:06:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_77_f5744d2c95c4.md: Copied (new)
+2026/06/09 06:06:58 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_82_91911eb0eb2b.md: Copied (new)
+2026/06/09 06:06:59 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_85_93f4bb47d4d7.md: Copied (new)
+2026/06/09 06:06:59 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_83_e78a521f775b.md: Copied (new)
+2026/06/09 06:06:59 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_87_27e12ba93ee3.md: Copied (new)
+2026/06/09 06:06:59 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_88_75617058c93a.md: Copied (new)
+2026/06/09 06:07:01 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_89_19390d5e2059.md: Copied (new)
+2026/06/09 06:07:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_95_5531f8156bbf.md: Copied (new)
+2026/06/09 06:07:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_90_b17ac7458220.md: Copied (new)
+2026/06/09 06:07:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_93_0c2173ef44e2.md: Copied (new)
+2026/06/09 06:07:54 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_91_31c8c9e52f6e.md: Copied (new)
+2026/06/09 06:07:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_96_857d19734210.md: Copied (new)
+2026/06/09 06:07:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_98_cd4622656e33.md: Copied (new)
+2026/06/09 06:07:57 INFO  : memory-bank/archive/hermes_proposition_20260608_121023_97_2191f1baa04f.md: Copied (new)
+2026/06/09 06:07:58 INFO  : memory-bank/archive/hermes_proposition_20260608_124223_112_0f8a9e759718.md: Copied (new)
+2026/06/09 06:08:00 INFO  : memory-bank/archive/hermes_proposition_20260608_134424_119_530738b3210b.md: Copied (new)
+2026/06/09 06:08:00 INFO  : memory-bank/archive/hermes_proposition_20260608_153120_138_40de3206decb.md: Copied (new)
+2026/06/09 06:08:00 INFO  : memory-bank/archive/hermes_proposition_20260608_150120_136_1fdb11a85a54.md: Copied (new)
+2026/06/09 06:08:01 INFO  : memory-bank/archive/hermes_proposition_20260608_143019_132_4500247c4cb7.md: Copied (new)
+2026/06/09 06:08:02 INFO  : memory-bank/archive/hermes_proposition_20260608_183955_161_8a1921ca85a0.md: Copied (new)
+2026/06/09 06:08:02 INFO  : memory-bank/archive/hermes_proposition_20260608_204600_184_c04590be0dbb.md: Copied (new)
+2026/06/09 06:08:02 INFO  : memory-bank/archive/hermes_proposition_20260608_183955_163_fae5748ca73d.md: Copied (new)
+2026/06/09 06:08:02 INFO  : memory-bank/archive/hermes_proposition_20260608_230101_203_e5ef8df6ed01.md: Copied (new)
+2026/06/09 06:08:05 INFO  : memory-bank/knowledge/noise-gate-context.md: Copied (replaced existing)
+2026/06/09 06:08:59 INFO  : memory-bank/archive/hermes_proposition_20260609_050104_251_4835f5dae7f5.md: Copied (new)
+2026/06/09 06:08:59 INFO  : memory-bank/archive/hermes_proposition_20260609_020102_227_d27d7a234bf1.md: Copied (new)
+2026/06/09 06:08:59 INFO  : memory-bank/knowledge/noise-gate-events.jsonl: Copied (replaced existing)
+2026/06/09 06:08:59 INFO  : scripts/.note-intake-seen.json: Copied (new)
+2026/06/09 06:09:00 INFO  : swarm/mirofish_ledger.json: Copied (replaced existing)
+2026/06/09 06:09:00 ERROR : Google drive root 'backup/kestrel': not deleting files as there were IO errors
+2026/06/09 06:09:00 ERROR : Google drive root 'backup/kestrel': not deleting directories as there were IO errors
+2026/06/09 06:09:00 ERROR : Attempt 1/3 failed with 18 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 17764 to 17762)
+2026/06/09 06:09:00 NOTICE: hermes: Can't follow symlink without -L/--copy-links
+2026/06/09 06:09:01 NOTICE: reference/system-prompts: Can't follow symlink without -L/--copy-links
+2026/06/09 06:09:03 INFO  : master-todo.md: Copied (replaced existing)
+2026/06/09 06:09:59 NOTICE: dashboard/or-budget-state.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:09:59 NOTICE: dashboard/striker_health.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:09:59 NOTICE: dashboard/kairos_monitor_state.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:10:00 INFO  : compound-state.json: Copied (new)
+2026/06/09 06:10:02 INFO  : cycle-state/hop-sequence.json: Copied (replaced existing)
+2026/06/09 06:10:02 ERROR : cycle-state/current.json: corrupted on transfer: md5 hash differ "b40650b21fef8d2aa492997a500fbeb7" vs "9bc1f4cabbb0ce526faeaccb411036e1"
+2026/06/09 06:10:02 INFO  : cycle-state/current.json: Removing failed copy
+2026/06/09 06:10:02 INFO  : data/trade_signals.json: Copied (replaced existing)
+2026/06/09 06:10:28 INFO  : data/state_store.db/mem%3Aaudit.bin: Copied (replaced existing)
+2026/06/09 06:10:29 INFO  : data/state_store.db/mem%3Amemories.bin: Copied (replaced existing)
+2026/06/09 06:10:31 INFO  : memory-bank/.memory-fed.json: Copied (replaced existing)
+2026/06/09 06:10:32 INFO  : data/state_store.db/mem%3Aaccess.bin: Copied (replaced existing)
+2026/06/09 06:10:33 ERROR : data/state_store.db/mem%3Ahealth.bin: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (mod time changed from 2026-06-09 06:09:37.62181495 -0400 EDT to 2026-06-09 06:10:07.620678335 -0400 EDT)
+2026/06/09 06:10:35 INFO  : output/compound-dashboard.html: Copied (replaced existing)
+2026/06/09 06:10:40 INFO  : pulse/coinstack-inbox.jsonl: Copied (new)
+2026/06/09 06:10:40 INFO  : pulse/coindesk-inbox.jsonl: Copied (new)
+2026/06/09 06:10:43 INFO  : pulse/defillama-inbox.jsonl: Copied (new)
+2026/06/09 06:10:43 INFO  : pulse/a16z-crypto-inbox.jsonl: Copied (new)
+2026/06/09 06:10:43 INFO  : pulse/fear-greed-inbox.jsonl: Copied (new)
+2026/06/09 06:10:43 INFO  : pulse/techcrunch-inbox.jsonl: Copied (new)
+2026/06/09 06:10:44 NOTICE: scripts/ingestion/compound-pulse.py: Can't follow symlink without -L/--copy-links
+2026/06/09 06:10:45 INFO  : pulse/bankless-inbox.jsonl: Copied (replaced existing)
+2026/06/09 06:10:45 INFO  : pulse/cointelegraph-inbox.jsonl: Copied (replaced existing)
+2026/06/09 06:10:45 INFO  : pulse/arxiv-ai-inbox.jsonl: Copied (replaced existing)
+2026/06/09 06:10:45 INFO  : pulse/the-tech-buzz-inbox.jsonl: Copied (new)
+2026/06/09 06:10:47 INFO  : pulse/trade-ready.json: Copied (replaced existing)
+2026/06/09 06:10:47 INFO  : pulse/hacker-news-inbox.jsonl: Copied (replaced existing)
+2026/06/09 06:10:47 INFO  : scripts/.note-intake-seen.json: Copied (replaced existing)
+2026/06/09 06:10:48 NOTICE: venv/lib64: Can't follow symlink without -L/--copy-links
+2026/06/09 06:10:48 NOTICE: venv/bin/python: Can't follow symlink without -L/--copy-links
+2026/06/09 06:10:48 NOTICE: venv/bin/python3.12: Can't follow symlink without -L/--copy-links
+2026/06/09 06:10:48 NOTICE: venv/bin/python3: Can't follow symlink without -L/--copy-links
+2026/06/09 06:11:50 ERROR : venv/lib/python3.12/site-packages/ccxt/static_dependencies/marshmallow_dataclass: error reading destination directory: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/09 06:12:28 ERROR : venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses: error reading destination directory: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/09 06:12:36 ERROR : Google drive root 'backup/kestrel': not deleting files as there were IO errors
+2026/06/09 06:12:36 ERROR : Google drive root 'backup/kestrel': not deleting directories as there were IO errors
+2026/06/09 06:12:36 ERROR : Attempt 2/3 failed with 5 errors and: march failed with 2 error(s): first error: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/09 06:12:36 NOTICE: hermes: Can't follow symlink without -L/--copy-links
+2026/06/09 06:12:45 NOTICE: reference/system-prompts: Can't follow symlink without -L/--copy-links
+2026/06/09 06:12:55 INFO  : compound-state.json: Copied (replaced existing)
+2026/06/09 06:12:55 INFO  : HUB_INTAKE.md: Copied (replaced existing)
+2026/06/09 06:12:57 NOTICE: dashboard/or-budget-state.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:12:57 NOTICE: dashboard/striker_health.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:12:57 NOTICE: dashboard/kairos_monitor_state.json: Can't follow symlink without -L/--copy-links
+2026/06/09 06:13:00 INFO  : data/trade_signals.json: Copied (replaced existing)
+2026/06/09 06:13:01 INFO  : cycle-state/current.json: Copied (new)
+2026/06/09 06:13:13 ERROR : execution/freqtrade: error reading destination directory: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/09 06:14:40 INFO  : pulse/coindesk-inbox.jsonl: Copied (replaced existing)
+2026/06/09 06:14:40 INFO  : pulse/cointelegraph-inbox.jsonl: Copied (replaced existing)
+2026/06/09 06:14:40 ERROR : data/state_store.db/mem%3Ahealth.bin: corrupted on transfer: md5 hash differ "4a277ce9bde57bd3b23ce48a79a8fe8b" vs "d3535a2f7d8c56d8cb02effa1513e4a0"
+2026/06/09 06:14:40 INFO  : data/state_store.db/mem%3Ahealth.bin: Removing failed copy
+2026/06/09 06:14:42 NOTICE: scripts/ingestion/compound-pulse.py: Can't follow symlink without -L/--copy-links
+2026/06/09 06:14:43 NOTICE: venv/lib64: Can't follow symlink without -L/--copy-links
+2026/06/09 06:14:43 NOTICE: venv/bin/python: Can't follow symlink without -L/--copy-links
+2026/06/09 06:14:43 NOTICE: venv/bin/python3.12: Can't follow symlink without -L/--copy-links
+2026/06/09 06:14:43 NOTICE: venv/bin/python3: Can't follow symlink without -L/--copy-links
+2026/06/09 06:15:19 ERROR : venv/lib/python3.12/site-packages/pip/_vendor/platformdirs: error reading destination directory: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/09 06:16:00 ERROR : Google drive root 'backup/kestrel': not deleting files as there were IO errors
+2026/06/09 06:16:00 ERROR : Google drive root 'backup/kestrel': not deleting directories as there were IO errors
+2026/06/09 06:16:00 ERROR : Attempt 3/3 failed with 4 errors and: march failed with 2 error(s): first error: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/06/09 06:16:00 INFO  : 
+Transferred:   	    6.977 MiB / 6.977 MiB, 100%, 360 B/s, ETA 0s
+Errors:                 4 (retrying may help)
+Checks:             12684 / 12684, 100%
+Transferred:          233 / 233, 100%
+Elapsed time:     15m58.3s
+
+2026/06/09 06:16:00 Failed to sync with 4 errors: last error was: march failed with 2 error(s): first error: couldn't list directory: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+[20260609-101700] Backup complete

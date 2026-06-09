@@ -1,26 +1,26 @@
 # Noise Gate Context
 
-_Generated: 2026-06-09 08:01:17 UTC_
+_Generated: 2026-06-09 11:07:54 UTC_
 
 ## Last 24h
 
-- PROMOTE: 42
-- PURGE: 48
-- Total: 90
+- PROMOTE: 46
+- PURGE: 51
+- Total: 97
 
 ## Top Reasons
 
-- No significant markers found: 48
-- Security/vulnerability signal: 32
+- No significant markers found: 51
+- Security/vulnerability signal: 35
+- Dependency/ecosystem shift: 7
 - Convergence detected: 7
-- Dependency/ecosystem shift: 6
+- Structural shift (engineering refactor/rewrite): 5
 - Direct actionability detected: 5
-- Structural shift (engineering refactor/rewrite): 4
 
 ## Sources
 
-- GitHub_vscode: 20
-- GitHub_llama.cpp: 15
+- GitHub_vscode: 22
+- GitHub_llama.cpp: 20
 - GitHub_unsloth: 13
 - GitHub_ollama: 11
 - GitHub_ComfyUI: 11
@@ -29,18 +29,18 @@ _Generated: 2026-06-09 08:01:17 UTC_
 
 ## Recent Decisions
 
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0c61709 by Benjamin Christopher Simmonds: sessions: experiment to move harness picker below input (#320584)  Add 
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit ae735b1 by Nick Towle: ui: Fix excessive style recalculation on hover (#24243)
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 1e91256 by jacekpoplawski: server: log prompts to directory (#22031)  * server: log prompts to directory  Add `--
+- PROMOTE score=4 source=GitHub_llama.cpp reason=Structural shift (engineering refactor/rewrite) preview=Commit 9682e35 by Xuan-Son Nguyen: mtmd: refactor video subproc handling (#24316)  * mtmd: refactor video subproc handli
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit efbacf8 by Pascal: ui: fix mobile chat form overflow and bust stale bundle cache (#24158)
+- PROMOTE score=8 source=GitHub_llama.cpp reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 2602169 by Pascal: ggml : add GGML_OP_COL2IM_1D (#24206)  * cpu: add GGML_OP_COL2IM_1D  Add the overlap-add (scat
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 14689db by Christof Marti: Improve smoke test reliability in CI (#317981)
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 58c0981 by Henning Dieterichs: Registers @vscode/markdown-editor in markdown-language-features extension
 - PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit ffd6d6e by Henning Dieterichs: Fixes CI
 - PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 961e9a3 by fiesh: server : do not clear slots without unified KV cache (#24190)  * Always export idle slots to RA
 - PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 4c97a94 by Jesse Gross: mlxthread: preserve the original stack when worker work panics  Work that panics on the l
 - PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 07588c6 by Jesse Gross: mlxrunner/cache: split KVCache and RotatingKVCache into their own files  cache.go had gro
-- PROMOTE score=5 source=GitHub_ollama reason=Direct actionability detected preview=Commit 177aefb by Jesse Gross: nn/recurrent: return per-boundary states from the gated-delta kernels  CausalConv1D and G
-- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit d006220 by Jesse Gross: mlxrunner: drive MTP speculation through cache snapshots  Speculation used a parallel hie
-- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit ded2db7 by Jesse Gross: mlxrunner: capture prefill snapshots across the forward  Prefill no longer splits its bat
-- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 1abd56b by Jesse Gross: mlxrunner: record committed MTP drafts before streaming them  The batched MTP accept path
-- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit fd3271e by Yash Raj Pandey: ggml-cpu : fix rms_norm_back wrong output under in-place aliasing (#24305)  * ggml-cp
-- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit f0152ef by Sigbjørn Skjæret: models : fix plamo2 attention_key/value_length regression (#24317)
-- PROMOTE score=3 source=GitHub_unsloth reason=Convergence detected preview=Commit 8292e69 by Daniel Han: Studio: make code comments and docstrings more succinct (#6029)  Trim and tighten code com
 
 ## Agent Use
 
