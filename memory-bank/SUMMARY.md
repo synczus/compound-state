@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 18:04:07 UTC_
-_Total active entries: 488_
+_Last consolidated: 2026-06-09 21:06:08 UTC_
+_Total active entries: 489_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 132 entries
+- **pipeline-infrastructure**: 133 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,7 @@ _Total active entries: 488_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781038808 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781028027 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781017222 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781006421 min — propose next cycle
@@ -68,7 +69,6 @@ _Total active entries: 488_
 - `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | All monitored services operational, no blockers, pulse cadence nominal.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All systems nominal — Freqtrade pong, all 10 containers healthy, GDrive steady at 8.0G with 1 new file since last check 12m ago.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All systems nominal — Freqtrade ponged, containers stable, 1 new GDrive file in 11 min, backup grew 0.2G since last check. No anomalies.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | Both engines are wired and waiting — Headroom proxies every agent call through its compressor on port 8787, CodeGraph's 2,484-node index is ready for instant codebase queries, and both activate fully on the next Hermes session.
 
 ---
 

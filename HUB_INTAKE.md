@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-09
-_Generated: 2026-06-09T20:26:41Z_
+_Generated: 2026-06-09T23:11:57Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 18:04:07 UTC_
-_Total active entries: 488_
+_Last consolidated: 2026-06-09 21:06:08 UTC_
+_Total active entries: 489_
 
 ## By Category
 
 - **other**: 182 entries
-- **pipeline-infrastructure**: 132 entries
+- **pipeline-infrastructure**: 133 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,7 @@ _Total active entries: 488_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781038808 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781028027 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781017222 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781006421 min — propose next cycle
@@ -46,38 +47,37 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 20:19:57 UTC_
+_Generated: 2026-06-09 23:03:38 UTC_
 
 ## Last 24h
 
-- PROMOTE: 65
-- PURGE: 81
-- Total: 146
+- PROMOTE: 78
+- PURGE: 91
+- Total: 169
 
 ## Top Reasons
 
-- No significant markers found: 81
-- Security/vulnerability signal: 49
+- No significant markers found: 91
+- Security/vulnerability signal: 60
 - Dependency/ecosystem shift: 10
-- Structural shift (engineering refactor/rewrite): 8
-- Convergence detected: 8
-- Direct actionability detected: 6
+- Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 9
+- Direct actionability detected: 8
 
 ## Sources
 
-- GitHub_vscode: 46
+- GitHub_vscode: 62
 - GitHub_llama.cpp: 27
-- GitHub_unsloth: 20
+- GitHub_unsloth: 21
+- GitHub_langchain: 19
 - GitHub_ComfyUI: 18
-- GitHub_langchain: 13
 - GitHub_ollama: 11
 - GitHub_openai-python: 10
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 0f45b2c by Nidhi Rajani: feat(openai): support `apply_patch` built-in tool (#37157)  [Docs](https://github.com/la
-- PROMOTE score=9 source=GitHub_vscode reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit 21c5fff by Ladislau Szomoru: Agent Host - adopt changesets breaking changes (#320636)  * Bring over the latest ve
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit d5dc82c by Connor Peet: Merge pull request #320672 from microsoft/connor4312/319641  agentHost: fix orphaned clie
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -86,37 +86,37 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-09 20:19:57 UTC_
+_Generated: 2026-06-09 23:03:38 UTC_
 
 ## Last 24h
 
-- PROMOTE: 65
-- PURGE: 81
-- Total: 146
+- PROMOTE: 78
+- PURGE: 91
+- Total: 169
 
 ## Top Reasons
 
-- No significant markers found: 81
-- Security/vulnerability signal: 49
+- No significant markers found: 91
+- Security/vulnerability signal: 60
 - Dependency/ecosystem shift: 10
-- Structural shift (engineering refactor/rewrite): 8
-- Convergence detected: 8
-- Direct actionability detected: 6
+- Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 9
+- Direct actionability detected: 8
 
 ## Sources
 
-- GitHub_vscode: 46
+- GitHub_vscode: 62
 - GitHub_llama.cpp: 27
-- GitHub_unsloth: 20
+- GitHub_unsloth: 21
+- GitHub_langchain: 19
 - GitHub_ComfyUI: 18
-- GitHub_langchain: 13
 - GitHub_ollama: 11
 - GitHub_openai-python: 10
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 0f45b2c by Nidhi Rajani: feat(openai): support `apply_patch` built-in tool (#37157)  [Docs](https://github.com/la
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit bbb4286 by Joaquín Ruales: Browser Search (#317408)
 _[truncated]_
 
 ### inversion-pulse.md
