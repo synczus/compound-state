@@ -217,3 +217,63 @@ To github.com:synczus/compound-state.git
 error: failed to push some refs to 'github.com:synczus/compound-state.git'
 2026-06-10 08:30:29 — PUSH FAILED after retry
 Wed Jun 10 12:30:01 PM EDT 2026 — git gc (337592K)
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File signals.duckdb is 52.01 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: error: GH013: Repository rule violations found for refs/heads/main.        
+remote: 
+remote: - GITHUB PUSH PROTECTION        
+remote:   —————————————————————————————————————————        
+remote:     Resolve the following violations before pushing again        
+remote: 
+remote:     - Push cannot contain secrets        
+remote: 
+remote:             
+remote:      (?) Learn how to resolve a blocked push        
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        
+remote:             
+remote:             
+remote:       —— OpenRouter API Key ————————————————————————————————        
+remote:        locations:        
+remote:          - commit: 2229e7e101b5e339c6ca299b3fe3ebc505f8a304        
+remote:            path: scripts/vision_handler.py:44        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/synczus/compound-state/security/secret-scanning/unblock-secret/3Ew3TRRYGKTKTee0LR0s8QzpVNO        
+remote:             
+remote: 
+remote: 
+To github.com:synczus/compound-state.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'github.com:synczus/compound-state.git'
+2026-06-10 12:30:14 — PUSH FAILED: HUB_INTAKE.md agent-pulses/2026-06-10/inversion-pulse.md agent-pulses/2026-06-10/noise-gate-context.md auto-git.log compound-state.json cron-health/auto-git-sync.heartbeat cron-health/or-budget-monito
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File signals.duckdb is 52.01 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: error: GH013: Repository rule violations found for refs/heads/main.        
+remote: 
+remote: - GITHUB PUSH PROTECTION        
+remote:   —————————————————————————————————————————        
+remote:     Resolve the following violations before pushing again        
+remote: 
+remote:     - Push cannot contain secrets        
+remote: 
+remote:             
+remote:      (?) Learn how to resolve a blocked push        
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        
+remote:             
+remote:             
+remote:       —— OpenRouter API Key ————————————————————————————————        
+remote:        locations:        
+remote:          - commit: 2229e7e101b5e339c6ca299b3fe3ebc505f8a304        
+remote:            path: scripts/vision_handler.py:44        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/synczus/compound-state/security/secret-scanning/unblock-secret/3Ew3TRRYGKTKTee0LR0s8QzpVNO        
+remote:             
+remote: 
+remote: 
+To github.com:synczus/compound-state.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'github.com:synczus/compound-state.git'
+2026-06-10 12:30:28 — PUSH FAILED after retry

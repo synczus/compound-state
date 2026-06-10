@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T16:26:00Z_
+_Generated: 2026-06-10T17:12:09Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,26 +47,26 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 16:15:05 UTC_
+_Generated: 2026-06-10 16:37:18 UTC_
 
 ## Last 24h
 
-- PROMOTE: 85
-- PURGE: 52
-- Total: 137
+- PROMOTE: 84
+- PURGE: 54
+- Total: 138
 
 ## Top Reasons
 
 - Security/vulnerability signal: 74
-- No significant markers found: 52
-- Dependency/ecosystem shift: 14
+- No significant markers found: 54
+- Dependency/ecosystem shift: 13
 - Direct actionability detected: 13
+- Structural shift (engineering refactor/rewrite): 9
 - Convergence detected: 9
-- Structural shift (engineering refactor/rewrite): 8
 
 ## Sources
 
-- GitHub_vscode: 57
+- GitHub_vscode: 58
 - GitHub_unsloth: 41
 - GitHub_langchain: 20
 - GitHub_ComfyUI: 10
@@ -75,11 +75,45 @@ _Generated: 2026-06-10 16:15:05 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit b21c419 by Daniel Han: Studio: fall back to text-only when llama.cpp is too old for a model's vision projector (#
-- PROMOTE score=5 source=GitHub_openai-python reason=Security/vulnerability signal preview=Commit a526ee8 by Justin Beckwith: build: fix release workflow permissions (#3389)
+- PROMOTE score=9 source=GitHub_vscode reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit 644acb0 by Lee Murray: Refactor chat action icons for consistency (#320752)  * refactor: update chat action icons
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### noise-gate-context.md
+
+# Noise Gate Context
+
+_Generated: 2026-06-10 16:37:18 UTC_
+
+## Last 24h
+
+- PROMOTE: 84
+- PURGE: 54
+- Total: 138
+
+## Top Reasons
+
+- Security/vulnerability signal: 74
+- No significant markers found: 54
+- Dependency/ecosystem shift: 13
+- Direct actionability detected: 13
+- Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 9
+
+## Sources
+
+- GitHub_vscode: 58
+- GitHub_unsloth: 41
+- GitHub_langchain: 20
+- GitHub_ComfyUI: 10
+- GitHub_llama.cpp: 7
+- GitHub_openai-python: 2
+
+## Recent Decisions
+
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit c689dc5 by Michael Han: Chat UI polish: template editor reset, circular action button hovers (#6151)  * Chat temp
+_[truncated]_
 
 ### inversion-pulse.md
 
@@ -90,41 +124,6 @@ _[truncated]_
 What’s being overlooked:
 
 - **Isolation of threats.** Good team fights are about forcing one enemy at a time, not peeking into multiple guns. If you expose the squad to overlapping fire, you hand the enemy a 3v1 or worse. [3]
-_[truncated]_
-
-### noise-gate-context.md
-
-# Noise Gate Context
-
-_Generated: 2026-06-10 16:15:05 UTC_
-
-## Last 24h
-
-- PROMOTE: 85
-- PURGE: 52
-- Total: 137
-
-## Top Reasons
-
-- Security/vulnerability signal: 74
-- No significant markers found: 52
-- Dependency/ecosystem shift: 14
-- Direct actionability detected: 13
-- Convergence detected: 9
-- Structural shift (engineering refactor/rewrite): 8
-
-## Sources
-
-- GitHub_vscode: 57
-- GitHub_unsloth: 41
-- GitHub_langchain: 20
-- GitHub_ComfyUI: 10
-- GitHub_llama.cpp: 7
-- GitHub_openai-python: 2
-
-## Recent Decisions
-
-- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit b21c419 by Daniel Han: Studio: fall back to text-only when llama.cpp is too old for a model's vision projector (#
 _[truncated]_
 
 ### hermes-pipeline-pulse.md
