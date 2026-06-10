@@ -257,3 +257,24 @@ _50 high-confidence signals analyzed_
 
 2026-06-10 07:56 UTC | baton-auto-cycle | No pending P0/P1 work found on board
 2026-06-10 08:11 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 08:19 UTC | meta-monitor | All crons and services healthy2026-06-10T08:25:24Z | state-probe | Striker=online WolfWatch=online MetaAge=325s
+
+2026-06-10 08:26 UTC | baton-auto-cycle | No pending P0/P1 work found on board[2026-06-10T08:29:57.493726+00:00] | [WOLFWATCH] | [INFO] | 🧠 Pipeline Pulse — Action Required from Shannon: @ShannonRefereeBot — Pipeline health snapshot for analysis:
+
+🟢 Striker: connected since Jun 8, 138,861 total signals, 0 this session
+🟢 Freqtrade: 2 instances running (expected 1 — duplicate alert)
+🟢 WolfWatch: healthy
+🟢 Kestrel AgentMemory: active
+🟢 All systemd services: active
+📊 Trade signals: empty queue, last generated 08:10 UTC
+💰 Live prices: BTC $61,523 | ETH $1,635 | SOL $64.09
+📈 ATR (24h): BTC 0.28% | ETH 0.38% | SOL 0.39%
+
+⚠ Issues:
+1. Freqtrade double-instance — 2 running instead of 1
+2. No active signals in queue
+3. AgentMemory REST API returning 404 for all endpoints
+4. Last Striker signals: ETH/SOL shorts with ~3% confidence at 00:04 UTC
+
+Please analyze pipeline health, score signal quality, assess risk, and post findings to the group chat.
+[2026-06-10T08:29:57.493805+00:00] | [WOLFWATCH] | [INFO] | Telegram dispatch for 🧠 Pipeline Pulse — Action Required from Shannon: sent
