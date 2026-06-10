@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T23:06:32Z_
+_Generated: 2026-06-10T23:21:33Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,18 +47,18 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 22:56:29 UTC_
+_Generated: 2026-06-10 23:16:34 UTC_
 
 ## Last 24h
 
 - PROMOTE: 85
-- PURGE: 57
-- Total: 142
+- PURGE: 58
+- Total: 143
 
 ## Top Reasons
 
 - Security/vulnerability signal: 74
-- No significant markers found: 57
+- No significant markers found: 58
 - Dependency/ecosystem shift: 15
 - Direct actionability detected: 12
 - Convergence detected: 9
@@ -66,7 +66,7 @@ _Generated: 2026-06-10 22:56:29 UTC_
 
 ## Sources
 
-- GitHub_vscode: 50
+- GitHub_vscode: 51
 - GitHub_unsloth: 49
 - GitHub_langchain: 25
 - GitHub_ComfyUI: 9
@@ -76,7 +76,7 @@ _Generated: 2026-06-10 22:56:29 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit f0b4e1e by Matt Bierner: Merge pull request #314958 from dymaaaj7/patch-3  Fix declaration order of File and Refe
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 9df626d by Connor Peet: Merge pull request #320712 from microsoft/connor4312/314149  agentHost: fix client tool a
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -85,18 +85,18 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 22:56:29 UTC_
+_Generated: 2026-06-10 23:16:34 UTC_
 
 ## Last 24h
 
 - PROMOTE: 85
-- PURGE: 57
-- Total: 142
+- PURGE: 58
+- Total: 143
 
 ## Top Reasons
 
 - Security/vulnerability signal: 74
-- No significant markers found: 57
+- No significant markers found: 58
 - Dependency/ecosystem shift: 15
 - Direct actionability detected: 12
 - Convergence detected: 9
@@ -104,7 +104,7 @@ _Generated: 2026-06-10 22:56:29 UTC_
 
 ## Sources
 
-- GitHub_vscode: 50
+- GitHub_vscode: 51
 - GitHub_unsloth: 49
 - GitHub_langchain: 25
 - GitHub_ComfyUI: 9
@@ -114,7 +114,7 @@ _Generated: 2026-06-10 22:56:29 UTC_
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 53b852a by Martin Aeschlimann: Do not clear agent when switching from initial to commited session (#320762)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 4ab1d98 by Aaron Munger: add env var to AH to tag our CAPI traffic (#320814)  * add env var to AH to tag our CAPI
 _[truncated]_
 
 ### nemoclaw-cost-pulse-1825.md
