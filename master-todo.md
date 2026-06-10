@@ -832,3 +832,83 @@
 - [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
 - [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T12:30:49Z ---
+- [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T13:00:01Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T13:00:49Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T13:30:01Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T13:30:09Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T14:00:01Z ---
+- [ ] 🔴 hop: Active hop — nemoclaw's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T14:00:49Z ---
+- [ ] 🔴 hop: Active hop — nemoclaw's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T14:30:01Z ---
+- [ ] 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T14:30:39Z ---
+- [ ] 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T15:00:01Z ---
+- [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T15:00:09Z ---
+- [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T15:30:01Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T15:30:39Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T16:00:01Z ---
+- [ ] 🟡 hop: Hop idle 1781107202 min — propose next cycle
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T16:00:49Z ---
+- [ ] 🟡 hop: Hop idle 1781107250 min — propose next cycle
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T16:30:01Z ---
+- [ ] 🔴 hop: Active hop — kairos's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00

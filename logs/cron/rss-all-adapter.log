@@ -52267,3 +52267,3475 @@
 [fear-greed-adapter] ok
 
 ✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] FAILED: [hacker-news] Fetching RSS from https://hnrss.org/frontpage?count=25...
+[hacker-news] RSS fetch failed: The read operation timed out
+[hacker-news] No items found
+
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 10/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] FAILED: [hacker-news] Fetching RSS from https://hnrss.org/frontpage?count=25...
+[hacker-news] RSS fetch failed: <urlopen error timed out>
+[hacker-news] No items found
+
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 10/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] FAILED: [hacker-news] Fetching RSS from https://hnrss.org/frontpage?count=25...
+[hacker-news] RSS fetch failed: HTTP Error 502: Bad Gateway
+[hacker-news] No items found
+
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 10/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] FAILED: [hacker-news] Fetching RSS from https://hnrss.org/frontpage?count=25...
+[hacker-news] RSS fetch failed: HTTP Error 502: Bad Gateway
+[hacker-news] No items found
+
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 10/11 sources scraped
+[cointelegraph] 📡 RSS Feed: cointelegraph
+[cointelegraph]    Items: 30
+[cointelegraph]    Event types: {'crypto_news': 30}
+[cointelegraph]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[cointelegraph]    Baseline confidence: 0.25–0.25
+[cointelegraph]    Output: /home/synczus/kestrel/pulse/cointelegraph-inbox.jsonl
+[coindesk] 📡 RSS Feed: coindesk
+[coindesk]    Items: 25
+[coindesk]    Event types: {'crypto_news': 25}
+[coindesk]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[coindesk]    Baseline confidence: 0.25–0.25
+[coindesk]    Output: /home/synczus/kestrel/pulse/coindesk-inbox.jsonl
+[techcrunch] 📡 RSS Feed: techcrunch
+[techcrunch]    Items: 20
+[techcrunch]    Event types: {'tech_news': 20}
+[techcrunch]    Symbols: ['AI', 'BIGTECH']
+[techcrunch]    Baseline confidence: 0.20–0.20
+[techcrunch]    Output: /home/synczus/kestrel/pulse/techcrunch-inbox.jsonl
+[a16z-crypto] 📡 RSS Feed: a16z-crypto
+[a16z-crypto]    Items: 20
+[a16z-crypto]    Event types: {'crypto_analysis': 20}
+[a16z-crypto]    Symbols: ['AI', 'CRYPTO']
+[a16z-crypto]    Baseline confidence: 0.86–0.86
+[a16z-crypto]    Output: /home/synczus/kestrel/pulse/a16z-crypto-inbox.jsonl
+[coinstack] 📡 RSS Feed: coinstack
+[coinstack]    Items: 20
+[coinstack]    Event types: {'crypto_roundup': 20}
+[coinstack]    Symbols: ['BTC', 'CRYPTO', 'ETH']
+[coinstack]    Baseline confidence: 0.80–0.80
+[coinstack]    Output: /home/synczus/kestrel/pulse/coinstack-inbox.jsonl
+[the-tech-buzz] 📡 RSS Feed: the-tech-buzz
+[the-tech-buzz]    Items: 20
+[the-tech-buzz]    Event types: {'tech_investing': 20}
+[the-tech-buzz]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[the-tech-buzz]    Baseline confidence: 0.74–0.74
+[the-tech-buzz]    Output: /home/synczus/kestrel/pulse/the-tech-buzz-inbox.jsonl
+[hacker-news] 📡 RSS Feed: hacker-news
+[hacker-news]    Items: 25
+[hacker-news]    Event types: {'tech_trending': 25}
+[hacker-news]    Symbols: ['AI', 'BIGTECH']
+[hacker-news]    Baseline confidence: 0.30–0.30
+[hacker-news]    Output: /home/synczus/kestrel/pulse/hacker-news-inbox.jsonl
+[arxiv-ai] 📡 RSS Feed: arxiv-ai
+[arxiv-ai]    Items: 50
+[arxiv-ai]    Event types: {'ai_research': 50}
+[arxiv-ai]    Symbols: ['AI', 'BIGTECH']
+[arxiv-ai]    Baseline confidence: 0.35–0.35
+[arxiv-ai]    Output: /home/synczus/kestrel/pulse/arxiv-ai-inbox.jsonl
+[bankless] 📡 RSS Feed: bankless
+[bankless]    Items: 50
+[bankless]    Event types: {'crypto_narrative': 50}
+[bankless]    Symbols: ['AI', 'BIGTECH', 'BTC', 'CRYPTO', 'ETH', 'SOL']
+[bankless]    Baseline confidence: 0.65–0.65
+[bankless]    Output: /home/synczus/kestrel/pulse/bankless-inbox.jsonl
+[defillama-adapter] ok
+[fear-greed-adapter] ok
+
+✅ 11/11 sources scraped

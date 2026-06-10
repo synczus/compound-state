@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 10:39:32 UTC_
-_Total active entries: 503_
+_Last consolidated: 2026-06-10 16:09:35 UTC_
+_Total active entries: 505_
 
 ## By Category
 
 - **other**: 187 entries
-- **pipeline-infrastructure**: 141 entries
+- **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,8 @@ _Total active entries: 503_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107202 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107250 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087402 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087408 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 pipeline: Pipeline health pulse written for Shannon — see pulse/pipeline-health-20260610-0945.json
@@ -67,8 +69,6 @@ _Total active entries: 503_
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 3 new chat messages ingested into DuckDB and written to knowledge docs with no failures.
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 3 new messages ingested and classified into DuckDB across architecture/configuration categories; 1,174 total entries, 2.5% unclassified noise — pipe is clean.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 5 new messages ingested and knowledge docs updated.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 77 backfilled signals and 73 entities now live in Kestrel DB alongside an interactive knowledge graph at ~/compound/knowledge-graph.html — both the code structure and the conversation decisions are permanently queryable and visually explorable.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers green, Freqtrade responsive, GDrive backup stable at 12G with only 1 new file since last check — compound is in steady state.
 
 ---
 

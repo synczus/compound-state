@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T12:21:50Z_
+_Generated: 2026-06-10T16:26:00Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 10:39:32 UTC_
-_Total active entries: 503_
+_Last consolidated: 2026-06-10 16:09:35 UTC_
+_Total active entries: 505_
 
 ## By Category
 
 - **other**: 187 entries
-- **pipeline-infrastructure**: 141 entries
+- **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,8 @@ _Total active entries: 503_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107202 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107250 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087402 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087408 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 pipeline: Pipeline health pulse written for Shannon — see pulse/pipeline-health-20260610-0945.json
@@ -39,80 +41,45 @@ _Total active entries: 503_
 - `[hermes]` **[other]** ⚪ striker: 808 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064006 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781049614 min — propose next cycle
-- `[hermes]` **[other]** ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 12:21:10 UTC_
+_Generated: 2026-06-10 16:15:05 UTC_
 
 ## Last 24h
 
-- PROMOTE: 62
-- PURGE: 63
-- Total: 125
+- PROMOTE: 85
+- PURGE: 52
+- Total: 137
 
 ## Top Reasons
 
-- No significant markers found: 63
-- Security/vulnerability signal: 50
-- Structural shift (engineering refactor/rewrite): 9
-- Dependency/ecosystem shift: 9
-- Direct actionability detected: 9
-- Convergence detected: 7
+- Security/vulnerability signal: 74
+- No significant markers found: 52
+- Dependency/ecosystem shift: 14
+- Direct actionability detected: 13
+- Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 8
 
 ## Sources
 
-- GitHub_vscode: 62
-- GitHub_unsloth: 20
+- GitHub_vscode: 57
+- GitHub_unsloth: 41
 - GitHub_langchain: 20
-- GitHub_ComfyUI: 15
+- GitHub_ComfyUI: 10
 - GitHub_llama.cpp: 7
-- GitHub_AutoGPT: 1
+- GitHub_openai-python: 2
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 3cd0b9b by Daniel Han: Studio: fix nested dropdown submenus clipped by the menu alignment nudge (#6143)  * Studio
+- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit b21c419 by Daniel Han: Studio: fall back to text-only when llama.cpp is too old for a model's vision projector (#
+- PROMOTE score=5 source=GitHub_openai-python reason=Security/vulnerability signal preview=Commit a526ee8 by Justin Beckwith: build: fix release workflow permissions (#3389)
 _[truncated]_
 
 ## Today's Pulses (newest first)
-
-### noise-gate-context.md
-
-# Noise Gate Context
-
-_Generated: 2026-06-10 12:21:10 UTC_
-
-## Last 24h
-
-- PROMOTE: 62
-- PURGE: 63
-- Total: 125
-
-## Top Reasons
-
-- No significant markers found: 63
-- Security/vulnerability signal: 50
-- Structural shift (engineering refactor/rewrite): 9
-- Dependency/ecosystem shift: 9
-- Direct actionability detected: 9
-- Convergence detected: 7
-
-## Sources
-
-- GitHub_vscode: 62
-- GitHub_unsloth: 20
-- GitHub_langchain: 20
-- GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 7
-- GitHub_AutoGPT: 1
-
-## Recent Decisions
-
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit dfb49fd by Daniel Han: Studio: bulk export and import in Settings Chat Data, MCP pill off switch (#6141)  * Studi
-_[truncated]_
 
 ### inversion-pulse.md
 
@@ -123,6 +90,41 @@ _[truncated]_
 What’s being overlooked:
 
 - **Isolation of threats.** Good team fights are about forcing one enemy at a time, not peeking into multiple guns. If you expose the squad to overlapping fire, you hand the enemy a 3v1 or worse. [3]
+_[truncated]_
+
+### noise-gate-context.md
+
+# Noise Gate Context
+
+_Generated: 2026-06-10 16:15:05 UTC_
+
+## Last 24h
+
+- PROMOTE: 85
+- PURGE: 52
+- Total: 137
+
+## Top Reasons
+
+- Security/vulnerability signal: 74
+- No significant markers found: 52
+- Dependency/ecosystem shift: 14
+- Direct actionability detected: 13
+- Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 8
+
+## Sources
+
+- GitHub_vscode: 57
+- GitHub_unsloth: 41
+- GitHub_langchain: 20
+- GitHub_ComfyUI: 10
+- GitHub_llama.cpp: 7
+- GitHub_openai-python: 2
+
+## Recent Decisions
+
+- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit b21c419 by Daniel Han: Studio: fall back to text-only when llama.cpp is too old for a model's vision projector (#
 _[truncated]_
 
 ### hermes-pipeline-pulse.md
