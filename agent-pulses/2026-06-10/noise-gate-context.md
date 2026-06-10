@@ -1,33 +1,34 @@
 # Noise Gate Context
 
-_Generated: 2026-06-10 07:48:53 UTC_
+_Generated: 2026-06-10 09:12:01 UTC_
 
 ## Last 24h
 
-- PROMOTE: 59
-- PURGE: 65
-- Total: 124
+- PROMOTE: 57
+- PURGE: 63
+- Total: 120
 
 ## Top Reasons
 
-- No significant markers found: 65
-- Security/vulnerability signal: 46
+- No significant markers found: 63
+- Security/vulnerability signal: 44
 - Structural shift (engineering refactor/rewrite): 9
-- Dependency/ecosystem shift: 7
 - Convergence detected: 6
+- Dependency/ecosystem shift: 6
 - Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 61
+- GitHub_vscode: 58
 - GitHub_langchain: 20
-- GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 12
+- GitHub_llama.cpp: 13
+- GitHub_unsloth: 13
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 4d2f29f by Michael Han: Studio: center account avatar vertically in sidebar footer pill (#6026)  Co-authored-by: 
 - PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 256d17e by Darshan Poudel: fix(studio): block arbitrary external image URLs in markdown renderer (#5602)  * fix(s
 - PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit d2e22ed by ddh0: speculative : fix "ngram-map-k4v" name in logging (#24253)  This is a non-functional change.  Wh
 - PROMOTE score=3 source=GitHub_llama.cpp reason=Dependency/ecosystem shift preview=Commit 039e20a by Sigbjørn Skjæret: ci : bump komac version (#24396)
@@ -39,7 +40,6 @@ _Generated: 2026-06-10 07:48:53 UTC_
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit cb86056 by Connor Peet: agentHost: describe empty attachment tool results (#320707)  When a successful client too
 - PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit 039ed38 by Matt Miller: fix(assets): remove unused delete_content param from deleteAsset (#14241)  * fix(assets):
 - PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 8848a31 by Daniel Han: Studio: clean-room compact RAG (knowledge bases, hybrid search, fast indexing) (#5910)  Ad
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 64ee4d8 by Mason Daugherty: release(groq): 1.1.3 (#38009)  Closes #37996
 
 ## Agent Use
 

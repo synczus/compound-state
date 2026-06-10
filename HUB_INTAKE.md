@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T08:15:50Z_
+_Generated: 2026-06-10T09:16:59Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,37 +47,36 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 07:48:53 UTC_
+_Generated: 2026-06-10 09:12:01 UTC_
 
 ## Last 24h
 
-- PROMOTE: 59
-- PURGE: 65
-- Total: 124
+- PROMOTE: 57
+- PURGE: 63
+- Total: 120
 
 ## Top Reasons
 
-- No significant markers found: 65
-- Security/vulnerability signal: 46
+- No significant markers found: 63
+- Security/vulnerability signal: 44
 - Structural shift (engineering refactor/rewrite): 9
-- Dependency/ecosystem shift: 7
 - Convergence detected: 6
+- Dependency/ecosystem shift: 6
 - Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 61
+- GitHub_vscode: 58
 - GitHub_langchain: 20
-- GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 12
+- GitHub_llama.cpp: 13
+- GitHub_unsloth: 13
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
 - PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 256d17e by Darshan Poudel: fix(studio): block arbitrary external image URLs in markdown renderer (#5602)  * fix(s
 - PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit d2e22ed by ddh0: speculative : fix "ngram-map-k4v" name in logging (#24253)  This is a non-functional change.  Wh
-- PROMOTE score=3 source=GitHub_llama.cpp reason=Dependency/ecosystem shift preview=Commit 039e20a by Sigbjørn Skjæret: ci : bump komac version (#24396)
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -86,35 +85,46 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 07:48:53 UTC_
+_Generated: 2026-06-10 09:12:01 UTC_
 
 ## Last 24h
 
-- PROMOTE: 59
-- PURGE: 65
-- Total: 124
+- PROMOTE: 57
+- PURGE: 63
+- Total: 120
 
 ## Top Reasons
 
-- No significant markers found: 65
-- Security/vulnerability signal: 46
+- No significant markers found: 63
+- Security/vulnerability signal: 44
 - Structural shift (engineering refactor/rewrite): 9
-- Dependency/ecosystem shift: 7
 - Convergence detected: 6
+- Dependency/ecosystem shift: 6
 - Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 61
+- GitHub_vscode: 58
 - GitHub_langchain: 20
-- GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 12
+- GitHub_llama.cpp: 13
+- GitHub_unsloth: 13
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 256d17e by Darshan Poudel: fix(studio): block arbitrary external image URLs in markdown renderer (#5602)  * fix(s
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 4d2f29f by Michael Han: Studio: center account avatar vertically in sidebar footer pill (#6026)  Co-authored-by: 
+_[truncated]_
+
+### inversion-pulse.md
+
+2026-06-10T04:17:16Z | inversion-cron | ## Perplexity Search Results
+
+**Bluntly: “Auto cycle — full squad sweep” is usually a lazy, overconfident plan that optimizes for *moving through space* instead of *surviving contact*.** It assumes the squad can simply sweep everything efficiently, but squad-level sweeps are exactly where people get pinned, split, ambushed, or forced into bad trades if they don’t isolate threats and manage angles. The core mistake is treating “sweep” as the mission rather than a method. [3][4]
+
+What’s being overlooked:
+
+- **Isolation of threats.** Good team fights are about forcing one enemy at a time, not peeking into multiple guns. If you expose the squad to overlapping fire, you hand the enemy a 3v1 or worse. [3]
 _[truncated]_
 
 ### hermes-pipeline-pulse.md
@@ -181,30 +191,3 @@ _[truncated]_
   - WolfWatch: ✅ ONLINE
   - Meta-monitor: ⚠️ STALE (35min heartbeat)
   - ~31 unprocessed Telegram exports still backlogged
-
-### nemoclaw-meta-monitor-0420.md
-
-# Nemoclaw Pulse — Meta-Monitor — 2026-06-10T04:20Z
-
-## Action
-- **meta-monitor cron fired** (every 15min)
-- Script: `python3 meta-monitor.py`
-- Heartbeat written ✓
-
-## Results
-| Cron | Status | Detail |
-|---|---|---|
-| meta-monitor | ✅ FRESH | Self-heartbeat written |
-| squirrel-inbox-feeder | ✅ OK | Last run 00:00Z (within 40m...actually 4h ago — threshold may be too generous) |
-| dashboard-aggregator | ✅ OK | Last run 23:55Z |
-| or-budget-monitor | ✅ OK | Recovered — last run 04:00Z |
-| hlm-scraper-every-6h | ✅ OK | Last run 00:01Z |
-| auto-git-sync | ⚠️ STALE (123m) | Max 120m — 3m over. Last run 02:17Z |
-
-## Services
-- Striker: ONLINE (Kairos confirmed 03:45Z, PID 352751)
-- WolfWatch: ONLINE (responding on :18790/health)
-- Meta-monitor chain: Fresh
-
-## State Notes
-_[truncated]_
