@@ -212,3 +212,22 @@ _50 high-confidence signals analyzed_
 2026-06-10 01:53 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-10T02:01:01Z | state-probe | Striker=offline WolfWatch=online MetaAge=124843s
 
 2026-06-10 02:08 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 02:20 UTC | meta-monitor | 🔴 Cron 'or-budget-monitor' stale — 2100m since last run (max 240m)
+2026-06-10 02:20 UTC | meta-monitor | 🔴 Cron 'or-budget-monitor' stale — 2101m since last run (max 240m)2026-06-10T02:25:27Z | state-probe | Striker=offline WolfWatch=online MetaAge=305s
+
+2026-06-10 02:25 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 02:40 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-10T02:55:35Z | state-probe | Striker=offline WolfWatch=online MetaAge=2113s
+
+2026-06-10 02:56 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 03:11 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 03:20 UTC | meta-monitor | All crons and services healthy2026-06-10T03:25:26Z | state-probe | Striker=offline WolfWatch=online MetaAge=323s
+
+2026-06-10 03:26 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 03:41 UTC | baton-auto-cycle | No pending P0/P1 work found on board[2026-06-10T03:45:01.532709+00:00] | [KAIROS] | [MONITOR_HEALTH_OK] | kestrel-striker.service active.
+[2026-06-10T03:45:01.533041+00:00] | [KAIROS] | [MONITOR_DB_OK] | Last scan update 979s ago.
+2026-06-10T03:55:30Z | state-probe | Striker=online WolfWatch=online MetaAge=2127s
+
+2026-06-10 04:11 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 04:20 UTC | meta-monitor | 🔴 Cron 'auto-git-sync' stale — 123m since last run (max 120m)2026-06-10T04:25:19Z | state-probe | Striker=online WolfWatch=online MetaAge=276s
+
+2026-06-10 04:26 UTC | baton-auto-cycle | No pending P0/P1 work found on board

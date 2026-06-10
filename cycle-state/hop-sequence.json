@@ -7,21 +7,22 @@
     "shannon",
     "hermes"
   ],
-  "current_step": 0,
+  "current_step": 2,
   "query": "Auto cycle \u2014 full squad sweep",
   "requested_by": "",
-  "nemoclaw_done": false,
+  "nemoclaw_done": true,
   "openclaw_done": false,
-  "kairos_done": false,
+  "kairos_done": true,
   "shannon_done": false,
   "hermes_done": false,
   "complete": false,
   "auto": true,
   "idle_since": "",
-  "last_updated": "2026-06-10T02:12:37Z",
+  "last_updated": "2026-06-10T04:18:38Z",
   "nemoclaw_message": "Baton pass \u2014 no P0/P1 work on board, cycle-state clean, heartbeat OK",
   "kairos_message": "",
   "shannon_message": "Skipped \u2014 agent disabled since 2026-06-07",
   "hermes_message": "",
-  "openclaw_message": "Fixed or-meter and compound-pulse crons \u2014 migrated from LLM-gated agentTurn to direct shell crontab. Removed dead OpenClaw cron jobs. OpenRouter meter now posts directly via Telegram API without needing model credits. No P0/P1 blockers on infra side."
+  "openclaw_message": "",
+  "openclaw_announced_at": "2026-06-10T04:18:38Z"
 }

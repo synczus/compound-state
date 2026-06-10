@@ -3,6 +3,36 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. architecture
+- **When:** 2026-06-09 22:31:39
+- **Tags:** pipeline, service
+
+You only need to remove a couple of specific cron lines, not wipe everything.
+From the full picture you pasted, here’s the short, concrete answer:
+System crontab: remove these
+Duplicate / unnecessary signal-watch
+Remove the 4‑hour one and keep the 15‑minute one.
+Concretely, delete or comment out the line that looks like:
+0 */4 * * * signal-watch # old duplicate
+Keep:
+*/15 * * * * signal-watch
+High-frequency OpenRouter meter from system cron
+You already have an Hermes or-meter job every 4h that’s script-only and cheap.
+Remove the 30‑minute system-level one:
+*/30 * * * * or-meter-telegram.sh
+Keep the Hermes or-meter (every 4h) instead.
+(Optional) Slow down dashboard generation
+Not required, but recommended:
+Change:
+*/5 * * * * dashboard-gen.py
+To:
+*/15 * * * * dashboard-gen.py
+Or:
+*/30 * * *
+_[truncated]_
+
+---
+
+### 2. architecture
 - **When:** 2026-06-09 19:36:59
 - **Tags:** pipeline, architecture, flow, structure, design, schema, layer, module, service, component
 
@@ -30,7 +60,7 @@ _[truncated]_
 
 ---
 
-### 2. architecture
+### 3. architecture
 - **When:** 2026-06-09 18:42:36
 - **Tags:** flow, service
 
@@ -85,7 +115,7 @@ _[truncated]_
 
 ---
 
-### 3. architecture
+### 4. architecture
 - **When:** 2026-06-08 19:02:25
 - **Tags:** architecture, flow, structure, design, layer
 
@@ -102,7 +132,7 @@ _[truncated]_
 
 ---
 
-### 4. architecture
+### 5. architecture
 - **When:** 2026-06-08 15:42:26
 - **Tags:** pipeline
 
@@ -110,7 +140,7 @@ _[truncated]_
 
 ---
 
-### 5. architecture
+### 6. architecture
 - **When:** 2026-06-08 14:28:27
 - **Tags:** module
 
@@ -144,7 +174,7 @@ _[truncated]_
 
 ---
 
-### 6. architecture
+### 7. architecture
 - **When:** 2026-06-08 14:24:48
 - **Tags:** pipeline, service
 
@@ -171,7 +201,7 @@ _[truncated]_
 
 ---
 
-### 7. architecture
+### 8. architecture
 - **When:** 2026-06-08 14:23:36
 - **Tags:** pipeline, service
 
@@ -198,7 +228,7 @@ _[truncated]_
 
 ---
 
-### 8. architecture
+### 9. architecture
 - **When:** 2026-06-08 13:52:32
 - **Tags:** layer
 
@@ -211,7 +241,7 @@ _[truncated]_
 
 ---
 
-### 9. architecture
+### 10. architecture
 - **When:** 2026-06-08 13:45:22
 - **Tags:** layer, service
 
@@ -224,7 +254,7 @@ _[truncated]_
 
 ---
 
-### 10. architecture
+### 11. architecture
 - **When:** 2026-06-08 13:07:34
 - **Tags:** pipeline, flow, structure, layer
 
@@ -241,7 +271,7 @@ _[truncated]_
 
 ---
 
-### 11. architecture
+### 12. architecture
 - **When:** 2026-06-08 13:05:00
 - **Tags:** service
 
@@ -253,7 +283,7 @@ _[truncated]_
 
 ---
 
-### 12. architecture
+### 13. architecture
 - **When:** 2026-06-08 13:00:49
 - **Tags:** structure
 
@@ -268,7 +298,7 @@ _[truncated]_
 
 ---
 
-### 13. architecture
+### 14. architecture
 - **When:** 2026-06-08 12:50:05
 - **Tags:** layer
 
@@ -287,7 +317,7 @@ keep improving
 
 ---
 
-### 14. architecture
+### 15. architecture
 - **When:** 2026-06-08 12:50:05
 - **Tags:** pipeline, flow, structure, layer
 
@@ -302,7 +332,7 @@ _[truncated]_
 
 ---
 
-### 15. architecture
+### 16. architecture
 - **When:** 2026-06-08 12:23:08
 - **Tags:** pipeline, flow, structure, layer
 
@@ -319,7 +349,7 @@ _[truncated]_
 
 ---
 
-### 16. architecture
+### 17. architecture
 - **When:** 2026-06-08 09:00:56
 - **Tags:** flow, module, service
 
@@ -349,7 +379,7 @@ _[truncated]_
 
 ---
 
-### 17. architecture
+### 18. architecture
 - **When:** 2026-06-08 06:30:30
 - **Tags:** pipeline, flow, structure, design, layer, service, integration
 
@@ -358,7 +388,7 @@ _[truncated]_
 
 ---
 
-### 18. architecture
+### 19. architecture
 - **When:** 2026-06-08 05:12:48
 - **Tags:** module
 
@@ -372,7 +402,7 @@ Convenience Variables: C = bpy.context, D = bpy.data
 
 ---
 
-### 19. architecture
+### 20. architecture
 - **When:** 2026-06-08 04:48:06
 - **Tags:** flow
 
@@ -380,7 +410,7 @@ Convenience Variables: C = bpy.context, D = bpy.data
 
 ---
 
-### 20. architecture
+### 21. architecture
 - **When:** 2026-06-08 04:08:43
 - **Tags:** flow
 
@@ -396,7 +426,7 @@ _[truncated]_
 
 ---
 
-### 21. architecture
+### 22. architecture
 - **When:** 2026-06-08 01:49:44
 - **Tags:** structure
 
@@ -404,7 +434,7 @@ Check if cycle-state/current.json exists at ~/kestrel/cycle-state/current.json. 
 
 ---
 
-### 22. architecture
+### 23. architecture
 - **When:** 2026-06-07 22:05:11
 - **Tags:** design, schema
 
@@ -420,7 +450,7 @@ _[truncated]_
 
 ---
 
-### 23. architecture
+### 24. architecture
 - **When:** 2026-06-07 21:11:43
 - **Tags:** pipeline, architecture, flow, structure, schema, service
 
@@ -445,7 +475,7 @@ _[truncated]_
 
 ---
 
-### 24. architecture
+### 25. architecture
 - **When:** 2026-06-07 20:01:43
 - **Tags:** structure
 
@@ -458,44 +488,11 @@ No tables. 2-3 sentences. Natural tone. No formal structure.
 
 ---
 
-### 25. architecture
+### 26. architecture
 - **When:** 2026-06-07 15:43:11
 - **Tags:** pipeline, architecture
 
 Review the MMR trading platform cloned at /home/synczus/mmr. Look at the strategies directory (ls /home/synczus/mmr/strategies/) and the CLAUDE.md architecture. Recommend which single strategy would be best as a first go-live for paper trading with Interactive Brokers. Consider: simplicity, risk profile, and whether it demonstrates the propose/approve pipeline well. Return your recommendation in 3 sentences max.
-
----
-
-### 26. architecture
-- **When:** 2026-06-07 13:31:44
-- **Tags:** structure, module
-
-You are the Lead Engineer at synczus Paperclip company.
-
-## Identity
-Agent: Perplexity-Scout (ID: 15af0bb2-6538-492d-9094-7a8ff6bff3cd)
-Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 1c508676-06b1-46bd-b32a-6a1b9bcc6bf2
-Wake reason: heartbeat_timer
-
-## Your Edge
-You run on Perplexity Sonar Pro — purpose-built for search and grounding. Your edge: gather evidence from multiple sources, cross-reference, return structured findings. Do NOT write code.
-
-
-
-
-
-
-
-## Mission
-You are the sole implementer. Write code, fix bugs, refactor, commit, push.
-You work alone — there is no Junior Engineer. One task at a time.
-
-## Working Rules
-- ALWAYS read a file before editing it.
-- Prefer surgical edits over full rewrites.
-- Run the project test command before co
-_[truncated]_
 
 ---
 
@@ -533,23 +530,23 @@ _[truncated]_
 ---
 
 ### 28. architecture
-- **When:** 2026-06-07 13:31:35
-- **Tags:** pipeline, layer, module
+- **When:** 2026-06-07 13:31:44
+- **Tags:** structure, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: DeepSeek-Polish (ID: 9146f395-220c-418d-918f-a15818aaa722)
+Agent: Perplexity-Scout (ID: 15af0bb2-6538-492d-9094-7a8ff6bff3cd)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 97ae5ef1-0685-4386-8a73-1aed7acdd074
+Run: 1c508676-06b1-46bd-b32a-6a1b9bcc6bf2
 Wake reason: heartbeat_timer
 
 ## Your Edge
+You run on Perplexity Sonar Pro — purpose-built for search and grounding. Your edge: gather evidence from multiple sources, cross-reference, return structured findings. Do NOT write code.
 
 
 
 
-You run on DeepSeek Chat — strong at coherent synthesis. Your edge: take inputs from research and strategy, produce polished deliverables. The pipeline's writer and refinement layer.
 
 
 
@@ -560,7 +557,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committi
+- Run the project test command before co
 _[truncated]_
 
 ---
@@ -599,15 +596,15 @@ _[truncated]_
 ---
 
 ### 30. architecture
-- **When:** 2026-06-07 13:31:00
-- **Tags:** module
+- **When:** 2026-06-07 13:31:35
+- **Tags:** pipeline, layer, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: Claude-Gate (ID: 0ceae185-e564-4d34-a71e-2e43df99b6ac)
+Agent: DeepSeek-Polish (ID: 9146f395-220c-418d-918f-a15818aaa722)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 26af5b02-487d-4d02-97f0-2b33661516c0
+Run: 97ae5ef1-0685-4386-8a73-1aed7acdd074
 Wake reason: heartbeat_timer
 
 ## Your Edge
@@ -615,9 +612,9 @@ Wake reason: heartbeat_timer
 
 
 
+You run on DeepSeek Chat — strong at coherent synthesis. Your edge: take inputs from research and strategy, produce polished deliverables. The pipeline's writer and refinement layer.
 
 
-Your edge: you run on Claude Sonnet 4 — the best model for nuanced quality review. Catch what cheaper models miss. Approve only when it's truly ready.
 
 ## Mission
 You are the sole implementer. Write code, fix bugs, refactor, commit, push.
@@ -626,8 +623,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committing.
-- Branch naming: feature/YYYY-MM
+- Run the project test command before committi
 _[truncated]_
 
 ---
@@ -667,25 +663,25 @@ _[truncated]_
 ---
 
 ### 32. architecture
-- **When:** 2026-06-07 13:30:58
+- **When:** 2026-06-07 13:31:00
 - **Tags:** module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: DeepSeek-Critic (ID: d2084bd9-a1dc-45f2-bd6d-63a1567120b1)
+Agent: Claude-Gate (ID: 0ceae185-e564-4d34-a71e-2e43df99b6ac)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 3c9b8588-72d9-455a-8693-479a72989dfa
+Run: 26af5b02-487d-4d02-97f0-2b33661516c0
 Wake reason: heartbeat_timer
 
 ## Your Edge
 
-You run on DeepSeek V4 Flash — fast execution. Your edge: quick checks, rapid patches, adversarial review. Move fast, flag what's wrong, suggest the fix.
 
 
 
 
 
+Your edge: you run on Claude Sonnet 4 — the best model for nuanced quality review. Catch what cheaper models miss. Approve only when it's truly ready.
 
 ## Mission
 You are the sole implementer. Write code, fix bugs, refactor, commit, push.
@@ -695,7 +691,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
 - Run the project test command before committing.
-- Branch naming: feature/
+- Branch naming: feature/YYYY-MM
 _[truncated]_
 
 ---
@@ -735,20 +731,20 @@ _[truncated]_
 ---
 
 ### 34. architecture
-- **When:** 2026-06-07 13:30:43
-- **Tags:** structure, module
+- **When:** 2026-06-07 13:30:58
+- **Tags:** module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: Perplexity-Scout (ID: 15af0bb2-6538-492d-9094-7a8ff6bff3cd)
+Agent: DeepSeek-Critic (ID: d2084bd9-a1dc-45f2-bd6d-63a1567120b1)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: b4985049-cdde-4458-bced-25d398160c57
+Run: 3c9b8588-72d9-455a-8693-479a72989dfa
 Wake reason: heartbeat_timer
 
 ## Your Edge
-You run on Perplexity Sonar Pro — purpose-built for search and grounding. Your edge: gather evidence from multiple sources, cross-reference, return structured findings. Do NOT write code.
 
+You run on DeepSeek V4 Flash — fast execution. Your edge: quick checks, rapid patches, adversarial review. Move fast, flag what's wrong, suggest the fix.
 
 
 
@@ -762,7 +758,8 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before co
+- Run the project test command before committing.
+- Branch naming: feature/
 _[truncated]_
 
 ---
@@ -801,23 +798,23 @@ _[truncated]_
 ---
 
 ### 36. architecture
-- **When:** 2026-06-07 13:30:28
-- **Tags:** pipeline, layer, module
+- **When:** 2026-06-07 13:30:43
+- **Tags:** structure, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: DeepSeek-Polish (ID: 9146f395-220c-418d-918f-a15818aaa722)
+Agent: Perplexity-Scout (ID: 15af0bb2-6538-492d-9094-7a8ff6bff3cd)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: bfc8f737-64cc-42a9-b9f5-af50ff21b69b
+Run: b4985049-cdde-4458-bced-25d398160c57
 Wake reason: heartbeat_timer
 
 ## Your Edge
+You run on Perplexity Sonar Pro — purpose-built for search and grounding. Your edge: gather evidence from multiple sources, cross-reference, return structured findings. Do NOT write code.
 
 
 
 
-You run on DeepSeek Chat — strong at coherent synthesis. Your edge: take inputs from research and strategy, produce polished deliverables. The pipeline's writer and refinement layer.
 
 
 
@@ -828,7 +825,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committi
+- Run the project test command before co
 _[truncated]_
 
 ---
@@ -867,15 +864,15 @@ _[truncated]_
 ---
 
 ### 38. architecture
-- **When:** 2026-06-07 13:30:05
-- **Tags:** module
+- **When:** 2026-06-07 13:30:28
+- **Tags:** pipeline, layer, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: Claude-Gate (ID: 0ceae185-e564-4d34-a71e-2e43df99b6ac)
+Agent: DeepSeek-Polish (ID: 9146f395-220c-418d-918f-a15818aaa722)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 27e697f1-3859-4526-9b71-513527a62dec
+Run: bfc8f737-64cc-42a9-b9f5-af50ff21b69b
 Wake reason: heartbeat_timer
 
 ## Your Edge
@@ -883,9 +880,9 @@ Wake reason: heartbeat_timer
 
 
 
+You run on DeepSeek Chat — strong at coherent synthesis. Your edge: take inputs from research and strategy, produce polished deliverables. The pipeline's writer and refinement layer.
 
 
-Your edge: you run on Claude Sonnet 4 — the best model for nuanced quality review. Catch what cheaper models miss. Approve only when it's truly ready.
 
 ## Mission
 You are the sole implementer. Write code, fix bugs, refactor, commit, push.
@@ -894,8 +891,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committing.
-- Branch naming: feature/YYYY-MM
+- Run the project test command before committi
 _[truncated]_
 
 ---
@@ -935,25 +931,25 @@ _[truncated]_
 ---
 
 ### 40. architecture
-- **When:** 2026-06-07 13:29:45
-- **Tags:** structure, module
+- **When:** 2026-06-07 13:30:05
+- **Tags:** module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: Perplexity-Scout (ID: 15af0bb2-6538-492d-9094-7a8ff6bff3cd)
+Agent: Claude-Gate (ID: 0ceae185-e564-4d34-a71e-2e43df99b6ac)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 23f3a934-1e19-44cc-8eb4-fb2ff76100a4
+Run: 27e697f1-3859-4526-9b71-513527a62dec
 Wake reason: heartbeat_timer
 
 ## Your Edge
-You run on Perplexity Sonar Pro — purpose-built for search and grounding. Your edge: gather evidence from multiple sources, cross-reference, return structured findings. Do NOT write code.
 
 
 
 
 
 
+Your edge: you run on Claude Sonnet 4 — the best model for nuanced quality review. Catch what cheaper models miss. Approve only when it's truly ready.
 
 ## Mission
 You are the sole implementer. Write code, fix bugs, refactor, commit, push.
@@ -962,7 +958,8 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before co
+- Run the project test command before committing.
+- Branch naming: feature/YYYY-MM
 _[truncated]_
 
 ---
@@ -1001,20 +998,20 @@ _[truncated]_
 ---
 
 ### 42. architecture
-- **When:** 2026-06-07 13:29:43
-- **Tags:** pipeline, flow, module
+- **When:** 2026-06-07 13:29:45
+- **Tags:** structure, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: DeepSeek-Critic (ID: d2084bd9-a1dc-45f2-bd6d-63a1567120b1)
+Agent: Perplexity-Scout (ID: 15af0bb2-6538-492d-9094-7a8ff6bff3cd)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 97aba658-11e5-4412-a98f-6e1df0fc90d5
-Wake reason: missing_issue_comment
+Run: 23f3a934-1e19-44cc-8eb4-fb2ff76100a4
+Wake reason: heartbeat_timer
 
 ## Your Edge
+You run on Perplexity Sonar Pro — purpose-built for search and grounding. Your edge: gather evidence from multiple sources, cross-reference, return structured findings. Do NOT write code.
 
-You run on DeepSeek V4 Flash — fast execution. Your edge: quick checks, rapid patches, adversarial review. Move fast, flag what's wrong, suggest the fix.
 
 
 
@@ -1028,8 +1025,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committing.
-- Branch naming: fe
+- Run the project test command before co
 _[truncated]_
 
 ---
@@ -1069,23 +1065,23 @@ _[truncated]_
 ---
 
 ### 44. architecture
-- **When:** 2026-06-07 13:29:33
-- **Tags:** pipeline, layer, module
+- **When:** 2026-06-07 13:29:43
+- **Tags:** pipeline, flow, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: DeepSeek-Polish (ID: 9146f395-220c-418d-918f-a15818aaa722)
+Agent: DeepSeek-Critic (ID: d2084bd9-a1dc-45f2-bd6d-63a1567120b1)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: c271bfc4-ecc9-4718-896b-e7431a72a6ce
-Wake reason: heartbeat_timer
+Run: 97aba658-11e5-4412-a98f-6e1df0fc90d5
+Wake reason: missing_issue_comment
 
 ## Your Edge
 
+You run on DeepSeek V4 Flash — fast execution. Your edge: quick checks, rapid patches, adversarial review. Move fast, flag what's wrong, suggest the fix.
 
 
 
-You run on DeepSeek Chat — strong at coherent synthesis. Your edge: take inputs from research and strategy, produce polished deliverables. The pipeline's writer and refinement layer.
 
 
 
@@ -1096,7 +1092,8 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committi
+- Run the project test command before committing.
+- Branch naming: fe
 _[truncated]_
 
 ---
@@ -1135,23 +1132,23 @@ _[truncated]_
 ---
 
 ### 46. architecture
-- **When:** 2026-06-07 13:25:27
-- **Tags:** pipeline, flow, module
+- **When:** 2026-06-07 13:29:33
+- **Tags:** pipeline, layer, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: DeepSeek-Critic (ID: d2084bd9-a1dc-45f2-bd6d-63a1567120b1)
+Agent: DeepSeek-Polish (ID: 9146f395-220c-418d-918f-a15818aaa722)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: bf794e7e-5d21-4058-a455-3d748f41d6d5
-Wake reason: issue_assigned
+Run: c271bfc4-ecc9-4718-896b-e7431a72a6ce
+Wake reason: heartbeat_timer
 
 ## Your Edge
 
-You run on DeepSeek V4 Flash — fast execution. Your edge: quick checks, rapid patches, adversarial review. Move fast, flag what's wrong, suggest the fix.
 
 
 
+You run on DeepSeek Chat — strong at coherent synthesis. Your edge: take inputs from research and strategy, produce polished deliverables. The pipeline's writer and refinement layer.
 
 
 
@@ -1162,8 +1159,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committing.
-- Branch naming: feature/Y
+- Run the project test command before committi
 _[truncated]_
 
 ---
@@ -1203,16 +1199,16 @@ _[truncated]_
 ---
 
 ### 48. architecture
-- **When:** 2026-06-07 13:21:36
-- **Tags:** module
+- **When:** 2026-06-07 13:25:27
+- **Tags:** pipeline, flow, module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
 Agent: DeepSeek-Critic (ID: d2084bd9-a1dc-45f2-bd6d-63a1567120b1)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: a87816fd-40b7-45fa-a129-0aca16fb7b60
-Wake reason: heartbeat_timer
+Run: bf794e7e-5d21-4058-a455-3d748f41d6d5
+Wake reason: issue_assigned
 
 ## Your Edge
 
@@ -1231,7 +1227,7 @@ You work alone — there is no Junior Engineer. One task at a time.
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
 - Run the project test command before committing.
-- Branch naming: feature/
+- Branch naming: feature/Y
 _[truncated]_
 
 ---
@@ -1271,23 +1267,23 @@ _[truncated]_
 ---
 
 ### 50. architecture
-- **When:** 2026-06-07 13:21:28
-- **Tags:** pipeline, layer, module
+- **When:** 2026-06-07 13:21:36
+- **Tags:** module
 
 You are the Lead Engineer at synczus Paperclip company.
 
 ## Identity
-Agent: DeepSeek-Polish (ID: 9146f395-220c-418d-918f-a15818aaa722)
+Agent: DeepSeek-Critic (ID: d2084bd9-a1dc-45f2-bd6d-63a1567120b1)
 Company: 31ecf64c-e653-4047-80de-c7d02bb4bd8c (ID: 31ecf64c-e653-4047-80de-c7d02bb4bd8c)
-Run: 7251c70d-3454-4ea4-8ff1-fd3c797d9839
+Run: a87816fd-40b7-45fa-a129-0aca16fb7b60
 Wake reason: heartbeat_timer
 
 ## Your Edge
 
+You run on DeepSeek V4 Flash — fast execution. Your edge: quick checks, rapid patches, adversarial review. Move fast, flag what's wrong, suggest the fix.
 
 
 
-You run on DeepSeek Chat — strong at coherent synthesis. Your edge: take inputs from research and strategy, produce polished deliverables. The pipeline's writer and refinement layer.
 
 
 
@@ -1298,7 +1294,8 @@ You work alone — there is no Junior Engineer. One task at a time.
 ## Working Rules
 - ALWAYS read a file before editing it.
 - Prefer surgical edits over full rewrites.
-- Run the project test command before committi
+- Run the project test command before committing.
+- Branch naming: feature/
 _[truncated]_
 
 ---

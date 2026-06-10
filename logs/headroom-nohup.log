@@ -1,0 +1,50 @@
+
+╔═══════════════════════════════════════════════════════════════════════╗
+║                         HEADROOM PROXY                                 ║
+║           The Context Optimization Layer for LLM Applications          ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+Starting proxy server...
+
+  URL:          http://127.0.0.1:8787
+  Mode:         token
+  Optimization: ENABLED
+  Caching:      ENABLED
+  Rate Limit:   ENABLED
+  Memory:       DISABLED
+  License:      OSS (no license key)
+  Code-Aware:   DISABLED (--code-aware or HEADROOM_CODE_AWARE_ENABLED=1 to enable)
+  Context Tool: rtk
+  Extensions:   (none discovered)
+  Telemetry:    DISABLED
+
+IMPORTANT for OpenRouter users:
+  1. Set credentials: OPENROUTER_API_KEY
+  2. Set a dummy Anthropic key: ANTHROPIC_API_KEY="sk-ant-dummy"
+     (Headroom ignores this - it uses your OpenRouter credentials)
+  3. Set base URL: ANTHROPIC_BASE_URL=http://127.0.0.1:8787
+  4. Use model names: anthropic/claude-3.5-sonnet, openai/gpt-4o, etc.
+
+Routing:
+  /v1/messages                    → https://api.anthropic.com
+  /v1/chat/completions            → https://api.openai.com
+  /v1/responses                   → https://api.openai.com  (HTTP + WebSocket)
+  /v1internal:streamGenerateContent → https://cloudcode-pa.googleapis.com
+
+Usage:
+  Claude Code:   ANTHROPIC_BASE_URL=http://127.0.0.1:8787 claude
+  Codex / OpenAI: OPENAI_BASE_URL=http://127.0.0.1:8787/v1 your-app
+
+Endpoints:
+  GET  /livez      Process liveness
+  GET  /readyz     Traffic readiness
+  GET  /health     Aggregate health
+  GET  /stats      Detailed statistics
+  GET  /stats-history Durable compression history + display session
+  GET  /metrics    Prometheus metrics
+
+Press Ctrl+C to stop.
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-09 22:50:01,849 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ERROR:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8787): address already in use

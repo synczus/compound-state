@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 00:07:12 UTC_
-_Total active entries: 491_
+_Last consolidated: 2026-06-10 04:09:29 UTC_
+_Total active entries: 494_
 
 ## By Category
 
-- **other**: 183 entries
-- **pipeline-infrastructure**: 134 entries
+- **other**: 184 entries
+- **pipeline-infrastructure**: 136 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,9 @@ _Total active entries: 491_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064001 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 808 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064006 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781049614 min — propose next cycle
 - `[hermes]` **[other]** ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781038808 min — propose next cycle
@@ -66,9 +69,6 @@ _Total active entries: 491_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, GDrive synced at 7.8G — compound is steady-state with no critical drift detected.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, backup ticking (+1 file / 8.3G), crons firing on cadence — compound is clocking clean.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers running, Freqtrade responsive, GDrive backup steady at 9.4G with 1 new file since last check 11 minutes ago — compound is stable.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers up, Freqtrade live, GDrive backup steady at 13G with 1 new file trickling in since last check — no drift, no decay.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All containers healthy, Freqtrade responding, GDrive grew +0.3G to 10G since last pulse — system stable with 14 active crons hitting their cadence.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | All monitored services operational, no blockers, pulse cadence nominal.
 
 ---
 
