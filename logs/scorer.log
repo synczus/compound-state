@@ -676,3 +676,4 @@ Traceback (most recent call last):
           ^^^^^^^^^^^^^^^^^^
 _duckdb.IOException: IO Error: Could not set lock on file "/home/synczus/kestrel/signals.duckdb": Conflicting lock is held in /usr/bin/python3.12 (PID 388447) by user synczus. See also https://duckdb.org/docs/stable/connect/concurrency
 [scorer 04:30:01] No new events to score
+[scorer 05:00:01] No new events to score

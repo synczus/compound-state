@@ -231,3 +231,8 @@ _50 high-confidence signals analyzed_
 2026-06-10 04:20 UTC | meta-monitor | 🔴 Cron 'auto-git-sync' stale — 123m since last run (max 120m)2026-06-10T04:25:19Z | state-probe | Striker=online WolfWatch=online MetaAge=276s
 
 2026-06-10 04:26 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 04:41 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-10T04:55:22Z | state-probe | Striker=online WolfWatch=online MetaAge=2079s
+
+2026-06-10 04:56 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 05:11 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 05:20 UTC | meta-monitor | 🔴 Cron 'auto-git-sync' stale — 183m since last run (max 120m)

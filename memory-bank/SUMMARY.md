@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 04:09:29 UTC_
-_Total active entries: 494_
+_Last consolidated: 2026-06-10 05:09:29 UTC_
+_Total active entries: 497_
 
 ## By Category
 
-- **other**: 184 entries
-- **pipeline-infrastructure**: 136 entries
+- **other**: 185 entries
+- **pipeline-infrastructure**: 138 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,9 @@ _Total active entries: 494_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781067601 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781067610 min — propose next cycle
+- `[hermes]` **[other]** ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064001 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 808 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064006 min — propose next cycle
@@ -66,9 +69,6 @@ _Total active entries: 494_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responding, GDrive backup steady at 13G with 1 new file since last check — system green across the board.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, GDrive steady at 14G with 1 new file — no degradation.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, GDrive steady at 9.7G — no drift detected in the last 10 minutes.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, GDrive synced at 7.8G — compound is steady-state with no critical drift detected.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responsive, backup ticking (+1 file / 8.3G), crons firing on cadence — compound is clocking clean.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers running, Freqtrade responsive, GDrive backup steady at 9.4G with 1 new file since last check 11 minutes ago — compound is stable.
 
 ---
 
