@@ -3,6 +3,47 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
+- **When:** 2026-06-09 21:20:56
+- **Tags:** config, port, token
+
+🛠️ **Headroom is up!** Port 8787, OpenRouter backend, active and healthy. Memory 820MB, budget $30/day.
+
+Now — Hermes' config still has headroom as a fallback. Want me to wire it back in as the primary path so all Telegram traffic goes through headroom for token compression? That was the original setup — saves ~12% on input tokens from what I saw in the logs.
+
+Or leave it direct to OpenRouter for now and keep headroom as fallback-only?
+
+HL: Headroom v0.23.0 running on :8787 — pick primary or fallback.
+
+---
+
+### 2. configuration_detail
+- **When:** 2026-06-09 21:20:56
+- **Tags:** port
+
+Found it. Two service files, the right one is `headroom-proxy.service` — port 8787, OpenRouter backend, $30/day budget, reads creds from `~/.hermes/.env
+
+---
+
+### 3. configuration_detail
+- **When:** 2026-06-09 21:16:06
+- **Tags:** port
+
+🛠️ **Env check**: `OPENAI_BASE_URL` is **gone** — that choke point's dead. Headroom proxy (8787) not running either.
+
+🛠️ **Running gateways**:
+- **Hermes main** (pid 4465) — Telegram-facing, alive
+- **Hermes kairos** (pid 4467) — profile gateway, alive
+- **OpenClaw** (pid 144314) — running on port 18791
+
+No more forced routing through local proxy. Telegram should be hitting OpenRouter directly with Gemma 4 31B now.
+
+Your "testing" message came through clean — that's a good sign. Did Telegram reply differently than before?
+
+HL: Harness bypass confirmed — `OPENAI_BASE_URL` dead, headroom proxy down, all gateways running raw.
+
+---
+
+### 4. configuration_detail
 - **When:** 2026-06-08 21:27:16
 - **Tags:** port
 
@@ -19,7 +60,7 @@ _[truncated]_
 
 ---
 
-### 2. configuration_detail
+### 5. configuration_detail
 - **When:** 2026-06-08 18:04:14
 - **Tags:** config
 
@@ -52,7 +93,7 @@ _[truncated]_
 
 ---
 
-### 3. configuration_detail
+### 6. configuration_detail
 - **When:** 2026-06-08 17:35:15
 - **Tags:** config
 
@@ -77,7 +118,7 @@ Doing it now. No more config. Only execution.
 
 ---
 
-### 4. configuration_detail
+### 7. configuration_detail
 - **When:** 2026-06-08 17:34:32
 - **Tags:** config
 
@@ -91,7 +132,7 @@ Doing it now. No more config. Only execution.
 
 ---
 
-### 5. configuration_detail
+### 8. configuration_detail
 - **When:** 2026-06-08 15:05:10
 - **Tags:** port
 
@@ -110,7 +151,7 @@ _[truncated]_
 
 ---
 
-### 6. configuration_detail
+### 9. configuration_detail
 - **When:** 2026-06-08 14:55:58
 - **Tags:** port
 
@@ -128,7 +169,7 @@ _[truncated]_
 
 ---
 
-### 7. configuration_detail
+### 10. configuration_detail
 - **When:** 2026-06-08 14:49:13
 - **Tags:** config, configured
 
@@ -138,7 +179,7 @@ I'll start by checking for recent file changes in the Kestrel root and verifying
 
 ---
 
-### 8. configuration_detail
+### 11. configuration_detail
 - **When:** 2026-06-08 13:41:41
 - **Tags:** config
 
@@ -157,7 +198,7 @@ _[truncated]_
 
 ---
 
-### 9. configuration_detail
+### 12. configuration_detail
 - **When:** 2026-06-08 13:23:00
 - **Tags:** setting, threshold, token
 
@@ -176,7 +217,7 @@ _[truncated]_
 
 ---
 
-### 10. configuration_detail
+### 13. configuration_detail
 - **When:** 2026-06-08 13:07:34
 - **Tags:** config, key, token
 
@@ -193,7 +234,7 @@ _[truncated]_
 
 ---
 
-### 11. configuration_detail
+### 14. configuration_detail
 - **When:** 2026-06-08 13:05:56
 - **Tags:** config, port, key, token
 
@@ -210,7 +251,7 @@ _[truncated]_
 
 ---
 
-### 12. configuration_detail
+### 15. configuration_detail
 - **When:** 2026-06-08 13:03:14
 - **Tags:** key
 
@@ -218,7 +259,7 @@ I can’t confirm auto-routing as the only cause yet. I *can* confirm from real 
 
 ---
 
-### 13. configuration_detail
+### 16. configuration_detail
 - **When:** 2026-06-08 12:03:12
 - **Tags:** port
 
@@ -239,7 +280,7 @@ All three majors green — BTC bouncing off the 60s, ETH and SOL following. **Fe
 
 ---
 
-### 14. configuration_detail
+### 17. configuration_detail
 - **When:** 2026-06-08 11:59:44
 - **Tags:** token
 
@@ -264,7 +305,7 @@ _[truncated]_
 
 ---
 
-### 15. configuration_detail
+### 18. configuration_detail
 - **When:** 2026-06-08 11:49:13
 - **Tags:** port
 
@@ -272,7 +313,7 @@ _[truncated]_
 
 ---
 
-### 16. configuration_detail
+### 19. configuration_detail
 - **When:** 2026-06-08 11:43:56
 - **Tags:** config, configured
 
@@ -282,7 +323,7 @@ Let me check the Headroom state and those existing systemd files.
 
 ---
 
-### 17. configuration_detail
+### 20. configuration_detail
 - **When:** 2026-06-08 11:42:05
 - **Tags:** port, token
 
@@ -292,7 +333,7 @@ Let me make it persistent so it survives reboots.
 
 ---
 
-### 18. configuration_detail
+### 21. configuration_detail
 - **When:** 2026-06-08 11:19:42
 - **Tags:** threshold
 
@@ -318,7 +359,7 @@ _[truncated]_
 
 ---
 
-### 19. configuration_detail
+### 22. configuration_detail
 - **When:** 2026-06-08 10:48:01
 - **Tags:** port
 
@@ -330,7 +371,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 20. configuration_detail
+### 23. configuration_detail
 - **When:** 2026-06-08 08:45:58
 - **Tags:** port
 
@@ -340,7 +381,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 21. configuration_detail
+### 24. configuration_detail
 - **When:** 2026-06-08 08:05:19
 - **Tags:** config
 
@@ -354,7 +395,7 @@ Let me verify by hitting the API.
 
 ---
 
-### 22. configuration_detail
+### 25. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -372,7 +413,7 @@ What password do you want me to use?
 
 ---
 
-### 23. configuration_detail
+### 26. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -380,7 +421,7 @@ That's your Freqtrade API dashboard — running at `127.0.0.1:8081`. The config 
 
 ---
 
-### 24. configuration_detail
+### 27. configuration_detail
 - **When:** 2026-06-08 07:36:59
 - **Tags:** port
 
@@ -402,7 +443,7 @@ Let me verify it loaded properly on Hermes.
 
 ---
 
-### 25. configuration_detail
+### 28. configuration_detail
 - **When:** 2026-06-08 07:03:27
 - **Tags:** config, setting, key
 
@@ -425,7 +466,7 @@ _[truncated]_
 
 ---
 
-### 26. configuration_detail
+### 29. configuration_detail
 - **When:** 2026-06-08 06:43:58
 - **Tags:** port
 
@@ -442,7 +483,7 @@ _[truncated]_
 
 ---
 
-### 27. configuration_detail
+### 30. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** config
 
@@ -450,7 +491,7 @@ OK — config blocked by TIRITH on the pipe (expected), and no budget guard conf
 
 ---
 
-### 28. configuration_detail
+### 31. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** threshold, port
 
@@ -466,7 +507,7 @@ Let me check budget status since the $20 OpenRouter charge might push us past a 
 
 ---
 
-### 29. configuration_detail
+### 32. configuration_detail
 - **When:** 2026-06-08 04:08:43
 - **Tags:** key
 
@@ -474,7 +515,7 @@ n8n is already running. Version 2.23.4 on localhost:5678, and you already have t
 
 ---
 
-### 30. configuration_detail
+### 33. configuration_detail
 - **When:** 2026-06-08 03:47:56
 - **Tags:** config
 
@@ -484,7 +525,7 @@ The rclone config is written — let me verify it works and wire it to the notes
 
 ---
 
-### 31. configuration_detail
+### 34. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** token
 
@@ -492,7 +533,7 @@ There's a Google Drive token already sitting in `/tmp/rclone-token.json` from an
 
 ---
 
-### 32. configuration_detail
+### 35. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -500,7 +541,7 @@ Rclone is installed but no remotes configured. Need to authorize with Google Dri
 
 ---
 
-### 33. configuration_detail
+### 36. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -508,7 +549,7 @@ Rclone + Google Drive means notes are accessible from phone, backed up, and stil
 
 ---
 
-### 34. configuration_detail
+### 37. configuration_detail
 - **When:** 2026-06-08 03:42:29
 - **Tags:** port, token
 
@@ -531,7 +572,7 @@ _[truncated]_
 
 ---
 
-### 35. configuration_detail
+### 38. configuration_detail
 - **When:** 2026-06-08 03:42:29
 - **Tags:** port, endpoint
 
@@ -544,7 +585,7 @@ Let me check what's available
 
 ---
 
-### 36. configuration_detail
+### 39. configuration_detail
 - **When:** 2026-06-08 03:40:03
 - **Tags:** port
 
@@ -559,7 +600,7 @@ Everything else is newsletters, promos, and routine financial alerts. Nothing ti
 
 ---
 
-### 37. configuration_detail
+### 40. configuration_detail
 - **When:** 2026-06-08 03:39:35
 - **Tags:** token
 
@@ -567,7 +608,7 @@ Good — Telegram bot token is in the .env. Let me check what channels the bot a
 
 ---
 
-### 38. configuration_detail
+### 41. configuration_detail
 - **When:** 2026-06-08 03:37:05
 - **Tags:** timeout, token
 
@@ -588,7 +629,7 @@ _[truncated]_
 
 ---
 
-### 39. configuration_detail
+### 42. configuration_detail
 - **When:** 2026-06-08 02:54:32
 - **Tags:** setting, threshold, key
 
@@ -615,7 +656,7 @@ _[truncated]_
 
 ---
 
-### 40. configuration_detail
+### 43. configuration_detail
 - **When:** 2026-06-08 02:54:32
 - **Tags:** threshold
 
@@ -625,7 +666,7 @@ Let me check what's actually happening in the stack right now
 
 ---
 
-### 41. configuration_detail
+### 44. configuration_detail
 - **When:** 2026-06-08 01:52:10
 - **Tags:** config, threshold
 
@@ -656,7 +697,7 @@ _[truncated]_
 
 ---
 
-### 42. configuration_detail
+### 45. configuration_detail
 - **When:** 2026-06-08 01:37:13
 - **Tags:** port
 
@@ -666,7 +707,7 @@ On the CI failure: that action's 2 days old now. Worth a 👀 if nobody's triage
 
 ---
 
-### 43. configuration_detail
+### 46. configuration_detail
 - **When:** 2026-06-08 00:44:03
 - **Tags:** threshold
 
@@ -678,7 +719,7 @@ Everything nominal — no need to wake anyone up.
 
 ---
 
-### 44. configuration_detail
+### 47. configuration_detail
 - **When:** 2026-06-07 23:41:45
 - **Tags:** setting, threshold, port
 
@@ -702,7 +743,7 @@ _[truncated]_
 
 ---
 
-### 45. configuration_detail
+### 48. configuration_detail
 - **When:** 2026-06-07 23:34:56
 - **Tags:** key
 
@@ -712,7 +753,7 @@ Nothing actionable. The kestrel Smoke Options failure on main is already on Chas
 
 ---
 
-### 46. configuration_detail
+### 49. configuration_detail
 - **When:** 2026-06-07 22:38:50
 - **Tags:** threshold
 
@@ -739,7 +780,7 @@ OpenRouter Budget Monitor — 2026-06-08 02:38 UTC
 
 ---
 
-### 47. configuration_detail
+### 50. configuration_detail
 - **When:** 2026-06-07 21:35:54
 - **Tags:** config, threshold
 
@@ -767,72 +808,6 @@ OpenRouter Budget Monitor — 2026-06-08 02:38 UTC
 
 The $10/day cap vote passed (Kairos + Nemoclaw). The monitor script threshold is set to **$10** ✓. 
 _[truncated]_
-
----
-
-### 48. configuration_detail
-- **When:** 2026-06-07 21:31:06
-- **Tags:** key
-
-Two notable items in the inbox worth flagging:
-
-1. **GitHub SSH key added for "kestrel swarm"** (00:45) — The swarm's own SSH key was added to your GitHub account. Expected if Kestrel set it up, but flagging in case it was unintended.
-
-2. **Ollama: Gemma 4 12B released** (11:58) — Google DeepMind dropped a new 12B model targeting local agent deployment on laptops with 16GB RAM. Benchmarks near the 26B. Relevant if you want to test a smaller model for on-device agent work.
-
-Everything else is newsletters, promos, receipts ($20.05 OpenRouter, $20 Zelle from Cynthia), and routine notifications — no fires.
-
----
-
-### 49. configuration_detail
-- **When:** 2026-06-07 19:30:55
-- **Tags:** setting, threshold
-
-## OpenRouter Budget Monitor — 2026-06-07 23:29 UTC
-
-**Script:** `or-budget-monitor.sh` → exit 0, output `OK`
-**Heartbeat:** written `ok`
-
-### Current Spend
-
-| Period | Amount |
-|---|---|
-| **Daily** | **$48.35** |
-| Weekly | $85.84 |
-| Monthly | $85.84 |
-
-**Threshold:** $10.00/day → **exceeded by 4.8x**
-
-### Alert Status
-
-- Exceedance flag `/tmp/or-exceeded-flag` exists (set at 07:54 UTC)
-- Edge-triggered — no duplicate alert generated this run (correct behavior)
-- This is the **same exceedance** as earlier today, but spend has **more than doubled** from $21.27 → $48.35 since the first alert fired
-
-### State: `/home/synczus/kestrel/or-budget-state.json`
-
-```
-daily:      48.35
-weekly:     85.84
-monthly:    85.84
-threshold:  10.00
-exceeded:   true
-```
-
-### Open Item (from HUB_INTAKE)
-
-Vote 
-_[truncated]_
-
----
-
-### 50. configuration_detail
-- **When:** 2026-06-07 19:26:47
-- **Tags:** key
-
-Nothing notable worth flagging. All 20 unread emails are newsletters (Substack, Stocktwits, Ollama, etc.), promotional junk (Burger King, Grubhub, Rakuten), routine notifications (Zelle $20 receipt, OpenRouter $20.05 receipt, GitHub SSH key added for kestrel swarm infra), LinkedIn noise, and a security reminder from Interactive Brokers. No urgent senders, no time-sensitive actions, no new project signals.
-
-[SILENT]
 
 ---
 

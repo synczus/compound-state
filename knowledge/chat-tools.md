@@ -1,8 +1,16 @@
 # Tools & Infrastructure
 
-_Auto-updated from Telegram chat history | 16 latest entries_
+_Auto-updated from Telegram chat history | 17 latest entries_
 
 ### 1. tool
+- **When:** 2026-06-09 21:20:56
+- **Tags:** headroom
+
+get headroom up and working
+
+---
+
+### 2. tool
 - **When:** 2026-06-08 15:05:10
 - **Tags:** hermes
 
@@ -10,7 +18,7 @@ _Auto-updated from Telegram chat history | 16 latest entries_
 
 ---
 
-### 2. tool
+### 3. tool
 - **When:** 2026-06-08 13:08:19
 - **Tags:** striker
 
@@ -24,7 +32,7 @@ synczus@ubuntu:~$
 
 ---
 
-### 3. tool
+### 4. tool
 - **When:** 2026-06-08 13:01:16
 - **Tags:** striker
 
@@ -34,7 +42,7 @@ synczus@ubuntu:~$
 
 ---
 
-### 4. tool
+### 5. tool
 - **When:** 2026-06-08 06:32:11
 - **Tags:** tor
 
@@ -44,7 +52,7 @@ synczus@ubuntu:~$
 
 ---
 
-### 5. tool
+### 6. tool
 - **When:** 2026-06-08 06:30:30
 - **Tags:** tor
 
@@ -52,7 +60,7 @@ synczus@ubuntu:~$
 
 ---
 
-### 6. tool
+### 7. tool
 - **When:** 2026-06-08 06:19:08
 - **Tags:** tor
 
@@ -62,7 +70,7 @@ synczus@ubuntu:~$
 
 ---
 
-### 7. tool
+### 8. tool
 - **When:** 2026-06-08 05:58:58
 - **Tags:** codegraph
 
@@ -70,7 +78,7 @@ what about this for codegraph that way we can organize the shit out of my files 
 
 ---
 
-### 8. tool
+### 9. tool
 - **When:** 2026-06-08 05:52:27
 - **Tags:** headroom
 
@@ -78,7 +86,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 9. tool
+### 10. tool
 - **When:** 2026-06-08 04:52:23
 - **Tags:** tor
 
@@ -86,7 +94,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 10. tool
+### 11. tool
 - **When:** 2026-06-08 04:33:39
 - **Tags:** tor
 
@@ -96,7 +104,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 11. tool
+### 12. tool
 - **When:** 2026-06-08 04:26:54
 - **Tags:** blender
 
@@ -104,7 +112,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 12. tool
+### 13. tool
 - **When:** 2026-06-08 03:47:56
 - **Tags:** tor
 
@@ -114,7 +122,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 13. tool
+### 14. tool
 - **When:** 2026-06-08 03:42:29
 - **Tags:** tor
 
@@ -124,7 +132,7 @@ here we go this will cut the costs! https://github.com/chopratejas/headroom
 
 ---
 
-### 14. tool
+### 15. tool
 - **When:** 2026-06-08 03:39:17
 - **Tags:** hermes
 
@@ -132,7 +140,7 @@ Compress /home/synczus/kestrel/identity/hermes-soul.md (6,710 bytes) by ~60%. Ke
 
 ---
 
-### 15. tool
+### 16. tool
 - **When:** 2026-06-06 12:15:19
 - **Tags:** hermes, tor
 
@@ -142,7 +150,7 @@ Compress /home/synczus/kestrel/identity/hermes-soul.md (6,710 bytes) by ~60%. Ke
 
 ---
 
-### 16. tool
+### 17. tool
 - **When:** 2026-06-05 22:59:32
 - **Tags:** openrouter
 

@@ -3,6 +3,28 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. architecture_explanation
+- **When:** 2026-06-09 21:34:09
+- **Tags:** pipeline, flow, layer, component, service
+
+Here's the agent roster from their SOUL files:
+
+**🛰️ Hermes (me)** — `@kestrelmarkets_bot`
+- **Lane:** Pipeline circulatory system. Owns Striker (120K+ signals, Coinbase WS), cron orchestration, noise gate, end-to-end execution.
+- **Buzz:** "Find bottlenecks before they stall" — cron timing, handoff delays, budget trends, Striker flow, service degradation.
+- **Hop Chain:** Closer — Kairos→Shannon→Nemoclaw→**Hermes**→OpenClaw.
+
+**🚀 Kairos** — `@Kairos8638_bot`
+- **Lane:** Timing/Ops — security, uptime, gateway, pipeline cadence.
+- **Buzz:** "Find things Chase didn't ask for" — market timing, trading tech, crypto infra, OSS signals.
+- **Hop Chain:** Starts the chain. Scouts → passes to Nemoclaw to build → Kairos audits.
+
+**📊 Shannon** — `@ShannonRefereeBot`
+- **Lane:** Referee — CTF scoring,
+_[truncated]_
+
+---
+
+### 2. architecture_explanation
 - **When:** 2026-06-09 18:42:36
 - **Tags:** architecture, flow, service
 
@@ -43,7 +65,7 @@ _[truncated]_
 
 ---
 
-### 2. architecture_explanation
+### 3. architecture_explanation
 - **When:** 2026-06-08 20:06:22
 - **Tags:** pipeline, layer, structure
 
@@ -73,7 +95,7 @@ _[truncated]_
 
 ---
 
-### 3. architecture_explanation
+### 4. architecture_explanation
 - **When:** 2026-06-08 19:04:05
 - **Tags:** architecture, structure
 
@@ -93,7 +115,7 @@ _[truncated]_
 
 ---
 
-### 4. architecture_explanation
+### 5. architecture_explanation
 - **When:** 2026-06-08 19:02:25
 - **Tags:** architecture, pipeline, flow, layer, structure
 
@@ -119,7 +141,7 @@ _[truncated]_
 
 ---
 
-### 5. architecture_explanation
+### 6. architecture_explanation
 - **When:** 2026-06-08 18:59:16
 - **Tags:** architecture, flow, layer
 
@@ -143,7 +165,7 @@ _[truncated]_
 
 ---
 
-### 6. architecture_explanation
+### 7. architecture_explanation
 - **When:** 2026-06-08 18:57:11
 - **Tags:** architecture, structure
 
@@ -168,7 +190,7 @@ _[truncated]_
 
 ---
 
-### 7. architecture_explanation
+### 8. architecture_explanation
 - **When:** 2026-06-08 18:02:56
 - **Tags:** architecture, layer, service
 
@@ -194,7 +216,7 @@ Doing it now. Access recovery only. Execution only.
 
 ---
 
-### 8. architecture_explanation
+### 9. architecture_explanation
 - **When:** 2026-06-08 17:58:47
 - **Tags:** service
 
@@ -220,7 +242,7 @@ Doing it now. Access recovery first. Execution only.
 
 ---
 
-### 9. architecture_explanation
+### 10. architecture_explanation
 - **When:** 2026-06-08 17:54:28
 - **Tags:** layer
 
@@ -248,7 +270,7 @@ Wipe $\rightarrow$ Reload $\rightarrow$ Wake $\rightarrow$ Verify.
 
 ---
 
-### 10. architecture_explanation
+### 11. architecture_explanation
 - **When:** 2026-06-08 17:52:35
 - **Tags:** architecture
 
@@ -274,7 +296,7 @@ Doing it now. No more talk. Only results.
 
 ---
 
-### 11. architecture_explanation
+### 12. architecture_explanation
 - **When:** 2026-06-08 17:51:35
 - **Tags:** layer
 
@@ -301,7 +323,7 @@ Doing it now. No more talk. Only results.
 
 ---
 
-### 12. architecture_explanation
+### 13. architecture_explanation
 - **When:** 2026-06-08 17:48:10
 - **Tags:** flow
 
@@ -327,7 +349,7 @@ Doing it now. No more talk. Only results.
 
 ---
 
-### 13. architecture_explanation
+### 14. architecture_explanation
 - **When:** 2026-06-08 17:44:03
 - **Tags:** architecture
 
@@ -358,7 +380,7 @@ _[truncated]_
 
 ---
 
-### 14. architecture_explanation
+### 15. architecture_explanation
 - **When:** 2026-06-08 17:43:25
 - **Tags:** layer, structure
 
@@ -383,7 +405,7 @@ Doing it now. No more talking. Only results.
 
 ---
 
-### 15. architecture_explanation
+### 16. architecture_explanation
 - **When:** 2026-06-08 17:43:25
 - **Tags:** structure
 
@@ -406,7 +428,7 @@ Doing it now.
 
 ---
 
-### 16. architecture_explanation
+### 17. architecture_explanation
 - **When:** 2026-06-08 17:42:01
 - **Tags:** structure
 
@@ -436,7 +458,7 @@ _[truncated]_
 
 ---
 
-### 17. architecture_explanation
+### 18. architecture_explanation
 - **When:** 2026-06-08 17:38:07
 - **Tags:** structure
 
@@ -463,7 +485,7 @@ Doing it now. No more narration. Execution only.
 
 ---
 
-### 18. architecture_explanation
+### 19. architecture_explanation
 - **When:** 2026-06-08 17:36:52
 - **Tags:** structure
 
@@ -493,7 +515,7 @@ _[truncated]_
 
 ---
 
-### 19. architecture_explanation
+### 20. architecture_explanation
 - **When:** 2026-06-08 17:32:20
 - **Tags:** layer
 
@@ -516,7 +538,7 @@ Doing it now. Execution only.
 
 ---
 
-### 20. architecture_explanation
+### 21. architecture_explanation
 - **When:** 2026-06-08 17:30:49
 - **Tags:** layer
 
@@ -544,7 +566,7 @@ _[truncated]_
 
 ---
 
-### 21. architecture_explanation
+### 22. architecture_explanation
 - **When:** 2026-06-08 17:15:49
 - **Tags:** architecture
 
@@ -569,7 +591,7 @@ _[truncated]_
 
 ---
 
-### 22. architecture_explanation
+### 23. architecture_explanation
 - **When:** 2026-06-08 17:07:43
 - **Tags:** architecture
 
@@ -599,7 +621,7 @@ Executing now. No more talking. Only results.
 
 ---
 
-### 23. architecture_explanation
+### 24. architecture_explanation
 - **When:** 2026-06-08 15:42:26
 - **Tags:** pipeline, layer
 
@@ -623,7 +645,7 @@ Doing it now. No more assigning, just executing. Starting the work.
 
 ---
 
-### 24. architecture_explanation
+### 25. architecture_explanation
 - **When:** 2026-06-08 15:04:27
 - **Tags:** integration
 
@@ -638,7 +660,7 @@ _[truncated]_
 
 ---
 
-### 25. architecture_explanation
+### 26. architecture_explanation
 - **When:** 2026-06-08 14:24:48
 - **Tags:** pipeline, service
 
@@ -654,7 +676,7 @@ _[truncated]_
 
 ---
 
-### 26. architecture_explanation
+### 27. architecture_explanation
 - **When:** 2026-06-08 14:24:48
 - **Tags:** pipeline, service
 
@@ -665,7 +687,7 @@ _[truncated]_
 
 ---
 
-### 27. architecture_explanation
+### 28. architecture_explanation
 - **When:** 2026-06-08 14:23:36
 - **Tags:** pipeline, service
 
@@ -697,7 +719,7 @@ _[truncated]_
 
 ---
 
-### 28. architecture_explanation
+### 29. architecture_explanation
 - **When:** 2026-06-08 14:23:36
 - **Tags:** pipeline, service
 
@@ -726,7 +748,7 @@ _[truncated]_
 
 ---
 
-### 29. architecture_explanation
+### 30. architecture_explanation
 - **When:** 2026-06-08 14:23:36
 - **Tags:** pipeline, service
 
@@ -745,7 +767,7 @@ _[truncated]_
 
 ---
 
-### 30. architecture_explanation
+### 31. architecture_explanation
 - **When:** 2026-06-08 14:21:08
 - **Tags:** service
 
@@ -768,7 +790,7 @@ _[truncated]_
 
 ---
 
-### 31. architecture_explanation
+### 32. architecture_explanation
 - **When:** 2026-06-08 14:21:08
 - **Tags:** flow, service, structure
 
@@ -790,7 +812,7 @@ _[truncated]_
 
 ---
 
-### 32. architecture_explanation
+### 33. architecture_explanation
 - **When:** 2026-06-08 14:06:45
 - **Tags:** structure
 
@@ -811,7 +833,7 @@ _[truncated]_
 
 ---
 
-### 33. architecture_explanation
+### 34. architecture_explanation
 - **When:** 2026-06-08 14:01:44
 - **Tags:** pipeline, service
 
@@ -833,7 +855,7 @@ _[truncated]_
 
 ---
 
-### 34. architecture_explanation
+### 35. architecture_explanation
 - **When:** 2026-06-08 14:00:39
 - **Tags:** pipeline, service
 
@@ -855,7 +877,7 @@ _[truncated]_
 
 ---
 
-### 35. architecture_explanation
+### 36. architecture_explanation
 - **When:** 2026-06-08 13:55:33
 - **Tags:** pipeline, service
 
@@ -879,7 +901,7 @@ _[truncated]_
 
 ---
 
-### 36. architecture_explanation
+### 37. architecture_explanation
 - **When:** 2026-06-08 13:52:32
 - **Tags:** service
 
@@ -894,7 +916,7 @@ _[truncated]_
 
 ---
 
-### 37. architecture_explanation
+### 38. architecture_explanation
 - **When:** 2026-06-08 13:45:22
 - **Tags:** pipeline, service, structure
 
@@ -909,7 +931,7 @@ _[truncated]_
 
 ---
 
-### 38. architecture_explanation
+### 39. architecture_explanation
 - **When:** 2026-06-08 13:44:33
 - **Tags:** pipeline, layer
 
@@ -927,7 +949,7 @@ _[truncated]_
 
 ---
 
-### 39. architecture_explanation
+### 40. architecture_explanation
 - **When:** 2026-06-08 13:36:39
 - **Tags:** pipeline, flow
 
@@ -952,7 +974,7 @@ _[truncated]_
 
 ---
 
-### 40. architecture_explanation
+### 41. architecture_explanation
 - **When:** 2026-06-08 13:30:19
 - **Tags:** pipeline
 
@@ -971,7 +993,7 @@ _[truncated]_
 
 ---
 
-### 41. architecture_explanation
+### 42. architecture_explanation
 - **When:** 2026-06-08 13:28:10
 - **Tags:** pipeline
 
@@ -988,7 +1010,7 @@ _[truncated]_
 
 ---
 
-### 42. architecture_explanation
+### 43. architecture_explanation
 - **When:** 2026-06-08 13:15:20
 - **Tags:** layer, structure
 
@@ -1017,7 +1039,7 @@ _[truncated]_
 
 ---
 
-### 43. architecture_explanation
+### 44. architecture_explanation
 - **When:** 2026-06-08 13:10:22
 - **Tags:** service
 
@@ -1036,7 +1058,7 @@ _[truncated]_
 
 ---
 
-### 44. architecture_explanation
+### 45. architecture_explanation
 - **When:** 2026-06-08 13:08:56
 - **Tags:** service
 
@@ -1054,7 +1076,7 @@ _[truncated]_
 
 ---
 
-### 45. architecture_explanation
+### 46. architecture_explanation
 - **When:** 2026-06-08 12:50:05
 - **Tags:** pipeline
 
@@ -1077,7 +1099,7 @@ _[truncated]_
 
 ---
 
-### 46. architecture_explanation
+### 47. architecture_explanation
 - **When:** 2026-06-08 11:53:00
 - **Tags:** service
 
@@ -1092,7 +1114,7 @@ _[truncated]_
 
 ---
 
-### 47. architecture_explanation
+### 48. architecture_explanation
 - **When:** 2026-06-08 11:48:52
 - **Tags:** pipeline
 
@@ -1108,7 +1130,7 @@ Just need the pair to act on.
 
 ---
 
-### 48. architecture_explanation
+### 49. architecture_explanation
 - **When:** 2026-06-08 11:48:24
 - **Tags:** service
 
@@ -1124,7 +1146,7 @@ HL: Cost stack optimized — DeepSeek V4 Flash + Headroom compression + $30 hard
 
 ---
 
-### 49. architecture_explanation
+### 50. architecture_explanation
 - **When:** 2026-06-08 11:45:23
 - **Tags:** service
 
@@ -1143,30 +1165,6 @@ Whoever said "use Gemma 3 27B" was probably thinking of running it locally via O
 - Systemd service ✅ auto-starts on boot
 - Token compression active ✅ 60-95% fewer tokens
 - $30 daily budget ✅ no surp
-_[truncated]_
-
----
-
-### 50. architecture_explanation
-- **When:** 2026-06-08 11:43:56
-- **Tags:** service
-
-**Gemma 4 31B** (`google/gemma-4-31b-it:free`) — free fallback model. Also have `gemma-4-26b-a4b-it:free` as fallback #2. Both are rate-limited on OpenRouter's free tier but cost $0.
-
-**Headroom is now fully active as a systemd service:**
-- Token compression mode (60-95% prompt reduction)
-- $30 daily budget hard cap
-- Auto-restarts on failure and on boot
-- Proxy verified healthy on port 8787
-- Hermes config already pointing through it (next session)
-
-Combined savings:
-- DeepSeek V4 Flash = cheapest quality model
-- Headroom = 60-95% fewer tokens per request
-- $30 daily cap = no surprise bills
-- CodeGraph = 58% fewer tool calls
-
-On the Gemma note — want me to set Gemma 4 31B as the primary default instead of DeepSeek? It'd cost $0 but have rate limits. Or DeepSeek at $0.14/M tokens is alread
 _[truncated]_
 
 ---

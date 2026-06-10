@@ -15,7 +15,12 @@ INBOUND = Path("/home/synczus/.openclaw/media/inbound")
 
 def read_json(path):
     try: return json.loads(Path(path).read_text())
-    except: return {}
+    except: pass
+    try:
+        import yaml
+        return yaml.safe_load(Path(path).read_text()) or {}
+    except:
+        return {}
 
 def pulse():
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
