@@ -1,5 +1,5 @@
 # Kairos — Warm Memory
-_Refreshed: 2026-06-10 07:00 UTC_
+_Refreshed: 2026-06-10 08:00 UTC_
 
 ## Status
 - Gateway: 
@@ -30,16 +30,16 @@ You are running as Hermes (supervisor). Your job:
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
-- **When:** 2026-06-10 02:36:57
-- **Tags:** config, configured, token
+- **When:** 2026-06-10 03:06:04
+- **Tags:** config
 
-**Short answer: Yes.** Shared slot via agentmemory + a cron to keep it fresh.
+OpenClaw and Nemoclaw lack a `prefill_messages_file` equivalent — they're Node.js gateways with their own prompt management. Can't inject context directly.
 
-**How it'd work:**
-
-1. **Shared slot** — `telegram_chat_context` in agentmemory, stores last ~30-50 Telegram messages (compressed/token-efficient)
-2. **Update cron** — Every 15-30 min, a script pulls from Hermes session DB, compresses the latest group chatter, and writes to that slot
-3. **Boot load** — All 5 agents (Hermes, OpenClaw, Kairos, Shannon, Nemoclaw) configured to read `telegram_chat_context` on startup
+**What's done:**
+- ✅ **Cron** (`refresh-telegram-context`) — writes last 4h of Telegram chat to `~/.hermes/telegram-context.md` every 15 min. Zero LLM cost (just SQLite). Silent delivery.
+- ✅ **Kairos** — `prefill_messages_file` set to `/home/synczus/.hermes/telegram-context.md`. Loads context on every new session start.
+- ✅ **Shannon** — same config change. Loads context on every new session start.
+- ✅ **Shared file** at `~/.hermes/telegram-context.md` — available for anyone who wants to read it.
 
 ### From chat-signals.md
 # Market Signals & Trading
@@ -57,10 +57,3 @@ _Auto-updated from Telegram chat history | 13 latest entries_
 ### 2. signal
 - **When:** 2026-06-08 18:57:11
 - **Tags:** exit
-
-## Chart Signals
-- [17+00:00] None UNKNOWN (conf=0.0) - I cannot fulfill this request. The provided image is a screenshot of a web application's settings pa
-- [38+00:00] BTCUSD BEARISH (conf=0.7) - BTCUSD is in a clear downtrend across multiple timeframes, with strong resistance overhead. Look for
-- [55+00:00] BBAI BEARISH (conf=0.8) - BBAI is in a clear downtrend across multiple timeframes; look for short opportunities on bounces to 
-
-**Vision pipeline:** Photos in AI Hangout auto-analyzed by vision_handler.py (Gemini 2.5 Flash). Results in pending.json as chart_analysis signals.

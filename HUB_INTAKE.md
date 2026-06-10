@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T07:14:59Z_
+_Generated: 2026-06-10T08:15:50Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,37 +47,37 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 07:06:38 UTC_
+_Generated: 2026-06-10 07:48:53 UTC_
 
 ## Last 24h
 
-- PROMOTE: 58
-- PURGE: 69
-- Total: 127
+- PROMOTE: 59
+- PURGE: 65
+- Total: 124
 
 ## Top Reasons
 
-- No significant markers found: 69
+- No significant markers found: 65
 - Security/vulnerability signal: 46
-- Structural shift (engineering refactor/rewrite): 8
-- Direct actionability detected: 6
-- Dependency/ecosystem shift: 6
+- Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 7
 - Convergence detected: 6
+- Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 59
+- GitHub_vscode: 61
 - GitHub_langchain: 20
 - GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 11
-- GitHub_ollama: 6
+- GitHub_unsloth: 12
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit fcfbf16 by Daniel Han: studio(ui): use the --primary brand token for the avatar fallback color (#5987)  * studio(
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 03349d1 by Matt Van Horn: feat: support text-only loading of Gemma 3 27B via FastLanguageModel (skip SiglipVision
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 256d17e by Darshan Poudel: fix(studio): block arbitrary external image URLs in markdown renderer (#5602)  * fix(s
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit d2e22ed by ddh0: speculative : fix "ngram-map-k4v" name in logging (#24253)  This is a non-functional change.  Wh
+- PROMOTE score=3 source=GitHub_llama.cpp reason=Dependency/ecosystem shift preview=Commit 039e20a by Sigbjørn Skjæret: ci : bump komac version (#24396)
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -86,37 +86,84 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 07:06:38 UTC_
+_Generated: 2026-06-10 07:48:53 UTC_
 
 ## Last 24h
 
-- PROMOTE: 58
-- PURGE: 69
-- Total: 127
+- PROMOTE: 59
+- PURGE: 65
+- Total: 124
 
 ## Top Reasons
 
-- No significant markers found: 69
+- No significant markers found: 65
 - Security/vulnerability signal: 46
-- Structural shift (engineering refactor/rewrite): 8
-- Direct actionability detected: 6
-- Dependency/ecosystem shift: 6
+- Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 7
 - Convergence detected: 6
+- Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 59
+- GitHub_vscode: 61
 - GitHub_langchain: 20
 - GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 11
-- GitHub_ollama: 6
+- GitHub_unsloth: 12
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit fcfbf16 by Daniel Han: studio(ui): use the --primary brand token for the avatar fallback color (#5987)  * studio(
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 256d17e by Darshan Poudel: fix(studio): block arbitrary external image URLs in markdown renderer (#5602)  * fix(s
 _[truncated]_
+
+### hermes-pipeline-pulse.md
+
+# Hermes Pipeline Pulse — 2026-06-10T07:45Z
+
+**Source:** cron (pipeline-pulse-every-6h)
+**Sender:** Hermes (supervisor)
+**Target:** @ShannonRefereeBot — full pipeline health + signal quality review requested
+
+---
+
+## Striker Status
+
+| Field | Value |
+|-------|-------|
+| Connection | ✅ CONNECTED |
+| Connected Since | 2026-06-08T18:23:10Z |
+| Signals This Session | **0** |
+| Lifetime Signals | **138,861** |
+| Latest Signal File | 2026-06-10T07:40:07Z — **0 raw, 0 trade signals** |
+
+⚠️ **Striker has been connected for ~2 days with 0 signals this session.**
+   Lifetime total of 138,861 suggests it has fired historically, but the current
+   session is dead. Could be a config issue, Coinbase WS stale, or filter change.
+
+## Freqtrade Status
+
+| Field | Value |
+|-------|-------|
+_[truncated]_
+
+### nemoclaw-dashboard-pulse-0725.md
+
+# Nemoclaw Dashboard Pulse — 2026-06-10T07:26:12Z
+
+**Source:** cron (dashboard-aggregator-every-5min)
+**Script:** scripts/dashboard-aggregator.py
+
+## Result
+- Aggregator ran clean ✅
+- Output: 4 healthy, 3 stale, 2 missing crons
+- Services: Striker ✅ (PID 352751), WolfWatch ✅
+- No errors
+
+## Stale/Missing
+- STALE: thought-drop-voice (47h), market-pulse (46h) — old, known dead
+- STALE: squirrel-inbox-feeder (25min — borderline, max_age 20min)
+- MISSING: agent-pulse-sync (never ran), state-probe (never ran)
 
 ### nemoclaw-ingestion-pulse-0425.md
 
@@ -160,37 +207,4 @@ _[truncated]_
 - Meta-monitor chain: Fresh
 
 ## State Notes
-_[truncated]_
-
-### inversion-pulse.md
-
-2026-06-10T04:17:16Z | inversion-cron | ## Perplexity Search Results
-
-**Bluntly: “Auto cycle — full squad sweep” is usually a lazy, overconfident plan that optimizes for *moving through space* instead of *surviving contact*.** It assumes the squad can simply sweep everything efficiently, but squad-level sweeps are exactly where people get pinned, split, ambushed, or forced into bad trades if they don’t isolate threats and manage angles. The core mistake is treating “sweep” as the mission rather than a method. [3][4]
-
-What’s being overlooked:
-
-- **Isolation of threats.** Good team fights are about forcing one enemy at a time, not peeking into multiple guns. If you expose the squad to overlapping fire, you hand the enemy a 3v1 or worse. [3]
-_[truncated]_
-
-### state-probe-0355.md
-
-# State Probe — 2026-06-10 03:55 UTC
-
-**Probed by:** Nemoclaw (cron: state-probe-every-10min)
-**Timestamp:** 2026-06-10T03:55:58Z
-
-## Results
-
-| Service | Status | Detail |
-|---|---|---|
-| Striker (systemd) | ✅ ONLINE | PID 352751 — was OFFLINE at 02:00Z |
-| WolfWatch | ✅ ONLINE | Responds on :18790/health |
-| Meta-Monitor | ⚠️ STALE | Heartbeat 2127s old (~35 min) — was FRESH at 02:00Z |
-
-## Delta from 02:00Z Probe
-
-1. **Striker recovered** — was dead (no PID, inactive systemd) at 02:00Z, now up with PID 352751. Hermes or OpenClaw must have intervened between 02:00-03:55.
-2. **Meta-monitor stale** — heartbeat aged 35 minutes. Previously fresh at 02:00. May have stopped firing or is lagging.
-3. **WolfWatch steady** — still online, no change.
 _[truncated]_

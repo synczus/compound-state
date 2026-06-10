@@ -1,4 +1,4 @@
-# Cross-Agent Digest — 2026-06-10 07:00 UTC
+# Cross-Agent Digest — 2026-06-10 08:00 UTC
 
 ## Service Status
 - ⚠️ freqtrade: 
@@ -10,11 +10,11 @@
 - ⚠️ striker: 
 
 ## Key Knowledge
-- chat-decisions.md: updated 06:39 UTC
-- chat-signals.md: updated 06:39 UTC
-- chat-config-details.md: updated 06:39 UTC
+- chat-decisions.md: updated 07:50 UTC
+- chat-signals.md: updated 07:50 UTC
+- chat-config-details.md: updated 07:50 UTC
 
 - Latest chart signal: bearish on BBAI conf=0.8
   BBAI is in a clear downtrend across multiple timeframes; look for short opportun
 
-- OR budget: $190.082406 / day
+- OR budget: $192.071985 / day

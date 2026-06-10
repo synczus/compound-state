@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-10T06:55:41Z",
+  "timestamp": "2026-06-10T07:55:38Z",
   "cron_health": {
     "crons": [
       {
@@ -7,7 +7,7 @@
         "label": "\ud83c\udfa4 Voice Drop",
         "freq": "12h",
         "status": "stale",
-        "age_seconds": 164337,
+        "age_seconds": 167934,
         "last_run": "2026-06-08T09:16:44Z"
       },
       {
@@ -15,7 +15,7 @@
         "label": "\ud83d\udcca Market Pulse",
         "freq": "12h",
         "status": "stale",
-        "age_seconds": 162120,
+        "age_seconds": 165717,
         "last_run": "2026-06-08T09:53:41Z"
       },
       {
@@ -23,15 +23,15 @@
         "label": "\ud83d\udcc1 Squirrel Feeder",
         "freq": "5min",
         "status": "stale",
-        "age_seconds": 1508,
-        "last_run": "2026-06-10T06:30:33Z"
+        "age_seconds": 1529,
+        "last_run": "2026-06-10T07:30:09Z"
       },
       {
         "name": "hlm-scraper-every-6h",
         "label": "\ud83d\udccb HLM Scraper",
         "freq": "6h",
         "status": "healthy",
-        "age_seconds": 10449,
+        "age_seconds": 14046,
         "last_run": "2026-06-10T04:01:32Z"
       },
       {
@@ -47,16 +47,16 @@
         "label": "\ud83d\udce4 Git Sync",
         "freq": "4h",
         "status": "healthy",
-        "age_seconds": 5549,
-        "last_run": "2026-06-10T05:21:00Z"
+        "age_seconds": 2321,
+        "last_run": "2026-06-10T07:16:57Z"
       },
       {
         "name": "meta-monitor",
         "label": "\ud83d\udd0d Meta-Monitor",
         "freq": "15min",
         "status": "healthy",
-        "age_seconds": 2137,
-        "last_run": "2026-06-10T06:20:04Z"
+        "age_seconds": 2135,
+        "last_run": "2026-06-10T07:20:03Z"
       },
       {
         "name": "state-probe",
@@ -71,8 +71,8 @@
         "label": "\ud83d\udcb0 Budget Monitor",
         "freq": "1h",
         "status": "healthy",
-        "age_seconds": 1534,
-        "last_run": "2026-06-10T06:30:07Z"
+        "age_seconds": 1537,
+        "last_run": "2026-06-10T07:30:01Z"
       }
     ],
     "summary": {
@@ -97,12 +97,12 @@
     }
   ],
   "cost": {
-    "daily": 190.082406,
+    "daily": 192.071985,
     "estimated_per_run": 0.002,
     "daily_estimated": 1.46,
     "weekly_estimated": 10.22,
     "monthly_estimated": 43.8,
-    "last_checked": "2026-06-10T06:30:07Z",
+    "last_checked": "2026-06-10T07:30:01Z",
     "daily_limit": 30.0,
     "per_cron": {
       "\ud83c\udfa4 Voice Drop": {
