@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T20:30:22Z_
+_Generated: 2026-06-10T21:35:16Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,12 +7,12 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 20:30:03 UTC_
-_Total active entries: 506_
+_Last consolidated: 2026-06-10 21:30:01 UTC_
+_Total active entries: 508_
 
 ## By Category
 
-- **other**: 188 entries
+- **other**: 190 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -26,6 +26,8 @@ _Total active entries: 506_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 2023 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 2822 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2002 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107202 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107250 min — propose next cycle
@@ -39,44 +41,42 @@ _Total active entries: 506_
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781067610 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064001 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 808 signals (0 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064006 min — propose next cycle
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 20:30:19 UTC_
+_Generated: 2026-06-10 21:34:48 UTC_
 
 ## Last 24h
 
-- PROMOTE: 91
-- PURGE: 54
-- Total: 145
+- PROMOTE: 87
+- PURGE: 53
+- Total: 140
 
 ## Top Reasons
 
-- Security/vulnerability signal: 78
-- No significant markers found: 54
-- Dependency/ecosystem shift: 14
-- Direct actionability detected: 13
-- Convergence detected: 10
+- Security/vulnerability signal: 75
+- No significant markers found: 53
+- Dependency/ecosystem shift: 15
+- Direct actionability detected: 12
 - Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 9
 
 ## Sources
 
-- GitHub_vscode: 54
-- GitHub_unsloth: 50
-- GitHub_langchain: 25
+- GitHub_vscode: 50
+- GitHub_unsloth: 49
+- GitHub_langchain: 24
 - GitHub_ComfyUI: 9
 - GitHub_llama.cpp: 5
 - GitHub_openai-python: 2
+- GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c461d2f by Martin Aeschlimann: CopilotAH: Sort discovered directories/files for faster comparison (#320795)  * Co
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 233624a by Arunachalam Nachiappan: Fix image carousel showing UUID on hover in modal editor title (#320739)  fix:
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 41c7c99 by Justin Chen: fix image thumbnail crash on aux windows (#320843)
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -85,35 +85,36 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 20:30:19 UTC_
+_Generated: 2026-06-10 21:34:48 UTC_
 
 ## Last 24h
 
-- PROMOTE: 91
-- PURGE: 54
-- Total: 145
+- PROMOTE: 87
+- PURGE: 53
+- Total: 140
 
 ## Top Reasons
 
-- Security/vulnerability signal: 78
-- No significant markers found: 54
-- Dependency/ecosystem shift: 14
-- Direct actionability detected: 13
-- Convergence detected: 10
+- Security/vulnerability signal: 75
+- No significant markers found: 53
+- Dependency/ecosystem shift: 15
+- Direct actionability detected: 12
 - Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 9
 
 ## Sources
 
-- GitHub_vscode: 54
-- GitHub_unsloth: 50
-- GitHub_langchain: 25
+- GitHub_vscode: 50
+- GitHub_unsloth: 49
+- GitHub_langchain: 24
 - GitHub_ComfyUI: 9
 - GitHub_llama.cpp: 5
 - GitHub_openai-python: 2
+- GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c461d2f by Martin Aeschlimann: CopilotAH: Sort discovered directories/files for faster comparison (#320795)  * Co
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 1aa1704 by Mason Daugherty: release(langchain-classic): 1.0.8 (#38033)
 _[truncated]_
 
 ### inversion-pulse.md

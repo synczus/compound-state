@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 20:30:03 UTC_
-_Total active entries: 506_
+_Last consolidated: 2026-06-10 21:30:01 UTC_
+_Total active entries: 508_
 
 ## By Category
 
-- **other**: 188 entries
+- **other**: 190 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -19,6 +19,8 @@ _Total active entries: 506_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 2023 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 2822 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2002 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107202 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107250 min — propose next cycle
@@ -67,8 +69,6 @@ _Total active entries: 506_
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 19 new skills installed across all agents — Impeccable (35.9k, design audit) + Taste-Skill (37.8k, anti-slop framework, 13 sub-skills) + Last30Days (32.7k, research) — every agent now has design taste, research depth, and quality guardrails baked in.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 2 new user messages ingested from Hermes state DB into DuckDB with knowledge docs regenerated.
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | 242 leaked system prompts from 14 vendors cloned to `reference/system-prompts/` — every agent can now study how Claude Code, ChatGPT 5.5, Gemini, Antigravity, Copilot, Grok, and Cursor structure their own instructions and apply those patterns to improve the compound.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 3 new chat messages ingested into DuckDB and written to knowledge docs with no failures.
-- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 3 new messages ingested and classified into DuckDB across architecture/configuration categories; 1,174 total entries, 2.5% unclassified noise — pipe is clean.
 
 ---
 

@@ -1,45 +1,46 @@
 # Noise Gate Context
 
-_Generated: 2026-06-10 20:30:19 UTC_
+_Generated: 2026-06-10 21:34:48 UTC_
 
 ## Last 24h
 
-- PROMOTE: 91
-- PURGE: 54
-- Total: 145
+- PROMOTE: 87
+- PURGE: 53
+- Total: 140
 
 ## Top Reasons
 
-- Security/vulnerability signal: 78
-- No significant markers found: 54
-- Dependency/ecosystem shift: 14
-- Direct actionability detected: 13
-- Convergence detected: 10
+- Security/vulnerability signal: 75
+- No significant markers found: 53
+- Dependency/ecosystem shift: 15
+- Direct actionability detected: 12
 - Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 9
 
 ## Sources
 
-- GitHub_vscode: 54
-- GitHub_unsloth: 50
-- GitHub_langchain: 25
+- GitHub_vscode: 50
+- GitHub_unsloth: 49
+- GitHub_langchain: 24
 - GitHub_ComfyUI: 9
 - GitHub_llama.cpp: 5
 - GitHub_openai-python: 2
+- GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 1aa1704 by Mason Daugherty: release(langchain-classic): 1.0.8 (#38033)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit e1db287 by Zhichao Li: Merge pull request #320704 from microsoft/otel-streaming-signals  Emit gen_ai streaming OT
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 41c7c99 by Justin Chen: fix image thumbnail crash on aux windows (#320843)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 88acbda by Justin Chen: fill chat bubble to fit code block (#320839)
+- PROMOTE score=10 source=GitHub_vscode reason=Direct actionability detected; Security/vulnerability signal preview=Commit f57a83c by Tyler James Leonhardt: Distribute Claude and Codex agent SDKs via product.json (#320709)  * Add tar to
+- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit f89f4c5 by Mason Daugherty: fix(core): support content block tokens in callbacks (#34739)  Supersedes #34727 Clos
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 2e832c2 by Mason Daugherty: release(core): 1.4.4 (#38031)
+- PROMOTE score=8 source=GitHub_langchain reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 8ac91e3 by Mason Daugherty: hotfix(core): bump lockfile(s) (#38032)
+- PURGE score=0 source=GitHub_AutoGPT reason=No significant markers found preview=Commit 5b603c0 by Nicholas Tindle: Merge branch 'master' into dev
 - PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c461d2f by Martin Aeschlimann: CopilotAH: Sort discovered directories/files for faster comparison (#320795)  * Co
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit f7ac402 by Logan Ramos: Support dynamic auto tooltip (#320800)
 - PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 233624a by Arunachalam Nachiappan: Fix image carousel showing UUID on hover in modal editor title (#320739)  fix:
-- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit a063ec2 by Christophe Bornet: chore(core): fix some `any` generics (#34545)  Co-authored-by: Mason Daugherty <git
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 720dfd3 by Christophe Bornet: chore(core): improve typing of Runnable `__or__` (#34530)  `Runnable.__or__`, `Runn
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 3b72a79 by Dmitriy Vasyura: Merge branch 'main' into fix/mcp-redirect-scheme-and-credential-leak
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 29b16ad by Connor Peet: Merge pull request #320347 from g0w6y/fix/mcp-redirect-scheme-and-credential-leak  Valida
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 677bdd2 by Matt Bierner: Merge pull request #320754 from arun-357/fix/image-carousel-caption-markdown  Fix raw ma
-- PROMOTE score=4 source=GitHub_langchain reason=Structural shift (engineering refactor/rewrite) preview=Commit 3eee400 by Christophe Bornet: refactor(langchain): refactor `test_create_agent_tool_validation` (#34443)  Simplif
-- PROMOTE score=3 source=GitHub_unsloth reason=Dependency/ecosystem shift preview=Commit ec46a55 by Daniel Han: Bump install.sh / install.ps1 pin to unsloth>=2026.6.2 (#6165)
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit d8231ca by Eyera: fix(studio): round compact tooltip corners to 9px (#6163)
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 52aa248 by Daniel Han: Update CODEOWNERS
 
 ## Agent Use
 
