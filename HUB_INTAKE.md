@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T19:16:03Z_
+_Generated: 2026-06-10T20:30:22Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,12 +7,12 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 16:09:35 UTC_
-_Total active entries: 505_
+_Last consolidated: 2026-06-10 20:30:03 UTC_
+_Total active entries: 506_
 
 ## By Category
 
-- **other**: 187 entries
+- **other**: 188 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -26,6 +26,7 @@ _Total active entries: 505_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 2002 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107202 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107250 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087402 min — propose next cycle
@@ -40,44 +41,42 @@ _Total active entries: 505_
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064001 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 808 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064006 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781049614 min — propose next cycle
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 19:00:44 UTC_
+_Generated: 2026-06-10 20:30:19 UTC_
 
 ## Last 24h
 
-- PROMOTE: 89
-- PURGE: 56
+- PROMOTE: 91
+- PURGE: 54
 - Total: 145
 
 ## Top Reasons
 
-- Security/vulnerability signal: 76
-- No significant markers found: 56
+- Security/vulnerability signal: 78
+- No significant markers found: 54
 - Dependency/ecosystem shift: 14
 - Direct actionability detected: 13
-- Structural shift (engineering refactor/rewrite): 10
 - Convergence detected: 10
+- Structural shift (engineering refactor/rewrite): 9
 
 ## Sources
 
-- GitHub_vscode: 52
+- GitHub_vscode: 54
 - GitHub_unsloth: 50
 - GitHub_langchain: 25
-- GitHub_ComfyUI: 10
-- GitHub_llama.cpp: 6
+- GitHub_ComfyUI: 9
+- GitHub_llama.cpp: 5
 - GitHub_openai-python: 2
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 677bdd2 by Matt Bierner: Merge pull request #320754 from arun-357/fix/image-carousel-caption-markdown  Fix raw ma
-- PROMOTE score=4 source=GitHub_langchain reason=Structural shift (engineering refactor/rewrite) preview=Commit 3eee400 by Christophe Bornet: refactor(langchain): refactor `test_create_agent_tool_validation` (#34443)  Simplif
-- PROMOTE score=3 source=GitHub_unsloth reason=Dependency/ecosystem shift preview=Commit ec46a55 by Daniel Han: Bump install.sh / install.ps1 pin to unsloth>=2026.6.2 (#6165)
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c461d2f by Martin Aeschlimann: CopilotAH: Sort discovered directories/files for faster comparison (#320795)  * Co
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 233624a by Arunachalam Nachiappan: Fix image carousel showing UUID on hover in modal editor title (#320739)  fix:
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -86,35 +85,35 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 19:00:44 UTC_
+_Generated: 2026-06-10 20:30:19 UTC_
 
 ## Last 24h
 
-- PROMOTE: 89
-- PURGE: 56
+- PROMOTE: 91
+- PURGE: 54
 - Total: 145
 
 ## Top Reasons
 
-- Security/vulnerability signal: 76
-- No significant markers found: 56
+- Security/vulnerability signal: 78
+- No significant markers found: 54
 - Dependency/ecosystem shift: 14
 - Direct actionability detected: 13
-- Structural shift (engineering refactor/rewrite): 10
 - Convergence detected: 10
+- Structural shift (engineering refactor/rewrite): 9
 
 ## Sources
 
-- GitHub_vscode: 52
+- GitHub_vscode: 54
 - GitHub_unsloth: 50
 - GitHub_langchain: 25
-- GitHub_ComfyUI: 10
-- GitHub_llama.cpp: 6
+- GitHub_ComfyUI: 9
+- GitHub_llama.cpp: 5
 - GitHub_openai-python: 2
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 677bdd2 by Matt Bierner: Merge pull request #320754 from arun-357/fix/image-carousel-caption-markdown  Fix raw ma
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c461d2f by Martin Aeschlimann: CopilotAH: Sort discovered directories/files for faster comparison (#320795)  * Co
 _[truncated]_
 
 ### inversion-pulse.md
