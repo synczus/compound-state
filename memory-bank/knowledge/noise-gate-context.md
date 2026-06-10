@@ -1,34 +1,36 @@
 # Noise Gate Context
 
-_Generated: 2026-06-10 04:56:47 UTC_
+_Generated: 2026-06-10 07:06:38 UTC_
 
 ## Last 24h
 
-- PROMOTE: 60
-- PURGE: 71
-- Total: 131
+- PROMOTE: 58
+- PURGE: 69
+- Total: 127
 
 ## Top Reasons
 
-- No significant markers found: 71
-- Security/vulnerability signal: 44
-- Convergence detected: 8
+- No significant markers found: 69
+- Security/vulnerability signal: 46
 - Structural shift (engineering refactor/rewrite): 8
-- Direct actionability detected: 7
+- Direct actionability detected: 6
 - Dependency/ecosystem shift: 6
+- Convergence detected: 6
 
 ## Sources
 
-- GitHub_vscode: 61
+- GitHub_vscode: 59
 - GitHub_langchain: 20
-- GitHub_llama.cpp: 16
+- GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 12
+- GitHub_unsloth: 11
 - GitHub_ollama: 6
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit fcfbf16 by Daniel Han: studio(ui): use the --primary brand token for the avatar fallback color (#5987)  * studio(
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 03349d1 by Matt Van Horn: feat: support text-only loading of Gemma 3 27B via FastLanguageModel (skip SiglipVision
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 77fc8de by Justin Chen: agent host pickers: align picker text + update styling (#320687)  * align picker text + u
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit cb86056 by Connor Peet: agentHost: describe empty attachment tool results (#320707)  When a successful client too
 - PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit 039ed38 by Matt Miller: fix(assets): remove unused delete_content param from deleteAsset (#14241)  * fix(assets):
@@ -39,8 +41,6 @@ _Generated: 2026-06-10 04:56:47 UTC_
 - PROMOTE score=8 source=GitHub_vscode reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 73d65f0 by dileepyavan: Cherry pick/msrc 1.123 to release 1.123 (#55) (#320699)  * OTel visibility in Copilot Cha
 - PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit b9fb3da by Mason Daugherty: ci(model-profiles): skip profile refresh workflow on forks (#38008)  Closes #37997  F
 - PROMOTE score=7 source=GitHub_ComfyUI reason=Structural shift (engineering refactor/rewrite); Convergence detected preview=Commit a76bb43 by Matt Miller: chore(assets): drop vestigial tags.tag_type column (#14248)  tag_type was always "user" i
-- PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit f350acd by Kohaku-Blueleaf: [Trainer/bug] Ensure model is not inference mode (CORE-72) (#13400)  * Ensure model i
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 6fde3f0 by Mason Daugherty: docs(infra): clarify PR description expectations (#38007)  PR authors get clearer gui
 
 ## Agent Use
 

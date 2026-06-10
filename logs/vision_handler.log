@@ -1,0 +1,49 @@
+2026-06-10 02:12:01 [INFO] Found 2 new image(s)
+2026-06-10 02:12:01 [INFO] Analyzing e00a83f9-b275-43bf-b8af-d4820878ab65.jpg (model=google/gemini-2.5-flash)...
+2026-06-10 02:12:09 [INFO] Signal emitted: neutral on ? (conf=0.0)
+2026-06-10 02:12:09 [INFO] Done — e00a83f9-b275-43bf-b8af-d4820878ab65.jpg → neutral (0.00)
+2026-06-10 02:12:09 [INFO] 📊 This image is not a trading chart; therefore, no trading analysis can be performed.
+2026-06-10 02:12:09 [INFO] Analyzing f7993cb8-6d9e-46b2-b93f-4421728a7400.jpg (model=google/gemini-2.5-flash)...
+2026-06-10 02:12:11 [INFO] Signal emitted: unknown on ? (conf=0.0)
+2026-06-10 02:12:11 [INFO] Done — f7993cb8-6d9e-46b2-b93f-4421728a7400.jpg → unknown (0.00)
+2026-06-10 02:12:11 [INFO] 📊 I cannot fulfill this request. The provided image is a screenshot of a web application's settings page, not a TradingVie
+2026-06-10 02:14:01 [INFO] No new images to process
+2026-06-10 02:16:01 [INFO] No new images to process
+2026-06-10 02:18:01 [INFO] Found 1 new image(s)
+2026-06-10 02:18:01 [INFO] Analyzing d3bc5012-7ccb-42bb-8c4d-a1ff4790f506.jpg (model=google/gemini-2.5-flash)...
+2026-06-10 02:18:19 [INFO] Signal emitted: bearish on BTCUSD (conf=0.7)
+2026-06-10 02:18:19 [INFO] Done — d3bc5012-7ccb-42bb-8c4d-a1ff4790f506.jpg → bearish (0.70)
+2026-06-10 02:18:19 [INFO] 📊 $BTCUSD | Support: $61,185, $61,025 | Resistance: $61,500, $61,598 | Patterns: bearish order blocks visible on 1h and 4h charts, potential lower highs and lower lows on shorter timeframes | BTCUSD is in a clear downtrend across multiple timeframes, with strong resistance overhead. Look for short opportunities
+2026-06-10 02:20:01 [INFO] No new images to process
+2026-06-10 02:22:01 [INFO] No new images to process
+2026-06-10 02:24:01 [INFO] No new images to process
+2026-06-10 02:26:01 [INFO] No new images to process
+2026-06-10 02:28:02 [INFO] Found 1 new image(s)
+2026-06-10 02:28:02 [INFO] Analyzing b12d130e-7374-4d57-82e9-11f405d17068.jpg (model=google/gemini-2.5-flash)...
+2026-06-10 02:28:11 [INFO] Signal emitted: bearish on BBAI (conf=0.8)
+2026-06-10 02:28:11 [INFO] Done — b12d130e-7374-4d57-82e9-11f405d17068.jpg → bearish (0.80)
+2026-06-10 02:28:11 [INFO] 📊 $BBAI | Support: $3.81, $3.78 | Resistance: $4.02, $4.10 | Patterns: downtrend channel (1h, 4h), weak high (1h) | BBAI is in a clear downtrend across multiple timeframes; look for short opportunities on bounces to resistance with tigh
+2026-06-10 02:30:01 [INFO] No new images to process
+2026-06-10 02:32:01 [INFO] No new images to process
+2026-06-10 02:34:01 [INFO] No new images to process
+2026-06-10 02:36:01 [INFO] No new images to process
+2026-06-10 02:38:01 [INFO] No new images to process
+2026-06-10 02:40:01 [INFO] No new images to process
+2026-06-10 02:42:01 [INFO] No new images to process
+2026-06-10 02:44:01 [INFO] No new images to process
+2026-06-10 02:46:01 [INFO] No new images to process
+2026-06-10 02:48:02 [INFO] No new images to process
+2026-06-10 02:50:01 [INFO] No new images to process
+2026-06-10 02:52:01 [INFO] No new images to process
+2026-06-10 02:54:01 [INFO] No new images to process
+2026-06-10 02:56:01 [INFO] No new images to process
+2026-06-10 02:58:01 [INFO] No new images to process
+2026-06-10 03:00:01 [INFO] No new images to process
+2026-06-10 03:02:01 [INFO] No new images to process
+2026-06-10 03:04:01 [INFO] No new images to process
+2026-06-10 03:06:02 [INFO] No new images to process
+2026-06-10 03:08:01 [INFO] No new images to process
+2026-06-10 03:10:01 [INFO] No new images to process
+2026-06-10 03:12:01 [INFO] No new images to process
+2026-06-10 03:14:01 [INFO] No new images to process
+2026-06-10 03:16:01 [INFO] No new images to process

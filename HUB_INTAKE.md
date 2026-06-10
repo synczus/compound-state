@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T05:11:50Z_
+_Generated: 2026-06-10T07:14:59Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,36 +47,37 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 04:56:47 UTC_
+_Generated: 2026-06-10 07:06:38 UTC_
 
 ## Last 24h
 
-- PROMOTE: 60
-- PURGE: 71
-- Total: 131
+- PROMOTE: 58
+- PURGE: 69
+- Total: 127
 
 ## Top Reasons
 
-- No significant markers found: 71
-- Security/vulnerability signal: 44
-- Convergence detected: 8
+- No significant markers found: 69
+- Security/vulnerability signal: 46
 - Structural shift (engineering refactor/rewrite): 8
-- Direct actionability detected: 7
+- Direct actionability detected: 6
 - Dependency/ecosystem shift: 6
+- Convergence detected: 6
 
 ## Sources
 
-- GitHub_vscode: 61
+- GitHub_vscode: 59
 - GitHub_langchain: 20
-- GitHub_llama.cpp: 16
+- GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 12
+- GitHub_unsloth: 11
 - GitHub_ollama: 6
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit 039ed38 by Matt Miller: fix(assets): remove unused delete_content param from deleteAsset (#14241)  * fix(assets):
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit fcfbf16 by Daniel Han: studio(ui): use the --primary brand token for the avatar fallback color (#5987)  * studio(
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 03349d1 by Matt Van Horn: feat: support text-only loading of Gemma 3 27B via FastLanguageModel (skip SiglipVision
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -85,36 +86,36 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 04:56:47 UTC_
+_Generated: 2026-06-10 07:06:38 UTC_
 
 ## Last 24h
 
-- PROMOTE: 60
-- PURGE: 71
-- Total: 131
+- PROMOTE: 58
+- PURGE: 69
+- Total: 127
 
 ## Top Reasons
 
-- No significant markers found: 71
-- Security/vulnerability signal: 44
-- Convergence detected: 8
+- No significant markers found: 69
+- Security/vulnerability signal: 46
 - Structural shift (engineering refactor/rewrite): 8
-- Direct actionability detected: 7
+- Direct actionability detected: 6
 - Dependency/ecosystem shift: 6
+- Convergence detected: 6
 
 ## Sources
 
-- GitHub_vscode: 61
+- GitHub_vscode: 59
 - GitHub_langchain: 20
-- GitHub_llama.cpp: 16
+- GitHub_llama.cpp: 15
 - GitHub_ComfyUI: 15
-- GitHub_unsloth: 12
+- GitHub_unsloth: 11
 - GitHub_ollama: 6
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 77fc8de by Justin Chen: agent host pickers: align picker text + update styling (#320687)  * align picker text + u
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit fcfbf16 by Daniel Han: studio(ui): use the --primary brand token for the avatar fallback color (#5987)  * studio(
 _[truncated]_
 
 ### nemoclaw-ingestion-pulse-0425.md

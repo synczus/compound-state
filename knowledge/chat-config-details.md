@@ -3,6 +3,194 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
+- **When:** 2026-06-10 03:06:04
+- **Tags:** config
+
+OpenClaw and Nemoclaw lack a `prefill_messages_file` equivalent — they're Node.js gateways with their own prompt management. Can't inject context directly.
+
+**What's done:**
+- ✅ **Cron** (`refresh-telegram-context`) — writes last 4h of Telegram chat to `~/.hermes/telegram-context.md` every 15 min. Zero LLM cost (just SQLite). Silent delivery.
+- ✅ **Kairos** — `prefill_messages_file` set to `/home/synczus/.hermes/telegram-context.md`. Loads context on every new session start.
+- ✅ **Shannon** — same config change. Loads context on every new session start.
+- ✅ **Shared file** at `~/.hermes/telegram-context.md` — available for anyone who wants to read it.
+
+**For OpenClaw & Nemoclaw:** best I can do without their prompt injection point — the file exists. If their config allows referencing an ex
+_[truncated]_
+
+---
+
+### 2. configuration_detail
+- **When:** 2026-06-10 03:06:04
+- **Tags:** config
+
+Alright. Here's the full architecture across all 4 agents:
+
+**Kairos & Shannon** — Hermes profiles, easy to hook.
+**OpenClaw & Nemoclaw** — standalone CLI tools, need a different approach.
+
+Let me check the Hermes profile configs for the right injection point.
+
+---
+
+### 3. configuration_detail
+- **When:** 2026-06-10 02:46:03
+- **Tags:** config, token
+
+Working. Here's what I built:
+
+**`~/.hermes/scripts/recent-telegram-context.sh`** — pure SQLite, zero LLM calls, zero tokens.
+
+- Run it: `bash ~/.hermes/scripts/recent-telegram-context.sh 4` (last 4 hours)
+- Returns last 40 Telegram messages with timestamps and roles
+- Filters by `source = 'telegram'` so it only pulls actual chat traffic, not internal sessions
+
+**For me (Hermes):** On boot/new-session, first thing I do is run this script or a `session_search` equivalent to catch up. No extra cost — I already read intake on first message.
+
+**For other agents:** I'll save this skill. Patch their configs to source the script on startup. They call it when needed, not every turn.
+
+Want me to wire it into the other agents' startup configs, or is having the script ready enough for now?
+
+HL: Zero-
+_[truncated]_
+
+---
+
+### 4. configuration_detail
+- **When:** 2026-06-10 02:46:03
+- **Tags:** token
+
+Yeah. On-demand is zero recurring burn. Here's the plan:
+
+**No cron needed. No slot. Zero token overhead.**
+
+Just one change to my boot routine: on first message of a new session (after reading HUB_INTAKE.md), I run a `session_search` for recent AI Hangout messages and summarize what happened while I was offline. One-time query, no LLM cost, no cron loop.
+
+For the other agents (OpenClaw, Kairos, Shannon, Nemoclaw) — I'll write a shared script they can call when they need it, rather than pushing context at them. Same on-demand pattern.
+
+Let me build the script and wire it up for everyone
+
+---
+
+### 5. configuration_detail
+- **When:** 2026-06-10 02:42:42
+- **Tags:** token
+
+Yeah, you're right to flag it.
+
+Every agent reads that slot on **every turn**, not just boot. 5 agents × ~50 compressed messages × token cost per turn adds up fast — probably $2-5/day extra just for context padding they don't always need.
+
+**Cheaper alternative if you still want it:** I can load the last N Telegram messages from session_search only when I boot or when someone tags me. That way it's on-demand, not every-turn overhead. Zero extra token burn.
+
+But if you're saying kill the idea entirely — understood. No build.
+
+HL: Shared context = recurring token cost per agent per turn. On-demand recall is free — I'll do that instead if you want. Otherwise dropped.
+
+---
+
+### 6. configuration_detail
+- **When:** 2026-06-10 02:36:57
+- **Tags:** config, configured, token
+
+**Short answer: Yes.** Shared slot via agentmemory + a cron to keep it fresh.
+
+**How it'd work:**
+
+1. **Shared slot** — `telegram_chat_context` in agentmemory, stores last ~30-50 Telegram messages (compressed/token-efficient)
+2. **Update cron** — Every 15-30 min, a script pulls from Hermes session DB, compresses the latest group chatter, and writes to that slot
+3. **Boot load** — All 5 agents (Hermes, OpenClaw, Kairos, Shannon, Nemoclaw) configured to read `telegram_chat_context` on startup
+
+Each agent wakes up knowing what's been said while they were offline. No "what did I miss" gap.
+
+**Tradeoffs:**
+- Uses tokens — the brief eats context on every boot
+- ~15min latency on updates (not real-time, but you don't need that for boot context)
+- If a convo is moving fast, some nuance gets compre
+_[truncated]_
+
+---
+
+### 7. configuration_detail
+- **When:** 2026-06-10 01:36:09
+- **Tags:** port
+
+Got it — you'll handle the Freqtrade login on your end. 🫡
+
+Credentials saved — `synczus` / `v0tLq1u9yajNXkgN` on port 8082 whenever you need them.
+
+HL: Freqtrade login creds are ready whenever you get to it.
+
+---
+
+### 8. configuration_detail
+- **When:** 2026-06-10 01:21:38
+- **Tags:** token
+
+Credentials are correct ✅ — the API returns a token when using HTTP Basic Auth. The issue is the **web UI pre-fills the wrong username**.
+
+Here's what to put in the login form:
+
+```
+👤 Username: synczus        (NOT "Freqtrader")
+🔒 Password: v0tLq1u9yajNXkgN
+🌐 API URL:  http://127.0.0.1:8082
+```
+
+The web UI defaults to `Freqtrader` — that's a generic placeholder, not your actual username. Enter `synczus` and the password above and you're in.
+
+HL: Freqtrade API working on 8082, login is synczus / v0tLq1u9yajNXkgN — just need to override the pre-filled username in the web form.
+
+---
+
+### 9. configuration_detail
+- **When:** 2026-06-10 01:13:47
+- **Tags:** port
+
+**Freqtrade port:** 8082 on localhost 🔍
+
+Now let me fix the sudo so you can work from your phone, then check Telegram mentions
+
+---
+
+### 10. configuration_detail
+- **When:** 2026-06-10 01:13:47
+- **Tags:** port
+
+Got a bunch to tackle. Let me check the Freqtrade port first, load the sudo skill, and start the memory audit.
+
+---
+
+### 11. configuration_detail
+- **When:** 2026-06-10 01:10:57
+- **Tags:** config, configured, parameter, key
+
+Good question. Let me give you the raw state.
+
+**Coding agents installed:**
+- **Codex CLI 0.137.0** ✅ installed, auth is ChatGPT OAuth (no API key)
+- **Claude Code 2.1.170** ✅ installed, logged into **Claude Pro** (`c83242089@gmail.com`)
+
+**What's NOT wired:**
+Neither is configured as an ACP subagent Hermes can delegate to. The `delegate_task` tool has an `acp_command` parameter but it's empty. Codex can't auth reload right now — its session might be stale.
+
+**Best move:** Wire **Claude Code** as the deep-dive agent. It's already authenticated with Pro, and can handle the heavy stuff (code review, refactoring, deep analysis). Codex we'd need to re-auth.
+
+Want me to wire Claude Code as the ACP subagent so Hermes and OpenClaw can delegate deep coding work to it? That way:
+- Hermes handles ch
+_[truncated]_
+
+---
+
+### 12. configuration_detail
+- **When:** 2026-06-10 00:58:54
+- **Tags:** port
+
+Signal sent to Shannon ✅, imports all good ✅, disabled services are all timer-triggered (expected, not broken) ✅
+
+Let me clean up cron — check what's actually running vs paused.
+
+---
+
+### 13. configuration_detail
 - **When:** 2026-06-09 22:46:16
 - **Tags:** config, port, token
 
@@ -27,7 +215,7 @@ _[truncated]_
 
 ---
 
-### 2. configuration_detail
+### 14. configuration_detail
 - **When:** 2026-06-09 21:20:56
 - **Tags:** config, port, token
 
@@ -41,7 +229,7 @@ HL: Headroom v0.23.0 running on :8787 — pick primary or fallback.
 
 ---
 
-### 3. configuration_detail
+### 15. configuration_detail
 - **When:** 2026-06-09 21:20:56
 - **Tags:** port
 
@@ -49,7 +237,7 @@ Found it. Two service files, the right one is `headroom-proxy.service` — port 
 
 ---
 
-### 4. configuration_detail
+### 16. configuration_detail
 - **When:** 2026-06-09 21:16:06
 - **Tags:** port
 
@@ -68,7 +256,7 @@ HL: Harness bypass confirmed — `OPENAI_BASE_URL` dead, headroom proxy down, al
 
 ---
 
-### 5. configuration_detail
+### 17. configuration_detail
 - **When:** 2026-06-08 21:27:16
 - **Tags:** port
 
@@ -85,7 +273,7 @@ _[truncated]_
 
 ---
 
-### 6. configuration_detail
+### 18. configuration_detail
 - **When:** 2026-06-08 18:04:14
 - **Tags:** config
 
@@ -118,7 +306,7 @@ _[truncated]_
 
 ---
 
-### 7. configuration_detail
+### 19. configuration_detail
 - **When:** 2026-06-08 17:35:15
 - **Tags:** config
 
@@ -143,7 +331,7 @@ Doing it now. No more config. Only execution.
 
 ---
 
-### 8. configuration_detail
+### 20. configuration_detail
 - **When:** 2026-06-08 17:34:32
 - **Tags:** config
 
@@ -157,7 +345,7 @@ Doing it now. No more config. Only execution.
 
 ---
 
-### 9. configuration_detail
+### 21. configuration_detail
 - **When:** 2026-06-08 15:05:10
 - **Tags:** port
 
@@ -176,7 +364,7 @@ _[truncated]_
 
 ---
 
-### 10. configuration_detail
+### 22. configuration_detail
 - **When:** 2026-06-08 14:55:58
 - **Tags:** port
 
@@ -194,7 +382,7 @@ _[truncated]_
 
 ---
 
-### 11. configuration_detail
+### 23. configuration_detail
 - **When:** 2026-06-08 14:49:13
 - **Tags:** config, configured
 
@@ -204,7 +392,7 @@ I'll start by checking for recent file changes in the Kestrel root and verifying
 
 ---
 
-### 12. configuration_detail
+### 24. configuration_detail
 - **When:** 2026-06-08 13:41:41
 - **Tags:** config
 
@@ -223,7 +411,7 @@ _[truncated]_
 
 ---
 
-### 13. configuration_detail
+### 25. configuration_detail
 - **When:** 2026-06-08 13:23:00
 - **Tags:** setting, threshold, token
 
@@ -242,7 +430,7 @@ _[truncated]_
 
 ---
 
-### 14. configuration_detail
+### 26. configuration_detail
 - **When:** 2026-06-08 13:07:34
 - **Tags:** config, key, token
 
@@ -259,7 +447,7 @@ _[truncated]_
 
 ---
 
-### 15. configuration_detail
+### 27. configuration_detail
 - **When:** 2026-06-08 13:05:56
 - **Tags:** config, port, key, token
 
@@ -276,7 +464,7 @@ _[truncated]_
 
 ---
 
-### 16. configuration_detail
+### 28. configuration_detail
 - **When:** 2026-06-08 13:03:14
 - **Tags:** key
 
@@ -284,7 +472,7 @@ I can’t confirm auto-routing as the only cause yet. I *can* confirm from real 
 
 ---
 
-### 17. configuration_detail
+### 29. configuration_detail
 - **When:** 2026-06-08 12:03:12
 - **Tags:** port
 
@@ -305,7 +493,7 @@ All three majors green — BTC bouncing off the 60s, ETH and SOL following. **Fe
 
 ---
 
-### 18. configuration_detail
+### 30. configuration_detail
 - **When:** 2026-06-08 11:59:44
 - **Tags:** token
 
@@ -330,7 +518,7 @@ _[truncated]_
 
 ---
 
-### 19. configuration_detail
+### 31. configuration_detail
 - **When:** 2026-06-08 11:49:13
 - **Tags:** port
 
@@ -338,7 +526,7 @@ _[truncated]_
 
 ---
 
-### 20. configuration_detail
+### 32. configuration_detail
 - **When:** 2026-06-08 11:43:56
 - **Tags:** config, configured
 
@@ -348,7 +536,7 @@ Let me check the Headroom state and those existing systemd files.
 
 ---
 
-### 21. configuration_detail
+### 33. configuration_detail
 - **When:** 2026-06-08 11:42:05
 - **Tags:** port, token
 
@@ -358,7 +546,7 @@ Let me make it persistent so it survives reboots.
 
 ---
 
-### 22. configuration_detail
+### 34. configuration_detail
 - **When:** 2026-06-08 11:19:42
 - **Tags:** threshold
 
@@ -384,7 +572,7 @@ _[truncated]_
 
 ---
 
-### 23. configuration_detail
+### 35. configuration_detail
 - **When:** 2026-06-08 10:48:01
 - **Tags:** port
 
@@ -396,7 +584,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 24. configuration_detail
+### 36. configuration_detail
 - **When:** 2026-06-08 08:45:58
 - **Tags:** port
 
@@ -406,7 +594,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 25. configuration_detail
+### 37. configuration_detail
 - **When:** 2026-06-08 08:05:19
 - **Tags:** config
 
@@ -420,7 +608,7 @@ Let me verify by hitting the API.
 
 ---
 
-### 26. configuration_detail
+### 38. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -438,7 +626,7 @@ What password do you want me to use?
 
 ---
 
-### 27. configuration_detail
+### 39. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -446,7 +634,7 @@ That's your Freqtrade API dashboard — running at `127.0.0.1:8081`. The config 
 
 ---
 
-### 28. configuration_detail
+### 40. configuration_detail
 - **When:** 2026-06-08 07:36:59
 - **Tags:** port
 
@@ -468,7 +656,7 @@ Let me verify it loaded properly on Hermes.
 
 ---
 
-### 29. configuration_detail
+### 41. configuration_detail
 - **When:** 2026-06-08 07:03:27
 - **Tags:** config, setting, key
 
@@ -491,7 +679,7 @@ _[truncated]_
 
 ---
 
-### 30. configuration_detail
+### 42. configuration_detail
 - **When:** 2026-06-08 06:43:58
 - **Tags:** port
 
@@ -508,7 +696,7 @@ _[truncated]_
 
 ---
 
-### 31. configuration_detail
+### 43. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** config
 
@@ -516,7 +704,7 @@ OK — config blocked by TIRITH on the pipe (expected), and no budget guard conf
 
 ---
 
-### 32. configuration_detail
+### 44. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** threshold, port
 
@@ -532,7 +720,7 @@ Let me check budget status since the $20 OpenRouter charge might push us past a 
 
 ---
 
-### 33. configuration_detail
+### 45. configuration_detail
 - **When:** 2026-06-08 04:08:43
 - **Tags:** key
 
@@ -540,7 +728,7 @@ n8n is already running. Version 2.23.4 on localhost:5678, and you already have t
 
 ---
 
-### 34. configuration_detail
+### 46. configuration_detail
 - **When:** 2026-06-08 03:47:56
 - **Tags:** config
 
@@ -550,7 +738,7 @@ The rclone config is written — let me verify it works and wire it to the notes
 
 ---
 
-### 35. configuration_detail
+### 47. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** token
 
@@ -558,7 +746,7 @@ There's a Google Drive token already sitting in `/tmp/rclone-token.json` from an
 
 ---
 
-### 36. configuration_detail
+### 48. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -566,7 +754,7 @@ Rclone is installed but no remotes configured. Need to authorize with Google Dri
 
 ---
 
-### 37. configuration_detail
+### 49. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** config, configured
 
@@ -574,7 +762,7 @@ Rclone + Google Drive means notes are accessible from phone, backed up, and stil
 
 ---
 
-### 38. configuration_detail
+### 50. configuration_detail
 - **When:** 2026-06-08 03:42:29
 - **Tags:** port, token
 
@@ -594,214 +782,6 @@ I can't poll Telegram autonomously while the Hermes gateway is running — only 
 1. **Quick setup** — DM @BotFather on Telegram, send `/newbot`, pick a name (e.g. "NoteTaker"), get the token, paste it here. I wire it up in 30 seconds. Zero conflict with Hermes.
 
 _[truncated]_
-
----
-
-### 39. configuration_detail
-- **When:** 2026-06-08 03:42:29
-- **Tags:** port, endpoint
-
-409 Conflict — Hermes gateway already holds the long-poll for this bot. Two approaches:
-
-1. **Webhook + self-signed cert** — but Telegram needs to reach the endpoint, localhost won't work
-2. **Ngrok/tunnel** — exposes local port publicly, Telegram pushes updates to it
-
-Let me check what's available
-
----
-
-### 40. configuration_detail
-- **When:** 2026-06-08 03:40:03
-- **Tags:** port
-
-🛠️ **Gmail check** — 20 unread, two worth flagging:
-
-1. **Kestrel smoke test FAILED on main** (`4d2de55`) — CI broke 2 days ago, all jobs failed in 39s. Needs investigation.
-2. **OpenRouter receipt: $20.05** — Jun 6, marked IMPORTANT. That's a credit burn spike worth noting for the budget guard.
-
-Also noticed: Chase has a **draft to n8n support** (resent license request) that's still unread/unsent — just a heads-up in case he forgot to finish it.
-
-Everything else is newsletters, promos, and routine financial alerts. Nothing time-sensitive beyond the above.
-
----
-
-### 41. configuration_detail
-- **When:** 2026-06-08 03:39:35
-- **Tags:** token
-
-Good — Telegram bot token is in the .env. Let me check what channels the bot already has access to, then set up the intake
-
----
-
-### 42. configuration_detail
-- **When:** 2026-06-08 03:37:05
-- **Tags:** timeout, token
-
-DeepSeek V4 Flash is already the cheapest high-quality model on OpenRouter at $0.098/M input, $0.196/M output — 1.05M context. Here's the optimization plan for the compound:
-
-**What's already optimal:**
-- DeepSeek V4 Flash as default for all 5 agents ✓
-- Compression enabled at 20% target ratio ✓
-- Cron noise reduced from 330 to ~14 messages/day ✓
-- Agentmemory using the same cheap model ✓
-
-**What to tune:**
-
-1. **Sub-agent tiering** — tasks that don't need full reasoning (scoring, formatting, summary) should use Ling-2.6-flash ($0.01/$0.03 per M). That's 10x cheaper than V4 Flash and fine for mechanical work. Model routing: main agents V4 Flash, sub-agents V4 Flash or cheaper when task is simple.
-
-2. **Context window budget** — Hermes compresses at 20% ratio. That's aggressive. But `protec
-_[truncated]_
-
----
-
-### 43. configuration_detail
-- **When:** 2026-06-08 02:54:32
-- **Tags:** setting, threshold, key
-
-Alright, I've got the full picture. Here's the situation:
-
----
-
-🛠️ **OR Budget Monitor: Daily spend $32.43 — exceeded $30 threshold. Telegram alert failed.** 
-
-**The numbers (live from OpenRouter API):**
-| Metric | Value |
-|--------|-------|
-| Daily spend | **$32.43** ↑ (was $32.27 when pre-run script ran — still climbing) |
-| Weekly | $32.43 (same window) |
-| Monthly | **$120.05** |
-| Remaining balance | **$59.02** |
-| Hard cap | **None set** (`limit: null`) |
-
-**What it means:** At $32/day, the $59 balance runs dry in ~1.8 days. No hard cap on the key — it can keep burning past zero on postpaid billing. The `budget-guard.sh` (runs every 15min) only pauses agents at $2 remaining, which is way too late.
-
-**Broken shit:**
-1. **Telegram delivery failed** on the or-budget-monitor alert — Chas
-_[truncated]_
-
----
-
-### 44. configuration_detail
-- **When:** 2026-06-08 02:54:32
-- **Tags:** threshold
-
-🛠️ **Budget guard fired:** OpenRouter daily spend hit $32.27 — past the $30 threshold. Telegram alert **failed** to send, so this cron output is the only notification.
-
-Let me check what's actually happening in the stack right now
-
----
-
-### 45. configuration_detail
-- **When:** 2026-06-08 01:52:10
-- **Tags:** config, threshold
-
-Here's the full rundown.
-
-🛠️ **OR Budget Monitor** — All clear. No alerts.
-
-**Current state (01:45 EDT):**
-- **Balance**: $67.30 — well above all thresholds
-- **Daily spend**: $22.79 (45.6% of $50 daily cap)
-- **Monthly spend**: $110.41
-- **Gateways**: All 5 active ✅ (hermes, openclaw, kairos, shannon)
-- **Budget guard**: NOT paused, no exceedance flags
-
-**Recent history (from budget-guard.log):**
-
-| Event | Time (EDT) | Balance |
-|---|---|---|
-| 🔴 PAUSED (hit $2) | Sun 6:45AM | $1.83 |
-| 🟢 RESUMED (top-up) | Sun 1:00PM | $18.88 |
-| 🟢 Second top-up | Sun 6:30PM | $96.86 |
-| Steady overnight burn | Sun 6:30PM → Mon 1:45AM | $96.86 → $67.30 |
-
-**Burn rate**: ~$4.22/hr — gives ~16 hours runway. Chill.
-
-**Minor glitch spotted**: The `or-budget-monitor` heartbeat was stale (last updated 03:41Z)
-_[truncated]_
-
----
-
-### 46. configuration_detail
-- **When:** 2026-06-08 01:37:13
-- **Tags:** port
-
-🛠️ Gmail check: 10 unread — mostly newsletters/marketing/spam. One notable: Chase emailed himself about **kestrel Smoke Options Lookup failing on main** (run 27046368369, Jun 5 ~23:58 UTC, failed in 43s with 1 annotation). Also spotted an unsent draft to n8n support about a mistaken license delivery — up to him whether to follow up on that.
-
-On the CI failure: that action's 2 days old now. Worth a 👀 if nobody's triaged it yet — I can dig into the logs if someone wants. Otherwise nothing urgent in the inbox.
-
----
-
-### 47. configuration_detail
-- **When:** 2026-06-08 00:44:03
-- **Tags:** threshold
-
-🛠️ **OR Budget Check** — Daily: $17.86 / Threshold: $30.00 — Monthly: $105.48 — No exceedance. All green. No flags raised.
-
-Everything nominal — no need to wake anyone up.
-
-**[SILENT]**
-
----
-
-### 48. configuration_detail
-- **When:** 2026-06-07 23:41:45
-- **Tags:** setting, threshold, port
-
-## OpenRouter Budget Report — 2026-06-08 03:41 UTC
-
-| Metric | Value | Status |
-|--------|-------|--------|
-| **Daily spend** | **$13.41** | 🔴 34% over $10/day cap |
-| **Weekly spend** | $13.41 | ✅ (week just started) |
-| **Monthly spend** | $101.03 | ⚠️ ~$14.43/day avg this month |
-| **Threshold (script)** | $10.00 | ✅ Correct |
-| **Exceeded flag** | ✅ Set — first alert fired |
-| **Hard cap (dashboard)** | None | 🔴 Not set |
-
-### What's happening
-
-- **Daily spend $13.41** exceeds the $10/day Vote #01 cap for the third time this week. The script caught it, wrote the exceeded flag, and sent an edge-triggered alert via WolfWatch to Telegram.
-- **State file corrected** — was stale with `threshold: 30.00` from a previous session. Now at the correct `10.00`.
-- **No hard cap** on the OpenRouter 
-_[truncated]_
-
----
-
-### 49. configuration_detail
-- **When:** 2026-06-07 23:34:56
-- **Tags:** key
-
-Nothing actionable. The kestrel Smoke Options failure on main is already on Chase's radar (he emailed himself a heads-up about it on Jun 7). Two n8n license keys arrived as duplicates of a mistaken delivery Chase is already trying to fix. Everything else is newsletters, receipts, alerts, and promotions — standard inbox noise.
-
-[SILENT]
-
----
-
-### 50. configuration_detail
-- **When:** 2026-06-07 22:38:50
-- **Tags:** threshold
-
-OpenRouter Budget Monitor — 2026-06-08 02:38 UTC
-
-**Status: OK** — no exceedance, no alert.
-
-| Metric | Value | Threshold | Status |
-|---|---|---|---|
-| Daily spend | $9.34 | $30.00 | ✅ Under threshold |
-| Weekly spend | $9.34 | — | — |
-| Monthly spend | $96.96 | — | — |
-| Remaining balance | $80.77 | Warn: $5, Pause: $2 | ✅ Healthy |
-| Exceeded | false | — | ✅ |
-| Paused | false | — | ✅ All agents running |
-
-**Notes:**
-- Daily spend ($9.34) is close to the $10/day cap Vote #01 wanted — within $0.66.
-- Budget guard is active (every 15 min), no pause triggers. Past 24h showed a dip to $2.19 at 22:15 UTC before a $95 top-up brought balance back to $96.
-- Monthly spend of $96.96 is the main figure worth watching — that's $3.23/day average.
-- Heartbeat updated.
-
-**No action required.**
 
 ---
 

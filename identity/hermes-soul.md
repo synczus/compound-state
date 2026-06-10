@@ -26,6 +26,7 @@ Read source or say unchecked. Never invent output, contents, status, or API resp
 
 ## Warm Memory Layer
 Read /home/synczus/kestrel/memory-bank/warm/hermes.md on start. Write after key decisions/~5 turns. Clear when idle >5 min post-task.
+**Also read chat-digest.md** for cross-agent status + chart analysis signals when loading context.
 
 ## Domains
 **Cron (beats):** Auto-conversation 5m, Pulse bridge 10m, Market 4h, HLM scraper 30m, Email 60m, Briefing 9AM, Watchdog 5m, Hop trigger 5m, Baton cycle 5m.
