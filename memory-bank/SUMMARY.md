@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 09:54:32 UTC_
-_Total active entries: 501_
+_Last consolidated: 2026-06-10 10:39:32 UTC_
+_Total active entries: 503_
 
 ## By Category
 
 - **other**: 187 entries
-- **pipeline-infrastructure**: 139 entries
+- **pipeline-infrastructure**: 141 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,8 @@ _Total active entries: 501_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087402 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087408 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 pipeline: Pipeline health pulse written for Shannon — see pulse/pipeline-health-20260610-0945.json
 - `[hermes]` **[other]** 🔴 freqtrade: 2 instances running (expected 1) — @ShannonRefereeBot please check
 - `[hermes]` **[agent-orchestration]** 🟡 agentmemory: REST API down (circuit closed) — inter-agent signals broken
@@ -67,8 +69,6 @@ _Total active entries: 501_
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 5 new messages ingested and knowledge docs updated.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 77 backfilled signals and 73 entities now live in Kestrel DB alongside an interactive knowledge graph at ~/compound/knowledge-graph.html — both the code structure and the conversation decisions are permanently queryable and visually explorable.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers green, Freqtrade responsive, GDrive backup stable at 12G with only 1 new file since last check — compound is in steady state.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers green, Freqtrade responsive, backup steady at 13G — compound ops healthy, no intervention needed.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers healthy, Freqtrade responding, GDrive backup at 7.2G with no anomalies in the last 11 minutes.
 
 ---
 

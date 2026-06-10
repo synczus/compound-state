@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T10:02:59Z_
+_Generated: 2026-06-10T11:04:50Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,13 +7,13 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 09:54:32 UTC_
-_Total active entries: 501_
+_Last consolidated: 2026-06-10 10:39:32 UTC_
+_Total active entries: 503_
 
 ## By Category
 
 - **other**: 187 entries
-- **pipeline-infrastructure**: 139 entries
+- **pipeline-infrastructure**: 141 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -26,6 +26,8 @@ _Total active entries: 501_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087402 min — propose next cycle
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087408 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 pipeline: Pipeline health pulse written for Shannon — see pulse/pipeline-health-20260610-0945.json
 - `[hermes]` **[other]** 🔴 freqtrade: 2 instances running (expected 1) — @ShannonRefereeBot please check
 - `[hermes]` **[agent-orchestration]** 🟡 agentmemory: REST API down (circuit closed) — inter-agent signals broken
@@ -38,44 +40,42 @@ _Total active entries: 501_
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064006 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781049614 min — propose next cycle
 - `[hermes]` **[other]** ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781038808 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781028027 min — propose next cycle
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 09:51:03 UTC_
+_Generated: 2026-06-10 10:54:20 UTC_
 
 ## Last 24h
 
-- PROMOTE: 60
-- PURGE: 63
-- Total: 123
+- PROMOTE: 62
+- PURGE: 65
+- Total: 127
 
 ## Top Reasons
 
-- No significant markers found: 63
-- Security/vulnerability signal: 47
-- Structural shift (engineering refactor/rewrite): 9
+- No significant markers found: 65
+- Security/vulnerability signal: 50
+- Structural shift (engineering refactor/rewrite): 8
 - Dependency/ecosystem shift: 8
 - Direct actionability detected: 8
 - Convergence detected: 6
 
 ## Sources
 
-- GitHub_vscode: 58
+- GitHub_vscode: 63
 - GitHub_langchain: 20
-- GitHub_unsloth: 17
+- GitHub_unsloth: 18
 - GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 12
+- GitHub_llama.cpp: 10
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 87deee7 by Daniel Han: Studio: faithful conversation export and import round trips (ShareGPT system role, CSV quo
-- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit f41617a by Daniel Han: Studio: auto-sync allowScripts pins after dependency bumps (#6136)  * Studio: npm v12 read
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit a8af864 by Sandeep Somavarapu: fix setting active session when new session is submitted (#320743)
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit f542ffb by Michael Han: Studio: unify shadows, backgrounds and dark mode consistency in chat UI (#6116)  * Studio
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -84,35 +84,35 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 09:51:03 UTC_
+_Generated: 2026-06-10 10:54:20 UTC_
 
 ## Last 24h
 
-- PROMOTE: 60
-- PURGE: 63
-- Total: 123
+- PROMOTE: 62
+- PURGE: 65
+- Total: 127
 
 ## Top Reasons
 
-- No significant markers found: 63
-- Security/vulnerability signal: 47
-- Structural shift (engineering refactor/rewrite): 9
+- No significant markers found: 65
+- Security/vulnerability signal: 50
+- Structural shift (engineering refactor/rewrite): 8
 - Dependency/ecosystem shift: 8
 - Direct actionability detected: 8
 - Convergence detected: 6
 
 ## Sources
 
-- GitHub_vscode: 58
+- GitHub_vscode: 63
 - GitHub_langchain: 20
-- GitHub_unsloth: 17
+- GitHub_unsloth: 18
 - GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 12
+- GitHub_llama.cpp: 10
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 87deee7 by Daniel Han: Studio: faithful conversation export and import round trips (ShareGPT system role, CSV quo
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit a8af864 by Sandeep Somavarapu: fix setting active session when new session is submitted (#320743)
 _[truncated]_
 
 ### inversion-pulse.md

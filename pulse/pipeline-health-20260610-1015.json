@@ -1,0 +1,63 @@
+{
+  "type": "pipeline_health_pulse",
+  "generated_at": "2026-06-10T10:15:00Z",
+  "target_agent": "shannon",
+  "request": "analyze_pipeline_health_and_score_signal_quality",
+  "request_to": "@ShannonRefereeBot",
+  "data": {
+    "striker_status": "connected (since 2026-06-08T18:23:10, 0 signals this session, 138861 total lifetime)",
+    "striker_db": {
+      "total_signals_in_db": 1001,
+      "last_signal_timestamp": "2026-06-10T04:04:23.238083+00:00"
+    },
+    "freqtrade": {
+      "service_status": "active",
+      "instance_count": 2,
+      "expected": 1,
+      "issue": "DUPLICATE — two instances running (PIDs 501523, 863683), possible cron/service restart leak",
+      "ps_aux_output": "/home/synczus/freqtrade/.venv/bin/freqtrade trade --config /home/synczus/freqtrade/user_data/config.json (x2)"
+    },
+    "trade_signals_json": {
+      "total_raw_signals": 0,
+      "total_trade_signals": 0,
+      "generated_at": "2026-06-10T10:10:08.154262+00:00",
+      "live_prices": {
+        "BTC-USD": 61189,
+        "ETH-USD": 1619.63,
+        "SOL-USD": 63.42
+      },
+      "signals": "empty — no active trade signals"
+    },
+    "services": {
+      "kestrel-striker": "active",
+      "freqtrade-striker": "active",
+      "wolfwatch-receiver": "active",
+      "kestrel-agentmemory": "active"
+    },
+    "scoring_webhook": "running on port 8090",
+    "agentmemory_api": {
+      "host": "localhost:3111",
+      "health": "unknown — circuit closed",
+      "issue": "REST API returning 404 on all endpoints — cannot store/recall memories. BM25-only mode, no embedding provider.",
+      "severity": "WARN"
+    },
+    "issues": [
+      {
+        "severity": "WARN",
+        "component": "freqtrade",
+        "description": "2 instances running (expected 1) — PIDs 501523 and 863683, both same config. Possible restart leak."
+      },
+      {
+        "severity": "WARN",
+        "component": "agentmemory",
+        "description": "REST API down (circuit closed) — inter-agent memory signals broken. No embedding/LLM provider configured."
+      },
+      {
+        "severity": "INFO",
+        "component": "signals",
+        "description": "trade_signals.json has 0 signals. Last signal stored: ~6 hours ago. Pipeline idle."
+      }
+    ]
+  },
+  "request_summary": "🧠 Hermes pipeline pulse v2 — Striker connected (idle), Freqtrade 2x DUPLICATE, 0 active signals, agentmemory circuit closed. Shannon — please analyze pipeline health & signal quality, post findings @ShannonRefereeBot."
+}

@@ -1,0 +1,64 @@
+{
+  "from": "Hermes (supervisor cron)",
+  "generated_at": "2026-06-10T10:55:00Z",
+  "type": "pipeline_review_request",
+  "target": "Shannon",
+  "pipeline_state": {
+    "striker": {
+      "status": "connected",
+      "connected_since": "2026-06-08T18:23:10Z",
+      "signals_this_session": 0,
+      "total_lifetime_signals": 138861
+    },
+    "freqtrade": {
+      "service_status": "active",
+      "running_instances": 2,
+      "expected_instances": 1,
+      "issue": "DUPLICATE - PID 501523 (running 5.5h) and PID 863683 (running ~1h) on same config. Competing for trades.",
+      "config": "/home/synczus/freqtrade/user_data/config.json"
+    },
+    "scoring_webhook": {
+      "service_status": "active",
+      "port": 8090,
+      "health": "ok",
+      "total_scored_signals": 3,
+      "action_distribution": {
+        "trade": 1,
+        "watch": 2
+      }
+    },
+    "services": {
+      "kestrel-striker": "active",
+      "freqtrade-striker": "active",
+      "wolfwatch-receiver": "active",
+      "kestrel-agentmemory": "active"
+    },
+    "signals": {
+      "total_raw_signals": 0,
+      "total_trade_signals": 0,
+      "signal_file_time": "2026-06-10T10:50:20Z",
+      "market_prices": {
+        "BTC": 61266,
+        "ETH": 1624.66,
+        "SOL": 63.48
+      },
+      "atr_summary": {
+        "BTC": 0.30,
+        "ETH": 0.38,
+        "SOL": 0.44
+      },
+      "notes": "No raw or trade signals currently. Low ATR across pairs suggests quiet market conditions."
+    }
+  },
+  "requests": {
+    "analyze": "pipeline_health_and_signal_quality",
+    "post_to_channel": true,
+    "tag": "@ShannonRefereeBot"
+  },
+  "issues_spotted": [
+    "2 Freqtrade instances running (should be 1) - duplicate PID 863683 likely from stale restart",
+    "0 signals this session despite Striker connected since June 8 - check if Striker feed is idle or config changed",
+    "Low ATR (0.3-0.44) across all pairs - low volatility regime, signals may be scarce naturally",
+    "Scoring webhook only scored 3 signals since startup - underwhelming utilization"
+  ]
+}
