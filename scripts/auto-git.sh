@@ -45,3 +45,15 @@ if git status --short | grep -q .; then
 else
     echo "$(date '+%Y-%m-%d %H:%M:%S') — no changes" >> "$LOG_FILE"
 fi
+
+# ── Heartbeat (for meta-monitor) ──
+HEARTBEAT_DIR="/home/synczus/kestrel/cron-health"
+mkdir -p "$HEARTBEAT_DIR"
+cat > "$HEARTBEAT_DIR/auto-git-sync.heartbeat" <<EOF
+{
+  "name": "auto-git-sync",
+  "status": "ok",
+  "last_run": "$(date -u +'%Y-%m-%dT%H:%M:%SZ')",
+  "epoch": $(date +%s)
+}
+EOF

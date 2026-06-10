@@ -18,7 +18,7 @@ EXPECTED_CRONS = {
     "squirrel-inbox-feeder": {"freq": "5min", "max_age": 1200, "label": "📁 Squirrel Feeder"},
     "hlm-scraper-every-6h": {"freq": "6h", "max_age": 43200, "label": "📋 HLM Scraper"},
     "agent-pulse-sync": {"freq": "10min", "max_age": 3600, "label": "🔄 Pulse Sync"},
-    "auto-git-sync": {"freq": "1h", "max_age": 7200, "label": "📤 Git Sync"},
+    "auto-git-sync": {"freq": "4h", "max_age": 15000, "label": "📤 Git Sync"},
     "meta-monitor": {"freq": "15min", "max_age": 3600, "label": "🔍 Meta-Monitor"},
     "state-probe": {"freq": "10min", "max_age": 3600, "label": "🔎 State Probe"},
     "or-budget-monitor": {"freq": "1h", "max_age": 14400, "label": "💰 Budget Monitor"},

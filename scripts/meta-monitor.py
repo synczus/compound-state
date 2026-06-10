@@ -17,7 +17,7 @@ EVENT_BUS = Path("/home/synczus/kestrel/event-bus.md")
 # Expected cron jobs and their max silence thresholds (seconds)
 EXPECTED_CRONS = {
     "squirrel-inbox-feeder": 2400,                   # 40 min grace (runs every 30 min per Jun 7 reduction)
-    "auto-git-sync": 7200,                           # 2h grace (runs every 1h)
+    "auto-git-sync": 15000,                          # 4h10m grace (runs every 4h via auto-git.sh)
     "or-budget-monitor": 14400,                      # 4h grace
     "dashboard-aggregator": 3600,                    # 1h grace
     "meta-monitor": 3600,                            # itself — 1h grace
