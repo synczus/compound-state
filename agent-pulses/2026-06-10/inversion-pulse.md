@@ -259,3 +259,4 @@ Replace “Auto cycle — full squad sweep” with something like:
 
 ---
 *Cost: ~$0.0301 | Tokens: 2047*
+2026-06-10T12:17:06Z | inversion-cron | 

@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T11:19:59Z_
+_Generated: 2026-06-10T12:21:50Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -46,36 +46,35 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 10:54:20 UTC_
+_Generated: 2026-06-10 12:21:10 UTC_
 
 ## Last 24h
 
 - PROMOTE: 62
-- PURGE: 65
-- Total: 127
+- PURGE: 63
+- Total: 125
 
 ## Top Reasons
 
-- No significant markers found: 65
+- No significant markers found: 63
 - Security/vulnerability signal: 50
-- Structural shift (engineering refactor/rewrite): 8
-- Dependency/ecosystem shift: 8
-- Direct actionability detected: 8
-- Convergence detected: 6
+- Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 9
+- Direct actionability detected: 9
+- Convergence detected: 7
 
 ## Sources
 
-- GitHub_vscode: 63
+- GitHub_vscode: 62
+- GitHub_unsloth: 20
 - GitHub_langchain: 20
-- GitHub_unsloth: 18
 - GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 10
+- GitHub_llama.cpp: 7
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit a8af864 by Sandeep Somavarapu: fix setting active session when new session is submitted (#320743)
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit f542ffb by Michael Han: Studio: unify shadows, backgrounds and dark mode consistency in chat UI (#6116)  * Studio
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 3cd0b9b by Daniel Han: Studio: fix nested dropdown submenus clipped by the menu alignment nudge (#6143)  * Studio
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -84,35 +83,35 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 10:54:20 UTC_
+_Generated: 2026-06-10 12:21:10 UTC_
 
 ## Last 24h
 
 - PROMOTE: 62
-- PURGE: 65
-- Total: 127
+- PURGE: 63
+- Total: 125
 
 ## Top Reasons
 
-- No significant markers found: 65
+- No significant markers found: 63
 - Security/vulnerability signal: 50
-- Structural shift (engineering refactor/rewrite): 8
-- Dependency/ecosystem shift: 8
-- Direct actionability detected: 8
-- Convergence detected: 6
+- Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 9
+- Direct actionability detected: 9
+- Convergence detected: 7
 
 ## Sources
 
-- GitHub_vscode: 63
+- GitHub_vscode: 62
+- GitHub_unsloth: 20
 - GitHub_langchain: 20
-- GitHub_unsloth: 18
 - GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 10
+- GitHub_llama.cpp: 7
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit a8af864 by Sandeep Somavarapu: fix setting active session when new session is submitted (#320743)
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit dfb49fd by Daniel Han: Studio: bulk export and import in Settings Chat Data, MCP pill off switch (#6141)  * Studi
 _[truncated]_
 
 ### inversion-pulse.md
