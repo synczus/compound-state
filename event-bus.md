@@ -302,3 +302,5 @@ Please analyze pipeline health, score signal quality, assess risk, and post find
 2026-06-10 11:11 UTC | baton-auto-cycle | No pending P0/P1 work found on board
 2026-06-10 11:20 UTC | meta-monitor | All crons and services healthy
 2026-06-10 19:09 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 19:20 UTC | meta-monitor | 🔴 Cron 'squirrel-inbox-feeder' stale — 500m since last run (max 40m)
+2026-06-10 19:20 UTC | meta-monitor | 🔴 Cron 'dashboard-aggregator' stale — 504m since last run (max 60m)

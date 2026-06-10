@@ -3,6 +3,58 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. architecture_explanation
+- **When:** 2026-06-10 15:16:46
+- **Tags:** pipeline
+
+Good — both coming up. Configs confirmed:
+
+**Hermes:** `require_mention: false` ← replies to any chat message
+**OpenClaw:** `requireMention: False` ← same
+
+**Still paused (no scheduled waste):**
+- morning-status-pulse
+- midday-conversation-seed  
+- evening-summary
+- pipeline-signal-analysis
+- chart-vision-poller
+
+**Still running (replies work fine):** Both gateways active.
+
+So the final state: **chat replies ON, scheduled automation OFF.** You talk, I answer. Nothing fires autonomously draining OpenRouter credits.
+
+HL: require_mention flipped back to false for both agents. Crons stay paused. You talk, we reply — no scheduled waste.
+
+---
+
+### 2. architecture_explanation
+- **When:** 2026-06-10 15:02:21
+- **Tags:** pipeline
+
+Done. Here's everything that happened:
+
+## 🔴 Automation Paused — Hermes + OpenClaw
+
+**LLM crons paused (Hermes):**
+- `morning-status-pulse` (9am)
+- `midday-conversation-seed` (1pm)
+- `evening-summary` (8pm)
+- `pipeline-signal-analysis` (every 30m)
+- `chart-vision-poller` (every 3m — was burning Claude Sonnet 4 on every tick)
+
+**Gateway behavior changed:**
+- **Hermes** → `require_mention: true` — won't respond to group messages unless you @mention me
+- **OpenClaw** → `requireMention: True` — same, only responds when @tagged
+
+**What stays running (zero cost):**
+- All no_agent=true script crons (note-sync, striker-bridge, signal-intel, etc.)
+- Striker + Freqtrade (passive market data collection)
+- Scoring webhook, agentmemory, headroom proxy
+- The `telegram-context.md` file still updates ever
+_[truncated]_
+
+---
+
+### 3. architecture_explanation
 - **When:** 2026-06-10 14:33:58
 - **Tags:** pipeline, service
 
@@ -30,7 +82,7 @@ _[truncated]_
 
 ---
 
-### 2. architecture_explanation
+### 4. architecture_explanation
 - **When:** 2026-06-10 06:56:48
 - **Tags:** pipeline, flow, component, service
 
@@ -54,7 +106,7 @@ _[truncated]_
 
 ---
 
-### 3. architecture_explanation
+### 5. architecture_explanation
 - **When:** 2026-06-10 06:21:38
 - **Tags:** pipeline, component, service
 
@@ -80,7 +132,7 @@ _[truncated]_
 
 ---
 
-### 4. architecture_explanation
+### 6. architecture_explanation
 - **When:** 2026-06-10 05:49:13
 - **Tags:** pipeline, service
 
@@ -105,7 +157,7 @@ _[truncated]_
 
 ---
 
-### 5. architecture_explanation
+### 7. architecture_explanation
 - **When:** 2026-06-10 05:11:55
 - **Tags:** pipeline, service
 
@@ -136,7 +188,7 @@ _[truncated]_
 
 ---
 
-### 6. architecture_explanation
+### 8. architecture_explanation
 - **When:** 2026-06-10 04:30:45
 - **Tags:** pipeline, component, service
 
@@ -157,7 +209,7 @@ _[truncated]_
 
 ---
 
-### 7. architecture_explanation
+### 9. architecture_explanation
 - **When:** 2026-06-10 03:47:18
 - **Tags:** pipeline, service, structure
 
@@ -180,7 +232,7 @@ _[truncated]_
 
 ---
 
-### 8. architecture_explanation
+### 10. architecture_explanation
 - **When:** 2026-06-10 03:13:05
 - **Tags:** pipeline, service
 
@@ -205,7 +257,7 @@ _[truncated]_
 
 ---
 
-### 9. architecture_explanation
+### 11. architecture_explanation
 - **When:** 2026-06-10 02:39:39
 - **Tags:** pipeline, component
 
@@ -231,7 +283,7 @@ _[truncated]_
 
 ---
 
-### 10. architecture_explanation
+### 12. architecture_explanation
 - **When:** 2026-06-10 02:29:31
 - **Tags:** structure
 
@@ -250,7 +302,7 @@ _[truncated]_
 
 ---
 
-### 11. architecture_explanation
+### 13. architecture_explanation
 - **When:** 2026-06-10 02:28:15
 - **Tags:** structure
 
@@ -271,7 +323,7 @@ HL: Chart vision upgraded from Qwen3 (commodity) to Claude Sonnet 4 (premium) �
 
 ---
 
-### 12. architecture_explanation
+### 14. architecture_explanation
 - **When:** 2026-06-10 02:28:15
 - **Tags:** pipeline, structure
 
@@ -285,7 +337,7 @@ Want me to upgrade the cron? One edit to the script — change the model ID and 
 
 ---
 
-### 13. architecture_explanation
+### 15. architecture_explanation
 - **When:** 2026-06-10 02:07:27
 - **Tags:** pipeline, flow, component, service
 
@@ -311,7 +363,7 @@ _[truncated]_
 
 ---
 
-### 14. architecture_explanation
+### 16. architecture_explanation
 - **When:** 2026-06-10 01:51:00
 - **Tags:** pipeline
 
@@ -346,7 +398,7 @@ _[truncated]_
 
 ---
 
-### 15. architecture_explanation
+### 17. architecture_explanation
 - **When:** 2026-06-10 01:50:25
 - **Tags:** pipeline, flow, structure
 
@@ -368,7 +420,7 @@ _[truncated]_
 
 ---
 
-### 16. architecture_explanation
+### 18. architecture_explanation
 - **When:** 2026-06-10 01:30:39
 - **Tags:** pipeline, service
 
@@ -378,7 +430,7 @@ _[truncated]_
 
 ---
 
-### 17. architecture_explanation
+### 19. architecture_explanation
 - **When:** 2026-06-10 01:13:47
 - **Tags:** service
 
@@ -407,7 +459,7 @@ _[truncated]_
 
 ---
 
-### 18. architecture_explanation
+### 20. architecture_explanation
 - **When:** 2026-06-10 01:13:47
 - **Tags:** service
 
@@ -430,7 +482,7 @@ _[truncated]_
 
 ---
 
-### 19. architecture_explanation
+### 21. architecture_explanation
 - **When:** 2026-06-10 00:58:54
 - **Tags:** pipeline, service
 
@@ -449,7 +501,7 @@ _[truncated]_
 
 ---
 
-### 20. architecture_explanation
+### 22. architecture_explanation
 - **When:** 2026-06-09 22:40:14
 - **Tags:** pipeline, flow
 
@@ -466,7 +518,7 @@ Or just spin through everything? Pick one and I'll tear it open.
 
 ---
 
-### 21. architecture_explanation
+### 23. architecture_explanation
 - **When:** 2026-06-09 22:24:28
 - **Tags:** pipeline, service
 
@@ -510,7 +562,7 @@ _[truncated]_
 
 ---
 
-### 22. architecture_explanation
+### 24. architecture_explanation
 - **When:** 2026-06-09 21:34:09
 - **Tags:** pipeline, flow, layer, component, service
 
@@ -532,7 +584,7 @@ _[truncated]_
 
 ---
 
-### 23. architecture_explanation
+### 25. architecture_explanation
 - **When:** 2026-06-09 18:42:36
 - **Tags:** architecture, flow, service
 
@@ -573,7 +625,7 @@ _[truncated]_
 
 ---
 
-### 24. architecture_explanation
+### 26. architecture_explanation
 - **When:** 2026-06-08 20:06:22
 - **Tags:** pipeline, layer, structure
 
@@ -603,7 +655,7 @@ _[truncated]_
 
 ---
 
-### 25. architecture_explanation
+### 27. architecture_explanation
 - **When:** 2026-06-08 19:04:05
 - **Tags:** architecture, structure
 
@@ -623,7 +675,7 @@ _[truncated]_
 
 ---
 
-### 26. architecture_explanation
+### 28. architecture_explanation
 - **When:** 2026-06-08 19:02:25
 - **Tags:** architecture, pipeline, flow, layer, structure
 
@@ -649,7 +701,7 @@ _[truncated]_
 
 ---
 
-### 27. architecture_explanation
+### 29. architecture_explanation
 - **When:** 2026-06-08 18:59:16
 - **Tags:** architecture, flow, layer
 
@@ -673,7 +725,7 @@ _[truncated]_
 
 ---
 
-### 28. architecture_explanation
+### 30. architecture_explanation
 - **When:** 2026-06-08 18:57:11
 - **Tags:** architecture, structure
 
@@ -698,7 +750,7 @@ _[truncated]_
 
 ---
 
-### 29. architecture_explanation
+### 31. architecture_explanation
 - **When:** 2026-06-08 18:02:56
 - **Tags:** architecture, layer, service
 
@@ -724,7 +776,7 @@ Doing it now. Access recovery only. Execution only.
 
 ---
 
-### 30. architecture_explanation
+### 32. architecture_explanation
 - **When:** 2026-06-08 17:58:47
 - **Tags:** service
 
@@ -750,7 +802,7 @@ Doing it now. Access recovery first. Execution only.
 
 ---
 
-### 31. architecture_explanation
+### 33. architecture_explanation
 - **When:** 2026-06-08 17:54:28
 - **Tags:** layer
 
@@ -778,7 +830,7 @@ Wipe $\rightarrow$ Reload $\rightarrow$ Wake $\rightarrow$ Verify.
 
 ---
 
-### 32. architecture_explanation
+### 34. architecture_explanation
 - **When:** 2026-06-08 17:52:35
 - **Tags:** architecture
 
@@ -804,7 +856,7 @@ Doing it now. No more talk. Only results.
 
 ---
 
-### 33. architecture_explanation
+### 35. architecture_explanation
 - **When:** 2026-06-08 17:51:35
 - **Tags:** layer
 
@@ -831,7 +883,7 @@ Doing it now. No more talk. Only results.
 
 ---
 
-### 34. architecture_explanation
+### 36. architecture_explanation
 - **When:** 2026-06-08 17:48:10
 - **Tags:** flow
 
@@ -857,7 +909,7 @@ Doing it now. No more talk. Only results.
 
 ---
 
-### 35. architecture_explanation
+### 37. architecture_explanation
 - **When:** 2026-06-08 17:44:03
 - **Tags:** architecture
 
@@ -888,7 +940,7 @@ _[truncated]_
 
 ---
 
-### 36. architecture_explanation
+### 38. architecture_explanation
 - **When:** 2026-06-08 17:43:25
 - **Tags:** layer, structure
 
@@ -913,7 +965,7 @@ Doing it now. No more talking. Only results.
 
 ---
 
-### 37. architecture_explanation
+### 39. architecture_explanation
 - **When:** 2026-06-08 17:43:25
 - **Tags:** structure
 
@@ -936,7 +988,7 @@ Doing it now.
 
 ---
 
-### 38. architecture_explanation
+### 40. architecture_explanation
 - **When:** 2026-06-08 17:42:01
 - **Tags:** structure
 
@@ -966,7 +1018,7 @@ _[truncated]_
 
 ---
 
-### 39. architecture_explanation
+### 41. architecture_explanation
 - **When:** 2026-06-08 17:38:07
 - **Tags:** structure
 
@@ -993,7 +1045,7 @@ Doing it now. No more narration. Execution only.
 
 ---
 
-### 40. architecture_explanation
+### 42. architecture_explanation
 - **When:** 2026-06-08 17:36:52
 - **Tags:** structure
 
@@ -1023,7 +1075,7 @@ _[truncated]_
 
 ---
 
-### 41. architecture_explanation
+### 43. architecture_explanation
 - **When:** 2026-06-08 17:32:20
 - **Tags:** layer
 
@@ -1046,7 +1098,7 @@ Doing it now. Execution only.
 
 ---
 
-### 42. architecture_explanation
+### 44. architecture_explanation
 - **When:** 2026-06-08 17:30:49
 - **Tags:** layer
 
@@ -1074,7 +1126,7 @@ _[truncated]_
 
 ---
 
-### 43. architecture_explanation
+### 45. architecture_explanation
 - **When:** 2026-06-08 17:15:49
 - **Tags:** architecture
 
@@ -1099,7 +1151,7 @@ _[truncated]_
 
 ---
 
-### 44. architecture_explanation
+### 46. architecture_explanation
 - **When:** 2026-06-08 17:07:43
 - **Tags:** architecture
 
@@ -1129,7 +1181,7 @@ Executing now. No more talking. Only results.
 
 ---
 
-### 45. architecture_explanation
+### 47. architecture_explanation
 - **When:** 2026-06-08 15:42:26
 - **Tags:** pipeline, layer
 
@@ -1153,7 +1205,7 @@ Doing it now. No more assigning, just executing. Starting the work.
 
 ---
 
-### 46. architecture_explanation
+### 48. architecture_explanation
 - **When:** 2026-06-08 15:04:27
 - **Tags:** integration
 
@@ -1168,7 +1220,7 @@ _[truncated]_
 
 ---
 
-### 47. architecture_explanation
+### 49. architecture_explanation
 - **When:** 2026-06-08 14:24:48
 - **Tags:** pipeline, service
 
@@ -1184,74 +1236,13 @@ _[truncated]_
 
 ---
 
-### 48. architecture_explanation
+### 50. architecture_explanation
 - **When:** 2026-06-08 14:24:48
 - **Tags:** pipeline, service
 
 The user wants me to act as Gemini-CEO, the Revenue Operator for synczus Paperclip company. My mission is to assess company state, identify issues, create Paperclip issues, and assign them to the appropriate agent. I must not write code, run tests, or do implementation work.
 
 The active task is: "KESTREL PIPELINE SIGNAL - Signal: Compound post-optimization audit — 18 weaknesses fixed overnight, 12 remaining needing human action (budget alerts, fallback model, GitHub PAT, credential management, persistent memory, wake-on-stale trigger). Striker running 7h+ on Coinbase WS with 0 signals. All service states: hermes=alive, kairos=active, shannon=active, wolfwatch=:18790 listening, nemoclaw=disabled. OpenRouter 6.13/0. Analyze current state, identify top-3 highest-leverage moves for the next 24
-_[truncated]_
-
----
-
-### 49. architecture_explanation
-- **When:** 2026-06-08 14:23:36
-- **Tags:** pipeline, service
-
-- task: c778f414-2984-4938-891c-68608e3624f4
-- timestamp: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
-- status: done
-
-## What I Did
-- Decomposed the Kestrel Pipeline Signal task.
-- Identified the current state of services and outstanding weaknesses.
-- Assessed and prioritized the top 3 highest-leverage moves for the next 24 hours: budget alerts, credential management, and persistent memory.
-- Executed a web search to confirm Paperclip API Protocol status.
-- Routed the task to the Scout agent for the next step in the pipeline (Research).
-
-## Key Output
-- Initial decomposition of the task.
-- Identification of top 3 leverage points.
-- Research initiated with Scout.
-
-## Dollar Value Rating
-- confidence: HIGH
-- value: 8
-PULSE_EOF`
-
-**CEO (Gemini-CEO) - Decomposition Complete**
-
-I've completed the initial 
-_[truncated]_
-
----
-
-### 50. architecture_explanation
-- **When:** 2026-06-08 14:23:36
-- **Tags:** pipeline, service
-
-I've analyzed the Kestrel Pipeline Signal. My initial assessment identifies addressing budget alerts, securing credentials, and implementing persistent memory as the top 3 highest-leverage moves for the next 24 hours.
-
-Routing to Scout for research.
-
-PULSE_FILE="/home/synczus/projects/active/huntsystems/agent-pulses/$(date +%Y-%m-%d)/Gemini-CEO-pulse.md"
-mkdir -p "$(dirname "$PULSE_FILE")"
-
-cat > "$PULSE_FILE" << 'PULSE_EOF'
-## Pulse
-- agent: Gemini-CEO
-- role: ceo
-- model: google/gemini-2.5-flash-lite
-- run: fc9d653d-99c0-4e44-9417-a827f88d9f17
-- task: c778f414-2984-4938-891c-68608e3624f4
-- timestamp: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
-- status: done
-
-## What I Did
-- Decomposed the Kestrel Pipeline Signal task.
-- Identified the current state of services and outstanding weaknesses.
-- Assesse
 _[truncated]_
 
 ---

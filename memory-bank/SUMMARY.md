@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 16:09:35 UTC_
-_Total active entries: 505_
+_Last consolidated: 2026-06-10 20:30:03 UTC_
+_Total active entries: 506_
 
 ## By Category
 
-- **other**: 187 entries
+- **other**: 188 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -19,6 +19,7 @@ _Total active entries: 505_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 2002 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107202 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781107250 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781087402 min — propose next cycle
@@ -68,7 +69,6 @@ _Total active entries: 505_
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | 242 leaked system prompts from 14 vendors cloned to `reference/system-prompts/` — every agent can now study how Claude Code, ChatGPT 5.5, Gemini, Antigravity, Copilot, Grok, and Cursor structure their own instructions and apply those patterns to improve the compound.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 3 new chat messages ingested into DuckDB and written to knowledge docs with no failures.
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 3 new messages ingested and classified into DuckDB across architecture/configuration categories; 1,174 total entries, 2.5% unclassified noise — pipe is clean.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 5 new messages ingested and knowledge docs updated.
 
 ---
 
