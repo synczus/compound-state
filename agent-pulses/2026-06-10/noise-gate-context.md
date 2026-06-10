@@ -1,45 +1,45 @@
 # Noise Gate Context
 
-_Generated: 2026-06-10 09:12:01 UTC_
+_Generated: 2026-06-10 10:12:44 UTC_
 
 ## Last 24h
 
-- PROMOTE: 57
-- PURGE: 63
-- Total: 120
+- PROMOTE: 62
+- PURGE: 66
+- Total: 128
 
 ## Top Reasons
 
-- No significant markers found: 63
-- Security/vulnerability signal: 44
+- No significant markers found: 66
+- Security/vulnerability signal: 49
 - Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 8
+- Direct actionability detected: 8
 - Convergence detected: 6
-- Dependency/ecosystem shift: 6
-- Direct actionability detected: 5
 
 ## Sources
 
-- GitHub_vscode: 58
+- GitHub_vscode: 62
 - GitHub_langchain: 20
+- GitHub_unsloth: 18
 - GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 13
-- GitHub_unsloth: 13
+- GitHub_llama.cpp: 12
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit f542ffb by Michael Han: Studio: unify shadows, backgrounds and dark mode consistency in chat UI (#6116)  * Studio
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 05b0388 by BeniBenj: remove second rename
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 7d5f746 by Benjamin Christopher Simmonds: Merge pull request #320728 from microsoft/benibenj/specified-rabbit  Re
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 959a2d1 by Lucas Parzianello: Fixed typo in cli update (#245751)  fixed typo in cli update  Co-authored-by: Lucas
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit d086ffe by Alexandru Dima: speed up vscode work tree flows (#320729)
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 87deee7 by Daniel Han: Studio: faithful conversation export and import round trips (ShareGPT system role, CSV quo
+- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit f41617a by Daniel Han: Studio: auto-sync allowScripts pins after dependency bumps (#6136)  * Studio: npm v12 read
+- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 5f622f6 by Matt Van Horn: fix: clearer Studio setup error when GPU driver is too old for the installed CUDA toolk
+- PROMOTE score=10 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal preview=Commit 3307561 by Daniel Han: Studio: npm v12 readiness for install-script gating (#6128)  npm 12 (July 2026) stops runn
 - PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 4d2f29f by Michael Han: Studio: center account avatar vertically in sidebar footer pill (#6026)  Co-authored-by: 
 - PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 256d17e by Darshan Poudel: fix(studio): block arbitrary external image URLs in markdown renderer (#5602)  * fix(s
 - PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit d2e22ed by ddh0: speculative : fix "ngram-map-k4v" name in logging (#24253)  This is a non-functional change.  Wh
-- PROMOTE score=3 source=GitHub_llama.cpp reason=Dependency/ecosystem shift preview=Commit 039e20a by Sigbjørn Skjæret: ci : bump komac version (#24396)
-- PROMOTE score=4 source=GitHub_vscode reason=Structural shift (engineering refactor/rewrite) preview=Commit dd2b63d by Don Jayamanne: refactor: streamline agent host completion variable handling and improve attachment ren
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 43d16cd by Don Jayamanne: Merge pull request #320721 from microsoft/agents/today-in-skill-completion-provider-for
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit fcfbf16 by Daniel Han: studio(ui): use the --primary brand token for the avatar fallback color (#5987)  * studio(
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 03349d1 by Matt Van Horn: feat: support text-only loading of Gemma 3 27B via FastLanguageModel (skip SiglipVision
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 77fc8de by Justin Chen: agent host pickers: align picker text + update styling (#320687)  * align picker text + u
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit cb86056 by Connor Peet: agentHost: describe empty attachment tool results (#320707)  When a successful client too
-- PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit 039ed38 by Matt Miller: fix(assets): remove unused delete_content param from deleteAsset (#14241)  * fix(assets):
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 8848a31 by Daniel Han: Studio: clean-room compact RAG (knowledge bases, hybrid search, fast indexing) (#5910)  Ad
 
 ## Agent Use
 

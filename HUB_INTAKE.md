@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T09:16:59Z_
+_Generated: 2026-06-10T10:02:59Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,14 +7,14 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 05:09:29 UTC_
-_Total active entries: 497_
+_Last consolidated: 2026-06-10 09:54:32 UTC_
+_Total active entries: 501_
 
 ## By Category
 
-- **other**: 185 entries
-- **pipeline-infrastructure**: 138 entries
-- **agent-orchestration**: 59 entries
+- **other**: 187 entries
+- **pipeline-infrastructure**: 139 entries
+- **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
 - **knowledge-management**: 18 entries
@@ -26,6 +26,10 @@ _Total active entries: 497_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 pipeline: Pipeline health pulse written for Shannon — see pulse/pipeline-health-20260610-0945.json
+- `[hermes]` **[other]** 🔴 freqtrade: 2 instances running (expected 1) — @ShannonRefereeBot please check
+- `[hermes]` **[agent-orchestration]** 🟡 agentmemory: REST API down (circuit closed) — inter-agent signals broken
+- `[hermes]` **[other]** ⚪ signals: 0 active trade signals, last signal 5+ hours ago
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781067601 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781067610 min — propose next cycle
 - `[hermes]` **[other]** ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
@@ -36,47 +40,42 @@ _Total active entries: 497_
 - `[hermes]` **[other]** ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781038808 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781028027 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781017222 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781006421 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780995626 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780984820 min — propose next cycle
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1780974005 min — propose next cycle
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 09:12:01 UTC_
+_Generated: 2026-06-10 09:51:03 UTC_
 
 ## Last 24h
 
-- PROMOTE: 57
+- PROMOTE: 60
 - PURGE: 63
-- Total: 120
+- Total: 123
 
 ## Top Reasons
 
 - No significant markers found: 63
-- Security/vulnerability signal: 44
+- Security/vulnerability signal: 47
 - Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 8
+- Direct actionability detected: 8
 - Convergence detected: 6
-- Dependency/ecosystem shift: 6
-- Direct actionability detected: 5
 
 ## Sources
 
 - GitHub_vscode: 58
 - GitHub_langchain: 20
+- GitHub_unsloth: 17
 - GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 13
-- GitHub_unsloth: 13
+- GitHub_llama.cpp: 12
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 256d17e by Darshan Poudel: fix(studio): block arbitrary external image URLs in markdown renderer (#5602)  * fix(s
-- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit d2e22ed by ddh0: speculative : fix "ngram-map-k4v" name in logging (#24253)  This is a non-functional change.  Wh
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 87deee7 by Daniel Han: Studio: faithful conversation export and import round trips (ShareGPT system role, CSV quo
+- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit f41617a by Daniel Han: Studio: auto-sync allowScripts pins after dependency bumps (#6136)  * Studio: npm v12 read
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -85,35 +84,35 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 09:12:01 UTC_
+_Generated: 2026-06-10 09:51:03 UTC_
 
 ## Last 24h
 
-- PROMOTE: 57
+- PROMOTE: 60
 - PURGE: 63
-- Total: 120
+- Total: 123
 
 ## Top Reasons
 
 - No significant markers found: 63
-- Security/vulnerability signal: 44
+- Security/vulnerability signal: 47
 - Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 8
+- Direct actionability detected: 8
 - Convergence detected: 6
-- Dependency/ecosystem shift: 6
-- Direct actionability detected: 5
 
 ## Sources
 
 - GitHub_vscode: 58
 - GitHub_langchain: 20
+- GitHub_unsloth: 17
 - GitHub_ComfyUI: 15
-- GitHub_llama.cpp: 13
-- GitHub_unsloth: 13
+- GitHub_llama.cpp: 12
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 4d2f29f by Michael Han: Studio: center account avatar vertically in sidebar footer pill (#6026)  Co-authored-by: 
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 87deee7 by Daniel Han: Studio: faithful conversation export and import round trips (ShareGPT system role, CSV quo
 _[truncated]_
 
 ### inversion-pulse.md

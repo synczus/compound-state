@@ -761,3 +761,29 @@
 - [ ] 🔴 hop: Active hop — openclaw's turn: Auto cycle — full squad sweep
 - [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T09:30:01Z ---
+- [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T09:30:09Z ---
+- [ ] 🔴 hop: Active hop — shannon's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T09:48:25Z ---
+- [ ] 🟡 pipeline: Pipeline health pulse written for Shannon — see pulse/pipeline-health-20260610-0945.json
+- [ ] 🔴 freqtrade: 2 instances running (expected 1) — @ShannonRefereeBot please check
+- [ ] 🟡 agentmemory: REST API down (circuit closed) — inter-agent signals broken
+- [ ] ⚪ signals: 0 active trade signals, last signal 5+ hours ago
+
+--- pulse 2026-06-10T10:00:01Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
+
+--- pulse 2026-06-10T10:00:09Z ---
+- [ ] 🔴 hop: Active hop — hermes's turn: Auto cycle — full squad sweep
+- [ ] ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
+- [ ] ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00

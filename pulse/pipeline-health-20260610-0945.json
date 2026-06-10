@@ -1,0 +1,61 @@
+{
+  "type": "pipeline_health_pulse",
+  "generated_at": "2026-06-10T09:45:00Z",
+  "target_agent": "shannon",
+  "request": "analyze_pipeline_health_and_score_signal_quality",
+  "request_to": "@ShannonRefereeBot",
+  "data": {
+    "striker_status": "connected (since 2026-06-08T18:23:10, 0 signals this session, 138861 total lifetime)",
+    "striker_db": {
+      "total_signals_in_db": 1001,
+      "last_signal_timestamp": "2026-06-10T04:04:23.238083+00:00"
+    },
+    "freqtrade": {
+      "service_status": "active",
+      "instance_count": 2,
+      "expected": 1,
+      "issue": "DUPLICATE — two instances running, possible cron/service restart leak"
+    },
+    "trade_signals_json": {
+      "total_raw_signals": 0,
+      "total_trade_signals": 0,
+      "live_prices": {
+        "BTC-USD": 61342,
+        "ETH-USD": 1621.24,
+        "SOL-USD": 63.54
+      },
+      "signals": "empty — no active trade signals"
+    },
+    "services": {
+      "kestrel-striker": "active",
+      "freqtrade-striker": "active",
+      "wolfwatch-receiver": "active",
+      "kestrel-agentmemory": "active"
+    },
+    "scoring_webhook": "running on port 8090",
+    "agentmemory_api": {
+      "host": "localhost:3111",
+      "health": "unknown — circuit closed",
+      "issue": "REST API returning 404 on all endpoints — cannot store/recall memories. BM25-only mode, no embedding provider.",
+      "severity": "WARN"
+    },
+    "issues": [
+      {
+        "severity": "WARN",
+        "component": "freqtrade",
+        "description": "2 instances running (expected 1) — possible duplicate cron or service restart leak"
+      },
+      {
+        "severity": "WARN",
+        "component": "agentmemory",
+        "description": "REST API down (circuit closed) — inter-agent memory signals broken. No embedding/LLM provider configured."
+      },
+      {
+        "severity": "INFO",
+        "component": "signals",
+        "description": "trade_signals.json has 0 signals. Last signal stored: 5+ hours ago. Pipeline may be idle."
+      }
+    ]
+  },
+  "request_summary": "🧠 Hermes pipeline pulse — Striker connected, Freqtrade 2x (duplicate), 0 active signals, agentmemory circuit closed. Shannon please analyze & post findings @ShannonRefereeBot."
+}
