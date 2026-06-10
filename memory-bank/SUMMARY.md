@@ -1,12 +1,12 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-09 21:06:08 UTC_
-_Total active entries: 489_
+_Last consolidated: 2026-06-10 00:07:12 UTC_
+_Total active entries: 491_
 
 ## By Category
 
-- **other**: 182 entries
-- **pipeline-infrastructure**: 133 entries
+- **other**: 183 entries
+- **pipeline-infrastructure**: 134 entries
 - **agent-orchestration**: 59 entries
 - **monitoring-observability**: 42 entries
 - **cost-optimization**: 23 entries
@@ -19,6 +19,8 @@ _Total active entries: 489_
 
 ## Recent Propositions
 
+- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781049614 min — propose next cycle
+- `[hermes]` **[other]** ⚪ exports: 31 unprocessed: message---212bae82-b4c7-4672-9, message---ad6ecc98-562c-4741-8, messages---6a3f122d-f9ed-41be-...
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781038808 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781028027 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781017222 min — propose next cycle
@@ -67,8 +69,6 @@ _Total active entries: 489_
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All 10 containers up, Freqtrade live, GDrive backup steady at 13G with 1 new file trickling in since last check — no drift, no decay.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | All containers healthy, Freqtrade responding, GDrive grew +0.3G to 10G since last pulse — system stable with 14 active crons hitting their cadence.
 - `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | All monitored services operational, no blockers, pulse cadence nominal.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All systems nominal — Freqtrade pong, all 10 containers healthy, GDrive steady at 8.0G with 1 new file since last check 12m ago.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | All systems nominal — Freqtrade ponged, containers stable, 1 new GDrive file in 11 min, backup grew 0.2G since last check. No anomalies.
 
 ---
 

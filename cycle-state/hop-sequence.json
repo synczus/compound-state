@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "chain": [
     "nemoclaw",
     "openclaw",
@@ -14,11 +14,11 @@
   "openclaw_done": true,
   "kairos_done": true,
   "shannon_done": true,
-  "hermes_done": true,
-  "complete": true,
+  "hermes_done": false,
+  "complete": false,
   "auto": true,
-  "idle_since": "2026-06-09T23:21:06Z",
-  "last_updated": "2026-06-09T23:21:06Z",
+  "idle_since": "",
+  "last_updated": "2026-06-10T00:26:16Z",
   "nemoclaw_message": "Baton pass \u2014 no P0/P1 work on board, cycle-state clean, heartbeat OK",
   "kairos_message": "",
   "shannon_message": "",
