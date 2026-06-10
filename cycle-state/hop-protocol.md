@@ -53,22 +53,11 @@ When **OpenClaw proposes a build plan** in group chat, Kairos auto-triggers a ch
 
 This prevents groupthink. The compound builds faster when every plan gets stress-tested first.
 
-## Auto-Initiation
+## Auto-Initiation — DISABLED (2026-06-10 by Chase)
 
-When `complete: true` and `idle_since` > 30 minutes:
+Auto-initiation is OFF. No agent starts new cycles without a direct prompt from Chase.
 
-### Kairos (on heartbeat):
-- Reads hop file, sees idle + auto
-- Scouts the compound's next highest-leverage move
-- Writes new query to hop file, sets `active: true`, `chain: ["kairos", "grok", "openclaw"]`
-- Posts in group: "New cycle: {query}"
-- Sets `kairos_done: true`, advances step to 1
-
-### OpenClaw (on heartbeat):
-- Reads hop file, checks for idle + auto
-- If no new cycle from Kairos in >35 min, proposes own investigation topic
-- Writes query, sets `active: true`, `chain: ["kairos", "grok", "openclaw"]`
-- Kairos then challenges it (challenge loop fires)
+**Reactivate** by restoring this section and setting `auto: true` in the hop s
 
 ## Hard Rules
 

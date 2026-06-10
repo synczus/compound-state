@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T17:12:09Z_
+_Generated: 2026-06-10T19:16:03Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,35 +47,37 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 16:37:18 UTC_
+_Generated: 2026-06-10 19:00:44 UTC_
 
 ## Last 24h
 
-- PROMOTE: 84
-- PURGE: 54
-- Total: 138
+- PROMOTE: 89
+- PURGE: 56
+- Total: 145
 
 ## Top Reasons
 
-- Security/vulnerability signal: 74
-- No significant markers found: 54
-- Dependency/ecosystem shift: 13
+- Security/vulnerability signal: 76
+- No significant markers found: 56
+- Dependency/ecosystem shift: 14
 - Direct actionability detected: 13
-- Structural shift (engineering refactor/rewrite): 9
-- Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 10
+- Convergence detected: 10
 
 ## Sources
 
-- GitHub_vscode: 58
-- GitHub_unsloth: 41
-- GitHub_langchain: 20
+- GitHub_vscode: 52
+- GitHub_unsloth: 50
+- GitHub_langchain: 25
 - GitHub_ComfyUI: 10
-- GitHub_llama.cpp: 7
+- GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 
 ## Recent Decisions
 
-- PROMOTE score=9 source=GitHub_vscode reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit 644acb0 by Lee Murray: Refactor chat action icons for consistency (#320752)  * refactor: update chat action icons
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 677bdd2 by Matt Bierner: Merge pull request #320754 from arun-357/fix/image-carousel-caption-markdown  Fix raw ma
+- PROMOTE score=4 source=GitHub_langchain reason=Structural shift (engineering refactor/rewrite) preview=Commit 3eee400 by Christophe Bornet: refactor(langchain): refactor `test_create_agent_tool_validation` (#34443)  Simplif
+- PROMOTE score=3 source=GitHub_unsloth reason=Dependency/ecosystem shift preview=Commit ec46a55 by Daniel Han: Bump install.sh / install.ps1 pin to unsloth>=2026.6.2 (#6165)
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -84,35 +86,35 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 16:37:18 UTC_
+_Generated: 2026-06-10 19:00:44 UTC_
 
 ## Last 24h
 
-- PROMOTE: 84
-- PURGE: 54
-- Total: 138
+- PROMOTE: 89
+- PURGE: 56
+- Total: 145
 
 ## Top Reasons
 
-- Security/vulnerability signal: 74
-- No significant markers found: 54
-- Dependency/ecosystem shift: 13
+- Security/vulnerability signal: 76
+- No significant markers found: 56
+- Dependency/ecosystem shift: 14
 - Direct actionability detected: 13
-- Structural shift (engineering refactor/rewrite): 9
-- Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 10
+- Convergence detected: 10
 
 ## Sources
 
-- GitHub_vscode: 58
-- GitHub_unsloth: 41
-- GitHub_langchain: 20
+- GitHub_vscode: 52
+- GitHub_unsloth: 50
+- GitHub_langchain: 25
 - GitHub_ComfyUI: 10
-- GitHub_llama.cpp: 7
+- GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit c689dc5 by Michael Han: Chat UI polish: template editor reset, circular action button hovers (#6151)  * Chat temp
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 677bdd2 by Matt Bierner: Merge pull request #320754 from arun-357/fix/image-carousel-caption-markdown  Fix raw ma
 _[truncated]_
 
 ### inversion-pulse.md
