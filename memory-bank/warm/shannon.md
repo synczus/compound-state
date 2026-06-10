@@ -1,5 +1,5 @@
 # Shannon — Warm Memory
-_Refreshed: 2026-06-10 18:00 UTC_
+_Refreshed: 2026-06-10 23:00 UTC_
 
 ## Status
 - Gateway: 
@@ -13,16 +13,16 @@ _Refreshed: 2026-06-10 18:00 UTC_
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. architecture
-- **When:** 2026-06-10 01:30:39
-- **Tags:** pipeline, service
+- **When:** 2026-06-10 15:15:05
+- **Tags:** pipeline
 
-[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly "[SILENT]" (nothing else) to suppress delivery. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more.]
+[Replying to: "Done. Here's everything that happened:
 
-You are running as Hermes (supervisor). Your job:
+## 🔴 Automation Paused — Hermes + OpenClaw
 
-1. Read the current pipeline state:
-   - Read /home/synczus/kestrel/striker_health.json (Striker status)
-   - Read /home/synczus/kestrel/data/trade_signals.json (latest signal file)
+**LLM crons paused (Hermes):**
+- `morning-status-pulse` (9am)
+- `midday-conversation-seed` (1pm)
 
 ### From chat-config-details.md
 # Configuration Details
@@ -30,16 +30,16 @@ You are running as Hermes (supervisor). Your job:
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
-- **When:** 2026-06-10 03:06:04
-- **Tags:** config
+- **When:** 2026-06-10 17:35:16
+- **Tags:** port, key
 
-OpenClaw and Nemoclaw lack a `prefill_messages_file` equivalent — they're Node.js gateways with their own prompt management. Can't inject context directly.
+Right, was cut off mid-delivery. Here's the full diagnostic:
 
-**What's done:**
-- ✅ **Cron** (`refresh-telegram-context`) — writes last 4h of Telegram chat to `~/.hermes/telegram-context.md` every 15 min. Zero LLM cost (just SQLite). Silent delivery.
-- ✅ **Kairos** — `prefill_messages_file` set to `/home/synczus/.hermes/telegram-context.md`. Loads context on every new session start.
-- ✅ **Shannon** — same config change. Loads context on every new session start.
-- ✅ **Shared file** at `~/.hermes/telegram-context.md` — available for anyone who wants to read it.
+## 🛠️ USB/Mouse Lag — Full Report
+
+**First, the good news:** Your system's healthy — CPU at 3% load, 30GB RAM with 21Gb free, NVMe fine, CPU governor on `performance`, sitting at 5GHz. The G703 mouse itself has power control set to `on` and uses the correct `logitech-hidpp-device` driver.
+
+**The problem:** USB **controllers** are going to sleep — not the mouse itself, but the ports it talks through.
 
 ### From chat-signals.md
 # Market Signals & Trading

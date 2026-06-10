@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 21:30:01 UTC_
-_Total active entries: 508_
+_Last consolidated: 2026-06-10 22:00:01 UTC_
+_Total active entries: 510_
 
 ## By Category
 
-- **other**: 190 entries
+- **other**: 192 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -19,6 +19,8 @@ _Total active entries: 508_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 4352 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 3081 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2023 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2822 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2002 signals (0 >=0.3%), last 1970-01-01 00:00:00
@@ -67,8 +69,6 @@ _Total active entries: 508_
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 16 messages ingested and knowledge docs regenerated.
 - `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 16 new Telegram messages ingested into DuckDB with classification and knowledge docs regenerated.
 - `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 19 new skills installed across all agents — Impeccable (35.9k, design audit) + Taste-Skill (37.8k, anti-slop framework, 13 sub-skills) + Last30Days (32.7k, research) — every agent now has design taste, research depth, and quality guardrails baked in.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 2 new user messages ingested from Hermes state DB into DuckDB with knowledge docs regenerated.
-- `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | 242 leaked system prompts from 14 vendors cloned to `reference/system-prompts/` — every agent can now study how Claude Code, ChatGPT 5.5, Gemini, Antigravity, Copilot, Grok, and Cursor structure their own instructions and apply those patterns to improve the compound.
 
 ---
 

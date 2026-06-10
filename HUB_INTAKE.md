@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-10T21:35:16Z_
+_Generated: 2026-06-10T23:06:32Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,12 +7,12 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 21:30:01 UTC_
-_Total active entries: 508_
+_Last consolidated: 2026-06-10 22:00:01 UTC_
+_Total active entries: 510_
 
 ## By Category
 
-- **other**: 190 entries
+- **other**: 192 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -26,6 +26,8 @@ _Total active entries: 508_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 4352 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 3081 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2023 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2822 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2002 signals (0 >=0.3%), last 1970-01-01 00:00:00
@@ -39,44 +41,42 @@ _Total active entries: 508_
 - `[hermes]` **[other]** ⚪ signals: 0 active trade signals, last signal 5+ hours ago
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781067601 min — propose next cycle
 - `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781067610 min — propose next cycle
-- `[hermes]` **[other]** ⚪ striker: 1001 signals (0 >=0.3%), last 1970-01-01 00:00:00
-- `[hermes]` **[pipeline-infrastructure]** 🟡 hop: Hop idle 1781064001 min — propose next cycle
 _[truncated]_
 
 ## Noise Gate Context (last 24h)
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 21:34:48 UTC_
+_Generated: 2026-06-10 22:56:29 UTC_
 
 ## Last 24h
 
-- PROMOTE: 87
-- PURGE: 53
-- Total: 140
+- PROMOTE: 85
+- PURGE: 57
+- Total: 142
 
 ## Top Reasons
 
-- Security/vulnerability signal: 75
-- No significant markers found: 53
+- Security/vulnerability signal: 74
+- No significant markers found: 57
 - Dependency/ecosystem shift: 15
 - Direct actionability detected: 12
-- Structural shift (engineering refactor/rewrite): 9
 - Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 8
 
 ## Sources
 
 - GitHub_vscode: 50
 - GitHub_unsloth: 49
-- GitHub_langchain: 24
+- GitHub_langchain: 25
 - GitHub_ComfyUI: 9
-- GitHub_llama.cpp: 5
+- GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 41c7c99 by Justin Chen: fix image thumbnail crash on aux windows (#320843)
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit f0b4e1e by Matt Bierner: Merge pull request #314958 from dymaaaj7/patch-3  Fix declaration order of File and Refe
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -85,37 +85,53 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 21:34:48 UTC_
+_Generated: 2026-06-10 22:56:29 UTC_
 
 ## Last 24h
 
-- PROMOTE: 87
-- PURGE: 53
-- Total: 140
+- PROMOTE: 85
+- PURGE: 57
+- Total: 142
 
 ## Top Reasons
 
-- Security/vulnerability signal: 75
-- No significant markers found: 53
+- Security/vulnerability signal: 74
+- No significant markers found: 57
 - Dependency/ecosystem shift: 15
 - Direct actionability detected: 12
-- Structural shift (engineering refactor/rewrite): 9
 - Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 8
 
 ## Sources
 
 - GitHub_vscode: 50
 - GitHub_unsloth: 49
-- GitHub_langchain: 24
+- GitHub_langchain: 25
 - GitHub_ComfyUI: 9
-- GitHub_llama.cpp: 5
+- GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 1aa1704 by Mason Daugherty: release(langchain-classic): 1.0.8 (#38033)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 53b852a by Martin Aeschlimann: Do not clear agent when switching from initial to commited session (#320762)
 _[truncated]_
+
+### nemoclaw-cost-pulse-1825.md
+
+# Nemoclaw Cost Pulse — 2026-06-10T18:25Z
+
+**Source:** cron (cost-tracker-every-6h)
+
+## Findings
+- ❌ **cost-tracker.sh missing** — script at expected path doesn't exist. heartbeat written with warning status.
+- 💰 **OpenRouter: $6.46 remaining** ($251.54 used of $258 total) — critical. At ~$6/day burn, ~24h of runway left.
+- 🟡 **AgentMemory REST API down** (circuit closed) — inter-agent signals broken.
+- ⚪ **Striker:** 0 signals this session, connected ~48h. Total lifetime: 138,861.
+- ⚪ **Wolfwatch:** inactive (since last briefing).
+
+## Action
+- Pulse written to track missing script and low budget.
 
 ### inversion-pulse.md
 
@@ -175,20 +191,3 @@ _[truncated]_
 - STALE: thought-drop-voice (47h), market-pulse (46h) — old, known dead
 - STALE: squirrel-inbox-feeder (25min — borderline, max_age 20min)
 - MISSING: agent-pulse-sync (never ran), state-probe (never ran)
-
-### nemoclaw-ingestion-pulse-0425.md
-
-# Nemoclaw Ingestion Pulse — 2026-06-10T04:25Z
-
-**Source:** cron (signal-ingestion-pulse)
-**Script:** scripts/ingestion/pulse.sh
-
-## Result
-- `pulse.sh`: No new exports found ✅
-- Master-todo.md still stale (last updated June 8)
-- No pending votes
-- Active pipeline state per HUB_INTAKE:
-  - Striker: ✅ ONLINE (PID 352751)
-  - WolfWatch: ✅ ONLINE
-  - Meta-monitor: ⚠️ STALE (35min heartbeat)
-  - ~31 unprocessed Telegram exports still backlogged

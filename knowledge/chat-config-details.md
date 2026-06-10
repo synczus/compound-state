@@ -3,6 +3,66 @@
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
+- **When:** 2026-06-10 18:44:55
+- **Tags:** timeout
+
+Found it. Here's what's going on:
+
+**`hop-chain-v2`** — runs **every 5 minutes** in Kairos's profile. It's a coordination baton that cycles through: `kairos → nemoclaw → openclaw → shannon → hermes`, announcing whose turn it is and waiting 30 min for each to respond. When done, waits 10 min idle, then auto-restarts.
+
+**Is it doing anything useful?** Right now — **not really.** It's `no_agent=true` (zero LLM cost, just a Python script), but it delivers to Telegram every fire. Since automation's paused and agents aren't actively responding, it just cycles through timeouts and restarts over and over. 514 runs so far, 99% of them noise.
+
+**If you disable it, does it affect the automation toggle?** **Completely separate.** The automation toggle I built only controls Hermes crons + require_menti
+_[truncated]_
+
+---
+
+### 2. configuration_detail
+- **When:** 2026-06-10 17:35:16
+- **Tags:** port, key
+
+Right, was cut off mid-delivery. Here's the full diagnostic:
+
+## 🛠️ USB/Mouse Lag — Full Report
+
+**First, the good news:** Your system's healthy — CPU at 3% load, 30GB RAM with 21Gb free, NVMe fine, CPU governor on `performance`, sitting at 5GHz. The G703 mouse itself has power control set to `on` and uses the correct `logitech-hidpp-device` driver.
+
+**The problem:** USB **controllers** are going to sleep — not the mouse itself, but the ports it talks through.
+
+**Affected devices in `auto` suspend:**
+- `2-5` — ASMedia ASM1074 SuperSpeed hub (shares PCIe bus with your USB ports)
+- `1-7` — MediaTek wireless adapter
+- All 7 xHCI root hub controllers
+
+2000ms autosuspend delay means: after 2 seconds of idle, the controller drops to low power. When you move the mouse, it has to wake the controll
+_[truncated]_
+
+---
+
+### 3. configuration_detail
+- **When:** 2026-06-10 17:31:36
+- **Tags:** config, configured
+
+Can't fix directly — NOPASSWD isn't configured for this user, so sysfs is root-only. Here's what I found though:
+
+## 🛠️ USB/Mouse Lag Diagnostic
+
+**System:** Healthy — CPU 3% load, 30GB RAM (21 free), NVMe fine, CPU governor set to `performance`, 5GHz clock.
+
+**Mouse:** G703 LIGHTSPEED on Bus 003 (direct root hub, not through a hub). Driver: `logitech-hidpp-device` — correct. Power control: `on` (good).
+
+**🔴 PROBLEM: USB Controllers in `auto` suspend mode**
+
+The ASMedia ASM1074 hub (USB 3.0 + 2.0) and all xHCI root hubs have `power/control: auto` with 2000ms autosuspend delay. When these controllers enter a low-power state, all downstream devices stutter on wake-up — that's your mouse lag.
+
+Also affected devices currently in `auto`:
+- `1-7` — MediaTek wireless adapter
+- `2-5` — ASMedia Sup
+_[truncated]_
+
+---
+
+### 4. configuration_detail
 - **When:** 2026-06-10 03:06:04
 - **Tags:** config
 
@@ -19,7 +79,7 @@ _[truncated]_
 
 ---
 
-### 2. configuration_detail
+### 5. configuration_detail
 - **When:** 2026-06-10 03:06:04
 - **Tags:** config
 
@@ -32,7 +92,7 @@ Let me check the Hermes profile configs for the right injection point.
 
 ---
 
-### 3. configuration_detail
+### 6. configuration_detail
 - **When:** 2026-06-10 02:46:03
 - **Tags:** config, token
 
@@ -55,7 +115,7 @@ _[truncated]_
 
 ---
 
-### 4. configuration_detail
+### 7. configuration_detail
 - **When:** 2026-06-10 02:46:03
 - **Tags:** token
 
@@ -71,7 +131,7 @@ Let me build the script and wire it up for everyone
 
 ---
 
-### 5. configuration_detail
+### 8. configuration_detail
 - **When:** 2026-06-10 02:42:42
 - **Tags:** token
 
@@ -87,7 +147,7 @@ HL: Shared context = recurring token cost per agent per turn. On-demand recall i
 
 ---
 
-### 6. configuration_detail
+### 9. configuration_detail
 - **When:** 2026-06-10 02:36:57
 - **Tags:** config, configured, token
 
@@ -109,7 +169,7 @@ _[truncated]_
 
 ---
 
-### 7. configuration_detail
+### 10. configuration_detail
 - **When:** 2026-06-10 01:36:09
 - **Tags:** port
 
@@ -121,7 +181,7 @@ HL: Freqtrade login creds are ready whenever you get to it.
 
 ---
 
-### 8. configuration_detail
+### 11. configuration_detail
 - **When:** 2026-06-10 01:21:38
 - **Tags:** token
 
@@ -141,7 +201,7 @@ HL: Freqtrade API working on 8082, login is synczus / v0tLq1u9yajNXkgN — just 
 
 ---
 
-### 9. configuration_detail
+### 12. configuration_detail
 - **When:** 2026-06-10 01:13:47
 - **Tags:** port
 
@@ -151,7 +211,7 @@ Now let me fix the sudo so you can work from your phone, then check Telegram men
 
 ---
 
-### 10. configuration_detail
+### 13. configuration_detail
 - **When:** 2026-06-10 01:13:47
 - **Tags:** port
 
@@ -159,7 +219,7 @@ Got a bunch to tackle. Let me check the Freqtrade port first, load the sudo skil
 
 ---
 
-### 11. configuration_detail
+### 14. configuration_detail
 - **When:** 2026-06-10 01:10:57
 - **Tags:** config, configured, parameter, key
 
@@ -180,7 +240,7 @@ _[truncated]_
 
 ---
 
-### 12. configuration_detail
+### 15. configuration_detail
 - **When:** 2026-06-10 00:58:54
 - **Tags:** port
 
@@ -190,7 +250,7 @@ Let me clean up cron — check what's actually running vs paused.
 
 ---
 
-### 13. configuration_detail
+### 16. configuration_detail
 - **When:** 2026-06-09 22:46:16
 - **Tags:** config, port, token
 
@@ -215,7 +275,7 @@ _[truncated]_
 
 ---
 
-### 14. configuration_detail
+### 17. configuration_detail
 - **When:** 2026-06-09 21:20:56
 - **Tags:** config, port, token
 
@@ -229,7 +289,7 @@ HL: Headroom v0.23.0 running on :8787 — pick primary or fallback.
 
 ---
 
-### 15. configuration_detail
+### 18. configuration_detail
 - **When:** 2026-06-09 21:20:56
 - **Tags:** port
 
@@ -237,7 +297,7 @@ Found it. Two service files, the right one is `headroom-proxy.service` — port 
 
 ---
 
-### 16. configuration_detail
+### 19. configuration_detail
 - **When:** 2026-06-09 21:16:06
 - **Tags:** port
 
@@ -256,7 +316,7 @@ HL: Harness bypass confirmed — `OPENAI_BASE_URL` dead, headroom proxy down, al
 
 ---
 
-### 17. configuration_detail
+### 20. configuration_detail
 - **When:** 2026-06-08 21:27:16
 - **Tags:** port
 
@@ -273,7 +333,7 @@ _[truncated]_
 
 ---
 
-### 18. configuration_detail
+### 21. configuration_detail
 - **When:** 2026-06-08 18:04:14
 - **Tags:** config
 
@@ -306,7 +366,7 @@ _[truncated]_
 
 ---
 
-### 19. configuration_detail
+### 22. configuration_detail
 - **When:** 2026-06-08 17:35:15
 - **Tags:** config
 
@@ -331,7 +391,7 @@ Doing it now. No more config. Only execution.
 
 ---
 
-### 20. configuration_detail
+### 23. configuration_detail
 - **When:** 2026-06-08 17:34:32
 - **Tags:** config
 
@@ -345,7 +405,7 @@ Doing it now. No more config. Only execution.
 
 ---
 
-### 21. configuration_detail
+### 24. configuration_detail
 - **When:** 2026-06-08 15:05:10
 - **Tags:** port
 
@@ -364,7 +424,7 @@ _[truncated]_
 
 ---
 
-### 22. configuration_detail
+### 25. configuration_detail
 - **When:** 2026-06-08 14:55:58
 - **Tags:** port
 
@@ -382,7 +442,7 @@ _[truncated]_
 
 ---
 
-### 23. configuration_detail
+### 26. configuration_detail
 - **When:** 2026-06-08 14:49:13
 - **Tags:** config, configured
 
@@ -392,7 +452,7 @@ I'll start by checking for recent file changes in the Kestrel root and verifying
 
 ---
 
-### 24. configuration_detail
+### 27. configuration_detail
 - **When:** 2026-06-08 13:41:41
 - **Tags:** config
 
@@ -411,7 +471,7 @@ _[truncated]_
 
 ---
 
-### 25. configuration_detail
+### 28. configuration_detail
 - **When:** 2026-06-08 13:23:00
 - **Tags:** setting, threshold, token
 
@@ -430,7 +490,7 @@ _[truncated]_
 
 ---
 
-### 26. configuration_detail
+### 29. configuration_detail
 - **When:** 2026-06-08 13:07:34
 - **Tags:** config, key, token
 
@@ -447,7 +507,7 @@ _[truncated]_
 
 ---
 
-### 27. configuration_detail
+### 30. configuration_detail
 - **When:** 2026-06-08 13:05:56
 - **Tags:** config, port, key, token
 
@@ -464,7 +524,7 @@ _[truncated]_
 
 ---
 
-### 28. configuration_detail
+### 31. configuration_detail
 - **When:** 2026-06-08 13:03:14
 - **Tags:** key
 
@@ -472,7 +532,7 @@ I can’t confirm auto-routing as the only cause yet. I *can* confirm from real 
 
 ---
 
-### 29. configuration_detail
+### 32. configuration_detail
 - **When:** 2026-06-08 12:03:12
 - **Tags:** port
 
@@ -493,7 +553,7 @@ All three majors green — BTC bouncing off the 60s, ETH and SOL following. **Fe
 
 ---
 
-### 30. configuration_detail
+### 33. configuration_detail
 - **When:** 2026-06-08 11:59:44
 - **Tags:** token
 
@@ -518,7 +578,7 @@ _[truncated]_
 
 ---
 
-### 31. configuration_detail
+### 34. configuration_detail
 - **When:** 2026-06-08 11:49:13
 - **Tags:** port
 
@@ -526,7 +586,7 @@ _[truncated]_
 
 ---
 
-### 32. configuration_detail
+### 35. configuration_detail
 - **When:** 2026-06-08 11:43:56
 - **Tags:** config, configured
 
@@ -536,7 +596,7 @@ Let me check the Headroom state and those existing systemd files.
 
 ---
 
-### 33. configuration_detail
+### 36. configuration_detail
 - **When:** 2026-06-08 11:42:05
 - **Tags:** port, token
 
@@ -546,7 +606,7 @@ Let me make it persistent so it survives reboots.
 
 ---
 
-### 34. configuration_detail
+### 37. configuration_detail
 - **When:** 2026-06-08 11:19:42
 - **Tags:** threshold
 
@@ -572,7 +632,7 @@ _[truncated]_
 
 ---
 
-### 35. configuration_detail
+### 38. configuration_detail
 - **When:** 2026-06-08 10:48:01
 - **Tags:** port
 
@@ -584,7 +644,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 36. configuration_detail
+### 39. configuration_detail
 - **When:** 2026-06-08 08:45:58
 - **Tags:** port
 
@@ -594,7 +654,7 @@ That's the only action-worthy item. Rest is TLDR newsletters, Substack, and a Li
 
 ---
 
-### 37. configuration_detail
+### 40. configuration_detail
 - **When:** 2026-06-08 08:05:19
 - **Tags:** config
 
@@ -608,7 +668,7 @@ Let me verify by hitting the API.
 
 ---
 
-### 38. configuration_detail
+### 41. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -626,7 +686,7 @@ What password do you want me to use?
 
 ---
 
-### 39. configuration_detail
+### 42. configuration_detail
 - **When:** 2026-06-08 07:40:13
 - **Tags:** config
 
@@ -634,7 +694,7 @@ That's your Freqtrade API dashboard — running at `127.0.0.1:8081`. The config 
 
 ---
 
-### 40. configuration_detail
+### 43. configuration_detail
 - **When:** 2026-06-08 07:36:59
 - **Tags:** port
 
@@ -656,7 +716,7 @@ Let me verify it loaded properly on Hermes.
 
 ---
 
-### 41. configuration_detail
+### 44. configuration_detail
 - **When:** 2026-06-08 07:03:27
 - **Tags:** config, setting, key
 
@@ -679,7 +739,7 @@ _[truncated]_
 
 ---
 
-### 42. configuration_detail
+### 45. configuration_detail
 - **When:** 2026-06-08 06:43:58
 - **Tags:** port
 
@@ -696,7 +756,7 @@ _[truncated]_
 
 ---
 
-### 43. configuration_detail
+### 46. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** config
 
@@ -704,7 +764,7 @@ OK — config blocked by TIRITH on the pipe (expected), and no budget guard conf
 
 ---
 
-### 44. configuration_detail
+### 47. configuration_detail
 - **When:** 2026-06-08 05:42:36
 - **Tags:** threshold, port
 
@@ -720,7 +780,7 @@ Let me check budget status since the $20 OpenRouter charge might push us past a 
 
 ---
 
-### 45. configuration_detail
+### 48. configuration_detail
 - **When:** 2026-06-08 04:08:43
 - **Tags:** key
 
@@ -728,7 +788,7 @@ n8n is already running. Version 2.23.4 on localhost:5678, and you already have t
 
 ---
 
-### 46. configuration_detail
+### 49. configuration_detail
 - **When:** 2026-06-08 03:47:56
 - **Tags:** config
 
@@ -738,50 +798,11 @@ The rclone config is written — let me verify it works and wire it to the notes
 
 ---
 
-### 47. configuration_detail
+### 50. configuration_detail
 - **When:** 2026-06-08 03:43:58
 - **Tags:** token
 
 There's a Google Drive token already sitting in `/tmp/rclone-token.json` from an earlier run. Let me wire it up
-
----
-
-### 48. configuration_detail
-- **When:** 2026-06-08 03:43:58
-- **Tags:** config, configured
-
-Rclone is installed but no remotes configured. Need to authorize with Google Drive — this requires a one-time OAuth flow. Let me check if there's a partial auth in progress
-
----
-
-### 49. configuration_detail
-- **When:** 2026-06-08 03:43:58
-- **Tags:** config, configured
-
-Rclone + Google Drive means notes are accessible from phone, backed up, and still local-first for the compound. Let me check what rclone is configured
-
----
-
-### 50. configuration_detail
-- **When:** 2026-06-08 03:42:29
-- **Tags:** port, token
-
-**Phase 1 is live.** Two test notes saved to `shared-knowledge/notes/`.
-
-Here's the deal on ramble room and autonomous capture:
-
-**Ramble room — covered:**
-- Every note you send saves the FULL text — no truncation, no compression, no summarization
-- The context compression (20% target ratio) only affects what I "remember" in active conversation. Your files on disk are untouched
-- This voice message, your ideas about notes, anything — lands as a complete file
-
-**Autonomous capture (Phase 2):**
-
-I can't poll Telegram autonomously while the Hermes gateway is running — only one consumer per bot token. Two options:
-
-1. **Quick setup** — DM @BotFather on Telegram, send `/newbot`, pick a name (e.g. "NoteTaker"), get the token, paste it here. I wire it up in 30 seconds. Zero conflict with Hermes.
-
-_[truncated]_
 
 ---
 
