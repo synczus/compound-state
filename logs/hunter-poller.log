@@ -1279,3 +1279,5 @@
 2026-06-11 11:40:48,306 [INFO] kestrel.poller: Next poll in ~20m (jittered)
 2026-06-11T16:00:01Z | Hunter poller already running
 2026-06-11T16:30:01Z | Hunter poller already running
+2026-06-11T17:00:01Z | Hunter poller already running
+2026-06-11T17:30:01Z | Hunter poller already running

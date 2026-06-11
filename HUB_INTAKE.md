@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-11
-_Generated: 2026-06-11T16:29:33Z_
+_Generated: 2026-06-11T17:30:32Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,41 +47,75 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 15:53:15 UTC_
+_Generated: 2026-06-11 17:16:46 UTC_
 
 ## Last 24h
 
-- PROMOTE: 93
-- PURGE: 79
-- Total: 172
+- PROMOTE: 87
+- PURGE: 84
+- Total: 171
 
 ## Top Reasons
 
-- No significant markers found: 79
-- Security/vulnerability signal: 76
-- Dependency/ecosystem shift: 21
-- Convergence detected: 15
-- Direct actionability detected: 14
-- Structural shift (engineering refactor/rewrite): 11
+- No significant markers found: 84
+- Security/vulnerability signal: 68
+- Dependency/ecosystem shift: 22
+- Convergence detected: 14
+- Direct actionability detected: 11
+- Structural shift (engineering refactor/rewrite): 10
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_unsloth: 57
-- GitHub_vscode: 57
+- GitHub_vscode: 61
+- GitHub_unsloth: 52
 - GitHub_langchain: 35
 - GitHub_ComfyUI: 11
-- GitHub_llama.cpp: 8
-- GitHub_openai-python: 2
+- GitHub_llama.cpp: 10
 - GitHub_AutoGPT: 2
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 73eed19 by Tai An: fix(_utils): coerce _is_package_available tuple to bool for flash_attn/vllm checks (#6168)  tr
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 181288e by Ritwij Aryan Parmar: fix(studio): handle empty Responses tool output (#6167)  • fix: handle empty resp
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c3f4c30 by Don Jayamanne: Add AI-generated Agent Host session titles (#320887)  * Add AI-generated agent host ses
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### noise-gate-context.md
+
+# Noise Gate Context
+
+_Generated: 2026-06-11 17:16:46 UTC_
+
+## Last 24h
+
+- PROMOTE: 87
+- PURGE: 84
+- Total: 171
+
+## Top Reasons
+
+- No significant markers found: 84
+- Security/vulnerability signal: 68
+- Dependency/ecosystem shift: 22
+- Convergence detected: 14
+- Direct actionability detected: 11
+- Structural shift (engineering refactor/rewrite): 10
+- Asymmetry/Contrarian signal detected: 2
+
+## Sources
+
+- GitHub_vscode: 61
+- GitHub_unsloth: 52
+- GitHub_langchain: 35
+- GitHub_ComfyUI: 11
+- GitHub_llama.cpp: 10
+- GitHub_AutoGPT: 2
+
+## Recent Decisions
+
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit d420356 by Martin Aeschlimann: CopilotAH: fix watcher regression (#320958)  * CopilotAH: fix watcher regression  
+_[truncated]_
 
 ### inversion-pulse.md
 
@@ -94,41 +128,4 @@ What’s wrong with that:
 - **No goal is stated.** Inversion only works when the objective is explicit; otherwise you can’t identify what would make it fail.[1][8]
 - **No assumptions are named.** A plan without assumptions is usually just a collection of untested beliefs wearing the label “plan.”[2][7][12]
 - **No failure modes are listed.** If you have not asked “How would this blow up?” you are not doing inversion—you are hoping.[2][4][5]
-_[truncated]_
-
-### noise-gate-context.md
-
-# Noise Gate Context
-
-_Generated: 2026-06-11 15:53:15 UTC_
-
-## Last 24h
-
-- PROMOTE: 93
-- PURGE: 79
-- Total: 172
-
-## Top Reasons
-
-- No significant markers found: 79
-- Security/vulnerability signal: 76
-- Dependency/ecosystem shift: 21
-- Convergence detected: 15
-- Direct actionability detected: 14
-- Structural shift (engineering refactor/rewrite): 11
-- Asymmetry/Contrarian signal detected: 2
-
-## Sources
-
-- GitHub_unsloth: 57
-- GitHub_vscode: 57
-- GitHub_langchain: 35
-- GitHub_ComfyUI: 11
-- GitHub_llama.cpp: 8
-- GitHub_openai-python: 2
-- GitHub_AutoGPT: 2
-
-## Recent Decisions
-
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 73eed19 by Tai An: fix(_utils): coerce _is_package_available tuple to bool for flash_attn/vllm checks (#6168)  tr
 _[truncated]_
