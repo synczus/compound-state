@@ -261,3 +261,179 @@ Replace “Auto cycle — full squad sweep” with something like:
 *Cost: ~$0.0301 | Tokens: 2047*
 2026-06-10T12:17:06Z | inversion-cron | 
 2026-06-10T16:17:07Z | inversion-cron | 
+2026-06-11T00:17:25Z | inversion-cron | ## Perplexity Search Results
+
+The plan is bad because it treats a complex, evolving environment like a simple cleaning job: “turn on auto, sweep everything, clear the map.” That’s a fantasy. The assumptions baked into “Auto cycle — full squad sweep” are wrong, and they’ll get you slow, predictable, and blind.
+
+Here’s what’s likely wrong and what to do instead.
+
+---
+
+## 1. “Auto cycle” = abdication of judgment
+
+You’re implicitly assuming:
+- You can **centralize decisions** and “push a button” so the squad just executes.
+- The environment is **stable enough** that a preset cycle makes sense.
+- Human attention, fatigue, and morale don’t matter.
+
+Reality:
+- In any real opposition environment, situational dynamics change faster than any “cycle.” You can’t pre-script contact, deception, or timing.
+- The more you automate, the **less your people think**. They stop actively scanning, questioning, adapting. You turn operators into Roombas.
+- “Auto cycle” suggests you’re optimizing for *coverage* instead of *decision quality*.
+
+What to do instead:
+- Shift from “auto” to **commander’s intent + local autonomy**: clear priority (what matters), loose constraints (what’s forbidden), and high freedom within.
+- Build **decision points** into any pattern: specific conditions that *abort* the cycle and trigger reassessment, not “finish the sweep no matter what.”
+- Train the group to treat patterns as **baselines**, not scripts: the default that you deviate from quickly when reality diverges.
+
+---
+
+## 2. “Full squad sweep” screams over-commitment and predictability
+
+You’re assuming:
+- Massing the entire squad gives you **safety and thoroughness**.
+- Coverage is more important than **tempo, surprise, and ambiguity**.
+- There’s no smarter adversary watching you.
+
+Problems:
+- A full-squad sweep is **loud, slow, and obvious**. You are easy to track, easy to bait, easy to ambush.
+- You’re accepting **zero redundancy**: if that squad is pinned, misled, or attrited, you have nothing else positioned intelligently.
+- You’re likely covering everything **equally**, instead of weighting effort by threat and value.
+
+What to do instead:
+- Move from “full squad sweep” to **distributed roles**:
+  - **Core maneuver element** (not the whole squad).
+  - **Overwatch / support** element placed to see and intervene.
+  - **Reserve / quick reaction** kept uncommitted to exploit or recover.
+- Vary formations and routes deliberately. Do not be a pattern.
+- Stop trying to sweep *everything*. Use **priority-based search**: focus where payoff is high and risk justified.
+
+---
+
+## 3. You’re obsessed with “clearing” instead of controlling
+
+A sweep mindset = “we go through, check, and move on.” It assumes:
+- Once cleared, an area is **safe**.
+- Safety is a property you can **certify**, not a condition you **maintain**.
+- The enemy is static or slow.
+
+In any contested environment:
+- A “cleared” area can be **compromised 30 seconds later**.
+- If you don’t control key terrain, lines of sight, and choke points, you own nothing.
+- You’re wasting time scanning low‑value space while high‑value space is contested.
+
+What to do instead:
+- Switch from “clear everything” to **“own key nodes”**:
+  - Identify decisive terrain, key routes, high‑value zones.
+  - Control and monitor these, not every random corner.
+- Use **persistent observation** (eyes, sensors, logs, whatever fits your context) instead of one‑time sweeps.
+- Accept that you’ll live with **uncertainty** and manage it, not fantasize it away with sweeps.
+
+---
+
+## 4. No concept of isolation, sequencing, or 1v1s
+
+A full-squad sweep suggests linear coverage: walk, look, tick box. In adversarial settings you should be thinking in terms of **isolate, overwhelm locally, then move**.
+
+Analogy from PvP tactics: solo players beating squads do it by **isolating 1v1s**, never peeking into multiple guns at once, and using angles and timing to avoid being pinched.[1] That is the opposite of a mindless sweep.
+
+Your likely mistakes:
+- You’re **exposing the whole squad** to multiple threat vectors at once.
+- You are not **staging contact**: no attempt to pull, fix, flank, or segment the problem.
+- You’re acting like the terrain is a checklist instead of a weapon.
+
+What to do instead:
+- Design operations around **isolation**:
+  - Force the opposition to fight you **one chunk at a time**.
+  - Use terrain, timing, deception to fragment them.
+- Build **contact drills** that prioritize:
+  - Breaking line-of-sight.
+  - Repositioning to avoid being pinched.
+  - Turning every fight into a local overmatch instead of a symmetric brawl.
+- Treat movement as **active shaping**, not just transit between tiles on a map.
+
+---
+
+## 5. Zero respect for time, fatigue, and cognitive load
+
+Sweeps are **tedious and stressful** when done properly. In minefield probing, doctrine explicitly limits probing time (often to 20–30 minutes) because effectiveness collapses with fatigue.[2] That’s a physical example of a broader point: sustained, repetitive “scan everything” tasks destroy performance.
+
+Your plan likely:
+- Ignores **fatigue curves**: people get sloppy, miss signals, overlook anomalies.
+- Assumes **uniform attention** over the entire sweep window.
+- Equates *activity* with *effectiveness*.
+
+What to do instead:
+- Build **work/rest cycles** and shorter, high-quality search windows.
+- Rotate people between **high-focus roles** and lower-intensity support roles.
+- Instrument your process: track error rates, misses, and near-misses over session length; adjust the sweep segments accordingly.
+
+---
+
+## 6. No red-team, no deception, no adversary model
+
+“Full squad sweep” is purely blue-centric: what *you* are doing. It assumes:
+- The other side is **passive**, not confusing or shaping you.
+- There are no decoys, traps, or intentional time-wasters.
+- Your presence doesn’t change their behavior.
+
+You’re likely:
+- Walking into **prepared kill boxes** / traps (literal or metaphorical), because your pattern is obvious.
+- Wasting energy on **fake signals** because you haven’t defined what the real adversary would rationally do.
+- Failing to ask, “What would I do **if I were them** watching this squad sweep?”
+
+What to do instead:
+- Build an explicit **threat model**: capabilities, incentives, likely tactics of whoever/whatever opposes you.
+- Run **red-team exercises**: people tasked solely with breaking your sweep pattern—hiding, spoofing, ambushing, timing attacks between cycles.
+- Adjust your approach to **force the enemy to react** to *you*: feints, unexpected angles, asymmetric tempo.
+
+---
+
+## 7. You’re conflating “thorough” with “effective”
+
+A full sweep is often the **most time-consuming** form of search and only justified when missing something is catastrophic.[2] If that is not your situation, your plan is overkill in the wrong direction.
+
+Red flags:
+- You want everything checked because you lack **prioritization** and **tolerance for uncertainty**.
+- You are probably not quantifying **cost of a miss** vs **cost of time**.
+- You may be optimizing for the feeling of “we did everything we could” rather than actual outcomes.
+
+What to do instead:
+- Use **risk-based coverage**: high, medium, low priority zones; allocate resources proportionally.
+- Define **acceptable residual risk**: what you’re willing to leave unchecked or lightly checked.
+- Stop worshipping thoroughness. Worship **detection probability per unit of time and risk**.
+
+---
+
+## 8. Information flow is probably an afterthought
+
+An “auto full sweep” suggests a **movement plan**, not an **information plan**. You’re likely:
+- Not defining what gets reported, to whom, and within what latency.
+- Overloading channels with noise (“we saw X, Y, Z”) instead of structured, action-driving info.
+- Failing to capture **lessons from each cycle** to adapt the next.
+
+What to do instead:
+- Design **collection and reporting** as a first-class part of the plan:
+  - Pre-define key indicators and standard report formats.
+  - Define which anomalies trigger immediate escalation or pattern break.
+- After each run, conduct **tight feedback loops**:
+  - What did we miss?
+  - Where did signals cluster?
+  - Where was the sweep a waste?
+- Use that to **continuously shrink** the space you treat as high priority.
+
+---
+
+## 9. The word “auto” hides that you don’t trust your people
+
+A plan that’s “auto” and “full sweep” often emerges when leadership:
+- Doesn’t trust line-level judgment.
+- Wants **procedural safety** over **empowered adaptability**.
+- Is more afraid of being blamed for a miss than for being slow and predictable.
+
+That kills initiative:
+- People follow the script instead of exploiting opportunities.
+- No one wants to be the one to *break the cycle*, even when the situation
+
+---
+*Cost: ~$0.0301 | Tokens: 2047*

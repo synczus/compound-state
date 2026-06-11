@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-10
-_Generated: 2026-06-11T00:07:32Z_
+_Generated: 2026-06-11T00:22:33Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,28 +47,28 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-10 23:58:45 UTC_
+_Generated: 2026-06-11 00:20:33 UTC_
 
 ## Last 24h
 
-- PROMOTE: 85
-- PURGE: 61
-- Total: 146
+- PROMOTE: 86
+- PURGE: 59
+- Total: 145
 
 ## Top Reasons
 
-- Security/vulnerability signal: 74
-- No significant markers found: 61
+- Security/vulnerability signal: 75
+- No significant markers found: 59
 - Dependency/ecosystem shift: 16
-- Direct actionability detected: 11
-- Structural shift (engineering refactor/rewrite): 9
+- Direct actionability detected: 12
+- Structural shift (engineering refactor/rewrite): 10
 - Convergence detected: 9
 
 ## Sources
 
 - GitHub_vscode: 51
 - GitHub_unsloth: 49
-- GitHub_langchain: 27
+- GitHub_langchain: 26
 - GitHub_ComfyUI: 10
 - GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
@@ -76,10 +76,21 @@ _Generated: 2026-06-10 23:58:45 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 1b50e88 by Sandeep Somavarapu: add logs for setting manifest (#320599)  * add logs for setting manifest  * fix co
+- PROMOTE score=14 source=GitHub_ComfyUI reason=Direct actionability detected; Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit ce200c0 by Matt Miller: feat(assets): include asset id in executed WebSocket message (#13862)  * feat(assets): en
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### inversion-pulse.md
+
+2026-06-10T04:17:16Z | inversion-cron | ## Perplexity Search Results
+
+**Bluntly: “Auto cycle — full squad sweep” is usually a lazy, overconfident plan that optimizes for *moving through space* instead of *surviving contact*.** It assumes the squad can simply sweep everything efficiently, but squad-level sweeps are exactly where people get pinned, split, ambushed, or forced into bad trades if they don’t isolate threats and manage angles. The core mistake is treating “sweep” as the mission rather than a method. [3][4]
+
+What’s being overlooked:
+
+- **Isolation of threats.** Good team fights are about forcing one enemy at a time, not peeking into multiple guns. If you expose the squad to overlapping fire, you hand the enemy a 3v1 or worse. [3]
+_[truncated]_
 
 ### 08-squirrel-inbox-feeder-nemoclaw.md
 
@@ -171,19 +182,3 @@ _[truncated]_
 
 ## Lane Gap (from improver)
 - No identity/soul/skill/docs output in 24h — overdue for a build sprint
-
-### nemoclaw-cost-pulse-1825.md
-
-# Nemoclaw Cost Pulse — 2026-06-10T18:25Z
-
-**Source:** cron (cost-tracker-every-6h)
-
-## Findings
-- ❌ **cost-tracker.sh missing** — script at expected path doesn't exist. heartbeat written with warning status.
-- 💰 **OpenRouter: $6.46 remaining** ($251.54 used of $258 total) — critical. At ~$6/day burn, ~24h of runway left.
-- 🟡 **AgentMemory REST API down** (circuit closed) — inter-agent signals broken.
-- ⚪ **Striker:** 0 signals this session, connected ~48h. Total lifetime: 138,861.
-- ⚪ **Wolfwatch:** inactive (since last briefing).
-
-## Action
-- Pulse written to track missing script and low budget.
