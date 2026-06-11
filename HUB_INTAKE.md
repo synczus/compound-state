@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-11
-_Generated: 2026-06-11T08:17:54Z_
+_Generated: 2026-06-11T11:22:32Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,39 +47,78 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 08:04:45 UTC_
+_Generated: 2026-06-11 11:14:08 UTC_
 
 ## Last 24h
 
 - PROMOTE: 86
-- PURGE: 69
-- Total: 155
+- PURGE: 71
+- Total: 157
 
 ## Top Reasons
 
-- Security/vulnerability signal: 74
-- No significant markers found: 69
-- Dependency/ecosystem shift: 18
-- Direct actionability detected: 14
+- Security/vulnerability signal: 72
+- No significant markers found: 71
+- Dependency/ecosystem shift: 19
+- Direct actionability detected: 12
 - Structural shift (engineering refactor/rewrite): 9
 - Convergence detected: 8
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_unsloth: 51
-- GitHub_vscode: 50
+- GitHub_vscode: 52
+- GitHub_unsloth: 47
 - GitHub_langchain: 36
-- GitHub_ComfyUI: 8
-- GitHub_llama.cpp: 7
+- GitHub_ComfyUI: 10
+- GitHub_llama.cpp: 8
 - GitHub_openai-python: 2
-- GitHub_AutoGPT: 1
+- GitHub_AutoGPT: 2
 
 ## Recent Decisions
 
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit fbaf527 by Daniel Han: Add FastDiffusionModel slow path for text-diffusion models (DiffusionGemma) (#6158)  * Add
+- PROMOTE score=3 source=GitHub_vscode reason=Dependency/ecosystem shift preview=Commit 847d569 by Don Jayamanne: chore: update @github/copilot and related dependencies to version 1.0.61 (#320868)  * c
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### noise-gate-context.md
+
+# Noise Gate Context
+
+_Generated: 2026-06-11 11:14:08 UTC_
+
+## Last 24h
+
+- PROMOTE: 86
+- PURGE: 71
+- Total: 157
+
+## Top Reasons
+
+- Security/vulnerability signal: 72
+- No significant markers found: 71
+- Dependency/ecosystem shift: 19
+- Direct actionability detected: 12
+- Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 8
+- Asymmetry/Contrarian signal detected: 2
+
+## Sources
+
+- GitHub_vscode: 52
+- GitHub_unsloth: 47
+- GitHub_langchain: 36
+- GitHub_ComfyUI: 10
+- GitHub_llama.cpp: 8
+- GitHub_openai-python: 2
+- GitHub_AutoGPT: 2
+
+## Recent Decisions
+
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit fbaf527 by Daniel Han: Add FastDiffusionModel slow path for text-diffusion models (DiffusionGemma) (#6158)  * Add
+_[truncated]_
 
 ### inversion-pulse.md
 
@@ -92,41 +131,4 @@ What’s wrong with that:
 - **No goal is stated.** Inversion only works when the objective is explicit; otherwise you can’t identify what would make it fail.[1][8]
 - **No assumptions are named.** A plan without assumptions is usually just a collection of untested beliefs wearing the label “plan.”[2][7][12]
 - **No failure modes are listed.** If you have not asked “How would this blow up?” you are not doing inversion—you are hoping.[2][4][5]
-_[truncated]_
-
-### noise-gate-context.md
-
-# Noise Gate Context
-
-_Generated: 2026-06-11 08:04:45 UTC_
-
-## Last 24h
-
-- PROMOTE: 86
-- PURGE: 69
-- Total: 155
-
-## Top Reasons
-
-- Security/vulnerability signal: 74
-- No significant markers found: 69
-- Dependency/ecosystem shift: 18
-- Direct actionability detected: 14
-- Structural shift (engineering refactor/rewrite): 9
-- Convergence detected: 8
-- Asymmetry/Contrarian signal detected: 2
-
-## Sources
-
-- GitHub_unsloth: 51
-- GitHub_vscode: 50
-- GitHub_langchain: 36
-- GitHub_ComfyUI: 8
-- GitHub_llama.cpp: 7
-- GitHub_openai-python: 2
-- GitHub_AutoGPT: 1
-
-## Recent Decisions
-
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 1a8ef07 by Bhavya U: Update tool calling prompts and tests (#320906)
 _[truncated]_
