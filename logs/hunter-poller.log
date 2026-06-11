@@ -65,3 +65,227 @@
 2026-06-11 02:16:06,402 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
 2026-06-11 02:16:09,079 [INFO] kestrel.poller: Cycle complete: no new signals
 2026-06-11 02:16:09,079 [INFO] kestrel.poller: Next poll in ~21m (jittered)
+2026-06-11T06:30:01Z | Hunter poller already running
+2026-06-11 02:37:17,146 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 02:37:17,147 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 02:37:17,667 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=52 limit=60
+2026-06-11 02:37:17,668 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 02:37:20,379 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 02:37:20,769 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=59 limit=60
+2026-06-11 02:37:20,769 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 02:37:23,404 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 02:37:23,767 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=51 limit=60
+2026-06-11 02:37:23,768 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 02:37:25,050 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 02:37:30,494 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=58 limit=60
+2026-06-11 02:37:30,494 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 02:37:32,169 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 02:37:37,699 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=46 limit=60
+2026-06-11 02:37:37,699 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 02:37:40,478 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 02:37:40,899 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=57 limit=60
+2026-06-11 02:37:40,900 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 02:37:40,909 [INFO] kestrel.github_hunter: Signal from langchain-ai/langchain: Commit 447663f by Mason Daugherty: feat(partners): expose pa...
+2026-06-11 02:37:40,909 [INFO] kestrel.noise_gate: PURGE: GitHub_langchain_1781159860.900043 | Score: 0 | Reason: No significant markers found
+2026-06-11 02:37:40,913 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 02:37:40,913 [INFO] kestrel.poller: Found 1 new signals in langchain-ai/langchain
+2026-06-11 02:37:43,697 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 02:37:49,214 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=45 limit=60
+2026-06-11 02:37:49,214 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 02:37:51,945 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 02:37:57,327 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=44 limit=60
+2026-06-11 02:37:57,327 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 02:37:58,504 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 02:37:58,891 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=43 limit=60
+2026-06-11 02:37:58,891 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 02:38:01,895 [INFO] kestrel.poller: Cycle complete: 1 new signals sent to hub
+2026-06-11 02:38:01,895 [INFO] kestrel.poller: Next poll in ~20m (jittered)
+2026-06-11 02:58:27,987 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 02:58:27,987 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 02:58:33,533 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=49 limit=60
+2026-06-11 02:58:33,533 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 02:58:35,515 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 02:58:35,860 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=45 limit=60
+2026-06-11 02:58:35,860 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 02:58:36,879 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 02:58:42,365 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=41 limit=60
+2026-06-11 02:58:42,365 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 02:58:43,902 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 02:58:49,349 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=44 limit=60
+2026-06-11 02:58:49,350 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 02:58:52,264 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 02:58:57,848 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=42 limit=60
+2026-06-11 02:58:57,849 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 02:59:00,451 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 02:59:05,936 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=41 limit=60
+2026-06-11 02:59:05,936 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 02:59:05,937 [INFO] kestrel.github_hunter: Signal from langchain-ai/langchain: Commit 05cc55f by Mason Daugherty: release(core): 1.4.6 (#38...
+2026-06-11 02:59:05,937 [INFO] kestrel.noise_gate: PURGE: GitHub_langchain_1781161145.936487 | Score: 0 | Reason: No significant markers found
+2026-06-11 02:59:05,939 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 02:59:05,939 [INFO] kestrel.poller: Found 1 new signals in langchain-ai/langchain
+2026-06-11 02:59:07,692 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 02:59:08,044 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=59 limit=60
+2026-06-11 02:59:08,044 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 02:59:09,245 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 02:59:09,614 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=40 limit=60
+2026-06-11 02:59:09,614 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 02:59:12,553 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 02:59:13,018 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=39 limit=60
+2026-06-11 02:59:13,019 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 02:59:13,029 [INFO] kestrel.github_hunter: Signal from unslothai/unsloth: Commit c8a7ba4 by Michael Han: Tone down the green glow on t...
+2026-06-11 02:59:13,029 [INFO] kestrel.noise_gate: PURGE: GitHub_unsloth_1781161153.019261 | Score: 0 | Reason: No significant markers found
+2026-06-11 02:59:13,032 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 02:59:13,032 [INFO] kestrel.poller: Found 1 new signals in unslothai/unsloth
+2026-06-11 02:59:14,308 [INFO] kestrel.poller: Cycle complete: 2 new signals sent to hub
+2026-06-11 02:59:14,308 [INFO] kestrel.poller: Next poll in ~21m (jittered)
+2026-06-11T07:00:02Z | Hunter poller already running
+2026-06-11 03:21:03,355 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 03:21:03,356 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 03:21:08,874 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=33 limit=60
+2026-06-11 03:21:08,874 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 03:21:08,884 [INFO] kestrel.github_hunter: Signal from ggerganov/llama.cpp: Commit db94854 by Aldehir Rojas: server : skip checkpoints b...
+2026-06-11 03:21:08,884 [INFO] kestrel.noise_gate: PURGE: GitHub_llama.cpp_1781162468.874566 | Score: 0 | Reason: No significant markers found
+2026-06-11 03:21:08,885 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 03:21:08,885 [INFO] kestrel.poller: Found 1 new signals in ggerganov/llama.cpp
+2026-06-11 03:21:11,410 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 03:21:11,843 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=48 limit=60
+2026-06-11 03:21:11,843 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 03:21:13,429 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 03:21:18,814 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=49 limit=60
+2026-06-11 03:21:18,814 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 03:21:20,377 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 03:21:20,793 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=47 limit=60
+2026-06-11 03:21:20,793 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 03:21:23,504 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 03:21:29,044 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=47 limit=60
+2026-06-11 03:21:29,044 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 03:21:32,032 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 03:21:37,434 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=45 limit=60
+2026-06-11 03:21:37,434 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 03:21:39,263 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 03:21:44,719 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=46 limit=60
+2026-06-11 03:21:44,720 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 03:21:44,729 [INFO] kestrel.github_hunter: Signal from microsoft/vscode: Commit 65ec7cb by Martin Aeschlimann: Copilot AH: Simplify a...
+2026-06-11 03:21:44,729 [INFO] kestrel.noise_gate: PURGE: GitHub_vscode_1781162504.720131 | Score: 0 | Reason: No significant markers found
+2026-06-11 03:21:44,731 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 03:21:44,731 [INFO] kestrel.poller: Found 1 new signals in microsoft/vscode
+2026-06-11 03:21:45,832 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 03:21:51,203 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=44 limit=60
+2026-06-11 03:21:51,203 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 03:21:53,190 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 03:21:53,574 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=45 limit=60
+2026-06-11 03:21:53,574 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 03:21:54,689 [INFO] kestrel.poller: Cycle complete: 2 new signals sent to hub
+2026-06-11 03:21:54,689 [INFO] kestrel.poller: Next poll in ~21m (jittered)
+2026-06-11T07:30:01Z | Hunter poller already running
+2026-06-11 03:43:51,762 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 03:43:51,763 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 03:43:57,278 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=58 limit=60
+2026-06-11 03:43:57,278 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 03:43:57,280 [INFO] kestrel.github_hunter: Signal from ggerganov/llama.cpp: Commit 1bfbdb1 by o7si: vocab : adopt leading TemplateProces...
+2026-06-11 03:43:57,280 [INFO] kestrel.noise_gate: PURGE: GitHub_llama.cpp_1781163837.278716 | Score: 0 | Reason: No significant markers found
+2026-06-11 03:43:57,281 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 03:43:57,281 [INFO] kestrel.github_hunter: Signal from ggerganov/llama.cpp: Commit 68f3066 by o7si: vocab : refactor normalizer flags in...
+2026-06-11 03:43:57,281 [INFO] kestrel.noise_gate: PROMOTE: GitHub_llama.cpp_1781163837.278728 | Score: 4 | Reason: Structural shift (engineering refactor/rewrite)
+2026-06-11 03:43:57,282 [WARNING] kestrel.hub: MIROFISH REJECTED: score=2/10 cost=$0.0000 remaining=$4.9988 reason=hard data (1pts); source cited
+2026-06-11 03:43:57,282 [INFO] kestrel.poller: Found 2 new signals in ggerganov/llama.cpp
+2026-06-11 03:43:59,919 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 03:44:05,333 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=40 limit=60
+2026-06-11 03:44:05,333 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 03:44:06,757 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 03:44:07,132 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=57 limit=60
+2026-06-11 03:44:07,132 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 03:44:08,147 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 03:44:13,550 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=56 limit=60
+2026-06-11 03:44:13,550 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 03:44:15,969 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 03:44:21,517 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=38 limit=60
+2026-06-11 03:44:21,517 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 03:44:24,189 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 03:44:29,774 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=58 limit=60
+2026-06-11 03:44:29,774 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 03:44:32,110 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 03:44:37,538 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=37 limit=60
+2026-06-11 03:44:37,538 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 03:44:37,548 [INFO] kestrel.github_hunter: Signal from microsoft/vscode: Commit 325a129 by Bhavya U: Update messages API and tests (#...
+2026-06-11 03:44:37,548 [INFO] kestrel.noise_gate: PURGE: GitHub_vscode_1781163877.538546 | Score: 0 | Reason: No significant markers found
+2026-06-11 03:44:37,550 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 03:44:37,550 [INFO] kestrel.poller: Found 1 new signals in microsoft/vscode
+2026-06-11 03:44:38,674 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 03:44:44,084 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=36 limit=60
+2026-06-11 03:44:44,084 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 03:44:45,501 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 03:44:50,909 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=35 limit=60
+2026-06-11 03:44:50,909 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 03:44:53,431 [INFO] kestrel.poller: Cycle complete: 3 new signals sent to hub
+2026-06-11 03:44:53,432 [INFO] kestrel.poller: Next poll in ~19m (jittered)
+2026-06-11T08:00:01Z | Hunter poller already running
+2026-06-11 04:04:09,476 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 04:04:09,476 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 04:04:09,992 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=50 limit=60
+2026-06-11 04:04:09,993 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 04:04:11,276 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 04:04:16,659 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=51 limit=60
+2026-06-11 04:04:16,659 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 04:04:18,266 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 04:04:18,644 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=50 limit=60
+2026-06-11 04:04:18,644 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 04:04:20,611 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 04:04:26,075 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=49 limit=60
+2026-06-11 04:04:26,076 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 04:04:28,213 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 04:04:33,734 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=47 limit=60
+2026-06-11 04:04:33,734 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 04:04:36,697 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 04:04:42,079 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=46 limit=60
+2026-06-11 04:04:42,080 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 04:04:44,958 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 04:04:45,398 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=45 limit=60
+2026-06-11 04:04:45,398 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 04:04:45,408 [INFO] kestrel.github_hunter: Signal from microsoft/vscode: Commit 1a8ef07 by Bhavya U: Update tool calling prompts and ...
+2026-06-11 04:04:45,408 [INFO] kestrel.noise_gate: PURGE: GitHub_vscode_1781165085.398832 | Score: 0 | Reason: No significant markers found
+2026-06-11 04:04:45,409 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 04:04:45,409 [INFO] kestrel.poller: Found 1 new signals in microsoft/vscode
+2026-06-11 04:04:46,783 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 04:04:47,203 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=59 limit=60
+2026-06-11 04:04:47,203 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 04:04:48,776 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 04:04:49,144 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=44 limit=60
+2026-06-11 04:04:49,144 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 04:04:50,359 [INFO] kestrel.poller: Cycle complete: 1 new signals sent to hub
+2026-06-11 04:04:50,359 [INFO] kestrel.poller: Next poll in ~19m (jittered)
+2026-06-11 04:24:02,450 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 04:24:02,459 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 04:24:02,953 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=53 limit=60
+2026-06-11 04:24:02,953 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 04:24:05,567 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 04:24:11,018 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=52 limit=60
+2026-06-11 04:24:11,018 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 04:24:13,607 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 04:24:14,011 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=51 limit=60
+2026-06-11 04:24:14,011 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 04:24:16,663 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 04:24:17,077 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=50 limit=60
+2026-06-11 04:24:17,078 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 04:24:19,734 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 04:24:20,224 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=42 limit=60
+2026-06-11 04:24:20,225 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 04:24:20,234 [INFO] kestrel.github_hunter: Signal from comfyanonymous/ComfyUI: Commit b97e60f by Jukka Seppänen: Fix SCAIL-2 reference mask...
+2026-06-11 04:24:20,234 [INFO] kestrel.noise_gate: PURGE: GitHub_ComfyUI_1781166260.225045 | Score: 0 | Reason: No significant markers found
+2026-06-11 04:24:20,237 [WARNING] kestrel.hub: SIGNAL REJECTED: No significant markers found
+2026-06-11 04:24:20,237 [INFO] kestrel.poller: Found 1 new signals in comfyanonymous/ComfyUI
+2026-06-11 04:24:22,467 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 04:24:22,808 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=49 limit=60
+2026-06-11 04:24:22,809 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 04:24:25,676 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 04:24:26,063 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=48 limit=60
+2026-06-11 04:24:26,063 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 04:24:28,115 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 04:24:28,522 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=47 limit=60
+2026-06-11 04:24:28,522 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 04:24:30,099 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 04:24:35,482 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=41 limit=60
+2026-06-11 04:24:35,483 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 04:24:37,352 [INFO] kestrel.poller: Cycle complete: 1 new signals sent to hub
+2026-06-11 04:24:37,352 [INFO] kestrel.poller: Next poll in ~19m (jittered)
+2026-06-11T08:30:01Z | Hunter poller already running

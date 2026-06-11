@@ -1,9 +1,9 @@
 {
   "date": "2026-06-11",
-  "total_spend": 0.0003,
-  "signals_accepted": 1,
-  "signals_rejected": 0,
-  "cheap_calls": 1,
-  "premium_calls": 0,
-  "remaining": 4.9997
+  "total_spend": 0.0012,
+  "signals_accepted": 4,
+  "signals_rejected": 2,
+  "cheap_calls": 3,
+  "premium_calls": 1,
+  "remaining": 4.9988
 }

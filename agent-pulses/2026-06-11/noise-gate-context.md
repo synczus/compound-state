@@ -1,47 +1,47 @@
 # Noise Gate Context
 
-_Generated: 2026-06-11 06:11:59 UTC_
+_Generated: 2026-06-11 08:24:20 UTC_
 
 ## Last 24h
 
 - PROMOTE: 86
-- PURGE: 58
-- Total: 144
+- PURGE: 70
+- Total: 156
 
 ## Top Reasons
 
-- Security/vulnerability signal: 75
-- No significant markers found: 58
-- Dependency/ecosystem shift: 17
-- Direct actionability detected: 13
-- Convergence detected: 9
-- Structural shift (engineering refactor/rewrite): 8
+- Security/vulnerability signal: 74
+- No significant markers found: 70
+- Dependency/ecosystem shift: 18
+- Direct actionability detected: 14
+- Structural shift (engineering refactor/rewrite): 9
+- Convergence detected: 8
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
 - GitHub_unsloth: 51
-- GitHub_vscode: 45
-- GitHub_langchain: 31
-- GitHub_ComfyUI: 8
-- GitHub_llama.cpp: 6
+- GitHub_vscode: 50
+- GitHub_langchain: 36
+- GitHub_ComfyUI: 9
+- GitHub_llama.cpp: 7
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 53af337 by oobabooga: Studio: forward `preserve_thinking` + `reasoning_effort` on the OpenAI passthrough (#6171) 
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 91187c5 by Barish Ozbay: Improve context window resizing for SCAIL2 (CORE-286) (#14394)
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 8961cf1 by Michael Han: Give dark mode toasts a shadow and background separation (#6186)
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit d5f7d33 by Christophe Bornet: chore(langchain): add overloads to `create_agent` (#34309)  This way mypy can infer
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 9e2d17c by Daniel Han: Tests: follow Compare chat into the More submenu in the extra UI driver (#6177)  PR #6153 
-- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 86428c6 by Mason Daugherty: fix(core,openai): normalize v1 streamed tool calls (#35983)  OpenAI Chat Completions 
-- PROMOTE score=13 source=GitHub_langchain reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 1de100f by Christophe Bornet: chore(infra): bump mypy to 2.1 and unify type-check config across the monorepo (#36
-- PROMOTE score=12 source=GitHub_unsloth reason=Asymmetry/Contrarian signal detected; Security/vulnerability signal; Convergence detected preview=Commit bf2cd74 by Leo Borcherding: Fix installer selecting ROCm torch on NVIDIA Linux hosts (#6174)  * fix: prevent ROCm
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit d7ce0ce by Don Jayamanne: Enhance agent and skill discovery: include descriptions in session customization tests 
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 74ee826 by Comfy Org PR Bot: chore(openapi): sync shared API contract from cloud@e3c52ad (#14406)
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 33e6ebd by comfyanonymous: I don't think this actually works anymore. (#14403)
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit bda19b2 by rattus: ops: tolerate already force casted dynamic weight (#14410)  Some custom nodes .to weights comp
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit b97e60f by Jukka Seppänen: Fix SCAIL-2 reference mask background convention (#14415)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 1a8ef07 by Bhavya U: Update tool calling prompts and tests (#320906)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit aefd110 by Bhavya U: Cache explorer: conversation-level hit rate, exclude utility models, agent-type filter (#320
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 76c32db by Mason Daugherty: chore(infra): remove noisy annotation (#38063)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 325a129 by Bhavya U: Update messages API and tests (#320910)
+- PROMOTE score=4 source=GitHub_llama.cpp reason=Structural shift (engineering refactor/rewrite) preview=Commit 68f3066 by o7si: vocab : refactor normalizer flags into options struct, add strip_accents (#24371)  * vocab : ref
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 1bfbdb1 by o7si: vocab : adopt leading TemplateProcessing special token as BOS (#24428)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 07e76ab by Martin Aeschlimann: Improve cancellation handling in CachedPromise (#320908)  * Correctly handle cance
+- PROMOTE score=3 source=GitHub_langchain reason=Dependency/ecosystem shift preview=Commit f5ef8cb by Mason Daugherty: ci(infra): make release checks handle coordinated package bumps (#38062)  Release val
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 65ec7cb by Martin Aeschlimann: Copilot AH: Simplify and improve customization change handing (#320901)
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit db94854 by Aldehir Rojas: server : skip checkpoints beyond pos_next (#24411)  * server : skip checkpoints beyond 
+- PROMOTE score=8 source=GitHub_unsloth reason=Direct actionability detected; Dependency/ecosystem shift preview=Commit 27d43a3 by Daniel Han: MLX CI: drop removed --simple-policy and stale ggml-org pin from the prebuilt step (#6189)
 
 ## Agent Use
 

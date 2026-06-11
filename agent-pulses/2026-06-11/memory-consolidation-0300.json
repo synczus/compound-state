@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-06-11T07:00:32.866217+00:00",
+  "type": "memory-consolidation",
+  "status": "completed",
+  "summary": "Consolidation cycle ran at 03:00",
+  "checks": [
+    "feedback-db",
+    "pulse-archive",
+    "memory-bank-input"
+  ]
+}
