@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-11
-_Generated: 2026-06-11T04:12:32Z_
+_Generated: 2026-06-11T04:27:53Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,73 +47,86 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 03:34:06 UTC_
+_Generated: 2026-06-11 04:16:12 UTC_
 
 ## Last 24h
 
-- PROMOTE: 88
-- PURGE: 59
-- Total: 147
+- PROMOTE: 87
+- PURGE: 58
+- Total: 145
 
 ## Top Reasons
 
 - Security/vulnerability signal: 75
-- No significant markers found: 59
-- Dependency/ecosystem shift: 18
+- No significant markers found: 58
+- Dependency/ecosystem shift: 17
 - Direct actionability detected: 12
 - Convergence detected: 11
-- Structural shift (engineering refactor/rewrite): 10
-- Asymmetry/Contrarian signal detected: 1
+- Structural shift (engineering refactor/rewrite): 9
+- Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_unsloth: 49
-- GitHub_vscode: 48
-- GitHub_langchain: 31
-- GitHub_ComfyUI: 10
+- GitHub_unsloth: 50
+- GitHub_vscode: 47
+- GitHub_langchain: 30
+- GitHub_ComfyUI: 9
 - GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
+- PROMOTE score=12 source=GitHub_unsloth reason=Asymmetry/Contrarian signal detected; Security/vulnerability signal; Convergence detected preview=Commit bf2cd74 by Leo Borcherding: Fix installer selecting ROCm torch on NVIDIA Linux hosts (#6174)  * fix: prevent ROCm
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### inversion-pulse.md
+
+2026-06-11T04:17:13Z | inversion-cron | ## Perplexity Search Results
+
+The plan is **empty** as written, so the biggest problem is not execution—it is that there is no actual plan to analyze. If the compound is “working on this: ''”, then the real failure is **operating on a blank premise while pretending there is strategy**.[2][7]
+
+What’s wrong with that:
+
+- **No goal is stated.** Inversion only works when the objective is explicit; otherwise you can’t identify what would make it fail.[1][8]
+- **No assumptions are named.** A plan without assumptions is usually just a collection of untested beliefs wearing the label “plan.”[2][7][12]
+- **No failure modes are listed.** If you have not asked “How would this blow up?” you are not doing inversion—you are hoping.[2][4][5]
+_[truncated]_
 
 ### noise-gate-context.md
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 03:34:06 UTC_
+_Generated: 2026-06-11 04:16:12 UTC_
 
 ## Last 24h
 
-- PROMOTE: 88
-- PURGE: 59
-- Total: 147
+- PROMOTE: 87
+- PURGE: 58
+- Total: 145
 
 ## Top Reasons
 
 - Security/vulnerability signal: 75
-- No significant markers found: 59
-- Dependency/ecosystem shift: 18
+- No significant markers found: 58
+- Dependency/ecosystem shift: 17
 - Direct actionability detected: 12
 - Convergence detected: 11
-- Structural shift (engineering refactor/rewrite): 10
-- Asymmetry/Contrarian signal detected: 1
+- Structural shift (engineering refactor/rewrite): 9
+- Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_unsloth: 49
-- GitHub_vscode: 48
-- GitHub_langchain: 31
-- GitHub_ComfyUI: 10
+- GitHub_unsloth: 50
+- GitHub_vscode: 47
+- GitHub_langchain: 30
+- GitHub_ComfyUI: 9
 - GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit d7ce0ce by Don Jayamanne: Enhance agent and skill discovery: include descriptions in session customization tests 
 _[truncated]_
