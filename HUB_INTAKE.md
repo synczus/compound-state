@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-11
-_Generated: 2026-06-11T04:27:53Z_
+_Generated: 2026-06-11T05:13:53Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,40 +47,77 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 04:16:12 UTC_
+_Generated: 2026-06-11 05:13:28 UTC_
 
 ## Last 24h
 
-- PROMOTE: 87
-- PURGE: 58
-- Total: 145
+- PROMOTE: 86
+- PURGE: 56
+- Total: 142
 
 ## Top Reasons
 
 - Security/vulnerability signal: 75
-- No significant markers found: 58
+- No significant markers found: 56
 - Dependency/ecosystem shift: 17
-- Direct actionability detected: 12
-- Convergence detected: 11
-- Structural shift (engineering refactor/rewrite): 9
+- Direct actionability detected: 13
+- Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 8
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
 - GitHub_unsloth: 50
-- GitHub_vscode: 47
-- GitHub_langchain: 30
-- GitHub_ComfyUI: 9
+- GitHub_vscode: 45
+- GitHub_langchain: 31
+- GitHub_ComfyUI: 7
 - GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
-- PROMOTE score=12 source=GitHub_unsloth reason=Asymmetry/Contrarian signal detected; Security/vulnerability signal; Convergence detected preview=Commit bf2cd74 by Leo Borcherding: Fix installer selecting ROCm torch on NVIDIA Linux hosts (#6174)  * fix: prevent ROCm
+- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 86428c6 by Mason Daugherty: fix(core,openai): normalize v1 streamed tool calls (#35983)  OpenAI Chat Completions 
 _[truncated]_
 
 ## Today's Pulses (newest first)
+
+### noise-gate-context.md
+
+# Noise Gate Context
+
+_Generated: 2026-06-11 05:13:28 UTC_
+
+## Last 24h
+
+- PROMOTE: 86
+- PURGE: 56
+- Total: 142
+
+## Top Reasons
+
+- Security/vulnerability signal: 75
+- No significant markers found: 56
+- Dependency/ecosystem shift: 17
+- Direct actionability detected: 13
+- Convergence detected: 9
+- Structural shift (engineering refactor/rewrite): 8
+- Asymmetry/Contrarian signal detected: 2
+
+## Sources
+
+- GitHub_unsloth: 50
+- GitHub_vscode: 45
+- GitHub_langchain: 31
+- GitHub_ComfyUI: 7
+- GitHub_llama.cpp: 6
+- GitHub_openai-python: 2
+- GitHub_AutoGPT: 1
+
+## Recent Decisions
+
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit d5f7d33 by Christophe Bornet: chore(langchain): add overloads to `create_agent` (#34309)  This way mypy can infer
+_[truncated]_
 
 ### inversion-pulse.md
 
@@ -93,40 +130,4 @@ What’s wrong with that:
 - **No goal is stated.** Inversion only works when the objective is explicit; otherwise you can’t identify what would make it fail.[1][8]
 - **No assumptions are named.** A plan without assumptions is usually just a collection of untested beliefs wearing the label “plan.”[2][7][12]
 - **No failure modes are listed.** If you have not asked “How would this blow up?” you are not doing inversion—you are hoping.[2][4][5]
-_[truncated]_
-
-### noise-gate-context.md
-
-# Noise Gate Context
-
-_Generated: 2026-06-11 04:16:12 UTC_
-
-## Last 24h
-
-- PROMOTE: 87
-- PURGE: 58
-- Total: 145
-
-## Top Reasons
-
-- Security/vulnerability signal: 75
-- No significant markers found: 58
-- Dependency/ecosystem shift: 17
-- Direct actionability detected: 12
-- Convergence detected: 11
-- Structural shift (engineering refactor/rewrite): 9
-- Asymmetry/Contrarian signal detected: 2
-
-## Sources
-
-- GitHub_unsloth: 50
-- GitHub_vscode: 47
-- GitHub_langchain: 30
-- GitHub_ComfyUI: 9
-- GitHub_llama.cpp: 6
-- GitHub_openai-python: 2
-- GitHub_AutoGPT: 1
-
-## Recent Decisions
-
 _[truncated]_
