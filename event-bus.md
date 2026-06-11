@@ -323,4 +323,9 @@ Please analyze pipeline health, score signal quality, assess risk, and post find
 2026-06-10 23:10 UTC | baton-auto-cycle | No pending P0/P1 work found on board
 2026-06-10 23:20 UTC | meta-monitor | All crons and services healthy
 2026-06-10 23:25 UTC | baton-auto-cycle | No pending P0/P1 work found on board
-2026-06-10 23:28 UTC | business-pulse | 📊 BTC $61422 | ETH $1618.31 | SOL $62.89 | Striker: connected | Signals: 138861 | Board: 0 done, 191 pending. Top: none
+2026-06-10 23:28 UTC | business-pulse | 📊 BTC $61422 | ETH $1618.31 | SOL $62.89 | Striker: connected | Signals: 138861 | Board: 0 done, 191 pending. Top: none2026-06-10T23:30:21Z | state-probe | Striker=online WolfWatch=online MetaAge=618s
+
+2026-06-10 23:40 UTC | baton-auto-cycle | No pending P0/P1 work found on board
+2026-06-10 23:55 UTC | baton-auto-cycle | No pending P0/P1 work found on board2026-06-10T23:59:42Z | state-probe | Striker=online WolfWatch=online MetaAge=2379s
+
+2026-06-11 00:10 UTC | baton-auto-cycle | No pending P0/P1 work found on board

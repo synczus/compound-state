@@ -1,46 +1,46 @@
 # Noise Gate Context
 
-_Generated: 2026-06-10 23:16:34 UTC_
+_Generated: 2026-06-10 23:58:45 UTC_
 
 ## Last 24h
 
 - PROMOTE: 85
-- PURGE: 58
-- Total: 143
+- PURGE: 61
+- Total: 146
 
 ## Top Reasons
 
 - Security/vulnerability signal: 74
-- No significant markers found: 58
-- Dependency/ecosystem shift: 15
-- Direct actionability detected: 12
+- No significant markers found: 61
+- Dependency/ecosystem shift: 16
+- Direct actionability detected: 11
+- Structural shift (engineering refactor/rewrite): 9
 - Convergence detected: 9
-- Structural shift (engineering refactor/rewrite): 8
 
 ## Sources
 
 - GitHub_vscode: 51
 - GitHub_unsloth: 49
-- GitHub_langchain: 25
-- GitHub_ComfyUI: 9
+- GitHub_langchain: 27
+- GitHub_ComfyUI: 10
 - GitHub_llama.cpp: 6
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 1
 
 ## Recent Decisions
 
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 1b50e88 by Sandeep Somavarapu: add logs for setting manifest (#320599)  * add logs for setting manifest  * fix co
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 1a8e7a4 by Rob Lourens: Filter subagent sessions out of listSessions (#320835)  Subagent child sessions are regis
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit f0a78bf by Mason Daugherty: test(anthropic): make tests robust to gateway base URL (#38043)  Anthropic unit tests
+- PROMOTE score=3 source=GitHub_langchain reason=Dependency/ecosystem shift preview=Commit 007ae66 by Mason Daugherty: test(anthropic): make expected warnings explicit (#38044)  Warning-producing test pat
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 21eeadf by Mason Daugherty: test(partners): account for warning behavior in partner tests (#38046)  Partner unit 
+- PROMOTE score=9 source=GitHub_ComfyUI reason=Structural shift (engineering refactor/rewrite); Security/vulnerability signal preview=Commit e5b7140 by Matt Miller: feat(assets): add job_ids filter to GET /api/assets (#13998)  * feat(assets): add job_ids
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 254ae50 by dileepyavan: Restrict GPG sandbox permissions for chained commands (#320858)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit b49826f by Courtney Webster: Merge pull request #320666 from microsoft/dull-lion  Update enterprise strings for U
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 4ab1d98 by Aaron Munger: add env var to AH to tag our CAPI traffic (#320814)  * add env var to AH to tag our CAPI
 - PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 9df626d by Connor Peet: Merge pull request #320712 from microsoft/connor4312/314149  agentHost: fix client tool a
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0d37724 by Martin Aeschlimann: Copilot AH: Use workspace customizations as-is, without bundling (#320780)  Copilo
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 53b852a by Martin Aeschlimann: Do not clear agent when switching from initial to commited session (#320762)
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit f0b4e1e by Matt Bierner: Merge pull request #314958 from dymaaaj7/patch-3  Fix declaration order of File and Refe
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit c792226 by Ladislau Szomoru: Agents - more changesets cleanup (#320831)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 6fb9fb2 by Benjamin Christopher Simmonds: Merge pull request #320838 from microsoft/benibenj/classic-swordtail  A
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit c2bc697 by Kyle Cutler: Browser: improve remote proxy stability (#320834)  * Browser: improve remote proxy stabil
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 481b28d by Sandeep Somavarapu: sessions: keep chat scrollbar at the right edge (#320841)  The session header/tabs
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit e989c86 by Mason Daugherty: release(anthropic): 1.4.5 (#38036)
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 2a11a82 by Mason Daugherty: release(mistralai): 1.1.5 (#38038)
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit ac4cdde by Adrien Gallouët: vendor : update LibreSSL to 4.3.2 (#24397)  Signed-off-by: Adrien Gallouët <angt@hugg
 
 ## Agent Use
 

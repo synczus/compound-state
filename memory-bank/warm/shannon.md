@@ -1,5 +1,5 @@
 # Shannon — Warm Memory
-_Refreshed: 2026-06-10 23:00 UTC_
+_Refreshed: 2026-06-11 00:00 UTC_
 
 ## Status
 - Gateway: 
@@ -30,30 +30,30 @@ _Auto-updated from Telegram chat history | 50 latest entries_
 _Auto-updated from Telegram chat history | 50 latest entries_
 
 ### 1. configuration_detail
-- **When:** 2026-06-10 17:35:16
-- **Tags:** port, key
+- **When:** 2026-06-10 18:44:55
+- **Tags:** timeout
 
-Right, was cut off mid-delivery. Here's the full diagnostic:
+Found it. Here's what's going on:
 
-## 🛠️ USB/Mouse Lag — Full Report
+**`hop-chain-v2`** — runs **every 5 minutes** in Kairos's profile. It's a coordination baton that cycles through: `kairos → nemoclaw → openclaw → shannon → hermes`, announcing whose turn it is and waiting 30 min for each to respond. When done, waits 10 min idle, then auto-restarts.
 
-**First, the good news:** Your system's healthy — CPU at 3% load, 30GB RAM with 21Gb free, NVMe fine, CPU governor on `performance`, sitting at 5GHz. The G703 mouse itself has power control set to `on` and uses the correct `logitech-hidpp-device` driver.
+**Is it doing anything useful?** Right now — **not really.** It's `no_agent=true` (zero LLM cost, just a Python script), but it delivers to Telegram every fire. Since automation's paused and agents aren't actively responding, it just cycles through timeouts and restarts over and over. 514 runs so far, 99% of them noise.
 
-**The problem:** USB **controllers** are going to sleep — not the mouse itself, but the ports it talks through.
+**If you disable it, does it affect the automation toggle?** **Completely separate.** The automation toggle I built only controls Hermes crons + require_menti
 
 ### From chat-signals.md
 # Market Signals & Trading
 
-_Auto-updated from Telegram chat history | 13 latest entries_
+_Auto-updated from Telegram chat history | 14 latest entries_
 
 ### 1. signal
-- **When:** 2026-06-08 19:04:05
+- **When:** 2026-06-10 18:44:55
 - **Tags:** eth
 
-[The user sent a voice message~ Here's what they said: "Do you think it could be the harness that we installed for there it goes. It clawed isn't working for some reason clawed is It doesn't call tools or anything. I just it is thanks for a second then logs out. I don't understand it I think it's because of the harness that we installed on the agents. There's a harness that I got off the go that I installed. I'm not sure I opened up Jim and I and it said something about The harness wasn't working or something the tool wasn't working. Do you think that's maybe the reason why the tools aren't working and Claude's not working and Jim and I know Jim and I was working, but codex Claude doesn't work on"]
+[The user sent a voice message~ Here's what they said: "Kerosk keeps doing the cron job response, hop chain version 2. Is that actually doing something in the background? Or, I know automation is off right now, but if I disable it now, if I want automation on later on, will I have to re-enable it? Or is that completely separate?"]
 
 ---
 
 ### 2. signal
-- **When:** 2026-06-08 18:57:11
-- **Tags:** exit
+- **When:** 2026-06-08 19:04:05
+- **Tags:** eth
