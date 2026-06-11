@@ -1,5 +1,5 @@
 # Hermes — Warm Memory
-_Refreshed: 2026-06-11 00:00 UTC_
+_Refreshed: 2026-06-11 04:00 UTC_
 
 ## Status
 - Gateway: 
@@ -44,16 +44,16 @@ Found it. Here's what's going on:
 ### From chat-signals.md
 # Market Signals & Trading
 
-_Auto-updated from Telegram chat history | 14 latest entries_
+_Auto-updated from Telegram chat history | 15 latest entries_
 
 ### 1. signal
-- **When:** 2026-06-10 18:44:55
+- **When:** 2026-06-10 20:24:52
 - **Tags:** eth
 
-[The user sent a voice message~ Here's what they said: "Kerosk keeps doing the cron job response, hop chain version 2. Is that actually doing something in the background? Or, I know automation is off right now, but if I disable it now, if I want automation on later on, will I have to re-enable it? Or is that completely separate?"]
+[The user sent a voice message~ Here's what they said: "Something's draining the open router credits."]
 
 ---
 
 ### 2. signal
-- **When:** 2026-06-08 19:04:05
+- **When:** 2026-06-10 18:44:55
 - **Tags:** eth
