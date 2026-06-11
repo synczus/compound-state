@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-11
-_Generated: 2026-06-11T17:30:32Z_
+_Generated: 2026-06-11T23:29:44Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -7,7 +7,7 @@ Load this file at session start to wake up with full pipeline context.
 
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-10 22:00:01 UTC_
+_Last consolidated: 2026-06-11 21:00:02 UTC_
 _Total active entries: 510_
 
 ## By Category
@@ -47,36 +47,38 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 17:16:46 UTC_
+_Generated: 2026-06-11 23:20:10 UTC_
 
 ## Last 24h
 
-- PROMOTE: 87
-- PURGE: 84
-- Total: 171
+- PROMOTE: 75
+- PURGE: 81
+- Total: 156
 
 ## Top Reasons
 
-- No significant markers found: 84
-- Security/vulnerability signal: 68
-- Dependency/ecosystem shift: 22
-- Convergence detected: 14
-- Direct actionability detected: 11
-- Structural shift (engineering refactor/rewrite): 10
+- No significant markers found: 81
+- Security/vulnerability signal: 58
+- Dependency/ecosystem shift: 19
+- Convergence detected: 13
+- Structural shift (engineering refactor/rewrite): 11
+- Direct actionability detected: 9
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_vscode: 61
-- GitHub_unsloth: 52
-- GitHub_langchain: 35
+- GitHub_vscode: 65
+- GitHub_unsloth: 44
+- GitHub_langchain: 22
 - GitHub_ComfyUI: 11
 - GitHub_llama.cpp: 10
-- GitHub_AutoGPT: 2
+- GitHub_ollama: 2
+- GitHub_AutoGPT: 1
+- GitHub_openai-python: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c3f4c30 by Don Jayamanne: Add AI-generated Agent Host session titles (#320887)  * Add AI-generated agent host ses
+- PROMOTE score=5 source=GitHub_ollama reason=Security/vulnerability signal preview=Commit f8a48df by Parafee41: llm: decouple prompt caching from context shift (#16639)  This PR separates prompt caching 
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -85,36 +87,38 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 17:16:46 UTC_
+_Generated: 2026-06-11 23:20:10 UTC_
 
 ## Last 24h
 
-- PROMOTE: 87
-- PURGE: 84
-- Total: 171
+- PROMOTE: 75
+- PURGE: 81
+- Total: 156
 
 ## Top Reasons
 
-- No significant markers found: 84
-- Security/vulnerability signal: 68
-- Dependency/ecosystem shift: 22
-- Convergence detected: 14
-- Direct actionability detected: 11
-- Structural shift (engineering refactor/rewrite): 10
+- No significant markers found: 81
+- Security/vulnerability signal: 58
+- Dependency/ecosystem shift: 19
+- Convergence detected: 13
+- Structural shift (engineering refactor/rewrite): 11
+- Direct actionability detected: 9
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_vscode: 61
-- GitHub_unsloth: 52
-- GitHub_langchain: 35
+- GitHub_vscode: 65
+- GitHub_unsloth: 44
+- GitHub_langchain: 22
 - GitHub_ComfyUI: 11
 - GitHub_llama.cpp: 10
-- GitHub_AutoGPT: 2
+- GitHub_ollama: 2
+- GitHub_AutoGPT: 1
+- GitHub_openai-python: 1
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit d420356 by Martin Aeschlimann: CopilotAH: fix watcher regression (#320958)  * CopilotAH: fix watcher regression  
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 8f6555f by Sandeep Somavarapu: check also if authenticatin provider is registered (#321042)
 _[truncated]_
 
 ### inversion-pulse.md

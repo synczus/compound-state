@@ -739,3 +739,89 @@
 2026-06-11 13:10:01 [INFO] No new images to process
 2026-06-11 13:20:01 [INFO] No new images to process
 2026-06-11 13:30:01 [INFO] No new images to process
+2026-06-11 13:40:01 [INFO] No new images to process
+2026-06-11 13:50:01 [INFO] No new images to process
+2026-06-11 14:00:01 [INFO] No new images to process
+2026-06-11 14:10:02 [INFO] No new images to process
+2026-06-11 14:20:02 [INFO] No new images to process
+2026-06-11 14:30:01 [INFO] No new images to process
+2026-06-11 14:40:01 [INFO] No new images to process
+2026-06-11 14:50:01 [INFO] No new images to process
+2026-06-11 15:00:01 [INFO] No new images to process
+2026-06-11 15:10:01 [INFO] No new images to process
+2026-06-11 15:20:01 [INFO] No new images to process
+2026-06-11 15:30:01 [INFO] No new images to process
+2026-06-11 15:40:01 [INFO] No new images to process
+2026-06-11 15:50:01 [INFO] No new images to process
+2026-06-11 16:00:02 [INFO] No new images to process
+2026-06-11 16:10:01 [INFO] No new images to process
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 322, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 318, in main
+    process_all(model=model)
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 263, in process_all
+    images = find_unprocessed(tracker)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/vision_handler.py",Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 322, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 318, in main
+    process_all(model=model)
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 263, in process_all
+    images = find_unprocessed(tracker)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 207, in find_unprocessed
+    images = sorted(INBOUND_DIR.glob("*.jpg"), key=os.path.getmtime)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1096, in glob
+    for p in selector.select_from(self):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 168, in select_from
+    if not parent_path.is_dir():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 877, in is_dir
+    return S_ISDIR(self.stat().st_mode)
+                   ^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 842, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/synczus/.openclaw/media/inbound'
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 322, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 318, in main
+    process_all(model=model)
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 263, in process_all
+    images = find_unprocessed(tracker)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/vision_handler.py", line 207, in find_unprocessed
+    images = sorted(INBOUND_DIR.glob("*.jpg"), key=os.path.getmtime)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1096, in glob
+    for p in selector.select_from(self):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 168, in select_from
+    if not parent_path.is_dir():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 877, in is_dir
+    return S_ISDIR(self.stat().st_mode)
+                   ^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 842, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/synczus/.openclaw/media/inbound'
+2026-06-11 17:20:01 [INFO] No new images to process
+2026-06-11 17:30:01 [INFO] No new images to process
+2026-06-11 17:40:01 [INFO] No new images to process
+2026-06-11 17:50:01 [INFO] No new images to process
+2026-06-11 18:00:02 [INFO] No new images to process
+2026-06-11 18:10:01 [INFO] No new images to process
+2026-06-11 18:20:01 [INFO] No new images to process
+2026-06-11 18:30:01 [INFO] No new images to process
+2026-06-11 18:40:01 [INFO] No new images to process
+2026-06-11 18:50:01 [INFO] No new images to process
+2026-06-11 19:00:01 [INFO] No new images to process
+2026-06-11 19:10:01 [INFO] No new images to process
+2026-06-11 19:20:01 [INFO] No new images to process
+2026-06-11 19:30:01 [INFO] No new images to process

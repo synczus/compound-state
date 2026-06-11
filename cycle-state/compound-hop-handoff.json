@@ -1,0 +1,316 @@
+{
+  "hop": "compound-handoff-v1",
+  "version": "1.0",
+  "date": "2026-06-11",
+  "title": "KESTREL COMPOUND — Full System Handoff",
+  "pipeline": "AI Hangout → Perplexity → Grok → AI Hangout",
+
+  "system_overview": {
+    "name": "Kestrel Markets / The Compound",
+    "owner": "synczus (Chase Hunt)",
+    "host": "Linux, 30GB RAM, 462GB SSD (83% used), RX 7700 GPU",
+    "model": "DeepSeek V4 Flash via OpenRouter (default), headroom proxy on :8787",
+    "cost_status": "CRITICAL — $211.98/day, $1,483/week, $6,359/month, threshold $30/day",
+    "live_trading": true,
+    "wallet": "$10 USDC on Coinbase Advanced Trade"
+  },
+
+  "agents": {
+    "hermes": {
+      "status": "ACTIVE",
+      "port": 8642,
+      "type": "Hermes Agent (Python, open-source)",
+      "role": "Orchestrator — builds, runs, reports. Default responder in AI Hangout.",
+      "pid": 4579,
+      "requires_mention": false,
+      "model": "google/gemma-4-31b-it:free (current session), default DeepSeek V4 Flash"
+    },
+    "openclaw": {
+      "status": "ACTIVE",
+      "port": 18789,
+      "type": "OpenClaw v2026.6.1 (Node.js)",
+      "role": "Builder/Infra — delegates code work, runs internal compound-pulse every 30min",
+      "pid": 509183,
+      "health": "HTTP 200 OK — {\"ok\":true,\"status\":\"live\"}",
+      "issues": "Internal compound-pulse cron generates hop/P0 noise — hop-sequence.json deleted, may need hard disable"
+    },
+    "nemoclaw": {
+      "status": "DOWN",
+      "port": 18791,
+      "type": "OpenClaw-based, separate systemd service",
+      "role": "Builder — prototype, build, wire integrations, ship code",
+      "pid": null,
+      "notes": "No process found. Systemd service exists but not running. Needs restart."
+    },
+    "kairos": {
+      "status": "ACTIVE (Hermes profile)",
+      "type": "Hermes Agent profile",
+      "role": "Timing/Ops — scout markets, check timing windows, audit risk, monitor Striker health",
+      "pid": 4627,
+      "services": {
+        "swarm-pulse": "PAUSED (was every 15min)",
+        "hop-chain-v2": "DELETED + script disabled",
+        "tldr-daily": "ACTIVE (9am daily, script missing)",
+        "gdrive-daily-backup": "ACTIVE (3am daily, script missing)"
+      }
+    },
+    "shannon": {
+      "status": "ACTIVE (Hermes profile)",
+      "type": "Hermes Agent profile",
+      "role": "Referee — audit code, stress-test strategies, judge quality",
+      "pid": 4689,
+      "services": {
+        "chat-knowledge-ingest": "PAUSED",
+        "codegraph-knowledge-sync": "PAUSED"
+      }
+    }
+  },
+
+  "trading": {
+    "platform": "Freqtrade + Coinbase Advanced Trade",
+    "mode": "LIVE (dry_run=false)",
+    "wallet": "$10 USDC (actual balance, config says $20 dry_run_wallet)",
+    "max_open_trades": 2,
+    "tradable_balance_ratio": 0.95,
+    "stake_currency": "USDC",
+    "strategy": "striker_basis",
+    "strategy_path": "/home/synczus/freqtrade/user_data/strategies/striker_basis.py",
+    "timeframe": "5m",
+    "pairs": ["BTC/USDC", "ETH/USDC", "SOL/USDC"],
+    "pairlist_method": "StaticPairList",
+    "current_trades": "NONE — 0 open positions",
+    "trading_mode": "spot",
+    "stop_loss": "-2% trailing (activates at 1% profit, +0.5% offset)",
+    "roi": "1% instant, 0.5% after 60min, 0.1% after 120min",
+    "api_server": "localhost:8082, auth required",
+    "exchange": "coinbaseadvanced",
+    "coinbase_api_key": "ad381c2a-c973-485f-96ed-10c56dbc970a",
+    "coinbase_org_id": "5dbd384c-a670-4985-aaf3-8ac9fc9ad5b3",
+    "issues": "DUAL INSTANCE — 2 Freqtrade processes running same config (PIDs 4444, 4446)"
+  },
+
+  "signal_pipeline": {
+    "engine": "Striker (core.unified.main)",
+    "status": "ACTIVE — connected since Jun 8, running via flock",
+    "pid": 4568,
+    "total_signals_lifetime": "138861 (dashboard) / 3351 (core)",
+    "current_session_signals": "0 (stagnant since Jun 8)",
+    "db_row_count": "~140K signal_scores in DuckDB",
+    "scoring_formula": "edge_score = source_prior × confidence × relevance × novelty × recency × cross_source_boost × fp_penalty × tier_mult × bluechip_mult",
+    "sources_queued": {
+      "whale-alert": "2994 messages",
+      "crypto-garden": "2445",
+      "binance-killers": "4172",
+      "hermes-bot-chat": "2670",
+      "signal-filter.trading": "60",
+      "GemHunterrs": 804,
+      "disclosetv": 606,
+      "~80 other Telegram sources": "~3-36 each",
+      "total_unprocessed_exports": 31
+    },
+    "issues": [
+      "Signals stagnant since Jun 8 — 0/138861 this session, health stale since Jun 8",
+      "Timestamp bug — signals show 1970-01-01 dates",
+      "Core striker (3351 sigs) ≠ dashboard striker (138861 sigs) — discrepancy",
+      "Striker service file runs core.main, actual process runs core.unified.main (mismatch)"
+    ]
+  },
+
+  "infrastructure": {
+    "headroom_proxy": {
+      "status": "HEALTHY",
+      "port": 8787,
+      "mode": "token compression",
+      "backend": "OpenRouter",
+      "budget": "$30/day",
+      "uptime": "51071 seconds (14+ hours)"
+    },
+    "wolfwatch": {
+      "status": "Running (PID 4563, port 18790) but flagged INACTIVE in cycle-state",
+      "type": "FastAPI alert bridge — relays Kairos monitor POSTs to Telegram"
+    },
+    "docker_stack": {
+      "all_up_since": "~22 hours ago",
+      "containers": [
+        "postgres:16-alpine (litellm-postgres)",
+        "mirofish (:3000)",
+        "graphiti-graphiti-server (:8003)",
+        "neo4j:5.26.2 (:7474, :7687)",
+        "provara-sandbox-provara-server (:8765)",
+        "redis:7-alpine ×2 (:6380, :6379)",
+        "kestrel-airi (:8001)",
+        "temporalio/temporal (:7233, :8233)",
+        "ollama/ollama (:11435)"
+      ]
+    },
+    "active_cron_jobs": {
+      "portfolio-snapshot": "every 2h",
+      "hygiene-check": "every 4h",
+      "daily-revenue": "9am daily",
+      "kairos-monitor": "every 15min",
+      "service-watchdog": "every 15min",
+      "signal-watch": "every 15min",
+      "memory-bank-feed": "every 30min",
+      "pipeline-pulse": "every 30min",
+      "pipeline-watchdog": "every 30min",
+      "auto-git": "every 4h",
+      "inversion-cron": "every 4h",
+      "dashboard-gen": "every 15min",
+      "trade-pipeline": "every 10min",
+      "post-ingest-scorer": "every 30min",
+      "note-intake": "every 10min",
+      "gdrive-backup": "6am daily",
+      "compound-pulse-telegram": "every 30min",
+      "or-budget-monitor": "every 30min",
+      "hermes-bridge-health": "every 30min",
+      "warm-refresh": "hourly",
+      "hunter-poller": "every 30min",
+      "vision_handler": "every 10min",
+      "compound-state": "every 15min",
+      "start-agentmemory": "@reboot"
+    }
+  },
+
+  "budget_and_costs": {
+    "openrouter": {
+      "daily_spend": "$211.98",
+      "weekly_spend": "$1,483.86",
+      "monthly_spend": "$6,359.41",
+      "threshold": "$30/day — MASSIVELY EXCEEDED",
+      "last_balance": "$56.715 (frozen since Jun 8, may be outdated)",
+      "usage_tier": "shows as 'free' tier (total_credits=0)",
+      "is_free": true
+    },
+    "notes": "Budget guard enabled. All LLM crons paused. Headroom proxy compressing tokens. Main cost drivers: gateways responding in chat, agent internal crons. Need to investigate actual OpenRouter billing — $6K/month on 'free' doesn't add up, suggests billing meter issue."
+  },
+
+  "pipeline_for_cross_platform_research": {
+    "hop_1_perplexity": {
+      "topic": "On-Chain Metrics Integration for Crypto Signal Scoring",
+      "context": "I run a multi-source crypto signal pipeline (Striker engine, 140K signals in DuckDB) on Coinbase Advanced Trade. I've identified CryptoQuant (5 endpoints: exchange-reserve, exchange-netflow-total, exchange-inflow-total, stablecoin USDT/USDC netflow, stablecoin reserve) and Whale Alert (3000+ queued messages) as highest-signal-density unwired sources. Current scoring: edge_score = source_prior × confidence × relevance × novelty × recency × cross_source_boost × fp_penalty × tier_mult × bluechip_mult. Need to understand: lead-lag relationships between exchange reserves/netflows and BTC/ETH price action, stablecoin flow interpretation (is inflow to exchanges buying pressure or selling?), how to weight on-chain vs momentum vs sentiment in multi-signal fusion, documented threshold values with predictive power, API reliability patterns for CryptoQuant/Whale Alert, and how professional quant systems weight these metrics. API base: api.cryptoquant.com/v1/ with access token auth."
+    },
+    "hop_2_perplexity": {
+      "topic": "DuckDB Tiered Retention & Time-Series Scaling for Signal Data",
+      "context": "My signal pipeline stores ~140K crypto signal_scores in DuckDB (~8K/hour from Striker). Sources queue data from 80+ Telegram channels, Whale Alert (3K unprocessed), and on-chain metrics. Current issues: no partitioning, no tiered retention, single writer (no concurrency safety), 31 unprocessed Telegram exports piling up. Need to research: DuckDB time-series partitioning (daily granularity with date pruning — native or UNION ALL views?), Parquet cold storage patterns (ZSTD vs Snappy for variable-width signal data), concurrent writer safety with flock, retention policies for ageing out signal data (delete vs move vs mark stale), and schema migration strategies when adding new signal sources without downtime. Also how quant systems handle 100K+ row insertions/hour on a budget server (2GB RAM target)."
+    },
+    "hop_3_perplexity": {
+      "topic": "Boot Persistence & Self-Healing for Multi-Agent Auto-Trading Stacks",
+      "context": "I run a swarm of autonomous LLM agents (5 Hermes/OpenClaw profiles) with a live crypto trading backend (Freqtrade + Coinbase, $10 real wallet, 3 pairs) and signal pipeline (Striker, 140K signals). Everything runs via systemd user units and cron. The biggest unresolved risk is boot persistence: if the server restarts or an agent process crashes, there's no verified auto-resurrection. Current issues: Nemoclaw gateway DOWN, 2 Freqtrade instances running same config (kill one), Striker health stale since Jun 8, OpenRouter budget exceeded ($211/day vs $30 threshold). Need to research: production watchdog patterns for agent resurrection, systemd timer vs cron tradeoffs for agent-adjacent jobs, fencing patterns to prevent duplicate Freqtrade instances, exponential backoff retry wrappers for idempotent pipeline jobs, and how to distinguish 'processing long request' from 'crashed' for LLM agents."
+    }
+  },
+
+  "work_items": {
+    "p0_critical": [
+      {
+        "id": "P0-1",
+        "title": "Nemoclaw gateway DOWN — restart needed",
+        "detail": "No process found for nemoclaw-gateway service. Systemd service exists but not running. Breaks agent redundancy.",
+        "action": "Find and restart: systemctl --user start openclaw-nemoclaw.service"
+      },
+      {
+        "id": "P0-2",
+        "title": "Freqtrade dual instance — kill duplicate",
+        "detail": "Two Freqtrade processes (PIDs 4444, 4446) running same config. Could cause conflicting trades or wallet confusion.",
+        "action": "Kill one instance: kill 4444 or kill 4446, verify single PID remains"
+      },
+      {
+        "id": "P0-3",
+        "title": "Budget bleed — $211/day vs $30 threshold",
+        "detail": "OpenRouter spend at $211/day / $6,359/month. Threshold is $30/day. All LLM crons already paused — gateways still consuming. Headroom proxy active but not enough.",
+        "action": "Investigate actual billing, switch to free models where possible, tighten gateway response limits"
+      },
+      {
+        "id": "P0-4",
+        "title": "Striker signals stagnant since Jun 8",
+        "detail": "0/138861 signals processed this session. Health stale since Jun 8. Timestamp bug shows 1970-01-01 dates.",
+        "action": "Diagnose: check Striker logs for errors, fix timestamp handling in signal generator, check DuckDB connection"
+      }
+    ],
+    "p1_high": [
+      {
+        "id": "P1-1",
+        "title": "OpenClaw compound-pulse noise",
+        "detail": "OpenClaw v2026.6.1 has built-in 30min pulse that checks hop state and posts P0 items. Hop-sequence.json deleted but pulse may still fire.",
+        "action": "Monitor if noise returns. If so, need to find OpenClaw config to disable internal pulse."
+      },
+      {
+        "id": "P1-2",
+        "title": "WolfWatch flagged INACTIVE despite running",
+        "detail": "WolfWatch receiver process running on :18790 (PID 4563) but cycle-state shows 'inactive'. Health check mismatch.",
+        "action": "Diagnose: check why cycle-state flags wolfwatch as inactive when process is running"
+      },
+      {
+        "id": "P1-3",
+        "title": "31 unprocessed Telegram exports",
+        "detail": "Message files queued since Jun 6, never ingested into signal pipeline.",
+        "action": "Process backlog: run export ingestion pipeline manually or clear queue"
+      },
+      {
+        "id": "P1-4",
+        "title": "CryptoQuant & Whale Alert not wired",
+        "detail": "Highest-signal-density sources identified but not connected to pipeline. Whale Alert has 2994+ queued messages.",
+        "action": "Wire CryptoQuant API (5 endpoints) and Whale Alert into signal scoring pipeline"
+      },
+      {
+        "id": "P1-5",
+        "title": "Hop chain idle / baton parked since Jun 8",
+        "detail": "Agent coordination cycle stopped. active-baton.json parked. No autonomous agent rotation happening.",
+        "action": "Decide: restart hop cycle with new cadence, or keep agents independent"
+      }
+    ],
+    "p2_medium": [
+      {
+        "id": "P2-1",
+        "title": "Striker service file vs actual process mismatch",
+        "detail": "Service file runs 'core.main', actual process runs 'core.unified.main'. On restart, wrong entrypoint launches.",
+        "action": "Update service file to match actual process: python -m core.unified.main"
+      },
+      {
+        "id": "P2-2",
+        "title": "Kairos cron scripts missing",
+        "detail": "tldr_scraper.py and gdrive-backup.sh not found. Cron jobs error on execution.",
+        "action": "Create or remove these cron definitions"
+      },
+      {
+        "id": "P2-3",
+        "title": "OpenRouter budget balance frozen",
+        "detail": "OR budget last checked Jun 8 07:00Z, stuck at $56.715. Not updating.",
+        "action": "Re-enable or-budget-monitor cron or fix budget checker endpoint"
+      },
+      {
+        "id": "P2-4",
+        "title": "DuckDB partitioning & retention not implemented",
+        "detail": "140K signals accumulating without tiered retention, partitioning, or cold storage.",
+        "action": "Research + implement DuckDB time-series partitioning and Parquet cold storage"
+      }
+    ],
+    "p3_low": [
+      {"id": "P3-1", "title": "AgentMemory wiring across all 5 agents — partial completion, needs verification"},
+      {"id": "P3-2", "title": "USB mouse autosuspend fix — commands provided but user needs to run from keyboard"},
+      {"id": "P3-3", "title": "Dashboard on :19500 — needs visual refresh and auto-refresh verification"},
+      {"id": "P3-4", "title": "Litellm integration with 402 errors — needs provider config fix for DeepSeek V4 Flash model name"},
+      {"id": "P3-5", "title": "Discord gateway not configured — only Telegram active"},
+      {"id": "P3-6", "title": "Documentation — no canonical compound architecture doc"},
+      {"id": "P3-7", "title": "Backup strategy — gdrive-backup script missing, no verified restore path"}
+    ]
+  },
+
+  "recent_system_state": {
+    "last_updated": "2026-06-11T20:00:01Z",
+    "disk_used": "83% (364G/462G)",
+    "memory": "19G used / 30G total (63%)",
+    "uptime": "Docker stack ~22h, agents varied (some running since Jun 6-8)",
+    "no_open_trades": true,
+    "baton_parked_since": "2026-06-08",
+    "striker_connected_since": "2026-06-08T18:23Z",
+    "wolfwatch_error": "service flagged inactive in cycle-state"
+  },
+
+  "hop_metadata": {
+    "generated_by": "Hermes (huntsystems_bot)",
+    "generated_at": "2026-06-11T21:00Z",
+    "intended_consumers": ["Perplexity (research)", "Grok (analysis)", "AI Hangout (discussion)"],
+    "purpose": "Cross-platform handoff JSON for compounding agent loop — every agent that reads this should have full context of what exists, what's broken, and what to work on next.",
+    "instructions_for_next_reader": "Read the work_items section. Pick a P0 item. Research or analyze it. Return findings as structured JSON with this schema: {\"findings\": [], \"recommendations\": [], \"uncertainties\": [], \"next_action\": \"\"}."
+  }
+}

@@ -806,3 +806,133 @@ NO_NEW_NOTES
 NO_NEW_NOTES
 NO_NEW_NOTES
 NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+FETCH_ERR: HTTP Error 409: Conflict
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 173, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 167, in main
+    SEEN_FILE.write_text(json.dumps(seen, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+OSError: [Errno 28] No space left on device
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 173, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 167, in main
+    SEEN_FILE.write_text(json.dumps(seen, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+OSError: [Errno 28] No space left on device
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 173, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 167, in main
+    SEEN_FILE.write_text(json.dumps(seen, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+OSError: [Errno 28] No space left on device
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+FETCH_ERR: The read operation timed out
+NO_NEW_NOTES
+NO_NEW_NOTES
+NO_NEW_NOTES
+VOICE_DL_ERR: The read operation timed out
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 173, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 158, in main
+    filename = save_note(msg)
+               ^^^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 135, in save_note
+    filepath.write_text(content)
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/synczus/gdrive/kestrel-notes/20260611-224130_VOICE NOTE  13s  file_id AwACAgEAAxkBAAI.md'
+VOICE_DL_ERR: [Errno 2] No such file or directory: '/home/synczus/gdrive/kestrel-notes/voice_20260611_224130.ogg'
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 173, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 158, in main
+    filename = save_note(msg)
+               ^^^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 135, in save_note
+    filepath.write_text(content)
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/synczus/gdrive/kestrel-notes/20260611-224130_VOICE NOTE  13s  file_id AwACAgEAAxkBAAI.md'
+VOICE_DL_ERR: [Errno 2] No such file or directory: '/home/synczus/gdrive/kestrel-notes/voice_20260611_224130.ogg'
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 173, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 158, in main
+    filename = save_note(msg)
+               ^^^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 135, in save_note
+    filepath.write_text(content)
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/synczus/gdrive/kestrel-notes/20260611-224130_VOICE NOTE  13s  file_id AwACAgEAAxkBAAI.md'
+VOICE_DL_ERR: [Errno 2] No such file or directory: '/home/synczus/gdrive/kestrel-notes/voice_20260611_224130.ogg'
+Traceback (most recent call last):
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 173, in <module>
+    main()
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 158, in main
+    filename = save_note(msg)
+               ^^^^^^^^^^^^^^
+  File "/home/synczus/kestrel/scripts/note-intake.py", line 135, in save_note
+    filepath.write_text(content)
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/synczus/gdrive/kestrel-notes/20260611-224130_VOICE NOTE  13s  file_id AwACAgEAAxkBAAI.md'
+NO_NEW_NOTES

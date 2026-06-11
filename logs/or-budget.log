@@ -150,3 +150,28 @@ ERROR: HTTP Error 401: Unauthorized
 or-budget-state: $211.98 used, $0.00 remaining
 ERROR: HTTP Error 401: Unauthorized
 or-budget-state: $211.98 used, $0.00 remaining
+ERROR: HTTP Error 401: Unauthorized
+or-budget-state: $211.98 used, $0.00 remaining
+ERROR: HTTP Error 401: Unauthorized
+or-budget-state: $211.98 used, $0.00 remaining
+ERROR: HTTP Error 401: Unauthorized
+or-budget-state: $211.98 used, $0.00 remaining
+ERROR: HTTP Error 401: Unauthorized
+or-budget-state: $211.98 used, $0.00 remaining
+NO_KEY
+or-budget-state: $211.98 used, $0.00 remaining
+NO_KEY
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 21, in <module>
+OSError: [Errno 28] No space left on device
+NO_KEY
+or-budget-state: $211.98 used, $0.00 remaining
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
