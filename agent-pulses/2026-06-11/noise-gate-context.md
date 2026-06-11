@@ -1,47 +1,47 @@
 # Noise Gate Context
 
-_Generated: 2026-06-11 12:21:12 UTC_
+_Generated: 2026-06-11 15:53:15 UTC_
 
 ## Last 24h
 
-- PROMOTE: 88
-- PURGE: 69
-- Total: 157
+- PROMOTE: 93
+- PURGE: 79
+- Total: 172
 
 ## Top Reasons
 
-- Security/vulnerability signal: 73
-- No significant markers found: 69
-- Dependency/ecosystem shift: 19
-- Direct actionability detected: 12
-- Structural shift (engineering refactor/rewrite): 9
-- Convergence detected: 9
+- No significant markers found: 79
+- Security/vulnerability signal: 76
+- Dependency/ecosystem shift: 21
+- Convergence detected: 15
+- Direct actionability detected: 14
+- Structural shift (engineering refactor/rewrite): 11
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_vscode: 52
-- GitHub_unsloth: 47
-- GitHub_langchain: 36
-- GitHub_ComfyUI: 10
+- GitHub_unsloth: 57
+- GitHub_vscode: 57
+- GitHub_langchain: 35
+- GitHub_ComfyUI: 11
 - GitHub_llama.cpp: 8
 - GitHub_openai-python: 2
 - GitHub_AutoGPT: 2
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 4902446 by Lee Jackson: Studio: ignore unsupported env proxy during Studio startup (#6102)  * fix: ignore unsuppo
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit d0ffe26 by Daniel Han: Keep audio feature extractors right padded when loading processors (#6157)  * Keep audio f
-- PROMOTE score=13 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 2db9fad by Daniel Han: Installer: GPU detection follow-ups after #6174 (poisoned venv repair, llama.cpp routing, 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 44f9066 by Lee Murray: Merge pull request #319736 from microsoft/mrleemurray/conventional-turquoise-termite  Impr
-- PROMOTE score=7 source=GitHub_unsloth reason=Structural shift (engineering refactor/rewrite); Convergence detected preview=Commit 28fe978 by Daniel Han: Lint CI: diff import-hoist check against the PR merge-base, not the base tip (#6190)  The 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit fbaf527 by Daniel Han: Add FastDiffusionModel slow path for text-diffusion models (DiffusionGemma) (#6158)  * Add
-- PROMOTE score=3 source=GitHub_vscode reason=Dependency/ecosystem shift preview=Commit 847d569 by Don Jayamanne: chore: update @github/copilot and related dependencies to version 1.0.61 (#320868)  * c
-- PROMOTE score=8 source=GitHub_AutoGPT reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit ba178a7 by Ubbe: fix(frontend): harden paywall flows for half-dead sessions (#13333)  ### Why / What / How  **Why
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 39d8817 by Martin Aeschlimann: IChatRequestModeInfo: clarify property names (#319903)  * IChatRequestModeInfo: cl
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit a7680b0 by Martin Aeschlimann: Fix CachedPromise to reset state on cancellation of in-flight computations (#32092
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 898d3dd by Daniel Han: Studio: offer the in-app llama.cpp update for source-build (markerless) installs (#6188)  
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit ec1935c by Don Jayamanne: Revert "add env var to AH to tag our CAPI traffic (#320814)" (#320923)  This reverts co
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 73eed19 by Tai An: fix(_utils): coerce _is_package_available tuple to bool for flash_attn/vllm checks (#6168)  tr
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 2d1484f by Logan Ramos: Improve markdown paste of nested html tags (#320967)  * Improve markdown paste of nested 
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 181288e by Ritwij Aryan Parmar: fix(studio): handle empty Responses tool output (#6167)  • fix: handle empty resp
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 3964f44 by Leo Borcherding: fix(rocm): stop overwriting ROCR_VISIBLE_DEVICES in apply_gpu_ids (#6123)  * fix(rocm
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit 120daf9 by Viktor Ferenczi: fix(studio/rocm): don't stack ROCR_VISIBLE_DEVICES on HIP_VISIBLE_DEVICES (#6176)  Wh
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 004577c by Nilay: studio: show MCP "Import config" on the add-server form (#6030)  * studio: import MCP servers f
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit f64c3c8 by Nilay: Studio: add `unsloth chat` CLI command (#6170)  * Studio: add `unsloth chat` CLI command  Inter
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 916a11c by Lee Murray: Merge pull request #320934 from microsoft/mrleemurray/design-dot-md  Add design tokens doc
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit bc85ecd by Daniel Han: Studio: report the real llama-server context window and add an opt-in overflow policy for 
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 3733e0b by Daniel Han: fix(studio): surface live step with null loss through the SSE progress stream (#6206)  * f
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 450a770 by Christof Marti: Try fix flaky test (#320956)
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 7467064 by Burak Emir: Bump hono to 4.12.21, fixes CVE-2026-47676 (#6014)
 
 ## Agent Use
 
