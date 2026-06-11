@@ -39,9 +39,25 @@ def _resolve_model(role: str) -> str:
 
 
 def build_model_map() -> dict[str, str]:
-    """Build the full role -> model map from env vars."""
+    """Build the full role -> model map from env vars. Force known-free models to stop credit bleed."""
     roles = ["hermes", "codex", "perplexity", "gemini", "claude", "grok", "openclaw", "squirrel"]
-    return {r: _resolve_model(r) for r in roles}
+    # Hard free tier preference (llama free + deepseek flash are the cheapest on OR)
+    forced_free = {
+        "hermes": "meta-llama/llama-3.3-70b-instruct:free",
+        "codex": "meta-llama/llama-3.3-70b-instruct:free",
+        "perplexity": "deepseek/deepseek-v4-flash",
+        "gemini": "deepseek/deepseek-v4-flash",
+        "claude": "deepseek/deepseek-v4-flash",
+        "grok": "deepseek/deepseek-v4-flash",
+        "openclaw": "deepseek/deepseek-v4-flash",
+        "squirrel": "meta-llama/llama-3.3-70b-instruct:free",
+    }
+    m = {r: _resolve_model(r) for r in roles}
+    # Override with forced free unless explicitly set to something else in env for this session
+    for r in roles:
+        if os.getenv(f"AUTOHOP_{r.upper().replace('-', '_')}") is None:
+            m[r] = forced_free.get(r, m[r])
+    return m
 
 
 # ---------------------------------------------------------------------------
@@ -83,6 +99,20 @@ OPENROUTER_API_KEY: Optional[str] = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL: str = os.getenv(
     "OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"
 )
+
+# Credit bleed guard (user reported high usage ~$211+ daily)
+# If or-budget-state shows exceeded or very low remaining, force no real calls (hub will mock).
+try:
+    import json
+    from pathlib import Path
+    _budget = Path(__file__).resolve().parents[1] / "or-budget-state.json"
+    if _budget.exists():
+        _b = json.loads(_budget.read_text())
+        if _b.get("exceeded") or _b.get("remaining", 10) < 1:
+            OPENROUTER_API_KEY = None
+            logger.warning("OpenRouter real calls DISABLED: budget exceeded per or-budget-state.json (credit protection)")
+except Exception:
+    pass
 
 MODEL_MAP = build_model_map()
 

@@ -72,6 +72,16 @@ class BackgroundPoller:
                 self.consecutive_failures = 0
                 self.backoff = BASE_INTERVAL
 
+                # Rate limit telemetry from hunter signals (if present in metadata)
+                for sig in signals:
+                    rem = sig.metadata.get("rate_remaining")
+                    if rem and str(rem).isdigit():
+                        remaining = int(rem)
+                        if remaining < 10:
+                            self.backoff = min(self.backoff * 3, MAX_BACKOFF)
+                            logger.warning(f"Low GitHub rate remaining ({remaining}) for {target.repo}. Backing off harder.")
+                            break
+
             except Exception as e:
                 logger.error(f"Poll failed for {target.owner}/{target.repo}: {e}")
                 self.consecutive_failures += 1

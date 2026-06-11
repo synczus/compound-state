@@ -35,15 +35,36 @@ class GitHubHunter:
         # Check state to avoid redundant processing
         last_sha = self.state.get_last_sha(target.repo)
         
-        import subprocess
-        cmd = [
-            "curl", "-sL", 
-            f"{self.base_url}/{target.owner}/{target.repo}/commits?per_page=10"
-        ]
-        
+        import subprocess, tempfile, os
+        # Capture rate limit headers for telemetry (SPRINT requirement)
+        rate_info = {}
+        headers_file = None
         try:
+            with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.headers') as hf:
+                headers_file = hf.name
+            cmd = [
+                "curl", "-sL", "-D", headers_file,
+                f"{self.base_url}/{target.owner}/{target.repo}/commits?per_page=10"
+            ]
             process = subprocess.run(cmd, capture_output=True, text=True, check=True)
-            commits = json.loads(process.stdout)
+            body = process.stdout
+
+            # Parse rate limit headers
+            if os.path.exists(headers_file):
+                with open(headers_file) as f:
+                    for line in f:
+                        line = line.strip().lower()
+                        if line.startswith('x-ratelimit-'):
+                            try:
+                                k, v = line.split(':', 1)
+                                rate_info[k.strip()] = v.strip()
+                            except:
+                                pass
+                os.unlink(headers_file)
+            if rate_info:
+                logger.info(f"GitHub rate for {target.repo}: remaining={rate_info.get('x-ratelimit-remaining', '?')} limit={rate_info.get('x-ratelimit-limit', '?')}")
+
+            commits = json.loads(body)
             
             if not isinstance(commits, list):
                 logger.error(f"GitHub API error for {target.repo}: {commits}")
@@ -65,7 +86,7 @@ class GitHubHunter:
                     content=f"Commit {sha[:7]} by {author}: {msg}",
                     source=f"GitHub_{target.repo}",
                     timestamp=datetime.now(timezone.utc),  # discovery time, not author time
-                    metadata={"sha": sha, "authored_at": dt.isoformat()}
+                    metadata={"sha": sha, "authored_at": dt.isoformat(), "rate_remaining": rate_info.get('x-ratelimit-remaining')}
                 ))
             
             # Update state with the most recent SHA seen
@@ -74,15 +95,18 @@ class GitHubHunter:
                 
             return signals
         except Exception as e:
+            if headers_file and os.path.exists(headers_file):
+                try: os.unlink(headers_file)
+                except: pass
             logger.error(f"GitHub hunt failed for {target.repo}: {e}")
             return []
 
 # High-signal multi-repo targets
+# Note: "autogpt/AutoGPT" removed (404s); use the canonical Significant-Gravitas one.
 DEFAULT_TARGETS = [
     RepoTarget("ggerganov", "llama.cpp", "Local LLM inference shifts"),
     RepoTarget("nomic-ai", "gpt4all", "Local LLM ecosystem"),
     RepoTarget("ollama", "ollama", "Local LLM orchestration"),
-    RepoTarget("autogpt", "AutoGPT", "Autonomous agent shifts"),
     RepoTarget("Significant-Gravitas", "AutoGPT", "Autonomous agent shifts (canonical)"),
     RepoTarget("comfyanonymous", "ComfyUI", "Local image gen infrastructure"),
     RepoTarget("langchain-ai", "langchain", "LLM orchestration framework"),

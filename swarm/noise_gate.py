@@ -85,9 +85,13 @@ class NoiseGate:
             score += 4
             reasons.append("Structural shift (engineering refactor/rewrite)")
 
-        # 5. Security / Vulnerability detection
-        security_terms = {"security", "vulnerability", "cve", "patch", "fix"}
-        if any(term in content_lower for term in security_terms):
+        # 5. Security / Vulnerability detection (per SPRINT: "fix" alone is too broad/noisy)
+        # Require "fix" + explicit vuln/crash context, or standalone high-signal vuln terms.
+        vuln_terms = {"security", "vulnerability", "cve", "exploit", "crash", "vulnerab"}
+        has_vuln = any(term in content_lower for term in vuln_terms)
+        has_fix = "fix" in content_lower or "fixed" in content_lower
+        has_critical_context = any(t in content_lower for t in ["security", "vulnerab", "cve", "exploit", "crash", "auth", "rce", "overflow", "injection"])
+        if has_vuln or (has_fix and has_critical_context):
             score += 5
             reasons.append("Security/vulnerability signal")
 

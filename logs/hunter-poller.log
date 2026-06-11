@@ -1,0 +1,67 @@
+2026-06-11T05:51:56Z | Hunter poller already running
+2026-06-11T05:52:13Z | Hunter poller already running
+2026-06-11 01:54:39,210 [WARNING] kestrel.openrouter: OpenRouter real calls DISABLED: budget exceeded per or-budget-state.json (credit protection)
+2026-06-11 01:54:39,214 [INFO] kestrel.main: Starting background poller. Ctrl+C to stop.
+2026-06-11 01:54:39,214 [INFO] kestrel.poller: Kestrel Background Poller starting...
+2026-06-11 01:54:39,214 [INFO] kestrel.poller: Monitoring 9 repos
+2026-06-11 01:54:39,214 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 01:54:39,214 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 01:54:44,785 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=40 limit=60
+2026-06-11 01:54:44,786 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 01:54:46,841 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 01:54:52,214 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=39 limit=60
+2026-06-11 01:54:52,214 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 01:54:54,306 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 01:54:54,686 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=25 limit=60
+2026-06-11 01:54:54,686 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 01:54:57,492 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 01:54:57,912 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=24 limit=60
+2026-06-11 01:54:57,913 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 01:54:59,846 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 01:55:05,374 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=37 limit=60
+2026-06-11 01:55:05,374 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 01:55:07,775 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 01:55:08,159 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=36 limit=60
+2026-06-11 01:55:08,159 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 01:55:09,620 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 01:55:14,978 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=35 limit=60
+2026-06-11 01:55:14,978 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 01:55:16,448 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 01:55:16,806 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=34 limit=60
+2026-06-11 01:55:16,806 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 01:55:18,432 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 01:55:23,859 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=57 limit=60
+2026-06-11 01:55:23,859 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 01:55:26,397 [INFO] kestrel.poller: Cycle complete: no new signals
+2026-06-11 01:55:26,397 [INFO] kestrel.poller: Next poll in ~19m (jittered)
+2026-06-11T06:00:01Z | Hunter poller already running
+2026-06-11 02:15:18,497 [INFO] kestrel.poller: Starting poll cycle: 9 targets
+2026-06-11 02:15:18,497 [INFO] kestrel.github_hunter: Hunting commits for ggerganov/llama.cpp...
+2026-06-11 02:15:19,050 [INFO] kestrel.github_hunter: GitHub rate for llama.cpp: remaining=55 limit=60
+2026-06-11 02:15:19,050 [INFO] kestrel.github_hunter: Reached last seen commit for llama.cpp. Stopping.
+2026-06-11 02:15:21,501 [INFO] kestrel.github_hunter: Hunting commits for nomic-ai/gpt4all...
+2026-06-11 02:15:26,924 [INFO] kestrel.github_hunter: GitHub rate for gpt4all: remaining=16 limit=60
+2026-06-11 02:15:26,924 [INFO] kestrel.github_hunter: Reached last seen commit for gpt4all. Stopping.
+2026-06-11 02:15:28,354 [INFO] kestrel.github_hunter: Hunting commits for ollama/ollama...
+2026-06-11 02:15:33,734 [INFO] kestrel.github_hunter: GitHub rate for ollama: remaining=15 limit=60
+2026-06-11 02:15:33,735 [INFO] kestrel.github_hunter: Reached last seen commit for ollama. Stopping.
+2026-06-11 02:15:35,069 [INFO] kestrel.github_hunter: Hunting commits for Significant-Gravitas/AutoGPT...
+2026-06-11 02:15:40,655 [INFO] kestrel.github_hunter: GitHub rate for AutoGPT: remaining=54 limit=60
+2026-06-11 02:15:40,656 [INFO] kestrel.github_hunter: Reached last seen commit for AutoGPT. Stopping.
+2026-06-11 02:15:42,475 [INFO] kestrel.github_hunter: Hunting commits for comfyanonymous/ComfyUI...
+2026-06-11 02:15:47,971 [INFO] kestrel.github_hunter: GitHub rate for ComfyUI: remaining=52 limit=60
+2026-06-11 02:15:47,971 [INFO] kestrel.github_hunter: Reached last seen commit for ComfyUI. Stopping.
+2026-06-11 02:15:49,844 [INFO] kestrel.github_hunter: Hunting commits for langchain-ai/langchain...
+2026-06-11 02:15:55,250 [INFO] kestrel.github_hunter: GitHub rate for langchain: remaining=53 limit=60
+2026-06-11 02:15:55,250 [INFO] kestrel.github_hunter: Reached last seen commit for langchain. Stopping.
+2026-06-11 02:15:57,118 [INFO] kestrel.github_hunter: Hunting commits for microsoft/vscode...
+2026-06-11 02:16:02,540 [INFO] kestrel.github_hunter: GitHub rate for vscode: remaining=52 limit=60
+2026-06-11 02:16:02,540 [INFO] kestrel.github_hunter: Reached last seen commit for vscode. Stopping.
+2026-06-11 02:16:04,550 [INFO] kestrel.github_hunter: Hunting commits for openai/openai-python...
+2026-06-11 02:16:04,916 [INFO] kestrel.github_hunter: GitHub rate for openai-python: remaining=51 limit=60
+2026-06-11 02:16:04,916 [INFO] kestrel.github_hunter: Reached last seen commit for openai-python. Stopping.
+2026-06-11 02:16:06,017 [INFO] kestrel.github_hunter: Hunting commits for unslothai/unsloth...
+2026-06-11 02:16:06,402 [INFO] kestrel.github_hunter: GitHub rate for unsloth: remaining=51 limit=60
+2026-06-11 02:16:06,402 [INFO] kestrel.github_hunter: Reached last seen commit for unsloth. Stopping.
+2026-06-11 02:16:09,079 [INFO] kestrel.poller: Cycle complete: no new signals
+2026-06-11 02:16:09,079 [INFO] kestrel.poller: Next poll in ~21m (jittered)
