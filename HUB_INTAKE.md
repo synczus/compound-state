@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-11
-_Generated: 2026-06-11T11:22:32Z_
+_Generated: 2026-06-11T12:24:32Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -47,22 +47,22 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 11:14:08 UTC_
+_Generated: 2026-06-11 12:21:12 UTC_
 
 ## Last 24h
 
-- PROMOTE: 86
-- PURGE: 71
+- PROMOTE: 88
+- PURGE: 69
 - Total: 157
 
 ## Top Reasons
 
-- Security/vulnerability signal: 72
-- No significant markers found: 71
+- Security/vulnerability signal: 73
+- No significant markers found: 69
 - Dependency/ecosystem shift: 19
 - Direct actionability detected: 12
 - Structural shift (engineering refactor/rewrite): 9
-- Convergence detected: 8
+- Convergence detected: 9
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
@@ -77,8 +77,8 @@ _Generated: 2026-06-11 11:14:08 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit fbaf527 by Daniel Han: Add FastDiffusionModel slow path for text-diffusion models (DiffusionGemma) (#6158)  * Add
-- PROMOTE score=3 source=GitHub_vscode reason=Dependency/ecosystem shift preview=Commit 847d569 by Don Jayamanne: chore: update @github/copilot and related dependencies to version 1.0.61 (#320868)  * c
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 4902446 by Lee Jackson: Studio: ignore unsupported env proxy during Studio startup (#6102)  * fix: ignore unsuppo
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit d0ffe26 by Daniel Han: Keep audio feature extractors right padded when loading processors (#6157)  * Keep audio f
 _[truncated]_
 
 ## Today's Pulses (newest first)
@@ -87,22 +87,22 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-11 11:14:08 UTC_
+_Generated: 2026-06-11 12:21:12 UTC_
 
 ## Last 24h
 
-- PROMOTE: 86
-- PURGE: 71
+- PROMOTE: 88
+- PURGE: 69
 - Total: 157
 
 ## Top Reasons
 
-- Security/vulnerability signal: 72
-- No significant markers found: 71
+- Security/vulnerability signal: 73
+- No significant markers found: 69
 - Dependency/ecosystem shift: 19
 - Direct actionability detected: 12
 - Structural shift (engineering refactor/rewrite): 9
-- Convergence detected: 8
+- Convergence detected: 9
 - Asymmetry/Contrarian signal detected: 2
 
 ## Sources
@@ -117,7 +117,7 @@ _Generated: 2026-06-11 11:14:08 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit fbaf527 by Daniel Han: Add FastDiffusionModel slow path for text-diffusion models (DiffusionGemma) (#6158)  * Add
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 4902446 by Lee Jackson: Studio: ignore unsupported env proxy during Studio startup (#6102)  * fix: ignore unsuppo
 _[truncated]_
 
 ### inversion-pulse.md
