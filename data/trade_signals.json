@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-11T05:10:07.299763+00:00",
+  "generated_at": "2026-06-11T05:20:08.127540+00:00",
   "total_raw_signals": 0,
   "total_trade_signals": 0,
   "live_prices": {
-    "BTC-USD": 62520,
-    "ETH-USD": 1649.9,
-    "SOL-USD": 65.0,
-    "BTC": 62520,
-    "ETH": 1649.9,
-    "SOL": 65.0
+    "BTC-USD": 62586,
+    "ETH-USD": 1649.64,
+    "SOL-USD": 65.06,
+    "BTC": 62586,
+    "ETH": 1649.64,
+    "SOL": 65.06
   },
   "atr_summary": {
     "BTC-USD": 0.352525367688975,
-    "ETH-USD": 0.4910470646326554,
+    "ETH-USD": 0.4642444989378943,
     "SOL-USD": 0.5532427695004387,
     "BTC": 0.352525367688975,
     "ETH": 0.5,
