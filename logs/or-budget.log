@@ -175,3 +175,14 @@ or-budget-state: $211.98 used, $0.00 remaining
 /bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
 /bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
 /bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+/bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
+NO_KEY
+or-budget-state: $211.98 used, $0.00 remaining

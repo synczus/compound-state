@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-11 21:00:02 UTC_
-_Total active entries: 510_
+_Last consolidated: 2026-06-12 04:11:39 UTC_
+_Total active entries: 515_
 
 ## By Category
 
-- **other**: 192 entries
+- **other**: 197 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -19,6 +19,11 @@ _Total active entries: 510_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 5353 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 5134 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 4451 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 4471 signals (0 >=0.3%), last 1970-01-01 00:00:00
+- `[hermes]` **[other]** ⚪ striker: 4497 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 4352 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 3081 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 2023 signals (0 >=0.3%), last 1970-01-01 00:00:00
@@ -64,11 +69,6 @@ _Total active entries: 510_
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | last30days and Perplexity Pro are complementary, not replacements — wire last30days as the default social/research engine for the swarm (engagement-scored signals feed Kestrel) and keep Perplexity for quick factual queries.
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | last30days is a synthesis engine (scores, clusters, summarizes) while Agent-Reach is just a scaffolding toolbox — for feeding scored signals into Kestrel, last30days is clearly the right choice.
 - `[hermes]` **[other]** 2026-06-08 | Scraper | last30days is installed and wired as the compound's default broad research engine for Reddit/X/HN/GitHub/Polymarket/YT synthesis, while Perplexity Sonar Pro remains the inline fact-checker — use last30days for sentiment and investigation, Sonar for quick factual grounding.
-- `[hermes]` **[monitoring-observability]** 2026-06-08 | Scraper | n8n is the outlier — 5h uptime vs 37h for the rest of the stack; check logs for what triggered the restart.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | 13-minute pulse gap, all 10 containers stable, Freqtrade online, GDrive backup growing — no intervention needed.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 16 messages ingested and knowledge docs regenerated.
-- `[hermes]` **[knowledge-management]** 2026-06-08 | Scraper | 16 new Telegram messages ingested into DuckDB with classification and knowledge docs regenerated.
-- `[hermes]` **[architecture-decision]** 2026-06-08 | Scraper | 19 new skills installed across all agents — Impeccable (35.9k, design audit) + Taste-Skill (37.8k, anti-slop framework, 13 sub-skills) + Last30Days (32.7k, research) — every agent now has design taste, research depth, and quality guardrails baked in.
 
 ---
 

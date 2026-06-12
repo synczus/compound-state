@@ -1,17 +1,17 @@
 # Noise Gate Context
 
-_Generated: 2026-06-11 23:20:10 UTC_
+_Generated: 2026-06-11 23:41:44 UTC_
 
 ## Last 24h
 
-- PROMOTE: 75
-- PURGE: 81
-- Total: 156
+- PROMOTE: 76
+- PURGE: 79
+- Total: 155
 
 ## Top Reasons
 
-- No significant markers found: 81
-- Security/vulnerability signal: 58
+- No significant markers found: 79
+- Security/vulnerability signal: 59
 - Dependency/ecosystem shift: 19
 - Convergence detected: 13
 - Structural shift (engineering refactor/rewrite): 11
@@ -20,10 +20,10 @@ _Generated: 2026-06-11 23:20:10 UTC_
 
 ## Sources
 
-- GitHub_vscode: 65
+- GitHub_vscode: 63
 - GitHub_unsloth: 44
 - GitHub_langchain: 22
-- GitHub_ComfyUI: 11
+- GitHub_ComfyUI: 12
 - GitHub_llama.cpp: 10
 - GitHub_ollama: 2
 - GitHub_AutoGPT: 1
@@ -31,6 +31,7 @@ _Generated: 2026-06-11 23:20:10 UTC_
 
 ## Recent Decisions
 
+- PROMOTE score=5 source=GitHub_ComfyUI reason=Security/vulnerability signal preview=Commit 10d466b by comfyanonymous: Don't crash when using flux kv cache with split batches. (#14422)
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 8f6555f by Sandeep Somavarapu: check also if authenticatin provider is registered (#321042)
 - PROMOTE score=5 source=GitHub_ollama reason=Security/vulnerability signal preview=Commit f8a48df by Parafee41: llm: decouple prompt caching from context shift (#16639)  This PR separates prompt caching 
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0eec4e3 by Vijay Upadya: Fix missing CLI session tool calls and agent response in agent debug logs (#321024)  * F
@@ -42,7 +43,6 @@ _Generated: 2026-06-11 23:20:10 UTC_
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit a3634cd by Connor Peet: Wire up MCP App support for agent-host sessions (#321016)  * working, in theory  * finish
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 55fbd4a by Benjamin Christopher Simmonds: Merge pull request #320981 from microsoft/benibenj/open-newt  Don't tog
 - PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 112a911 by Alexandru Dima: sessions: fix race where in-flight Claude session is spuriously removed (#321017)  * F
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 9fc5f41 by Logan Ramos: Render additional spend data (#321023)
 
 ## Agent Use
 
