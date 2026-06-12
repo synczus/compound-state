@@ -1,11 +1,11 @@
 # 🧠 Memory Bank — Consolidated Knowledge
 
-_Last consolidated: 2026-06-12 04:11:39 UTC_
-_Total active entries: 515_
+_Last consolidated: 2026-06-12 10:08:34 UTC_
+_Total active entries: 516_
 
 ## By Category
 
-- **other**: 197 entries
+- **other**: 198 entries
 - **pipeline-infrastructure**: 143 entries
 - **agent-orchestration**: 60 entries
 - **monitoring-observability**: 42 entries
@@ -19,6 +19,7 @@ _Total active entries: 515_
 
 ## Recent Propositions
 
+- `[hermes]` **[other]** ⚪ striker: 5391 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 5353 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 5134 signals (0 >=0.3%), last 1970-01-01 00:00:00
 - `[hermes]` **[other]** ⚪ striker: 4451 signals (0 >=0.3%), last 1970-01-01 00:00:00
@@ -68,7 +69,6 @@ _Total active entries: 515_
 - `[hermes]` **[pipeline-infrastructure]** 2026-06-08 | Scraper | `/last30days` skill installed and tested — pulls engagement-weighted social signals from Reddit, HN, Polymarket, X, YouTube, and GitHub, scored by real upvotes/likes/money, feeds directly into the Kestrel pipeline.
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | last30days and Perplexity Pro are complementary, not replacements — wire last30days as the default social/research engine for the swarm (engagement-scored signals feed Kestrel) and keep Perplexity for quick factual queries.
 - `[hermes]` **[agent-orchestration]** 2026-06-08 | Scraper | last30days is a synthesis engine (scores, clusters, summarizes) while Agent-Reach is just a scaffolding toolbox — for feeding scored signals into Kestrel, last30days is clearly the right choice.
-- `[hermes]` **[other]** 2026-06-08 | Scraper | last30days is installed and wired as the compound's default broad research engine for Reddit/X/HN/GitHub/Polymarket/YT synthesis, while Perplexity Sonar Pro remains the inline fact-checker — use last30days for sentiment and investigation, Sonar for quick factual grounding.
 
 ---
 

@@ -1,0 +1,53 @@
+[{
+  "companyId": "31ecf64c-e653-4047-80de-c7d02bb4bd8c",
+  "projectId": null,
+  "goalId": null,
+  "parentId": "9925ca1c-72ca-41fb-b136-0a837c285ef1",
+  "title": "Scout: Research ETH perpetuals basis divergence signal",
+  "description": "Investigate the ETH perpetuals basis divergence signal (2.1% over 6 hours). Explore potential causes, market implications, and any related events.",
+  "status": "backlog",
+  "priority": "high",
+  "assigneeTeamId": "scout-team",
+  "createdByAgentId": "9f83b2a6-26fa-4c9f-9908-e2ec42de0f54",
+  "originKind": "parent_issue",
+  "originId": "9925ca1c-72ca-41fb-b136-0a837c285ef1"
+},{
+  "companyId": "31ecf64c-e653-4047-80de-c7d02bb4bd8c",
+  "projectId": null,
+  "goalId": null,
+  "parentId": "9925ca1c-72ca-41fb-b136-0a837c285ef1",
+  "title": "Polish: Synthesize research on ETH perpetuals divergence",
+  "description": "Synthesize the research findings from Scout regarding the ETH perpetuals basis divergence signal into a concise, actionable summary.",
+  "status": "backlog",
+  "priority": "high",
+  "assigneeTeamId": "polish-team",
+  "createdByAgentId": "9f83b2a6-26fa-4c9f-9908-e2ec42de0f54",
+  "originKind": "parent_issue",
+  "originId": "9925ca1c-72ca-41fb-b136-0a837c285ef1"
+},{
+  "companyId": "31ecf64c-e653-4047-80de-c7d02bb4bd8c",
+  "projectId": null,
+  "goalId": null,
+  "parentId": "9925ca1c-72ca-41fb-b136-0a837c285ef1",
+  "title": "Critic: Stress-test ETH perpetuals divergence synthesis",
+  "description": "Stress-test the synthesized findings from Polish regarding the ETH perpetuals basis divergence signal. Identify potential flaws, counter-arguments, and overlooked risks.",
+  "status": "backlog",
+  "priority": "high",
+  "assigneeTeamId": "critic-team",
+  "createdByAgentId": "9f83b2a6-26fa-4c9f-9908-e2ec42de0f54",
+  "originKind": "parent_issue",
+  "originId": "9925ca1c-72ca-41fb-b136-0a837c285ef1"
+},{
+  "companyId": "31ecf64c-e653-4047-80de-c7d02bb4bd8c",
+  "projectId": null,
+  "goalId": null,
+  "parentId": "9925ca1c-72ca-41fb-b136-0a837c285ef1",
+  "title": "Gate: Verdict on ETH perpetuals divergence signal",
+  "description": "Provide a final verdict (SHIP/KILL/ARCHIVE) on the ETH perpetuals basis divergence signal based on the decomposed pipeline outcome.",
+  "status": "backlog",
+  "priority": "high",
+  "assigneeTeamId": "gate-team",
+  "createdByAgentId": "9f83b2a6-26fa-4c9f-9908-e2ec42de0f54",
+  "originKind": "parent_issue",
+  "originId": "9925ca1c-72ca-41fb-b136-0a837c285ef1"
+}]

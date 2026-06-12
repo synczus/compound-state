@@ -1,22 +1,1725 @@
 {
-  "generated_at": "2026-06-12T04:20:08.442806+00:00",
-  "total_raw_signals": 0,
-  "total_trade_signals": 0,
+  "generated_at": "2026-06-12T05:50:07.312449+00:00",
+  "total_raw_signals": 46,
+  "total_trade_signals": 46,
   "live_prices": {
-    "BTC-USD": 63575,
-    "ETH-USD": 1671.23,
-    "SOL-USD": 66.92,
-    "BTC": 63575,
-    "ETH": 1671.23,
-    "SOL": 66.92
+    "BTC-USD": 63291,
+    "ETH-USD": 1662.28,
+    "SOL-USD": 66.64,
+    "BTC": 63291,
+    "ETH": 1662.28,
+    "SOL": 66.64
   },
   "atr_summary": {
-    "BTC-USD": 0.24558321791710297,
-    "ETH-USD": 0.3200872148949355,
-    "SOL-USD": 0.3436939629408217,
-    "BTC": 0.24558321791710297,
+    "BTC-USD": 0.2686021645909338,
+    "ETH-USD": 0.31970849855320943,
+    "SOL-USD": 0.3340184994861244,
+    "BTC": 0.2686021645909338,
     "ETH": 0.5,
     "SOL": 0.5
   },
-  "signals": []
+  "signals": [
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.021,
+      "move_pct": -0.1049,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:21.600942+00:00",
+      "signal_id": 5489,
+      "edge_score": 20.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.021,
+      "move_pct": -0.1049,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:21.658583+00:00",
+      "signal_id": 5490,
+      "edge_score": 20.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.021,
+      "move_pct": -0.1049,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:21.850995+00:00",
+      "signal_id": 5491,
+      "edge_score": 20.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.021,
+      "move_pct": -0.1049,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:22.125994+00:00",
+      "signal_id": 5492,
+      "edge_score": 20.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.021,
+      "move_pct": -0.1049,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:22.620098+00:00",
+      "signal_id": 5493,
+      "edge_score": 20.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.021,
+      "move_pct": -0.1049,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:22.869754+00:00",
+      "signal_id": 5494,
+      "edge_score": 20.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.021,
+      "move_pct": -0.1049,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:24.369571+00:00",
+      "signal_id": 5495,
+      "edge_score": 20.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.0195,
+      "move_pct": -0.0975,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:16.071510+00:00",
+      "signal_id": 5480,
+      "edge_score": 19.6,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.0195,
+      "move_pct": -0.0975,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:16.120185+00:00",
+      "signal_id": 5481,
+      "edge_score": 19.6,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.0195,
+      "move_pct": -0.0975,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:16.369024+00:00",
+      "signal_id": 5482,
+      "edge_score": 19.6,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.0195,
+      "move_pct": -0.0975,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:16.635975+00:00",
+      "signal_id": 5483,
+      "edge_score": 19.6,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.82,
+      "take_profit_1": 66.48,
+      "take_profit_2": 66.35,
+      "take_profit_3": 66.19,
+      "partial_targets": [
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.35,
+          "weight_pct": 30,
+          "profit_pct": 0.44
+        },
+        {
+          "level": 66.19,
+          "weight_pct": 40,
+          "profit_pct": 0.68
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.27,
+      "expected_return_pct": 0.48,
+      "risk_reward_ratio": 1.66,
+      "confidence": 0.018,
+      "move_pct": -0.0901,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:40:32.651848+00:00",
+      "signal_id": 5465,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.82,
+      "take_profit_1": 66.48,
+      "take_profit_2": 66.35,
+      "take_profit_3": 66.19,
+      "partial_targets": [
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.35,
+          "weight_pct": 30,
+          "profit_pct": 0.44
+        },
+        {
+          "level": 66.19,
+          "weight_pct": 40,
+          "profit_pct": 0.68
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.27,
+      "expected_return_pct": 0.48,
+      "risk_reward_ratio": 1.66,
+      "confidence": 0.018,
+      "move_pct": -0.0901,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:40:32.743800+00:00",
+      "signal_id": 5466,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.82,
+      "take_profit_1": 66.48,
+      "take_profit_2": 66.35,
+      "take_profit_3": 66.19,
+      "partial_targets": [
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.35,
+          "weight_pct": 30,
+          "profit_pct": 0.44
+        },
+        {
+          "level": 66.19,
+          "weight_pct": 40,
+          "profit_pct": 0.68
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.27,
+      "expected_return_pct": 0.48,
+      "risk_reward_ratio": 1.66,
+      "confidence": 0.018,
+      "move_pct": -0.0901,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:40:32.993916+00:00",
+      "signal_id": 5467,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.82,
+      "take_profit_1": 66.48,
+      "take_profit_2": 66.35,
+      "take_profit_3": 66.19,
+      "partial_targets": [
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.35,
+          "weight_pct": 30,
+          "profit_pct": 0.44
+        },
+        {
+          "level": 66.19,
+          "weight_pct": 40,
+          "profit_pct": 0.68
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.27,
+      "expected_return_pct": 0.48,
+      "risk_reward_ratio": 1.66,
+      "confidence": 0.018,
+      "move_pct": -0.0901,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:40:33.750621+00:00",
+      "signal_id": 5468,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:11.600329+00:00",
+      "signal_id": 5469,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:11.618889+00:00",
+      "signal_id": 5470,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:11.848796+00:00",
+      "signal_id": 5471,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:11.868883+00:00",
+      "signal_id": 5472,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:12.369562+00:00",
+      "signal_id": 5473,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:12.620031+00:00",
+      "signal_id": 5474,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:12.876690+00:00",
+      "signal_id": 5475,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:14.125340+00:00",
+      "signal_id": 5476,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:14.370012+00:00",
+      "signal_id": 5477,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:15.119500+00:00",
+      "signal_id": 5478,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.56,
+      "take_profit_2": 66.5,
+      "take_profit_3": 66.42,
+      "partial_targets": [
+        {
+          "level": 66.56,
+          "weight_pct": 30,
+          "profit_pct": 0.12
+        },
+        {
+          "level": 66.5,
+          "weight_pct": 30,
+          "profit_pct": 0.21
+        },
+        {
+          "level": 66.42,
+          "weight_pct": 40,
+          "profit_pct": 0.33
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.23,
+      "risk_reward_ratio": 0.57,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:15.906083+00:00",
+      "signal_id": 5479,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:21.340449+00:00",
+      "signal_id": 5487,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:21.379402+00:00",
+      "signal_id": 5488,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:29.852840+00:00",
+      "signal_id": 5496,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:29.878010+00:00",
+      "signal_id": 5497,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.54,
+      "take_profit_2": 66.46,
+      "take_profit_3": 66.36,
+      "partial_targets": [
+        {
+          "level": 66.54,
+          "weight_pct": 30,
+          "profit_pct": 0.15
+        },
+        {
+          "level": 66.46,
+          "weight_pct": 30,
+          "profit_pct": 0.27
+        },
+        {
+          "level": 66.36,
+          "weight_pct": 40,
+          "profit_pct": 0.42
+        }
+      ],
+      "atr_pct": 0.12,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.29,
+      "risk_reward_ratio": 0.73,
+      "confidence": 0.018,
+      "move_pct": -0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:32.125495+00:00",
+      "signal_id": 5498,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.92,
+      "take_profit_1": 66.58,
+      "take_profit_2": 66.53,
+      "take_profit_3": 66.47,
+      "partial_targets": [
+        {
+          "level": 66.58,
+          "weight_pct": 30,
+          "profit_pct": 0.09
+        },
+        {
+          "level": 66.53,
+          "weight_pct": 30,
+          "profit_pct": 0.17
+        },
+        {
+          "level": 66.47,
+          "weight_pct": 40,
+          "profit_pct": 0.26
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.42,
+      "expected_return_pct": 0.18,
+      "risk_reward_ratio": 0.41,
+      "confidence": 0.0168,
+      "move_pct": -0.0839,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:04.589205+00:00",
+      "signal_id": 5509,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.92,
+      "take_profit_1": 66.58,
+      "take_profit_2": 66.53,
+      "take_profit_3": 66.47,
+      "partial_targets": [
+        {
+          "level": 66.58,
+          "weight_pct": 30,
+          "profit_pct": 0.09
+        },
+        {
+          "level": 66.53,
+          "weight_pct": 30,
+          "profit_pct": 0.17
+        },
+        {
+          "level": 66.47,
+          "weight_pct": 40,
+          "profit_pct": 0.26
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.42,
+      "expected_return_pct": 0.18,
+      "risk_reward_ratio": 0.41,
+      "confidence": 0.0168,
+      "move_pct": -0.0839,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:04.619853+00:00",
+      "signal_id": 5510,
+      "edge_score": 19.1,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.0174,
+      "move_pct": -0.087,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:17.086505+00:00",
+      "signal_id": 5484,
+      "edge_score": 18.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.0174,
+      "move_pct": -0.087,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:17.119852+00:00",
+      "signal_id": 5485,
+      "edge_score": 18.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "SHORT",
+      "entry_price": 66.64,
+      "stop_loss": 66.9,
+      "take_profit_1": 66.55,
+      "take_profit_2": 66.48,
+      "take_profit_3": 66.39,
+      "partial_targets": [
+        {
+          "level": 66.55,
+          "weight_pct": 30,
+          "profit_pct": 0.14
+        },
+        {
+          "level": 66.48,
+          "weight_pct": 30,
+          "profit_pct": 0.24
+        },
+        {
+          "level": 66.39,
+          "weight_pct": 40,
+          "profit_pct": 0.38
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.39,
+      "expected_return_pct": 0.27,
+      "risk_reward_ratio": 0.65,
+      "confidence": 0.0174,
+      "move_pct": -0.087,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:46:17.369535+00:00",
+      "signal_id": 5486,
+      "edge_score": 18.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.79,
+      "take_profit_2": 66.91,
+      "take_profit_3": 67.06,
+      "partial_targets": [
+        {
+          "level": 66.79,
+          "weight_pct": 30,
+          "profit_pct": 0.23
+        },
+        {
+          "level": 66.91,
+          "weight_pct": 30,
+          "profit_pct": 0.41
+        },
+        {
+          "level": 67.06,
+          "weight_pct": 40,
+          "profit_pct": 0.63
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.44,
+      "risk_reward_ratio": 1.4,
+      "confidence": 0.0228,
+      "move_pct": 0.114,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:00.838979+00:00",
+      "signal_id": 5506,
+      "edge_score": 15.6,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.79,
+      "take_profit_2": 66.91,
+      "take_profit_3": 67.06,
+      "partial_targets": [
+        {
+          "level": 66.79,
+          "weight_pct": 30,
+          "profit_pct": 0.23
+        },
+        {
+          "level": 66.91,
+          "weight_pct": 30,
+          "profit_pct": 0.41
+        },
+        {
+          "level": 67.06,
+          "weight_pct": 40,
+          "profit_pct": 0.63
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.44,
+      "risk_reward_ratio": 1.4,
+      "confidence": 0.0228,
+      "move_pct": 0.114,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:00.869530+00:00",
+      "signal_id": 5507,
+      "edge_score": 15.6,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.79,
+      "take_profit_2": 66.91,
+      "take_profit_3": 67.06,
+      "partial_targets": [
+        {
+          "level": 66.79,
+          "weight_pct": 30,
+          "profit_pct": 0.23
+        },
+        {
+          "level": 66.91,
+          "weight_pct": 30,
+          "profit_pct": 0.41
+        },
+        {
+          "level": 67.06,
+          "weight_pct": 40,
+          "profit_pct": 0.63
+        }
+      ],
+      "atr_pct": 0.11,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.44,
+      "risk_reward_ratio": 1.4,
+      "confidence": 0.0228,
+      "move_pct": 0.114,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:01.119382+00:00",
+      "signal_id": 5508,
+      "edge_score": 15.6,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.77,
+      "take_profit_2": 66.87,
+      "take_profit_3": 67.0,
+      "partial_targets": [
+        {
+          "level": 66.77,
+          "weight_pct": 30,
+          "profit_pct": 0.2
+        },
+        {
+          "level": 66.87,
+          "weight_pct": 30,
+          "profit_pct": 0.35
+        },
+        {
+          "level": 67.0,
+          "weight_pct": 40,
+          "profit_pct": 0.54
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.38,
+      "risk_reward_ratio": 1.2,
+      "confidence": 0.018,
+      "move_pct": 0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:49:58.625849+00:00",
+      "signal_id": 5499,
+      "edge_score": 13.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.77,
+      "take_profit_2": 66.87,
+      "take_profit_3": 67.0,
+      "partial_targets": [
+        {
+          "level": 66.77,
+          "weight_pct": 30,
+          "profit_pct": 0.2
+        },
+        {
+          "level": 66.87,
+          "weight_pct": 30,
+          "profit_pct": 0.35
+        },
+        {
+          "level": 67.0,
+          "weight_pct": 40,
+          "profit_pct": 0.54
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.38,
+      "risk_reward_ratio": 1.2,
+      "confidence": 0.018,
+      "move_pct": 0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:49:58.636225+00:00",
+      "signal_id": 5500,
+      "edge_score": 13.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.77,
+      "take_profit_2": 66.87,
+      "take_profit_3": 67.0,
+      "partial_targets": [
+        {
+          "level": 66.77,
+          "weight_pct": 30,
+          "profit_pct": 0.2
+        },
+        {
+          "level": 66.87,
+          "weight_pct": 30,
+          "profit_pct": 0.35
+        },
+        {
+          "level": 67.0,
+          "weight_pct": 40,
+          "profit_pct": 0.54
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.38,
+      "risk_reward_ratio": 1.2,
+      "confidence": 0.018,
+      "move_pct": 0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:49:58.906030+00:00",
+      "signal_id": 5501,
+      "edge_score": 13.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.77,
+      "take_profit_2": 66.87,
+      "take_profit_3": 67.0,
+      "partial_targets": [
+        {
+          "level": 66.77,
+          "weight_pct": 30,
+          "profit_pct": 0.2
+        },
+        {
+          "level": 66.87,
+          "weight_pct": 30,
+          "profit_pct": 0.35
+        },
+        {
+          "level": 67.0,
+          "weight_pct": 40,
+          "profit_pct": 0.54
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.38,
+      "risk_reward_ratio": 1.2,
+      "confidence": 0.018,
+      "move_pct": 0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:49:59.119546+00:00",
+      "signal_id": 5502,
+      "edge_score": 13.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.77,
+      "take_profit_2": 66.87,
+      "take_profit_3": 67.0,
+      "partial_targets": [
+        {
+          "level": 66.77,
+          "weight_pct": 30,
+          "profit_pct": 0.2
+        },
+        {
+          "level": 66.87,
+          "weight_pct": 30,
+          "profit_pct": 0.35
+        },
+        {
+          "level": 67.0,
+          "weight_pct": 40,
+          "profit_pct": 0.54
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.38,
+      "risk_reward_ratio": 1.2,
+      "confidence": 0.018,
+      "move_pct": 0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:00.151117+00:00",
+      "signal_id": 5503,
+      "edge_score": 13.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.77,
+      "take_profit_2": 66.87,
+      "take_profit_3": 67.0,
+      "partial_targets": [
+        {
+          "level": 66.77,
+          "weight_pct": 30,
+          "profit_pct": 0.2
+        },
+        {
+          "level": 66.87,
+          "weight_pct": 30,
+          "profit_pct": 0.35
+        },
+        {
+          "level": 67.0,
+          "weight_pct": 40,
+          "profit_pct": 0.54
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.38,
+      "risk_reward_ratio": 1.2,
+      "confidence": 0.018,
+      "move_pct": 0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:00.369538+00:00",
+      "signal_id": 5504,
+      "edge_score": 13.9,
+      "rating": "IGNORE"
+    },
+    {
+      "symbol": "SOL-USD",
+      "direction": "LONG",
+      "entry_price": 66.64,
+      "stop_loss": 66.44,
+      "take_profit_1": 66.77,
+      "take_profit_2": 66.87,
+      "take_profit_3": 67.0,
+      "partial_targets": [
+        {
+          "level": 66.77,
+          "weight_pct": 30,
+          "profit_pct": 0.2
+        },
+        {
+          "level": 66.87,
+          "weight_pct": 30,
+          "profit_pct": 0.35
+        },
+        {
+          "level": 67.0,
+          "weight_pct": 40,
+          "profit_pct": 0.54
+        }
+      ],
+      "atr_pct": 0.1,
+      "risk_pct": 0.3,
+      "expected_return_pct": 0.38,
+      "risk_reward_ratio": 1.2,
+      "confidence": 0.018,
+      "move_pct": 0.09,
+      "source": "striker",
+      "timestamp": "2026-06-12T05:50:00.619891+00:00",
+      "signal_id": 5505,
+      "edge_score": 13.9,
+      "rating": "IGNORE"
+    }
+  ]
 }

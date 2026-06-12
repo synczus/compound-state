@@ -186,3 +186,7 @@ or-budget-state: $211.98 used, $0.00 remaining
 /bin/sh: 1: /home/synczus/kestrel/scripts/or-budget-monitor.sh: Permission denied
 NO_KEY
 or-budget-state: $211.98 used, $0.00 remaining
+ERROR: HTTP Error 401: Unauthorized
+or-budget-state: $211.98 used, $0.00 remaining
+ERROR: HTTP Error 401: Unauthorized
+or-budget-state: $211.98 used, $0.00 remaining

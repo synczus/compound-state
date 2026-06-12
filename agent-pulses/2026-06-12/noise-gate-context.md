@@ -1,47 +1,47 @@
 # Noise Gate Context
 
-_Generated: 2026-06-12 04:18:47 UTC_
+_Generated: 2026-06-12 15:53:40 UTC_
 
 ## Last 24h
 
-- PROMOTE: 72
-- PURGE: 79
-- Total: 151
+- PROMOTE: 73
+- PURGE: 93
+- Total: 166
 
 ## Top Reasons
 
-- No significant markers found: 79
+- No significant markers found: 93
 - Security/vulnerability signal: 54
-- Dependency/ecosystem shift: 22
-- Convergence detected: 10
-- Structural shift (engineering refactor/rewrite): 9
+- Dependency/ecosystem shift: 23
 - Direct actionability detected: 8
+- Structural shift (engineering refactor/rewrite): 6
+- Convergence detected: 5
+- Asymmetry/Contrarian signal detected: 2
 
 ## Sources
 
-- GitHub_vscode: 64
-- GitHub_unsloth: 48
-- GitHub_langchain: 16
-- GitHub_llama.cpp: 10
-- GitHub_ComfyUI: 8
+- GitHub_vscode: 69
+- GitHub_unsloth: 62
+- GitHub_llama.cpp: 16
+- GitHub_langchain: 9
+- GitHub_ComfyUI: 6
 - GitHub_ollama: 3
-- GitHub_AutoGPT: 1
 - GitHub_openai-python: 1
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_langchain reason=Direct actionability detected preview=Commit 5d20596 by Mason Daugherty: style(core,langchain,langchain-classic,partners): replace double backticks in docstri
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit f6d63bc by Mason Daugherty: release(langchain): 1.3.8 (#38096)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit d1e225f by Megan Rogge: Integrate Copilot Voice conversation engine (#320785)
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 6dae2f5 by Daniel Han: Stop false RoPE 'default' warning and fix rope drift gate on transformers 5 (#6223)  * Han
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 0793775 by Michael Han: Fix kwarg spacing in training files to satisfy pre-commit (#6209)  The ruff-format-with-k
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 11d5f64 by Daniel Han: Studio: reword the Cloudflare line when the public probe fails (#6217)  On a 0.0.0.0 bind 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 84b42c9 by Leo Borcherding: fix: deduplicate lemonade ROCm prebuilt selection log (#6021)  * fix: deduplicate lem
-- PROMOTE score=3 source=GitHub_unsloth reason=Dependency/ecosystem shift preview=Commit fb56b82 by oobabooga: Studio: fix llama.cpp update banner offering a downgrade / sticking on mix releases (#6219)
-- PROMOTE score=3 source=GitHub_vscode reason=Dependency/ecosystem shift preview=Commit 158e9ed by dependabot[bot]: Bump shell-quote from 1.8.1 to 1.8.4 in /extensions/copilot/chat-lib (#321068)  Bumps
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 834cfc1 by dileepyavan: build: separate TSA product pipeline configuration (#321060)  * build: share product pipe
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit e8be393 by Kyle Cutler: Browser: adjust input coordinates for emulation scaling (#321065)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 588cbae by Justin Chen: clean up open agents window flow (#321038)  * clean up open agents window flow  * show pr
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit ab7eee2 by Benjamin Christopher Simmonds: Add best practices instructions file (#321160)  * Add best practices in
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit be93ed6 by Megan Rogge: Fix Space key activating header buttons instead of PTT in voice mode (#321164)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 46171a9 by Paul: Add isBYOK signal to distinguish CAPI vs BYOK models (#321090)  * Add isBYOK signal to distingui
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit b91116c by Daniel Han: studio: declare UNSLOTH_IS_PRESENT at backend startup (#6262)  The studio backend lazily i
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit c1d6f5b by Megan Rogge: Fix Copilot terminal profile resolution when shell doesn't exist (#321154)  When the reso
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 5300c04 by oobabooga: Installer: drop the lemonade ROCm fallback now the fork ships identical per-gfx prebuilts (
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit cc32777 by sqersters: Studio: keep distinct bpw flavors of the same GGUF quant (#5729)  list_gguf_variants() keys
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 55d4342 by Connor Peet: agents: add exp settings for default agent selection (#320896)  * agents: add exp setting
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit e6455d8 by Sandeep Somavarapu: sessions: track preferred session type when no explicit user pick (#321141)  * ses
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 02656ea by comfyanonymous: Fix potential dtype issue with ideogram 4. (#14436)
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit d7a5527 by rattus: add --high-ram option (#14437)  Add this option for users who know they have so much ram they 
+- PROMOTE score=3 source=GitHub_llama.cpp reason=Dependency/ecosystem shift preview=Commit ebc1077 by Georgi Gerganov: server : fix reasoning budget WebUI precedence over model.ini (#24517)  When reasonin
 
 ## Agent Use
 

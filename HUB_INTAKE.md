@@ -1,5 +1,5 @@
 # HUB_INTAKE — 2026-06-12
-_Generated: 2026-06-12T04:30:00Z_
+_Generated: 2026-06-12T05:48:01Z_
 
 Load this file at session start to wake up with full pipeline context.
 
@@ -48,29 +48,29 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-12 04:18:47 UTC_
+_Generated: 2026-06-12 05:00:08 UTC_
 
 ## Last 24h
 
 - PROMOTE: 72
-- PURGE: 79
-- Total: 151
+- PURGE: 78
+- Total: 150
 
 ## Top Reasons
 
-- No significant markers found: 79
+- No significant markers found: 78
 - Security/vulnerability signal: 54
-- Dependency/ecosystem shift: 22
+- Dependency/ecosystem shift: 21
 - Convergence detected: 10
 - Structural shift (engineering refactor/rewrite): 9
-- Direct actionability detected: 8
+- Direct actionability detected: 7
 
 ## Sources
 
 - GitHub_vscode: 64
-- GitHub_unsloth: 48
-- GitHub_langchain: 16
-- GitHub_llama.cpp: 10
+- GitHub_unsloth: 47
+- GitHub_langchain: 15
+- GitHub_llama.cpp: 11
 - GitHub_ComfyUI: 8
 - GitHub_ollama: 3
 - GitHub_AutoGPT: 1
@@ -78,6 +78,8 @@ _Generated: 2026-06-12 04:18:47 UTC_
 
 ## Recent Decisions
 
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit ba1df05 by shaofeiqi: opencl: add q5_0/q5_1 gemm and gemv kernels for Adreno (#24319)  * opencl: add q5_0 adreno 
+- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 0392b6b by Christophe Bornet: fix(core): fix Pydantic v1 support in tools/runnable (#33698)  `BaseTool.args_schem
 - PROMOTE score=5 source=GitHub_langchain reason=Direct actionability detected preview=Commit 5d20596 by Mason Daugherty: style(core,langchain,langchain-classic,partners): replace double backticks in docstri
 _[truncated]_
 
@@ -87,29 +89,29 @@ _[truncated]_
 
 # Noise Gate Context
 
-_Generated: 2026-06-12 04:18:47 UTC_
+_Generated: 2026-06-12 05:00:08 UTC_
 
 ## Last 24h
 
 - PROMOTE: 72
-- PURGE: 79
-- Total: 151
+- PURGE: 78
+- Total: 150
 
 ## Top Reasons
 
-- No significant markers found: 79
+- No significant markers found: 78
 - Security/vulnerability signal: 54
-- Dependency/ecosystem shift: 22
+- Dependency/ecosystem shift: 21
 - Convergence detected: 10
 - Structural shift (engineering refactor/rewrite): 9
-- Direct actionability detected: 8
+- Direct actionability detected: 7
 
 ## Sources
 
 - GitHub_vscode: 64
-- GitHub_unsloth: 48
-- GitHub_langchain: 16
-- GitHub_llama.cpp: 10
+- GitHub_unsloth: 47
+- GitHub_langchain: 15
+- GitHub_llama.cpp: 11
 - GitHub_ComfyUI: 8
 - GitHub_ollama: 3
 - GitHub_AutoGPT: 1
@@ -117,7 +119,7 @@ _Generated: 2026-06-12 04:18:47 UTC_
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_langchain reason=Direct actionability detected preview=Commit 5d20596 by Mason Daugherty: style(core,langchain,langchain-classic,partners): replace double backticks in docstri
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit ba1df05 by shaofeiqi: opencl: add q5_0/q5_1 gemm and gemv kernels for Adreno (#24319)  * opencl: add q5_0 adreno 
 _[truncated]_
 
 ### inversion-pulse.md
