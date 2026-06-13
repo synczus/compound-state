@@ -1,45 +1,44 @@
 # Noise Gate Context
 
-_Generated: 2026-06-13 09:40:02 UTC_
+_Generated: 2026-06-13 15:09:43 UTC_
 
 ## Last 24h
 
-- PROMOTE: 79
-- PURGE: 92
-- Total: 171
+- PROMOTE: 53
+- PURGE: 57
+- Total: 110
 
 ## Top Reasons
 
-- No significant markers found: 92
-- Security/vulnerability signal: 54
-- Dependency/ecosystem shift: 26
-- Direct actionability detected: 12
-- Structural shift (engineering refactor/rewrite): 10
-- Convergence detected: 8
-- Asymmetry/Contrarian signal detected: 2
+- No significant markers found: 57
+- Security/vulnerability signal: 32
+- Dependency/ecosystem shift: 19
+- Structural shift (engineering refactor/rewrite): 8
+- Direct actionability detected: 8
+- Convergence detected: 3
 
 ## Sources
 
-- GitHub_vscode: 66
-- GitHub_unsloth: 63
+- GitHub_vscode: 48
+- GitHub_unsloth: 23
 - GitHub_langchain: 22
-- GitHub_llama.cpp: 16
-- GitHub_ComfyUI: 4
+- GitHub_llama.cpp: 11
+- GitHub_ComfyUI: 6
 
 ## Recent Decisions
 
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 8e57c5e by alkinun: Fix Responses tool output content arrays (#6287)  * Fix Responses tool output content arrays 
-- PROMOTE score=10 source=GitHub_vscode reason=Direct actionability detected; Security/vulnerability signal preview=Commit bf2334e by Alexandru Dima: ci: add Node.js diagnostic reports for test crash investigation (#321216)  * ci: add N
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 3ef7eb4 by Megan Rogge: Fix question carousel stealing focus from other VS Code UI (#321152)
-- PROMOTE score=10 source=GitHub_vscode reason=Direct actionability detected; Security/vulnerability signal preview=Commit 1955c9d by Alexandru Dima: fix: show command and exit code in exec.ps1 error message (#321226)  The default error
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit a8af0a1 by Daniel Han: Fix llama.cpp prebuilt: skip already-installed same-release fallback (#6285)  * Fix llama.
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 985792a by Daniel Han: Installer: drop redundant -WindowStyle Hidden from the Windows launcher VBS (#6284)  * Ins
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 11429a9 by Mason Daugherty: fix(openai): avoid sync token reads in Codex streaming (#38128)  Codex streaming now 
-- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 37b339f by Mason Daugherty: fix(openai): build Codex async headers off the event loop in `_agenerate` (#38129)  T
-- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit 879cad0 by Mason Daugherty: release(openai): 1.3.2 (#38130)
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit d8a24cc by Georgi Gerganov: fit : wrap llama_device_memory_data (#24522)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit cd6495a by Vijay Upadya: Enable gemini-3.5-flash prompt update exp (#321231)  gemini prompt update
-- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit 502d4ad by Michael Han: Tidy update banner and auth button spacing (#6279)  * Fix update banner button spacing  *
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 341babc by Sigbjørn Skjæret: jinja : fix split and replace with empty first arg (#24574)  * fix split and replace
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit e8067a8 by Xuan-Son Nguyen: ui: build-time gzip compression (#24571)  * ui: keep original file name and path  * f
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit b664349 by Robin Huang: Expose deploy_environment in /system_stats (#14402)
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 1a7718b by Jeff Bolz: vulkan: support non-contig unary/glu ops (#24215)  * vulkan: support non-contig unary/glu o
+- PROMOTE score=5 source=GitHub_vscode reason=Direct actionability detected preview=Commit 275e1b3 by Alexandru Dima: build: add diagnostics to Copilot VSIX download poller (#321268)  The background `down
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit fe54b5e by Alexander Piskun: Add 10-bit video support (#14452)  Create Video gets a bit_depth option (8-bit/10-bi
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 597b667 by Xuan-Son Nguyen: ui: keep original file name and path (#24568)  * ui: keep original file name and path
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit ed8f8bd by Alexandru Dima: Fix chat input selection rendering in Agents window (#320913)  * Fix chat input editor
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit b32ef2e by Daniel Han: Bug fixes
+- PROMOTE score=3 source=GitHub_unsloth reason=Dependency/ecosystem shift preview=Commit 8febe2c by Daniel Han: Bump install.sh / install.ps1 pin to unsloth>=2026.6.7 (#6301)
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit a9a38da by Daniel Han: Studio: decide diffusion routing before the SWA resolver (#6299)  * Studio: decide diffusi
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 55b6fb0 by Alexandru Dima: Prevent symbol tool file paths from escaping the working directory (#321259)  `Working
 
 ## Agent Use
 
