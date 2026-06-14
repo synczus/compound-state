@@ -1,32 +1,32 @@
 # Noise Gate Context
 
-_Generated: 2026-06-13 20:04:28 UTC_
+_Generated: 2026-06-13 23:14:02 UTC_
 
 ## Last 24h
 
-- PROMOTE: 35
-- PURGE: 42
-- Total: 77
+- PROMOTE: 26
+- PURGE: 33
+- Total: 59
 
 ## Top Reasons
 
-- No significant markers found: 42
-- Security/vulnerability signal: 22
-- Dependency/ecosystem shift: 9
-- Structural shift (engineering refactor/rewrite): 7
-- Direct actionability detected: 5
-- Convergence detected: 2
+- No significant markers found: 33
+- Security/vulnerability signal: 18
+- Dependency/ecosystem shift: 6
+- Direct actionability detected: 4
+- Structural shift (engineering refactor/rewrite): 3
 
 ## Sources
 
-- GitHub_vscode: 36
+- GitHub_vscode: 22
 - GitHub_unsloth: 13
-- GitHub_llama.cpp: 12
-- GitHub_langchain: 11
+- GitHub_llama.cpp: 10
+- GitHub_langchain: 9
 - GitHub_ComfyUI: 5
 
 ## Recent Decisions
 
+- PROMOTE score=5 source=GitHub_llama.cpp reason=Security/vulnerability signal preview=Commit 53bd47e by Aldehir Rojas: ui : fix llama-ui-embed crash when no asset dir is given (#24597)
 - PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 740d347 by comfyanonymous: Remove the comfy python path append.
 - PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 64cc078 by comfyanonymous: Revert last commit. Last time I use this stupid GitHub app.
 - PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 1e5affb by Tyler James Leonhardt: Fix Claude agent host client tools hanging after confirmation (#321281)  * Fix 
@@ -38,7 +38,6 @@ _Generated: 2026-06-13 20:04:28 UTC_
 - PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit b664349 by Robin Huang: Expose deploy_environment in /system_stats (#14402)
 - PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 1a7718b by Jeff Bolz: vulkan: support non-contig unary/glu ops (#24215)  * vulkan: support non-contig unary/glu o
 - PROMOTE score=5 source=GitHub_vscode reason=Direct actionability detected preview=Commit 275e1b3 by Alexandru Dima: build: add diagnostics to Copilot VSIX download poller (#321268)  The background `down
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit fe54b5e by Alexander Piskun: Add 10-bit video support (#14452)  Create Video gets a bit_depth option (8-bit/10-bi
 
 ## Agent Use
 
