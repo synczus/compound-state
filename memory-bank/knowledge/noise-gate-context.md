@@ -1,48 +1,48 @@
 # Noise Gate Context
 
-_Generated: 2026-06-17 13:54:53 UTC_
+_Generated: 2026-06-17 20:13:28 UTC_
 
 ## Last 24h
 
-- PROMOTE: 28
-- PURGE: 60
-- Total: 88
+- PROMOTE: 42
+- PURGE: 84
+- Total: 126
 
 ## Top Reasons
 
-- No significant markers found: 52
-- Security/vulnerability signal: 22
-- Dependency/ecosystem shift: 10
+- No significant markers found: 76
+- Security/vulnerability signal: 28
+- Dependency/ecosystem shift: 16
 - Temporal decay exceeded limit: 8
+- Structural shift (engineering refactor/rewrite): 6
 - Convergence detected: 5
-- Structural shift (engineering refactor/rewrite): 4
 - Direct actionability detected: 3
 - Asymmetry/Contrarian signal detected: 1
 
 ## Sources
 
-- GitHub_vscode: 22
-- GitHub_unsloth: 17
-- GitHub_llama.cpp: 14
-- GitHub_ComfyUI: 12
-- GitHub_langchain: 10
-- GitHub_ollama: 7
-- GitHub_openai-python: 6
+- GitHub_vscode: 42
+- GitHub_llama.cpp: 22
+- GitHub_unsloth: 21
+- GitHub_ComfyUI: 13
+- GitHub_langchain: 12
+- GitHub_openai-python: 8
+- GitHub_ollama: 8
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit fa09af9 by Tyler James Leonhardt: Prompt to restart when Claude agent-host settings change (#321721)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0dde08b by Christof Marti: Fix Linux sandboxing (#317981)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 45237d1 by Christof Marti: Add smoke-test skill (#317981)
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit a590d60 by Jukka Seppänen: feat: SCAIL-2 multireference (CORE-310) (#14509)  * SCAIl-2: support multiref
-- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 68396ad by Michael Han: Studio Hub: preview first README in split view feed and round status chips into pills (#6
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit d202707 by Alexis Rolland: Update TripoSplat categories (#14512)
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 9a966ad by Daniel Han: Studio: trim serving-log noise and surface llama-server engine stats (#6377)  * Studio: tr
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit 435cdbc by Eyera: feat(hub): full-page redesign with trending feed, search, and persisted state (#6349)  * fix(hu
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit f5f9e21 by Daniel Han: studio: select torchao version from the installed torch (#6400)  * studio: select torchao 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 815aff6 by Don Jayamanne: fix: handle cancellation error when loading cached custom agents (#321718)
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 8086439 by Julien Chaumond: webui: export conversations as jsonl (#24688)  * webui: export conversations as jsonl
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit f72f680 by vs-code-engineering[bot]: Update distro commit (main) (#321730)  Update distro commit to e6b30218  Co-
+- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit e1f7f9c by Parth Sareen: ci: pin darwin release xcode (#16788)
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit f88d4f0 by Mason Daugherty: docs(anthropic): clarify prompt caching middleware docstring (#38206)  Updates the `A
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 5dce713 by Giuseppe Cianci: Merge pull request #321798 from microsoft/agents/create-a-draft-pr-to-do-the-same-5ea
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 2e88c49 by shalinib-ibm: ggml-cpu: Conditionally enable power11 backend based on compiler support (#24687)  * ggm
+- PROMOTE score=5 source=GitHub_unsloth reason=Security/vulnerability signal preview=Commit fbed3f2 by Nilay: CLI: add `unsloth connect` to point coding agents at a local Studio server (#6407)  * unsloth c
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit efee8f3 by Benjamin Christopher Simmonds: chat: open new-file edit pills in a normal editor instead of diff (#321
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit ca2e5af by Ladislau Szomoru: Agents - wire up changeset operations (#321777)  * WIP - initial scaffolding  * WIP 
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit fd08796 by Megan Rogge: Fix voice mode mini view bugs (#321783)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0c245a7 by Kyle Cutler: Improve hint message for remote browser errors (#321800)
+- PROMOTE score=3 source=GitHub_llama.cpp reason=Dependency/ecosystem shift preview=Commit 0843245 by Georgi Gerganov: metal : implement rope_back operator (#24725)  Reuse existing rope kernels with a fun
+- PURGE score=0 source=GitHub_openai-python reason=No significant markers found preview=Commit 4d35453 by stainless-app[bot]: feat(api): update OpenAPI spec or Stainless config
+- PURGE score=0 source=GitHub_openai-python reason=No significant markers found preview=Commit e20b6b8 by stainless-app[bot]: release: 2.43.0
 
 ## Agent Use
 
