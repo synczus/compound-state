@@ -1,41 +1,42 @@
 # Noise Gate Context
 
-_Generated: 2026-06-14 15:45:36 UTC_
+_Generated: 2026-06-14 21:27:44 UTC_
 
 ## Last 24h
 
-- PROMOTE: 7
-- PURGE: 15
-- Total: 22
+- PROMOTE: 8
+- PURGE: 22
+- Total: 30
 
 ## Top Reasons
 
-- No significant markers found: 15
+- No significant markers found: 22
 - Security/vulnerability signal: 6
-- Dependency/ecosystem shift: 2
+- Dependency/ecosystem shift: 3
 - Direct actionability detected: 1
 
 ## Sources
 
-- GitHub_llama.cpp: 9
-- GitHub_vscode: 5
-- GitHub_ComfyUI: 4
+- GitHub_llama.cpp: 12
+- GitHub_vscode: 9
 - GitHub_unsloth: 4
+- GitHub_ComfyUI: 3
+- GitHub_langchain: 2
 
 ## Recent Decisions
 
-- PROMOTE score=10 source=GitHub_unsloth reason=Direct actionability detected; Security/vulnerability signal preview=Commit da3f7ac by oobabooga: Studio: add temporary (incognito) chat (#5956)  * Studio: add temporary (incognito) chat  *
-- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit 5897d0c by Alexander Piskun: [Partner Nodes] feat(Tripo3d): add new "Import 3D" node (#14466)  Signed-off-by: big
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 1fd6dfe by Amos Wong: ui : fix ui clipping in mobile due to incorrect height setup (#24605)
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit acd79d6 by Sigbjørn Skjæret: jinja : add count/d/e filter aliases (#24606)
-- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit f372da4 by DoubleMathew: MLX Training updates (#5656)  * Expose MLX grad value clipping in Studio  * update test 
-- PROMOTE score=3 source=GitHub_unsloth reason=Dependency/ecosystem shift preview=Commit 19ae073 by Daniel Han: Studio: clarify llama.cpp update banner copy (#6313)  Rename the banner heading from "New 
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 6e14286 by Michael Wand: cli : fix not copying preserved tokens (#24258)
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 8ed274e by Bartowski: Add cohere2moe to llama-vocab for TINY_AYA (#24601)
-- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit 4ac5322 by Daniel Imms: fix(terminal): track ligatures addon config for change detection (#318992)  Store ILigatu
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 4672211 by Sigbjørn Skjæret: ci : use CUDA label for cuda backend (#24594)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 9b43a71 by RedCMD: fix: Restrict continue comment to whitespace separated slashes (#321230)
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit c25b323 by Kyle Cutler: Browser: fix URLs incorrectly matching file:// scheme (#321302)
+- PROMOTE score=5 source=GitHub_langchain reason=Security/vulnerability signal preview=Commit 62f2559 by Christophe Bornet: chore(core): add mypy `warn_unreachable` (#38109)  Enables mypy's `warn_unreachable
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit a5ee44b by Benjamin Christopher Simmonds: Add feedback feature for Claude integration (#321254)  * commit phase 1
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0e2f320 by Nick Trogh: Update docs links
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 425c347 by Nick Trogh: Add query string to identify traffic from VS Code
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 93b3bb6 by Nick Trogh: Merge pull request #321339 from microsoft/ntrogh/customization-docs-links  Update docs lin
+- PURGE score=0 source=GitHub_langchain reason=No significant markers found preview=Commit eb39d0c by langchain-model-profile-bot[bot]: chore(model-profiles): refresh model profile data (#38133)  Automate
+- PROMOTE score=3 source=GitHub_ComfyUI reason=Dependency/ecosystem shift preview=Commit e1b9366 by Dr.Lt.Data: bump manager version to 4.2.2 (#14471)
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 5f04dc7 by Nicolas Mowen: ui: Add HEIC/HEIF image support (#24137)  * Add boilerplate for file types  * Add heic-
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit aedb2a5 by Piotr Wilkin (ilintar): chat: add dedicated Cohere2MoE (North Code) parser (#24615)  * chat: add dedic
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 20c5266 by Alexander Batischev: docker: specify registry to simplify Podman builds (#24607)
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 8edaca9 by Mohammad Athar: docs : fix typos in CUDA-FEDORA.md and grammars/README.md (#24459)
+- PROMOTE score=5 source=GitHub_vscode reason=Security/vulnerability signal preview=Commit f5f0b5f by Dmitriy Vasyura: Fix completion feedback issues (#321309)  * Fix completion feedback issues  Co-author
 
 ## Agent Use
 
