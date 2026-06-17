@@ -1,47 +1,48 @@
 # Noise Gate Context
 
-_Generated: 2026-06-17 07:52:29 UTC_
+_Generated: 2026-06-17 13:54:53 UTC_
 
 ## Last 24h
 
-- PROMOTE: 22
-- PURGE: 45
-- Total: 67
+- PROMOTE: 28
+- PURGE: 60
+- Total: 88
 
 ## Top Reasons
 
-- No significant markers found: 37
-- Security/vulnerability signal: 16
+- No significant markers found: 52
+- Security/vulnerability signal: 22
+- Dependency/ecosystem shift: 10
 - Temporal decay exceeded limit: 8
-- Dependency/ecosystem shift: 8
+- Convergence detected: 5
+- Structural shift (engineering refactor/rewrite): 4
 - Direct actionability detected: 3
-- Structural shift (engineering refactor/rewrite): 3
-- Convergence detected: 2
+- Asymmetry/Contrarian signal detected: 1
 
 ## Sources
 
-- GitHub_vscode: 13
-- GitHub_llama.cpp: 11
-- GitHub_ComfyUI: 10
+- GitHub_vscode: 22
+- GitHub_unsloth: 17
+- GitHub_llama.cpp: 14
+- GitHub_ComfyUI: 12
 - GitHub_langchain: 10
-- GitHub_unsloth: 10
 - GitHub_ollama: 7
 - GitHub_openai-python: 6
 
 ## Recent Decisions
 
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 1d14fc1 by dileepyavan: Protect terminal sandbox settings file (#321723)
-- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit d5376cf by kononnable: ci: fix vulkan docker images (#24595)  * Update vulkan-shaders-gen.cpp  * Update vulkan-sh
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 5e91f34 by Justin Chen: use feature rich model picker in panel chat (#321722)  * use feature rich model picker in
-- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit fffbc00 by Justin Chen: fix editing previous request in agents window not working (#321719)
-- PROMOTE score=3 source=GitHub_ollama reason=Dependency/ecosystem shift preview=Commit 7ea692c by Jeffrey Morgan: llama: update llama.cpp to b9637 (#16609)
-- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 993acc7 by Jeffrey Morgan: model: update lfm2 parser/renderer for optional thinking (#16359)
-- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit bbb40a0 by Jeffrey Morgan: server: context shift for context windows larger than 8k, add error when hitting conte
-- PROMOTE score=3 source=GitHub_ollama reason=Dependency/ecosystem shift preview=Commit 9e4ed74 by Patrick Devine: integration: look for the "hf" tool in integration tests (#16765)  The "huggingface-cl
-- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit 0f047fe by Jeffrey Morgan: llm: context shift allow shiftable prompts (#16764)
-- PURGE score=0 source=GitHub_ollama reason=No significant markers found preview=Commit acfb50d by Jeffrey Morgan: models: add cohere2_moe (Command A / North) to the MLX engine (#16670)  Implements Coh
-- PROMOTE score=3 source=GitHub_ollama reason=Dependency/ecosystem shift preview=Commit 8c432fc by Patrick Devine: llama: update llama.cpp to b9672 (#16775)
-- PROMOTE score=3 source=GitHub_llama.cpp reason=Dependency/ecosystem shift preview=Commit 02810c7 by Oliver Simons: Fix and restrict NVFP4 edge-cases in llama-graph (#24331)  * Move post-GEMM MUL require
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit fa09af9 by Tyler James Leonhardt: Prompt to restart when Claude agent-host settings change (#321721)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 0dde08b by Christof Marti: Fix Linux sandboxing (#317981)
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 45237d1 by Christof Marti: Add smoke-test skill (#317981)
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit a590d60 by Jukka Seppänen: feat: SCAIL-2 multireference (CORE-310) (#14509)  * SCAIl-2: support multiref
+- PURGE score=0 source=GitHub_unsloth reason=No significant markers found preview=Commit 68396ad by Michael Han: Studio Hub: preview first README in split view feed and round status chips into pills (#6
+- PURGE score=0 source=GitHub_ComfyUI reason=No significant markers found preview=Commit d202707 by Alexis Rolland: Update TripoSplat categories (#14512)
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Dependency/ecosystem shift preview=Commit 9a966ad by Daniel Han: Studio: trim serving-log noise and surface llama-server engine stats (#6377)  * Studio: tr
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit 435cdbc by Eyera: feat(hub): full-page redesign with trending feed, search, and persisted state (#6349)  * fix(hu
+- PROMOTE score=8 source=GitHub_unsloth reason=Security/vulnerability signal; Convergence detected preview=Commit f5f9e21 by Daniel Han: studio: select torchao version from the installed torch (#6400)  * studio: select torchao 
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit 815aff6 by Don Jayamanne: fix: handle cancellation error when loading cached custom agents (#321718)
+- PURGE score=0 source=GitHub_llama.cpp reason=No significant markers found preview=Commit 8086439 by Julien Chaumond: webui: export conversations as jsonl (#24688)  * webui: export conversations as jsonl
+- PURGE score=0 source=GitHub_vscode reason=No significant markers found preview=Commit f72f680 by vs-code-engineering[bot]: Update distro commit (main) (#321730)  Update distro commit to e6b30218  Co-
 
 ## Agent Use
 
